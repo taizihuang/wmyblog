@@ -8,4 +8,6 @@ for i in num:
         num1.append(i-24)
     else:
         num1.append(i)
-print(''.join([chr(c) for c in num1]))
+''.join([chr(c) for c in num1])
+
+print(str.translate(str.maketrans("abcdefghijklmnopqrstuvwxyz","cdefghijklmnopqrstuvwxyzab")))
