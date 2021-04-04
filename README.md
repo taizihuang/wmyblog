@@ -1,6 +1,14 @@
-# pythonChallenge
+# Usage
 
-http://www.pythonchallenge.com/
+http://blog.udn.com/MengyuanWang/article
+```
+from wmyblog import *
+updateArticle()
+updateComment()
+genHTML()
+genINDEX()
+```
+
 
 ```
 git add .
