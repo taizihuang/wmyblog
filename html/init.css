@@ -1,0 +1,123 @@
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+@import url("http://fonts.googleapis.com/earlyaccess/notosansscsliced.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400|Rajdhani");
+
+pre, html,
+button,
+input,
+optgroup,
+select,
+textarea, h1, h2, h3, h4, h5 {
+    font-weight: 300;
+    font-family: Lato,Noto Sans SC Sliced, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, li {
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 28px 0 20px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 24px 0 17px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Rajdhani,PingFang SC,Microsoft Yahei UI Light,Microsoft YaHei, Noto Sans SC Sliced, sans-serif;
+    font-weight: 200;
+}
+.BODY,.BACK{
+    max-width:680px;
+    margin:auto;
+}
+.BODY{
+    padding:0 32px;
+    box-size:border-box;
+    font-weight:400;
+    font-size:16px;
+    padding-bottom:128px;
+}
+.BODY p {
+    margin-bottom:16px;
+}
+.BODY img {
+    margin:16px auto;
+    display:block;
+}
+.REPLY_LI{
+    border-top:1px solid #ddd;
+    margin-top:64px;
+    padding-top:64px;
+}
+.REPLY_LI .LI{
+    border-bottom:1px solid #ddd;
+    margin-bottom:16px;
+    padding-bottom:16px;
+}
+.REPLY_LI .USER{
+    margin-bottom:16px;
+}
+.REPLY_LI .USER .NAME{
+    font-weight:bold;
+}
+.REPLY_LI .REPLY{
+    margin-top:48px;
+    padding:22px;
+    position:relative;
+    background:#f9f9f9;
+    margin-bottom:-16px;
+}
+.REPLY_LI .TIME{
+    float:right;
+    font-size:12px;
+}
+.REPLY_LI .REPLY:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 2px;
+    background-color: #ddd;
+}
+.REPLY_LI .REPLY:before{
+    font-family:Arial;
+    color:#ccc;
+    content: '“';
+    position: absolute;
+    top: -32px;
+    left: -3px;
+    font-size: 42px;
+}
+.BACK{
+    text-align: center;
+    display: block;
+    padding: 12px;
+    border: 1px dashed #eee;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 32px;
+    margin-top: -1px;
+}
+.BACK a{
+    display:block;
+    color:#999;
+    font-weight:200;
+    text-decoration:none;
+}
+.BACK a:hover{
+    color:#f40;
+}

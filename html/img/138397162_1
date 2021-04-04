@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>網路城邦｜錯誤訊息頁</title>
+<link href="/img/css/blue.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+-->
+</style>
+<script>
+function redir(){
+	var tourl = "http://blog.udn.com/";
+	var locsearch = location.search;
+	var loc = location.href;
+	if(loc.indexOf("http://city.udn.com/blog?") > -1) {
+		tourl = tourl + locsearch.substring(1, locsearch.length);
+		window.location = tourl;		
+	} else if ( loc.indexOf("http://city.udn.com/city?") > -1 ) {
+		tourl = "http://city.udn.com/";
+		tourl = tourl + locsearch.substring(1, locsearch.length);
+		window.location = tourl;	
+	} else if ( loc.indexOf("http://city.udn.com/allies?") > -1 ) {
+		tourl = "http://blog.udn.com/blogs/";
+		tourl = tourl + locsearch.substring(1, locsearch.length);
+		window.location = tourl;			
+	}
+}
+</script>
+</head>
+<body onLoad="javascript:redir();">
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+<table width="585" height="11" border="0" cellpadding="0" cellspacing="0" class="font-size15">
+<tr>
+<td height="1" bgcolor="#808080"></td>
+</tr>
+<tr valign="top">
+<td height="10"><a href="####" class="nav"><img src="/community/img/common_all/logo.gif" border="0"></a></td>
+</tr>
+</table></td>
+<td width="115" height="35" valign="top" class="block-top-city"></td>
+</tr>
+</table>
+<table width="700" height="300" border="0" align="center" cellpadding="0" cellspacing="0" class="font-size15">
+<tr>
+<td align="center" class="main-text">
+<p class="calendar-h">您所要瀏覽的網頁或是檔案不存在，請檢查是否輸入錯誤所致...<br>
+						</p>
+<p><a href="javascript:history.back();" class="panel-text">《返回前一頁》</a>　　<a href="http://udn.com/ugc" class="panel-text">《回網路城邦首頁》</a></p></td>
+</tr>
+</table>
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="15" colspan="2"></td>
+</tr>
+<tr>
+<td width="35"><a href="#top"><img src="/community/img/common_blue/block_bottom.gif" border="0"></a></td>
+<td valign="top"><table width="100%" height="35" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"></td>
+</tr>
+<tr>
+<td height="1" bgcolor="#808080"></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</body>
+</html>
