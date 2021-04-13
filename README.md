@@ -1,6 +1,8 @@
 # Usage
 
 http://blog.udn.com/MengyuanWang/article
+
+https://wmyblog.github.io/
 ```
 from wmyblog import *
 updateArticle()
