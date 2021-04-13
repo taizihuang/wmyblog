@@ -124,13 +124,12 @@ def updateArticle(articleFile = 'article_full.pkl'):
     # creat pickle backup file
     df_article_old = pd.read_pickle(articleFile)
 
-    
     # fetech new article list, merge, remove duplicates, then save as pickle file
     df_article_new = pd.DataFrame(columns=['id','title','art_date','post'])
     df_link = getPageLinkAll()   
     for i in df_link.loc[df_link.id > "108908829"].index:
         (art_id,title,art_date,post) = fetch(df_link.iloc[i].id)
-        df_article_new.append({'id':art_id,'title':title,'art_date':art_date,'post':str(post)},ignore_index=True)
+        df_article_new = df_article_new.append({'id':art_id,'title':title,'art_date':art_date,'post':str(post)},ignore_index=True)
         print("Fetching article: "+title)
         time.sleep(1)
     df_article_new.art_date = pd.to_datetime(df_article_new.art_date,format="%Y/%m/%d %H:%M")
