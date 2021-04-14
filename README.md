@@ -1,8 +1,6 @@
 # 使用方法
 
-http://blog.udn.com/MengyuanWang/article
-
-https://wmyblog.github.io/
+https://taizihuang.github.io/wmyblog
 
 用python脚本或者jupyter notebook执行：
 

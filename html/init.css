@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, p, li {
     line-height: 1.8;
 }
 
+a, .SAY, .p, .REPLY {
+word-wrap: break-word;
+}
+
 img {
     max-width: 100%;
     margin: auto;
