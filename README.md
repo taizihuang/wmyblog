@@ -1,12 +1,14 @@
 # 使用方法
 
+【Actions每日自动更新】
+
 直接访问：https://taizihuang.github.io/wmyblog
 
 模板来自：https://wmyblog.github.io
 
 
 
-第一次更新，需要初始化，大约15分钟：
+全盘更新，大约15分钟：
 
 ```python
 from wmyblog import * # wmyblog.py是库函数，你需要用pip或者conda安装相应的包
@@ -20,7 +22,7 @@ genHTMLAll() # 利用文章和评论的pkl文件生成独立的html文件 [不�
 genINDEX() # 生成文章目录index.html [不需要联网]
 ```
 
-每日更新，只需10秒:
+每日更新，只需10秒：
 
 ```python
 from wmyblog import *
@@ -42,6 +44,6 @@ updateDaily(latest)
 git add .
 git commit -m "1"
 git branch -M main
-git remote add origin git@github.com:taizihuang/pythonChallenge.git
+git remote add origin git@github.com:taizihuang/wmyblog.git
 git push -u origin main
 ```
