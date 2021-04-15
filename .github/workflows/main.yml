@@ -23,3 +23,9 @@ jobs:
         
       - name: run script
         run: python wmy.py
+        
+      - name: git push
+        run: |
+          git add .
+          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
