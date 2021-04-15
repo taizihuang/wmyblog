@@ -307,6 +307,8 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     <li><a class="title" href="./html/${url}.html">[${time}]&emsp;${name}</a></li>
     %endfor
     </ul>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     </div></body></html>
     """)
 
@@ -342,6 +344,8 @@ def genLatestComment(df_comment_today,dict_reply):
     %endif
     </div>
     %endfor
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
     </div>
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
