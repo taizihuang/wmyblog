@@ -19,7 +19,7 @@ jobs:
           python-version: 3.x
           
       - name: install dependencies
-        run: python -m pip install --upgrade requests,lxml,bs4,pandas,Mako,numpy
+        run: python -m pip install --upgrade requests lxml bs4 pandas Mako numpy
         
       - name: run script
         run: python wmy.py
