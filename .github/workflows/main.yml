@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: daily update
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+          
+      - name: install dependencies
+        run: pip install --upgrade -r requirements.txt -e .
+        
+      - name: run script
+        run: python wmy.py
+        
+      - name: git push
+        run: |
+          git add .
+          git config --global user.name "Taizi Huang"
+          git config --global user.email "htzllt@gmail.com"
+          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
