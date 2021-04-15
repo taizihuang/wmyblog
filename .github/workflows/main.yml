@@ -27,5 +27,7 @@ jobs:
       - name: git push
         run: |
           git add .
+          git config --global user.name "Taizi Huang"
+          git config --global user.email "htzllt@gmail.com"
           git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
           git push
