@@ -1,7 +1,7 @@
 requests
+wheel
 lxml
 bs4
 pandas
 Mako
 numpy
-wheel

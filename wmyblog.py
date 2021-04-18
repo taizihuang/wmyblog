@@ -234,6 +234,7 @@ def genHTML(art_id,df_article,df_comment):
     <h1>${title}</h1>
     <p class="DATE">${date}</p>
     <h4>原文网址：<a href="http://blog.udn.com/MengyuanWang/${art_id}">http://blog.udn.com/MengyuanWang/${art_id}</a></h4>
+    <br><br>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
     <h2>${len(reply_li)} 条留言</h2>
@@ -303,6 +304,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     <body><div class="BODY">
     <h1>王孟源的博客镜像</h1>
     <h4>原网址：<a href="http://blog.udn.com/MengyuanWang/article">http://blog.udn.com/MengyuanWang/article</a></h4>
+    <br><br>
     <ul class="LI">
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
     %for url, name, time in art_li:

@@ -6,6 +6,8 @@
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
     <h1>【科技】CPU的大毛病</h1>
     <p class="DATE">2018-01-04 21:12:00</p>
+    <h4>原文网址：<a href="http://blog.udn.com/MengyuanWang/109880988">http://blog.udn.com/MengyuanWang/109880988</a></h4>
+    <br><br>
     <div class="POST"><div id="article_show_content">
 <p class="MsoNormal"><span style="font-size:12pt;line-height:115%;font-family:'microsoft jhenghei' ,">一方面我不是做</span><span style="font-size:12pt;line-height:115%;font-family:'microsoft jhenghei' ,">Computer專業的，另一方面這種消費者類的話題與這個博客的主旨（亦即幫助臺灣的知識分子認清世界大局）無關，所以我一直都避免討論</span>Computer的技術細節。其實我從高一開始就對Personal Computing很有興趣，自買了Apple II以後，每隔幾年都要換新機。大學的時候還當了清華PC社的社長，花了不少時間來寫6502和8088的Assembly。成年後才覺得寫程式是一種必須鑽牛角尖的技藝，和我追求的大局觀有抵觸，於是就放棄了這個嗜好，只有在有需要的時候才會去用。</p>
 <p class="MsoNormal"><span style="font-size:12pt;line-height:115%;font-family:'microsoft jhenghei' ,">近日</span><span style="font-size:12pt;line-height:115%;font-family:'microsoft jhenghei' ,">爆出來的</span><span style="font-size:12pt;line-height:115%;font-family:'microsoft jhenghei' ,">CPU Bug，卻是歷史性地嚴重，值得我破例寫專文報導。這最早是</span>The Register（這是一個著名的科技新聞網站，我還在金融界時，因爲必須管理IT人員，曾經有十幾年每日追讀）在2018年一月2日披露（參見<a href="https://www.theregister.co.uk/2018/01/02/intel_cpu_design_flaw/">https://www.theregister.co.uk/2018/01/02/intel_cpu_design_flaw/</a> ），原本該作者以爲只有Intel的CPU才有問題，後來（參見最新文章<a href="https://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/">https://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/</a> ）額外的細節逐漸浮現，目前已知Intel、AMD和ARM（ARM的CPU核被用在現今幾乎所有的手機上）的產品基本都不能幸免，但是還是以Intel CPU的問題最糟糕。這是因爲Bug的來源是Intel在1995年的Pentium Pro領先推出的一個加速方法，叫做Speculative Execution；它的功能包括讓CPU在執行下一個指令之前，就先把那個指令會需要的資料從記憶體提出來，放在近處（也就是CPU自己的短暫記憶體，叫做Cache）；如此一來，CPU的執行單元就不必停下來等資料。</p>

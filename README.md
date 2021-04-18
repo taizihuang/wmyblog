@@ -11,7 +11,7 @@
 全盘更新，大约15分钟：
 
 ```python
-from wmyblog import * # wmyblog.py是库函数，你需要用pip或者conda安装相应的包
+from wmyblog import * # wmyblog.py是库函数，你需要用pip或者conda安装requirements.txt内的依赖
 
 os.environ['http_proxy'] = "http://127.0.0.1:xxxx" #代理的端口
 os.environ['https_proxy'] = "http://127.0.0.1:xxxx"
