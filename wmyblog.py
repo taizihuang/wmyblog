@@ -233,6 +233,7 @@ def genHTML(art_id,df_article,df_comment):
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
     <h1>${title}</h1>
     <p class="DATE">${date}</p>
+    <h4>原文网址：<a href="http://blog.udn.com/MengyuanWang/${art_id}">http://blog.udn.com/MengyuanWang/${art_id}</a></h4>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
     <h2>${len(reply_li)} 条留言</h2>
@@ -251,7 +252,7 @@ def genHTML(art_id,df_article,df_comment):
     </body></html>""")
         
     with open('./html/'+art_id+'.html','w') as f:
-        f.write(HTML.render(title=title,date=art_date,post=post,reply_li=reply_li))
+        f.write(HTML.render(title=title,date=art_date,art_id=art_id,post=post,reply_li=reply_li))
     return
 
 def genHTMLAll(articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl"):
@@ -297,10 +298,11 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     float:right;
     }
     </style>
-    <title>王孟源的博客</title>
+    <title>王孟源的博客镜像</title>
     </head>
     <body><div class="BODY">
-    <h1>王孟源的博客</h1>
+    <h1>王孟源的博客镜像</h1>
+    <h4>原网址：<a href="http://blog.udn.com/MengyuanWang/article">http://blog.udn.com/MengyuanWang/article</a></h4>
     <ul class="LI">
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
     %for url, name, time in art_li:
@@ -324,6 +326,13 @@ def genLatestComment(df_comment_today,dict_reply):
     border-top: none;
     margin-top: 0px;
     padding-top: 0px;
+    }
+    .LI a{
+    text-decoration: none;
+    color:#000;
+    }
+    .LI a:hover{
+    color:#f40;
     }
     </style>
     <title>${title}</title>
