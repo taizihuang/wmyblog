@@ -336,12 +336,26 @@ def genLatestComment(df_comment_today,dict_reply):
     .LI a:hover{
     color:#f40;
     }
+    #LATEST {
+    font-family: Rajdhani,PingFang SC;
+    font-weight: 200;
+    font-size: 32px;
+    margin: 28px 0 20px;
+    }
+    #rss_btn {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 13px;
+    color: #FFF;
+    background: #f2853d;
+    padding: 1px 5px;
+    border: 1px solid #ed6b2a;}
     </style>
     <title>${title}</title>
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <h1>${title}</h1>
+    <div id="LATEST">最新回复<span>  <a href="https://rsshub-123456.uc.r.appspot.com/guanchazhe/wmy" id="rss_btn">RSS</a></span></div>
     <p class="DATE">${date}</p>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
