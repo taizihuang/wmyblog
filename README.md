@@ -1,6 +1,6 @@
 # 使用方法
 
-【Actions每日自动更新】
+【Actions每日早晚八点更新】
 
 直接访问：https://taizihuang.github.io/wmyblog
 
