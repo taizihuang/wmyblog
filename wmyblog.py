@@ -184,7 +184,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
         nPage,df = getComment(art_id)
         if nPage > 1:
             nPage,df1 = getComment(art_id,n=1)
-        df = df.append(df1,ignore_index=True)
+            df = df.append(df1,ignore_index=True)
         df_comment_new = df_comment_new.append(df,ignore_index=True)
         dict_reply[art_id] = i.text
     df_comment = df_comment_new.append(df_comment_old, ignore_index=True)
