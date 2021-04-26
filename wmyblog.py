@@ -199,12 +199,13 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     genLatestComment(df_comment_today,dict_reply)
     for art_id in df_comment_today.id.unique():
         genHTML(art_id,df_article,df_comment)
-    genINDEX()
 
     os.rename(commentFile,commentFile+'.bak')
     df_comment.to_pickle(commentFile)
     os.rename(articleFile,articleFile+'.bak')
     df_article.to_pickle(articleFile)
+
+    genINDEX()
     return
 
 def genHTML(art_id,df_article,df_comment):
