@@ -30,11 +30,12 @@ jobs:
         run: pip install --upgrade -r requirements.txt
         
       - name: run script
-        run: python wmy.py
+        run: |
+          git pull
+          python wmy.py
         
       - name: git push
         run: |
-          git stash
           git add .
           git config --global user.name "Taizi Huang"
           git config --global user.email "htzllt@gmail.com"
