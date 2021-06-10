@@ -34,7 +34,7 @@ jobs:
         
       - name: git push
         run: |
-          git pull
+          git stash
           git add .
           git config --global user.name "Taizi Huang"
           git config --global user.email "htzllt@gmail.com"
