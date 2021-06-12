@@ -276,7 +276,17 @@ def genINDEX(articleFile='./data/article_full.pkl'):
         art_li.append((art_id,title,art_date))
 
     INDEX = Template("""
-    <!DOCTYPE html><html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    <!DOCTYPE html><html><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN809EL4EQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-SN809EL4EQ');
+    </script>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <link rel="stylesheet" href="./html/init.css">
     <style>
     .LI li{
@@ -324,7 +334,17 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     return
 
 def genLatestComment(df_comment_today,dict_reply):
-    HTML = Template("""<!DOCTYPE html><html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    HTML = Template("""<!DOCTYPE html><html><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN809EL4EQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-SN809EL4EQ');
+    </script>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <link rel="stylesheet" href="./init.css">
     <style>
     .REPLY_LI{
