@@ -226,7 +226,18 @@ def genHTML(art_id,df_article,df_comment):
             uuid = comment_date.strftime('%y%m%d%H%M')
             reply_li.append((uuid,comment,reply,nickname,comment_date))
             
-    HTML = Template("""<!DOCTYPE html><html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    HTML = Template("""<!DOCTYPE html><html><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN809EL4EQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-SN809EL4EQ');
+    </script>
+    
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <link rel="stylesheet" href="./init.css">
     <title>${title}</title>
     </head>
