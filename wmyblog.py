@@ -197,8 +197,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     with open(jsonFile) as infile:
         dict_reply = json.load(infile)
     genLatestComment(df_comment_today,dict_reply)
-    for art_id in df_comment_today.id.unique():
-        genHTML(art_id,df_article,df_comment)
+    genHTMLAll()
 
     os.rename(commentFile,commentFile+'.bak')
     df_comment.to_pickle(commentFile)
