@@ -412,7 +412,7 @@ def genLatestComment(df_comment_today,dict_reply):
     </body></html>""")
 
     RSS = Template("""
-    <rss  xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
     <title><![CDATA[王孟源有新回复]]></title>
     <atom:link href="https://taizihuang.github.io/wmyblog" rel="self" type="application/rss+xml" />
@@ -425,7 +425,8 @@ def genLatestComment(df_comment_today,dict_reply):
     %for source, id, uuid, say, reply, user, time in reply_li:
     <item>
     <title><![CDATA[${source} | ${user}]]></title>
-    <description>${say}<br><br>----<br><br>${reply}</description>
+    <description>${say}<br><br>----<br><br>${reply}
+    </description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>Sat, 10 Jul 2021 16:49:00 GMT</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
@@ -448,7 +449,7 @@ def genLatestComment(df_comment_today,dict_reply):
             reply_li.append((source,art_id,uuid,comment,reply,nickname,comment_date))
     with open("./html/new_comment.html", "w") as html:
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
-    with open("./rss","w") as rss:
+    with open("./rss.xml","w") as rss:
         rss.write(RSS.render(reply_li=reply_li))
     return
 
