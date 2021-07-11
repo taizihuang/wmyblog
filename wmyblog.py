@@ -434,7 +434,8 @@ def genLatestComment(df_comment_today,dict_reply):
     </channel></rss>
     """)
     reply_li = []
-    art_date = today().strftime('%m-%d %H:%M')
+    t = today()
+    art_date = datetime.datetime.now().strftime('%m-%d %H:%M')
     for i in df_comment_today.index:
         comment = df_comment_today.comment[i] 
         if comment:
