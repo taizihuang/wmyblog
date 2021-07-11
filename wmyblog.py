@@ -143,9 +143,6 @@ def updateComment(commentFile="./data/comment_full.pkl"):
     return
 
 def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data/comment_full.pkl',jsonFile='./data/article_list.json'):
-
-
-
     df_article_old = pd.read_pickle(articleFile)
     df_comment_old = pd.read_pickle(commentFile)
     df_article_new = pd.DataFrame(columns = ['id','title','art_date','post'])
@@ -390,7 +387,7 @@ def genLatestComment(df_comment_today,dict_reply):
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <div id="LATEST">最新回复<span>  <a href="https://taizihuang.github.io/wmyblog" id="rss_btn">RSS</a></span></div>
+    <div id="LATEST">最新回复<span>  <a href="https://taizihuang.github.io/wmyblog/rss.xml" id="rss_btn">RSS</a></span></div>
     <p class="DATE">${date}</p>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
@@ -427,7 +424,7 @@ def genLatestComment(df_comment_today,dict_reply):
     <% say = say.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <title><![CDATA[${source} | ${user}]]></title>
-    <description>![CDATA[${say}\n\n----\n\n${reply}]]</description>
+    <description>CDATA[${say}\n\n----\n\n${reply}</description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>${time} +0800</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
@@ -451,7 +448,7 @@ def genLatestComment(df_comment_today,dict_reply):
     with open("./html/new_comment.html", "w") as html:
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
     with open("./rss.xml","w") as rss:
-        rss.write(RSS.render(reply_li=reply_li))
+        rss.write(RSS.render(date=art_date,reply_li=reply_li))
     return
 
 def getComment(art_id,n=0):
