@@ -428,7 +428,7 @@ def genLatestComment(df_comment_today,dict_reply):
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>${time} +0800</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
-    <link>https://github.com/taizihuang/wmyblog/html/${id}.html#${uuid}</link>
+    <link>https://taizihuang.github.io/wmyblog/html/${id}.html#${uuid}</link>
     </item>
     %endfor
     </channel></rss>
