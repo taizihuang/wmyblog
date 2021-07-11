@@ -424,7 +424,7 @@ def genLatestComment(df_comment_today,dict_reply):
     <% say = say.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <title><![CDATA[${source} | ${user}]]></title>
-    <description>![CDATA[${say} <br><br>----<br><br>${reply}]]</description>
+    <description><![CDATA[${say} <br><br>----<br><br>${reply}]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>${time} +0800</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
