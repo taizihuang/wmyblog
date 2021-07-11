@@ -425,7 +425,7 @@ def genLatestComment(df_comment_today,dict_reply):
     %for source, id, uuid, say, reply, user, time in reply_li:
     <item>
     <title><![CDATA[${source} | ${user}]]></title>
-    <description>${say}\n\n----\n\n${reply}</description>
+    <description>![CDATA[${say}\n\n----\n\n${reply}]]</description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>Sat, 10 Jul 2021 16:49:00 GMT</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
