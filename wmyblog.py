@@ -420,10 +420,12 @@ def genLatestComment(df_comment_today,dict_reply):
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>${date} 0800</lastBuildDate>
+    <lastBuildDate>${date} +0800</lastBuildDate>
     <ttl>5</ttl>
     %for source, id, uuid, say, reply, user, time in reply_li:
     <item>
+    <% say = say.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
+    <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <title><![CDATA[${source} | ${user}]]></title>
     <description>![CDATA[${say}\n\n----\n\n${reply}]]</description>
     <author><![CDATA[王孟源部落格]]></author>
