@@ -197,7 +197,8 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     with open(jsonFile) as infile:
         dict_reply = json.load(infile)
     genLatestComment(df_comment_today,dict_reply)
-    genHTMLAll()
+    for art_id in df_comment_today.id.unique():
+        genHTML(art_id,df_article,df_comment)
 
     os.rename(commentFile,commentFile+'.bak')
     df_comment.to_pickle(commentFile)
@@ -389,7 +390,7 @@ def genLatestComment(df_comment_today,dict_reply):
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <div id="LATEST">最新回复<span>  <a href="https://rsshub-123456.uc.r.appspot.com/guanchazhe/wmy" id="rss_btn">RSS</a></span></div>
+    <div id="LATEST">最新回复<span>  <a href="https://taizihuang.github.io/wmyblog" id="rss_btn">RSS</a></span></div>
     <p class="DATE">${date}</p>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
@@ -409,6 +410,30 @@ def genLatestComment(df_comment_today,dict_reply):
     </div>
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
     </body></html>""")
+
+    RSS = Template("""
+    <rss  xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+    <title><![CDATA[王孟源有新回复]]></title>
+    <atom:link href="https://taizihuang.github.io/wmyblog" rel="self" type="application/rss+xml" />
+    <description><![CDATA[王孟源有新回复 (https://github.com/taizihuang/wmyblog)]]></description>
+    <generator>Github</generator>
+    <webMaster>Taizi Huang</webMaster>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 11 Jul 2021 03:07:25 GMT</lastBuildDate>
+    <ttl>5</ttl>
+    %for source, id, uuid, say, reply, user, time in reply_li:
+    <item>
+    <title><![CDATA[${source} | ${user}]]></title>
+    <description>${say}<br><br>----<br><br>${reply}</description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>Sat, 10 Jul 2021 16:49:00 GMT</pubDate>
+    <guid isPermaLink="false">${uuid}</guid>
+    <link>./${id}.html#${uuid}</link>
+    </item>
+    %endfor
+    </channel></rss>
+    """)
     reply_li = []
     art_date = today().strftime('%Y-%m-%d')
     for i in df_comment_today.index:
@@ -423,6 +448,8 @@ def genLatestComment(df_comment_today,dict_reply):
             reply_li.append((source,art_id,uuid,comment,reply,nickname,comment_date))
     with open("./html/new_comment.html", "w") as html:
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
+    with open("./rss","w") as rss:
+        rss.write(RSS.render(reply_li=reply_li))
     return
 
 def getComment(art_id,n=0):
