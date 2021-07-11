@@ -420,14 +420,14 @@ def genLatestComment(df_comment_today,dict_reply):
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Jul 2021 03:07:25 GMT</lastBuildDate>
+    <lastBuildDate>${date} 0800</lastBuildDate>
     <ttl>5</ttl>
     %for source, id, uuid, say, reply, user, time in reply_li:
     <item>
     <title><![CDATA[${source} | ${user}]]></title>
     <description>![CDATA[${say}\n\n----\n\n${reply}]]</description>
     <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>Sat, 10 Jul 2021 16:49:00 GMT</pubDate>
+    <pubDate>${time} +0800</pubDate>
     <guid isPermaLink="false">${uuid}</guid>
     <link>./${id}.html#${uuid}</link>
     </item>
