@@ -39,8 +39,16 @@ updateDaily(latest)
 
 ## 问答搜索
 
-修改文件**search.py**的字典**search_list**和**flag**，执行`python search.py`，搜索结果放在文件夹`./search`内。
-
+修改文件**search.py**的字典**search_list**和**flag**：
+```python
+search_list = {
+    '教育': ['教育','思考','读书'],
+    '科幻': ['科幻','Asimov'],
+    '美国': ['美国']
+    }
+flag = 0 # 0: 正常搜索；1: 互斥搜索。比如，'科幻'的搜索结果内不包含['教育','思考','读书']，'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']。
+```
+执行`python search.py`，搜索结果放在文件夹`./search`内。
 
 # Git 备忘
 
