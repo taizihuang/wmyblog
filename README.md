@@ -7,6 +7,19 @@
 模板来自：https://wmyblog.github.io
 
 
+## 问答搜索
+
+修改文件 **search.py** 内的 **search_list** 字典和 **flag** ：
+```python
+search_list = {
+    '教育': ['教育','思考','读书'],
+    '科幻': ['科幻','Asimov'],
+    '美国': ['美国']
+    }
+flag = 0 # 0: 正常搜索；1: 互斥搜索。'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']
+```
+执行 `python search.py`，搜索结果放在文件夹 `./search`内。
+
 
 ## 全盘更新，大约15分钟：
 
@@ -37,20 +50,7 @@ updateDaily(latest)
 安卓手机可以在Termux上面安装python，实现随时随地更新文章，亲测好用。
 
 
-## 问答搜索
-
-修改文件**search.py**的字典**search_list**和**flag**：
-```python
-search_list = {
-    '教育': ['教育','思考','读书'],
-    '科幻': ['科幻','Asimov'],
-    '美国': ['美国']
-    }
-flag = 0 # 0: 正常搜索；1: 互斥搜索。比如，'科幻'的搜索结果内不包含['教育','思考','读书']，'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']。
-```
-执行`python search.py`，搜索结果放在文件夹`./search`内。
-
-# Git 备忘
+### Git 备忘
 
 ```
 git add .
