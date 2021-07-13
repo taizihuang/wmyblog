@@ -3,9 +3,10 @@ from mako.template import Template
 
 def genHTML(df_comment,filename):
     HTML = Template("""<!DOCTYPE html><html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
-<link rel="stylesheet" href="./init.css">
+<link rel="stylesheet" href="../html/init.css">
 </head>
 <body><div class="BODY">
+<h1>${filename}</h1>
 <div class="REPLY_LI">
 <h2>${len(reply_li)} 条留言</h2>
 %for say, reply, user, time in reply_li:
@@ -29,11 +30,29 @@ def genHTML(df_comment,filename):
             nickname = df_comment.nickname[j]
             comment_date = df_comment.date[j]
             reply_li.append((comment,reply,nickname,comment_date))
-    with open('/mnt/d/Documents/Downloads/'+filename+'.html','w') as f:
-        f.write(HTML.render(reply_li=reply_li))
+    with open('./search/'+filename+'.html','w') as f:
+        f.write(HTML.render(filename=filename,reply_li=reply_li))
     return
 
-name = ''
-df = pd.read_pickle('/mnt/d/Documents/Downloads/comment_full.pkl')
-df_comment = df.loc[df.comment.str.contains(name) | df.reply.str.contains(name)]
-genHTML(df_comment,name)
+
+search_list = {
+    '教育': ['教育','思考','读书'],
+    '科幻': ['科幻','Asimov'],
+    '美国': ['美国']
+    }
+flag = 0 # 0: 正常搜索；1: 互斥搜索。比如，'科幻'的搜索结果内不包含['教育','思考','读书']，'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']。
+
+df = pd.read_pickle('./data/comment_full.pkl')
+df['flag'] = 0
+
+for filename in search_list.keys():
+    name = search_list[filename]
+    idx = df.comment.str.contains(name[0]) | df.reply.str.contains(name[0]) 
+    if len(name) > 1:
+        for i in range(1,len(name)):
+            idx = idx | df.comment.str.contains(name[i]) | df.reply.str.contains(name[i])
+
+    df_comment = df.loc[idx & (df.flag == 0)]
+    df_comment = df_comment.sort_values(by='date')
+    genHTML(df_comment,filename)
+    df.loc[idx,'flag'] = flag
