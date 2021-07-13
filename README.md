@@ -20,6 +20,11 @@ flag = 0 # 0: 正常搜索；1: 互斥搜索。'美国'的搜索结果不包含�
 ```
 执行 `python search.py`，搜索结果放在文件夹 `./search`内。
 
+## Github 搜索
+
+在 Github 搜索栏输入 `搜索内容 repo:taizihuang/wmyblog`，点击下拉菜单的 `All Github` 即可返回结果。
+
+由于Github分词技术不好，所以该方法只能返回少量结果或者没有结果。
 
 ## 全盘更新，大约15分钟：
 
