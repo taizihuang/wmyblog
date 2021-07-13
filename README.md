@@ -8,7 +8,7 @@
 
 
 
-全盘更新，大约15分钟：
+## 全盘更新，大约15分钟：
 
 ```python
 from wmyblog import * # wmyblog.py是库函数，你需要用pip或者conda安装requirements.txt内的依赖
@@ -22,7 +22,7 @@ genHTMLAll() # 利用文章和评论的pkl文件生成独立的html文件 [不�
 genINDEX() # 生成文章目录index.html [不需要联网]
 ```
 
-每日更新，只需10秒：
+## 每日更新，只需10秒：
 
 ```python
 from wmyblog import *
@@ -36,6 +36,10 @@ updateDaily(latest)
 
 安卓手机可以在Termux上面安装python，实现随时随地更新文章，亲测好用。
 
+
+## 问答搜索
+
+修改文件**search.py**的字典**search_list**和**flag**，执行`python search.py`，搜索结果放在文件夹`./search`内。
 
 
 # Git 备忘
