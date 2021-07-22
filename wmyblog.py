@@ -90,20 +90,6 @@ def updateArticle(articleFile = './data/article_full.pkl'):
     df_article = df_article.drop_duplicates()
     os.rename(articleFile,articleFile+'.bak')
     df_article.to_pickle(articleFile)
-    
-    # save dataframe file eas json
-    article_li = []
-    for i in df_article.index:
-        id = df_article.id[i]
-        title = df_article.title[i]
-        art_date = df_article.art_date[i]
-        post = df_article.post[i]
-        article_li.append([id,title,art_date,post])
-    with open(articleFile+'.json','wb') as data:
-        for i in range(len(article_li)):
-            article_li[i][2] = str(article_li[i][2])
-            s = json.dumps(article_li[i]) + "\n"
-            data.write(s.encode('utf-8'))
     return
 
 def updateComment(commentFile="./data/comment_full.pkl"):
@@ -125,24 +111,38 @@ def updateComment(commentFile="./data/comment_full.pkl"):
     df_comment = df_comment.drop_duplicates()
     os.rename(commentFile,commentFile+'.bak')
     df_comment.to_pickle(commentFile)
-    
-    #save dataframe as json file
-    comment_li = []
+    return
+
+def exportJSON(articleFile,commentFile,jsonFile):
+    df_article = pd.read_pickle(articleFile)
+    df_comment = pd.read_pickle(commentFile)
+
+    article_list = []
+    title_dict = {}
+    for i in df_article.index:
+        id = df_article.id[i]
+        title = df_article.title[i]
+        title_dict[id] = title
+        art_date = df_article.art_date[i]
+        post = df_article.post[i]
+        article_list.append({"id":id,"title":title,"date":art_date.strftime('%Y-%m-%d %H:%M:%S'),"post":post})
+
+    comment_list = []
     for i in df_comment.index:
         id = df_comment.id[i]
+        title = title_dict[id]
         nickname = df_comment.nickname[i]
         comment = df_comment.comment[i]
         comment_date = df_comment.date[i]
         reply = df_comment.reply[i]
-        comment_li.append([id,nickname,comment_date,comment,reply])
-    with open(commentFile+'.json','wb') as data:
-        for i in range(len(comment_li)):
-            comment_li[i][2] = str(comment_li[i][2])
-            s = json.dumps(comment_li[i]) + "\n"
-            data.write(s.encode('utf-8'))
-    return
+        if reply:
+            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply})
 
-def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data/comment_full.pkl',jsonFile='./data/article_list.json'):
+    wmy = {"article":article_list,"comment":comment_list}
+    with open(jsonFile,'w') as f:
+        f.write(json.dumps(wmy))
+
+def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data/comment_full.pkl',jsonFile='./search/wmyblog.json'):
     df_article_old = pd.read_pickle(articleFile)
     df_comment_old = pd.read_pickle(commentFile)
     df_article_new = pd.DataFrame(columns = ['id','title','art_date','post'])
@@ -164,11 +164,11 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
             time.sleep(1)
     df_article = df_article_new.append(df_article_old,ignore_index=True)
     df_article = df_article.drop_duplicates(subset=['id'],keep='first')
-    df_artile = df_article.reset_index(drop=True)
+    df_article = df_article.reset_index(drop=True)
     art_list = {}
     for i in df_article.index:
         art_list[df_article.id[i]] = df_article.title[i]
-    with open(jsonFile,'w') as outfile:
+    with open('./data/article_list.json','w') as outfile:
         json.dump(art_list, outfile)
 
     # update comment items
@@ -191,7 +191,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     # generate htmls that have new comments
     df_comment_today = df_comment.loc[df_comment.date > latest]
     df_comment_today = df_comment_today.sort_values(by='date',ascending=False)
-    with open(jsonFile) as infile:
+    with open('./data/article_list.json') as infile:
         dict_reply = json.load(infile)
     genLatestComment(df_comment_today,dict_reply)
     for art_id in df_comment_today.id.unique():
@@ -202,6 +202,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     os.rename(articleFile,articleFile+'.bak')
     df_article.to_pickle(articleFile)
 
+    exportJSON(articleFile,commentFile,jsonFile)
     genINDEX()
     return
 
