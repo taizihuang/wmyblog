@@ -323,6 +323,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     </head>
     <body><div class="BODY">
     <h1>王孟源的博客镜像</h1>
+    <h4>博客内容搜索：<a href="https://taizihuang.github.io/wmyblog/search/">https://taizihuang.github.io/wmyblog/search/</a></h4>
     <h4>原网址：<a href="http://blog.udn.com/MengyuanWang/article">http://blog.udn.com/MengyuanWang/article</a></h4>
     <h4>经济学人镜像：<a href="https://taizihuang.github.io/TheEconomist/">https://taizihuang.github.io/TheEconomist/</a></h4>
     <h4>外交杂志镜像：<a href="https://taizihuang.github.io/ForeignAffairs/">https://taizihuang.github.io/ForeignAffairs/</a></h4>

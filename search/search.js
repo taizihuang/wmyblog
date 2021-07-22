@@ -13,6 +13,10 @@ function search() {
         $.ajax({
             url: 'wmyblog.json',
             dataType: 'json',
+            headers: {
+                "accept": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
             beforeSend: function() {
                 $("body").append('<div id="load"> loading </div>');
             },
@@ -68,7 +72,7 @@ function search() {
                         })
                         if (keywords[0]) {
                             if (isMatch) {
-                                post_str += "<li class='article-result-item'><a href='https://taizihuang.github.io/wmyblog/html/" + data_url + ".html' target='_blank' class='search-result-title'>" + data_title + "</a>";
+                                post_str += "<li class='article-result-item'><a href='../html/" + data_url + ".html' target='_blank' class='search-result-title'>" + data_title + "</a>";
                                 var content = data.content.trim().replace(/<[^>]+>/g, "");
                                 if (first_occur >= 0) {
                                     var start = first_occur - 100;
@@ -105,7 +109,7 @@ function search() {
                         var nickname = data.nickname;
                         var title = data.title;
                         var date = data.date
-                        var uuid = date.replaceAll(' ', '').replaceAll('-', '').replaceAll(':', '').substr(2, 10)
+                        var uuid = date.replace(/[- :]/g, '').substr(2, 10)
                         var index_comment = -1;
                         var index_reply = -1;
                         var isMatch = true;
@@ -123,7 +127,7 @@ function search() {
                                     comment = comment.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
                                     reply = reply.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
                                 });
-                                reply_str += "<div class='LI'><div class='USER'><span class='NAME'>" + title + " | <a href='https://taizihuang.github.io/wmyblog/html/" + comment_url + ".html#" + uuid + "' target='_blank'>" + nickname + "</a></span><div class='TIME'>" + date + "</div></div>";
+                                reply_str += "<div class='LI'><div class='USER'><span class='NAME'>" + title + " | <a href='../html/" + comment_url + ".html#" + uuid + "' target='_blank'>" + nickname + "</a></span><div class='TIME'>" + date + "</div></div>";
                                 reply_str += "<div class='SAY'>" + comment + "</div>"
                                 reply_str += "<div class='REPLY'>" + reply + "</div>"
                                 comment_count += 1
