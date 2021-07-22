@@ -11,7 +11,7 @@ function search() {
 
     delayTimer = setTimeout(function() {
         $.ajax({
-            url: 'https://taizihuang.github.io/wmyblog/data/wmyblog.json',
+            url: 'wmyblog.json',
             dataType: 'json',
             beforeSend: function() {
                 $("body").append('<div id="load"> loading </div>');
