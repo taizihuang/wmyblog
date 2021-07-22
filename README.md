@@ -7,24 +7,14 @@
 模板来自：https://wmyblog.github.io
 
 
-## 问答搜索
+## 在线搜索
 
-修改文件 **search.py** 内的 **search_list** 字典和 **flag** ：
-```python
-search_list = {
-    '教育': ['教育','思考','读书'],
-    '科幻': ['科幻','Asimov'],
-    '美国': ['美国']
-    }
-flag = 0 # 0: 正常搜索；1: 互斥搜索。'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']
-```
-执行 `python search.py`，搜索结果放在文件夹 `./search`内。
+请访问 https://taizihuang.github.io/wmyblog/search/
 
-## Github 搜索
+## 离线搜索
 
-在 Github 搜索栏输入 `搜索内容 repo:taizihuang/wmyblog`，点击下拉菜单的 `All Github` 即可返回结果。
+clone本仓库，然后用Edge浏览器打开search/index.html文件，即可在本地搜索。Chrome因为需要解决跨域问题，所以不能直接用来搜索。
 
-由于Github分词技术不好，所以该方法只能返回少量结果或者没有结果。
 
 ## 全盘更新，大约15分钟：
 
