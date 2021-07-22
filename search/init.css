@@ -116,22 +116,19 @@ html {
     margin: auto;
 }
 
-body {
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-    font-weight: 400;
-    font-size: 16px;
-    padding-bottom: 80px;
-}
-
 input {
     margin: 0 auto;
     height: 50px;
-    width: 575px;
+    width: 80%;
+    max-width: 500px;
     border-radius: 30px solid;
     border: 50px solid #181515;
     outline: none;
+}
+
+input#search-input {
+    width: 80%;
+    max-width: 450px;
 }
 
 .input {
