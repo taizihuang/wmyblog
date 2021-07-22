@@ -1,0 +1,35 @@
+<html lang="zh-cn">
+
+<head>
+    <link rel="stylesheet" href="init.css">
+    <script src='jquery.min.js'></script>
+    <script src='search.js'></script>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
+    <meta charset=utf-8>
+</head>
+
+<body>
+    <h1>博客搜索</h1>
+    <div clas="search" id="search">
+        <div class="input">
+            <input type="text" id="search-input">
+            <button type="button" onclick="search()">搜索</button>
+        </div>
+
+        <div id="search-result">
+            <div class="post_count"></div>
+            <div class="comment_count"></div>
+            <br><br>
+            <div class="POST_LI">
+                <p>使用须知：第一次搜索请等待loading加载完，然后再按一次“搜索”</p>
+            </div>
+            <div class="REPLY_LI">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
