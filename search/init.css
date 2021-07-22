@@ -96,6 +96,10 @@ select {
     font-weight: inherit
 }
 
+.search-result {
+    word-wrap: break-word;
+}
+
 input,
 textarea,
 select {
@@ -119,7 +123,7 @@ html {
 input {
     margin: 0 auto;
     height: 50px;
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     border-radius: 30px solid;
     border: 50px solid #181515;
@@ -127,8 +131,8 @@ input {
 }
 
 input#search-input {
-    width: 80%;
-    max-width: 450px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .input {
