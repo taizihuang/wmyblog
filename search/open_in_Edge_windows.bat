@@ -1,1 +1,1 @@
-start C:\"Program Files (x86)"\Microsoft\Edge\Application\msedge.exe --allow-file-access-from-files %cd%/index.html
+start C:\"Program Files (x86)"\Microsoft\Edge\Application\msedge.exe --allow-file-access-from-files "%cd%/index.html"
