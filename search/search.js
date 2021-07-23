@@ -14,7 +14,7 @@ function search() {
             "Access-Control-Allow-Origin": "*"
         },
         beforeSend: function() {
-            $("body").append('<div id="load"> loading </div>');
+            $post_count.html('<div id="load"> loading </div>');
         },
         complete: function() {
             $("#load").remove();
