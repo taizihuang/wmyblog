@@ -13,7 +13,20 @@
 
 ## 离线搜索
 
-clone本仓库，然后用Edge浏览器打开search/index.html文件，即可在本地搜索。Chrome因为需要解决跨域问题，所以不能直接用来搜索。
+Chrome 用户：彻底关闭Chrome。单击 **search** 目录下 `open_in_Chrome_windows.bat` 批处理文件
+
+Edge 用户：彻底关闭Edge。单击 **search** 目录下 `open_in_Edge_windows.bat` 批处理文件
+
+出于安全考虑，搜索结束请关闭Chrome/Edge，并按正常方式打开。
+
+原理：由于Chrome默认禁止ajax访问本地文件，如需使用离线搜索功能，需要开启本地文件系统：
+```bat
+start C:\"Program Files"\Google\Chrome\Application\chrome.exe --allow-file-access-from-files %cd%/index.html
+start C:\"Program Files (x86)"\Microsoft\Edge\Application\msedge.exe --allow-file-access-from-files %cd%/index.html
+```
+如果Chrome不是安装在默认目录，需要手动修改路径。
+
+
 
 
 ## 全盘更新，大约15分钟：

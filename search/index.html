@@ -26,7 +26,7 @@
         <h1>博客搜索</h1>
         <div clas="search" id="search">
             <div class="input">
-                <input type="text" id="search-input">
+                <input type="text" onkeydown="enter(event)" id="search-input">
                 <button type="button" onclick="search()">搜索</button>
             </div>
 
@@ -35,9 +35,8 @@
                 <div class="comment_count"></div>
                 <br><br>
                 <div class="POST_LI">
-                    <p>使用须知：1. 第一次搜索请等待loading加载完，然后再按一次“搜索”</p>
-                    <p>2. 推荐国内用户<a href="https://github.com/taizihuang/wmyblog/archive/refs/heads/main.zip">离线下载</a>，并用Edge浏览器打开search/index.html实现本地搜索</p>
-                    <p>3. Chrome离线搜索需要解决跨域问题。</p>
+                    <p>使用须知：<del>1. 第一次搜索请等待loading加载完，然后再按一次“搜索”</del>，可以回车</p>
+                    <p>2. 离线搜索请参考<a target='_blank' href="https://github.com/taizihuang/wmyblog/blob/main/README.md#离线搜索">README</a></p>
                 </div>
                 <div class="REPLY_LI">
 
@@ -45,6 +44,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function enter(e) {
+            if (e.keyCode == 13) {
+                search()
+            }
+        }
+    </script>
 </body>
 
 
