@@ -7,8 +7,19 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-03 09:07 +0800</lastBuildDate>
+    <lastBuildDate>10-03 10:29 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】再談Google的量子霸權 | Fatgirl]]></title>
+    <description><![CDATA[其實目前聽到量子電腦的目標大約是1000個物理qubit 然後進行大約100次的無糾錯量子gate, 大約還有50%左右的fidelity, 他們相信就能有不少的應用,比如說最近很熱門的quantum deep learning, 這個目標看起來還挺現實的,不像shor's algorithm那樣
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2021-10-03 09:55:00 +0800</pubDate>
+    <guid isPermaLink="false">2110030955</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/130416352.html#2110030955</link>
+    </item>
     <item>
     
     
