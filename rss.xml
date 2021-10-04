@@ -7,8 +7,19 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-05 01:24 +0800</lastBuildDate>
+    <lastBuildDate>10-05 02:21 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【歷史】冷戰、學運和五四運動 | makludi]]></title>
+    <description><![CDATA[这里的第一性原则，即为lipperman的如何做是对现在的群体利益最好的做法。隐去历史是为了让群体前进，还是为了继续蒙蔽群体利益，这是两个很不一样的出发点，即便做法是一致的。做判断的时候，是先考虑1.前提，2.目标，3.做法，而不是反过来。
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2021-10-05 01:37:00 +0800</pubDate>
+    <guid isPermaLink="false">2110050137</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/164999328.html#2110050137</link>
+    </item>
     <item>
     
     
@@ -121,7 +132,7 @@
     <title><![CDATA[【基礎科研】再談Google的量子霸權 | Fatgirl]]></title>
     <description><![CDATA[其實目前聽到量子電腦的目標大約是1000個物理qubit 然後進行大約100次的無糾錯量子gate, 大約還有50%左右的fidelity, 他們相信就能有不少的應用,比如說最近很熱門的quantum deep learning, 這個目標看起來還挺現實的,不像shor's algorithm那樣
  <br><br>----<br><br>
-運氣好的話，或許能做出一個原型吧。運氣極佳的話，或許能在某個特殊目的優於古典電腦的AI。運氣達到天文數字的時候，或許這個特殊目的還真能有一點經濟或社會效益。但是這麽一來，量子計算的整體實用價值的Expectation Value，還不如把某些特定的基因片段在人體内如何作用搞清楚，亦即基因工程的幾十萬個發展前途的其中一個，憑什麽來作爲國家的頭號科研方向？光是有可能用途是廢話，隨便哪個科幻夢想可能性都不是數學上的零；既然敢要求國家投入最優先的資源，那麽論證它價值的責任不在質疑者，而在推動者身上，而且論證的標準不能只是或許、最終、如果、可能會有一點結果，美國學術界認爲它是個發論文的熱門題材更加是毫不相干的論述，這個論證必須證明它的實用期望值要比所有其他的科研方向都更高。原本Shor's Algorithm有超越經濟價值的軍事戰略意義，所以可以多給幾個數量級的Utility Weight加權，現在改成搞Deep Learning，這純粹是商業應用，量子計算連入門都不夠格。
+運氣好的話，或許能做出一個原型吧。運氣極佳的話，或許能在某個特殊目的優於古典電腦的AI。運氣達到天文數字的時候，或許這個特殊目的還真能有一點經濟或社會效益。但是這麽一來，量子計算的整體實用價值的Expectation Value，還不如把某些特定的基因片段在人體内如何作用搞清楚，亦即基因工程的幾十萬個發展前途的其中一個，憑什麽來作爲國家的頭號科研方向？光是有可能用途是廢話，隨便哪個科幻夢想可能性都不是數學上的零；既然敢要求國家投入最優先的資源，那麽論證它價值的責任不在質疑者，而在推動者身上，而且論證的標準不能只是或許、最終、如果、可能會有一點結果，美國學術界認爲它是個發論文或給獎金的熱門題材更加是毫不相干的論述，這個論證必須證明它的實用期望值要比所有其他的科研方向都更高。原本Shor's Algorithm有超越經濟價值的軍事戰略意義，所以可以多給幾個數量級的Utility Weight加權，現在改成搞Deep Learning，這純粹是商業應用，量子計算連入門都不夠格。
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2021-10-03 09:55:00 +0800</pubDate>
