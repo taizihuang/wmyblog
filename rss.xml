@@ -7,8 +7,37 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-22 06:18 +0800</lastBuildDate>
+    <lastBuildDate>10-22 07:18 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【國際】歐盟内部的無色革命 | downhill]]></title>
+    <description><![CDATA[字数限制，承接上篇
+4. 从推论(2)可知，n的最小合法值是m+1，那么先假设n=m+1, 将其代入f1中，得出f1(m,m+1) = m^4+1+(2-m)*(m+1)^3 = 3*m^2+5*m-m^3+3。新的函数称之为f2: f2(m)=3*m^2+5*m-m^3+3，对f2进行求导后可以得知：当m&gt;2.64(大约值)时，f2的值单调递减，同时当m=5时，f2的值是负数。那么可以得出当m&gt;=5时，f2的值永远是负数。将此结论推回f1: 当m&gt;=5, n=m+1时，f1的值永远是负数。那么，根据之前的推论(3):"当m的值确定且m&gt;2后，f1的值随n的增大而递减", 由于n=m+1已经是最小合法值，那么可以得出推论：当m&gt;=5, n=任意合法值(任意大于n的自然数)时，f1的值永远为负数。而根据方程A，f1的值必须等于n，而n的前提是自然数不能为负数。所以可以得出结论：当m&gt;=5时，方程A以及原方程不存在n为自然数的解。6. 根据以上结论，m的选项除了2以外只剩下0, 1, 3, 4这四种，将其一一代入原方程后可以发现n都不是自然数，所以m=2,n=17是唯一一组自然数解。 证明完毕。
+ 
+
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2021-10-22 07:01:00 +0800</pubDate>
+    <guid isPermaLink="false">2110220701</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/169567151.html#2110220701</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【國際】歐盟内部的無色革命 | downhill]]></title>
+    <description><![CDATA[方程式
+//證明方程式 m^4 + 2*n^3 + 1 = m*n^3 + n 只有一組自然數解
+试着证明一下：1.将原等式简单变形一下m^4+2*n^3+1=m*n^3+n -&gt; m^4+1+(2-m)*n^3=n。把变形后的方程称为方程A, 方程A的左边称为函数f1：f1(m,n)=m^4+1+(2-m)*n^3(下面的步骤会用到)。可以快速得出(m=2,n=17)是其中一组自然数解。然后就是证明是否还有其他自然数解。2. 从方程A可以快速证明出n&gt;m(也就是m^4-m*n^3必须为负数)。3. 当m的值确定且m&gt;2后，f1的值随n的增大而递减，可以通过对f1求导来证明(求导时m视为常数)。
+ 
+
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2021-10-22 06:54:00 +0800</pubDate>
+    <guid isPermaLink="false">2110220654</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/169567151.html#2110220654</link>
+    </item>
     <item>
     
     
