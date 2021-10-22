@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-22 09:12 +0800</lastBuildDate>
+    <lastBuildDate>10-22 10:33 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -17,7 +17,9 @@
 4. 从推论(2)可知，n的最小合法值是m+1，那么先假设n=m+1, 将其代入f1中，得出f1(m,m+1) = m^4+1+(2-m)*(m+1)^3 = 3*m^2+5*m-m^3+3。新的函数称之为f2: f2(m)=3*m^2+5*m-m^3+3，对f2进行求导后可以得知：当m&gt;2.64(大约值)时，f2的值单调递减，同时当m=5时，f2的值是负数。那么可以得出当m&gt;=5时，f2的值永远是负数。将此结论推回f1: 当m&gt;=5, n=m+1时，f1的值永远是负数。那么，根据之前的推论(3):"当m的值确定且m&gt;2后，f1的值随n的增大而递减", 由于n=m+1已经是最小合法值，那么可以得出推论：当m&gt;=5, n=任意合法值(任意大于n的自然数)时，f1的值永远为负数。而根据方程A，f1的值必须等于n，而n的前提是自然数不能为负数。所以可以得出结论：当m&gt;=5时，方程A以及原方程不存在n为自然数的解。6. 根据以上结论，m的选项除了2以外只剩下0, 1, 3, 4这四种，将其一一代入原方程后可以发现n都不是自然数，所以m=2,n=17是唯一一组自然数解。 证明完毕。
  
 
- <br><br>----<br><br>]]></description>
+ <br><br>----<br><br>
+是的，這類問題一般都是先排除數值較小的案例（m&lt;6)，然後利用自然數的discrete特性來做證明；在這道題目裏，n&gt;m&gt;5之後，就只能是n=m+1，接著證明它不自洽就行了。
+]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2021-10-22 07:01:00 +0800</pubDate>
     <guid isPermaLink="false">2110220701</guid>
