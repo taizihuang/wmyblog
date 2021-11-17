@@ -7,8 +7,20 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>11-17 19:15 +0800</lastBuildDate>
+    <lastBuildDate>11-17 20:32 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[这个部落格  | Niets]]></title>
+    <description><![CDATA[要建一个王先生般的AI系统，恐怕也得要求AI像王先生一样做数学奥赛题（笑）。
+恰巧最近学术界推出了一个数据集（https://github.com/hendrycks/math），专门测试AI做数学题的能力。用最好的AI加以训练，结果还是惨不忍睹（AI准确率6.9%，作为对比：一般PhD有40%，IMO金牌有90%）。这并不意外，推理演绎的确实现今AI的一大短板，数据量再大也只能学习相关性。
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2021-11-17 20:30:00 +0800</pubDate>
+    <guid isPermaLink="false">2111172030</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908719.html#2111172030</link>
+    </item>
     <item>
     
     
