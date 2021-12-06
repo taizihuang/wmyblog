@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>12-06 23:21 +0800</lastBuildDate>
+    <lastBuildDate>12-07 00:25 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -213,19 +213,6 @@
     <pubDate>2021-11-30 13:56:00 +0800</pubDate>
     <guid isPermaLink="false">2111301356</guid>
     <link>https://taizihuang.github.io/wmyblog/html/168240141.html#2111301356</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【能源】熔鹽堆簡介 | makludi]]></title>
-    <description><![CDATA[在对比看學術管理】從假大空談新時代的學術管理一文之中关于熔盐堆的美方报告的介绍，有几点疑问请王先生解惑。第一，这里介绍环路之间需要石墨减速，建立环-环间的墙是一个挑战，可学术管理一文中介绍的氚泄露发生在环内管道，是不是熔盐堆的挑战不止一个，而是至少两个同样复杂的挑战？第二，中国现在实现了实验堆开机，是不是至少这两个问题都已经解决了。这篇论文应该讲的是中国的研究人员如何监测和控制氚https://inis.iaea.org/search/search.aspx?orig_q=RN:43075667
- <br><br>----<br><br>
-1.是兩回事。氚原子太小，自然會滲入金屬晶格之中，造成氫脆；石墨墻則是受中子撞擊，所以碳原子會被打出晶格。當然聚變堆的中子數量和能量都更高，内壁又要兼顧其他任務，所以連定期更換的選項都沒有，我在後註裏不是說只有魔法才可能滿足需求嗎？2.熔鹽堆生產的氚，是毫克級別的；但正因爲這樣的量級還有實際解決的可能性，論文作者可以誠實地定調為“Large amount of tritium”。聚變堆必須處理的氚，多出8-9個數量級，那些人反而一再强調“沒有問題”；這正是當代科研界的Irony：所謂的科學家和他們的科普作家朋友們，比二手車推銷員更加不可信任。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2021-11-29 06:26:00 +0800</pubDate>
-    <guid isPermaLink="false">2111290626</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/123728083.html#2111290626</link>
     </item>
     </channel></rss>
     
