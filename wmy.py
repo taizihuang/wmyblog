@@ -3,7 +3,7 @@ from wmyblog import *
 #os.environ['http_proxy'] = "http://127.0.0.1:7890" #代理的端口
 #os.environ['https_proxy'] = "http://127.0.0.1:7890"
 
-latest = today() - datetime.timedelta(days=7)
+latest = today() - datetime.timedelta(days=14)
 updateDaily(latest)
 
 #updateArticle() #更新文章，保存成pkl和json格式
