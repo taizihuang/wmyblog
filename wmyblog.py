@@ -57,7 +57,7 @@ def fetch(art_id):
     #save image
     count = 1
     for i in post.findAll('img'):
-        url = i.attrs['src']
+        url = i.attrs['src'].replace('\r','').replace('\n','')
         img = requests.get(url).content
         imgfile = "/img/"+art_id+"_"+str(count)
         with open("./html%s" % imgfile, "wb") as f:
