@@ -7,8 +7,24 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>02-09 09:10 +0800</lastBuildDate>
+    <lastBuildDate>02-09 10:34 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術腐敗的頭號誤區 | 彝圪學殅]]></title>
+    <description><![CDATA[我本科時候（2013左右）在國內有選修過量子光學/信息/計算方面的課程，用的學習資料是中科大那一派的。王先生也不妨把我的問題當成既得利益方可能的說辭。
+
+按照我以前的理解，量子通信的主要價值是，一旦通信被竊聽，通信方就會基於由於量子退相干的特性，立馬察覺到自己被竊聽了。故而似乎量子通信的價值的邏輯前提僅僅只需正文中的2)。
+而shor算法等其它量子算法的主要作用在於製造量子計算機，使它在處理一些特例問題時較傳統計算機有明顯優勢。（製造量子計算機它本身就是目的，未必要將它用於破解傳統密碼的加密方式。常見的說法是以量子計算機取代傳統計算機是後摩爾時代信息產業發展的一條candidate path）
+ <br><br>----<br><br>
+的確是典型的詐騙集團Talking points。首先，量子通信偵測監聽會有必要，前提是公開碼會被破解；量子計算的經濟效益虛無縹緲、微不足道，唯一值得大筆投資的理由正是破解公開碼。這裏的邏輯因果關係是很明顯的。其次，量子通信的反監聽能力，其實也可以反制的；不過那離正文的主軸太遠，我不想困惑讀者。Shor's Algorithm唯一的功能就是迅速求解素因數（台灣叫做“質因數”）。你會寫下最後一段，證明你對這個議題完全外行，應該先做幾天研究再來討論，警告一次。
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-09 09:14:00 +0800</pubDate>
+    <guid isPermaLink="false">2202090914</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2202090914</link>
+    </item>
     <item>
     
     
