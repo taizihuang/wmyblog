@@ -14,13 +14,13 @@ def getPageLink(n=11):
     '''
     Return (id,title) of the nth page.
     '''
-    url = "http://blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno="
+    url = "https://blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno="
     link = []
     r = requests.get(url+str(n))
     doc = BeautifulSoup(r.content,features="lxml")
     docu = doc.findAll(class_="article_topic")
     for i in docu:
-        id = i('a')[0].get('href').replace('http://blog.udn.com/MengyuanWang/','')
+        id = i('a')[0].get('href').replace('https://blog.udn.com/MengyuanWang/','')
         title = i.text.replace('\n','')
         link.append((id,title))
     return link
@@ -29,7 +29,7 @@ def getPageLinkAll(n=11):
     '''
     Return Dataframe with columns (id,title) from page 1 to n.
     '''
-    url = "http://blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno="
+    url = "https://blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno="
     id = []
     title = []
     for nPage in range(n):
@@ -37,7 +37,7 @@ def getPageLinkAll(n=11):
         doc = BeautifulSoup(r.content,features="lxml")
         docu = doc.findAll(class_="article_topic")
         for i in docu:
-            id.append(i('a')[0].get('href').replace('http://blog.udn.com/MengyuanWang/',''))
+            id.append(i('a')[0].get('href').replace('https://blog.udn.com/MengyuanWang/',''))
             title.append(i.text.replace('\n',''))
     df_link = pd.DataFrame({"id":id,"title":title})
     return df_link
@@ -47,7 +47,7 @@ def fetch(art_id):
     Fetch article metadata/
     Return (art_id,title,art_date,post)
     '''
-    url = "http://blog.udn.com/MengyuanWang/"
+    url = "https://blog.udn.com/MengyuanWang/"
     response = requests.get(url+art_id)
     doc = BeautifulSoup(response.content,features="lxml")
     title = doc.find(class_="article_topic").text
@@ -148,7 +148,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     df_article_new = pd.DataFrame(columns = ['id','title','art_date','post'])
     df_comment_new = pd.DataFrame(columns = ['comment','reply','nickname','date','id'])
 
-    url = "http://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE="
+    url = "https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE="
 
     # update article items
     response = requests.get(url+"new_view")
@@ -177,7 +177,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     docu = doc.findAll(class_="main-title")
     dict_reply = {'0':'0'}
     for i in docu:
-        art_id = i.attrs['href'].replace('http://blog.udn.com/MengyuanWang/','')
+        art_id = i.attrs['href'].replace('https://blog.udn.com/MengyuanWang/','')
         nPage,df = getComment(art_id)
         if nPage > 1:
             nPage,df1 = getComment(art_id,n=1)
@@ -243,7 +243,7 @@ def genHTML(art_id,df_article,df_comment):
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
     <h1>${title}</h1>
     <p class="DATE">${date}</p>
-    <h4>原文网址：<a href="http://blog.udn.com/MengyuanWang/${art_id}">http://blog.udn.com/MengyuanWang/${art_id}</a></h4>
+    <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/${art_id}">https://blog.udn.com/MengyuanWang/${art_id}</a></h4>
     <br><br>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
@@ -324,7 +324,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     <body><div class="BODY">
     <h1>王孟源的博客镜像</h1>
     <h4>博客内容搜索：<a href="https://taizihuang.github.io/wmyblog/search/">https://taizihuang.github.io/wmyblog/search/</a></h4>
-    <h4>原网址：<a href="http://blog.udn.com/MengyuanWang/article">http://blog.udn.com/MengyuanWang/article</a></h4>
+    <h4>原网址：<a href="https://blog.udn.com/MengyuanWang/article">https://blog.udn.com/MengyuanWang/article</a></h4>
     <h4>Odd Lots文字稿：<a href="https://taizihuang.github.io/OddLots">https://taizihuang.github.io/OddLots</a></h4>
     <h4>经济学人镜像：<a href="https://taizihuang.github.io/TheEconomist/">https://taizihuang.github.io/TheEconomist/</a></h4>
     <h4>外交杂志镜像：<a href="https://taizihuang.github.io/ForeignAffairs/">https://taizihuang.github.io/ForeignAffairs/</a></h4>
@@ -458,7 +458,7 @@ def getComment(art_id,n=0):
     Return (nPage, df['comment','reply','nickname','date','id']).
     '''
     #art_id = "110576971"
-    url = "http://blog.udn.com/blog/article/article_reply_ajax.jsp?uid=MengyuanWang&f_ART_ID="
+    url = "https://blog.udn.com/blog/article/article_reply_ajax.jsp?uid=MengyuanWang&f_ART_ID="
     response = requests.get(url+art_id+"&pno="+str(n))
     doc = BeautifulSoup(response.content,features="lxml")
     
