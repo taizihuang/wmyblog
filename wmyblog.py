@@ -155,7 +155,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     doc = BeautifulSoup(response.content,features="lxml")
     docu = doc.findAll(class_="main-title")
     for i in docu:
-        art_id = i.attrs['href'].replace('http://blog.udn.com/MengyuanWang/','')
+        art_id = i.attrs['href'].replace('https://blog.udn.com/MengyuanWang/','')
         if not art_id in df_article_old.id.values:
             (art_id,title,art_date,post) = fetch(art_id)
             df_article_new = df_article_new.append({'id':art_id,'title':title,'art_date':art_date,'post':str(post)},ignore_index=True)
