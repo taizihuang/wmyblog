@@ -7,8 +7,38 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>02-17 13:17 +0800</lastBuildDate>
+    <lastBuildDate>02-17 14:23 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Niets]]></title>
+    <description><![CDATA[看到23楼和王先生的回复，让我深有感触：即使在计算机科学这样一个工程领域，各种论文汇报结果时也是藏着各种猫腻－－其中最常见的就是故意把基线（baseline）做得很差，从而使自己的结果更好看，这种手段在像量子计算这样的新兴领域里特别常见。因为不同论文的基线都不一样，也就导致了王先生曾经提到过的reproducibility crisis。
+应对这种伎俩最好的办法之一就是做一个公开的Benchmark，大家跑同样的算法比一比，然后列在一个排行榜上，这样结果好坏一目了然。到时候量子计算机有几斤几两就容易分辨的多了。我希望做超算（supercomputing）的研究者们可以尝试一下，毕竟量子计算霸占的经费也有你们的一份。
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-17 13:56:00 +0800</pubDate>
+    <guid isPermaLink="false">2202171356</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2202171356</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Whatever012]]></title>
+    <description><![CDATA[隨便
+王先生您的理解稱不上錯 但畢竟不完整 所以沒法了解到底這波熱潮是怎麼來的
+其實這波量子熱潮的目標 根本不是任何通訊或加密相關 就像王先生說的 那些都是達不到的 這波熱潮真正的目標 其實是用量子位元建構的機器去做各種系統模擬和機器學習 
+量子計算在解碼和通信上的理論 終究是千禧年之前就的事情 這二十年終究還是有別的進展 像是利用量子算法解線性方程組 （HHL algorithm）這在機器學習上有很大的潛在優勢
+這波的熱潮 真正的關鍵詞是 noisy intermediate-scale quantum (NISQ) era 主要是意識到 隨著量子位元數到了一個地步 可能會存在某些特定的問題 是使用當下的量子電腦就可以做的比較好的 而那些問題的算法甚至不需要是嚴格意義的量子算法 這才是量子霸權的定義：它並不是說量子電腦可以在大多數問題上贏過古典電腦 而只是說 在某些特定的問題上 以可見未來的技術 就可以利用量子算法來獲得速度上的大幅度提升
+雖然這波熱潮的確存在著炒作的成分 畢竟 暫時沒有在有大量利益可圖的問題上真正實現量子霸氣 目前展示量子霸權的問題都是沒有什麼太大利益的問題 尋找有利可圖的問題也是這波熱潮的目標 然而如果只是聚焦在加碼密碼通信上的應用 自然會無法了解為什麼中美都會投入那麼多資源嘗試
+ 
+
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-17 13:36:00 +0800</pubDate>
+    <guid isPermaLink="false">2202171336</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2202171336</link>
+    </item>
     <item>
     
     
