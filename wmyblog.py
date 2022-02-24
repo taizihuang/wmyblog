@@ -50,8 +50,16 @@ def fetch(art_id):
     url = "https://blog.udn.com/MengyuanWang/"
     response = requests.get(url+art_id)
     doc = BeautifulSoup(response.content,features="lxml")
+    if doc.find(class_="REPLY_LI"):
+        doc.find(class_="REPLY_LI").decompose()
     title = doc.find(class_="article_topic").text
-    art_date = doc.find(class_="article_datatime").text
+    
+    if doc.find(class_="DATE"):
+        art_date = doc.find(class_="DATE").text
+        art_date = art_date.replace('发表日期 : ','').replace('-','/')
+        doc.find(class_="DATE").decompose()
+    else:
+        art_date = doc.find(class_="article_datatime").text
     post = doc.find(id="article_show_content")
 
     #save image
@@ -80,9 +88,9 @@ def updateArticle(articleFile = './data/article_full.pkl'):
     # fetech new article list, merge, remove duplicates, then save as pickle file
     df_article_new = pd.DataFrame(columns=['id','title','art_date','post'])
     df_link = getPageLinkAll()   
-    for i in df_link.loc[df_link.id > "108908829"].index:
+    for i in df_link.index:
         (art_id,title,art_date,post) = fetch(df_link.iloc[i].id)
-        df_article_new = df_article_new.append({'id':art_id,'title':title,'art_date':art_date,'post':str(post)},ignore_index=True)
+        df_article_new = pd.concat([df_article_new,pd.DataFrame(data={'id':art_id,'title':title,'art_date':art_date,'post':str(post)},index=[0])],ignore_index=True)
         print("Fetching article: "+title)
         time.sleep(1)
     df_article_new.art_date = pd.to_datetime(df_article_new.art_date,format="%Y/%m/%d %H:%M")
