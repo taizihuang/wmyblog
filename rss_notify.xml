@@ -7,8 +7,46 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>02-25 17:05 +0800</lastBuildDate>
+    <lastBuildDate>02-25 18:05 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Fatgirl]]></title>
+    <description><![CDATA[關於12樓的連結
+https://blog.sciencenet.cn/home.php?mod=space&amp;uid=46717&amp;do=blog&amp;id=1270832
+
+
+裡面的第三點不太對, QKD應該不會有中繼器被竊聽或者是調包的問題
+以最簡的BB84來說, 最後雙方核對量測結果的時候,其實是用"廣播"互相核對,也就是所有人(包括敵人)都收的到信號,且沒有人可以辦法調包(或是蓋台之類的),這算是一般課本沒有講清楚的隱性假設,  這個假設在實際上應該是不難滿足的,  只要滿足這個假設若有竊聽或是信號調包的問題,雙方都可以發現,  但是第一和第5點卻是沒法克服的大問題沒錯
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-25 18:05:00 +0800</pubDate>
+    <guid isPermaLink="false">2202251805</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2202251805</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【大陆】真理只在大炮的射程之内 | Survivor]]></title>
+    <description><![CDATA[最近看到的某部影片談到早期的領海定義是看各國的大砲射程的遠近，英國最遠是 12 海里，其他國家是 10海里。推測這句"真理只在大砲射程之內"的由來應與領海是由大砲射程決定的轉借。
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-25 18:00:00 +0800</pubDate>
+    <guid isPermaLink="false">2202251800</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908814.html#2202251800</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【基础科研】量子去相干详解 | Fatgirl]]></title>
+    <description><![CDATA[量測後應該要是純態這正是我認為大部分人覺得Decohere詮釋不完備的原因,  根據哥本哈根詮釋 一個state經若由一組正交基底|0&gt;和|1&gt;量測後,  假設得到|0&gt;, 那之後用相同的基底|0&gt;和|1&gt;量測|0&gt;結果永遠是|0&gt;, Decohere詮釋說decohere後會變成一個mixed state p*|0&gt;&lt;0|+(1-p)|1&gt;&lt;1|, 如果把這個mixed state重新量測,  結果可能是|0&gt; 也可能是 |1&gt; ,這跟哥本哈根詮釋矛盾, 所以就算decohere了,一定得有一個步驟是把mixed state collapse成|0&gt; 或 |1&gt;的步驟, 不然實踐的人早就發現這個矛盾了
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-02-25 17:47:00 +0800</pubDate>
+    <guid isPermaLink="false">2202251747</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908828.html#2202251747</link>
+    </item>
     <item>
     
     
