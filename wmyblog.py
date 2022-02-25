@@ -428,6 +428,34 @@ def genLatestComment(df_comment_today,dict_reply):
     <lastBuildDate>${date} +0800</lastBuildDate>
     <ttl>5</ttl>
     %for source, id, uuid, say, reply, user, time in reply_li:
+    %if reply:
+    <item>
+    <% say = say.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
+    <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
+    <title><![CDATA[${source} | ${user}]]></title>
+    <description><![CDATA[${say} <br><br>----<br><br>${reply}]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>${time} +0800</pubDate>
+    <guid isPermaLink="false">${uuid}</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/${id}.html#${uuid}</link>
+    </item>
+    %endif
+    %endfor
+    </channel></rss>
+    """)
+
+    RSS_notify = Template("""
+    <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+    <title><![CDATA[王孟源有新回复]]></title>
+    <atom:link href="https://taizihuang.github.io/wmyblog" rel="self" type="application/rss+xml" />
+    <description><![CDATA[王孟源有新回复 (https://github.com/taizihuang/wmyblog)]]></description>
+    <generator>Github</generator>
+    <webMaster>Taizi Huang</webMaster>
+    <language>zh-cn</language>
+    <lastBuildDate>${date} +0800</lastBuildDate>
+    <ttl>5</ttl>
+    %for source, id, uuid, say, reply, user, time in reply_li:
     <item>
     <% say = say.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
     <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
@@ -458,6 +486,8 @@ def genLatestComment(df_comment_today,dict_reply):
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
     with open("./rss.xml","w") as rss:
         rss.write(RSS.render(date=art_date,reply_li=reply_li))
+    with open("./rss_notify.xml","w") as rss:
+        rss.write(RSS_notify.render(date=art_date,reply_li=reply_li))
     return
 
 def getComment(art_id,n=0):
