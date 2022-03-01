@@ -199,7 +199,10 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
         df_comment_new = pd.concat([df_comment_new,df_merge],ignore_index=True)
         dict_reply[art_id] = i.text
     df_comment = pd.concat([df_comment_new,df_comment_old],ignore_index=True)
-    df_comment = df_comment.drop_duplicates(subset=['nickname','date'],keep='first')
+    df_comment_udn = df_comment.loc[df_comment.date >= pd.Timestamp('2018-01-01')]
+    df_comment_ct = df_comment.loc[df_comment.date < pd.Timestamp('2018-01-01')]
+    df_comment_udn = df_comment_udn.drop_duplicates(subset=['nickname','date'],keep='first')
+    df_comment = pd.concat([df_comment_udn,df_comment_ct],ignore_index=True)
     df_comment = df_comment.reset_index(drop=True)
 
     # generate htmls that have new comments
