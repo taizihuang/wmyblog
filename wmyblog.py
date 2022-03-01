@@ -189,11 +189,17 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
         nPage,df = getComment(art_id)
         if nPage > 1:
             nPage,df1 = getComment(art_id,n=1)
-            df = df.append(df1,ignore_index=True)
-        df_comment_new = df_comment_new.append(df,ignore_index=True)
+            df = pd.concat([df,df1],ignore_index=True)
+        df.date = df.date.astype('object')
+        df1 = df_comment_old.loc[(df_comment_old.id == art_id) & (df_comment_old.date >= min(df.date))].copy()
+        df_merge = pd.merge(df,df1,indicator=True,how='outer')
+        for idx in df_merge.loc[df_merge['_merge'] == 'right_only'].index:
+            df_merge.loc[idx,'comment'] = '<strike>'+df_merge.loc[idx,'comment']+'</strike>'
+        df_merge = df_merge.drop(columns=['_merge'])
+        df_comment_new = pd.concat([df_comment_new,df_merge],ignore_index=True)
         dict_reply[art_id] = i.text
-    df_comment = df_comment_new.append(df_comment_old, ignore_index=True)
-    df_comment = df_comment.drop_duplicates(subset=['comment'],keep='first')
+    df_comment = pd.concat([df_comment_new,df_comment_old],ignore_index=True)
+    df_comment = df_comment.drop_duplicates(subset=['nickname','date'],keep='first')
     df_comment = df_comment.reset_index(drop=True)
 
     # generate htmls that have new comments
