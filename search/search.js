@@ -43,6 +43,10 @@ function search() {
             var post_str = ''
             var reply_str = ''
             var keywords = $input.val().trim().toLowerCase().split(/[\s\-]+/);
+            var dict = { "and": 1, "or": -1, "not": 0 };
+            var keyword_list = [];
+            var logic_list = [];
+
             articleData.forEach(function(data) {
                 var data_title = data.title.toLowerCase();
                 var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();

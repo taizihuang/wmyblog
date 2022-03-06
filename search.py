@@ -36,10 +36,7 @@ def genHTML(df_comment,filename):
 
 
 search_list = {
-    '教育': ['教育','思考','读书'],
-    '科幻': ['科幻','Asimov'],
-    '美国': ['美国'],
-    'Boris': ['boris']
+    'Quasicat': ['Quasicat']
     }
 flag = 0 # 0: 正常搜索；1: 互斥搜索。比如，'科幻'的搜索结果内不包含['教育','思考','读书']，'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']。
 
@@ -48,10 +45,10 @@ df['flag'] = 0
 
 for filename in search_list.keys():
     name = search_list[filename]
-    idx = df.comment.str.contains(name[0]) | df.reply.str.contains(name[0]) 
+    idx = df.comment.str.contains(name[0]) | df.reply.str.contains(name[0]) | df.nickname.str.contains(name[0])
     if len(name) > 1:
         for i in range(1,len(name)):
-            idx = idx | df.comment.str.contains(name[i]) | df.reply.str.contains(name[i])
+            idx = idx | df.comment.str.contains(name[i]) | df.reply.str.contains(name[i]) | df.nickname.str.contains(name[i])
 
     df_comment = df.loc[idx & (df.flag == 0)]
     df_comment = df_comment.sort_values(by='date')
