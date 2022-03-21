@@ -200,7 +200,7 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
         dict_reply[art_id] = i.text
     df_comment = pd.concat([df_comment_new,df_comment_old],ignore_index=True)
     df_comment_udn = df_comment.loc[df_comment.date >= pd.Timestamp('2018-01-01')]
-    df_comment_ct = df_comment.loc[df_comment.date < pd.Timestamp('2018-01-01')]
+    df_comment_ct = df_comment.loc[df_comment.date < pd.Timestamp('2018-01-01')].drop_duplicates(subset=['nickname','comment'],keep='first')
     df_comment_udn = df_comment_udn.drop_duplicates(subset=['nickname','date'],keep='first')
     df_comment = pd.concat([df_comment_udn,df_comment_ct],ignore_index=True)
     df_comment.comment = df_comment.comment.str.replace('<strike><strike>','<strike>').str.replace('</strike></strike>','</strike>')
