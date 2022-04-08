@@ -7,8 +7,21 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>04-08 23:05 +0800</lastBuildDate>
+    <lastBuildDate>04-09 00:05 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】高能物理界的新動態 | Taizi Huang]]></title>
+    <description><![CDATA[https://www.science.org/doi/10.1126/science.abk1781 王博士，Science上一篇新文章给出了W boson质量的新高精度测量，实验结果和标准模型预测值不符（7sigma）。您能评价一下这个工作吗？
+ <br><br>----<br><br>
+這裏最大的問題是，即使只看直接測量W-boson質量的實驗，不同的對撞機（包括比Fermilab更新、能級更高的LHC）也已經做了將近40年，以前的4個主要結果都一致（其實還有一大堆間接測量結果也一致），只有這次Fermilab特別高，那麽照理在能解釋與既有實驗結果的差異之前，不應該直接拿來和理論做比較，但是現在的高能物理界根本不在乎什麽職業道德或科學修養，既然“打破標準模型”這個標題比“違反其他實驗”要吸睛得多，誰管你誠不誠實。參見https://non-trivial-solution.blogspot.com/2022/04/do-we-have-finally-found-new-physics.html?m=1即使假設以前4個直接實驗加無數個間接實驗都做錯、只有這次的實驗做對了，也不會顛覆標準模型；這是因爲W-boson質量對Higgs很敏感，標準模型其實只說會有一個“Higgs Sector”，現在的計算都必須另外假設只有單一的Higgs粒子，但那是十年前LHC實驗的結果，不是理論的要求，被推翻也只是那個實驗結果被推翻，不是標準模型這個理論基礎。
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-04-08 16:40:00 +0800</pubDate>
+    <guid isPermaLink="false">2204081640</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/122891927.html#2204081640</link>
+    </item>
     <item>
     
     
@@ -247,19 +260,6 @@ https://www.gov.kz/memleket/entities/mod/press/news/details/347869?lang=kk  
     <pubDate>2022-04-02 09:32:00 +0800</pubDate>
     <guid isPermaLink="false">2204020932</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171980706.html#2204020932</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | JoeyZhang]]></title>
-    <description><![CDATA[王博您好，如何看待今日哈萨克斯坦与美国军方代表进行会晤，讨论军事设施安全合作问题？
- <br><br>----<br><br>
-消息出處？
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-04-01 22:50:00 +0800</pubDate>
-    <guid isPermaLink="false">2204012250</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171980706.html#2204012250</link>
     </item>
     </channel></rss>
     
