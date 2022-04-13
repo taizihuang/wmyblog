@@ -80,14 +80,14 @@ def fetch(art_id):
     
     return (art_id,title,art_date,post)
 
-def updateArticle(articleFile = './data/article_full.pkl'):
+def updateArticle(n=1,articleFile = './data/article_full.pkl'):
     
     # creat pickle backup file
     df_article_old = pd.read_pickle(articleFile)
 
     # fetech new article list, merge, remove duplicates, then save as pickle file
     df_article_new = pd.DataFrame(columns=['id','title','art_date','post'])
-    df_link = getPageLinkAll()   
+    df_link = getPageLinkAll(n=n)   
     for i in df_link.index:
         (art_id,title,art_date,post) = fetch(df_link.iloc[i].id)
         df_article_new = pd.concat([df_article_new,pd.DataFrame(data={'id':art_id,'title':title,'art_date':art_date,'post':str(post)},index=[0])],ignore_index=True)

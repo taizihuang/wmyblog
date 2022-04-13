@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:podcast="https://podcastindex.org/namespace/1.0"  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<atom:link href="https://taizihuang.github.io/wmyblog/podcast.xml" rel="self" type="application/rss+xml"/>
+		<title>王孟源 x 八方论谈</title>
+		<pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate>
+		<generator>Manual</generator>
+		<link>https://taizihuang.github.io/wmyblog</link>
+		<language>zh-cn</language>
+		<copyright><![CDATA[]]></copyright>
+		<docs>https://taizihuang.github.io/wmyblog</docs>
+		<managingEditor>htzllt@gmail.com (htzllt@gmail.com)</managingEditor>
+		<image>
+			<url>http://home.ustc.edu.cn/~tz0920/wmy-podcast.jpg</url>
+			<title>王孟源 x 八方论谈</title>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog/podcast]]></link>
+		</image>
+		<description><![CDATA[王孟源 x 八方论谈，持续更新中...]]></description>
+
+		<podcast:locked owner="htzllt@gmail.com">no</podcast:locked>
+		
+		<item>
+			<title>2022/03/22 俄乌战争</title>
+			<pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220322]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[向MU5735航班遇难者哀悼<p>本期主题：俄乌战争</p>]]></description>
+			<enclosure length="84305497" type="audio/mpeg" url="http://home.ustc.edu.cn/~tz0920/220322.mp3" />
+		</item>
+		<item>
+			<title>2022/01/27 乌克兰、北约、美国</title>
+			<pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220127]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：乌克兰 北约 美国</p>]]></description>
+			<enclosure length="95698889" type="audio/mpeg" url="http://home.ustc.edu.cn/~tz0920/220127.mp3" />
+		</item>
+
+		</channel></rss>
