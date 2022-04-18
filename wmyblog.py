@@ -351,6 +351,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     <br><br>
     <ul class="LI">
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
+    <li><a class="title" href="./html/dialogue360.html">王孟源 x 八方论谈</a></li>
     %for url, name, time in art_li:
     <li><a class="title" href="./html/${url}.html">[${time}]&emsp;${name}</a></li>
     %endfor
