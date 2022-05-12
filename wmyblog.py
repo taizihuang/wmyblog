@@ -150,6 +150,38 @@ def exportJSON(articleFile,commentFile,jsonFile):
     with open(jsonFile,'w') as f:
         f.write(json.dumps(wmy))
 
+def strFind(s,t):
+    loc = []
+    l = len(t)
+    for i in range(len(s)-l):
+        if s[i:i+l] == t:
+            loc.append(i)
+    return loc
+def genAnno(df):
+    df_anno = pd.DataFrame()
+    for idx in df.index:
+        id = df.loc[idx,'id']
+        s = df.loc[idx,'post']
+        d = df.loc[idx,'art_date']
+        loc1 = strFind(s,'後註一')
+        if loc1 != []:
+            ss = s[loc1[0]:].split('<p>【')
+            for i in ss:
+                loc2 = strFind(i[:5],'，')
+                loc3 = strFind(i,'】')[0]
+                if loc2 == []:
+                    comment = i[:loc3]
+                    date = d
+                else:
+                    comment = i[:loc2[0]]
+                    date = pd.to_datetime(i[loc2[0]+1:loc3],format='%Y/%m/%d')
+                reply = i[loc3+1:]
+                if reply[-6:] == '</div>':
+                    reply = reply[:-6]
+                df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,'date':date,'id':id},index=[0])],ignore_index=True)
+    df_anno = df_anno.sort_values(by='date',ascending=False).reset_index(drop=True)
+    return df_anno
+
 def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data/comment_full.pkl',jsonFile='./search/wmyblog.json'):
     df_article_old = pd.read_pickle(articleFile)
     df_comment_old = pd.read_pickle(commentFile)
@@ -205,22 +237,26 @@ def updateDaily(latest,articleFile='./data/article_full.pkl',commentFile='./data
     df_comment = pd.concat([df_comment_udn,df_comment_ct],ignore_index=True)
     df_comment.comment = df_comment.comment.str.replace('<strike><strike>','<strike>').str.replace('</strike></strike>','</strike>')
     df_comment = df_comment.reset_index(drop=True)
-
-    # generate htmls that have new comments
-    df_comment_today = df_comment.loc[df_comment.date > latest]
-    df_comment_today = df_comment_today.sort_values(by='date',ascending=False)
-    with open('./data/article_list.json') as infile:
-        dict_reply = json.load(infile)
-    genLatestComment(df_comment_today,dict_reply)
-    for art_id in df_comment_today.id.unique():
-        genHTML(art_id,df_article,df_comment)
-
     os.rename(commentFile,commentFile+'.bak')
     df_comment.to_pickle(commentFile)
     os.rename(articleFile,articleFile+'.bak')
     df_article.to_pickle(articleFile)
-
     exportJSON(articleFile,commentFile,jsonFile)
+
+    # generate annotation
+    df_anno = genAnno(df_article)
+
+    # generate htmls that have new comments
+    df_comment1 = pd.concat([df_comment,df_anno],ignore_index=True)
+    df_comment_today = df_comment1.loc[df_comment1.date > latest]
+    df_comment_today = df_comment_today.sort_values(by='date',ascending=False)
+    with open('./data/article_list.json') as infile:
+        dict_reply = json.load(infile)
+    genLatestComment(df_comment_today,dict_reply)
+
+    # generate index and separate pages
+    for art_id in df_comment_today.id.unique():
+        genHTML(art_id,df_article,df_comment)
     genINDEX()
     return
 
@@ -533,7 +569,7 @@ def getComment(art_id,n=0):
             else:
                 reply = "" 
             s = {'comment':comment,'reply':reply,'nickname':nickname,'date':date,'id':art_id}
-            df = df.append(s,ignore_index=True)
+            df = pd.concat([df,pd.DataFrame(data=s,index=[0])],ignore_index=True)
     else:
         nPage = 0
         df = pd.DataFrame([['','','','',art_id]],columns = ['comment','reply','nickname','date','id'])
