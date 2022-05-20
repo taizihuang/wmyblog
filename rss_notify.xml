@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>05-20 23:05 +0800</lastBuildDate>
+    <lastBuildDate>05-21 00:06 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -193,32 +193,6 @@ Neocon和Neolib的重點不在於con vs lib的左右路綫之分，而在於那�
     <pubDate>2022-05-14 02:30:00 +0800</pubDate>
     <guid isPermaLink="false">2205140230</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2205140230</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Fatgirl]]></title>
-    <description><![CDATA[接續27樓 
-第一點問題身分確認問題可以用簡單的秘鑰解決,Alice和Bob事先約定一組秘鑰,Alice拿私鑰,Bob回傳量測結果的時候把結果用公鑰加密, Alice如果能解開加密那就表示廣播回傳的人是Bob.
-第五點DOS攻擊是真的無解 
-我沒連繫原作者, 只是想著好玩而已
-
- <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-05-13 16:10:00 +0800</pubDate>
-    <guid isPermaLink="false">2205131610</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2205131610</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【外交】【經貿】後新冠世界（一） | TrueBlueLove]]></title>
-    <description><![CDATA[&lt;strike&gt;之前關於新冠疫苗及疫情的留言被王先生給刪掉，請問是不值得回覆嗎？
-&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-05-13 11:20:00 +0800</pubDate>
-    <guid isPermaLink="false">2205131120</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/136194045.html#2205131120</link>
     </item>
     </channel></rss>
     
