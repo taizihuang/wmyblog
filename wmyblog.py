@@ -167,7 +167,7 @@ def genAnno(df):
         if loc1 != []:
             ss = s[loc1[0]:].split('<p>【')
             for i in ss:
-                loc2 = strFind(i[:5],'，')
+                loc2 = strFind(i[:6],'，')
                 loc3 = strFind(i,'】')[0]
                 if loc2 == []:
                     comment = i[:loc3]
