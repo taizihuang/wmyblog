@@ -97,6 +97,10 @@ h1, h2, h3, h4, h5 {
     width: 2px;
     background-color: #ddd;
 }
+.REPLY p {
+line-height: 1.3 !important;
+}
+
 .REPLY_LI .REPLY:before{
     font-family:Arial;
     color:#ccc;
