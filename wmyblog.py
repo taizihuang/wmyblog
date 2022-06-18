@@ -163,7 +163,7 @@ def genAnno(df):
         id = df.loc[idx,'id']
         s = df.loc[idx,'post']
         d = df.loc[idx,'art_date']
-        loc1 = strFind(s,'後註一')
+        loc1 = strFind(s,'後註一')+strFind(s,'原後註')
         if loc1 != []:
             ss = s[loc1[0]:].split('<p>【')
             for i in ss:

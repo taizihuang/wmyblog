@@ -36,7 +36,7 @@ def genHTML(df_comment,filename):
 
 
 search_list = {
-    'Quasicat': ['Quasicat']
+    'Quasicat': ['弃车']
     }
 flag = 0 # 0: 正常搜索；1: 互斥搜索。比如，'科幻'的搜索结果内不包含['教育','思考','读书']，'美国'的搜索结果不包含关键词 ['教育','思考','读书','科幻','Asimov']。
 
