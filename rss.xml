@@ -7,8 +7,21 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>07-03 04:07 +0800</lastBuildDate>
+    <lastBuildDate>07-03 05:07 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】談量子力學（三） | 後註五]]></title>
+    <description><![CDATA[後註五 <br><br>----<br><br>一年多前，我在回答留言欄一樓時，提到CERN正在高調公關吹噓“新突破”，號稱測量出Muon g-2與標準模型的理論值相差4.2個標準差，對應著有大約99.999%的信心，已經“打破標準模型”。我解釋這是又一次高能物理界騙人的花樣：因爲理論值計算很複雜，當時有兩個不同的結果，相距3個標準差。CERN當然假裝只看到較遠的那個，而較近的理論值和他們的實驗結果只有1.2個標準差的距離，對應著88%的信心，也就是p-value=0.12；這種統計Significance連生醫界都不會接受，在高能物理根本就不值得一提，然而他們硬是拿出來欺騙大衆。&lt;/p&gt;
+&lt;p&gt;過去這個月，一連有兩篇新論文（這裏是其中一篇，參見&lt;a href="https://arxiv.org/abs/2206.15084"&gt;&lt;span style="color:blue"&gt;《Lattice calculation of the short and intermediate time-distance hadronic vacuum polarization contributions to the muon magnetic moment using twisted-mass fermions》&lt;/span&gt;&lt;/a&gt;）重新計算理論值，正如我所預期的，不約而同地印證了較近的那一個。那麽CERN的詐騙公關被揭穿，有任何後果嗎？事實上去年積極轉述謊言的大衆媒體，連一個字也不吭；毫無代價正是爲什麽學術詐騙越演越烈的原因。&lt;/p&gt;
+
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-07-02 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">2207020000</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908799.html#2207020000</link>
+    </item>
     <item>
     
     
