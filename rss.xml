@@ -7,8 +7,35 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>07-24 23:05 +0800</lastBuildDate>
+    <lastBuildDate>07-25 00:05 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科研】流行病的起源（下） | criteria]]></title>
+    <description><![CDATA[王先生，最近的monkeypox其传播途径虽然和covid-19传播途径并非完全相同，但是在较短时间内突然在欧洲各地爆发，是否可以推断其DNA出现了较大突变(虽然DNA病毒的突变概率小于RNA病毒），至少具有更高的传染性？现在除中国外对covid-19的共存策略让人极为担心在将来也会套用到monkeypox上，而如果在今年第三至第四季度同时叠加两种疫情和能源危机，整个欧洲的惨烈程度是难以名状的。
+ <br><br>----<br><br>
+人類破壞原始生態，侵占野生動物的生活空間，是農業興起之後就持續發生的事，而且其規模和效率成指數成長，到了19、20世紀，終於突破臨界點，古代數百年一次的zoonotic瘟疫，間隔步步縮短，現在是幾年就來一個。這不但可以簡單預期，而且實際上也的確被有識之士反復警告，只不過一般愚民事先置若罔聞、事後再編造陰謀論，反過來栽贓拉響警報的人（例如Bill Gates）。Monkeypox其實是新發現時有誤解、以致取錯名字的又一個科學案例：它的真正原始寄主並不是猴子，而是鼠科動物。Zoonotic疾病當然要求病毒針對新寄主做出基因優化，一旦擴散開來，突變的機會更多，優化的速度也就越高。不過Monkeypox和新冠有個很大的差別：它是接觸傳染的，所以傳播的速度和方式不一樣，接近我以前在博文討論過的梅毒和艾滋；換句話説，比較慢，而且相對容易隔離。當然，以歐美政府近年的表現，自己拿槍打自己的例子太多，“相對容易”可能還是不夠的。
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-07-24 15:59:00 +0800</pubDate>
+    <guid isPermaLink="false">2207241559</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/132785990.html#2207241559</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 薛丁格的貓]]></title>
+    <description><![CDATA[半導體
+最近因為TechInsights的一篇報告，傳出中芯國際利用DUV重複曝光，依然做出7nm產品，並且早已出貨，不知王博士怎麼看待?謝謝。
+ <br><br>----<br><br>
+原本臺積電和三星就都是在7nm轉用EUV，也就是說，中芯這次做出來的，是運用DUV的已知經濟極限。這是因爲製造同級製程的成本，EUV和DUV在7nm做了交叉，實際上如果基於特殊背景考慮，非要繼續用DUV不可，很可能還有一點進步的空間。至於中芯成就的技術分量，當前所發佈的那個芯片是極度簡單、微小的特殊用途處理器，並沒有什麽真正的實用價值。當然，要進一步纍積經驗、優化製程，應該不會有什麽跨不過的難關。事實上中芯從14nm進到7nm的速度並不慢，更加指向樂觀的預估。這裏的實際工作，主要來自前臺積電的人員，我猜有不少台裔老青年把最後剩下的一點肝功能貢獻出來了。從戰略角度來看，7nm或甚至再進步一點，已經能滿足除了頂級CPU、GPU和APU的需要，對保障戰略自主和經濟持續發展，提供了大約5年的喘息空間，而且在當前的國際局勢下，剛好可以大部補償第三世界集團受歐美訛詐封鎖的損失，所以美國必然會試圖禁用設計軟件和設備售後服務以干擾這些應用，後續發展視其國内政治鬥爭的進程細節而定，目前還無法斷言。此外中方要自主開發EUV機器，5年是不夠的；反而國際局勢在5年内有突破性的轉變，例如某些技術先進國家，出現政治經濟社會的全面崩潰危機，是機率更高的解決方式。
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-07-23 10:28:00 +0800</pubDate>
+    <guid isPermaLink="false">2207231028</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207231028</link>
+    </item>
     <item>
     
     
@@ -94,6 +121,17 @@
     <item>
     
     
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註三]]></title>
+    <description><![CDATA[後註三 <br><br>----<br><br>博客早就解釋過量子計算的唯一可見實用性在於破解若干當前常用的密碼，而能抗拒量子破密的新密碼已經被開發出來，並且被科技部忽略無視。現在《經濟學人》新刊出一篇科普文章（參見&lt;a href="https://www.economist.com/leaders/2022/07/14/what-to-do-now-about-tomorrows-code-cracking-computers"&gt;&lt;span style="color:blue"&gt;《What to do now about tomorrow’s code-cracking computers》&lt;/span&gt;&lt;/a&gt;），基本復述了這些既有論點，在此提供鏈接，以便對博客疑心特重的讀者參考。&lt;/p&gt;
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-07-22 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">2207220000</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2207220000</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註二]]></title>
     <description><![CDATA[後註二 <br><br>----<br><br>上周在《龍行天下》（參見&lt;a href="https://www.youtube.com/watch?v=RhmKxFFdiwI"&gt;&lt;span style="color:blue"&gt;【觀點│龍行天下】王孟源博士&lt;/span&gt;&lt;/a&gt;）談了美國經濟學理論之後，有在金融系教書的朋友寫電郵來抗議。我想行内的讀者可能都有類似的質疑，所以把對話（私人通信，中英夾雜，請見諒）轉錄於下，供大家參考：&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-family:標楷體"&gt;問：1、關於 Efficient Market Hypothesis (EMH) ：您在節目和最新博文中都批評經濟學家以EMH 鼓吹宣傳自由市場體制的高效和公平，但就我們所學，EMH 這一詞只是財務學中一種拿來檢驗股市效率的定義型假説。簡單來說，如果股票價格能迅速反應新訊息，調整到新價位，這樣的股市就被認為是高效率市場。EMH 的論點是，在高度競爭下，任何投資策略都不可能持續勝出，若當真如此，大家就不必投錢給基金經理人了，可說是讓華爾街十分感冒的金融市場假説。經濟學家並沒有以EMH 為真，而是做了不少實證研究，且研究結果頗為分歧，以致於提出EMH 的Eugene Fama,  和以行為財務學（behavioral finance) 反駁 EMH 的Robert Schiller 同在 2013 獲得諾貝爾經濟學獎。  既然以美國股市檢驗EMH 都未能成立，很難想像會有經濟學家將EMH這已具有特定意義的專有名詞，擴張應用到其他市場，甚至經濟體制宣傳，至少我們從未聽說。&lt;/span&gt;&lt;/p&gt;
@@ -108,17 +146,6 @@
     <pubDate>2022-07-22 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2207220000</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207220000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註三]]></title>
-    <description><![CDATA[後註三 <br><br>----<br><br>博客早就解釋過量子計算的唯一可見實用性在於破解若干當前常用的密碼，而能抗拒量子破密的新密碼已經被開發出來，並且被科技部忽略無視。現在《經濟學人》新刊出一篇科普文章（參見&lt;a href="https://www.economist.com/leaders/2022/07/14/what-to-do-now-about-tomorrows-code-cracking-computers"&gt;&lt;span style="color:blue"&gt;《What to do now about tomorrow’s code-cracking computers》&lt;/span&gt;&lt;/a&gt;），基本復述了這些既有論點，在此提供鏈接，以便對博客疑心特重的讀者參考。&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-22 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2207220000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2207220000</link>
     </item>
     <item>
     
@@ -380,59 +407,6 @@
     <pubDate>2022-07-18 00:58:00 +0800</pubDate>
     <guid isPermaLink="false">2207180058</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207180058</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 後註十九]]></title>
-    <description><![CDATA[後註十九 <br><br>----<br><br>九天前我在回答留言欄97樓的時候，提到Pompeo減肥應該是為選最高公職做準備。這其實是去年我看到他的新照片時，立即就有的反應（剛被證實，參見&lt;a href="https://www.thetimes.co.uk/article/1ac25856-0463-11ed-aa15-45d37b45dc0d?shareToken=204f8e3f380dcd217248818bd626f2c4"&gt;&lt;span style="color:blue"&gt;《Mike Pompeo ready to run against Donald Trump for presidency》&lt;/span&gt;&lt;/a&gt;），原因是衆所周知，他是Koch Brothers的人，非常適合在白宮做代言人。不過他沒有州長或參議員的經歷，分量不夠，2024年參選的主要意義在於嘗試從Trump那裏釣一個副總統提名，2028年再選總統是比較切實際的時段。&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-18 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2207180000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171980706.html#2207180000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 狐禪]]></title>
-    <description><![CDATA[事在人為。行政體系中最關鍵的執行組件是中低層官僚，若具正當心態的人不到臨界量，管理是推不動的。紀、監委則是維護體系正常運作的系統工程師。這在半導體製造業已是標準分工且有具體工作要求。而正當工作態度的養成，則是基礎教育的目標所在，也是版主前此大聲疾呼的重點。如何達到量變造成質變的效果，則必須循序漸進，激進的手段無長效，反而會遺長害。
-「限制私人資本，發達國家資本」這在孫中山先生民生主義中已多有論述，此刻更顯出前賢的遠見。而要能有效達成，也要前段條件滿足之後，才能在政府端規劃執行。
- <br><br>----<br><br>
-瞭解正確的大原則並不困難，難處在於應用到實際執行時，如何落實在細節上。例如馬克思的唯物辯證，是幾十萬個大陸學人朗朗上口的口號，但能説出怎麽用來分析21世紀的經濟和國安政策的，卻是鳳毛麟角。其實馬克思自己都有意回避如何運用國家機器來推行社會主義這個大題目，所以才會輪到列寧來頭一個吃螃蟹，然後20世紀有許多其他嘗試，其中鄧小平主導的改開已經算是最成功的了。然而中國顯然到了必須跨出下一個大步的時候，習近平也有心改革，所以用確實的案例、指出正確的方針，是重要而且急迫的工作。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-17 16:26:00 +0800</pubDate>
-    <guid isPermaLink="false">2207171626</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207171626</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | AbzX5]]></title>
-    <description><![CDATA[我注意到这些监管毛病来大致来源有两类, 一类是40年前刚开放经济窘迫时的便宜之计造成遗弊. 例如房产预售制度(出售期房)以风险为代价缓解房产开发商筹集资金的困难, 在银行众多的今日社会已经没有必要, 但是开发商贪图低融资成本, 自然不会纠正.
-另一类是40年中被洗脑, 导致迷信市场万能, 比如失败的P2P和允许成立监管要求较低的村镇银行, 本意是希望引入私营资本来解决中小企业融资难的问题. 可是连国有银行都不敢放贷的项目, 最求风险调整收益最大化的私人资本凭什么会主动去承担风险, 帮中小企业解决融资难? 而且风险较大的项目, 中国私人资本已经有仿照美国的风险投资机制了, 根本没必要再搞P2P和小银行.
-如今确实到了总结失败教训, 赶紧系统检讨清理这些政策的时候了.
- <br><br>----<br><br>
-是的。我做原創性見解向來沒有困難，所以也就沒有必要重複既有論述。這篇正文雖然内含一些新論點，但整體來説，主要還是總結過去8年寫過的許多博文。這當然是要有外來的重要管道邀稿，才值得我花時間精力去做。然而正規管道會先修飾改寫，比較尖銳的批評必然被刪，所以這裏的原稿還是有其價值的，希望有體制内人士來博客看到。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-17 04:24:00 +0800</pubDate>
-    <guid isPermaLink="false">2207170424</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207170424</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 乌鹊南飞]]></title>
-    <description><![CDATA[现在看苏联80年代末90年代初的出学校或研究所的一代人真的很厉害，虽然知道假设如果没意义，但我还是在想如果不是戈尔巴乔夫执政，苏联存活到现在，是不是他们又能重新成为领导世界进步的国家？还是说其实这只是普京政府会用人，每代都存在，只不过腐化的苏共用不了这些人？
- <br><br>----<br><br>
-這方面我考慮很多年了，所以字裏行間也會引發若干讀者產生相關的疑問；不過因爲自己不懂俄文，沒有第一手資料，一直不敢妄做論斷（別忘了，我做邏輯辯證的要求極高，例如爲了瞭解英國的民意，以對其政局發展做出精確理解和預測，曾花三年多時間，讀了幾萬條《Daily Mail》的讀者留言；那可多半是臭不可聞的愚蠢評論）。如果非要給個結論，我目前傾向“兩者皆有”那個答案：從Yeltsin爲了不讓Primakov掌權，轉向一個似乎是親歐派的Putin，結果一樣是以國家社會爲重的愛國者，可以推論出俄國政治精英的向心凝聚力一直都是存在的。然而Putin能夠破格拔擢Mishustin、Nabiullina、Lavrov這些人，顯然他不止自己是千里馬，也兼任伯樂。中國在這兩個方向，都有可觀摩、學習、反省的空間。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-17 04:15:00 +0800</pubDate>
-    <guid isPermaLink="false">2207170415</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207170415</link>
     </item>
     </channel></rss>
     
