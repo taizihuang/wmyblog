@@ -84,7 +84,8 @@ def updateArticle(n=1,articleFile = './data/article_full.pkl'):
     
     # creat pickle backup file
     df_article_old = pd.read_pickle(articleFile)
-
+    df_article_old = df_article_old.sort_values(by='date',ascending=False)
+    
     # fetech new article list, merge, remove duplicates, then save as pickle file
     df_article_new = pd.DataFrame(columns=['id','title','art_date','post'])
     df_link = getPageLinkAll(n=n)   
