@@ -7,14 +7,14 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-03 12:29 +0800</lastBuildDate>
+    <lastBuildDate>08-03 13:24 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | AbzX5]]></title>
-    <description><![CDATA[王先生, 本篇后注六是否贴错了链接?
- <br><br>----<br><br>
+    <description><![CDATA[&lt;strike&gt;王先生, 本篇后注六是否贴错了链接?
+&lt;/strike&gt; <br><br>----<br><br>
 用我的Browser開鏈接沒有問題啊。。。
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
@@ -126,7 +126,8 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     
     
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
-    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國GDP的歷史記錄來做一些分析研究，偶然注意到一個以往沒聽見其他人討論過的現象，在這裏和讀者分享，參見下圖。這裏的數據是1947至2022年的真實GDP（亦即排除了通脹的影響）以季度來計算（Quarterly Data，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://www.npr.org/2022/07/31/1110882487/dod-slot-machines-overseas-bases"&gt;&lt;span style="color:blue"&gt;《U.S. military-run slot machines earn $100 million a year from service members overseas》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;
+    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（Detrend）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
+&lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國參與越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了Great Recession金融危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2022-08-03 00:00:00 +0800</pubDate>
