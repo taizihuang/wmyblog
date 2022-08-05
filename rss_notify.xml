@@ -7,8 +7,19 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-05 23:05 +0800</lastBuildDate>
+    <lastBuildDate>08-06 00:06 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【台灣】再談統一 | Submarine]]></title>
+    <description><![CDATA[8月5日晚上发布的针对佩洛西窜台8项反制措施确实表明中国在战略上升级了和美国的对抗态势，其中我认为最重要的是：中美两军关系（作为中美关系压舱石）大幅度倒退。现在来看，Pelosi的冒进算是歪打正着让中国的战略高层完全认清楚了美国政治精英的荒诞和言而无信，并终于放下包袱要开始全面对抗。
+ <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-08-05 23:51:00 +0800</pubDate>
+    <guid isPermaLink="false">2208052351</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/128020354.html#2208052351</link>
+    </item>
     <item>
     
     
@@ -264,14 +275,13 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <item>
     
     
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
-    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏所用的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（De-trend；這75年的平均GDP年增率是3.07%，相當於每季增長0.75%，我們把這個平均增長率從數據中扣除）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
-&lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國投入越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了subprime Crisis次貸危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
+    <title><![CDATA[【基礎科研】再談Google的量子霸權 | 後註三]]></title>
+    <description><![CDATA[後註三 <br><br>----<br><br>2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見&lt;a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"&gt;&lt;span style="color:blue"&gt;《Ordinary computers can beat Google’s quantum computer after all》&lt;/span&gt;&lt;/a&gt;）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。&lt;/p&gt;
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2022-08-03 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2208030000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208030000</link>
+    <link>https://taizihuang.github.io/wmyblog/html/130416352.html#2208030000</link>
     </item>
     <item>
     
@@ -287,13 +297,14 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <item>
     
     
-    <title><![CDATA[【基礎科研】再談Google的量子霸權 | 後註三]]></title>
-    <description><![CDATA[後註三 <br><br>----<br><br>2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見&lt;a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"&gt;&lt;span style="color:blue"&gt;《Ordinary computers can beat Google’s quantum computer after all》&lt;/span&gt;&lt;/a&gt;）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。&lt;/p&gt;
+    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
+    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏所用的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（De-trend；這75年的平均GDP年增率是3.07%，相當於每季增長0.75%，我們把這個平均增長率從數據中扣除）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
+&lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國投入越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了subprime Crisis次貸危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2022-08-03 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2208030000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/130416352.html#2208030000</link>
+    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208030000</link>
     </item>
     <item>
     
@@ -424,50 +435,6 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <pubDate>2022-07-30 03:21:00 +0800</pubDate>
     <guid isPermaLink="false">2207300321</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207300321</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【台灣】【工業】經濟的最後支柱 | 後註四]]></title>
-    <description><![CDATA[後註四 <br><br>----<br><br>過去幾年，臺積電反復經歷電力和淡水供應的問題。昨天消息傳出（參見&lt;a href="https://www.phonearena.com/news/tsmc-fab-hit-by-severe-voltage-drop_id141573"&gt;&lt;span style="color:blue"&gt;《TTSMCs cutting-edge fab is hit by 90% voltage drop》&lt;/span&gt;&lt;/a&gt;），南科18A晶圓廠因電壓突降而面臨停產；這次或許是一個相對來說並不嚴重的事件，但類似問題發生的頻率太高，必然是管理階層心中的隱憂。&lt;/p&gt;
-
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-30 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2207300000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908770.html#2207300000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | AbzX5]]></title>
-    <description><![CDATA[这两天国内社交媒体上发生了周劼事件, 一名地方上的官二代周劼将"官场现形记"直白的写在了朋友圈, 主要内容是夸耀家族在地方上的领导关系网, 嘲笑读书比自己好的同学混的不如自己(研究生进不了国企, 自己三本大学却轻松入职), 炫耀国企单位福利(22岁女白领猝死, 自己周末不上班)和个人财产(家里7套房)等等.
-(1) 王先生曾谈过, 承平日久, 利益集团就会自然形成世家豪强, 将来必然会打着"祖宗之法"或者"大宪章"来巩固自己的利益, 成为改革阻碍. 现在地方上一些豪强已经初现端倪了, 看来21世纪要靠E-goverment来打击豪强了. (2) 这位周劼去了地方国企江西高速工作, 之前河南村镇的吕弈则发迹于兰尉高速工程. 假如中国没有中铁XX局之类的土建央企, 而是和西方一样搞自由市场, 任由这些豪强发展垄断土建和其它大工程, 最后必然导致天价的基建.
- <br><br>----<br><br>
-是的，土豪和體制無關，是普世問題，到處都是；比起全球相對少數的國際財閥，處理起來麻煩得多，但對一般民衆的影響卻也遠遠更直接、更切身。尤其中國傳統文化是人情社會（不是真正的“儒家”！），所以土豪的生存活動空間也更加寬廣，例如台灣的政治和社會，從中央到地方基層，都由大大小小的土豪把持，司空見慣、習以爲常。改開40年，縱容得太久、太過分了，就連習近平反腐，都沒有針對性地處理土豪，更別提建立誠實風氣。尤其對學術造假和誇大的絕對放縱，更是貽害深遠。我只不過看得遠、看得清，結果一般人反過來指控我迂腐、情商低、不懂人性。換句話説，許多群衆可以前一分鐘對周劼這樣的事件破口大駡，下一分鐘就轉過頭來對真正有效的根本解決方案嗤之以鼻，渾然不知他們自己的這種反射式的愚蠢、自私和雙標（參考幾個月前的上海防疫經驗），其實才是社會諸般問題的基本根源和進步的最大絆脚石。那麽由既得利益者自由影響和挑選“民意”的西方體制，自然不可能做出深刻的自清改革，其腐化的速度和程度也遠高於一般人的想象。
-有人發私信給我，指出周家的地位和權勢並沒有他所誇耀的那麽大。我沒有第一手資料，無法置喙；不過我做上面評論時，已經避免針對特例，而是從社會大局來做討論，只要土豪真正存在，就還是切題的（Relevant）。
-又有私信建議，希望我不要對群衆的愚性多做批判，以免有失自己的身份。以下是我的回答，和大家分享：要真正治理腐敗，必須雙管齊下：一方面從上向下嚴打，另一方面在基層建立公共道德觀念，由每一個人監督周邊的害蟲。如果不先承認群衆愚蠢自私的劣根性，基層公德從何建立起？人情社會，你好我好大家好，正是鄉愿世界，德之賊也。海瑞的清廉兼具秦檜的圓滑，不但違反歷史事實，在邏輯上都是不可能的。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-29 14:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2207291400</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207291400</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | AbzX5]]></title>
-    <description><![CDATA[除了工信部, 这今天还有一个相关新闻: 国家芯片大基金总裁丁文武被查. 作为博客老读者, 不知道该喜还是该哀
-https://finance.sina.com.cn/tech/it/2022-07-28/doc-imizirav5828851.shtml
-
-
- <br><br>----<br><br>
-2015年股災我判斷監管單位的處置不合理，結果果然是貪腐。過去幾年抱怨半導體產業政策胡搞，現在證實又是貪腐。狹義來看，一次抓了四五個，是清理門戶的好事。然而拖了這麽多年，騙補都已經形成產業鏈了，依舊讓人難過，更別提對國家的嚴重危害。中國縱容思想腐化太久，笑貧不笑娼的風氣深入各個領域；我批評學術界造假誇大，並不是迂腐，而是簡單預見了這類思想腐朽的後果。光是事後抓人，猶如竹籃提水，空費力氣；必須事事嚴抓，以建立健康文化，讓業内人自相監督，才有長遠的效率可言。昨天上唐湘龍節目，不知道直播已經開始，以爲還在私下聊天，談到此事，其實並非我的本願。這是因爲這類突發新聞，我處於信息鏈的下游，在能夠多方搜證、補齊視野之前，不應該妄自評論。節目内討論半導體的部分，我就有意回避中方的管理問題。此外，一般人可能沒有注意到，我上《龍行天下》，視頻訊號通過網絡繞行地球，來回有近半秒的延遲，尤其錄下來的是台灣視角的版本，所以雖然容易出現我和主播搶著發話的情況，並不是有什麽“不禮貌”或“欠缺默契”的現象。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-29 13:41:00 +0800</pubDate>
-    <guid isPermaLink="false">2207291341</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2207291341</link>
     </item>
     </channel></rss>
     
