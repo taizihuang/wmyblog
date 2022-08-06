@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-06 23:05 +0800</lastBuildDate>
+    <lastBuildDate>08-07 00:05 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -292,6 +292,18 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <item>
     
     
+    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
+    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏所用的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（De-trend；這75年的平均GDP年增率是3.07%，相當於每季增長0.75%，我們把這個平均增長率從數據中扣除）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
+&lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國投入越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了subprime Crisis次貸危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-08-03 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">2208030000</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208030000</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【基礎科研】再談Google的量子霸權 | 後註三]]></title>
     <description><![CDATA[後註三 <br><br>----<br><br>2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見&lt;a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"&gt;&lt;span style="color:blue"&gt;《Ordinary computers can beat Google’s quantum computer after all》&lt;/span&gt;&lt;/a&gt;）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。&lt;/p&gt;
 ]]></description>
@@ -310,18 +322,6 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <pubDate>2022-08-03 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2208030000</guid>
     <link>https://taizihuang.github.io/wmyblog/html/162032391.html#2208030000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
-    <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏所用的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（De-trend；這75年的平均GDP年增率是3.07%，相當於每季增長0.75%，我們把這個平均增長率從數據中扣除）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
-&lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國投入越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了subprime Crisis次貸危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-08-03 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2208030000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208030000</link>
     </item>
     <item>
     
@@ -394,64 +394,6 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <pubDate>2022-08-01 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2208010000</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208010000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 薛丁格的貓]]></title>
-    <description><![CDATA[Inflation
-先謝謝王博士在龍行天下中對於通膨結構至少可分四個部分(勞動薪資/原物料/資產價格/工業成品)的說明，一直以來，總覺得官方CPI數據與實際生活感受差距甚遠，心裡知道統計數字有問題，但又無法系統性地說出原因，真可謂聽君一席話勝讀十年書!個人覺得這四個部分裡，勞動薪資帶動的通漲是最不壞的，至少勞動階層有分到果實。
-若將來中美完成霸權交替，除了國際組織與規範，中國是否應該積極打破現行許多經濟、經貿的統計方法，一方面有助於話語權的提升，另一方面也有助於有心於社會主義的國家，對國內民生進行更精確而有效的管理。
- <br><br>----<br><br>
-其實成品又分自產和進口兩類，其價格波動完全可以是互相獨立的。例如當前美國自中國進口的東西，價格依舊穩定，甚至因爲過去一年過度訂貨而疲軟，但是他們國内自產的貨品就因原物料和勞工的短缺，成爲這一波通脹的主要動力。一旦基層百姓的生活費用不斷升高，自然會有要求工資隨之上漲的動力，然後反饋到日用物品和服務的定價上，這就是我所談自我加强的循環效應。這個效應會使通脹固化：原本在初始階段，可以用2-4%的真實利率打斷的循環，徹底固化之後就非得10%才有效果（參見1980年的經驗）。然而現在的美聯儲貼現率仍舊只加到2.5%，在通脹率已達8-9%的背景下，對應著大約負6%的真實利率，這正是我不相信美國光從歐日吸血就能解決通脹問題的主要考慮。中國智庫的主要任務之一，是建立自己的統計資料庫，因爲統計數字是最重要的學術話語權；這是我以前反復談過的事。我知道上了年紀記性自然衰退，或許你該設法抽空復習博客的舊文。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-30 11:07:00 +0800</pubDate>
-    <guid isPermaLink="false">2207301107</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207301107</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 薛丁格的貓]]></title>
-    <description><![CDATA[一籃子貨幣
-歐元區尚且因為各成員國間的經濟、財政差異，造成實際執行上的諸多困難，例如：升息抑制通膨一事，對德國及義大利的利害關係就不盡相同。金磚10國(或更多)將來若能成立一籃子貨幣，彼此之間在貿易分工上正好互補性極強，但經濟發展程度與財政狀況卻比現在的歐元成員國差異更大，該如何調和彼此之間的差異，避免各別成員國為了調節國內經濟情勢而為之貨幣或財政政策，傷害其他成員國利益呢?
- <br><br>----<br><br>
-正文中已經正面、而且多層次地未雨綢繆，例如第一層防護是不讓印度加入。然而現在主導新國際秩序的是俄方，那麽中國就只能在規則制定上下功夫。正文中已經討論了一些基本的原則，但中方似乎對防範會員國濫發貨幣的考慮，既不用心、也不積極，我們也就沒有必要進一步空談理想架構；就像過去20年半導體產業發展的案例那樣，内部到處都是蛀蟲，甚至當年搞出漢芯的騙子依舊還在國内開公司騙錢，那麽外人爭論技術細節的優先順序是毫無意義的。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-30 10:43:00 +0800</pubDate>
-    <guid isPermaLink="false">2207301043</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171980706.html#2207301043</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【藝術】【基礎科研】藝術與科學的衰敗 | 芳草鮮美落英繽紛]]></title>
-    <description><![CDATA[先生曾提到美國有愈來愈多的educated poor階層對政治路線造成影響，請問那群人會開始反省【後註一】中所提虛矯浮夸的高教風氣嗎？他們之中應有不少有真材實學但不擅吹捧自己的人，是這種浮夸風氣的直接受害者。我想起Pew幾年前的一份民調 《The Growing Partisan Divide in Views of Higher Education》，顯示共和黨支持者對美國大學的印象開始反轉，多數認為大學對社會負面影響大於正面，大學教授行事不符合公眾利益，高等教育正往錯誤方向前進，等等。這固然有黨派極化的影響，其中應該也有不少務實人士看到其中的問題，形成反省力量。我認為在中國社會中「惟有讀書高」的觀念很重，在社會上形成對大學的普遍反省力量比較難，因此應該著重於對敗壞風氣的預先防範，以及由上而下的管理。
- <br><br>----<br><br>
-這裏的問題在於美國的高等教育體系正是白左教發源和壯大的溫床，而白左教的教義完全針對年輕人理想主義的偏好，加以扭曲利用，結果他們往往一輩子樂此不疲。另一個效應在於基礎教育的快樂化，所以真正具有理性思維能力的新生代逐步萎縮，現在早已成爲極少數，對當前極度不公平的體制毫無挑戰的能力。至於共和黨，他們只是利用反對身份政治的正當批判作爲藉口，來換取黨爭利益，實際上他們更加是財閥的代言人，對固化上層階級的利益一樣堅持用心。目前中國學術體系完全不受紀律和道德規範，造假、誇大、詐騙橫行；這有如一個社區容許自由殺人，那麽選拔不公這類搶劫式的犯行，自然也談不上禁止。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-30 04:46:00 +0800</pubDate>
-    <guid isPermaLink="false">2207300446</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/129978332.html#2207300446</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 乌鹊南飞]]></title>
-    <description><![CDATA[将来土豪们的祖宗之法，就是改开。（现在以捍卫改开成果为护身符的也不少了）以更早的祖宗之法对付的问题在于毛泽东把社会主义的正门招牌搞臭了，别说没几个人再想见到，即使用了也有许多恶性后果。
-请问论语中“父为子隐，子为父隐，直在其中矣”是人情社会的表现吗？
-现代中国的土豪很大一部分就是官员的亲朋好友，倒不是攻击共产党，而是在市场化私有化的潮流下，靠近权力的人就是可以先得月。这恐怕也是习近平没对土豪动手的原因之一，毕竟连贪腐官员都只能搞既往不咎，至于官员的亲属沾光就更难管了。最近开始搞的禁止厅局级以上直系亲属经商是有用的，不过恐怕只能限制土豪蔓延的势头而不能削减。想请问王先生对中国土豪有何应对之策。
-王先生反对西式民主的原因之一就是希望阻断钱向权的转化通道，当今中国，权向钱的转化通道是大开的，各路土豪就是明证（包括中央政治局的委员们（比如习近平为了避嫌要求亲属退出各种公司，虽然行为和意图是好的，但也让我们一窥权力顶级家庭都是数亿以上家资））但是更可怕的是钱可以转化为权，而直选正是当今最方便最体面的钱转化为权的途径。但这只是暂时阻断而已，即使中国录取官员不以财产为标准，但是财富，权力，学术门阀的积累加上本身教育体系就向上层阶级倾斜，长时间后权和钱将深度绑定。
- <br><br>----<br><br>
-關於“父為子隱，子為父隱”，那是因爲在中國古代的家族社會中，直系血親關係最爲密切，即使爲了社會公益也不能强迫切割，是必須要有的特別例外。現代美國家庭以夫妻為單位，所以也明文立法，規定一般公民對刑事案件做目擊證人和轉述招供的責任，對被告的配偶是豁免的，這叫做Spousal Testimonial Privilege和Marital Communications Privilege；它並不足以把美國劃歸人情社會。當然論語對這個道理說的太過簡略，實在應該要進一步稍作解釋，澄清它背後的考慮和應用範圍的極限；結果2000多年下來，原本的特殊例外被不斷擴張，來為家族利益集團的非法行動正名，的確為人情社會提供了助力。爲了對抗資本，必須强化國家權力，然而執行這些權力的人轉過頭來以權謀私是自然的結果。但我也已經解釋過無數次，公益與私利之間的矛盾鬥爭是永恆無止境的，原本就不存在一勞永逸的體制方案。正文中提到的e-gov，是可以為正義一方提供一點助力的機制。此外，可以禁止二等親内在同一個組織内服務等等。歷代帝王做過許多不同的嘗試，個別來看，都可以簡單繞過，而且必然會因年久而荒廢，但那並不代表它們不是有用而值得考慮的政策。
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-07-30 03:21:00 +0800</pubDate>
-    <guid isPermaLink="false">2207300321</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2207300321</link>
     </item>
     </channel></rss>
     
