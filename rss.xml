@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-08 02:06 +0800</lastBuildDate>
+    <lastBuildDate>08-08 03:05 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -212,17 +212,6 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <item>
     
     
-    <title><![CDATA[【基礎科研】再談Google的量子霸權 | 後註三]]></title>
-    <description><![CDATA[後註三 <br><br>----<br><br>2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見&lt;a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"&gt;&lt;span style="color:blue"&gt;《Ordinary computers can beat Google’s quantum computer after all》&lt;/span&gt;&lt;/a&gt;）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2022-08-03 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2208030000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/130416352.html#2208030000</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註六]]></title>
     <description><![CDATA[後註六 <br><br>----<br><br>這兩天因故拿美國經濟和金融的一些歷史記錄來玩耍，偶然注意到一個以往沒聽見其他人討論過的小現象，在這裏和大家分享，參見下圖。這裏所用的數據是1947至2022年的真實GDP（Real GDP，亦即排除了通脹的影響），每季一個資料點（Quarterly Data at Annual Rate，含Seasonal Adjustment季節性調整，亦即排除了淡季和旺季之間的波動）；有興趣複製的讀者，請移步到&lt;a href="https://fred.stlouisfed.org/series/GDPC1"&gt;&lt;span style="color:blue"&gt;《Real Gross Domestic Product (GDPC1)》&lt;/span&gt;&lt;/a&gt;，下載資料到電子表格，然後進行以下的三個步驟：1）取對數；2）消除斜率（De-trend；這75年的平均GDP年增率是3.07%，相當於每季增長0.75%，我們把這個平均增長率從數據中扣除）；3）適度平移放大之後，將時間序列製圖為曲綫。&lt;/p&gt;&lt;p&gt;&lt;img src="./img/175790558_1"/&gt;&lt;/p&gt;
 &lt;p&gt;解讀這張圖的重點觀察，在於美國二戰後75年的經濟發展史，可以分爲三個明顯的段落：1947-1964是高速發展期，1965-2007期間雖有過滯脹，整體依舊算是穩定成長，2008至今則增長乏力。有趣的是，1964年是美國投入越戰的起點（參見前文&lt;a href="108908618.html"&gt;&lt;span style="color:blue"&gt;《美國小官僚的大錯誤》&lt;/span&gt;&lt;/a&gt;），而2007年則發生了subprime Crisis次貸危機。美國的沒落咎由自取，在衰頹的過程中還忙著殺人越貨、到處放火，真是邪惡至極。&lt;/p&gt;
@@ -231,6 +220,17 @@ https://www.guancha.cn/politics/2022_08_03_652114.shtml
     <pubDate>2022-08-03 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">2208030000</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2208030000</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】再談Google的量子霸權 | 後註三]]></title>
+    <description><![CDATA[後註三 <br><br>----<br><br>2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見&lt;a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"&gt;&lt;span style="color:blue"&gt;《Ordinary computers can beat Google’s quantum computer after all》&lt;/span&gt;&lt;/a&gt;）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。&lt;/p&gt;
+]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2022-08-03 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">2208030000</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/130416352.html#2208030000</link>
     </item>
     <item>
     
