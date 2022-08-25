@@ -5,3 +5,5 @@ bs4
 pandas
 Mako
 numpy
+aiohttp
+asyncio

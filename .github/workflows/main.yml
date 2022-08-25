@@ -32,7 +32,7 @@ jobs:
       - name: run script
         run: |
           git pull
-          python wmy.py
+          python wmyblog_coron.py
         
       - name: git push
         run: |

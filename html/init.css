@@ -132,3 +132,37 @@ line-height: 1.4 !important;
 strike {
 color:#919191;
 }
+
+.text1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    line-height: 1.3rem;
+    border-radius: 10px;
+    /* display: flex; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    position: relative;
+}
+.btn {
+    float: right;
+    padding-top: 4px;
+    line-height: 10px;
+    color: #3c6e9e;
+    cursor: pointer;
+    /* margin-top: -30px; */
+}
+.btn::before {
+    content: '更多'
+}
+.exp {
+    display: none;
+}
+.exp:checked+.text1 {
+    -webkit-line-clamp: 999;
+}
+
+.exp:checked+.text1 .btn::before {
+    content: ''
+}
