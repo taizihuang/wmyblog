@@ -1,4 +1,4 @@
-import asyncio,aiohttp,time,math,os,requests,re,datetime
+import asyncio,aiohttp,time,math,os,requests,re,datetime,json
 from mako.template import Template
 from bs4 import BeautifulSoup
 import numpy as np
@@ -532,6 +532,35 @@ def genLatestComment(df_comment_today,article_dict):
         rss.write(RSS_notify.render(date=art_date,reply_li=reply_li))
     return
 
+def exportJSON(articleFile,commentFile,jsonFile):
+    df_article = pd.read_pickle(articleFile)
+    df_comment = pd.read_pickle(commentFile)
+
+    article_list = []
+    title_dict = {}
+    for i in df_article.index:
+        id = df_article.id[i]
+        title = df_article.title[i]
+        title_dict[id] = title
+        art_date = df_article.art_date[i]
+        post = df_article.post[i]
+        article_list.append({"id":id,"title":title,"date":art_date.strftime('%Y-%m-%d %H:%M:%S'),"post":post})
+
+    comment_list = []
+    for i in df_comment.index:
+        id = df_comment.id[i]
+        title = title_dict[id]
+        nickname = df_comment.nickname[i]
+        comment = df_comment.comment[i]
+        comment_date = df_comment.comment_date[i]
+        reply = df_comment.reply[i]
+        if reply:
+            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply})
+
+    wmy = {"article":article_list,"comment":comment_list}
+    with open(jsonFile,'w') as f:
+        f.write(json.dumps(wmy))
+
 def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl"):
 
     def today(timezone='Asia/Shanghai'):
@@ -559,10 +588,13 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
         article_dict[df_article.id[index]] = df_article.title[index]
     genLatestComment(df_comment_today,article_dict)
     print('latest page generated')
+
+    exportJSON(articleFile,commentFile,jsonFile='./search/wmyblog.json')
+    print('search data generated')
     
 #os.environ['http_proxy'] = "http://127.0.0.1:7890" #代理的端口
 #os.environ['https_proxy'] = "http://127.0.0.1:7890"
 #proxy = 'http://127.0.0.1:7890'
 
-#updateBlogData()
+updateBlogData()
 updateBlogPage(days=7)

@@ -10,6 +10,7 @@ input,
 optgroup,
 select,
 textarea, h1, h2, h3, h4, h5 {
+    width: 99%;
     font-weight: 300;
     font-family: Lato,Noto Sans SC Sliced, sans-serif;
 }
