@@ -27,36 +27,23 @@ start C:\"Program Files (x86)"\Microsoft\Edge\Application\msedge.exe --allow-fil
 如果Chrome不是安装在默认目录，需要手动修改路径。
 
 
-
-
-## 全盘更新，大约15分钟：
+## 全盘更新，大约2分钟：
 
 ```python
-from wmyblog import * # wmyblog.py是库函数，你需要用pip或者conda安装requirements.txt内的依赖
+import wmyblog_coron as blog # wmyblog_coron.py是库函数，你需要用pip或者conda安装requirements.txt内的依赖
+# 更新博客数据
+blog.updateBlogData(nTask=20, proxy='', articleUpdate=True,commentFullUpdate=False)
+    ## nTask: 协程（≈线程）数量
+    ## proxy: 代理地址
+    ## articleUpdate: 更新所有文章和文章页面的评论
+    ## commentFullUpdate: 更新所有评论
 
-os.environ['http_proxy'] = "http://127.0.0.1:xxxx" #代理的端口
-os.environ['https_proxy'] = "http://127.0.0.1:xxxx"
+blog.updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl")
+    ## days: 最新n天的回复
+    ## articleFile: 文章dataframe数据地址
+    ## commentFile: 评论dataframe数据地址
 
-updateArticle() #更新文章，保存成pkl和json格式
-updateComment() # 更新评论，保存成pkl和json格式
-genHTMLAll() # 利用文章和评论的pkl文件生成独立的html文件 [不需要联网]
-genINDEX() # 生成文章目录index.html [不需要联网]
 ```
-
-## 每日更新，只需10秒：
-
-```python
-from wmyblog import *
-
-os.environ['http_proxy'] = "http://127.0.0.1:xxxx" #代理的端口
-os.environ['https_proxy'] = "http://127.0.0.1:xxxx"
-
-latest = today() - datetime.timedelta(days=2) #获取近三日的评论与回复
-updateDaily(latest) 
-```
-
-安卓手机可以在Termux上面安装python，实现随时随地更新文章，亲测好用。
-
 
 ### Git 备忘
 

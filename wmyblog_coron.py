@@ -189,6 +189,9 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False):
 
+    os.environ['http_proxy'] = proxy #代理的端口
+    os.environ['https_proxy'] = proxy
+
     tasker = Tasker(nTask=nTask)
 
     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
@@ -592,9 +595,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     exportJSON(articleFile,commentFile,jsonFile='./search/wmyblog.json')
     print('search data generated')
     
-#os.environ['http_proxy'] = "http://127.0.0.1:7890" #代理的端口
-#os.environ['https_proxy'] = "http://127.0.0.1:7890"
-#proxy = 'http://127.0.0.1:7890'
-
-updateBlogData()
+updateBlogData(proxy='')
 updateBlogPage(days=7)
