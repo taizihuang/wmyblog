@@ -314,7 +314,7 @@ def genHTML(art_id,df_article,df_comment):
     post = df_article.post[i[0]]
     
     reply_li = []
-    df_comment_id = df_comment.loc[df_comment.id == art_id].sort_values(by=['comment_date','nickname'])
+    df_comment_id = df_comment.loc[df_comment.id == art_id].sort_values(by=['comment_date','nickname','comment'])
     for j in df_comment_id.index:
         comment = df_comment_id.comment[j]
         if comment:
