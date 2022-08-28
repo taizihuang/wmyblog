@@ -328,7 +328,7 @@ def genHTML(art_id,df_article,df_comment):
                     if first_reply_date == latest_reply_date:
                         reply = reply + f'<br><div class="TIME">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 回复</div>'
                     else:
-                        reply = reply + f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 修改</a></div>'
+                        reply = reply + f'<br><div class="TIME">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 修改</div>'
 
             nickname = df_comment_id.nickname[j]
             comment_date = df_comment_id.comment_date[j].strftime('%Y-%m-%d %H:%M')
@@ -519,7 +519,7 @@ def genLatestComment(df_comment_today,article_dict):
                     if first_reply_date == latest_reply_date:
                         reply = reply + f'<br><div class="TIME">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 回复</div>'
                     else:
-                        reply = reply + f'<br><div class="TIME">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 修改</div>'
+                        reply = reply + f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html" style="text-decoration: none;color:black;">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 修改</a></div>'
             nickname = df_comment_today.nickname[i]
             comment_date = df_comment_today.comment_date[i]
             uuid = comment_date.strftime('%y%m%d%H%M')
