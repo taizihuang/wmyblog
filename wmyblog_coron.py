@@ -149,7 +149,7 @@ def mergeArticle(df_article_new, articleFile='./data/article_full.pkl'):
 
     os.remove(articleFile+'.bak')
     os.rename(articleFile, articleFile+'.bak')
-    df_article.to_pickle(articleFile)
+    df_article_new.to_pickle(articleFile)
 
 def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 
