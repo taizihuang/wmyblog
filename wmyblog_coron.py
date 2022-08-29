@@ -248,8 +248,8 @@ def genAnno(df):
                 reply = i[loc3+1:]
                 if reply[-6:] == '</div>':
                     reply = reply[:-6]
-                df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,'date':date,'id':id},index=[0])],ignore_index=True)
-    df_anno = df_anno.sort_values(by='date',ascending=False).reset_index(drop=True)
+                df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,'comment_date':date,'id':id},index=[0])],ignore_index=True)
+    df_anno = df_anno.sort_values(by='comment_date',ascending=False).reset_index(drop=True)
     return df_anno
 
 def genINDEX(articleFile='./data/article_full.pkl'):
