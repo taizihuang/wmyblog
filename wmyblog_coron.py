@@ -508,8 +508,14 @@ def genLatestComment(df_comment_today,article_dict):
     reply_li = []
     art_date = datetime.datetime.now().strftime('%m-%d %H:%M')
     for i in df_comment_today.index:
-        comment = df_comment_today.comment[i] 
+        comment = df_comment_today.comment[i]
         if comment:
+            nickname = df_comment_today.nickname[i]
+            comment_date = df_comment_today.comment_date[i]
+            uuid = comment_date.strftime('%y%m%d%H%M')
+            art_id = df_comment_today.id[i]
+            source = article_dict[art_id]
+            striked = '<strike>' in comment
             reply = re.sub('<br>$','',re.sub('^<br>','',df_comment_today.reply[i])).replace('<br>','<br><br>')
             if reply:
                 first_reply_date = df_comment_today.loc[i, 'first_reply_date']
@@ -520,12 +526,6 @@ def genLatestComment(df_comment_today,article_dict):
                         reply = reply + f'<br><div class="TIME">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 回复</div>'
                     else:
                         reply = reply + f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html" style="text-decoration: none;color:black;">{latest_reply_date.strftime("%Y-%m-%d %H:%M")} 修改</a></div>'
-            nickname = df_comment_today.nickname[i]
-            comment_date = df_comment_today.comment_date[i]
-            uuid = comment_date.strftime('%y%m%d%H%M')
-            art_id = df_comment_today.id[i]
-            source = article_dict[art_id]
-            striked = '<strike>' in comment
             reply_li.append((source,art_id,uuid,comment,reply,nickname,comment_date,striked))
     with open("./html/new_comment.html", "w",encoding='utf8') as html:
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
