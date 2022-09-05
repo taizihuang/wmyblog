@@ -510,7 +510,7 @@ def genLatestComment(df_comment_today,article_dict):
     for i in df_comment_today.index:
         comment = df_comment_today.comment[i]
         if comment:
-            nickname = df_comment_today.nickname[i]
+            nickname = df_comment_today.nickname[i].replace('\u3000',' ')
             comment_date = df_comment_today.comment_date[i]
             uuid = comment_date.strftime('%y%m%d%H%M')
             art_id = df_comment_today.id[i]
