@@ -154,8 +154,9 @@ def mergeArticle(df_article_new, articleFile='./data/article_full.pkl'):
 def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 
     df_comment = pd.read_pickle(commentFile)
-    df_comment1 = df_comment.loc[df_comment.comment_date >= min(df_comment_new.comment_date)]
-    df_comment2 = df_comment.loc[df_comment.comment_date < min(df_comment_new.comment_date)]
+    min_comment_date = min(df_comment_new.comment_date.dropna())
+    df_comment1 = df_comment.loc[df_comment.comment_date >= min_comment_date]
+    df_comment2 = df_comment.loc[df_comment.comment_date < min_comment_date]
 
     id_list = df_comment.id.drop_duplicates()
     for id in id_list:
@@ -204,6 +205,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
         comment_list = [page[1] for page in page_list]
         df_article = pd.concat(article_list,ignore_index=True)
         df_comment = pd.concat(comment_list,ignore_index=True)
+
         mergeArticle(df_article)
         mergeComment(df_comment)
         print('articles and latest comments updated')
