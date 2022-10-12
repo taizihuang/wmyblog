@@ -12,7 +12,7 @@ select,
 textarea, h1, h2, h3, h4, h5 {
     width: 99%;
     font-weight: 300;
-    font-family: Lato,Noto Sans SC Sliced, sans-serif;
+    font-family: Microsoft YaHei, DFKai-sb, Noto Sans SC Sliced, sans-serif;
 }
 
 h1, h2, h3, h4, h5, p, li {
