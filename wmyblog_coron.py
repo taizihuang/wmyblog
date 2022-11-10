@@ -575,7 +575,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        #time.tzset()
+        time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
