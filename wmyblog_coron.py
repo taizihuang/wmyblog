@@ -237,7 +237,7 @@ def genAnno(df):
         d = df.loc[idx,'art_date']
         loc1 = strFind(s,'後註一')+strFind(s,'原後註')
         if loc1 != []:
-            ss = s[loc1[0]:].split('<p>【')
+            ss = s[loc1[0]:].split('>【')
             for i in ss:
                 loc2 = strFind(i[:7],'，')
                 loc3 = strFind(i,'】')[0]
@@ -250,6 +250,11 @@ def genAnno(df):
                 reply = i[loc3+1:]
                 if reply[-6:] == '</div>':
                     reply = reply[:-6]
+                elif reply[-2:] == '<p':
+                    reply = reply[:-2]  
+                elif reply[-2] == '體':
+                    loc4 = strFind(reply,'<p>')
+                    reply = reply[:loc4[-1]]              
                 df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,'comment_date':date,'id':id},index=[0])],ignore_index=True)
     df_anno = df_anno.sort_values(by='comment_date',ascending=False).reset_index(drop=True)
     return df_anno
@@ -570,7 +575,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        time.tzset()
+        #time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
