@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>01-06 16:06 +0800</lastBuildDate>
+    <lastBuildDate>01-06 17:06 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[这个部落格 | AbzX5]]></title>
+    <description><![CDATA[好吧, 我极简短介绍一下ChatGPT(AI不是本博主题 多余可删). 这是过去四五年的进展在21/22年所结的果. 简单说主要是两样东西,一是一种叫transformer的技术及其后续发展非常成熟, AI可以用这个技术在相当大范围的上下文中, 主动注意到相隔很远的词语间的关联, 然后综合做出判断, 所以这就是为什么如今翻译和文字的生成都惊人的流畅. 二是contrast leanring 进一步完善. 所谓对比学习, 就是取出一对相似样本,然后要求模型学到他们的相似性.注意,相似样本选取非常宽松, 比如可以是视频相邻的两帧,不相似样本对比是任意取帧 .这样一来,根本不用再费人力去标注数据, 模型可以利用自身不同部分间的关联自行学习. 而且更妙的是相似样本甚至还能跨领域, 比如图片和他下方对应的文字标注.这样的数据在互联网上几乎是海量的 非常便宜,所以你可以看到很多输入文字自动绘图的AI. 这些进步使得AI的模仿到了惊人的地步,真是很了不起的进展,可以解放一些常规操作.但是正如王先生所说, 这只是风格上的模仿,做写手和画匠,没有推理功能,其实谷歌比openai早就推出了更厉害的对话ai,但是担心负面效果不敢用到搜索引擎.至于推理, 有一个叫pathway的工作专门做数学定理的推理证明,不过那不是我的专长,我不懂. 希望这些简短介绍帮助读者快速理解关键性的事实, 节约时间而不必陷入细节 <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-01-06 16:21:00 +0800</pubDate>
+    <guid isPermaLink="false">2301061621</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908719.html#2301061621</link>
+    </item>
     <item>
     
     
