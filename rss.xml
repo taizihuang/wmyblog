@@ -7,14 +7,25 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>01-11 04:06 +0800</lastBuildDate>
+    <lastBuildDate>01-11 05:06 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Taizi Huang]]></title>
+    <description><![CDATA[简单搜索到去年这个时候有篇文章《中科大，隐藏一个中国量子天团》（https://people.pedaily.cn/202201/485373.shtml）介绍了量子物理领域导师与学生创业开公司并接受风险投资的商业模式，我想可以作为【后注九】的补充。 <br><br>----<br><br>好的，謝謝。
+<br>&lt;div class="TIME"&gt;2023-01-11 05:01 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-01-11 04:10:00 +0800</pubDate>
+    <guid isPermaLink="false">2301110410</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2301110410</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註九]]></title>
-    <description><![CDATA[後註九 <br><br>----<br><br>我在留言欄提到【後註五】那篇牛津良心學者的爆料文章被中國傳媒的總編輯拒絕刊登，取而代之的是“風雲學會”袁嵐峰的一連三篇水文，證明中科大已經成功建立對大陸所有媒體的完全封鎖，沒有任何關於量子計算的實話能在14億人的國度内被傳播。其後果之一是中方的量子計算集團可以肆無忌憚地搞假大空，包括最新一篇被國内廣汎吹捧、但國外瞠目結舌的論文（參見&lt;a href="https://www.theregister.com/2023/01/07/chinese_researchers_claimed_quantum_encryption/"&gt;&lt;span style="color:blue"&gt;《Chinese researchers claimed quantum encryption crack looks unlikely》&lt;/span&gt;&lt;/a&gt;），號稱即將破解RSA密碼；其内容是如此的離譜，連美國量子計算的教父Scott Aaronson都必須趕緊出面滅火。&lt;/p&gt;
-&lt;p&gt;與此同時，真正的新研究結果（參見&lt;a href="https://www.quantamagazine.org/new-algorithm-closes-quantum-supremacy-window-20230109/"&gt;&lt;span style="color:blue"&gt;《New Algorithm Closes Quantum Supremacy Window》&lt;/span&gt;&lt;/a&gt;）證明了沒有糾錯機制的量子計算（即使是先射箭再畫靶）都可以由傳統電腦簡單超越，因而過去十年所有所謂“量子計算突破”的公關都是謊話，因爲它們都假設可以忽略我反復强調的糾錯機制。&lt;/p&gt;
+    <description><![CDATA[後註九 <br><br>----<br><br>我在留言欄提到【後註五】那篇牛津良心學者的爆料文章被中國傳媒的總編輯拒絕刊登，取而代之的是“風雲學會”袁嵐峰的一連三篇水文，證明中科大已經成功建立對大陸所有媒體的完全封鎖，沒有任何關於量子計算的實話能在14億人的國度内被正規傳播。其後果之一是中方的量子計算集團可以肆無忌憚地搞假大空，包括最新一篇被國内廣汎吹捧、但國外瞠目結舌的論文（參見&lt;a href="https://www.theregister.com/2023/01/07/chinese_researchers_claimed_quantum_encryption/"&gt;&lt;span style="color:blue"&gt;《Chinese researchers claimed quantum encryption crack looks unlikely》&lt;/span&gt;&lt;/a&gt;），號稱即將破解RSA密碼；其内容是如此的離譜，連美國量子計算界的教父Scott Aaronson都必須趕緊出面滅火。&lt;/p&gt;
+&lt;p&gt;與此同時，真正的新研究結果（參見&lt;a href="https://www.quantamagazine.org/new-algorithm-closes-quantum-supremacy-window-20230109/"&gt;&lt;span style="color:blue"&gt;《New Algorithm Closes Quantum Supremacy Window》&lt;/span&gt;&lt;/a&gt;）證明了任何沒有糾錯機制的量子計算（即使是先射箭再畫靶）都可以由傳統電腦簡單超越，因而過去十年所有所謂“量子霸權”“Quantum Supremary”的公關都是謊話，因爲它們都假設可以忽略我反復强調的糾錯機制。&lt;/p&gt;
 &lt;p&gt;正是出於上述的新發展，於是主流媒體又刊登了一篇良心文章（參見&lt;a href="https://www.ft.com/content/d64e45b4-692a-429e-bc64-146303ec7fdf"&gt;&lt;span style="color:blue"&gt;《Hype around quantum computing recedes over lack of practical uses》&lt;/span&gt;&lt;/a&gt;），說的更直白，光是標題《量子計算的炒作正在消退，因爲找不到實際用途》就足以讓大家理解其主旨。請注意，這些論點不但是博客多年來反復解釋過的事實，而且明確揭示中科大詐騙集團的腐敗無恥已經遠超資本炒作橫行的昂撒國家，到了後者必須劃清界限的地步。&lt;/p&gt;
 &lt;p&gt;潘建偉集團爲什麽變本加厲呢？請回顧他在幾年前用量子通信的虛僞公關在股市收割韭菜、大撈了一票，那麽當然食髓知味、故技重施，最近又成立合肥本源量子计算科技有限责任公司，並且通過前述的媒體掌控來做虛僞宣傳（參見&lt;a href="https://www.guancha.cn/zhanghui5/2022_12_17_671678.shtml"&gt;&lt;span style="color:blue"&gt;《国产量子计算机“悟空”即将问世，离国际领先水平多远？》&lt;/span&gt;&lt;/a&gt;）；如果中科大領導階層和風雲學會的袁嵐峰和陳經都雨露均沾，我一點也不會感到驚訝。&lt;/p&gt;
 &lt;p&gt;如同所有的詐騙犯，潘建偉必須在老騙局破碎之後尋找新的口實來欺瞞新的傻子，從“量子通信”轉成“量子計算”一連欺騙國家和股市兩次，已經是比當年漢芯的陳進更離譜的“成功”轉型，但去年中科大團隊的公關開始進一步改用“量子力學”和“量子物理”為標簽，這顯示這個詐騙集團已經規劃完成完整的流水綫，準備不斷擴大並升級其騙局；在量子力學之後，還可以搞“現代物理”，然後第五局騙術可以乾脆説是“現代科學”，不但順便霸占國内真正的學術研究結果，而且經費和炒股所得也能維持指數成長。漢芯和半導體大基金的詐騙危害，比起這個毒瘤是微不足道的。&lt;/p&gt;
