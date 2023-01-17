@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>01-17 23:06 +0800</lastBuildDate>
+    <lastBuildDate>01-18 00:07 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -120,43 +120,6 @@
     <pubDate>2023-01-11 04:10:00 +0800</pubDate>
     <guid isPermaLink="false">2301110410</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2301110410</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註九]]></title>
-    <description><![CDATA[後註九 <br><br>----<br><br>我在留言欄提到【後註五】那篇牛津良心學者的爆料文章被中國傳媒的總編輯拒絕刊登，取而代之的是“風雲學會”袁嵐峰的一連三篇水文，證明中科大已經成功建立對大陸所有媒體的完全封鎖，沒有任何關於量子計算的實話能在14億人的國度内被正規傳播。其後果之一是中方的量子計算集團可以肆無忌憚地搞假大空，包括最新一篇被國内廣汎吹捧、但國外瞠目結舌的論文（參見&lt;a href="https://www.theregister.com/2023/01/07/chinese_researchers_claimed_quantum_encryption/"&gt;&lt;span style="color:blue"&gt;《Chinese researchers claimed quantum encryption crack looks unlikely》&lt;/span&gt;&lt;/a&gt;），號稱即將破解RSA密碼；其内容是如此的離譜，連美國量子計算界的教父Scott Aaronson都必須趕緊出面滅火。&lt;/p&gt;
-&lt;p&gt;與此同時，真正的新研究結果（參見&lt;a href="https://www.quantamagazine.org/new-algorithm-closes-quantum-supremacy-window-20230109/"&gt;&lt;span style="color:blue"&gt;《New Algorithm Closes Quantum Supremacy Window》&lt;/span&gt;&lt;/a&gt;）從數學上證明了任何沒有糾錯機制的量子計算（即使是先射箭再畫靶）都可以由傳統電腦簡單超越，因而過去十年所有所謂“量子霸權”“Quantum Supremary”的公關都是謊話，因爲它們都假設可以忽略我反復强調的糾錯機制。&lt;/p&gt;
-&lt;p&gt;正是出於上述的新發展，於是主流媒體又刊登了一篇良心文章（參見&lt;a href="https://www.ft.com/content/d64e45b4-692a-429e-bc64-146303ec7fdf"&gt;&lt;span style="color:blue"&gt;《Hype around quantum computing recedes over lack of practical uses》&lt;/span&gt;&lt;/a&gt;），說的更直白，光是標題《量子計算的炒作正在消退，因爲找不到實際用途》就足以讓大家理解其主旨。請注意，這些論點不但是博客多年來反復解釋過的事實，而且明確揭示中科大詐騙集團的腐敗無恥已經遠超資本炒作橫行的昂撒國家，到了後者必須劃清界限的地步。&lt;/p&gt;
-&lt;p&gt;中科大集團爲什麽變本加厲呢？請回顧潘建偉在幾年前用量子通信的虛僞公關在股市收割韭菜、大撈了一票，那麽當然不只他自己食髓知味、故技重施（2020年將安徽量子通信改組為國盾量子，並在科創板上市），同僚們也看了眼紅，最近中科大系連續成立了圖靈量子、玻色量子、啟科量子、本源量子、陽明量子科技等公司（謝謝讀者介紹的公關文&lt;a href="https://people.pedaily.cn/202201/485373.shtml"&gt;&lt;span style="color:blue"&gt;《中科大，隐藏一个中国量子天团》&lt;/span&gt;&lt;/a&gt;），並且推動媒體做虛僞宣傳（參見&lt;a href="https://www.guancha.cn/zhanghui5/2022_12_17_671678.shtml"&gt;&lt;span style="color:blue"&gt;《国产量子计算机“悟空”即将问世，离国际领先水平多远？》&lt;/span&gt;&lt;/a&gt;）；如果這些賣力炒作的中科大領導階層和風雲學會的袁嵐峰和陳經都雨露均沾，我一點也不會感到驚訝。&lt;/p&gt;
-&lt;p&gt;如同所有的詐騙犯，中科大集團必須在老騙局破碎之後尋找新的口實來欺瞞新的傻子，從“量子通信”轉成“量子計算”一連欺騙國家和股市兩次，已經是比當年漢芯的陳進更離譜的“成功”轉型，但從去年起他們的公關開始進一步改用“量子力學”和“量子物理”為標簽，這顯示“量子計算”泡沫破滅後的下一期詐騙已經準備就緒，可以不斷擴大並升級其騙局；在量子力學之後，還可以搞“現代物理”，然後第五局騙術可以乾脆説是“現代科學”，不但順便霸占越來越多國内真正的學術研究結果，而且污染其他科學從業者的心態、誘惑他們加入虛僞炒作的行列，經費和炒股所得因而維持指數成長，但這還只反映了對國家人民傷害的極小部分，因爲主要的負面影響在於資源錯置（例如後量子密碼學被迫推遲）和腐蝕文化（兼含學術文化和政治文化；關於後者，請參考&lt;a href="124083467.html"&gt;&lt;span style="color:blue"&gt;《爲什麽事實與邏輯對群衆無效？》&lt;/span&gt;&lt;/a&gt;博文留言欄第15樓的討論）。漢芯和半導體大基金的詐騙危害，比起這個毒瘤是微不足道的。&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-01-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2301110000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#2301110000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十三]]></title>
-    <description><![CDATA[後註十三 <br><br>----<br><br>過去兩年來，美國SEC（Securities and Exchange Commission，證券交易委員會）在前MIT教授Gary Gensler領導下，可謂脫胎換骨。他一上任就先拆了SPAC那個定時炸彈，然後對所有SEC轄下的金融產品和市場做了全面而且持續的檢討和監督；這裏我是親身體驗，因爲SEC本身的人手不夠，必須分發工作給學術界，我的小孩因而一連兩個學期替他們打工，分別研究了ESG（environmental, social, and corporate governance；這是最近拿新能源來騙錢的常用標簽）應有的標準，和某種金融衍生品的交易細節。今天又看到這則新聞（參見&lt;a href="https://finance.yahoo.com/news/mc-donalds-former-ceo-agrees-to-pay-527-m-in-sec-settlement-165036917.html"&gt;&lt;span style="color:blue"&gt;《McDonald’s former CEO agrees to pay $52.7M in SEC settlement》&lt;/span&gt;&lt;/a&gt;），Gensler連個別高管搞爛公司後，拿巨額解約金退休都不容許，這可是美國20年來首見的案例。再對比本周稍早的報導（參見&lt;a href="https://www.msn.com/en-us/news/us/ftc-proposes-ban-on-non-compete-clauses-in-employment-contracts/ar-AA161uBk"&gt;&lt;span style="color:blue"&gt;《FTC proposes ban on non-compete clauses in employment contracts》&lt;/span&gt;&lt;/a&gt;），另一個商業監管單位FTC（Federal Trade Commission，聯邦貿易委員會）準備禁止Non-Compete Clause（NCC，競業禁止條款），也是冒資本財團利益之大不韙、爲國爲民奮發改革的案例。SEC和FTC的主管雖然只是副部級，但作爲金融和工商專業的領導，對國運有著絕對性的影響；光是SPAC一事就可能已經為美國節省了萬億美元級別的潛在損失。相對的，中國最重要的兩類專業主管，亦即金融和科技，在2022年反而更加醉生夢死、圖利強豪，怎不讓有識之士憂心如焚？&lt;/p&gt;
-]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-01-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">2301110000</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2301110000</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 陳閱增]]></title>
-    <description><![CDATA[ 這次日韓假借防疫之名為難大陸遊客，大陸馬上暫停了日韓的赴華簽證，這次外交部的辦事風格與之前完全不同。對這種惡心人的小動作，既展現出強硬的姿態，又讓日韓很難對等反製，而且時間也非常及時，可以說王博之前所提到的外交方面的改觀已經開始顯現。  <br><br>----<br><br>是的，早有端倪，所以博客反復說過外交部門已經覺醒；當然能做到現在這樣的決斷，還是很令人欣慰的。
-<br>&lt;div class="TIME"&gt;2023-01-11 02:10 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-01-10 21:45:00 +0800</pubDate>
-    <guid isPermaLink="false">2301102145</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#2301102145</link>
     </item>
     </channel></rss>
     
