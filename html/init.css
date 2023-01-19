@@ -167,3 +167,8 @@ color:#919191;
 .exp:checked+.text1 .btn::before {
     content: ''
 }
+
+#article_show_content{
+line-height: 1.8;
+word-wrap: break-word;
+}
