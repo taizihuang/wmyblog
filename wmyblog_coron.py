@@ -428,20 +428,33 @@ def genLatestComment(df_comment_today,article_dict):
     font-size: 32px;
     margin: 28px 0 20px;
     }
+    #search_btn {
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFF;
+        background: #24a2e0b9;
+        padding: 1px 5px;
+        border: 1px solid #24a2e0b9;
+    }
     #rss_btn {
-    font-family: Arial;
-    text-decoration: none;
-    font-size: 13px;
-    color: #FFF;
-    background: #f2853d;
-    padding: 1px 5px;
-    border: 1px solid #ed6b2a;}
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFF;
+        background: #f2853d;
+        padding: 1px 5px;
+        border: 1px solid #ed6b2a;
+    }
     </style>
     <title>${title}</title>
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <div id="LATEST">最新回复<span>  <a href="https://taizihuang.github.io/wmyblog/rss.xml" id="rss_btn">RSS</a></span></div>
+    <div id="LATEST">最新回复
+        <span><a href="https://taizihuang.github.io/wmyblog/rss.xml" id="rss_btn">RSS</a></span>
+        <span><a href="../search/index.html" id="search_btn">搜索</a></span>
+    </div>
     <p class="DATE">${date}</p>
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
