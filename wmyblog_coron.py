@@ -246,7 +246,10 @@ def genAnno(df):
                     date = d
                 else:
                     comment = i[:loc2[0]]
-                    date = pd.to_datetime(i[loc2[0]+1:loc3],format='%Y/%m/%d')+datetime.timedelta(days=1)
+                    if '/' in i[loc2[0]+1:loc3]:
+                        date = pd.to_datetime(i[loc2[0]+1:loc3],format='%Y/%m/%d')+datetime.timedelta(days=1)
+                    else:
+                        date = pd.to_datetime(i[loc2[0]+1:loc3],format='%Y%m%d')+datetime.timedelta(days=1)
                 reply = i[loc3+1:]
                 if reply[-6:] == '</div>':
                     reply = reply[:-6]
