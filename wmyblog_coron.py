@@ -60,6 +60,41 @@ async def fetch_async(url, func, args, proxy=''):
                 output = func(doc,*args)
             return output
 
+async def saveScript(filename, id, proxy=''):
+    link = f'https://docs.google.com/document/d/{id}/edit'
+
+    async with aiohttp.ClientSession() as client:
+        async with client.get(link, proxy=proxy) as resp:
+            doc = await resp.text(encoding='utf8')
+
+    string_left = 'DOCS_modelChunk = [{'
+    string_right = ',"sl":'
+    text = ''
+    while string_left in doc:
+        loc1 = doc.index(string_left)
+        loc2 = doc.index(string_right)
+        text += json.loads(doc[loc1+18:loc2] + '}]')[0]['s']
+        doc = doc[loc2+2:]
+
+    body = text.replace('\n','<br>')
+    html = f"""
+    <html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+        <meta charset="UTF-8"><link rel="stylesheet" href="./init.css">
+        <title>{filename}</title>
+    </head>
+    <body>
+        <div class="BODY"><div class="BACK"><a href="../index.html">返回索引页</a></div>
+            <h1>{filename}</h1>
+            <h4>编辑地址：<a href="{link}">{link}</a></h4>
+            <h4>音频下载：<a href="http://home.ustc.edu.cn/~tz0920/{filename}.mp3">{filename}.mp3</a></h4><br><br>
+            <div class="POST"><div id="article_show_content">{body}</div>
+        </div>
+    </body>
+    </html>
+    """
+    with open(f'./html/{filename}.html','w',encoding='utf8') as f:
+        f.write(html)
+
 def page2artinfo(doc):
     art_info = []
     for topic in doc('dt')[1:]:
@@ -198,6 +233,17 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
     df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
     print('article info fetched!')
+
+    # transcript html
+    url = 'https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA'
+    doc = BeautifulSoup(requests.get(url).content)
+    df = pd.DataFrame()
+    for i in doc.findAll("div", {'data-target':"doc"}):
+        if i.find("div",{'role':"link"}):
+            i.find("div",{'role':"link"}).decompose()
+        df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
+    L = tasker.run([saveScript(df.loc[idx, 'filename'], df.loc[idx, 'id'], proxy) for idx in df.index])
+    print('transcript downloaded')
 
     if articleUpdate:
         page_list = tasker.run([fetch_async(articleURL(art_id), [page2article,page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
