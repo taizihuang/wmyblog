@@ -41,7 +41,8 @@ class Tasker():
             tasks = task_pool[i*nTask:(i+1)*nTask]
             outputs = asyncio.run(main(tasks))
             for output in outputs:
-                s = s + output
+                if output != None:
+                    s = s + output
             time.sleep(tSleep)
 
         return s
