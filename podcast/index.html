@@ -34,14 +34,20 @@
         }
     </style>
     <script>
+        var fileLocation = document.getElementsByClassName('aplayer-author')[0];
+        var text = fileLocation.textContent
+        
         function resizeIframe(obj) {
             obj.style.height = (window.innerHeight - 250) + 'px';
         }
 
         function changeSrc() {
-            var fileLocation = document.getElementsByClassName('aplayer-author')[0];
-            var file = fileLocation.textContent.substr(3, )
-            document.getElementsByClassName('iframe-full-height')[0].src = 'https://taizihuang.github.io/wmyblog/html/' + file.replaceAll('/', '').substring(2, ) + '.html ';
+            var fileLocationNew = document.getElementsByClassName('aplayer-author')[0];
+            if (text != fileLocationNew.textContent) {
+                var file = fileLocationNew.textContent.substr(3, );
+                document.getElementsByClassName('iframe-full-height')[0].src = 'https://taizihuang.github.io/wmyblog/html/' + file.replaceAll('/', '').substring(2, ) + '.html ';
+                text = fileLocationNew.textContent;
+            };
         }
     </script>
 </head>
