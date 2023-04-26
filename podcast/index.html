@@ -17,13 +17,41 @@
         .demo p {
             padding: 10px 0
         }
+
+        iframe {
+            overflow: hidden;
+            width: 99%;
+            margin-left: 20 !important;
+        }
+        #rss_btn {
+            font-family: Arial;
+            text-decoration: none;
+            font-size: 13px;
+            color: #FFF;
+            background: #f2853d;
+            padding: 1px 5px;
+            border: 1px solid #ed6b2a;
+        }
     </style>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (window.innerHeight - 250) + 'px';
+        }
+
+        function changeSrc() {
+            var fileLocation = document.getElementsByClassName('aplayer-author')[0];
+            var file = fileLocation.textContent.substr(3, )
+            document.getElementsByClassName('iframe-full-height')[0].src = 'https://taizihuang.github.io/wmyblog/html/' + file.replaceAll('/', '').substring(2, ) + '.html ';
+        }
+    </script>
 </head>
 
 <body>
-<center><h2>最新访谈</h2></center>
+<center><h2>最新访谈</h2>&nbsp;<span><a href="http://home.ustc.edu.cn/~tz0920/podcast.xml" id="rss_btn">八方论谈</a>&nbsp;</span><span><a href="http://home.ustc.edu.cn/~tz0920/podcast-long.xml" id="rss_btn">龙行天下</a></span></center>
+<center><h4>欢迎读者志愿编辑访谈的文字稿（放在Google Docs，本页面自动同步）</h4></center>
+<center>如果无法播放音频，可参考<a href="https://www.toimc.com/image-google-ssl-limit/">这个链接中</a>的方案一</center>
     <div class="demo">
-        <div id="player">
+        <div id="player" onclick="changeSrc()">
             <pre class="aplayer-lrc-content">
             
             </pre>
@@ -85,18 +113,19 @@
             [04:00] (04:00) 美国发动对华战争的时机已经过去 [23:00] (23:00)中国不应该让股市大涨， 应该稳定汇率波动 [30:30] (30:30)比特币不是货币，不符合货币的四个特点 [38:00] (38:00)区块链技术是比特币少有的正面贡献 [45:10] (45:10)比特币的内建价值为0，容易复制 [64:00] (64:00)金融监管与兴奋剂监管相似 
             </pre>
             <pre class="aplayer-lrc-content">
-            [0:00] 期货(future)和远期(forward) [10:30] (10:30)布雷顿森林会议，美元取代英镑<p> [16:00] (16:00)从美金转为石油美元<p> [34:40] (34:40)货币的功能：交换媒介、保值、时空流通、定价权<p> [41:00] (41:00)人民币取代美元的四个步骤：贸易用人民币、外汇储备用人民币、世界性银行用人民币、以人民币定价
+            [0:00] 期货(future)和远期(forward) [10:30] (10:30)布雷顿森林会议，美元取代英镑 [16:00] (16:00)从美金转为石油美元 [34:40] (34:40)货币的功能：交换媒介、保值、时空流通、定价权 [41:00] (41:00)人民币取代美元的四个步骤：贸易用人民币、外汇储备用人民币、世界性银行用人民币、以人民币定价
             </pre>
             <pre class="aplayer-lrc-content">
             
             </pre>
         </div>
     </div>
+    <iframe src="https://taizihuang.github.io/wmyblog/html/220621.html" class="iframe-full-height" align="middle" scrolling="yes" margin="auto " frameborder="0" onload="resizeIframe(this)" style="margin-left: 20px;"></iframe>
     <script>
         var ap = new APlayer({
             element: document.getElementById('player'),
             narrow: false,
-            listFolded: false,
+            listFolded: true,
             listMaxHeight: 90,
             autoplay: true,
             showlrc: true,
