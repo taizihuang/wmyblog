@@ -75,7 +75,7 @@ HTML = Template("""
             narrow: false,
             listFolded: true,
             listMaxHeight: 90,
-            autoplay: true,
+            autoplay: false,
             showlrc: true,
             audio: ${audio_list}
         });
