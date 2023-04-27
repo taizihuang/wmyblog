@@ -65,7 +65,7 @@ HTML = Template("""
 
 <body>
 <center><h2>最新访谈</h2>&nbsp;<span><a href="http://home.ustc.edu.cn/~tz0920/podcast.xml" id="rss_btn">八方论谈</a>&nbsp;</span><span><a href="http://home.ustc.edu.cn/~tz0920/podcast-long.xml" id="rss_btn">龙行天下</a></span></center>
-<center><h4>欢迎读者志愿编辑访谈的文字稿（放在Google Docs，本页面自动同步）</h4></center>
+<center><h4>欢迎读者志愿编辑访谈的文字稿（托管在<a href="https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA">Google Drive</a>，本页面自动同步）</h4></center>
 <center>手机可用微信打开本页面，PC端参考<a href="https://www.toimc.com/image-google-ssl-limit/">链接中</a>的方案一</center>
     <div class="demo">
         <div id="player" onclick="changeSrc()">
