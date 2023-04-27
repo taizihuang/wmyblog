@@ -5,6 +5,14 @@ HTML = Template("""
 <!DOCTYPE html>
 <html>
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1F5ZFPC2V2');
+</script>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <link href="APlayer.min.css" rel="stylesheet">
     <script src="APlayer.min.js"></script>
