@@ -683,4 +683,4 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
 if __name__ == "__main__":
     updateBlogData(proxy='')
-    updateBlogPage(days=7)
+    updateBlogPage(days=14)
