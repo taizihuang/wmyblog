@@ -616,7 +616,7 @@ def genLatestComment(df_comment_today,article_dict):
     with open("./html/new_comment.html", "w",encoding='utf8') as html:
         html.write(HTML.render(title='最新回复',date=art_date,post='',reply_li=reply_li))
     with open("./rss.xml","w",encoding='utf8') as rss:
-        rss.write(RSS.render(date=art_date,reply_li=reply_li).replace('&lt;br&gt;','<br>'))
+        rss.write(RSS.render(date=art_date,reply_li=reply_li).replace('&lt;br&gt;','<br>').replace('&lt;','<').replace('&gt;','>'))
     with open("./rss_notify.xml","w",encoding='utf8') as rss:
         rss.write(RSS_notify.render(date=art_date,reply_li=reply_li).replace('&lt;br&gt;','<br>'))
     return
