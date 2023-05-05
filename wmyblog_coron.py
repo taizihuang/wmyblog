@@ -69,13 +69,13 @@ async def saveScript(filename, id, proxy=''):
             doc = await resp.text(encoding='utf8')
 
     string_left = 'DOCS_modelChunk = [{'
-    string_right = ',"sl":'
+    string_right = '},{"'
     text = ''
     while string_left in doc:
         loc1 = doc.index(string_left)
-        loc2 = doc.index(string_right)
-        text += json.loads(doc[loc1+18:loc2] + '}]')[0]['s']
-        doc = doc[loc2+2:]
+        loc2 = doc[loc1:].index(string_right)
+        text += json.loads(doc[loc1+18:loc1+loc2] + '}]')[0]['s']
+        doc = doc[loc1+loc2+2:]
 
     body = text.replace('\n','<br>')
     html = f"""
@@ -242,8 +242,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
     for i in doc.findAll("div", {'data-target':"doc"}):
         if i.find("div",{'role':"link"}):
             i.find("div",{'role':"link"}).decompose()
-        df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
-    print(df)    
+        df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)  
     L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index])
     print('transcript downloaded')
 
