@@ -130,6 +130,11 @@ input {
     outline: none;
 }
 
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
 input#search-input {
     width: 100%;
     max-width: 400px;
@@ -316,4 +321,12 @@ h5 {
 
 .BACK a:hover {
     color: #f40;
+}
+
+.TAG {
+    font-size: 12px;
+    margin-left: 10px;
+}
+label {
+    cursor: pointer;
 }

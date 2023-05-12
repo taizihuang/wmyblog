@@ -1,3 +1,20 @@
+var tag_list = [];
+
+function enter(e) {
+    if (e.keyCode == 13) {
+        search()
+    }
+};
+
+function tagList(id) {
+    const index = tag_list.indexOf(id);
+    if (index > -1) {
+        tag_list.splice(index, 1);
+    } else {
+        tag_list.push(id);
+    }
+};
+
 function search() {
     var $input = $('#search-input')
     var $post = $('.POST_LI')
@@ -20,6 +37,7 @@ function search() {
         },
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
+            if (tag_list.length == 0) {
             var articleData = jsonData.article.map(function(item) {
                 return {
                     title: item.title,
@@ -27,17 +45,31 @@ function search() {
                     url: item.id,
                     date: item.date
                 };
-            });
+            });};
             var commentData = jsonData.comment.map(function(item) {
+                var isMatch = true;
+                var index_tag = -1;
+                tag_list.forEach(function(t,i){
+                    index_tag = item.tag.split('/').indexOf(t);
+                    if (index_tag < 0) {
+                        isMatch = false;
+                    }
+                });
+                if (isMatch) {
                 return {
                     id: item.id,
                     title: item.title,
                     nickname: item.nickname,
                     date: item.date,
                     comment: item.comment,
-                    reply: item.reply
+                    reply: item.reply,
+                    tag: item.tag,
+                    md5: item.md5
                 }
-            })
+            } else {
+                return {}
+            };}).filter(function(el){return Object.keys(el).length != 0});
+            console.log(commentData);
             var post_count = 0
             var comment_count = 0
             var post_str = ''
@@ -46,7 +78,8 @@ function search() {
             var dict = { "and": 1, "or": -1, "not": 0 };
             var keyword_list = [];
             var logic_list = [];
-
+            
+            if (tag_list.length == 0){
             articleData.forEach(function(data) {
                 var data_title = data.title.toLowerCase();
                 var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
@@ -99,23 +132,29 @@ function search() {
             });
             $post.html(post_str)
             $post_count.html("搜索到 " + post_count + " 篇文章")
-
+            };
             commentData.forEach(function(data) {
                 var comment = data.comment.trim().replace(/<[^>]+>/g, "").toLowerCase();
                 var reply = data.reply.trim().replace(/<[^>]+>/g, "").toLowerCase();
                 var comment_url = data.id;
                 var nickname = data.nickname;
+                var tag = data.tag.split('/').join('#');
+                var md5 = data.md5;
                 var title = data.title;
                 var date = data.date
-                var uuid = date.replace(/[- :]/g, '').substr(2, 10)
+                // var uuid = date.replace(/[- :]/g, '').substr(2, 10)
                 var index_comment = -1;
                 var index_reply = -1;
+                var index_nickname = -1;
+                var index_md5 = -1;
                 var isMatch = true;
+
                 keywords.forEach(function(keyword, i) {
                     index_comment = comment.indexOf(keyword);
                     index_reply = reply.indexOf(keyword);
                     index_nickname = nickname.toLowerCase().indexOf(keyword)
-                    if (index_comment < 0 && index_reply < 0 && index_nickname < 0) {
+                    index_md5 = md5.indexOf(keyword)
+                    if (index_comment < 0 && index_reply < 0 && index_nickname < 0 && index_md5) {
                         isMatch = false;
                     }
                 });
@@ -126,14 +165,16 @@ function search() {
                             comment = comment.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
                             reply = reply.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
                         });
-                        reply_str += "<div class='LI'><div class='USER'><span class='NAME'>" + title + " | <a href='../html/" + comment_url + ".html#" + uuid + "' target='_blank'>" + nickname + "</a></span><div class='TIME'>" + date + "</div></div>";
+                        reply_str += "<div class='LI'><div class='USER'>";
+                        reply_str += "<span class='NAME'>" + title + " | <a href='../html/" + comment_url + ".html#" + md5 + "' target='_blank'>" + nickname + "</a></span>";
+                        reply_str += "<span class='TAG'><label id=" + md5 + " onclick='delayClick(this.id)'>" + tag + "</label></span>"
+                        reply_str += "<div class='TIME'>" + date + "</div></div>";
                         reply_str += "<div class='SAY'>" + comment + "</div>"
                         reply_str += "<div class='REPLY'>" + reply + "</div>"
                         comment_count += 1
                     }
                 }
                 reply_str += "</div></div>";
-
             });
             $comment.html(reply_str);
             $comment_count.html("搜索到 " + comment_count + " 条问答");

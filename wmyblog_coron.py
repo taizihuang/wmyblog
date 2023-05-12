@@ -1,4 +1,4 @@
-import asyncio,aiohttp,time,math,os,requests,re,datetime,json
+import asyncio,aiohttp,time,math,os,requests,re,datetime,json,hashlib
 from mako.template import Template
 from bs4 import BeautifulSoup
 import numpy as np
@@ -224,6 +224,19 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
     os.rename(commentFile,commentFile+'.bak')
     df_comment_new.to_pickle(commentFile)
 
+def comment2md(comment):
+    return hashlib.md5((comment.replace('<strike>','').replace('</strike>','')).encode()).hexdigest()
+
+def table2tag(df_comment, df_table):
+    df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
+    df_tag = pd.DataFrame()
+    for i in range(round(len(df_table.columns)/2)):
+        df_tag = pd.concat([df_tag, df_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'tag'})],axis=0)
+    df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
+    df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
+    df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
+    return df_comment_tag
+
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False):
 
     os.environ['http_proxy'] = proxy #代理的端口
@@ -371,7 +384,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
         index.write(INDEX.render(art_li=art_li))
     return
 
-def genHTML(art_id,df_article,df_comment):
+def genHTML(art_id,df_article,df_comment_tag):
     
     i = df_article.loc[df_article.id == art_id].index
     title = df_article.title[i[0]]
@@ -379,7 +392,7 @@ def genHTML(art_id,df_article,df_comment):
     post = df_article.post[i[0]]
     
     reply_li = []
-    df_comment_id = df_comment.loc[df_comment.id == art_id].sort_values(by=['comment_date','nickname','comment']).drop_duplicates(subset=['comment'],keep='first')
+    df_comment_id = df_comment_tag.loc[df_comment_tag.id == art_id].sort_values(by=['comment_date','nickname','comment']).drop_duplicates(subset=['comment'],keep='first')
     for j in df_comment_id.index:
         comment = df_comment_id.comment[j]
         if comment:
@@ -397,12 +410,14 @@ def genHTML(art_id,df_article,df_comment):
 
             nickname = df_comment_id.nickname[j]
             comment_date = df_comment_id.comment_date[j].strftime('%Y-%m-%d %H:%M')
-            uuid = df_comment_id.comment_date[j].strftime('%y%m%d%H%M')
+            uuid = df_comment_id.md5[j]
+            tag_list = ' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
             striked = '<strike>' in comment
-            reply_li.append((uuid,comment,reply,nickname,comment_date,striked))
+            reply_li.append((uuid,comment,reply,nickname,comment_date,tag_list,striked))
             
     HTML = Template("""<!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    <script src="./blog.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>${title}</title>
     </head>
@@ -415,9 +430,11 @@ def genHTML(art_id,df_article,df_comment):
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
     <h2>${len(reply_li)} 条留言</h2>
-    %for uuid, say, reply, user, time, striked in reply_li:
+    %for uuid, say, reply, user, time, tag_list, striked in reply_li:
     <div class="LI">
-    <div class="USER"><span class="NAME" id=${uuid}>${user}</span><div class="TIME">${time}</div></div>
+    <div class="USER"><span class="NAME" id=${uuid}>${user}</span>
+    <span class="TAG"><label id=${uuid} onclick="delayClick(this.id)">${tag_list}</label></span>
+    <div class="TIME">${time}</div></div>
     %if striked:
     <input type="checkbox" class="exp" id="${uuid}_1">
     <div class="text1"><label class="btn" for="${uuid}_1"></label>
@@ -434,14 +451,6 @@ def genHTML(art_id,df_article,df_comment):
     </div>
     </div>
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <script>
-    function click1(link) {
-        modal.style.display = "block";
-        modalImg.src = link;
-    }
-    function click2() {
-        modal.style.display = "none";
-    }</script>
     </body></html>""")
         
     with open('./html/'+art_id+'.html','w',encoding='utf8') as f:
@@ -528,14 +537,6 @@ def genLatestComment(df_comment_today,article_dict):
     </div>
     </div>
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <script>
-    function click1(link) {
-        modal.style.display = "block";
-        modalImg.src = link;
-    }
-    function click2() {
-        modal.style.display = "none";
-    }</script>
     </body></html>""")
 
     RSS = Template("""
@@ -598,7 +599,7 @@ def genLatestComment(df_comment_today,article_dict):
         if comment:
             nickname = df_comment_today.nickname[i].replace('\u3000',' ')
             comment_date = df_comment_today.comment_date[i]
-            uuid = comment_date.strftime('%y%m%d%H%M')
+            uuid = comment2md(comment) #comment_date.strftime('%y%m%d%H%M')
             art_id = df_comment_today.id[i]
             source = article_dict[art_id]
             striked = '<strike>' in comment
@@ -621,9 +622,7 @@ def genLatestComment(df_comment_today,article_dict):
         rss.write(RSS_notify.render(date=art_date,reply_li=reply_li).replace('&lt;br&gt;','<br>'))
     return
 
-def exportJSON(articleFile,commentFile,jsonFile):
-    df_article = pd.read_pickle(articleFile)
-    df_comment = pd.read_pickle(commentFile)
+def exportJSON(df_article,df_comment_tag,jsonFile):
 
     article_list = []
     title_dict = {}
@@ -636,33 +635,37 @@ def exportJSON(articleFile,commentFile,jsonFile):
         article_list.append({"id":id,"title":title,"date":art_date.strftime('%Y-%m-%d %H:%M:%S'),"post":post})
 
     comment_list = []
-    for i in df_comment.index:
-        id = df_comment.id[i]
+    for i in df_comment_tag.index:
+        id = df_comment_tag.id[i]
         title = title_dict[id]
-        nickname = df_comment.nickname[i]
-        comment = df_comment.comment[i]
-        comment_date = df_comment.comment_date[i]
-        reply = df_comment.reply[i]
+        nickname = df_comment_tag.nickname[i]
+        comment = df_comment_tag.comment[i]
+        comment_date = df_comment_tag.comment_date[i]
+        reply = df_comment_tag.reply[i]
+        tag = df_comment_tag.tag[i]
+        md5 = df_comment_tag.md5[i]
         if reply:
-            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply})
+            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5})
 
     wmy = {"article":article_list,"comment":comment_list}
     with open(jsonFile,'w') as f:
         f.write(json.dumps(wmy))
 
-def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl"):
+def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl",tableFile="./data/table.xlsx"):
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        time.tzset()
+        # time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
+    df_table = pd.read_excel(tableFile,index_col=0)
+    df_comment_tag = table2tag(df_comment, df_table)
     
     for art_id in df_article.id:
-        genHTML(art_id,df_article,df_comment)
+        genHTML(art_id,df_article,df_comment_tag)
 
     genINDEX(articleFile=articleFile)
     print('index page generated')
@@ -678,9 +681,9 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     genLatestComment(df_comment_today,article_dict)
     print('latest page generated')
 
-    exportJSON(articleFile,commentFile,jsonFile='./search/wmyblog.json')
+    exportJSON(df_article,df_comment_tag,jsonFile='./search/wmyblog.json')
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(proxy='')
-    updateBlogPage(days=14)
+    # updateBlogData(proxy='')
+    updateBlogPage(days=7)

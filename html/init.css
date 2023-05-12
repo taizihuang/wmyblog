@@ -172,3 +172,10 @@ color:#919191;
 line-height: 1.8;
 word-wrap: break-word;
 }
+
+.TAG {
+    font-size: 12px;
+}
+label {
+    cursor: pointer;
+}
