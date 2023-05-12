@@ -235,6 +235,7 @@ def table2tag(df_comment, df_table):
     df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
     df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
     df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
+    df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
     return df_comment_tag
 
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False):
@@ -655,7 +656,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        # time.tzset()
+        time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
@@ -685,5 +686,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    # updateBlogData(proxy='')
+    updateBlogData(proxy='')
     updateBlogPage(days=7)
