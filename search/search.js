@@ -158,7 +158,9 @@ function search() {
                         isMatch = false;
                     }
                 });
-                if (keywords[0]) {
+
+
+                if (tag_list != [] || keywords[0]) {
                     if (isMatch) {
                         keywords.forEach(function(keyword) {
                             var regS = new RegExp(keyword, "gi");
