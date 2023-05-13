@@ -85,6 +85,17 @@ h1, h2, h3, h4, h5 {
     background:#f9f9f9;
     margin-bottom:-16px;
 }
+label {
+    cursor: pointer;
+    padding: 3px;
+    border: 2px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: rgb(169, 182, 231);
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+}
 .REPLY_LI .TIME{
     float:right;
     font-size:12px;
@@ -146,11 +157,13 @@ color:#919191;
     -webkit-box-orient: vertical;
     position: relative;
 }
-.btn {
+label.btn {
     float: right;
     padding-top: 4px;
     line-height: 10px;
     color: #3c6e9e;
+    background-color: #fff;
+    font-size: 16px;
     cursor: pointer;
     /* margin-top: -30px; */
 }
@@ -174,16 +187,5 @@ word-wrap: break-word;
 }
 
 .TAG {
-    font-size: 12px;
-}
-label {
-    cursor: pointer;
-    padding: 3px;
-    border: 2px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    background-color: rgb(169, 182, 231);
-    display: inline-block;
-    color: white;
     font-size: 12px;
 }
