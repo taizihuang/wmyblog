@@ -48,7 +48,12 @@ class Tasker():
         return s
 
 async def fetch_async(url, func, args, proxy=''):
-    async with aiohttp.ClientSession() as session:
+    headers = {
+        'Host': 'blog.udn.com',
+        'Referer': 'https://blog.udn.com/MengyuanWang/article',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.35'
+    }
+    async with aiohttp.ClientSession(headers=headers) as session:
         async with session.get(url=url, proxy=proxy) as response:
             doc = await response.text()
             doc = BeautifulSoup(doc,features="lxml")
