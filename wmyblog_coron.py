@@ -21,6 +21,30 @@ def getPageNo():
     nPage = math.ceil(nArticle / nPerPage)
     return nPage
 
+def fetchTable(docid, tab, nrow):
+    url = f'https://docs.qq.com/dop-api/opendoc?tab={tab}&id={docid}&normal=1&outformat=1&startrow=0&endrow={nrow-1}'
+    headers = {
+        'Referer': 'https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2',
+        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+    }
+    l = requests.get(url,headers=headers).content
+    l = json.loads(l)
+    data = l['clientVars']['collab_client_vars']['initialAttributedText']['text'][0][-1][0]['c'][1]
+    col = int(len(data)/(nrow))
+    data_list = []
+    for i in range(nrow):
+        row_list = []
+        for j in range(col):
+            cell_data = data[str(i*col+j)]
+            if '2' in cell_data.keys():
+                row_list.append(cell_data['2'][1])
+            else:
+                row_list.append('')
+                
+        data_list.append(row_list)
+    df = pd.DataFrame(data=data_list[1:],columns=data_list[0])
+    return df.set_index(df.columns[0],drop=True)
+
 class Tasker():
 
     def __init__(self, nTask=5, tSleep=1):
@@ -665,6 +689,9 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
         today = pd.to_datetime(datetime.date.today())
         return today
 
+    fetchTable('DR09JSkJqU3h0dGJn','BB08J2',401).to_excel(tableFile)
+    print('table.xlsx fetched!')
+    
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
     df_table = pd.read_excel(tableFile,index_col=0)
