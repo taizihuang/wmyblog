@@ -718,5 +718,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(proxy='')
+    # updateBlogData(proxy='')
     updateBlogPage(days=7)
