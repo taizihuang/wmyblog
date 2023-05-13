@@ -251,7 +251,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
     tasker = Tasker(nTask=nTask)
 
     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
+    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id').iloc[:5]
     print('article info fetched!')
 
     # transcript html
