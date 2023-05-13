@@ -10,8 +10,10 @@ function tagList(id) {
     const index = tag_list.indexOf(id);
     if (index > -1) {
         tag_list.splice(index, 1);
+        $('label#'+id+'-label')[0].style.backgroundColor = 'rgb(169, 182, 231)';
     } else {
         tag_list.push(id);
+        $('label#'+id+'-label')[0].style.backgroundColor = 'rgb(61, 151, 186)';
     }
 };
 
@@ -24,6 +26,7 @@ function search() {
 
     $.ajax({
         url: 'wmyblog.json',
+        method: 'GET',
         dataType: 'json',
         headers: {
             "accept": "application/json",
@@ -69,7 +72,6 @@ function search() {
             } else {
                 return {}
             };}).filter(function(el){return Object.keys(el).length != 0});
-            console.log(commentData);
             var post_count = 0
             var comment_count = 0
             var post_str = ''
@@ -129,10 +131,9 @@ function search() {
                     }
                 }
 
-            });
-            $post.html(post_str)
-            $post_count.html("搜索到 " + post_count + " 篇文章")
-            };
+            });};
+            $post.html(post_str);
+            $post_count.html("搜索到 " + post_count + " 篇文章");
             commentData.forEach(function(data) {
                 var comment = data.comment.trim().replace(/<[^>]+>/g, "").toLowerCase();
                 var reply = data.reply.trim().replace(/<[^>]+>/g, "").toLowerCase();

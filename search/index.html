@@ -14,85 +14,94 @@
     <div class=BODY>
         <div class="BACK"><a href="../index.html">返回索引页</a></div>
         <h1>博客搜索</h1>
-        <div class="stem">
-            <label for="问答1000">问答1000</label>
+        <p style="font-size: 14px"><b>倡议：</b>欢迎读者志愿为博客问答添加标签，操作如下：<br>
+            1. 点击任意页面中的标签（自动打开标签文档，后台自动复制ID)；<br>
+            2. 腾讯文档加载完毕(~2s)后，搜索ID（如: 741c3d629dd8c688b4a73c75f3b4f23f）<br>
+            3. 在ID右侧更新标签（可选标签如下），用下划线"/"隔开（如：问答1000/金融）。<br>
+            <b>分类原则: </b>方便您下次可以快速搜索即可；意见和建议在腾讯文档中反馈<br>
+        </p>
+        <div class="special">
+            <label for="问答1000" id="问答1000-label">问答1000</label>
             <input type="checkbox" id="问答1000" onclick="tagList(this.id)">
-            <label for="基础科研">基础科研</label>
+            <label for="empty" id="empty-label">empty</label>
+            <input type="checkbox" id="empty" onclick="tagList(this.id)">
+        </div>
+        <div class="stem">
+            <label for="基础科研" id="基础科研-label">基础科研</label>
             <input type="checkbox" id="基础科研" onclick="tagList(this.id)">
-            <label for="应用技术" id="应用" onclick="copyText(this.id)">应用技术</label>
+            <label for="应用技术" id="应用技术-label">应用技术</label>
             <input type="checkbox" id="应用技术" onclick="tagList(this.id)">
-            <label for="学术管理">学术管理</label>
+            <label for="学术管理" id="学术管理-label">学术管理</label>
             <input type="checkbox" id="学术管理" onclick="tagList(this.id)">
-            <label for="工业">工业</label>
+            <label for="工业" id="工业-label">工业</label>
             <input type="checkbox" id="工业" onclick="tagList(this.id)">
-            <label for="医学">医学</label>
+            <label for="医学" id="医学-label">医学</label>
             <input type="checkbox" id="医学" onclick="tagList(this.id)">
-            <label for="其他理工">其他理工</label>
+            <label for="其他理工" id="其他理工-label">其他理工</label>
             <input type="checkbox" id="其他理工" onclick="tagList(this.id)">
         </div>
         <div class="social">
-            <label for="政治">政治</label>
+            <label for="政治" id="政治-label">政治</label>
             <input type="checkbox" id="政治" onclick="tagList(this.id)">
-            <label for="外交">外交</label>
+            <label for="外交" id="外交-label">外交</label>
             <input type="checkbox" id="外交" onclick="tagList(this.id)">
-            <label for="历史">历史</label>
+            <label for="历史" id="历史-label">历史</label>
             <input type="checkbox" id="历史" onclick="tagList(this.id)">
-            <label for="经济">经济</label>
+            <label for="经济" id="经济-label">经济</label>
             <input type="checkbox" id="经济" onclick="tagList(this.id)">
-            <label for="宣传">宣传</label>
+            <label for="宣传" id="宣传-label">宣传</label>
             <input type="checkbox" id="宣传" onclick="tagList(this.id)">
-            <label for="战略">战略</label>
+            <label for="战略" id="战略-label">战略</label>
             <input type="checkbox" id="战略" onclick="tagList(this.id)">
-            <label for="金融">金融</label>
+            <label for="金融" id="金融-label">金融</label>
             <input type="checkbox" id="金融" onclick="tagList(this.id)">
-            <label for="教育">教育</label>
+            <label for="教育" id="教育-label">教育</label>
             <input type="checkbox" id="教育" onclick="tagList(this.id)">
-            <label for="宗教">宗教</label>
+            <label for="宗教" id="宗教-label">宗教</label>
             <input type="checkbox" id="宗教" onclick="tagList(this.id)">
-            <label for="其他社科">其他社科</label>
+            <label for="其他社科" id="其他社科-label">其他社科</label>
             <input type="checkbox" id="其他社科" onclick="tagList(this.id)">
         </div>
         <div class="military">
-            <label for="军事装备">军事装备</label>
-            <input type="checkbox" id="军事装备" onclick="tagList(this.id)">
-            <label for="军事战术">军事战术</label>
-            <input type="checkbox" id="军事战术" onclick="tagList(this.id)">
-            <label for="其他军事">其他军事</label>
-            <input type="checkbox" id="其他军事" onclick="tagList(this.id)">
-            <label for="艺术">艺术</label>
+            <label for="艺术" id="艺术-label">艺术</label>
             <input type="checkbox" id="艺术" onclick="tagList(this.id)">
-            <label for="文化">文化</label>
+            <label for="文化" id="文化-label">文化</label>
             <input type="checkbox" id="文化" onclick="tagList(this.id)">
-            <label for="人生态度">人生态度</label>
+            <label for="人生态度" id="人生态度-label">人生态度</label>
             <input type="checkbox" id="人生态度" onclick="tagList(this.id)">
-            <label for="逻辑">逻辑</label>
+            <label for="逻辑" id="逻辑-label">逻辑</label>
             <input type="checkbox" id="逻辑" onclick="tagList(this.id)">
-            <label for="哲学">哲学</label>
+            <label for="哲学" id="哲学-label">哲学</label>
             <input type="checkbox" id="哲学" onclick="tagList(this.id)">
+            <label for="军事装备" id="军事装备-label">军事装备</label>
+            <input type="checkbox" id="军事装备" onclick="tagList(this.id)">
+            <label for="军事战术" id="军事战术-label">军事战术</label>
+            <input type="checkbox" id="军事战术" onclick="tagList(this.id)">
+            <label for="其他军事" id="其他军事-label">其他军事</label>
+            <input type="checkbox" id="其他军事" onclick="tagList(this.id)">
         </div>
         <div class="region">
-            <label for="中国">中国</label>
+            <label for="中国" id="中国-label">中国</label>
             <input type="checkbox" id="中国" onclick="tagList(this.id)">
-            <label for="中国香港">中国香港</label>
+            <label for="中国香港" id="中国香港-label">中国香港</label>
             <input type="checkbox" id="中国香港" onclick="tagList(this.id)">
-            <label for="中国台湾">中国台湾</label>
+            <label for="中国台湾" id="中国台湾-label">中国台湾</label>
             <input type="checkbox" id="中国台湾" onclick="tagList(this.id)">
-            <label for="美国">美国</label>
+            <label for="美国" id="美国-label">美国</label>
             <input type="checkbox" id="美国" onclick="tagList(this.id)">
-            <label for="俄罗斯">俄罗斯</label>
+            <label for="俄罗斯" id="俄罗斯-label">俄罗斯</label>
             <input type="checkbox" id="俄罗斯" onclick="tagList(this.id)">
-            <label for="法国">法国</label>
+            <label for="法国" id="法国-label">法国</label>
             <input type="checkbox" id="法国" onclick="tagList(this.id)">
-            <label for="英国">英国</label>
+            <label for="英国" id="英国-label">英国</label>
             <input type="checkbox" id="英国" onclick="tagList(this.id)">
-            <label for="德国">德国</label>
+            <label for="德国" id="德国-label">德国</label>
             <input type="checkbox" id="德国" onclick="tagList(this.id)">
-            <label for="日本">日本</label>
+            <label for="日本" id="日本-label">日本</label>
             <input type="checkbox" id="日本" onclick="tagList(this.id)">
-            <label for="其他地区">其他地区</label>
+            <label for="其他地区" id="其他地区-label">其他地区</label>
             <input type="checkbox" id="其他地区" onclick="tagList(this.id)">
-            <label for="empty">empty</label>
-            <input type="checkbox" id="empty" onclick="tagList(this.id)">
+
         </div>        
         <div clas="search" id="search">
             <div class="input">

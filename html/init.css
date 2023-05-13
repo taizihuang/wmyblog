@@ -178,4 +178,12 @@ word-wrap: break-word;
 }
 label {
     cursor: pointer;
+    padding: 3px;
+    border: 2px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: rgb(169, 182, 231);
+    display: inline-block;
+    color: white;
+    font-size: 12px;
 }

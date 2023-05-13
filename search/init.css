@@ -131,8 +131,8 @@ input {
 }
 
 input[type=checkbox] {
-    width: 16px;
-    height: 16px;
+    width: 0px;
+    height: 0px;
 }
 
 input#search-input {
@@ -329,4 +329,12 @@ h5 {
 }
 label {
     cursor: pointer;
+    padding: 3px;
+    border: 2px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: rgb(169, 182, 231);
+    display: inline-block;
+    color: white;
+    font-size: 14px;
 }
