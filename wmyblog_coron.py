@@ -656,7 +656,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        # time.tzset()
+        time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
@@ -686,5 +686,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(proxy='http://127.0.0.1:7890')
+    updateBlogData(proxy='')
     updateBlogPage(days=7)
