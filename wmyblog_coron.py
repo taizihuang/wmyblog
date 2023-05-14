@@ -14,12 +14,12 @@ def commentURL(art_id,pno):
     return f"https://blog.udn.com/blog/article/article_reply_ajax.jsp?uid=MengyuanWang&f_ART_ID={art_id}&pno={pno}"
 
 def getPageNo():
-    url = 'https://blog.udn.com/blog/inc_2011/psn_artcate_new_ajax.jsp?uid=MengyuanWang&totalPageNum=1&curPage=0'
-    nPerPage = 30
-    doc = requests.get(url).content
-    nArticle = int(str(doc).split('(')[1].split(')')[0])
-    nPage = math.ceil(nArticle / nPerPage)
-    return nPage
+#     url = 'https://blog.udn.com/blog/inc_2011/psn_artcate_new_ajax.jsp?uid=MengyuanWang&totalPageNum=1&curPage=0'
+#     nPerPage = 30
+#     doc = requests.get(url).content
+#     nArticle = int(str(doc).split('(')[1].split(')')[0])
+#     nPage = math.ceil(nArticle / nPerPage)
+    return 11 #nPage
 
 def fetchTable(docid, tab, nrow):
     url = f'https://docs.qq.com/dop-api/opendoc?tab={tab}&id={docid}&normal=1&outformat=1&startrow=0&endrow={nrow-1}'
@@ -274,10 +274,10 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
 
     tasker = Tasker(nTask=nTask)
 
-#     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-#     df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id').iloc[:5]
-    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
-    df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
+    artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
+    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
+#     doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
+#     df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
     # transcript html
