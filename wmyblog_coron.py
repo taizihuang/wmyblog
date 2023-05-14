@@ -274,10 +274,10 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
 
     tasker = Tasker(nTask=nTask)
 
-    artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
-#     doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
-#     df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
+#     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
+#     df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
+    df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
     # transcript html
@@ -292,7 +292,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
     print('transcript downloaded')
 
     if articleUpdate:
-        page_list = tasker.run([fetch_async(articleURL(art_id), [page2article,page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
+        page_list = tasker.run([fetch_async(articleURL(art_id), [page2article, page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
         article_list = [page[0] for page in page_list]
         comment_list = [page[1] for page in page_list]
         df_article = pd.concat(article_list,ignore_index=True)
