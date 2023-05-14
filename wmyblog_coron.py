@@ -274,10 +274,12 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
 
     tasker = Tasker(nTask=nTask)
 
-    artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id').iloc[:5]
+#     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
+#     df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id').iloc[:5]
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
+    df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
     print('article info fetched!')
-
+    
     # transcript html
     url = 'https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA'
     doc = BeautifulSoup(requests.get(url).content)
