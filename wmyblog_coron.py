@@ -1,4 +1,4 @@
-import asyncio,aiohttp,time,math,os,requests,re,datetime,json,hashlib
+import asyncio,aiohttp,time,math,os,requests,re,datetime,json,hashlib,sys
 from mako.template import Template
 from bs4 import BeautifulSoup
 import numpy as np
@@ -271,13 +271,19 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
 
     os.environ['http_proxy'] = proxy #代理的端口
     os.environ['https_proxy'] = proxy
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42'
+    }
 
     tasker = Tasker(nTask=nTask)
 
 #     artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
 #     df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
-    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep').content)
-    df_artinfo = pd.DataFrame(data=[d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')],columns=['art_id']).set_index('art_id')
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/MengyuanWang/article',headers=headers).content)
+    id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content)
+    id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
+    df_artinfo = pd.DataFrame(data=list(set(id_list)),columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
     # transcript html
@@ -297,7 +303,6 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
         comment_list = [page[1] for page in page_list]
         df_article = pd.concat(article_list,ignore_index=True)
         df_comment = pd.concat(comment_list,ignore_index=True)
-
         mergeArticle(df_article)
         mergeComment(df_comment)
         print('articles and latest comments updated')
@@ -488,6 +493,7 @@ def genHTML(art_id,df_article,df_comment_tag):
     with open('./html/'+art_id+'.html','w',encoding='utf8') as f:
         f.write(HTML.render(title=title,date=art_date,art_id=art_id,post=post,reply_li=reply_li))
     return
+
 def genLatestComment(df_comment_today,article_dict):
     HTML = Template("""<!DOCTYPE html><html><head>
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
@@ -687,7 +693,8 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
-        time.tzset()
+        if sys.platform == 'linux':
+            time.tzset()
         today = pd.to_datetime(datetime.date.today())
         return today
 
@@ -720,5 +727,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(proxy='')
+    updateBlogData(nTask=10, proxy='http://127.0.0.1:7890')
     updateBlogPage(days=7)
