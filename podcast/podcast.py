@@ -64,9 +64,10 @@ HTML = Template("""
 </head>
 
 <body>
-<center><h2>最新访谈</h2>&nbsp;<span><a href="http://home.ustc.edu.cn/~tz0920/podcast.xml" id="rss_btn">八方论谈</a>&nbsp;</span><span><a href="http://home.ustc.edu.cn/~tz0920/podcast-long.xml" id="rss_btn">龙行天下</a></span></center>
+<center><h2>最新访谈</h2>&nbsp;<span><a href="https://taizihuang.github.io/podcast/podcast.xml" id="rss_btn">八方论谈</a>&nbsp;</span><span><a href="https://taizihuang.github.io/podcast/podcast-long.xml" id="rss_btn">龙行天下</a></span></center>
 <center><h4>欢迎读者志愿编辑访谈的文字稿（托管在<a href="https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA">Google Drive</a>，本页面自动同步）</h4></center>
-<center>手机可用微信打开本页面，PC端参考<a href="https://www.toimc.com/image-google-ssl-limit/">链接中</a>的方案一</center>
+<center>*播客链接更新</center>
+<center>如遇播放问题，移动端可用微信打开本页面，PC端参考<a href="https://www.toimc.com/image-google-ssl-limit/">链接</a>中的方案一</center>
     <div class="demo">
         <div id="player" onclick="changeSrc()">
 % for lrc in lrc_list:
@@ -99,7 +100,7 @@ audio_list = []
 for date in podcast_dict.keys():
     name, lrc = podcast_dict[date]
     artist = f'20{date[:2]}/{date[2:4]}/{date[4:6]}'
-    audio_list.append({'name':name,'artist':artist,'url':f'http://home.ustc.edu.cn/~tz0920/{date}.mp3','pic':'wmy-podcast.jpg'})
+    audio_list.append({'name':name,'artist':artist,'url':f'http://ruw74yelp.bkt.clouddn.com/{date}.mp3','pic':'wmy-podcast.jpg'})
     lrc_list.append(lrc)
 with open('index.html','w',encoding='utf8') as f:
     f.write(HTML.render(lrc_list=lrc_list,audio_list=audio_list))

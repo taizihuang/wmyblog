@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:podcast="https://podcastindex.org/namespace/1.0"  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<atom:link href="https://taizihuang.github.io/wmyblog/podcast.xml" rel="self" type="application/rss+xml"/>
+		<title>王孟源 x 八方论谈</title>
+		<pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate>
+		<generator>Manual</generator>
+		<link>https://taizihuang.github.io/wmyblog</link>
+		<language>zh-cn</language>
+		<copyright><![CDATA[]]></copyright>
+		<docs>https://taizihuang.github.io/wmyblog</docs>
+		<managingEditor>htzllt@gmail.com (htzllt@gmail.com)</managingEditor>
+		<image>
+			<url>https://taizihuang.github.io/podcast/wmy-podcast.jpg</url>
+			<title>王孟源 x 八方论谈</title>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog/podcast]]></link>
+		</image>
+		<description><![CDATA[王孟源 x 八方论谈，持续更新中...]]></description>
+
+		<podcast:locked owner="htzllt@gmail.com">no</podcast:locked>
+		<item>
+			<title>2022/06/21 逻辑辩证、昂撒理论基础、观察者网、俄乌战争、通胀</title>
+			<pubDate>Tue, 21 June 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220621]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[本期主题：逻辑辩证、昂撒理论基础、观察者网、俄乌战争、通胀</p>]]></description>
+			<enclosure length="90478414" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/220621.mp3" />
+		</item>	
+		<item>
+			<title>2022/05/30 逻辑推断、乌克兰、Neocon、内政治理</title>
+			<pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220530]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[本期主题：逻辑推断、乌克兰、Neocon、内政治理</p>]]></description>
+			<enclosure length="82998725" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/220530.mp3" />
+		</item>	
+		<item>
+			<title>2022/04/11 乌克兰、巴基斯坦、亚元</title>
+			<pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220411]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[本期主题：乌克兰、巴基斯坦、亚元</p>]]></description>
+			<enclosure length="107314186" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/220411.mp3" />
+		</item>		
+		<item>
+			<title>2022/03/22 俄乌战争</title>
+			<pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220322]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[向MU5735航班遇难者哀悼<p>本期主题：俄乌战争</p>]]></description>
+			<enclosure length="84305497" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/220322.mp3" />
+		</item>
+		<item>
+			<title>2022/01/27 乌克兰、北约、美国</title>
+			<pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220127]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：乌克兰 北约 美国</p>]]></description>
+			<enclosure length="95698889" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/220127.mp3" />
+		</item>
+		<item>
+			<title>2021/01/25 美国权力交接与后川普时代</title>
+			<pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[210125]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：美国权力交接与后川普时代</p>]]></description>
+			<enclosure length="149762864" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/210125.mp3" />
+		</item>
+		<item>
+			<title>2020/11/12 孟源漫谈</title>
+			<pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[201112]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：孟源漫谈</p>]]></description>
+			<enclosure length="149508937" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/201112.mp3" />
+		</item>
+		<item>
+			<title>2020/10/22 美国大选</title>
+			<pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[201022]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：美国大选</p>]]></description>
+			<enclosure length="134967092" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/201022.mp3" />
+		</item>
+		<item>
+			<title>2020/03/13 波音</title>
+			<pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[200313]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：波音</p>]]></description>
+			<enclosure length="110292868" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/200313.mp3" />
+		</item>
+		<item>
+			<title>2020/02/24 新冠肺炎</title>
+			<pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[200224]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：新冠肺炎</p>]]></description>
+			<enclosure length="101775131" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/200224.mp3" />
+		</item>
+		<item>
+			<title>2019/12/21 2019年的回顾与前瞻</title>
+			<pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[191221]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：2019年的回顾与前瞻</p>]]></description>
+			<enclosure length="79920582" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/191221.mp3" />
+		</item>
+		<item>
+			<title>2019/10/27 英国脱欧</title>
+			<pubDate>Sat, 27 Oct 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[191027]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：英国脱欧</p>]]></description>
+			<enclosure length="50038148" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/191027.mp3" />
+		</item>
+		<item>
+			<title>2019/10/08 Repo</title>
+			<pubDate>Sat, 08 Oct 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[191008]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：Repo</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/191008.mp3" />
+		</item>
+		<item>
+			<title>2019/08/12 香港动乱</title>
+			<pubDate>Sat, 12 Aug 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190812]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：香港动乱</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/190812.mp3" />
+		</item>
+		<item>
+			<title>2019/05/12 中美贸易战</title>
+			<pubDate>Sat, 12 May 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190512]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：中美贸易战</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/190512.mp3" />
+		</item>
+		<item>
+			<title>2019/01/29 华为</title>
+			<pubDate>Sat, 29 Jan 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190129]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：华为</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/190129.mp3" />
+		</item>
+		<item>
+			<title>2018/08/09 中美贸易</title>
+			<pubDate>Sat, 09 Aug 2018 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[180809]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：中美贸易</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/180809.mp3" />
+		</item>
+		<item>
+			<title>2018/04/20 中兴</title>
+			<pubDate>Sat, 20 Apr 2018 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[180420]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：中兴</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/180420.mp3" />
+		</item>
+		<item>
+			<title>2017/11/15 量子通信</title>
+			<pubDate>Sat, 15 Nov 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[171115]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：量子通信</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/171115.mp3" />
+		</item>
+		<item>
+			<title>2017/10/04 赌城枪击、比特币</title>
+			<pubDate>Sat, 04 Oct 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[171004]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：赌城枪击、比特币</p>(4:00) 美国发动对华战争的时机已经过去<br> (23:00) 中国不应该让股市大涨，应该稳定汇率波动<br> (30:30) 比特币不是货币，不符合货币的四个特点<br> (38:00) 区块链技术是比特币少有的正面贡献<br> (45:10) 比特币的内建价值为0，容易复制<br> (64:00) 金融监管与兴奋剂监管相似]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/171004.mp3" />
+		</item>
+		<item>
+			<title>2017/09/27 石油人民币</title>
+			<pubDate>Sat, 27 Sep 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[170927]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：石油人民币</p>(0:01) 期货(future)和远期(forward)<br> (10:30) 布雷顿森林会议，美元取代英镑<br> (16:00) 从美金转为石油美元<br> (34:40) 货币的功能：交换媒介、保值、时空流通、定价权<br> (41:00) 人民币取代美元的四个步骤：贸易用人民币、外汇储备用人民币、世界性银行用人民币、以人民币定价]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/170927.mp3" />
+		</item>
+		<item>
+			<title>2017/09/06 台湾统一</title>
+			<pubDate>Sat, 06 Sep 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[170906]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[<p>本期主题：台湾统一</p>]]></description>
+			<enclosure length="44366115" type="audio/mpeg" url="http://ruw74yelp.bkt.clouddn.com/170906.mp3" />
+		</item>
+		</channel></rss>
