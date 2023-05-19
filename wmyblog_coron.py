@@ -116,7 +116,7 @@ async def saveScript(filename, id, proxy=''):
         <div class="BODY"><div class="BACK"><a href="../index.html">返回索引页</a></div>
             <h1>{filename}</h1>
             <h4>编辑地址：<a href="{link}">{link}</a></h4>
-            <h4>音频下载：<a href="http://home.ustc.edu.cn/~tz0920/{filename}.mp3">{filename}.mp3</a></h4><br><br>
+            <h4>音频下载：<a href="http://ruw74yelp.bkt.clouddn.com/{filename}.mp3">{filename}.mp3</a></h4><br><br>
             <div class="POST"><div id="article_show_content">{body}</div>
         </div>
     </body>
