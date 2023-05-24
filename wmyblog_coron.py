@@ -72,11 +72,7 @@ class Tasker():
         return s
 
 async def fetch_async(url, func, args, proxy=''):
-    headers = {
-        'Host': 'blog.udn.com',
-        'Referer': 'https://blog.udn.com/MengyuanWang/article',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.35'
-    }
+    headers = {'User-Agent': 'Edg/113.0.1774.35'}
     async with aiohttp.ClientSession(headers=headers) as session:
         async with session.get(url=url, proxy=proxy) as response:
             doc = await response.text()
@@ -267,7 +263,7 @@ def table2tag(df_comment, df_table):
     df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
     return df_comment_tag
 
-def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False):
+def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,commentFullUpdate=False):
 
     os.environ['http_proxy'] = proxy #代理的端口
     os.environ['https_proxy'] = proxy
@@ -286,16 +282,16 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,commentFullUpdate=False
     df_artinfo = pd.DataFrame(data=list(set(id_list)),columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
-    # transcript html
-    url = 'https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA'
-    doc = BeautifulSoup(requests.get(url).content)
-    df = pd.DataFrame()
-    for i in doc.findAll("div", {'data-target':"doc"}):
-        if i.find("div",{'role':"link"}):
-            i.find("div",{'role':"link"}).decompose()
-        df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)  
-    L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index])
-    print('transcript downloaded')
+    if gDriveUpdate:
+        url = 'https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA'
+        doc = BeautifulSoup(requests.get(url).content)
+        df = pd.DataFrame()
+        for i in doc.findAll("div", {'data-target':"doc"}):
+            if i.find("div",{'role':"link"}):
+                i.find("div",{'role':"link"}).decompose()
+            df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)  
+        L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index])
+        print('transcript downloaded')
 
     if articleUpdate:
         page_list = tasker.run([fetch_async(articleURL(art_id), [page2article, page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
@@ -727,5 +723,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=1, proxy='')
-    updateBlogPage(days=7)
+    updateBlogData(nTask=10, proxy='')
+    updateBlogPage(days=14)
