@@ -273,13 +273,13 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
 
     tasker = Tasker(nTask=nTask)
 
-    artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-    df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
-    # doc = BeautifulSoup(requests.get('https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
-    # id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
-    # doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
-    # id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
-    # df_artinfo = pd.DataFrame(data=list(set(id_list)),columns=['art_id']).set_index('art_id')
+    # artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
+    # df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
+    id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
+    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
+    id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
+    df_artinfo = pd.DataFrame(data=list(set(id_list)),columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
     if gDriveUpdate:
@@ -723,5 +723,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(proxy='')
+    updateBlogData(nTask=10, proxy='http://127.0.0.1:7890')
     updateBlogPage(days=14)
