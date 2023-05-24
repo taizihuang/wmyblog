@@ -723,5 +723,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=10, proxy='http://127.0.0.1:7890')
+    updateBlogData(nTask=10, proxy='')
     updateBlogPage(days=14)
