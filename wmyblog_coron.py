@@ -206,7 +206,7 @@ def page2comment(doc, art_id):
 
 def mergeArticle(df_article_new, articleFile='./data/article_full.pkl'):
     df_article = pd.read_pickle(articleFile)
-    df_article_new = pd.concat([df_article_new, df_article],ignore_index=True).drop_duplicates(subset='id',keep='first').reset_index(drop=True)
+    df_article_new = pd.concat([df_article_new, df_article],ignore_index=True).drop_duplicates(subset='id',keep='first').sort_values('id',ascending=False).reset_index(drop=True)
 
     os.remove(articleFile+'.bak')
     os.rename(articleFile, articleFile+'.bak')
