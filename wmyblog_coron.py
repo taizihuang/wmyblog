@@ -252,16 +252,26 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 def comment2md(comment):
     return hashlib.md5((comment.replace('<strike>','').replace('</strike>','')).encode()).hexdigest()
 
-def table2tag(df_comment, df_table):
+def table2tag(df_comment, df_table, df_cell_table):
     df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
     df_tag = pd.DataFrame()
+    df_cell = pd.DataFrame()
+
     for i in range(round(len(df_table.columns)/2)):
         df_tag = pd.concat([df_tag, df_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'tag'})],axis=0)
     df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
     df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
+
+    for i in range(round(len(df_cell_table.columns)/2)):
+        df_cell = pd.concat([df_cell, df_cell_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'cell'})],axis=0)
+    df_cell = df_cell.loc[~df_cell.code.isna()].reset_index(drop=True)
+    df_cell['md5'] = df_cell['code'].apply(lambda x: x[-32:])
+
     df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
     df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
-    return df_comment_tag
+    df_comment_tag_cell = pd.merge(df_comment_tag, df_cell, on='md5',how='left')
+    df_comment_tag_cell.loc[df_comment_tag_cell.cell.isna(),'cell'] = 'A0'    
+    return df_comment_tag_cell
 
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,commentFullUpdate=False):
 
@@ -444,9 +454,10 @@ def genHTML(art_id,df_article,df_comment_tag):
             nickname = df_comment_id.nickname[j]
             comment_date = df_comment_id.comment_date[j].strftime('%Y-%m-%d %H:%M')
             uuid = df_comment_id.md5[j]
+            coord = df_comment_id.cell[j]
             tag_list = ' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
             striked = '<strike>' in comment
-            reply_li.append((uuid,comment,reply,nickname,comment_date,tag_list,striked))
+            reply_li.append((uuid,coord,comment,reply,nickname,comment_date,tag_list,striked))
             
     HTML = Template("""<!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
@@ -463,10 +474,10 @@ def genHTML(art_id,df_article,df_comment_tag):
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
     <h2>${len(reply_li)} 条留言</h2>
-    %for uuid, say, reply, user, time, tag_list, striked in reply_li:
+    %for uuid, coord, say, reply, user, time, tag_list, striked in reply_li:
     <div class="LI">
     <div class="USER"><span class="NAME" id=${uuid}>${user}</span>
-    <span class="TAG"><label id=${uuid} onclick="delayClick(this.id)">${tag_list}</label></span>
+    <span class="TAG"><label id=${uuid} onclick="delayClick(this.id, '${coord}A0A0')">${tag_list}</label></span>
     <div class="TIME">${time}</div></div>
     %if striked:
     <input type="checkbox" class="exp" id="${uuid}_1">
@@ -656,7 +667,7 @@ def genLatestComment(df_comment_today,article_dict):
         rss.write(RSS_notify.render(date=art_date,reply_li=reply_li).replace('&lt;br&gt;','<br>'))
     return
 
-def exportJSON(df_article,df_comment_tag,jsonFile):
+def exportJSON(df_article,df_comment_tag, jsonFile):
 
     article_list = []
     title_dict = {}
@@ -678,14 +689,15 @@ def exportJSON(df_article,df_comment_tag,jsonFile):
         reply = df_comment_tag.reply[i]
         tag = df_comment_tag.tag[i]
         md5 = df_comment_tag.md5[i]
+        coord = df_comment_tag.cell[i]
         if reply:
-            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5})
+            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5,"coord":coord})
 
     wmy = {"article":article_list,"comment":comment_list}
     with open(jsonFile,'w') as f:
         f.write(json.dumps(wmy))
 
-def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl",tableFile="./data/table.xlsx"):
+def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl",tableFile="./data/table.xlsx",cellFile="./data/cell.xlsx"):
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
@@ -700,7 +712,8 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
     df_table = pd.read_excel(tableFile,index_col=0)
-    df_comment_tag = table2tag(df_comment, df_table)
+    df_cell =  pd.read_excel(cellFile,index_col=0)
+    df_comment_tag = table2tag(df_comment, df_table, df_cell)
     
     for art_id in df_article.id:
         genHTML(art_id,df_article,df_comment_tag)

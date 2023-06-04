@@ -13,12 +13,12 @@ function copyText(text) {
 
 }
 
-function delayClick(text) {
+function delayClick(text,coord) {
     navigator.clipboard.writeText(text);
     setTimeout(() => {
-        if (windowObject.closed) {
-            windowObject = window.open('https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2', 'wmyblog_tag');
-        }
+        // if (windowObject.closed) {
+            windowObject = window.open('https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2'+'&coord='+coord, 'wmyblog_tag');
+        // }
     }, 100);
 
 }
