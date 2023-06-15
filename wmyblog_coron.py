@@ -299,7 +299,8 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         for i in doc.findAll("div", {'data-target':"doc"}):
             if i.find("div",{'role':"link"}):
                 i.find("div",{'role':"link"}).decompose()
-            df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)  
+            df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
+        df = df.loc[(df.filename.str.contains('八方论坛')) | (df.filename.str.contains('龙行天下'))]
         L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index])
         print('transcript downloaded')
 
