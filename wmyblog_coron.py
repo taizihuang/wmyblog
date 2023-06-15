@@ -669,7 +669,7 @@ def genLatestComment(df_comment_today,article_dict):
     return
 
 def exportJSON(df_article,df_comment_tag, jsonFile):
-
+    
     article_list = []
     title_dict = {}
     for i in df_article.index:
@@ -680,6 +680,7 @@ def exportJSON(df_article,df_comment_tag, jsonFile):
         post = df_article.post[i]
         article_list.append({"id":id,"title":title,"date":art_date.strftime('%Y-%m-%d %H:%M:%S'),"post":post})
 
+    df_comment_tag = df_comment_tag.drop_duplicates(subset=['comment'],keep='first')
     comment_list = []
     for i in df_comment_tag.index:
         id = df_comment_tag.id[i]
