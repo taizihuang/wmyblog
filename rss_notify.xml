@@ -7,13 +7,24 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>06-17 02:02 +0800</lastBuildDate>
+    <lastBuildDate>06-17 08:07 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
+    <title><![CDATA[這個部落格 | Taizi Huang]]></title>
+    <description><![CDATA[王先生，想和您报告一下博客内容整理的情况：1. 制作了《王孟源文集》初版。全书近800页，用LaTeX排版。问答部分后续会放上（把提问放在正文后，回答则放在附录中，如何？这模仿了教材中习题+解答的模式，符合博客传道授业解惑的风格）；2. 访谈文字稿接近完工。这里要非常感谢几位热心读者细心校对。文字稿精校完毕后也会放入《文集》中。如果您日后要引用，也很方便；3. 问答标签化进度缓慢。我和另一位读者尝试用ChatGPT帮忙，但是因为AI并不能真正理解问答的逻辑，所以效果不佳。这是一个慢工，我也会继续优化打标签的步骤。有了标签，就可以把《文集》中相近的内容分类成册，方便读者更有针对性的学习。《文集》和文字稿都托管在Google Drive: https://drive.google.com/drive/folders/1eg78LVciM913PhvRtsgtWV3VDLojynDA <br><br>----<br><br>謝謝；後世要參考我們在此的討論，可能得靠你們了。
+<br>&lt;div class="TIME"&gt;2023-06-17 02:40 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-06-17 02:03:00 +0800</pubDate>
+    <guid isPermaLink="false">1addfa82a8dca4250d50e4e238a44e05</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908719.html#1addfa82a8dca4250d50e4e238a44e05</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註二十八]]></title>
-    <description><![CDATA[後註二十八 <br><br>----<br><br>昨天上《龍行天下》節目（參見&lt;a href="https://www.youtube.com/watch?v=ngk_QkbsI2Y"&gt;&lt;span style="color:blue"&gt;《23.06.16【觀點│龍行天下】烏克蘭大反攻是真的嗎？》&lt;/span&gt;&lt;/a&gt;）時，提到烏軍經過12天的第一波攻勢，唯一的戰果是在南綫東段有4-5公里的進展（在Velyka Novozilka鎮的南面郊區，原本是俄軍的突出部），包括幾個村落。然而這裏其實是俄軍防綫的前沿地帶，有17公里作爲緩衝，完全符合&lt;a href="https://irp.fas.org/doddir/army/fm100-2-1.pdf"&gt;&lt;span style="color:blue"&gt;《蘇聯陸軍作戰準則》&lt;/span&gt;&lt;/a&gt;中，師級防禦陣地的標準配置；這個前沿緩衝地帶，軍事術語叫做“эшелон безопасности”，一般翻譯為“Security Echelon”“安全警戒”，參見前述作戰準則的第六章第二節、以及98頁的示意圖。&lt;/p&gt;
+    <description><![CDATA[後註二十八 <br><br>----<br><br>昨天上《龍行天下》節目（參見&lt;a href="https://www.youtube.com/watch?v=ngk_QkbsI2Y"&gt;&lt;span style="color:blue"&gt;《23.06.16【觀點│龍行天下】烏克蘭大反攻是真的嗎？》&lt;/span&gt;&lt;/a&gt;）時，提到烏軍經過12天的第一波攻勢，唯一的戰果是在南綫東段有4-5公里的進展（在Velyka Novozilka鎮的南面郊區，原本是俄軍的突出部），包括幾個村落。然而這裏其實是俄軍防綫的前沿地帶，有17公里作爲緩衝，完全符合&lt;a href="https://irp.fas.org/doddir/army/fm100-2-1.pdf"&gt;&lt;span style="color:blue"&gt;《蘇聯陸軍作業及戰術準則》&lt;/span&gt;&lt;/a&gt;中，師級野戰防禦陣地的標準配置（亦即非特殊要塞地帶）；這個前沿緩衝地帶，軍事術語叫做“эшелон безопасности”，一般翻譯為“Security Echelon”“安全警戒梯隊”，參見前述作戰準則的第六章第二節、以及98頁的示意圖。&lt;/p&gt;
 ]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2023-06-17 00:00:00 +0800</pubDate>
@@ -24,8 +35,8 @@
     
     
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 干煸鱿鱼须]]></title>
-    <description><![CDATA[近日科技部长又去安徽调研量子科技和核聚变。http://gdstc.gd.gov.cn/kjzx_n/mtjj/content/post_4200514.html科技部支持假大空的行为已是老生常谈。但更让我担忧的是，安徽这位负责科技领域的副省长张红文的来头可不小。作为全国第一位75后省委常委，航天科工少帅，习近平的老乡，按照如今中共的人事规则其前途无量，很有可能是未来总理甚至是总书记的候选人。在他主导下安徽大力发展量子科技和核聚变，可能说明： 1对于这些假大空项目的迷信已经渗透进中国最务实的军工系统。 2习和其他中共高层真心看好相关研究，才把这位政治新星送到合肥‘刷履历’。不管是哪种原因，对中国未来科技发展都是极为不利的。。 <br><br>----<br><br>學術和教育管理的問題的確是病入膏肓，不過2014年博客剛開始談金融和經濟管理的時候，也一樣面臨著似乎跨越不過的大山，九年下來不也剋服了？我們繼續努力，盡人事傳播真相，不論是否成功，總是無愧於心。
-<br>&lt;div class="TIME"&gt;2023-06-17 01:32 回复&lt;/div&gt;]]></description>
+    <description><![CDATA[近日科技部长又去安徽调研量子科技和核聚变。http://gdstc.gd.gov.cn/kjzx_n/mtjj/content/post_4200514.html科技部支持假大空的行为已是老生常谈。但更让我担忧的是，安徽这位负责科技领域的副省长张红文的来头可不小。作为全国第一位75后省委常委，航天科工少帅，习近平的老乡，按照如今中共的人事规则其前途无量，很有可能是未来总理甚至是总书记的候选人。在他主导下安徽大力发展量子科技和核聚变，可能说明： 1对于这些假大空项目的迷信已经渗透进中国最务实的军工系统。 2习和其他中共高层真心看好相关研究，才把这位政治新星送到合肥‘刷履历’。不管是哪种原因，对中国未来科技发展都是极为不利的。。 <br><br>----<br><br>學術和教育管理的問題的確是病入膏肓，然而2014年博客剛開始談外交、戰略、金融和經濟管理的時候，同樣面臨著似乎無可跨越的大山，九年下來不也剋服了？我們繼續努力，盡人事傳播真相，不論是否成功，總是無愧於心，甚至應該感到慶幸，畢竟人生短短不過百年，還有比跟賣國賊周旋更有意義的事嗎？
+<br>&lt;div class="TIME"&gt;&lt;a href="https://github.com/taizihuang/wmyblog/commits/main/html/171633910.html" style="text-decoration: none;color:black;"&gt;2023-06-17 04:14 修改&lt;/a&gt;&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2023-06-16 21:12:00 +0800</pubDate>
     <guid isPermaLink="false">46b8415f62cca9467a2c482eebd60b50</guid>
