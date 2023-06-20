@@ -708,8 +708,8 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
         today = pd.to_datetime(datetime.date.today())
         return today
 
-    fetchTable('DR09JSkJqU3h0dGJn','BB08J2',401).to_excel(tableFile)
-    print('table.xlsx fetched!')
+    # fetchTable('DR09JSkJqU3h0dGJn','BB08J2',401).to_excel(tableFile)
+    # print('table.xlsx fetched!')
     
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
