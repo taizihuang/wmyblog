@@ -45,6 +45,21 @@ def fetchTable(docid, tab, nrow):
     df = pd.DataFrame(data=data_list[1:],columns=data_list[0])
     return df.set_index(df.columns[0],drop=True)
 
+def updateTag(tagFile='./data/tag.pkl'):
+
+    df_tag = pd.read_pickle(tagFile)
+
+    headers = {
+        'Apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqbG9za2pjb2dya3ZocGtmb296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYwMjIyNjIsImV4cCI6MjAwMTU5ODI2Mn0.peYwcTSZcDd3SvG5Rh99jlM7uyHkUjq1klvqRt2vF5c',
+        'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqbG9za2pjb2dya3ZocGtmb296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYwMjIyNjIsImV4cCI6MjAwMTU5ODI2Mn0.peYwcTSZcDd3SvG5Rh99jlM7uyHkUjq1klvqRt2vF5c'
+    }
+    tag_dict = json.loads(requests.get('https://cjloskjcogrkvhpkfooz.supabase.co/rest/v1/tag?select=*&order=created_at.desc&limit=100',headers=headers).content)
+    df_tag_new = pd.DataFrame(tag_dict).rename(columns={'id':'md5'})[['md5','tag']]
+    df_tag = pd.concat([df_tag_new,df_tag],ignore_index=True).drop_duplicates(keep='first').reset_index(drop=True)
+    df_tag.to_pickle(tagFile)
+    print('tag table updated')
+    return
+
 class Tasker():
 
     def __init__(self, nTask=5, tSleep=1):
@@ -251,26 +266,26 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 def comment2md(comment):
     return hashlib.md5((comment.replace('<strike>','').replace('</strike>','')).encode()).hexdigest()
 
-def table2tag(df_comment, df_table, df_cell_table):
-    df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
-    df_tag = pd.DataFrame()
-    df_cell = pd.DataFrame()
+# def table2tag(df_comment, df_table, df_cell_table):
+#     df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
+#     df_tag = pd.DataFrame()
+#     df_cell = pd.DataFrame()
 
-    for i in range(round(len(df_table.columns)/2)):
-        df_tag = pd.concat([df_tag, df_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'tag'})],axis=0)
-    df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
-    df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
+#     for i in range(round(len(df_table.columns)/2)):
+#         df_tag = pd.concat([df_tag, df_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'tag'})],axis=0)
+#     df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
+#     df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
 
-    for i in range(round(len(df_cell_table.columns)/2)):
-        df_cell = pd.concat([df_cell, df_cell_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'cell'})],axis=0)
-    df_cell = df_cell.loc[~df_cell.code.isna()].reset_index(drop=True)
-    df_cell['md5'] = df_cell['code'].apply(lambda x: x[-32:])
+#     for i in range(round(len(df_cell_table.columns)/2)):
+#         df_cell = pd.concat([df_cell, df_cell_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'cell'})],axis=0)
+#     df_cell = df_cell.loc[~df_cell.code.isna()].reset_index(drop=True)
+#     df_cell['md5'] = df_cell['code'].apply(lambda x: x[-32:])
 
-    df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
-    df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
-    df_comment_tag_cell = pd.merge(df_comment_tag, df_cell, on='md5',how='left')
-    df_comment_tag_cell.loc[df_comment_tag_cell.cell.isna(),'cell'] = 'A0'    
-    return df_comment_tag_cell
+#     df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
+#     df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
+#     df_comment_tag_cell = pd.merge(df_comment_tag, df_cell, on='md5',how='left')
+#     df_comment_tag_cell.loc[df_comment_tag_cell.cell.isna(),'cell'] = 'A0'    
+#     return df_comment_tag_cell
 
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,commentFullUpdate=False):
 
@@ -454,14 +469,17 @@ def genHTML(art_id,df_article,df_comment_tag):
             nickname = df_comment_id.nickname[j]
             comment_date = df_comment_id.comment_date[j].strftime('%Y-%m-%d %H:%M')
             uuid = df_comment_id.md5[j]
-            coord = df_comment_id.cell[j]
-            tag_list = ' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
+            tag_list = df_comment_id.tag[j] #' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
             striked = '<strike>' in comment
-            reply_li.append((uuid,coord,comment,reply,nickname,comment_date,tag_list,striked))
+            reply_li.append((uuid,comment,reply,nickname,comment_date,tag_list,striked))
             
     HTML = Template("""<!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <script src="./blog.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>${title}</title>
     </head>
@@ -474,11 +492,11 @@ def genHTML(art_id,df_article,df_comment_tag):
     <div class="POST">${post}</div>
     <div class="REPLY_LI">
     <h2>${len(reply_li)} 条留言</h2>
-    %for uuid, coord, say, reply, user, time, tag_list, striked in reply_li:
+    %for uuid, say, reply, user, time, tag_list, striked in reply_li:
     <div class="LI">
     <div class="USER"><span class="NAME" id=${uuid}>${user}</span>
-    <span class="TAG"><label id=${uuid} onclick="delayClick(this.id, '${coord}A0A0')">${tag_list}</label></span>
     <div class="TIME">${time}</div></div>
+    <span class="tag"><input type="search" value=${tag_list} data-md5=${uuid} onkeydown="enter(event,$(this))"></span>
     %if striked:
     <input type="checkbox" class="exp" id="${uuid}_1">
     <div class="text1"><label class="btn" for="${uuid}_1"></label>
@@ -690,15 +708,14 @@ def exportJSON(df_article,df_comment_tag, jsonFile):
         reply = df_comment_tag.reply[i]
         tag = df_comment_tag.tag[i]
         md5 = df_comment_tag.md5[i]
-        coord = df_comment_tag.cell[i]
         if reply:
-            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5,"coord":coord})
+            comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5})
 
     wmy = {"article":article_list,"comment":comment_list}
     with open(jsonFile,'w') as f:
         f.write(json.dumps(wmy))
 
-def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl",tableFile="./data/table.xlsx",cellFile="./data/cell.xlsx"):
+def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./data/comment_full.pkl",tagFile="./data/tag.pkl"):
 
     def today(timezone='Asia/Shanghai'):
         os.environ['TZ'] = timezone
@@ -709,12 +726,14 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
     # fetchTable('DR09JSkJqU3h0dGJn','BB08J2',401).to_excel(tableFile)
     # print('table.xlsx fetched!')
+    updateTag()
     
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
-    df_table = pd.read_excel(tableFile,index_col=0)
-    df_cell =  pd.read_excel(cellFile,index_col=0)
-    df_comment_tag = table2tag(df_comment, df_table, df_cell)
+    df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
+    df_tag = pd.read_pickle(tagFile)
+    df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
+    df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
     
     for art_id in df_article.id:
         genHTML(art_id,df_article,df_comment_tag)

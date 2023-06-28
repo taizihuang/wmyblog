@@ -5,6 +5,9 @@
     <script src='jquery.min.js'></script>
     <script src='search.js'></script>
     <script  src="../html/blog.js"></script>
+    <script src="../html/supabase.js"></script>
+    <script  src="../html/tag.js"></script>
+    <link rel="stylesheet" href="../html/fSelect.css">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
     <meta charset=utf-8>
     <title>博客搜索</title>
@@ -14,11 +17,7 @@
     <div class=BODY>
         <div class="BACK"><a href="../index.html">返回索引页</a></div>
         <h1>博客搜索</h1>
-        <p style="font-size: 14px"><b>倡议：</b>欢迎读者志愿为博客问答添加标签，操作如下：<br>
-            1. 点击任意页面中的标签（自动打开标签文档，后台自动复制ID)；<br>
-            2. 腾讯文档加载完毕(~2s)后，搜索ID（如: 741c3d629dd8c688b4a73c75f3b4f23f）<br>
-            3. 在ID右侧更新标签（可选标签如下），用下划线"/"隔开（如：问答1000/金融）。<br>
-            <b>分类原则: </b>方便您下次可以快速搜索即可；意见和建议在腾讯文档中反馈<br>
+        <p style="font-size: 14px"><b>倡议：</b>欢迎读者志愿为博客问答添加标签<br>
         </p>
         <div class="special">
             <label for="问答1000" id="问答1000-label">问答1000</label>
@@ -103,13 +102,15 @@
             <input type="checkbox" id="德国" onclick="tagList(this.id)">
             <label for="日本" id="日本-label">日本</label>
             <input type="checkbox" id="日本" onclick="tagList(this.id)">
+            <label for="乌克兰" id="乌克兰-label">乌克兰</label>
+            <input type="checkbox" id="乌克兰" onclick="tagList(this.id)">
             <label for="其他地区" id="其他地区-label">其他地区</label>
             <input type="checkbox" id="其他地区" onclick="tagList(this.id)">
 
         </div>        
         <div clas="search" id="search">
             <div class="input">
-                <input type="text" onkeydown="enter(event)" id="search-input">
+                <input type="text" onkeydown="enter_search(event)" id="search-input">
                 <button type="button" onclick="search()">搜索</button>
             </div>
 
@@ -127,13 +128,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function enter(e) {
-            if (e.keyCode == 13) {
-                search()
-            }
-        }
-    </script>
 </body>
 
 

@@ -1,6 +1,10 @@
 <!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <script src="./blog.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>【工業】談未來的能源技術</title>
     </head>
@@ -39,16 +43,16 @@
     <h2>6 条留言</h2>
     <div class="LI">
     <div class="USER"><span class="NAME" id=06b5247778fe535be590cd92056f9898>南山臥蟲</span>
-    <span class="TAG"><label id=06b5247778fe535be590cd92056f9898 onclick="delayClick(this.id, 'AE316A0A0')">#empty #</label></span>
     <div class="TIME">2018-11-14 14:36</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=06b5247778fe535be590cd92056f9898 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">//全釩氧化還原液流電池（Vanadium redox battery）。它滿足所有前述的五項要求，而且在物理和工程上都是很簡單而無重要障礙的。目前所需要的，是為商用做最後一些實用化細節的微調和優化//要突破這個實用化／商業化的瓶頸，王兄估算大概要砸多少銀子？</div>
     <div class="REPLY">一億，人民幣。
 <br><div class="TIME">2018-11-14 14:39 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=a4d9eea7e3514f17b3800443cc5f6b77>oboe</span>
-    <span class="TAG"><label id=a4d9eea7e3514f17b3800443cc5f6b77 onclick="delayClick(this.id, 'AE318A0A0')">#问答1000 #</label></span>
     <div class="TIME">2018-11-15 02:16</div></div>
+    <span class="tag"><input type="search" value=问答1000/ data-md5=a4d9eea7e3514f17b3800443cc5f6b77 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">抱歉，我知道下面的問題有些歪樓，如果王先生覺得不合適，懇請直接刪除。王先生提到：「然而在可見的未來（2025-2035之間......必然會有幾個重要的技術突破」但我個人的經驗是，我很難準確評估何時能得到突破性的結果。有時想要合成某物質，結果做了幾年都做不出來；有時終於合成出來，但指標卻不如預期。所以申請計畫經費時都像是在用自己的名譽去賭博，為了避免開天窗，常常是先做出研究成果，再拿去申請項目。只有不需要技術突破，只需要重複既有技術的項目，才比較有把握。請問，對於技術突破的時間點，人們是怎麼預測的？ 謝謝！！</div>
     <div class="REPLY">
 很好的問題。 
@@ -60,8 +64,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=550f56ff50e763c241ea8d334bd1755f>南山臥蟲</span>
-    <span class="TAG"><label id=550f56ff50e763c241ea8d334bd1755f onclick="delayClick(this.id, 'AE321A0A0')">#问答1000 #</label></span>
     <div class="TIME">2018-11-21 14:41</div></div>
+    <span class="tag"><input type="search" value=问答1000/ data-md5=550f56ff50e763c241ea8d334bd1755f onkeydown="enter(event,$(this))"></span>
     <div class="SAY">台灣快選舉了，都忙着湊熱閙看"韓流"。先問個簡單的傻問題－－為甚麼那些富豪（例如，一億剛好是小目標的王健林），沒有人砸錢下來搞這些技術呢？</div>
     <div class="REPLY">
 因爲私人資本在完全無風險的情況下，每年還指望5-8%的報酬率。有風險的時候，自然要再加上溢價。儲能技術，從國家觀點來看，十幾年内做出來是十拿九穩，又有極大的好處，投資是應該的。私人資本，對十幾年後才可能有回報的計劃，卻根本就不可能有興趣，因爲兩三年就可以翻牌的投資項目太多了，每兩年賺30%，17年是130%的8.5次方=930%，這種長期工業技術開發根本不可能有這麽高的回報（因爲大部分的利益，被整個國家社會分享了），而且8.5個不同的投資項目，風險自然抵消一部分（中心極限定理），多餘的風險溢價讓這個短期投資策略更加有利。
@@ -70,8 +74,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=c0b33a8bd5b659407f62c3bd75d0e8e0>nthu.cs.晉陽彭城客</span>
-    <span class="TAG"><label id=c0b33a8bd5b659407f62c3bd75d0e8e0 onclick="delayClick(this.id, 'AE324A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-01 11:12</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=c0b33a8bd5b659407f62c3bd75d0e8e0 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">CCTV 全釩氧化還原液流電池https://www.youtube.com/watch?v=AQuOuC0YTqw @18:06</div>
     <div class="REPLY">
 很好的節目。一般行内人都是報喜不報憂，這裏的氫能源研究者也是如此，但是至少他們稍稍提到了運輸氫氣的安全隱患。
@@ -80,8 +84,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=2f3bfaec662027cca4376ed33bc2ab22>南山臥蟲</span>
-    <span class="TAG"><label id=2f3bfaec662027cca4376ed33bc2ab22 onclick="delayClick(this.id, 'AE339A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-05 10:37</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=2f3bfaec662027cca4376ed33bc2ab22 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">對於各項科技成果：實驗室（科研行為）－－量產可行（國家行為）－－商業普及（巿場行為）資本及國家是如何判斷的？不時見到有些資本是投錯了地方的（故曰：風投），國家亦如是。又，若果有真正的慈善家想造福社會，其實不必到處捐錢，只須在幾個有較大成功機率的重點項目上，砸下銀子，就起碼可以收回成本了，（簡單而言）可以這樣說嗎？若然，為甚麼沒有人做呢？</div>
     <div class="REPLY">
 從實驗室到實用是最大的關頭，必須要是耐用、符合用戶規格、品質一致可靠、價格合理有競爭性。至於國家或私人，這是投資報酬率的問題，私人資本一般不在乎社會收益，也不願意做太長遠的投資。
@@ -91,8 +95,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=a6eda69c17653a181154cd5876b02922>游客 越雷</span>
-    <span class="TAG"><label id=a6eda69c17653a181154cd5876b02922 onclick="delayClick(this.id, 'AG8A0A0')">#empty #</label></span>
     <div class="TIME">2019-01-16 20:11</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=a6eda69c17653a181154cd5876b02922 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王先生在三楼终于解开了我的疑惑，因为我看来有介绍中美经济的文章三十篇左右了，不论是公知带路党还是当代红小将写的，都提到了一件事：美国基建已经老化但是无力更新（当然公知说美国有马斯克的真空铁路之类的“黑科技”很快又要超过中国云云，小粉红就说美国走下坡路了）。我之前就知道一个事实：国企一定会去建设基建，私企几乎不会在一切为零时主动搞道路啊，电路的（都是捞现成的），原来是基建的福利会被社会大众所稀释啊。所以王先生，希望您能写篇文章，大致讲一讲国企和私企应该在国家不同阶段（比如中国，改开到1989欧美制裁一个阶段，到中国入世贸组织第二阶段，之后到现在又是一个阶段）应该发挥什么作用，国家资源怎么分配（从国有为主，私有为辅到现在要大力支持民企）。（如果这些问题太大了，还麻烦指出来，我好像有些不知天高地厚了）</div>
     <div class="REPLY">題目的確是太大了，你有空自己看看林毅夫的著作好了。我知道這些經濟學的文章比起我博客的科普要長得多、也難讀得多，但是我寫簡短科普的能力是有極限的，並不是所有複雜的議題我都能在一頁的空間裏討論完畢。
 <br><div class="TIME">2019-01-17 18:41 回复</div></div>

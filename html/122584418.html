@@ -1,6 +1,10 @@
 <!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <script src="./blog.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>【美國】Trump的權力萎縮</title>
     </head>
@@ -30,8 +34,8 @@
     <h2>20 条留言</h2>
     <div class="LI">
     <div class="USER"><span class="NAME" id=7480a0654d1d9252d5b23777d88ffb7b>Submarine</span>
-    <span class="TAG"><label id=7480a0654d1d9252d5b23777d88ffb7b onclick="delayClick(this.id, 'AE364A0A0')">#问答1000 #</label></span>
     <div class="TIME">2018-12-26 09:48</div></div>
+    <span class="tag"><input type="search" value=问答1000/ data-md5=7480a0654d1d9252d5b23777d88ffb7b onkeydown="enter(event,$(this))"></span>
     <div class="SAY">有大牛在网上提过他的猜测：因为特朗普先生没有完成KPI指标，所以华尔街大概在10月份左右失去了对这位总统的信任，可能已经亲自上场。他猜测华尔街正在做空美国的高科技股，因为这些高科技公司的海外滚存利润没有流回国内，所以接下来华尔街会迫使大概2-6万亿美金从产业资本变回金融资本并回流美国。他还猜测接下来美联储会延长加息周期和强度，并且可能会先缩表。不知道王先生怎么看这位朋友的猜测以及接下来的全球经济情势。我怀疑极有可能有很多国家陷入到危机当中，只是不知道危机程度会到什么地步，或许会重复98年的金融海啸？</div>
     <div class="REPLY">
 陰謀論很容易編造，但若是沒有證據，就只不過是一個猜想；如果連情理都說不通，那麽就純粹是胡扯，你所提的這個“大牛”就是一個例子。買空賣空搞的都是小股票，一般市值幾千萬美元；而美國的高科技股，光是Apple和Amazon就各是萬億美元級別的公司，說要賣空，那是完全不懂金融的人説的胡話。如果華爾街真要整Trump，花個幾億給他的對手做競選資金就可以保證他的落選，哪兒用得著擔上幾萬億的風險？ 
@@ -41,8 +45,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=c85b5dec1636cda32af6c00c86e801e6>上大人(和拜振華說兩句)</span>
-    <span class="TAG"><label id=c85b5dec1636cda32af6c00c86e801e6 onclick="delayClick(this.id, 'AE365A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-26 10:23</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=c85b5dec1636cda32af6c00c86e801e6 onkeydown="enter(event,$(this))"></span>
     <input type="checkbox" class="exp" id="c85b5dec1636cda32af6c00c86e801e6_1">
     <div class="text1"><label class="btn" for="c85b5dec1636cda32af6c00c86e801e6_1"></label>
     <div class="SAY"><strike>人﹐看行為國﹐看領導的行為。 就算是公司總栽﹐短期內不斷地換高管﹐表示自己和公司已一敗塗地。防偷渡客和非法移民最好從制度入手﹐不是蓋高牆。 理解美國社會制度才知有多少漏洞給非法移民﹐能在美國生活上數十年而不被發覺的。 以民粹行政﹐像南洋國家﹐隔多年就排華一次﹔但窮還是一樣窮。怎樣分析﹐貿易戰美國必輸﹐除了精日精美的華人例外。</strike></div>
@@ -51,8 +55,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=c85b5dec1636cda32af6c00c86e801e6>上大人-(自作業)</span>
-    <span class="TAG"><label id=c85b5dec1636cda32af6c00c86e801e6 onclick="delayClick(this.id, 'AE365A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-26 10:23</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=c85b5dec1636cda32af6c00c86e801e6 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">人﹐看行為國﹐看領導的行為。 就算是公司總栽﹐短期內不斷地換高管﹐表示自己和公司已一敗塗地。防偷渡客和非法移民最好從制度入手﹐不是蓋高牆。 理解美國社會制度才知有多少漏洞給非法移民﹐能在美國生活上數十年而不被發覺的。 以民粹行政﹐像南洋國家﹐隔多年就排華一次﹔但窮還是一樣窮。怎樣分析﹐貿易戰美國必輸﹐除了精日精美的華人例外。</div>
     <div class="REPLY">
 長期來看，中國的氣當然更長，但是短期來説，中國的經濟損失（不是我以前討論過的利潤，而是就業和投資）大約是美國的兩倍，再加上中方的經濟衰退剛好比美國早兩季，所以在2019年前半的任何談判，都是美方的氣勢佔上風。 
@@ -61,16 +65,16 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=1ea831e59bb540d99d45b2d66f813169>游客 越雷</span>
-    <span class="TAG"><label id=1ea831e59bb540d99d45b2d66f813169 onclick="delayClick(this.id, 'AE367A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-26 11:52</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=1ea831e59bb540d99d45b2d66f813169 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">不知道王先生说的中国经济会比美国先一个季度衰退是什么意思？是指那种一下子各大经济指标下降10％左右么。顺便说一下，我已经预感到观察者网里面王先生底下评论区里面会回答说：是啊，中国要到春节了，工厂停工，大街小巷全是火药味，孩子们出去要钱，要崩溃了……之类的酸话了（捂脸）</div>
     <div class="REPLY">中國官方的經濟指標，連總理自己都不相信，所以我倒不是特意要預測GDP成長率會降到哪裏，而只是說景氣週期循環已經開始進入每五年裏最糟糕的那一年。不論官方的數字是多少，它的實際GDP成長可能是4-5%左右，一般商業感受的，就是營銷額下行。如果你有親友做生意的，不用等到春節，現在去問問，他們應該已經感受到寒意了。
 <br><div class="TIME">2018-12-26 12:04 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=6ec4023fc60488ba8d6fb02145e47ccf>南山臥蟲</span>
-    <span class="TAG"><label id=6ec4023fc60488ba8d6fb02145e47ccf onclick="delayClick(this.id, 'AE368A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-26 22:00</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=6ec4023fc60488ba8d6fb02145e47ccf onkeydown="enter(event,$(this))"></span>
     <div class="SAY">//在司法方面，Mueller的辦案一步一個脚印，已然確定了Trump一旦卸任，就可以輕易地把他定罪//非常重要的判斷！请王兄補充些「实锤」证据，谢谢。</div>
     <div class="REPLY">
 最確實的，反而和通俄沒有關係，而是Michael Cohen因爲違反選舉獻金法被判徒刑。判決書裏，幾次提起一個unindicted co-conspirator，顯然指的是Trump。Trump也不能推説不知情，因爲還有另一個幫他收買情婦封口的人，再加上很多實證。
@@ -79,8 +83,8 @@ Cohen自願合作，還被判三年，我想是Mueller為Trump將來的判刑劃
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=ef0884900ed930415670d9f6c318672c>游客 越雷</span>
-    <span class="TAG"><label id=ef0884900ed930415670d9f6c318672c onclick="delayClick(this.id, 'AE369A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-27 13:41</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=ef0884900ed930415670d9f6c318672c onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王先生，既然是全球经济周期到了下行的时候，那么欧洲的周期大概会什么时候开始呢？因为您总认为欧洲会被中美争取站队，但是，要是欧洲也在美国经济之前进入下行周期，而这个时候中国顶住了美国压力，川普有没有可能直接收割欧洲羊毛？毕竟收割中国羊毛一般要分一些给欧洲，可是在无法割中国羊毛时，收割欧洲羊毛是几乎独吞的（毕竟中国在欧洲，特别是西欧没什么势力）当然，这样会1.彻底让欧洲倒向中国，2.欧洲的科技也会向中国开放。这还是要看中国会不会真的在2019年死扛川普。要是死扛川普，川普有没有这么做的可能呢，王先生？</div>
     <div class="REPLY">
 歐洲的經濟，如同中國一樣，已經開始減速了；法國的動亂就是在這樣的經濟周期背景下才發生的。
@@ -89,8 +93,8 @@ Cohen自願合作，還被判三年，我想是Mueller為Trump將來的判刑劃
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=590441efa1aa7c85900189d95fefb08a>上大人(和拜振華說兩句)</span>
-    <span class="TAG"><label id=590441efa1aa7c85900189d95fefb08a onclick="delayClick(this.id, 'AE371A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-28 00:20</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=590441efa1aa7c85900189d95fefb08a onkeydown="enter(event,$(this))"></span>
     <input type="checkbox" class="exp" id="590441efa1aa7c85900189d95fefb08a_1">
     <div class="text1"><label class="btn" for="590441efa1aa7c85900189d95fefb08a_1"></label>
     <div class="SAY"><strike>台灣沒靠了島內大家都在藍藍綠綠時﹐Trump 跑到伊拉克探美軍﹐說明不再做世界警察。他說：「負擔全部落在我們身上，實在不公平。我們不想再讓其他國家在我們身上拿好處，利用我們以及我們的軍隊保護他們。他們沒有付鈔，他應該自己負責。」台灣沒有人報導。但知道什麼意思了嗎?</strike></div>
@@ -99,8 +103,8 @@ Cohen自願合作，還被判三年，我想是Mueller為Trump將來的判刑劃
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=590441efa1aa7c85900189d95fefb08a>上大人-(自作業)</span>
-    <span class="TAG"><label id=590441efa1aa7c85900189d95fefb08a onclick="delayClick(this.id, 'AE371A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-28 00:20</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=590441efa1aa7c85900189d95fefb08a onkeydown="enter(event,$(this))"></span>
     <div class="SAY">台灣沒靠了島內大家都在藍藍綠綠時﹐Trump 跑到伊拉克探美軍﹐說明不再做世界警察。他說：「負擔全部落在我們身上，實在不公平。我們不想再讓其他國家在我們身上拿好處，利用我們以及我們的軍隊保護他們。他們沒有付鈔，他應該自己負責。」台灣沒有人報導。但知道什麼意思了嗎?</div>
     <div class="REPLY">
 所以我讀臺灣媒體（大陸的軍事論壇也一樣）是很小心謹慎的：一方面必須瞭解當地族群的觀點，另一方面不能看多，否則會變笨。
@@ -109,8 +113,8 @@ Cohen自願合作，還被判三年，我想是Mueller為Trump將來的判刑劃
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=2c2787209ffd36cc4e193e2768035d16>南山臥蟲</span>
-    <span class="TAG"><label id=2c2787209ffd36cc4e193e2768035d16 onclick="delayClick(this.id, 'AE378A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-30 14:37</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=2c2787209ffd36cc4e193e2768035d16 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">依王兄判斷，Mueller（及其可能繼任者），追殺特朗普的決心和力度有多大？這個追殺，特朗普可以通過利益或政治交易來化解嗎？因為，若王兄之上一個判斷準確（一旦卸任，就可以輕易地把他定罪），特朗普的下一步反應，以其性格和自私度，真的是可大可小。</div>
     <div class="REPLY">
 Mueller所代表的傳統國安系統勢力，絕對是有決心要搞下Trump，他們認爲這是愛國的體現（有一定的道理）。不過一旦在2020年把Trump搞下臺之後，反而不一定真要起訴他，畢竟他是國恥，這個瘡疤越揭越痛，爲了國家著想，有可能草草了事（選項包括特赦在内）。
@@ -119,8 +123,8 @@ Mueller所代表的傳統國安系統勢力，絕對是有決心要搞下Trump�
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=ffca75e6e128aaac041dc92bd64d6243>貓靈子</span>
-    <span class="TAG"><label id=ffca75e6e128aaac041dc92bd64d6243 onclick="delayClick(this.id, 'AE380A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-30 17:16</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=ffca75e6e128aaac041dc92bd64d6243 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">基於中國政府的最佳利益，川普這樣愚蠢的美國領袖，是一定要好好保護的，這和倚天屠龍記中，明教高層勸諫教主張無忌千萬不要去刺殺元順帝（愚蠢的領導）的道理相同。今天收到消息，中國政府在推動中國製造2025的宣傳上準備所收斂（但個人估計，實際上還是會繼續搞下去，不搞白不搞），可否視為對川普政權提供保護的一種方式。要是讓蠢蛋川普下台，而讓一個有智慧（不須多，只要比川普高明些就行）的民主黨總統上台，估計中南海方面就難辦了，新的民主黨總統想必一樣反中，手段確會更加巧妙而且陰險，不會像川普的手法那樣粗疏，因此個人認為，中國政府當適時的支援川普政權，這個蠢蛋才會是真實的中國之友，一如鬼畜牟田口（牟田口廉也）在因帕爾之戰替英國守軍作出的重大貢獻，丞為盟軍之友一樣！</div>
     <div class="REPLY">
 是的，我在以前討論貿易戰文章裏也提過，盡量讓Trump佔些中方負擔得起的便宜，來結束這個貿易戰，如果能幫助他連任，絕對是划算的。
@@ -129,16 +133,16 @@ Mueller所代表的傳統國安系統勢力，絕對是有決心要搞下Trump�
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=9bd45fb9b947cca2e1aa3da4a24e7ef9>貓靈子</span>
-    <span class="TAG"><label id=9bd45fb9b947cca2e1aa3da4a24e7ef9 onclick="delayClick(this.id, 'AE396A0A0')">#empty #</label></span>
     <div class="TIME">2019-01-10 20:33</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=9bd45fb9b947cca2e1aa3da4a24e7ef9 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">今天的新聞,聽說美國的水務局長威脅, 政府若繼續關門大吉造成欠費, 那麼最後會造成政府被斷水的局面!問題會不會越鬧越大?</div>
     <div class="REPLY">閙得越大，Trump越能向支持者邀功。
 <br><div class="TIME">2019-01-12 17:21 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=8b86c0278c1f0274a26018f6ee92f53e>南山臥蟲</span>
-    <span class="TAG"><label id=8b86c0278c1f0274a26018f6ee92f53e onclick="delayClick(this.id, 'AG30A0A0')">#empty #</label></span>
     <div class="TIME">2019-01-26 19:26</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=8b86c0278c1f0274a26018f6ee92f53e onkeydown="enter(event,$(this))"></span>
     <div class="SAY">追殺特朗普的絞索，似乎又收緊了些，所以他被迫將政府重開了？https://www.guancha.cn/internation/2019_01_25_488254_2.shtml特朗普前竞选顾问被FBI逮捕，面临“通俄门”调查起诉</div>
     <div class="REPLY">
 你也看出來了？逮捕的時候，十幾個FBI負槍實彈，還有CNN事先到場報導，這很明顯是一場示威表演。 
@@ -148,32 +152,32 @@ Mueller所代表的傳統國安系統勢力，絕對是有決心要搞下Trump�
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=17a386564f399736cc6a97500928ef00>貓靈子</span>
-    <span class="TAG"><label id=17a386564f399736cc6a97500928ef00 onclick="delayClick(this.id, 'AG32A0A0')">#empty #</label></span>
     <div class="TIME">2019-01-27 18:27</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=17a386564f399736cc6a97500928ef00 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">　　其實對於川普最好的評價應該是：精神病人思路廣。讓這個高智商低智慧的神經病繼續在美國主政，會加速中美間的霸權交替。不過穆勒這個愛國的檢察官似乎不願意讓川普這個傢伙繼續胡鬧下去了，把川普搞下去其實對美國有利，但個人非常不願意見到此事發生，因為這種自戀式的蠢蛋，真是中國人夢寐以求的對手！</div>
     <div class="REPLY">他的智商很低，全凴家產發跡。美國年輕這一代，又有社會主義的傾向，不只是因爲貧富不均，更因爲像Trump這樣的政商菁英明明蠢得要死，顯然不是靠自身能力躋身上層社會。
 <br><div class="TIME">2019-01-29 03:20 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=8e178e75cff14bc1f9a9a9464663194c>貓靈子</span>
-    <span class="TAG"><label id=8e178e75cff14bc1f9a9a9464663194c onclick="delayClick(this.id, 'AG57A0A0')">#empty #</label></span>
     <div class="TIME">2019-02-15 23:58</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=8e178e75cff14bc1f9a9a9464663194c onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王兄，有事請教：聽聞川普又將中美貿易談判的時間延長了，這是不是代表他因為內政（與民主黨的美墨邊界築牆矛盾）上的問題，而主動想在中美貿易戰上見好就收？</div>
     <div class="REPLY">Trump因爲正文裏所談的多種困難，很需要有一個能用來大做宣傳的協議“勝利”。升級對抗的話和最近的預算僵持太類似；他剛剛才碰了一鼻子灰。
 <br><div class="TIME">2019-02-16 05:59 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=773605d9de1498754be076e74aeca4de>南山臥蟲</span>
-    <span class="TAG"><label id=773605d9de1498754be076e74aeca4de onclick="delayClick(this.id, 'AG60A0A0')">#empty #</label></span>
     <div class="TIME">2019-02-16 15:59</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=773605d9de1498754be076e74aeca4de onkeydown="enter(event,$(this))"></span>
     <div class="SAY">特朗譜把心一橫，出了緊急狀態這一狠招，算是和民主黨（含傳統政治精英）掀了桌子。司法界對他的絞索會否再度收緊？或者，他已有了對策－－先下手為強，把生米煮成熟飯，建了牆連了任再說？</div>
     <div class="REPLY">別的總統會爲國著想，不能立下不合理的先例。Trump卻只一心要討好他的核心選民。
 <br><div class="TIME">2019-02-17 06:35 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=701f850e80a2f524afb50dfd95dee367>南山臥蟲</span>
-    <span class="TAG"><label id=701f850e80a2f524afb50dfd95dee367 onclick="delayClick(this.id, 'AG70A0A0')">#empty #</label></span>
     <div class="TIME">2019-02-17 11:29</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=701f850e80a2f524afb50dfd95dee367 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王兄，我忽然有個不好的預感！特沒譜如此不顧一切，是不是已經為自己留好了後路？如果建制派要追殺到底（即使他連任成功，卸任後仍要坐牢），他可是和世界上少有的兩個獨立國家的領袖，有不錯私交的，尤其是近來一再強調和習大大關係良好，互相信任。</div>
     <div class="REPLY">
 你想多了。
@@ -182,32 +186,32 @@ Trump爲了討好選民，在過去兩個多月有關造墻預算的爭執過程
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=0f7dc5e0c169e30dfe4edd19b9e3f643>貓靈子</span>
-    <span class="TAG"><label id=0f7dc5e0c169e30dfe4edd19b9e3f643 onclick="delayClick(this.id, 'AG72A0A0')">#empty #</label></span>
     <div class="TIME">2019-02-19 00:27</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=0f7dc5e0c169e30dfe4edd19b9e3f643 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王兄說得有理！"我死後 管它洪水滔天"...這是所有混蛋領袖的共同思維模式。</div>
     <div class="REPLY">可憐臺灣20年就出了兩個這樣不在乎國家社稷的混蛋領導。
 <br><div class="TIME">2019-02-19 10:03 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=25c15ed979c17ae236634ca3352c0155>AbzX5</span>
-    <span class="TAG"><label id=25c15ed979c17ae236634ca3352c0155 onclick="delayClick(this.id, 'AU86A0A0')">#问答1000 #</label></span>
     <div class="TIME">2022-04-26 12:47</div></div>
+    <span class="tag"><input type="search" value=问答1000/ data-md5=25c15ed979c17ae236634ca3352c0155 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">今天马斯克买下了推特, 然后解封了川普的账号. 美国的大富豪似乎都有购买媒体的传统. 贝佐斯买下了华盛顿邮报, 微软买下了NBC, 现在马斯克成功买下了推特. 王先生曾说过, 美国媒体实际上更接近权利中枢, 他们的报道实际上反映了美国幕后权力中枢的想法. 那么能不能反过来说, 热衷购买媒体, 是否意味着这些科技新贵也想和华尔街资本一样, 计划变成美国新的幕后权力中枢一份子? 我总感觉过去科技新贵在政治上只是民主党的棋子, 现在会不会有棋子当算当旗手呢?</div>
     <div class="REPLY">很好，你能把博客解釋過的道理和設定活學活用，應用到新現象上，這正是我反復示範、試圖教導讀者群的推理能力。<br><br>光是有錢，並不保證能被既有的幕後權力集團接受成爲自己人，例如Trump成名幾十年也一直被當成笑話來看，中俄富豪更只是刀俎上的魚肉。收買地方政客雖然容易，也只代表你是個土豪，距離真正的“精英”還差得遠。要把手裏的錢轉化為内綫政治（對比著臺面上的政治）的勢力和籌碼，最高效的手段就是買下或建立掌控輿論思想的管道，有耐心的例如Rockefeller設立芝加哥大學、Carnegie創建大學和各種研究機構、以及由許多巨富在1970年代建立或擴張的各式各樣智庫（參見1973年啤酒大亨Joseph Coors設立《The Heritage Foundation》，Koch兄弟在1977年設立《Cato Institute》，《American Enterprise Institute》則是衆籌的典範），急於速成的就必須買既有的主流媒體。《華郵》原本在民主黨系中算是相對獨立、有良心的，Bezos買下後根本不須要主動幹什麽，只要在高層人事上“尊重”建制派的推薦，很快就把整個報系轉化成爲最不要臉的傳聲筒，Bezos也得以從網紅暴發戶升級為國際精英；先例不遠，Musk試圖仿效是理所當然的事，而且《Twitter》不像《華郵》，原本就沒有節操可言，現在換手只是從一個勢力轉換到另一個勢力罷了。
 <br><div class="TIME">2022-04-27 04:22 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=6462739b4dcf54d48bfbbc0f9aebd82d>AbzX5</span>
-    <span class="TAG"><label id=6462739b4dcf54d48bfbbc0f9aebd82d onclick="delayClick(this.id, 'AW104A0A0')">#empty #</label></span>
     <div class="TIME">2022-10-29 10:39</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=6462739b4dcf54d48bfbbc0f9aebd82d onkeydown="enter(event,$(this))"></span>
     <div class="SAY">今天马斯克购买推特的交易正式完成, 然后又传出司法部正在调查马斯克autopilot虚假宣传的消息, 请问是否有证据表明两者有关联? Deep State (财阀们) 会不会对他不满, 要用司法部来对付他?</div>
     <div class="REPLY">言之過早。更可能是他不像Bezos那麽“合群”，所以先給個下馬威。
 <br><div class="TIME">2022-10-29 14:06 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=0dcbfe92ed5cadec35da2287ec8d4a9d>AbzX5</span>
-    <span class="TAG"><label id=0dcbfe92ed5cadec35da2287ec8d4a9d onclick="delayClick(this.id, 'AW151A0A0')">#empty #</label></span>
     <div class="TIME">2022-12-06 10:55</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=0dcbfe92ed5cadec35da2287ec8d4a9d onkeydown="enter(event,$(this))"></span>
     <div class="SAY">马斯克收购推特后, 裁员一直相当"肆意", 有华人员工也爆料内部工程管理一片混乱. 最有趣的是最近马斯克发动舆论攻势, 披露了推特一些内部文件, 揭露推特如何掩盖亨特拜登丑闻, 并提到推特99%员工都捐款给民主党的数据. 所以我的猜想 (1)马斯克裁员, 所谓员工的技术水平可能只是个借口, 他原本计划就是尽量降低白左员工的数量, 改变推特内部的政治氛围, 方便他未来布局? 这个猜想能解释他很多不合理的行为. 顺着(1)思考, 假如马斯克"所谋者大", 那么(2)您觉得目前看来, 马斯克的政治手腕水平如何? 他有没有可能成为首个出自科技圈的内线政治势力? 还是说现在谈这点还为时尚早. 最后, 假设(2)目前可以作判断, 那么(3)中方当年在上海送马斯克个大人情, 是否不仅是出于新能源产业链考虑, 有没有可能也看上了他未来的政治潜力? 中方原先似乎一直很依赖华尔街的资本势力为交流管道, 中方是否希望通过马斯克再开一条新管道, 以备将来谈判? 分析推理不正确之处, 望王先生斧正.</div>
     <div class="REPLY">搞民粹無法做長期規劃，所以Musk固然有心，但不可能已經有確定的路綫圖；不過他原本就是個賭徒，特別適合冒這種險。
 <br><div class="TIME">2022-12-07 02:38 回复</div></div>

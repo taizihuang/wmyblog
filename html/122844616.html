@@ -1,6 +1,10 @@
 <!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <script src="./blog.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>【美國】【海軍】蛋糕與美酒</title>
     </head>
@@ -27,8 +31,8 @@
     <h2>3 条留言</h2>
     <div class="LI">
     <div class="USER"><span class="NAME" id=5f2a505b8178216b638506f30948c2bc>吶吶溪</span>
-    <span class="TAG"><label id=5f2a505b8178216b638506f30948c2bc onclick="delayClick(this.id, 'AE374A0A0')">#问答1000 #</label></span>
     <div class="TIME">2018-12-29 09:09</div></div>
+    <span class="tag"><input type="search" value=问答1000/ data-md5=5f2a505b8178216b638506f30948c2bc onkeydown="enter(event,$(this))"></span>
     <div class="SAY">好奇請問：「麵包與水」還有什麼非字面上的意義嗎（比如三天只有一小塊麵包和一杯水）？三十年前我也在台灣的基層連隊服役過，逾假不歸禁閉三天雖然不算輕罰，但是和 Keelhauling、Flogging 或是 Birching 似乎完全不在同個檔次上。以前的兵休個假在外面被憲兵找麻煩說皮鞋銅環不夠亮回來都有可能被關禁閉。</div>
     <div class="REPLY">
 中世紀海軍或許會餓得你半死不活，但是21世紀的美軍是很人道的，至少規章上說被罰者可以要求任何數量的麵包。 
@@ -38,16 +42,16 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=d777a805ea6558ab303ce989037ad652>狐禪</span>
-    <span class="TAG"><label id=d777a805ea6558ab303ce989037ad652 onclick="delayClick(this.id, 'AE375A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-29 11:47</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=d777a805ea6558ab303ce989037ad652 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">嚴厲的長官不見得不受部屬愛戴，看嚴厲的著眼點何在。為團體競爭力的會被尊重，為顯官威會被指責。理智上的分別很明顯，在情緒上就不一定修練得到家的。</div>
     <div class="REPLY">正文裏已經簡單解釋了：嚴厲執行紀律能不能服人，差別一般在於是否公平合理，然而要做到公平合理，就必須事事躬親，才能面面俱到。這些破壞士氣的凶惡主管，只看到自己鼻下的方寸空間，處罰的都只是剛好撞上的倒霉鬼，那麽大家自然就不會服氣。
 <br><div class="TIME">2018-12-29 11:55 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=2404ce48341da04bfc26f08db76e41d1>desertfox</span>
-    <span class="TAG"><label id=2404ce48341da04bfc26f08db76e41d1 onclick="delayClick(this.id, 'AE376A0A0')">#empty #</label></span>
     <div class="TIME">2018-12-30 03:39</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=2404ce48341da04bfc26f08db76e41d1 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">軍紀是戰力的根本, 所以我覺得整肅軍紀必須嚴苛, 那是天然的屬性沒什麼折扣好打的. 原則是公平也就是上下一體適用, 作法上則是要公開; 對犯事者或者通告違紀的處罰, 或者集眾觀刑. 我覺得既使在現代, 在任何國家任何部隊裡, 所謂的戰力就跟儲存在水庫裡的水一樣, 而軍紀就是水庫的壩堤, 那是容不得甚至一個蟻穴的存在. 總之我覺得軍紀應該是寧嚴勿寬的. 像逾時歸營我就覺得很是嚴重的事; 如果大家都來這一套那軍隊就不成軍隊了. 我在台灣野戰師的士官隊服役時有次當值星就碰到這種情形. 那時部隊剛從金門移防回到林口, 有個兵去吃拜拜逾時歸營兩個鐘頭, 回來後被我拉到寢室裡一頓拳打腳踢. 那時大家都睡了, 被揍的兵慘叫連連把大家都炒醒了. 我剛上任的隊長把我叫出來悄悄的跟我說; 這裡是台灣不是外島, 不來這一套的. 那兵如果上告, 我有可能被判軍法. 既然上官說話了, 我回到寢室後就準備結尾, 以是發話問那個兵有無認識到自己所犯的嚴重錯誤. 不想那個兵很倔強竟然站在那裏一聲不發. 這時我的室友和同事 (一個陸軍官校的正期生) 忍不住了, 抄起一根棍子又是一頓猛揍, 這時那兵才慘叫求饒. 事後我們兩個也沒被告, 我也按時退伍, 當時是1979年. 但如果換到現在, 恐怕我和我的同事就要吃官司了. 按說這種事如果文明處理; 關禁閉或取消以後的休假都是可以的, 但即使到現在, 我還是會想; 那會有效嗎? 會不會生出更多的怨懟? 一頓胖揍是不是更直接更有效一點? 承平時期如何維持軍紀我其實不知.</div>
     <div class="REPLY">
 我的看法是，獨立於寬嚴尺度的拿捏之外，紀律還有必須公平一致、就事論事這個原則。不只是個別主管必須有一貫的標準，主管與主管之間也不能差異太大。 

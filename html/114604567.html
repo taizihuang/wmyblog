@@ -1,6 +1,10 @@
 <!DOCTYPE html><html><head>    
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <script src="./blog.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
     <title>【基礎科研】【戰略】從貝爾實驗談起（二）</title>
     </head>
@@ -29,28 +33,28 @@
     <h2>6 条留言</h2>
     <div class="LI">
     <div class="USER"><span class="NAME" id=f7210035828446c9829cbd1b23adabda>entanglement</span>
-    <span class="TAG"><label id=f7210035828446c9829cbd1b23adabda onclick="delayClick(this.id, 'AE190A0A0')">#empty #</label></span>
     <div class="TIME">2018-08-29 15:40</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=f7210035828446c9829cbd1b23adabda onkeydown="enter(event,$(this))"></span>
     <div class="SAY">以前我在網路上說 中國量子衛星精度比日本高 並不是量子技術多進步 反而是傳統工程領域的超前結果被群綠色生物瘋狂圍攻不過話說回來 實在很好奇中國到底是用甚麼黑科技從衛星上收到單光子</div>
     <div class="REPLY">低功率PL，每秒只發出三百萬光子，然後用時間空窗（2.5納秒）、空間視角、光子頻率來過濾，達到信號光子佔87%。貝爾實驗成功的要求是82%，所以他們能得到S=2.37，違反了CH不等式。
 <br><div class="TIME">2018-08-30 03:41 回复</div></div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=f2d4b3205fadcdd318652b88f5c18e48>无奈的小猪</span>
-    <span class="TAG"><label id=f2d4b3205fadcdd318652b88f5c18e48 onclick="delayClick(this.id, 'AE192A0A0')">#empty #</label></span>
     <div class="TIME">2018-08-30 14:56</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=f2d4b3205fadcdd318652b88f5c18e48 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">1L的体验，不仅在台湾发生过，在大陆亦如此。中国国民的自信和迷信总是滞后于自身环境的进步，要站起来需要不少时间。罗思义先生在《一盘大棋-中国新命运解析》书中写道：中国自身的巨大成就和国民深度的自卑形成了鲜明的反差，他本人感到很吃惊。</div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=559a5499110483bb4fd8bd0ba07a289a>无奈的小猪</span>
-    <span class="TAG"><label id=559a5499110483bb4fd8bd0ba07a289a onclick="delayClick(this.id, 'AE193A0A0')">#empty #</label></span>
     <div class="TIME">2018-08-30 15:50</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=559a5499110483bb4fd8bd0ba07a289a onkeydown="enter(event,$(this))"></span>
     <div class="SAY">王先生，我有一个关于意识形态的个人看法，即：一代人（包括父，子辈）的意识形态和价值观，会受到前两百年世界历史决定性的影响，这个看法对吗？                                 我个人觉得，东方漫长辉煌的历史在西方看来只存在于书籍和想象之中吧，因为这两百年的历史就是西方的逆袭和发家史，他们只相信零和思维才是维持霸权不倒的灵丹妙药？而这两百年中也是日本存在感比较强的时期，所以也成了国人对日迷信的基础。我一直觉得日本近代对中国的超越只是历史的小概率事件，中国只要道路正常走，日本的结局只能是偏居一隅，自古的历史就是如此。不知道您和博客的其他读者有没有和我大致相同的看法？                                               近代的中国体制崩解，内忧外患，但西方的科学发展跨过了征服自然的临界点，导致他们对外扩张和干涉其他文明所产生的影响大大加强，这些因素综合起来使得中国千年来朝代更迭的区域自愈机制彻底失灵，国家一片混乱。才给了日本一乘之机？</div>
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=ea7b955d401f89a1b07dd431953cb341>entanglement</span>
-    <span class="TAG"><label id=ea7b955d401f89a1b07dd431953cb341 onclick="delayClick(this.id, 'AE199A0A0')">#empty #</label></span>
     <div class="TIME">2018-09-03 13:13</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=ea7b955d401f89a1b07dd431953cb341 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">我聽潘在介紹墨子號的演講中討論如何處理不小心發射兩顆相同光子的問題, 還以為墨子號能實用, 300萬個光子跟兩個光子差太多了吧PS: 我沒看他原始論文, 因為他們真正的秘訣肯定不會寫在論文裡</div>
     <div class="REPLY">
 確實，因爲貝爾不等式本身就是統計上的結果，基於貝爾實驗的量子加密也必須是用統計方法的，那麽每個位元的交換都必須有上千對信號光子，效率很低。
@@ -59,8 +63,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=3eca4557453f47b1c447cc574ff06934>K.</span>
-    <span class="TAG"><label id=3eca4557453f47b1c447cc574ff06934 onclick="delayClick(this.id, 'AE217A0A0')">#empty #</label></span>
     <div class="TIME">2018-09-12 09:23</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=3eca4557453f47b1c447cc574ff06934 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">据科技日报9月12日报道，随着量子物理装置技术水平的快速发展，实现量子霸权似乎日益临近。称霸标准已成为量子计算领域最重要的科学问题之一。记者11日获悉，国防科技大学吴俊杰团队与上海交通大学金贤敏合作，在国际上最先开启了称霸标准的研究。最近，《国家科学评论》在线发表了他们的研究成果，报道了玻色采样案例的称霸标准。量子计算拥有的超越所有经典计算机的计算能力被称为量子霸权，但在物理实验上，迄今还没有任何一台量子装置在实际实验中展现出这种能力。实现量子霸权，将代表超越经典的量子计算能力从理论走进实验，标志着一个新的计算能力飞跃时代的开始。论文的作者之一刘雍介绍，玻色采样问题是一种针对光子（玻色子）系统的量子霸权测试案例。理论上，经典计算机求解玻色采样需要指数量级计算时间，而量子计算只需要多项式量级计算时间。与此同时，相比通用量子计算，玻色采样更容易实现。该项研究中，吴俊杰与金贤敏在“天河二号”超级计算机上完成了玻色采样问题的核心难题——积和式的求解。实际测试的问题规模达到48个光子，并推断出“天河二号”模拟50个光子的玻色采样需要约100分钟。也就是说，一旦实际的量子物理装置实现了每组样本100分钟以内50光子的玻色采样，就在求解这个问题上超过了“天河二号”，实现了量子霸权。刘雍指出，因为并不要求用于展示量子霸权的问题具有任何实际用途，实现量子霸权离实现实际的量子计算机尚有很大距离。多项称霸标准的研究成果也表明，当前实现量子霸权绝非易事。https://www.guancha.cn/industry-science/2018_09_12_471713.shtml</div>
     <div class="REPLY">
 這篇宣傳稿的貓膩，在於：
@@ -71,8 +75,8 @@
     </div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=ad88dfabef7138ad622d789f06f7f141>yfzzz</span>
-    <span class="TAG"><label id=ad88dfabef7138ad622d789f06f7f141 onclick="delayClick(this.id, 'AK37A0A0')">#empty #</label></span>
     <div class="TIME">2020-04-21 03:39</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=ad88dfabef7138ad622d789f06f7f141 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">量子通信新报道最近成都研究所论文承认量子通信对气象条件要求很高，可行性低 </div>
     <div class="REPLY">這還只是技術細節上的可行性問題；從系統的觀點，毛病更大得多。<br><br>不過在中國學術界假大空橫行的環境下，“大”要比“假”和“空”好得多。搞這一行的，利用遙不可及的戰略應用來要錢，然後拿著全世界最龐大的資金來做獨門實驗，獨門實驗自然能上一流期刊和科普文章，最後鼓噪成熱門，於是連外國人也開始討論遙不可及的戰略應用，形成一個完美的環路。然而這個套路在歐美學術界也很普遍，比起造假或是超弦這種完全空洞的玄學，至少它是真的科學進步，只不過是重要性被遠遠誇大了而已。我以前已經説過，和假大空做鬥爭，要分輕重緩急，這一類屬於輕緩，不應該是當前打假的重點。
 <br><div class="TIME">2020-04-21 05:45 回复</div></div>

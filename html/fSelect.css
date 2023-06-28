@@ -1,0 +1,17 @@
+.fs-search {
+    flex-grow: 1;
+  }
+  
+input{
+  font-size: 12px !important;
+  height: 20px;
+  color: gray;
+  background: transparent;
+  font-style:italic;
+  font-weight: bold !important;
+  border: 15px;
+  margin-bottom: 5px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  display: inline;
+}
