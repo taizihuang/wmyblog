@@ -739,7 +739,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     for art_id in df_article.id:
         genHTML(art_id,df_article,df_comment_tag)
 
-    genINDEX(articleFile=articleFile)
+    # genINDEX(articleFile=articleFile)
     print('index page generated')
 
     latest = today() - datetime.timedelta(days=days)
