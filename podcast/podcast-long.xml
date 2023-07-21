@@ -187,4 +187,13 @@
 			<enclosure length="33890517" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=230616.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
 
+        <item>
+			<title>2023/07/21 王孟源講座：美国经济</title>
+			<pubDate>Fri, 21 July 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230721]]></guid>
+			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
+			<description><![CDATA[王孟源講座：美国经济</p>]]></description>
+			<enclosure length="31219327" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=230721.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
+
         </channel></rss>
