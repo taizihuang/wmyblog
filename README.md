@@ -1,15 +1,15 @@
 # 使用方法
 
-【Actions每小时更新】
+【Actions每六小时更新】
 
-直接访问：https://taizihuang.github.io/wmyblog
+直接访问：https://wmyblog.site
 
 模板来自：https://wmyblog.github.io
 
 
 ## 在线搜索
 
-请访问 https://taizihuang.github.io/wmyblog/search/
+请访问 https://wmyblog.site/search/
 
 ## 离线搜索
 
