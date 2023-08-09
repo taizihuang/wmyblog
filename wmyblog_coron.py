@@ -391,14 +391,6 @@ def genINDEX(articleFile='./data/article_full.pkl'):
 
     INDEX = Template("""
     <!DOCTYPE html><html><head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-1F5ZFPC2V2');
-    </script>
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
     <link rel="stylesheet" href="./html/init.css">
     <style>
@@ -523,14 +515,6 @@ def genHTML(art_id,df_article,df_comment_tag):
 def genLatestComment(df_comment_today,article_dict):
     HTML = Template("""<!DOCTYPE html><html><head>
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-1F5ZFPC2V2');
-    </script>
     <link rel="stylesheet" href="./init.css">
     <style>
     .REPLY_LI{
