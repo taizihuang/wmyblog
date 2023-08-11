@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-11 14:03 +0800</lastBuildDate>
+    <lastBuildDate>08-12 02:03 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 上善若水水利万物]]></title>
+    <description><![CDATA[　https://www.youtube.com/watch?v=-5usH-I9q9Y Россия1 俄罗斯第1频道国家电视台公布 柳叶刀产品53升级成峰群无人机升级后从发射管发射，能够使用AI图像识别计算机视觉辨识目标，最后以峰群战术攻击，很可能至少是半主动俄罗斯柳叶刀无人机总设计师说开发者扎哈罗夫（Alexander Zakharov）首次接受俄罗斯媒体采访，这也是手术刀工厂第一次曝光的影片，虽然没有揭露具体产量，扎哈罗夫表示目前产量翻了50倍，他需要一辆电动滑板车才能够在各个生产车间之间移动。并且宣布目前下一个型号即将导入无人机蜂群（Drone Swarm）技术，手术刀自杀无人机族本身也进入了下一个发展阶段，称为「Izdeliye-53」（物件-53）。最大的变化在于导入无人机蜂群的概念。根据札哈罗夫的说法，他们为现行的2种手术刀无人机制和物件53版，开发了一套全新的发射器从垂直发射管内发射无人机蜂群将能够对群体目标进行打击，当1架手术刀发现敌人装甲车辆或者集聚点之后，它能够将信息传递给其它无人机，然后它们一起摧毁目标。另外今年初版本的柳叶刀残骸被拆解分析后发现内部使用NVIDIA的Jetson TX2模块作为其板载控制设备，以及AMD旗下的美国公司Xilinx的Xilinx Zynq SoC模块可编程逻辑FPGA芯片https://mil.in.ua/uk/news/v-ukrayini-pokazaly-nachynku-trofejnogo-lantseta/我的想法是如果用深度学习算法事先在大型人工智能平台上用GPU做训练，训练完毕之后就不必用这么昂贵的芯片，可以用一片小小的廉价ASIC芯片可能几十美元就自动识别坦克自走炮这些东西的外型，而且又省电增大航程 不需要把FPGA装上无人机，所以今年初的柳叶刀自杀无人机版本可能还是测试版，就类似人脸辨识技术一样不需要人来辨识，毕竟连手机都能实现人脸辨识，俄军不可能想不到，所以他的升级几乎是预料之中和必然的事情另外俄罗斯在喀山创建大型无人机工厂，西方还公布了卫星侦察照片，今年底会投产国产化的沙贺德136早期版本是从伊朗引进后来不断改良升级，工厂建成之后和之前手工生产比起来成本会降低10倍 <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-08-11 16:43:00 +0800</pubDate>
+    <guid isPermaLink="false">86b6fc25aa7486d86e4a1ebee5384d88</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#86b6fc25aa7486d86e4a1ebee5384d88</link>
+    </item>
     <item>
     
     
@@ -212,16 +222,6 @@
     <pubDate>2023-07-29 23:07:00 +0800</pubDate>
     <guid isPermaLink="false">c3b2aea0427a335b4e96f614630a1126</guid>
     <link>https://taizihuang.github.io/wmyblog/html/179164306.html#c3b2aea0427a335b4e96f614630a1126</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 上善若水水利万物]]></title>
-    <description><![CDATA[&lt;strike&gt;　请问王博士观察者网这则新闻的可信度有多高，有南韩科学家以简单设备制出室温常压超导体，127℃ 展现超导特性，光是常温常压就已经不可思议了还说一般高中生或小作仿都可以做出来没有什么复杂制程，让人怀疑其可信度是不是又是搞核融合那帮人在诈骗？https://user.guancha.cn/main/content?id=1050749其他地方也出现类似的炒作https://technews.tw/2023/07/27/room-temperature-ambient-pressure-superconductor-lk-99/如果真的就算人类重乐透头彩，但是感觉概率很低&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-07-28 13:50:00 +0800</pubDate>
-    <guid isPermaLink="false">a1b7e1a928ad9c3ed39fdc691fa4a47d</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#a1b7e1a928ad9c3ed39fdc691fa4a47d</link>
     </item>
     </channel></rss>
     
