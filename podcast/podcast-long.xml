@@ -223,4 +223,12 @@
 			<enclosure length="86050200" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=230915.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
 
+        <item>
+			<title>2023/10/27 王孟源最新大陸調研報告</title>
+			<pubDate>Fri, 27 October 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[231027]]></guid>
+			<link><![CDATA[https://wmyblog.site]]></link>
+			<description><![CDATA[王孟源最新大陸調研報告]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=231027.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
