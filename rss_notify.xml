@@ -7,8 +7,28 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>11-08 20:03 +0800</lastBuildDate>
+    <lastBuildDate>11-09 02:03 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 上善若水水利万物]]></title>
+    <description><![CDATA[　刚刚看了王博说的那个Mediazona媒体，一打开全是和政府唱反调和丑化俄方的内容，我找到那篇死亡统计的文章，看到里面11月3号把数据更新到35,780人，内文说排除了自称为 DPR顿涅斯克人民共和国 和 LPR 卢甘斯克共和国的部队造成的伤亡，不依赖乌克兰发布的尸体照片（即使附有随附文档），因为这些照片很难核实。不过有看到分类里包括一些瓦格那部队的统计https://en.zona.media/article/2022/05/11/casualties_eng不过很好奇乌军的伤亡数字是多少？连西方媒体都说很可能接近50万人，从6月开始的春季大反攻以来乌军每天阵亡800到1千多，现在的开始的阿夫迪夫卡绞肉机乌方可能每天也差不多，如果真是50万人伤亡，那从2022年2月开始，平均也是每天800多只是有时候高有时候低，有时去年进攻哈尔科夫乌军有时一天可达2000-3000人伤亡，低的时候也有300-500，有些旅被打掉重建过好几次或是退下去修整补充兵员在上如果依造军事专家的估计的乌最大动员潜力大约是全国控制区人口的百分之6来估算，乌克兰在苏联解体前有5200万人口、2014克里米亚回归前剩4500万，回归后剩4300万，开战前有大量人口跑去欧洲当难民真实是以难民身份接受社会福利和打工的，还有一部份去了俄罗斯，还有的已经变成俄领土，那么如果以乌克兰控制区只剩剩2500万人口来估计就是150万人的最大动员浅力，那么假如乌军50万的伤亡数据是真实的以接近部队的1/3了，想知道崩溃的临界点会是那个地方，除了财政外还有人口动员潜力来估算 <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-11-09 01:18:00 +0800</pubDate>
+    <guid isPermaLink="false">44d49e53c8001459a88c80b6b769f134</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#44d49e53c8001459a88c80b6b769f134</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[這個部落格 | rongbing mu]]></title>
+    <description><![CDATA[请教王先生对AI危害人类的看法是什么？您在龙行天下里对当前LLM的局限性(成本，没有超人理性）十分准确。作为从业人员，我对AI的未来十分悲观，甚至不用达到智能奇点就可能造成深刻危害。1. LLM的训练和推理成本正在quantization, distillation, pruning, AI Accelerator摩尔定律下multiplicatively地降低。可以预见在不远的未来，当前要一个数据中心集群才能跑动的大模型，可以在个人设备上跑。模型的微调成本更是在各项技术下迅速降低。这代表基本上个人层面的开发和作恶基本无法监管。2. 目前对AI的控制仅是soft constraint，比如数据集去bias，RLHF向人类价值观对齐，把模型输出用另外一个模型来监管等。我们对智能没有原理上的控制，只有软的，抽象而且后知后觉的控制。这可能根本不是科学问题而是哲学问题；我们无法让这些黑盒子可靠地服从。3. 我们虽然对人类自己也没有根本的控制，但是人类的硬件是非常局限的。这些AI agent已经可以自我复制存储更新，编写代码更新自己，开个比特币钱包，在AWS里为自己购买云端的算力来微调拷贝。这种危机很有可能在AI比我们更聪明理性前就发生。目前research community有大量的让LLM使用external tools来智能自举的实验，有可能一个喜怒无常的”随机鹦鹉”只要在某次意外的实验下逃到了互联网上，而我们人类根本没有抓捕和监管它的能力。4. AI虽然目前无法胜任很多专业能力，但是在网上胡说八道打舆论战已经绰绰有余。已经有研究发现在LLM时代，互联网上混杂的合成数据已经影响到了抓取互联网数据的下一代模型。互联网上充斥的大量AI近亲交配产生的信息可能让人类社会和AI同时变笨。5. 人类社会由于巨大的利益关系，很难理性讨论这个问题。目前AI学术界也有Hinton和Lecun, Andrew Ng等人引领的不同观点。我看了一下反对AI危机论的观点经常有意识地攻击strawman来避免深刻地讨论监管的问题，比如说AI监管是大公司/China等抢跑垄断的手段。有效的监管在前提1成立的情况下甚至都很难做到了。 <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2023-11-08 23:17:00 +0800</pubDate>
+    <guid isPermaLink="false">2b28fea3342834fabc18915fcd46517a</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908719.html#2b28fea3342834fabc18915fcd46517a</link>
+    </item>
     <item>
     
     
@@ -250,48 +270,6 @@
     <pubDate>2023-09-26 19:02:00 +0800</pubDate>
     <guid isPermaLink="false">a541640134aca5cc148d399120d36df2</guid>
     <link>https://taizihuang.github.io/wmyblog/html/179876353.html#a541640134aca5cc148d399120d36df2</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | criteria]]></title>
-    <description><![CDATA[&lt;strike&gt;上善若水水利万物，想必你一定是“大统一理论”的小号吧，在博客留言中喜欢空谈马克思理论的，我想只有这一位吧；我想说两句，首先社会主义是由资本主义演变而来的，那么中国在过去70多年中来一直维持社会主义初级阶段，因此其间资本主义的存在是必然的，那么资本主义自然会导致财富分配不公，引入资本，在资本稀缺阶段高速发展所导致的问题是一定会出现的，而房地产问题是由于没有制约资本导致泡沫形成的结果，是你倒果为因了。第二，现在去翻旧账毫无意义，发现问题，解决问题才是关键。&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-09-24 22:51:00 +0800</pubDate>
-    <guid isPermaLink="false">5a9844aca272d12431abe16b9885fa88</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#5a9844aca272d12431abe16b9885fa88</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 貓靈子]]></title>
-    <description><![CDATA[&lt;strike&gt;　　王兄:從現在的態勢來看，由於俄烏戰爭以及美國政客為了美宣的需要，中美進行實質脫鉤的影響，美國的通膨大概率是很難被壓下去了，現在美國的聯準會陷入了兩難，不繼續升息？難以徹底壓制通膨，也對現任政府的連任不利，繼續升息則可能造成嚴重的經濟衰退，聯準會必然要承受民主黨政府所施加的政治壓力．如此一來，以Powell無擔當的官僚本性，表面上且戰且走，實際上養癰為患就成了最有可能的政策方向．在經濟擔當官員的不作為問題上，中美是５０步笑５５步，實際上都沒有發揮原本應有的職能，而中方官員的不作為（甚至根本就是經濟蛀蟲），將使中美雙方的經濟對抗走向泥巴戰式的長期對抗．　　假設中方的經濟官員採取次佳選擇，即中俄結盟（排除會扯後腿的印度與巴西），再召集沙特等國結盟，對美方所能造成的實質壓力會大的多，當然歐盟如果願意與中俄聯手？是有機會將美元ｋｏ或是重挫其影響力，以逼迫其面對自身的實質債務壓力．　　另外，中方的高級領導人，自朱鎔基總理後，似乎就缺乏能夠站在民族利益思考，且深通經濟學原則者立於決策層，這在打經濟消耗戰上會是一個很大的問題．&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-09-24 22:37:00 +0800</pubDate>
-    <guid isPermaLink="false">a8a34ad12c9ff33a2230228e0cbd7e35</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#a8a34ad12c9ff33a2230228e0cbd7e35</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 芳草鮮美落英繽紛]]></title>
-    <description><![CDATA[請教先生如何看待明年美國總統大選中第三方勢力如No Labels的角色？若Biden和Trump相持不下，加上選民的”囚徒困境”（Biden和Trump在各自選民中是多數支持，但兩人對決卻是全體選民中多數不樂見），第三方勢力雖不成事，卻似乎有機會吸票到扮演關鍵攪局者的角色（見最近新聞 https://apnews.com/article/no-labels-spoiler-2024-ballots-biden-trump-91dd36375a83a67f8969af8ac511fbf0 中對Biden不利的攪局，但風向一變也可能對Trump不利）。對美國真正的掌權者來說，背後操縱少數第三方勢力演一場戲，讓自己要的人當選，也算是一個成本較低的選擇？ <br><br>----<br><br>
-目前真正有可能作爲第三方攪局者的，只有Robert Kennedy Jr，靠的是一批有理想的年輕人，包括我兒子都準備休學去幫他。假設他能參選到底，其實際作用會是分散民主黨選票，那麽只要Trump能熬過那些官司，勝算極大。
-<br>&lt;div class="TIME"&gt;2023-11-06 17:00 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-09-24 11:59:00 +0800</pubDate>
-    <guid isPermaLink="false">fb23d6606cdca10bc832a97a7c3bab6f</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/177165976.html#fb23d6606cdca10bc832a97a7c3bab6f</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【醫療】我的新冠經驗 | 南山臥蟲]]></title>
-    <description><![CDATA[&lt;strike&gt;王兄保重。疫情以來，一直依囑幾乎每天吃維他命D一顆，至今幸保不失，要繼續服用到大概甚麼時候才算安全？&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-09-24 11:23:00 +0800</pubDate>
-    <guid isPermaLink="false">23da710f6c45087c67dd4036081be2e6</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/132856337.html#23da710f6c45087c67dd4036081be2e6</link>
     </item>
     </channel></rss>
     
