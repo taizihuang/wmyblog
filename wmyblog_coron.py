@@ -171,14 +171,15 @@ def page2article(doc, art_id):
 
     #save image
     for i in post.findAll('img'):
-        url = i.attrs['src'].replace('\r','').replace('\n','')
-        imgID = url.split('/')[-1]
-        imgfile = f"/img/{imgID}"
-        if not os.path.exists(f'./html/img/{imgID}'):
-            img = requests.get(url).content
-            with open("./html%s" % imgfile, "wb") as f:
-                f.write(img)
-        i.attrs['src'] = "."+imgfile
+        if i.has_attr('src'):
+            url = i.attrs['src'].replace('\r','').replace('\n','')
+            imgID = url.split('/')[-1]
+            imgfile = f"/img/{imgID}"
+            if not os.path.exists(f'./html/img/{imgID}'):
+                img = requests.get(url).content
+                with open("./html%s" % imgfile, "wb") as f:
+                    f.write(img)
+            i.attrs['src'] = "."+imgfile
 
     df_article = pd.DataFrame(data={'id':art_id,'title':title,'art_date':art_date,'post':str(post)},index=[0])
 
@@ -304,7 +305,14 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
     doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
     id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
-    df_artinfo = pd.DataFrame(data=list(set(id_list)),columns=['art_id']).set_index('art_id')
+    id_list = list(set(id_list))
+
+    print(id_list)
+    for tt in ['177266891','137116293']:
+        if tt in id_list:
+            id_list.remove(tt)
+
+    df_artinfo = pd.DataFrame(data=id_list,columns=['art_id']).set_index('art_id')
     print('article info fetched!')
     
     if gDriveUpdate:
