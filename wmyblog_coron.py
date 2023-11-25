@@ -13,6 +13,15 @@ def articleURL(art_id):
 def commentURL(art_id,pno):
     return f"https://blog.udn.com/blog/article/article_reply_ajax.jsp?uid=MengyuanWang&f_ART_ID={art_id}&pno={pno}"
 
+def pageURL_classic(pno):
+    return f"https://classic-blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno={pno}"
+
+def articleURL_classic(art_id):
+    return f"https://classic-blog.udn.com/MengyuanWang/{art_id}"
+
+def commentURL_classic(art_id,pno):
+    return f"https://classic-blog.udn.com/blog/article/article_reply_ajax.jsp?uid=MengyuanWang&f_ART_ID={art_id}&pno={pno}"
+
 def getPageNo():
 #     url = 'https://blog.udn.com/blog/inc_2011/psn_artcate_new_ajax.jsp?uid=MengyuanWang&totalPageNum=1&curPage=0'
 #     nPerPage = 30
@@ -21,29 +30,29 @@ def getPageNo():
 #     nPage = math.ceil(nArticle / nPerPage)
     return 11 #nPage
 
-def fetchTable(docid, tab, nrow):
-    url = f'https://docs.qq.com/dop-api/opendoc?tab={tab}&id={docid}&normal=1&outformat=1&startrow=0&endrow={nrow-1}'
-    headers = {
-        'Referer': 'https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2',
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
-    }
-    l = requests.get(url,headers=headers).content
-    l = json.loads(l)
-    data = l['clientVars']['collab_client_vars']['initialAttributedText']['text'][0][-1][0]['c'][1]
-    col = int(len(data)/(nrow))
-    data_list = []
-    for i in range(nrow):
-        row_list = []
-        for j in range(col):
-            cell_data = data[str(i*col+j)]
-            if '2' in cell_data.keys():
-                row_list.append(cell_data['2'][1])
-            else:
-                row_list.append('')
+# def fetchTable(docid, tab, nrow):
+#     url = f'https://docs.qq.com/dop-api/opendoc?tab={tab}&id={docid}&normal=1&outformat=1&startrow=0&endrow={nrow-1}'
+#     headers = {
+#         'Referer': 'https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2',
+#         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+#     }
+#     l = requests.get(url,headers=headers).content
+#     l = json.loads(l)
+#     data = l['clientVars']['collab_client_vars']['initialAttributedText']['text'][0][-1][0]['c'][1]
+#     col = int(len(data)/(nrow))
+#     data_list = []
+#     for i in range(nrow):
+#         row_list = []
+#         for j in range(col):
+#             cell_data = data[str(i*col+j)]
+#             if '2' in cell_data.keys():
+#                 row_list.append(cell_data['2'][1])
+#             else:
+#                 row_list.append('')
                 
-        data_list.append(row_list)
-    df = pd.DataFrame(data=data_list[1:],columns=data_list[0])
-    return df.set_index(df.columns[0],drop=True)
+#         data_list.append(row_list)
+#     df = pd.DataFrame(data=data_list[1:],columns=data_list[0])
+#     return df.set_index(df.columns[0],drop=True)
 
 def updateTag(tagFile='./data/tag.pkl'):
 
@@ -185,6 +194,52 @@ def page2article(doc, art_id):
 
     return [df_article]
 
+def page2article_classic(doc, art_id):
+
+    if doc.find(class_="REPLY_LI"):
+        doc.find(class_="REPLY_LI").decompose()
+
+    # title
+    title = doc.find(id='maintopic').text
+
+    # date
+    if doc.find(class_="DATE"):
+        art_date = doc.find(class_="DATE").text
+        art_date = art_date.replace('发表日期 : ','').replace('-','/')
+        doc.find(class_="DATE").decompose()
+    else:
+        # art_date = doc.find(class_="article_datatime").text
+        for t in doc.findAll(class_="main-text"):
+            regex = '(\d{4}/\d{2}/\d{2} \d{2}:\d{2})'
+            if re.search(regex, t.text):
+                art_date = re.search(regex, t.text).groups()[0]
+                break
+    art_date = pd.to_datetime(art_date,format="%Y/%m/%d %H:%M")
+
+    # post
+    post = doc.find(id="mainbody")
+
+    # convert link
+    for i in post.findAll('a',{'href': re.compile("MengyuanWang")}):
+        t = i.attrs['href'].split('/')
+        i.attrs['href'] = t[-1]+'.html'
+
+    #save image
+    for i in post.findAll('img'):
+        if i.has_attr('src'):
+            url = i.attrs['src'].replace('\r','').replace('\n','')
+            imgID = url.split('/')[-1]
+            imgfile = f"/img/{imgID}"
+            if not os.path.exists(f'./html/img/{imgID}'):
+                img = requests.get(url).content
+                with open("./html%s" % imgfile, "wb") as f:
+                    f.write(img)
+            i.attrs['src'] = "."+imgfile
+
+    df_article = pd.DataFrame(data={'id':art_id,'title':title,'art_date':art_date,'post':str(post)},index=[0])
+
+    return [df_article]
+
 def page2comment(doc, art_id):
     def rep2dict(rep):
 
@@ -300,17 +355,13 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
 
     # artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
     # df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
-    doc = BeautifulSoup(requests.get('https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
+    domain = 'classic-blog.udn.com'
+    doc = BeautifulSoup(requests.get(f'https://{domain}/MengyuanWang/article',headers=headers).content, features="lxml")
     id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
-    doc = BeautifulSoup(requests.get('https://blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
+    doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
     id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
     id_list = list(set(id_list))
-
-    print(id_list)
-    for tt in ['177266891','137116293']:
-        if tt in id_list:
-            id_list.remove(tt)
 
     df_artinfo = pd.DataFrame(data=id_list,columns=['art_id']).set_index('art_id')
     print('article info fetched!')
@@ -328,9 +379,15 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         print('transcript downloaded')
 
     if articleUpdate:
-        page_list = tasker.run([fetch_async(articleURL(art_id), [page2article, page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
-        article_list = [page[0] for page in page_list]
-        comment_list = [page[1] for page in page_list]
+        ## blog.udn.com
+        # page_list = tasker.run([fetch_async(articleURL(art_id), [page2article, page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
+        # article_list = [page[0] for page in page_list]
+        # comment_list = [page[1] for page in page_list]
+
+        ## classic-blog.udn.com
+        article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
+        comment_list = tasker.run([fetch_async(commentURL_classic(art_id,0), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
+
         df_article = pd.concat(article_list,ignore_index=True)
         df_comment = pd.concat(comment_list,ignore_index=True)
         mergeArticle(df_article)
@@ -340,7 +397,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         pass
 
     if commentFullUpdate:
-        comment_list = tasker.run([fetch_async(commentURL(art_id,pno), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index for pno in range(df_artinfo.loc[art_id,'art_pno'])])
+        comment_list = tasker.run([fetch_async(commentURL_classic(art_id,pno), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index for pno in range(df_artinfo.loc[art_id,'art_pno'])])
         df_comment = pd.concat(comment_list,ignore_index=True)
         mergeComment(df_comment)
         print('all comments updated')
@@ -724,6 +781,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     
     df_article = pd.read_pickle(articleFile)
     df_comment = pd.read_pickle(commentFile)
+    df_comment = df_comment.loc[~((df_comment['first_reply_date'] >= datetime.datetime(2023,11,24,11,0,0)) & (df_comment    ['first_reply_date'] <= datetime.datetime(2023,11,25,2,0,0)))]
     df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
     df_tag = pd.read_pickle(tagFile)
     df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
@@ -751,4 +809,4 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
 if __name__ == "__main__":
     updateBlogData(nTask=10, proxy='')
-    updateBlogPage(days=45)
+    updateBlogPage(days=15)
