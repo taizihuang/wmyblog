@@ -196,6 +196,8 @@ def page2article(doc, art_id):
 
 def page2article_classic(doc, art_id):
 
+    print(art_id)
+
     if doc.find(class_="REPLY_LI"):
         doc.find(class_="REPLY_LI").decompose()
 
