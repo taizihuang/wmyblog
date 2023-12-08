@@ -7,13 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>12-08 20:05 +0800</lastBuildDate>
+    <lastBuildDate>12-09 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 小玫瑰]]></title>
-    <description><![CDATA[“在利率曲綫即將倒挂之前改用短期債券” 其他抗通胀的assets没有问题，想和先生对一下bond，教科书上有这么一段A duration-neutral flattening trade involves a short 2-year bond position and a long 10-year bond position. This portfolio will realize a gain if the slope of the yield curve—that is, the difference between short-term and long-term yields—declines. Yield curve inversion is an extreme version of flattening in which the spread between long-term and short-term yields-to-maturity falls below zero. 总之教的就是利率曲线倒挂的时候债券策略应该做多长期做空短期，因为大家预期yield curve即将倒挂一般会flock to long-term Treasury这样会导致长期债P↑r↓。所以我在想他们是不是由于这个原因所以即使知道要倒挂了还是继续持有长期国债。另一方面王博说的我也能理解，王博这里说的应该是改成3个月国债以获得较高名义收益率吧? 因为As long as yield curves stayed inverted, money market instruments delivered the highest returns.选最短期的到期后不停的rollover(尤其在预期Fed会继续加息时) ，以获得最大的策略灵活性和收益。是这样吧? <br><br>----<br><br>]]></description>
+    <description><![CDATA[“在利率曲綫即將倒挂之前改用短期債券” 其他抗通胀的assets没有问题，想和先生对一下bond，教科书上有这么一段A duration-neutral flattening trade involves a short 2-year bond position and a long 10-year bond position. This portfolio will realize a gain if the slope of the yield curve—that is, the difference between short-term and long-term yields—declines. Yield curve inversion is an extreme version of flattening in which the spread between long-term and short-term yields-to-maturity falls below zero. 总之教的就是利率曲线倒挂的时候债券策略应该做多长期做空短期，因为大家预期yield curve即将倒挂一般会flock to long-term Treasury这样会导致长期债P↑r↓。所以我在想他们是不是由于这个原因所以即使知道要倒挂了还是继续持有长期国债。另一方面王博说的我也能理解，王博这里说的应该是改成3个月国债以获得较高名义收益率吧? 因为As long as yield curves stayed inverted, money market instruments delivered the highest returns.选最短期的到期后不停的rollover(尤其在预期Fed会继续加息时) ，以获得最大的策略灵活性和收益。是这样吧? <br><br>----<br><br>
+金融獲利手段如果被寫入教科書，一般是錯誤或已經失效才會發生。就算原本還沒有失效，一旦公開，大家一起爭取這個價差，立刻就會將“獲利機會”抹除並扭轉。這有點像把“我曾在某地撿到一張大額鈔票”寫進教科書，然後讓大家一起到那個地方等鈔票出現。能長期獲利的例外手段，背後必定有一個永不退縮的“凱子”，這若不是中央銀行，就是公衆。所以不管是炒股達人或金融教科書，你在閲讀他們的獲利指南的時候，第一個問題必須是“凱子是誰？”如果答不出來，那麽你自己就是。
+至於你所引用的這個特例，只要看到“做空”兩個字，就應該知道這是在唬零售客戶，和中央銀行的政策選擇無關。原因有二：1）幾千億的資金運作，而且是官方的錢，根本不可能搞大規模做空。2）利率變動對債券剩餘價值的影響，與其期長（duration或者term）成指數關係；換句話說，對短期債券的價值影響極小。所以做空短期債券，交易成本極高，而獲利極小，先天就不在中央銀行的考慮範圍之内。
+我之所以說應該買短期債券，是因爲這次的利率倒挂並不是普通刺破泡沐的Generic Event，而是源自幾十年的通脹壓力一次爆發，所以可以預見倒挂的過程中，是短期利率和長期利率一起上升（而不是長期利率下降；一般刺破泡沫之後會有經濟衰退，引發通縮，從而壓低長期利率），只不過前者先行一步而已。我說在即將倒挂就動手，也考慮了幾千億的資金運作需要很長時間（一年以上），必須預留足夠時間；剛好短期債券的損失在利率上升過程中無關痛癢，而上升之後卻能提供合適的回報，所以是值得考慮的手段。
+這裏還有幾個細節值得解釋：第一，判斷通脹時代來臨，比判斷即將倒挂難多了，更別提要提前兩年；畢竟前者是50年一次的例外，後者是經濟周期中的常態；所以遵循我建議的利潤也遠高於一般的利率曲綫買賣運作。這是因爲競爭者少，不但價差大，而且量足。不過這裏靠的，正是超越整個行業的獨特眼光，所以也就不可能在行業内尋得。第二，長期美債流通性並不高，買了之後要賣出很不容易，特別容易套牢；短期債券沒有這個問題，反正賣不出去也可以等它到期。第三，流通性不高的問題，對中央銀行這種動輒几千億的投資客戶尤其重要；一般金融系“學者”以爲反正可以做空或甚至更複雜的Derivatives，其實流通性低還硬要去做交易，就代表著極高的交易成本，使用Derivatives不但不能解決這個問題，事實上Derivatives的發行方會在這些交易成本之上，再加上幾倍的利潤，買家吃虧更大，只不過經過Derivatives的包裝隱藏，會計報表上看不出來罷了。
+<br>&lt;div class="TIME"&gt;2023-12-09 01:50 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2023-12-08 13:42:00 +0800</pubDate>
     <guid isPermaLink="false">b9df5cafbe4e6ae956b56d00944b118f</guid>
@@ -225,17 +230,6 @@
     <pubDate>2023-11-25 08:31:00 +0800</pubDate>
     <guid isPermaLink="false">43d054f8304cc746b6f51fadf2f4d1d1</guid>
     <link>https://taizihuang.github.io/wmyblog/html/180084861.html#43d054f8304cc746b6f51fadf2f4d1d1</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 洋芋片好吃]]></title>
-    <description><![CDATA[　中國不再第一線作戰是否可以這樣理解？就是中國看到美國衰敗趨勢已經決定了不想親自下場打仗，留俄羅斯和伊朗在第一線對美做鬥爭，自己完好無損這就是「鷸蚌相爭漁翁得利」中國想當漁翁......關於高盛設計什麼碳權和碳排放我個人覺得的有可能是高盛等金融業剝削全球設計的新制度掛羊頭賣狗肉，想叫窮國+窮人出錢跟他們買碳權因為想要環保就必須達到最窮的國家的人民和最富裕的國家的人口有相同碳權，富國出錢跟窮國買碳權而不是相反叫窮國自己承擔，因為有一項統計指出參見衛報：後50%收入水平民眾只佔碳排放8%，環保義務應該相同嗎？https://www.youtube.com/watch?v=QdDijSWV5Ro並且一國內窮人和富人根據個人的消費排碳量按比例抽稅，並清算歷史上最早工業化200年的歐美國家的歷史排碳量，我認為這是根本不可能達成的，因此環保只是空談，只是高盛等美國金融業剝削全球的新伎倆，因此無可避免的會導致全球暖化失控，因為這種全球頂層設計的環保制度必然觸及大國和富國的核心利益 <br><br>----<br><br>戰鬥在第一綫是必須做出額外犧牲的；既然俄國和Hamas志願，而美國的通脹弱點已被暫時彌補，中國當然沒有必要再衝出來殺敵八百、自損一千。這一點我在《從SWIFT制裁俄國，看中國的對應之道》早已解釋過。<br><br>碳交易、碳回收和碳補償能讓中國跟著買單固然是白賺，但財團的第一優先是利潤最大化，而大部分的錢往往還是由富國出。例如2022年美國能源業因俄烏戰爭而提高營收5000億美元，其中有3000多億來自北美，剩下大半來自歐洲，只有小部分來自第三世界。美國醫藥界的暴利，也是主要來自對國内消費者的搜刮。
-<br>&lt;div class="TIME"&gt;2023-11-24 00:02 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2023-11-23 10:22:00 +0800</pubDate>
-    <guid isPermaLink="false">4a967ac0d64af3a4747006dfe07c2d5d</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/180084896.html#4a967ac0d64af3a4747006dfe07c2d5d</link>
     </item>
     </channel></rss>
     
