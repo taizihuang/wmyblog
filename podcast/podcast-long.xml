@@ -231,4 +231,13 @@
 			<description><![CDATA[王孟源最新大陸調研報告]]></description>
 			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=231027.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
+
+        <item>
+			<title>2023/12/08 務必看懂國際政治三大趨勢/title>
+			<pubDate>Fri, 08 December 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[231208]]></guid>
+			<link><![CDATA[https://wmyblog.site]]></link>
+			<description><![CDATA[務必看懂國際政治三大趨勢]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=231208.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
