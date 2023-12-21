@@ -515,7 +515,8 @@ def genHTML(art_id,df_article,df_comment_tag):
     for j in df_comment_id.index:
         comment = df_comment_id.comment[j]
         if comment:
-            reply = re.sub('<br>$','',re.sub('^<br>','',df_comment_id.reply[j])).replace('\n','<br>').replace('<br>','<br><br>')
+            reply = df_comment_id.reply[j].replace('\n','<br>') 
+            reply = re.sub('<br>$','',re.sub('^<br>','', reply)).replace('<br>','<br><br>')
 
             if reply:
                 first_reply_date = df_comment_id.loc[j, 'first_reply_date']
@@ -719,7 +720,8 @@ def genLatestComment(df_comment_today,article_dict):
             art_id = df_comment_today.id[i]
             source = article_dict[art_id]
             striked = '<strike>' in comment
-            reply = re.sub('<br>$','',re.sub('^<br>','',df_comment_today.reply[i])).replace('\n','<br>').replace('<br>','<br><br>')
+            reply = df_comment_today.reply[j].replace('\n','<br>') 
+            reply = re.sub('<br>$','',re.sub('^<br>','', reply)).replace('<br>','<br><br>')
             if reply:
                 first_reply_date = df_comment_today.loc[i, 'first_reply_date']
                 latest_reply_date = df_comment_today.loc[i, 'latest_reply_date']
