@@ -45,6 +45,7 @@ def formatArticle(df_article, idx):
     title = df_article.loc[idx,'title']
     date = df_article.loc[idx,'art_date'].strftime('%Y-%m-%d %H:%M')
     header = f"\\twocolumn[\\begin{{@twocolumnfalse}}\n\\section{{{title}}}\n\\subsection{{王孟源\\break {date}}}\n\\end{{@twocolumnfalse}}]"
+    header = f"\n\\section{{{title}}}\n\\subsection{{{date}}}\n"
     post = df_article.loc[idx,'post']
     if len(post) < 100:
         return ''
@@ -193,7 +194,7 @@ for id in id_list:
     df_comment_id = df_comment_id.loc[df_comment.reply != '']
     df_comment_id = df_comment_id.sort_values('comment_date',ascending=True).reset_index(drop=True)
 
-    # content += formatArticle(df_article_id, 0) + '\n\n'
+    content += formatArticle(df_article_id, 0) + '\n\n'
     content += f'\\section{{{len(df_comment_id)}条问答}}\n\n'
 
     for idx in df_comment_id.index:

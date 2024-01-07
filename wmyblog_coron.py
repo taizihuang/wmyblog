@@ -487,7 +487,7 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     </head>
     <body><div class="BODY">
     <h1><a href="https://blog.udn.com/MengyuanWang/article" style="text-decoration:none;">王孟源的博客镜像</a></h1>
-    <h3>《王孟源文集》：<a href="https://drive.google.com/drive/folders/1eLq7tAwzfFbfsQbgb4nA7WzRbaSCLOxR">PDF下载</a>，欢迎读者帮忙勘误</h3>
+    <br><br>
     <ul class="LI">
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
     <li><a class="title" href="./podcast/index.html">最新访谈</a></li>
