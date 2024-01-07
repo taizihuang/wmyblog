@@ -487,11 +487,11 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     </head>
     <body><div class="BODY">
     <h1><a href="https://blog.udn.com/MengyuanWang/article" style="text-decoration:none;">王孟源的博客镜像</a></h1>
-    <h2>欢迎读者帮忙给博客问答打标签（直接在标签栏编辑后再按回车提交），标签列表见<a href="https://wmyblog.site/search/">网页搜索</a></h2>
     <h3>《王孟源文集》：<a href="https://drive.google.com/drive/folders/1eLq7tAwzfFbfsQbgb4nA7WzRbaSCLOxR">PDF下载</a>，欢迎读者帮忙勘误</h3>
     <ul class="LI">
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
     <li><a class="title" href="./podcast/index.html">最新访谈</a></li>
+    <li><a class="title" href="./search/index.html">网页搜索</a></li>
     %for url, name, time in art_li:
     <li><a class="title" href="./html/${url}.html">${name}</a><div class="TIME">${time}</div></li>
     %endfor
@@ -794,7 +794,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     for art_id in df_article.id:
         genHTML(art_id,df_article,df_comment_tag)
 
-    # genINDEX(articleFile=articleFile)
+    genINDEX(articleFile=articleFile)
     print('index page generated')
 
     latest = today() - datetime.timedelta(days=days)
