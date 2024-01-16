@@ -721,7 +721,7 @@ def genLatestComment(df_comment_today,article_dict):
             art_id = df_comment_today.id[i]
             source = article_dict[art_id]
             striked = '<strike>' in comment
-            reply = df_comment_today.reply[i].replace('\n','<br>') 
+            reply = df_comment_today.reply[i].replace('\n','<br>').replace('src="./img/','src="https://wmyblog.site/html/img/') 
             reply = re.sub('<br>$','',re.sub('^<br>','', reply)).replace('<br>','<br><br>')
             if reply:
                 first_reply_date = df_comment_today.loc[i, 'first_reply_date']
