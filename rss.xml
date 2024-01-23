@@ -7,13 +7,13 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>01-23 02:04 +0800</lastBuildDate>
+    <lastBuildDate>01-23 08:10 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【科研】流行病的起源（上） | Quasicat]]></title>
-    <description><![CDATA[关于新冠疫情导致超额死亡的估计根据国家统计局抽样调查的估计，在中国除港澳台以外，2023年的死亡人口为1110万，22年为1041万，21年为1014万，20年为998万。而且如果没理解错的话，这个调查的时间节点是前一年的11月1日至本年的10月31日。所以若假定数据可靠，那么放开后的超额死亡人数很可能不超过百万。当然，还需要24年之后的数据进行修正。  <br><br>----<br><br>嗯，我原本就説過是粗略估計。你給的這個新數據基本在誤差範圍的最低端，算是不幸中的大幸。<br><div class="TIME">2024-01-23 02:01 回复</div>]]></description>
+    <description><![CDATA[关于新冠疫情导致超额死亡的估计根据国家统计局抽样调查的估计，在中国除港澳台以外，2023年的死亡人口为1110万，22年为1041万，21年为1014万，20年为998万。而且如果没理解错的话，这个调查的时间节点是前一年的11月1日至本年的10月31日。所以若假定数据可靠，那么放开后的超额死亡人数很可能不超过百万。当然，还需要24年之后的数据进行修正。  <br><br>----<br><br>嗯，我原本就説過是粗略預計估算。你給的這個新數據基本在誤差範圍的最低端，如果精確，實屬不幸中的大幸。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/132337217.html" style="text-decoration: none;color:black;">2024-01-23 05:51 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-01-23 01:44:00 +0800</pubDate>
     <guid isPermaLink="false">4c757596a2fba057648585848a9960ba</guid>
@@ -22,8 +22,28 @@
     <item>
     
     
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十三]]></title>
+    <description><![CDATA[後註十三 <br><br>----<br><br>前幾天我剛在留言欄（參見第50樓）提到“量子計算是全新熱門網紅，隨便換點花樣又是一篇頂尖期刊上的論文”，今天就看到Sabine科普的一個新結果（參見<a href="https://www.youtube.com/watch?v=mJDWPLlI5I4"><span style="color:blue">《<span style="font-size:medium"><em><strong>Another</strong></em></span> Famous Quantum Mystery Was Just Debunked (it wasnt me)》</span></a>；原始論文在這裏：<a href="https://iopscience.iop.org/article/10.1088/1367-2630/ad0bd4"><span style="color:blue">《Contextuality, coherences, and quantum Cheshire cats》</span></a>），證明過去11年來被反復吹噓的量子計算重要研究方向之一“Quantum Cheshire cats”根本只源於對量子力學的誤解。隨手查閲過去三年的《Nature》就至少有以下幾篇追救護車的相關文章成功發表，分別是以色列人寫的<a href="https://www.nature.com/articles/s41467-021-24933-9"><span style="color:blue">《A dynamical quantum Cheshire Cat effect and implications for counterfactual communicationAnother Famous Quantum Mystery Was Just Debunked (it wasnt me)》</span></a>、韓國人寫的<a href="https://www.nature.com/articles/s41534-020-00350-6"><span style="color:blue">《Observing the quantum Cheshire cat effect with noninvasive weak measurement》</span></a>、以及來自中國的<a href="https://www.nature.com/articles/s41467-020-16761-0"><span style="color:blue">《Experimental exchange of grins between quantum Cheshire cats》</span></a>，剛好對應著國際假大空論文汎濫的三個重災區（印度人只寫了科普，參見<a href="https://www.nature.com/articles/nindia.2020.104"><span style="color:blue">《Quantum Cheshire cats: A physics trick that separates the feline from its grin》</span></a>）。</p><br><br><p>我想提醒讀者特別注意，假大空論文可以連續十幾年不輟而且成打地發表在《Nature》或《Science》上，揭穿假大空的文章卻因爲連帶打了期刊的臉，只能登在名不見經傳的《New Journal of Physics》。這裏的環境背景在於物理實在太過成熟，能做的幾乎全做完了，研究人員數目卻還在成指數成長，論文數量指標也依舊必須滿足，不但必須小題大做，而且在極端的僧多粥少之下，還不得不集體大幅放寬標準。然而博客已經反復論證過，正確的管理原則是容忍“空”而嚴打“假”，對“大”則在學術上容忍、金融和科普上嚴打；量子計算正是一個典型的“大”項目。</p><br><br><p>純粹從量子力學角度來看，我對“Quantum Cheshire cats”這些所謂的量子計算新理論一直懶得深究；這不只是因爲Sabine已經挑起對這方向打假的科普責任，更因爲它們全都是基於Copenhagen Interpretation的庸人自擾，事先就可以確定為Copenhagen邏輯不自洽所引發的細節誤解，根本不值得浪費時間。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-01-23 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">f495b7e2dd12eb9621a6d8a25a779f89</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#f495b7e2dd12eb9621a6d8a25a779f89</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 薛丁格的貓]]></title>
+    <description><![CDATA[關於27F留言欄討論看了一下您的聯結，個人以為，單就文章內容而論，陸磊離MMT的”堅定”推崇者還挺遠吧?(我覺得甚至還比不上翟東升)。該篇文章，整體而言算是四平八穩，同時講述了寬鬆貨幣政策的正負兩面(且負面多於正面)，關於負面的描述，雖然只是事實的陳述，談不上甚麼前瞻性，但也確實指出問題；令我略感不安的是關於正面效應的幾段抬頭，陸先生似乎沒意識到寬鬆貨幣政策對美國的正面效應是來自於美元霸權，低通脹更與MMT毫無關係，而是包含中國在內的東亞諸(豬?)國的割肉餵鷹，對日本而言，更是明顯的飲鴆止渴。但對於一個主管貨幣政策的中高階官員，在這樣的時代大背景下，能夠看到增發貨幣的負面影響(包含貧富差距擴大)，能力視野勉強可接受了，再加上目前金融政策的頂層設計有<黨中央委員會金融工作委員會>把關，向好的機率還是比較大的。 <br><br>----<br><br>我覺得最高層明確定調（亦即1月16日在中央黨校的開幕致辭）之後，負責執行的官員不論原本傾向爲何，都必須謹慎收斂。不過金融貨幣是當前國際鬥爭的核心，當然值得持續觀察。<br><div class="TIME">2024-01-23 05:45 回复</div>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-01-22 10:32:00 +0800</pubDate>
+    <guid isPermaLink="false">e0e5c36aaa0db0e89784becb49a85287</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/180084901.html#e0e5c36aaa0db0e89784becb49a85287</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 干煸鱿鱼须]]></title>
-    <description><![CDATA[(对不起刚才发错地方了)新任的人民银行副行长最近两位新任的人民银行副行长，也是四年后行长的候选人。朱鹤新会计柜员没有多少货币学理论，之前在中信主要任务是帮红二代金融食利集团捞钱。陆磊是MMT的坚定推崇者https://www.sohu.com/a/515818358_481887   感觉都不像是立场正有魄力的角色，希望在这几年中破格提拔其他有力人选。 <br><br>----<br><br>在聼其言而觀其行這件事上，金融和外交剛好相反：外交本來就是辭令爲主，金融卻是真金白銀，辭令通常只作爲遮掩資金流動的烟幕（這有點類似飛機和汽車的差別：飛機的外殼本身就是客觀技術關鍵，汽車卻可以爲了主觀審美而大幅變動）。所以上次外交官員在美發言不當，就值得嚴厲批評，金融官員的既往言論卻只能充當參考。<br><div class="TIME">2024-01-23 01:57 回复</div>]]></description>
+    <description><![CDATA[(对不起刚才发错地方了)新任的人民银行副行长最近两位新任的人民银行副行长，也是四年后行长的候选人。朱鹤新会计柜员没有多少货币学理论，之前在中信主要任务是帮红二代金融食利集团捞钱。陆磊是MMT的坚定推崇者https://www.sohu.com/a/515818358_481887   感觉都不像是立场正有魄力的角色，希望在这几年中破格提拔其他有力人选。 <br><br>----<br><br>在聼其言而觀其行這件事上，外交和金融剛好相反：前者本來就是辭令爲主，後者卻是真金白銀，辭令通常只作爲遮掩資金流動的烟幕。這有點類似飛機和汽車的差別：飛機的外殼本身就是客觀技術關鍵之一，汽車卻可以爲了主觀審美而大幅變動外型設計。所以上次外交官員在美幾句發言不當，就可以嚴厲批評，金融官員的既往言論卻只能先充當參考。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/180084901.html" style="text-decoration: none;color:black;">2024-01-23 02:08 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-01-21 23:18:00 +0800</pubDate>
     <guid isPermaLink="false">45ac39acd32963fdf9c41492b5d80284</guid>
@@ -153,7 +173,7 @@
     
     
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十二]]></title>
-    <description><![CDATA[後註十二 <br><br>----<br><br>美國固然是科研、學術和資本聯合公關吹噓無用研究方向的老祖宗，但因爲資本詐騙集團有別於中式的體制内權力階級，無法玩出政治權力和學術權威交相掩護的全面封鎖，實話者依舊有空間可以設法做出批評，至少若只談局部專業議題，不指穿深層的系統性假大空真相，就往往封鎖不住，職業騙子只好被迫擺出“歡迎討論”的姿態（例如下文中的Scott Aeronson）；這也正是我一再解釋的，美國的基礎科研學術文化雖然在過去30多年急速腐朽，仍遠優於中方的所在。前幾天在留言欄中提到的《IEEE》文章（參見<a href="https://spectrum.ieee.org/quantum-computing-skeptics"><span style="color:blue">《Quantum Computing’s Hard, Cold Reality Check》</span></a>），就是上述現象的雙重例證：不但文中引用了多個業界對量子計算的批評（因受詐騙方勢力的影響，必須只做引用、並加挂號，重點也必須輕描淡寫、一筆帶過，例如量子計算所承諾的用途每隔一兩年變化一次，實際上就是前一波謊言中的空中樓閣被吹散了，必須重找新的），而且那些批評和這篇文章本身都無法在中國正規媒體（尤其是學術和半學術討論）翻譯發表。即便是外行人，也可以單從這一點就立刻看出中科大量子計算詐騙集團不是真正的科研者。</p><br><br></span>]]></description>
+    <description><![CDATA[後註十二 <br><br>----<br><br>美國固然是科研、學術和資本聯合公關吹噓無用研究方向的老祖宗，但因爲資本詐騙集團有別於中式的體制内權力階級，無法玩出政治權力和學術權威交相掩護的全面封鎖，實話者依舊有空間可以設法做出批評，至少若只談局部專業議題，不指穿深層的系統性假大空真相，就往往封鎖不住，職業騙子只好被迫擺出“歡迎討論”的姿態（例如下文中的Scott Aeronson）；這也正是我一再解釋的，美國的基礎科研學術文化雖然在過去30多年急速腐朽，仍遠優於中方的所在。前幾天在留言欄中提到的《IEEE》文章（參見<a href="https://spectrum.ieee.org/quantum-computing-skeptics"><span style="color:blue">《Quantum Computing’s Hard, Cold Reality Check》</span></a>），就是上述現象的雙重例證：不但文中引用了多個業界對量子計算的批評（因受詐騙方勢力的影響，必須只做引用、並加挂號，重點也必須輕描淡寫、一筆帶過，例如量子計算所承諾的用途每隔一兩年變化一次，實際上就是前一波謊言中的空中樓閣被吹散了，必須重找新的），而且那些批評和這篇文章本身都無法在中國正規媒體（尤其是學術和半學術討論）翻譯發表。即便是外行人，也可以單從這一點就立刻看出中科大量子計算詐騙集團不是真正的科研者。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-01-16 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">53121682275831c7c18ed0965cb566ae</guid>
