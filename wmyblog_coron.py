@@ -359,10 +359,10 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
     # artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
     # df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
     domain = 'classic-blog.udn.com'
-    #doc = BeautifulSoup(requests.get(f'https://{domain}/MengyuanWang/article',headers=headers).content, features="lxml")
-    #id_list = [d['href'].split('/')[-1] for d in doc.findAll(class_='main-title')][:5]
-    doc = BeautifulSoup(requests.get(f'https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
-    id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
+    doc = BeautifulSoup(requests.get(f'https://{domain}/MengyuanWang/article',headers=headers).content, features="lxml")
+    id_list = [d['href'].split('/')[-1] for d in doc.findAll(class_='main-title')][:5]
+    # doc = BeautifulSoup(requests.get(f'https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
+    # id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
     doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
     id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
