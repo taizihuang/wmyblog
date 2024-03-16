@@ -452,14 +452,18 @@ def genAnno(df):
     df_anno = df_anno.sort_values(by='comment_date',ascending=False).reset_index(drop=True)
     return df_anno
 
-def genINDEX(articleFile='./data/article_full.pkl'):
+def genINDEX(articleFile, df_comment_tag):
     df_article = pd.read_pickle(articleFile)
     art_li = []
     for i in df_article.index:
         art_id = df_article.id[i]
         title = df_article.title[i]
         art_date = str(df_article.art_date[i]).split(' ')[0]
-        art_li.append((art_id,title,art_date))
+        df_reply = df_comment_tag.loc[df_comment_tag['id'] == id]
+        tagged = df_reply.loc[df_reply['tag'] != 'empty/']
+        replied = df_reply.loc[df_reply['reply'] != '']
+        tagRate = f'{len(tagged)}/{len(replied)}'
+        art_li.append((art_id,title,art_date,tagRate))
 
     INDEX = Template("""
     <!DOCTYPE html><html><head>
@@ -496,8 +500,8 @@ def genINDEX(articleFile='./data/article_full.pkl'):
     <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
     <li><a class="title" href="./podcast/index.html">最新访谈</a></li>
     <li><a class="title" href="./search/index.html">网页搜索</a></li>
-    %for url, name, time in art_li:
-    <li><a class="title" href="./html/${url}.html">${name}</a><div class="TIME">${time}</div></li>
+    %for url, name, time, tagRate in art_li:
+    <li><a class="title" href="./html/${url}.html">${name} [${tagRate}]</a><div class="TIME">${time}</div></li>
     %endfor
     </ul>
     </div></body></html>
@@ -798,7 +802,7 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     for art_id in df_article.id:
         genHTML(art_id,df_article,df_comment_tag)
 
-    genINDEX(articleFile=articleFile)
+    genINDEX(articleFile, df_comment_tag)
     print('index page generated')
 
     latest = today() - datetime.timedelta(days=days)
