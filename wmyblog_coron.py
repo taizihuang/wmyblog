@@ -459,7 +459,7 @@ def genINDEX(articleFile, df_comment_tag):
         art_id = df_article.id[i]
         title = df_article.title[i]
         art_date = str(df_article.art_date[i]).split(' ')[0]
-        df_reply = df_comment_tag.loc[df_comment_tag['id'] == id]
+        df_reply = df_comment_tag.loc[df_comment_tag['id'] == art_id]
         tagged = df_reply.loc[df_reply['tag'] != 'empty/']
         replied = df_reply.loc[df_reply['reply'] != '']
         tagRate = f'{len(tagged)}/{len(replied)}'
