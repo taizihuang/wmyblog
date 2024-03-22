@@ -111,6 +111,7 @@ async def fetch_async(url, func, args, proxy=''):
             return output
 
 async def saveScript(filename, id, proxy=''):
+    print(filename, id)
     link = f'https://docs.google.com/document/d/{id}/edit'
 
     async with aiohttp.ClientSession() as client:
