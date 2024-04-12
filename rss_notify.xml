@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>04-12 02:05 +0800</lastBuildDate>
+    <lastBuildDate>04-12 08:08 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Quasicat]]></title>
+    <description><![CDATA[关于楼上提及的论文，补充一则信息在《Quantum Algorithms for Lattice Problems》一文目前第3页的Corollary 1.7后，作者写道：“Let us remark that the modulus-noise ratio achieved by our quantum algorithm is still too large to break the public-key encryption schemes based on (Ring)LWE used in practice. In particular, we have not broken the NIST PQC standardization candidates. For example, for CRYSTALS-Kyber [BDK+18]......”  <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-04-12 04:02:00 +0800</pubDate>
+    <guid isPermaLink="false">349270de43fef7c7243952e94022bbb2</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#349270de43fef7c7243952e94022bbb2</link>
+    </item>
     <item>
     
     
@@ -53,7 +63,7 @@
     
     
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十五]]></title>
-    <description><![CDATA[後註十五 <br><br>----<br><br>前面提到當代物理界騙徒充斥，剛好《Nature》（參見&lt;a href="https://www.nature.com/articles/d41586-024-00716-2"&gt;&lt;span style="color:blue"&gt;《Superconductivity scandal: the inside story of deception in a rising star’s physics lab》&lt;/span&gt;&lt;/a&gt;）也復盤了一個“科技突破”，亦即2020年在大衆媒體大肆炒作過的的“常溫高壓超導”。這裏的重點在於那篇論文不但很快就被撤稿，三年下來歐美學術界還排除了中國教育部和兩院非常喜歡用的“誤植”等等藉口，確定其爲故意造假。光從處理造假案的態度差異就可以簡單看出，中國科研界的腐朽程度遠超美方。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
+    <description><![CDATA[後註十五 <br><br>----<br><br>前面提到當代物理界騙徒充斥，剛好《Nature》（參見&lt;a href="https://www.nature.com/articles/d41586-024-00716-2"&gt;&lt;span style="color:blue"&gt;《Superconductivity scandal: the inside story of deception in a rising star’s physics lab》&lt;/span&gt;&lt;/a&gt;）也復盤了一個“科技突破”，亦即2020年在大衆媒體大肆炒作過的的“常溫高壓超導”。這裏的重點觀察有二：首先，未來科技騙局先天就極受現代社會所歡迎，不費力氣就可以傳遍全球大衆媒體，事後被道破糾正，卻只有專業期刊會登，外行群衆自然會被誤導，以爲每次媒體炒作的“科技突破”都貨真價實；其實剛好相反，絕大部分非專業媒介都只報導假大空，而且炒作越兇問題越大。其次，那篇論文不但很快就被撤稿，三年下來歐美學術界還排除了中國教育部和兩院非常喜歡用的“誤植”等等藉口，確定其爲故意造假。光從處理造假案的態度差異就可以簡單看出，中國科研界的腐朽程度遠超美方。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-04-10 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">c5eaf02920b52580984838efadc0902d</guid>
