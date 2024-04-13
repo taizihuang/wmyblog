@@ -7,13 +7,13 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>04-13 02:03 +0800</lastBuildDate>
+    <lastBuildDate>04-13 14:03 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | Quasicat]]></title>
-    <description><![CDATA[关于楼上提及的论文，补充一则信息在《Quantum Algorithms for Lattice Problems》一文目前第3页的Corollary 1.7后，作者写道：“Let us remark that the modulus-noise ratio achieved by our quantum algorithm is still too large to break the public-key encryption schemes based on (Ring)LWE used in practice. In particular, we have not broken the NIST PQC standardization candidates. For example, for CRYSTALS-Kyber [BDK+18]......”  <br><br>----<br><br>]]></description>
+    <description><![CDATA[关于楼上提及的论文，补充一则信息在《Quantum Algorithms for Lattice Problems》一文目前第3页的Corollary 1.7后，作者写道：“Let us remark that the modulus-noise ratio achieved by our quantum algorithm is still too large to break the public-key encryption schemes based on (Ring)LWE used in practice. In particular, we have not broken the NIST PQC standardization candidates. For example, for CRYSTALS-Kyber [BDK+18]......”  <br><br>----<br><br>是的，這篇論文只是在建議一個可能的未來破密攻擊方向，當前的版本一點實用性都沒有，純粹只能寄望于進一步啓發其他研究人員。相對的，當年的Shor's Algorithm可不止是微弱的假想建議，而是斬釘截鐵的完整破解方案，結果30年的努力、幾千億美元的投資，很簡單廉價地就被規避了。此外，新思路的建議在當代科研界是家常便飯，這個層次的每個禮拜都有幾起，99.9%不是沒有任何下文，就是被拿來詐騙（還記得幾年前的統計發現89%的論文結果無法複製嗎？），真正有用的只有0.1%不到，所以國際數學界對其波瀾不驚的確是正當反應。其實在1989年冷聚變開啓“未來科技”詐騙模式之前，不經學術同僚仔細評估、確認正確，就開記者會發公關稿來自我吹噓，會被視爲大逆不道（更別提中科大量子計算集團還反過來控制一切國内媒體，封鎖所有專業和非專業的批評聲浪），那才是科技管理的正途，近年這種群魔亂舞的怪象反而是科學史上的末世例外。<br>&lt;div class="TIME"&gt;2024-04-13 08:17 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-04-12 04:02:00 +0800</pubDate>
     <guid isPermaLink="false">349270de43fef7c7243952e94022bbb2</guid>
@@ -23,7 +23,7 @@
     
     
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 大陆读者]]></title>
-    <description><![CDATA[格密码的量子算法今天看到新闻（https://iiis.tsinghua.edu.cn/show-10531-1.html）如下。近日清华大学交叉信息研究院陈一镭助理教授在eprint上发布了重要论文，给出了一个破解格密码的量子算法。论文标题为Quantum Algorithms for Lattice Problems。 链接：https://eprint.iacr.org/2024/555。 解决格上的近似最短向量问题（Approximate Shortest Vector Problems in Lattices, 简称Lattice Problems）以及与之等价的带错误学习问题（Learning with Errors,简称LWE）是经典的算法难题，科学界普遍认为它们超出了传统计算机的能力范围。那么，量子计算机有望能破解Lattice Problems以及LWE吗？这个问题一直受到广大关注，但鲜有显著进展。陈一镭的工作提出了一个全新的量子算法来解决LWE以及与之等价的格问题。这项工作仍在同行评议中。如果被验证为正确，将为这个悬而未决的问题给出肯定的答复。它在科学上的意义将是双层的: 第一，这将是自30年前Peter Shor提出大数分解的量子算法以来，最重要的量子算法突破。第二，这将对美国NIST过去10年来选择后量子密码设计的思路产生颠覆性的影响，因为多数选出的后量子密码方案都是基于Lattice Problems 或LWE。 陈一镭的工作无疑将使他们安全性受到质疑。 这篇文章（https://mp.weixin.qq.com/s/Fqw43MpEUofgF4JAcnALHA）更详细的总结了更多算法细节如下。论文展示了一种多项式时间量子算法，用于求解具有特定多项式模数 - 噪声比的有误学习问题（LWE）。结合 Regev [J.ACM 2009] 所展示的从格问题到 LWE 的还原，论文得到了多项式时间量子算法，用于求解所有 n 维网格的决定性最短向量问题（GapSVP）和最短独立向量问题（SIVP），其近似因子为图片。在此之前，还没有任何多项式甚至亚指数时间的量子算法可以在任何多项式近似因子内求解所有格的 GapSVP 或 SIVP。 为了开发求解 LWE 的量子算法，这篇论文主要引入了两种新技术：首先，陈一镭在量子算法的设计中引入了具有复杂方差的高斯函数，特别是利用了复高斯函数离散傅里叶变换中的卡斯特波特征。其次，陈一镭使用带有复高斯窗口的窗口量子傅里叶变换，这使得能够结合时域和频域的信息。利用这些技术，陈一镭将 LWE 实例转换为具有纯虚高斯振幅的量子态，然后将纯虚高斯态转换为 LWE 秘密和误差项的经典线性方程，最后利用高斯消元法求解线性方程组。 是否可以说，如果这篇论文通过同行评议验证为正确，会增加了量子计算在遥远的未来可以破解更多加密算法的可能性，但仍然可以确定量子计算在2030年以前不会有任何实际用途。 <br><br>----<br><br>]]></description>
+    <description><![CDATA[格密码的量子算法今天看到新闻（https://iiis.tsinghua.edu.cn/show-10531-1.html）如下。近日清华大学交叉信息研究院陈一镭助理教授在eprint上发布了重要论文，给出了一个破解格密码的量子算法。论文标题为Quantum Algorithms for Lattice Problems。 链接：https://eprint.iacr.org/2024/555。 解决格上的近似最短向量问题（Approximate Shortest Vector Problems in Lattices, 简称Lattice Problems）以及与之等价的带错误学习问题（Learning with Errors,简称LWE）是经典的算法难题，科学界普遍认为它们超出了传统计算机的能力范围。那么，量子计算机有望能破解Lattice Problems以及LWE吗？这个问题一直受到广大关注，但鲜有显著进展。陈一镭的工作提出了一个全新的量子算法来解决LWE以及与之等价的格问题。这项工作仍在同行评议中。如果被验证为正确，将为这个悬而未决的问题给出肯定的答复。它在科学上的意义将是双层的: 第一，这将是自30年前Peter Shor提出大数分解的量子算法以来，最重要的量子算法突破。第二，这将对美国NIST过去10年来选择后量子密码设计的思路产生颠覆性的影响，因为多数选出的后量子密码方案都是基于Lattice Problems 或LWE。 陈一镭的工作无疑将使他们安全性受到质疑。 这篇文章（https://mp.weixin.qq.com/s/Fqw43MpEUofgF4JAcnALHA）更详细的总结了更多算法细节如下。论文展示了一种多项式时间量子算法，用于求解具有特定多项式模数 - 噪声比的有误学习问题（LWE）。结合 Regev [J.ACM 2009] 所展示的从格问题到 LWE 的还原，论文得到了多项式时间量子算法，用于求解所有 n 维网格的决定性最短向量问题（GapSVP）和最短独立向量问题（SIVP），其近似因子为图片。在此之前，还没有任何多项式甚至亚指数时间的量子算法可以在任何多项式近似因子内求解所有格的 GapSVP 或 SIVP。 为了开发求解 LWE 的量子算法，这篇论文主要引入了两种新技术：首先，陈一镭在量子算法的设计中引入了具有复杂方差的高斯函数，特别是利用了复高斯函数离散傅里叶变换中的卡斯特波特征。其次，陈一镭使用带有复高斯窗口的窗口量子傅里叶变换，这使得能够结合时域和频域的信息。利用这些技术，陈一镭将 LWE 实例转换为具有纯虚高斯振幅的量子态，然后将纯虚高斯态转换为 LWE 秘密和误差项的经典线性方程，最后利用高斯消元法求解线性方程组。 是否可以说，如果这篇论文通过同行评议验证为正确，会增加了量子计算在遥远的未来可以破解更多加密算法的可能性，但仍然可以确定量子计算在2030年以前不会有任何实际用途。 <br><br>----<br><br>這是很純的應用數學問題，需要行内的專家花費幾年來確定論證是否正確。不過正因爲它討論的是很初步的原則性議題，即便正確，也不代表30年内能有實際應用，正如針對RSA的Shor's Algorithm是1994年發明，30年後剛有一點苗頭，RSA就被簡單替換掉了；更別提Shor's Algorithm是一個完整的解密方案，這篇論文卻只是一個弱弱的思路建議罷了。此外這篇論文所針對的Lattice Encryption也只是Post Quantum Encryption的選項之一，要替換的話早有現成的其他密碼可用。<br>&lt;div class="TIME"&gt;2024-04-13 07:49 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-04-11 21:16:00 +0800</pubDate>
     <guid isPermaLink="false">58fb08281fe2bd72d380f43a21cd8259</guid>
@@ -43,7 +43,7 @@
     
     
     <title><![CDATA[【宣佈】讀者須知 |  China Han]]></title>
-    <description><![CDATA[您好王博士，视频网站内容已做修改https://space.bilibili.com/3494355098667575简介添加博客镜像地址，评论区添加每篇文章镜像地址。 <br><br>----<br><br>]]></description>
+    <description><![CDATA[您好王博士，视频网站内容已做修改https://space.bilibili.com/3494355098667575简介添加博客镜像地址，评论区添加每篇文章镜像地址。 <br><br>----<br><br>好的。其他想轉載博客内容的讀者，請參考這個案例，遵守規則，並直接和管理鏡像網站的黃先生聯係。<br>&lt;div class="TIME"&gt;2024-04-13 07:48 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-04-10 09:19:00 +0800</pubDate>
     <guid isPermaLink="false">208548ce66c337db3345cd379d0dda51</guid>
@@ -53,7 +53,7 @@
     
     
     <title><![CDATA[【宣佈】讀者須知 | Taizi Huang]]></title>
-    <description><![CDATA[China Han 你好，镜像网站的网址是 https://wmyblog.site。如果有问题，可以在 Github （https://github.com/taizihuang/wmyblog）上提 issue。 <br><br>----<br><br>]]></description>
+    <description><![CDATA[China Han 你好，镜像网站的网址是 https://wmyblog.site。如果有问题，可以在 Github （https://github.com/taizihuang/wmyblog）上提 issue。 <br><br>----<br><br>很好，謝謝。<br>&lt;div class="TIME"&gt;2024-04-13 07:01 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-04-10 00:23:00 +0800</pubDate>
     <guid isPermaLink="false">85a7570b22227d781759287a01f23e01</guid>
