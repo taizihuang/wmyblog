@@ -367,7 +367,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
     doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
     id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
-    id_list += ['155869077','171633910','122891927']
+    id_list += ['155869077','171633910','122891927','150052301']
     id_list = list(set(id_list))
 
     df_artinfo = pd.DataFrame(data=id_list,columns=['art_id']).set_index('art_id')
