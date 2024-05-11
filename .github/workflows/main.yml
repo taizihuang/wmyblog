@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: set up python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.12.2'
+      # - name: set up python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.12.2'
       
       #- uses: actions/cache@v2
       #  with:
@@ -32,7 +32,7 @@ jobs:
         
       - name: run script
         run: |
-          git pull
+          # git pull
           python wmyblog_coron.py
         
       - name: git push
