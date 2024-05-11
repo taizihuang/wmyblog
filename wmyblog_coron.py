@@ -213,7 +213,7 @@ def page2article_classic(doc, art_id):
     else:
         # art_date = doc.find(class_="article_datatime").text
         for t in doc.findAll(class_="main-text"):
-            regex = '(\d{4}/\d{2}/\d{2} \d{2}:\d{2})'
+            regex = r'(\d{4}/\d{2}/\d{2} \d{2}:\d{2})'
             if re.search(regex, t.text):
                 art_date = re.search(regex, t.text).groups()[0]
                 break
@@ -266,7 +266,7 @@ def page2comment(doc, art_id):
 
     if  doc.find(id="response_head"):
         reply_list = []
-        for rep in doc.findAll(id=re.compile("rep\d+")):
+        for rep in doc.findAll(id=re.compile(r"rep\d+")):
             reply_list.append(rep2dict(rep))
         df_comment = pd.DataFrame(data=reply_list)
     else:
