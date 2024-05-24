@@ -382,7 +382,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
             df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
         # df = df.loc[(df.filename.str.contains('八方论坛')) | (df.filename.str.contains('龙行天下')) | (df.filename.str.contains('大学讲座'))]
         df = df.loc[df.filename.str.contains('龙行天下')]
-        L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index])
+        L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index[-2:]])
         print('transcript downloaded')
 
     if articleUpdate:
