@@ -246,7 +246,7 @@ def page2article_classic(doc, art_id):
 def page2comment(doc, art_id):
     def rep2dict(rep):
 
-        comment = rep(class_='rp5')[0].text.replace('\xa0','').replace("\r\n","").replace('\n','').replace('<br>','')
+        comment = rep(class_='rp5')[0].text.replace('\xa0','')
         nickname = rep(class_='rp2')[0].text.split('\n')[1]
         comment_date = rep(class_='rp4')[0].text
 
@@ -323,7 +323,7 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
     df_comment_new.to_pickle(commentFile)
 
 def comment2md(comment):
-    return hashlib.md5((comment.replace('<strike>','').replace('</strike>','')).encode()).hexdigest()
+    return hashlib.md5((comment.replace('<strike>','').replace('</strike>','').replace("\r\n","").replace('\n','').replace('<br>','')).encode()).hexdigest()
 
 # def table2tag(df_comment, df_table, df_cell_table):
 #     df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
@@ -366,7 +366,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
     id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:5]
     doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
     id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
-    id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
+    id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:10])
     id_list = list(set(id_list))
 
     df_artinfo = pd.DataFrame(data=id_list,columns=['art_id']).set_index('art_id')
@@ -524,6 +524,7 @@ def genHTML(art_id,df_article,df_comment_tag):
     for j in df_comment_id.index:
         comment = df_comment_id.comment[j]
         if comment:
+            comment = comment.replace('\n','<br><br>').replace('<br><br><br>','<br>').replace('<br><br><br>','<br>')
             reply = df_comment_id.reply[j].replace('\n','<br>') 
             reply = re.sub('<br>$','',re.sub('^<br>','', reply)).replace('<br>','<br><br>')
 
@@ -723,6 +724,7 @@ def genLatestComment(df_comment_today,article_dict):
     for i in df_comment_today.index:
         comment = df_comment_today.comment[i]
         if comment:
+            comment = comment.replace('\n','<br><br>').replace('<br><br><br>','<br>').replace('<br><br><br>','<br>')
             nickname = df_comment_today.nickname[i].replace('\u3000',' ')
             comment_date = df_comment_today.comment_date[i]
             uuid = comment2md(comment) #comment_date.strftime('%y%m%d%H%M')
@@ -821,5 +823,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=2, proxy='' ,gDriveUpdate=True)
-    updateBlogPage(days=25)
+    # updateBlogData(nTask=2, proxy='' ,gDriveUpdate=True)
+    updateBlogPage(days=15)

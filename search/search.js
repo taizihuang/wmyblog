@@ -135,8 +135,10 @@ function search() {
             $post.html(post_str);
             $post_count.html("搜索到 " + post_count + " 篇文章");
             commentData.forEach(function(data) {
-                var comment = data.comment.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                var reply = data.reply.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                // var comment = data.comment.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                // var reply = data.reply.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                var comment = data.comment.trim().toLowerCase();
+                var reply = data.reply.trim().toLowerCase();
                 var comment_url = data.id;
                 var nickname = data.nickname;
                 var tag = data.tag; //.split('/').join('#');
@@ -164,17 +166,19 @@ function search() {
                 if (tag_list != [] || keywords[0]) {
                     if (isMatch) {
                         keywords.forEach(function(keyword) {
-                            var regS = new RegExp(keyword, "gi");
-                            comment = comment.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
-                            reply = reply.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
+                            if (keyword != ""){
+                                var regS = new RegExp(keyword, "gi");
+                                comment = comment.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
+                                reply = reply.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
+                            }
                         });
                         reply_str += "<div class='LI'><div class='USER'>";
                         reply_str += "<span class='NAME'>" + title + " | <a href='../html/" + comment_url + ".html#" + md5 + "' target='_blank'>" + nickname + "</a></span>";
                         // reply_str += `<span class='TAG'><label id=${md5} onclick=delayClick(this.id,'${coord}A0A0')> ${tag} </label></span>`
                         reply_str += "<div class='TIME'>" + date + "</div></div>";
                         reply_str += "<span class='tag'><input type='search' value=" + tag + " data-md5=" + md5 + " onkeydown='enter(event,$(this))'></span>"
-                        reply_str += "<div class='SAY'>" + comment + "</div>"
-                        reply_str += "<div class='REPLY'>" + reply + "</div>"
+                        reply_str += "<div class='SAY'>" + comment.replace('\n','<br><br>') + "</div>"
+                        reply_str += "<div class='REPLY'>" + reply.replace('\n','<br><br>') + "</div>"
                         comment_count += 1
                     }
                 }
