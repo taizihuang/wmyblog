@@ -16,23 +16,23 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      # - name: set up python
-      #   uses: actions/setup-python@v2
-      #   with:
-      #     python-version: '3.12.2'
+      - name: set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12.2'
       
-      #- uses: actions/cache@v2
-      #  with:
-      #    path: ~/.cache/pip
-      #    key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-      #    restore-keys: ${{ runner.os }}-pip-
+      - uses: actions/cache@v2
+       with:
+         path: ~/.cache/pip
+         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+         restore-keys: ${{ runner.os }}-pip-
           
-      # - name: install dependencies
-      #   run: pip install --upgrade -r requirements.txt
+      - name: install dependencies
+        run: pip install --upgrade -r requirements.txt
         
       - name: run script
         run: |
-          # git pull
+          git pull
           python wmyblog_coron.py
         
       - name: git push
