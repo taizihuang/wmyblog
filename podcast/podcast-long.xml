@@ -303,4 +303,13 @@
 			<description><![CDATA[中國知識界的幾個嚴重問題！]]></description>
 			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=240628.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
+
+        <item>
+			<title>2024/07/19 從歐美選舉展望未來國際局勢</title>
+			<pubDate>Fri, 19 July 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240719]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240719.html]]></link>
+			<description><![CDATA[從歐美選舉展望未來國際局勢]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=240719.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
