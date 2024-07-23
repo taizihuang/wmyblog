@@ -541,7 +541,7 @@ def genHTML(art_id,df_article,df_comment_tag):
             nickname = df_comment_id.nickname[j]
             comment_date = df_comment_id.comment_date[j].strftime('%Y-%m-%d %H:%M')
             uuid = df_comment_id.md5[j]
-            tag_list = df_comment_id.tag[j] #' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
+            tag_list = df_comment_id.tag[j].replace('。','/').replace('、','/') #' '.join([f'#{t}' for t in  df_comment_id.tag[j].split('/')])
             striked = '<strike>' in comment
             reply_li.append((uuid,comment,reply,nickname,comment_date,tag_list,striked))
             
@@ -772,7 +772,7 @@ def exportJSON(df_article,df_comment_tag, jsonFile):
         comment = df_comment_tag.comment[i]
         comment_date = df_comment_tag.comment_date[i]
         reply = df_comment_tag.reply[i]
-        tag = df_comment_tag.tag[i]
+        tag = df_comment_tag.tag[i].replace('。','/').replace('、','/')
         md5 = df_comment_tag.md5[i]
         if reply:
             comment_list.append({"id":id,"title":title,"nickname":nickname,"date":comment_date.strftime('%Y-%m-%d %H:%M:%S'),"comment":comment,"reply":reply,"tag":tag, "md5":md5})
