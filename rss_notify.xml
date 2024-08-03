@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>08-03 20:03 +0800</lastBuildDate>
+    <lastBuildDate>08-04 02:03 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -33,7 +33,7 @@
     
     
     <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十四]]></title>
-    <description><![CDATA[後註十四 <br><br>----<br><br>波音剛剛宣佈新CEO人選（參見&lt;a href="https://www.cnn.com/2024/07/31/investing/boeings-losses-new-ceo/"&gt;&lt;span style="color:blue"&gt;《Boeing names new CEO after losses more than triple》&lt;/span&gt;&lt;/a&gt;），代表著悔改並逆轉當年拆分Spirits AeroSystems的決定（參見【後註九】和【後註十】）之後，要進一步清洗公司高層，回歸工程師治理的正途，甚至有傳言新CEO已在考慮將總部遷回西雅圖。然而我們只要和Intel做比較，就可以簡單預測，這一切已經是Too little，too late：畢竟波音的文化腐朽始自1996年Philip Condit積極引進GE Jack Welch的財務至上哲學，至今已有28年，1997年并購麥道更是一次性將管理層全面換血，而Intel是2005年才落到Paul Otellin手中，開始了MBA治理模式，到2021年就知道反悔，換囘工程主管Patrick Gelsinger當CEO，被毒害過程只有16年。然而三年過去，Intel依舊積重難返，不但在性價比上競爭不過友商AMD，連基本的生產品質都無法保證，以致發生了13代/14代CPU因“製程缺陷”而集體故障報銷事件（參考&lt;a href="https://www.theverge.com/2024/7/26/24206529/intel-13th-14th-gen-crashing-instability-cpu-voltage-q-a"&gt;&lt;span style="color:blue"&gt;《There is no fix for Intel’s crashing 13th and 14th Gen CPUs — any damage is permanent》&lt;/span&gt;&lt;/a&gt;），波音的腐化遠遠更爲徹底，救贖自然也更加困難。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
+    <description><![CDATA[後註十四 <br><br>----<br><br>波音剛剛宣佈新CEO人選（參見&lt;a href="https://www.cnn.com/2024/07/31/investing/boeings-losses-new-ceo/"&gt;&lt;span style="color:blue"&gt;《Boeing names new CEO after losses more than triple》&lt;/span&gt;&lt;/a&gt;），代表著悔改並逆轉當年拆分Spirits AeroSystems的決定（參見【後註九】和【後註十】）之後，要進一步清洗公司高層，回歸工程師治理的正途，甚至有傳言新CEO已在考慮將總部遷回西雅圖。然而我們只要和Intel做比較，就可以簡單預測，這一切已經是Too little，too late：畢竟波音的文化腐朽始自1996年Philip Condit積極引進GE Jack Welch的財務至上哲學，至今已有28年，1997年并購麥道更是一次性將管理層全面換血，而Intel是2005年才落到Paul Otellin手中，開始推進MBA治理模式，到2021年就知道反悔，換囘工程主管Patrick Gelsinger當CEO，被毒害過程只有16年。然而三年過去，Intel依舊積重難返，不但在性價比上競爭不過友商AMD，連基本的生產品質都無法保證，以致發生了13代/14代CPU因“製程缺陷”而集體故障報銷事件（參見&lt;a href="https://www.theverge.com/2024/7/26/24206529/intel-13th-14th-gen-crashing-instability-cpu-voltage-q-a"&gt;&lt;span style="color:blue"&gt;《There is no fix for Intel’s crashing 13th and 14th Gen CPUs — any damage is permanent》&lt;/span&gt;&lt;/a&gt;；這條分析&lt;a href="https://www.youtube.com/watch?v=b6vQlvefGxk"&gt;&lt;span style="color:blue"&gt;《Scumbag Intel: Shady Practices, Terrible Responses, &amp;amp; Failure to Act》&lt;/span&gt;&lt;/a&gt;則總結了Intel在過去兩年推諉卸責的過程，與波音在737Max事件的表現如出一轍，差別只在於其產品出問題並不直接要人命），波音的腐化遠遠更爲徹底，救贖自然也更加困難。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-08-02 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a67f89f4ec8e733224c8aed7f1e1b89c</guid>
@@ -168,16 +168,6 @@
     <pubDate>2024-07-06 02:59:00 +0800</pubDate>
     <guid isPermaLink="false">ea9b785b88a12f831843f747e89a82f8</guid>
     <link>https://taizihuang.github.io/wmyblog/html/155306037.html#ea9b785b88a12f831843f747e89a82f8</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【邏輯】常見的狡辯術 | MAXWELL]]></title>
-    <description><![CDATA[&lt;strike&gt;无题<br><br>关于诉诸权威这种事情，我想吐槽一下：之前莫言被人举报，有人指责莫言是“汉奸”，首先声明他的作品我都没看过，所以我不讨论具体作品的好坏，大伙批评他我也没有任何意见，我只对诉诸权威这件事讨论。这里我引用17大政治局常委李长春在莫言获得《诺贝尔文学奖》的时候的贺信（https://www.gov.cn/ldhd/2012-10/12/content_2242168.htm）：随着我国改革开放和现代化建设的迅猛发展，中国文学迸发出巨大的创造活力，广大中国作家植根于人民生活和民族传统的深厚土壤，创作出一大批具有中国特色、中国风格、中国气派的优秀作品。莫言就是其中的杰出代表。莫言获得诺贝尔文学奖，既是中国文学繁荣进步的体现，也是我国综合国力和国际影响力不断提升的体现。他希望广大作家坚持以人民为中心的创作导向，贴近实际、贴近生活、贴近群众，创作出更多无愧于历史、无愧于时代、无愧于人民的优秀作品，为中华文化繁荣发展，为人类文明进步作出新的更大贡献。还有15年国家二把手总理李克强出访拉美（https://china.huanqiu.com/article/9CaKrnJLlH9），随行的就有莫言。我的意思即使诉诸权威也不能双标：自己的观点需要官方的认可背书的时候官方的认可就无比重要，你说有问题，官方怎么不处理，而且官方不仅不处理还都认可了你们怎么还唧唧歪歪，难道上面还没有你们聪明吗？那如果官方认可的对象与自己的立场相悖，官方的认可莫非就不作数了？比如某些人说莫言的小说抹黑了我党跟先烈，莫言的小说多半写于2012年之前，这小说的内容可是明明白白的，你都能看得出来，难道上面看不出来？那莫言为什么还仍然能得到上述待遇，照样当了第九跟第十届中国作协副主席（16年到现在），上面不也没有处理。所以我认为与其纠结莫言，还不如把重点放在防治老胡煽风点火上。<br><br> <br><br>&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-07-04 21:36:00 +0800</pubDate>
-    <guid isPermaLink="false">6a19bbdcf8b919e5198b07c08cb8c594</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131023197.html#6a19bbdcf8b919e5198b07c08cb8c594</link>
     </item>
     </channel></rss>
     
