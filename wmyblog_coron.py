@@ -825,4 +825,4 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
 
 if __name__ == "__main__":
     updateBlogData(nTask=2, proxy='' ,gDriveUpdate=True)
-    updateBlogPage(days=30)
+    updateBlogPage(days=50)
