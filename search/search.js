@@ -173,7 +173,7 @@ function search() {
                             }
                         });
                         reply_str += "<div class='LI'><div class='USER'>";
-                        reply_str += "<span class='NAME'>" + title + " | <a href='../html/" + comment_url + ".html#" + md5 + "' target='_blank'>" + nickname + "</a></span>";
+                        reply_str += "<span class='NAME'>" + comment_count + "." + title + " | <a href='../html/" + comment_url + ".html#" + md5 + "' target='_blank'>" + nickname + "</a></span>";
                         // reply_str += `<span class='TAG'><label id=${md5} onclick=delayClick(this.id,'${coord}A0A0')> ${tag} </label></span>`
                         reply_str += "<div class='TIME'>" + date + "</div></div>";
                         reply_str += "<span class='tag'><input type='search' value=" + tag + " data-md5=" + md5 + " onkeydown='enter(event,$(this))'></span>"
