@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-12 20:03 +0800</lastBuildDate>
+    <lastBuildDate>10-13 02:03 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十七]]></title>
+    <description><![CDATA[後註十七 <br><br>----<br><br>一個半月前，我在【後註十五】根據波音777X有關鍵部件出現嚴重缺失，預測777X的交機很可能被迫大幅延後，並從而對波音的財務雪上加霜。昨天消息傳來（典型的報導參見這篇《Financial Times》的文章<a href="https://www.ft.com/content/0807d7e6-27e6-4561-8df2-424f201c2774"><span style="color:blue">《Boeing to cut 17,000 jobs and delay 777X jet as revenues fall short》</span></a>；我看到唯一做出正確分析的，是《Barron’s》的這篇<a href="https://www.barrons.com/articles/boeing-strike-layoff-stock-3811f894"><span style="color:blue">《Boeing Is Laying Off 17,000 Workers. It Isn’t About the Strike.》</span></a>），果然777X的預期交機時間從明年春延到後年秋冬，而且波音將裁員10%。許多媒體人將這兩個決定歸罪於罷工，這是顛倒邏輯因果的聯想式感性思維：罷工才剛開始，一般預期時長數周頂多數月，波音怎麽會急著將原本即將交付的極重要新機型一次性延後一年多？這明顯是反過來利用罷工為口實，來遮掩777X技術問題的嚴重性。至於裁員，照理也應該是罷工的因，而不是反過來作爲罷工的果，否則管理層豈不是故意火上加油？所以實際上是波音新CEO上任，須要做出這些決定，就順便甩鍋給工會來遮掩真實邏輯脈絡中所包含的重大失誤，而這些失誤的邏輯後果如博客所示範、是可以提早數周事先預見的；不做獨立邏輯思考、純粹復讀利益集團的公關謊言，正是當代大衆媒體的悲哀，對國家和人類的前途有著深遠的惡劣影響。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-13 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
+    </item>
     <item>
     
     
@@ -62,22 +72,22 @@
     <item>
     
     
+    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
+    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p><br><br><p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"><span style="color:blue">《Boeing 737-8 Rudder System Anomaly》</span></a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"><span style="color:blue">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</span></a>，我在此只列舉與事故直接相關的幾件已知事實：</p><br><br><p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p><br><br><p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p><br><br><p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p><br><br><p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十七]]></title>
     <description><![CDATA[後註十七 <br><br>----<br><br>美國法務部、SEC和CFTC於本周聯合執法，以詐騙罪逮捕起訴碳交易/碳市場/碳信用（Carbon trading/carbon market/carbon credit，分別對應著交易的概念、平臺和單位）的大咖CQC Impact Investors（參見<a href="https://www.justice.gov/usao-sdny/pr/us-attorney-announces-criminal-charges-multi-year-fraud-scheme-market-carbon-credits"><span style="color:blue">《U.S. Attorney Announces Criminal Charges In Multi-Year Fraud Scheme In The Market For Carbon Credits》</span></a>）。明明整個行業就是純粹詐騙，卻因爲白左思潮和金融利益，即便是有心爲國的官員也無法禁止，只能揚湯止沸地法辦個別罪犯，不過至少勝過中國從上到下的一致被忽悠；考慮這些國際金融詐騙的收益大半會流入美元體系，中方跟風搞碳交易更加是愚不可及。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-10-06 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
-    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p><br><br><p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"><span style="color:blue">《Boeing 737-8 Rudder System Anomaly》</span></a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"><span style="color:blue">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</span></a>，我在此只列舉與事故直接相關的幾件已知事實：</p><br><br><p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p><br><br><p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p><br><br><p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p><br><br><p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
     </item>
     <item>
     
@@ -182,22 +192,22 @@
     <item>
     
     
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 後註八]]></title>
-    <description><![CDATA[後註八 <br><br>----<br><br>前面【後註六】所討論的美國新建廠房狂潮，幾乎全部來自東亞和歐洲的產能轉移，其中最大宗是半導體，包括臺積電和三星的新厰Fab；而三星又比臺積電更激進，計劃直接在美國上馬最先進的2納米生產綫，總投資高達250億美元，是這一波美國產能回歸的最大、最尖端項目，沒有之一。然而根據《Business Korea》報導（參見<a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=225024#:~:text=Samsung%20Electronics%20has%20decided%20to%20withdraw%20personnel%20from,been%20pushed%20back%20from%20late%202024%20to%202026."><span style="color:blue">《Samsung Electronics Withdraws Personnel from Taylor Plant Amid 2nm Yield Issues》</span></a>），因某種未被解釋的原因，三星在美的新廠良率始終遠低於20%，遠遠落後韓國本土，經過多次試圖改正未果，已經不得不放棄治療、選擇止損，將部分相關技術人員撤回韓國，顯然這個生產綫只能等本土先搞定尖端技術再做轉移；這反映了現代美國社會環境和人力資源不足以支持高科技工業的窘境。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-13 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">d79f9fd087a835af7a9dffd07f9d299f</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#d79f9fd087a835af7a9dffd07f9d299f</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註七]]></title>
     <description><![CDATA[後註七 <br><br>----<br><br>博客雖然反復强調過果糖攝取過量是當前世界公共健康的嚴重問題，但我似乎一直忘了提起，飲料形式的果糖/蔗糖比糕餅甜點更糟糕得多，這是因爲人類胃/腦之間的飽腹感環路對液態卡路里完全無感（從生物學角度來看，並不奇怪，畢竟在絕大部分演化歷史中，人類不但沒有糖吃，能找到的飲料也只有零卡路里的白水，也就沒有必要演化出偵測果糖/蔗糖溶液的能力），以致越喝飲料反而額外吃得更多（可能是因爲部分原本固態的糖在嘴巴或胃裏溶入飲料中，於是從飽腹感偵測環路中隱形消失），所以營養學界的共識是加糖冷飲可以算是現代飲食中的頭號危害，參見<a href="https://www.webmd.com/diet/news/20240605/why-sugary-drinks-may-be-the-unhealthiest-food-out-there"><span style="color:blue">《Why Sugary Drinks May Be the Unhealthiest Food Out There》</span></a>。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-13 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">152b95fedfe986cade7abbcc7ca96ea3</guid>
     <link>https://taizihuang.github.io/wmyblog/html/131394982.html#152b95fedfe986cade7abbcc7ca96ea3</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 後註八]]></title>
+    <description><![CDATA[後註八 <br><br>----<br><br>前面【後註六】所討論的美國新建廠房狂潮，幾乎全部來自東亞和歐洲的產能轉移，其中最大宗是半導體，包括臺積電和三星的新厰Fab；而三星又比臺積電更激進，計劃直接在美國上馬最先進的2納米生產綫，總投資高達250億美元，是這一波美國產能回歸的最大、最尖端項目，沒有之一。然而根據《Business Korea》報導（參見<a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=225024#:~:text=Samsung%20Electronics%20has%20decided%20to%20withdraw%20personnel%20from,been%20pushed%20back%20from%20late%202024%20to%202026."><span style="color:blue">《Samsung Electronics Withdraws Personnel from Taylor Plant Amid 2nm Yield Issues》</span></a>），因某種未被解釋的原因，三星在美的新廠良率始終遠低於20%，遠遠落後韓國本土，經過多次試圖改正未果，已經不得不放棄治療、選擇止損，將部分相關技術人員撤回韓國，顯然這個生產綫只能等本土先搞定尖端技術再做轉移；這反映了現代美國社會環境和人力資源不足以支持高科技工業的窘境。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-13 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">d79f9fd087a835af7a9dffd07f9d299f</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#d79f9fd087a835af7a9dffd07f9d299f</link>
     </item>
     <item>
     
@@ -222,22 +232,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】再談美國的腐化 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>自2008年金融危機導致2010年訂立Dodd-Frank金融改革法案之後，美國政界一直有呼聲想要進一步提高銀行業的資金準備率（這個倡議有一個很好萊塢的名字：“Basel III Endgame”）。經過14年的折衝，昨天消息傳來，大銀行終於成功地將新法規閹割至徒有其表的程度，參見<a href="https://www.bloomberg.com/news/articles/2024-09-09/biggest-us-banks-capital-hike-chopped-in-half-in-latest-plan-by-regulators"><span style="color:blue">《Biggest US Banks’ Capital Hike Chopped in Half in Latest Plan by Regulators》</span></a>。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/120933727.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【醫療】當前世界的公共衛生危機 | 後註二]]></title>
     <description><![CDATA[後註二 <br><br>----<br><br>過去幾十年，全世界的女孩都在不斷提早進入青春期（Early Puberty），科學家懷疑這是一些常用化工原料干擾荷爾蒙（Endocrine-disrupting compounds）的結果。這一篇新論文（參見<a href="https://academic.oup.com/endo/article/165/10/bqae103/7749689"><span style="color:blue">《Identification of Environmental Compounds That May Trigger Early Female Puberty by Activating Human GnRHR and KISS1R》</span></a>），證實了這個懷疑，並將箭頭指向洗髮精香料Musk Ambrette和一類叫做cholinergic agonist的藥物等等。</p><br><br><br><br><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-11 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908771.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】再談美國的腐化 | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>自2008年金融危機導致2010年訂立Dodd-Frank金融改革法案之後，美國政界一直有呼聲想要進一步提高銀行業的資金準備率（這個倡議有一個很好萊塢的名字：“Basel III Endgame”）。經過14年的折衝，昨天消息傳來，大銀行終於成功地將新法規閹割至徒有其表的程度，參見<a href="https://www.bloomberg.com/news/articles/2024-09-09/biggest-us-banks-capital-hike-chopped-in-half-in-latest-plan-by-regulators"><span style="color:blue">《Biggest US Banks’ Capital Hike Chopped in Half in Latest Plan by Regulators》</span></a>。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-11 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/120933727.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -352,22 +362,22 @@
     <item>
     
     
-    <title><![CDATA[【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>當代中國政府在與美鬥爭多年之後，對美國資本炒作引發的假未來科技依舊照單全收，全無審查過濾，在若干項目（如量子通信和量子計算）上甚至超英趕美、真正做到全球領先的浪費和腐敗，所以即便是氫動力車輛這種可以簡單算出經濟實用價值為負值的White elephant白象，也有許多地方政府舉債投資，其中包括廣東佛山。上周消息傳來，佛山所建的“世界第一”氫動力電車路綫在行駛四年之後，因不堪虧損而停駛，其中光建設費用就不止8億（參見<a href="https://news.mingpao.com/pns/%e4%b8%ad%e5%9c%8b/article/20240831/s00013/1725043232005/%e4%bd%9b%e5%b1%b1%e6%b0%ab%e8%83%bd%e6%9c%89%e8%bb%8c%e9%9b%bb%e8%bb%8a%e3%80%8c%e7%a4%ba%e7%af%84%e7%b7%9a%e3%80%8d%e5%81%9c%e9%81%8b-%e6%8a%95%e8%b3%87%e9%80%be8%e5%84%84-%e5%9b%9e%e6%9c%ac%e9%9c%801523%e5%b9%b4"><span style="color:blue">《佛山氫能有軌電車「示範線」停運 投資逾8億 回本需1523年》</span></a>），考慮氫能源的循環效率和設備壽命都處於超低級別，運行虧損可能更高。然而博客已經反復論證過，這裏的過失不在於地方行政單位，因爲審查科技專業項目可行性既非他們能力可及、也非職責所在，真正的罪魁禍首，是為腐朽的科研界、教育界提供保護傘的管理單位，亦即科技部和教育部。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-08 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/178109282.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 後註三十]]></title>
     <description><![CDATA[後註三十 <br><br>----<br><br>美國司法部起訴Dimitri Simes，至少還用了長臂管轄這個遮羞布，但另外一宗案件針對加拿大自媒體公司Tenet Media與其主持人Lauren Chen，罪名直接是傳播來自俄國的謠言（參見<a href="https://nationalpost.com/news/canadian-influencers-accused-of-russian-propaganda"><span style="color:blue">《What we know about the two Canadian influencers accused of Russian propaganda》</span></a>；實際上，Lauren Chen根本就不是國際政治評論員，她主要談電影和文化，這次犯忌諱的是幾次支持Trump的發言；DOJ當年搞的Russiagate已經被國會聽證證明是無中生有的栽贓，卻還用同一個藉口繼續騷擾支持政敵的小老百姓，真是打破所有下限的無恥之尤），這就只剩赤裸裸的文字獄了；依這個標準，大陸有無數的媒體人和學術人都應該進牢房。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-08 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">60d5365bbf58adfe7a09906e0932dbb8</guid>
     <link>https://taizihuang.github.io/wmyblog/html/162032391.html#60d5365bbf58adfe7a09906e0932dbb8</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>當代中國政府在與美鬥爭多年之後，對美國資本炒作引發的假未來科技依舊照單全收，全無審查過濾，在若干項目（如量子通信和量子計算）上甚至超英趕美、真正做到全球領先的浪費和腐敗，所以即便是氫動力車輛這種可以簡單算出經濟實用價值為負值的White elephant白象，也有許多地方政府舉債投資，其中包括廣東佛山。上周消息傳來，佛山所建的“世界第一”氫動力電車路綫在行駛四年之後，因不堪虧損而停駛，其中光建設費用就不止8億（參見<a href="https://news.mingpao.com/pns/%e4%b8%ad%e5%9c%8b/article/20240831/s00013/1725043232005/%e4%bd%9b%e5%b1%b1%e6%b0%ab%e8%83%bd%e6%9c%89%e8%bb%8c%e9%9b%bb%e8%bb%8a%e3%80%8c%e7%a4%ba%e7%af%84%e7%b7%9a%e3%80%8d%e5%81%9c%e9%81%8b-%e6%8a%95%e8%b3%87%e9%80%be8%e5%84%84-%e5%9b%9e%e6%9c%ac%e9%9c%801523%e5%b9%b4"><span style="color:blue">《佛山氫能有軌電車「示範線」停運 投資逾8億 回本需1523年》</span></a>），考慮氫能源的循環效率和設備壽命都處於超低級別，運行虧損可能更高。然而博客已經反復論證過，這裏的過失不在於地方行政單位，因爲審查科技專業項目可行性既非他們能力可及、也非職責所在，真正的罪魁禍首，是為腐朽的科研界、教育界提供保護傘的管理單位，亦即科技部和教育部。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-08 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/178109282.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -392,16 +402,6 @@
     <item>
     
     
-    <title><![CDATA[【基礎科研】人類的起源 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>這一篇新論文（參見<a href="https://www.science.org/doi/full/10.1126/sciadv.ado2733"><span style="color:blue">《The uniqueness of human vulnerability to brain aging in great ape evolution》</span></a>）揭發了人腦老年失智的一個重要特徵，亦即最容易衰退的腦部功能，恰恰是700萬年前人類與黑猩猩分道揚鑣之後，新演化出來的那部分，包括語言和高等邏輯等等。這很可能是這些功能演化過程太短，不足以完善其機制的結果，人類膝蓋的結構設計也曾經引發過類似的抱怨。</p><br><br><br><br><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-07 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908753.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 後註二十九]]></title>
     <description><![CDATA[後註二十九 <br><br>----<br><br>美國司法部於昨日正式起訴俄裔美籍公民Dimitri Simes和Anastasia Simes夫婦，罪行是為俄國電視臺Channel 1 News主持新聞節目，而俄國國有媒體都在美方制裁之列（參見<a href="https://www.reuters.com/legal/us-charges-russian-tv-contributor-dimitri-simes-with-sanctions-violations-2024-09-05/"><span style="color:blue">《US charges Russian TV contributor Dimitri Simes with sanctions violations》</span></a>）。這不但再一次揭示了昂撒“新聞自由”的真相，也又一次證實了美方單邊宣佈制裁外國公司之後就可以任意逮捕所有員工，參考《美國陷阱》和孟晚舟的經驗。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
@@ -418,6 +418,16 @@
     <pubDate>2024-09-07 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908771.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】人類的起源 | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>這一篇新論文（參見<a href="https://www.science.org/doi/full/10.1126/sciadv.ado2733"><span style="color:blue">《The uniqueness of human vulnerability to brain aging in great ape evolution》</span></a>）揭發了人腦老年失智的一個重要特徵，亦即最容易衰退的腦部功能，恰恰是700萬年前人類與黑猩猩分道揚鑣之後，新演化出來的那部分，包括語言和高等邏輯等等。這很可能是這些功能演化過程太短，不足以完善其機制的結果，人類膝蓋的結構設計也曾經引發過類似的抱怨。</p><br><br><br><br><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-07 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908753.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -472,22 +482,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】美國式的恐龍法官（二） | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>最近美國最高法院又作出一個很重要、很基本的新判決（參見<a href="https://www.whitecase.com/insight-alert/us-supreme-court-strikes-down-chevron-doctrine-what-you-need-know"><span style="color:blue">《U.S. Supreme Court Strikes Down Chevron Doctrine—What You Need to Know》</span></a>），亦即推翻了1984年確立的“Chevron Doctrine”（又稱“Chevron Deference”），但大衆媒體沒有太多報導，值得博客在此提醒大家注意。</p><br><br><p>所謂的“Chevron Doctrine”，簡單來説，就是當法律條文模糊有疑義的時候，應該以監管單位的行政條令爲準；新判決則將一切改由訴訟解決。這顯然是進一步削減監管單位的職權，方便大企業花錢雇傭律師/檢察官/法官來壓死對手；讀者可以與博客對Biden政權下三個盡責中級閣員（分別主管SEC、FTC和CFPB）的討論做參照，並自行估算兩者之間的可能因果關聯。</p><br><br><br><br><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-08-31 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908755.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十六]]></title>
     <description><![CDATA[後註十六 <br><br>----<br><br>本月13日，美國國家標準技術研究所NIST正式采納三種新的後量子密碼作爲國家標準（參見<a href="https://csrc.nist.gov/projects/post-quantum-cryptography"><span style="color:blue">《Post-Quantum Cryptography》</span></a>），非常廉價而簡單地一次性解除了量子計算的解破碼威脅以及量子通信硬件加密的必要性。博客早已解釋過，原本山東大學數學系在後量子密碼標準的研究和制定上領先美國1-2年，但因爲科技部決定為中科大和潘建偉在股市割韭菜護航，而被擱置至今。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-08-31 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171633910.html#61d9bbc1df2db965b1389451450afd1a</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】美國式的恐龍法官（二） | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>最近美國最高法院又作出一個很重要、很基本的新判決（參見<a href="https://www.whitecase.com/insight-alert/us-supreme-court-strikes-down-chevron-doctrine-what-you-need-know"><span style="color:blue">《U.S. Supreme Court Strikes Down Chevron Doctrine—What You Need to Know》</span></a>），亦即推翻了1984年確立的“Chevron Doctrine”（又稱“Chevron Deference”），但大衆媒體沒有太多報導，值得博客在此提醒大家注意。</p><br><br><p>所謂的“Chevron Doctrine”，簡單來説，就是當法律條文模糊有疑義的時候，應該以監管單位的行政條令爲準；新判決則將一切改由訴訟解決。這顯然是進一步削減監管單位的職權，方便大企業花錢雇傭律師/檢察官/法官來壓死對手；讀者可以與博客對Biden政權下三個盡責中級閣員（分別主管SEC、FTC和CFPB）的討論做參照，並自行估算兩者之間的可能因果關聯。</p><br><br><br><br><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-08-31 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908755.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
