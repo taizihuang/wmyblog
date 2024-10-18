@@ -7,27 +7,17 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-18 20:42 +0800</lastBuildDate>
+    <lastBuildDate>10-19 02:03 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
-    <title><![CDATA[【美國】富豪口袋裡的國家 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>早在2005年，颶風Katrina登陸New Orleans留下滿地瘡痍，就有不少人質疑美國的政府治理和底層社會完全不像先進國家，甚至比不上部分第三世界。其後類似案例越來越多、越來越明顯、越來越全面，這裏是又一條少有人知的佐證（參見<a href="https://www.economist.com/finance-and-economics/2024/08/29/the-plasma-trade-is-becoming-ever-more-hypocritical"><span style="color:blue">《The plasma trade is becoming ever-more hypocritical》</span></a>）：美國每年出口370億美元的血漿產品，對應著出口總額的1.8%，從而占有全世界血漿市場的70%，原因是美國法律不限制企業買血，而賣血一次40美元的價格對衆多低收入民衆有著極大的吸引力。”血汗工廠“用來譏笑中國是誇大其詞，畢竟實際是汗、極少有血，用在美國才是名副其實。</p><br><br><br><br><br><br></span>]]></description>
+    <title><![CDATA[【工業】開發太陽系的經濟效益 | LoveClem]]></title>
+    <description><![CDATA[这里是不是计算错误了，“10%光速的中子/質子/氫原子能量大約1 GeV，也就是1000 MeV”，10%光速的氢原子的动能也就5个MeV左右吧,大概位于裂变反应堆中子和聚变反应堆中子能量之间，而且银河系的星际物质平均密度大概为10^(-21)kg/m^3（《物理学前言问题》，王顺金著）,所以（如果按照新的计算值来算）即使一口气走上几光年甚至更远但是总的辐射量还没有大到可怕的程度。<br><br>还有激光帆看来确实不行的话，类似猎户座计划（核弹推动恒星飞船）之类的方案其难点又在哪里呢，再次请教下博士。<br><br> <br><br>----<br><br>唉，年紀大了，一秒心算不再可靠，年輕真好。<br><br>10%光速的質子動能的確是5 MeV，謝謝更正。不過論證有多個數量級兜底，退讓兩個數量級，完全不影響結論。<br><br>既然你有能力理解這些計算，我也就真正花點時間來示範一遍：銀河系星際空間的原子密度大約在每立方米10^9至10^12之間，取中間值10^10.5；從太陽系到最近的恆星4光年多一點，相當於10^13米，所以每平方米的飛船截面必須承受10^23.5個原子的打擊，總能量大約為10^21 GeV，差不多是10噸TNT的當量。星際飛船的截面約當100平方米，那麽整體轟擊相當於千噸級核彈，而且是在飛船殼内爆炸（考慮高速粒子的穿透性）。我保證你連渣都不剩。<br><br>你談核彈動力是因爲看過Larry Niven的《Footfall》嗎？他不算是正牌科幻。這裏的問題也是材料。<br><div class="TIME">2024-10-19 02:02 回复</div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-18 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908682.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十七]]></title>
-    <description><![CDATA[後註十七 <br><br>----<br><br>今天Sabine Hossenfelder的博文標題是<a href="https://www.youtube.com/watch?v=ONDs6zaSRTc"><span style="color:blue">《The Quantum Computing Collapse Has Begun》</span></a>《量子計算的崩盤已經開始》。浮面來看，這相當驚人，因爲以往Sabine並不曾像我這樣直指量子計算的詐騙本質，而是保持著觀察等待（wait and see）的謹慎存疑態度。仔細檢視她的論證，就會發現其最重要的事實根據，在於歐美炒作量子計算最積極的兩大技術財團Google和IBM，不約而同地悄悄修改公關稿裏的進度預期，以致真正實用化的ETA預計抵達時間從原本的本年變成明年、後年、五年後、十年後、到現在已經是含糊其辭、根本不提了。不過Sabine顯然不夠瞭解中國的假未來科技詐騙集團，這些所謂的學術人撒起謊來比美國資本還要無所忌憚、厚顔無恥，根本連後者的低調沉默都做不到。換句話説，既然量子計算無以爲繼，中科大和潘建偉一方面嚴密封鎖真相、加强散佈謊言，另一方面則開始積極炒作新的詐騙項目、準備跳船，畢竟上次從量子通信跳到量子計算大獲成功，至今連爛尾的事實都被顛倒黑白、徹底遮掩，所以潘建偉若是擔心在量子互聯網的占位搶不過企業資本，完全可以直接回頭炒冷飯、重做量子通信，這也就是他在本月初再度高調吹噓量子通信衛星的背後邏輯，而且似乎已經得到科技部的又一次全力支持（參見<a href="https://www.laitimes.com/article/792gu_7pepc.html"><span style="color:blue">《潘建偉：明年計劃發射2-3顆低軌衛星，10年内建成量子星座》</span></a>）。美國有句俗話：”Fool Me Once, Shame on You; Fool Me Twice, Shame on Me.“”騙我一次是你的錯，騙我兩次是我的錯“，那騙國家和股民三次呢？可能是每個人的錯，但科技部的責任絕對最大。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-18 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
+    <pubDate>2024-10-19 01:13:00 +0800</pubDate>
+    <guid isPermaLink="false">f04c19acc2c072a896718b34c8a7a48f</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/119107102.html#f04c19acc2c072a896718b34c8a7a48f</link>
     </item>
     <item>
     
@@ -38,6 +28,26 @@
     <pubDate>2024-10-18 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908770.html#ff0aadca7428f141533f285aeec65f40</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十七]]></title>
+    <description><![CDATA[後註十七 <br><br>----<br><br>今天Sabine Hossenfelder的博文標題是<a href="https://www.youtube.com/watch?v=ONDs6zaSRTc"><span style="color:blue">《The Quantum Computing Collapse Has Begun》</span></a>《量子計算的崩盤已經開始》。浮面來看，這相當驚人，因爲以往Sabine並不曾像我這樣直指量子計算的詐騙本質，而是保持著觀察等待（wait and see）的謹慎存疑態度。仔細檢視她的論證，就會發現其最重要的事實根據，在於歐美炒作量子計算最積極的兩大技術財團Google和IBM，不約而同地悄悄修改公關稿裏的進度預期，以致真正實用化的ETA預計抵達時間從原本的本年變成明年、後年、五年後、十年後、到現在已經是含糊其辭、根本不提了。不過Sabine顯然不夠瞭解中國的假未來科技詐騙集團，這些所謂的學術人撒起謊來比美國資本還要無所忌憚、厚顔無恥，根本連後者的低調沉默都做不到。換句話説，既然量子計算無以爲繼，中科大和潘建偉一方面嚴密封鎖真相、加强散佈謊言，另一方面則開始積極炒作新的詐騙項目、準備跳船，畢竟上次從量子通信跳到量子計算大獲成功，至今連爛尾的事實都被顛倒黑白、徹底遮掩，所以潘建偉若是擔心在量子互聯網的占位搶不過企業資本，完全可以直接回頭炒冷飯、重做量子通信，這也就是他在本月初再度高調吹噓量子通信衛星的背後邏輯，而且似乎已經得到科技部的又一次全力支持（參見<a href="https://www.laitimes.com/article/792gu_7pepc.html"><span style="color:blue">《潘建偉：明年計劃發射2-3顆低軌衛星，10年内建成量子星座》</span></a>）。美國有句俗話：”Fool Me Once, Shame on You; Fool Me Twice, Shame on Me.“”騙我一次是你的錯，騙我兩次是我的錯“，那騙國家和股民三次呢？可能每個知識份子都有責任，因爲我們在與虛僞和愚昧的鬥爭中落敗了，但職責所在的科技部絕對是罪魁禍首。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-18 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】富豪口袋裡的國家 | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>早在2005年，颶風Katrina登陸New Orleans留下滿地瘡痍，就有不少人質疑美國的政府治理和底層社會完全不像先進國家，甚至比不上部分第三世界。其後類似案例越來越多、越來越明顯、越來越全面，這裏是又一條少有人知的佐證（參見<a href="https://www.economist.com/finance-and-economics/2024/08/29/the-plasma-trade-is-becoming-ever-more-hypocritical"><span style="color:blue">《The plasma trade is becoming ever-more hypocritical》</span></a>）：美國每年出口370億美元的血漿產品，對應著出口總額的1.8%，從而占有全世界血漿市場的70%，原因是美國法律不限制企業買血，而賣血一次40美元的價格對衆多低收入民衆有著極大的吸引力。”血汗工廠“用來譏笑中國是誇大其詞，畢竟實際是汗、極少有血，用在美國才是名副其實。</p><br><br><br><br><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-18 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908682.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -132,22 +142,22 @@
     <item>
     
     
-    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註四十二]]></title>
-    <description><![CDATA[後註四十二 <br><br>----<br><br>我反復强調過歐美援烏的所謂先進武器，其實都不足以與俄軍拉出代差，剛上場時出其不意或許還能有短暫的功效，幾個月下來必然會被反制，其所謂“神奇”基本全靠吹。這其中被吹捧得最高的，莫過於HIMARS，現在美方自己承認（原文在付費墻後面<a href="https://www.theatlantic.com/ideas/archive/2024/09/ukraine-losing-war/680078/"><span style="color:blue">《The Abandonment of Ukraine》</span></a>，所以在此節錄相關段落）“A year ago, HIMARS was the most in-demand system on the battlefield. Now it has a success rate of less than 10 percent because of Russian innovation in electronic warfare.”也就是HIMARS的命中率已經低於10%，考慮到中方的電子戰能力更遠在俄軍之上，這個數據特別值得還在幻想以武拒統的綠營參考。</p>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-08 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">86f7300dff3bdb66af2fd7c0603db915</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#86f7300dff3bdb66af2fd7c0603db915</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 後註四十二]]></title>
     <description><![CDATA[後註四十二 <br><br>----<br><br>德國剛剛公佈了八月的工業產值數據，環比在慘淡的七月（負3.2%）之後居然又掉了5.8%，遠超市場預期的2%（參見<a href="https://www.reuters.com/markets/europe/german-industrial-orders-slump-more-than-expected-august-2024-10-07/"><span style="color:blue">《German industrial orders slump more than expected in August》</span></a>）。過去三年來我不斷針對歐盟和尤其德國的貨幣、金融、政略和工業政策做出極爲嚴厲的批評，稱之爲新任歐洲作死冠軍，曾有人質疑布衣也敢藐視國家級和洲級領導；現在看來還算太客氣了，應該叫做本世紀的全球冠軍才對。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-10-08 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">86f7300dff3bdb66af2fd7c0603db915</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171980706.html#86f7300dff3bdb66af2fd7c0603db915</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註四十二]]></title>
+    <description><![CDATA[後註四十二 <br><br>----<br><br>我反復强調過歐美援烏的所謂先進武器，其實都不足以與俄軍拉出代差，剛上場時出其不意或許還能有短暫的功效，幾個月下來必然會被反制，其所謂“神奇”基本全靠吹。這其中被吹捧得最高的，莫過於HIMARS，現在美方自己承認（原文在付費墻後面<a href="https://www.theatlantic.com/ideas/archive/2024/09/ukraine-losing-war/680078/"><span style="color:blue">《The Abandonment of Ukraine》</span></a>，所以在此節錄相關段落）“A year ago, HIMARS was the most in-demand system on the battlefield. Now it has a success rate of less than 10 percent because of Russian innovation in electronic warfare.”也就是HIMARS的命中率已經低於10%，考慮到中方的電子戰能力更遠在俄軍之上，這個數據特別值得還在幻想以武拒統的綠營參考。</p>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-08 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">86f7300dff3bdb66af2fd7c0603db915</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#86f7300dff3bdb66af2fd7c0603db915</link>
     </item>
     <item>
     
@@ -162,22 +172,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
-    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p><br><br><p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"><span style="color:blue">《Boeing 737-8 Rudder System Anomaly》</span></a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"><span style="color:blue">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</span></a>，我在此只列舉與事故直接相關的幾件已知事實：</p><br><br><p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p><br><br><p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p><br><br><p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p><br><br><p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十七]]></title>
     <description><![CDATA[後註十七 <br><br>----<br><br>美國法務部、SEC和CFTC於本周聯合執法，以詐騙罪逮捕起訴碳交易/碳市場/碳信用（Carbon trading/carbon market/carbon credit，分別對應著交易的概念、平臺和單位）的大咖CQC Impact Investors（參見<a href="https://www.justice.gov/usao-sdny/pr/us-attorney-announces-criminal-charges-multi-year-fraud-scheme-market-carbon-credits"><span style="color:blue">《U.S. Attorney Announces Criminal Charges In Multi-Year Fraud Scheme In The Market For Carbon Credits》</span></a>）。明明整個行業就是純粹詐騙，卻因爲白左思潮和金融利益，即便是有心爲國的官員也無法禁止，只能揚湯止沸地法辦個別罪犯，不過至少勝過中國從上到下的一致被忽悠；考慮這些國際金融詐騙的收益大半會流入美元體系，中方跟風搞碳交易更加是愚不可及。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-10-06 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
+    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p><br><br><p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"><span style="color:blue">《Boeing 737-8 Rudder System Anomaly》</span></a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"><span style="color:blue">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</span></a>，我在此只列舉與事故直接相關的幾件已知事實：</p><br><br><p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p><br><br><p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p><br><br><p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p><br><br><p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
     </item>
     <item>
     
@@ -213,7 +223,7 @@
     
     
     <title><![CDATA[【心理】爲什麽事實與邏輯對群衆無效？ | MAXWELL]]></title>
-    <description><![CDATA[我在网上冲浪的时候观察到一些有趣的事情。比如博主之前揭露潘建伟涉嫌虚构夸大不切实际的应用价值来挤占经费，并且在股市割韭菜，就有人拿博主学术地位不高；没有在学术界搞出名堂（诉诸权威）；如果有问题，政府怎么可能批准，政府已经批准了，那就没有问题（循环论證）来反驳。但是我现在观察有许多网民质疑美国登月造假，认同美国确实登月的人拿一些专家(比如欧阳自远院士，中国探月工程科学应用首席科学家严俊研究员, 中国科学院国家天文台研究员郑永春，国际宇航联空间运输委员会副主席杨宇光)（https://user.guancha.cn/main/content?id=1237298）（https://www.gov.cn/jrzg/2012-02/06/content_2059665.htm）（https://mp.weixin.qq.com/s/nnibijzQDD3EYIMB6yBAxw）的话作为證据，质疑美国登月造假的人就不干了，这时候什么头衔地位，有没有搞出名堂，权威怎么说的统统不作数了，至于为什么自己作为非专业人士都看得出来美国登月这么可疑而上述专业人士却连自己都不如（难道这些专业人士都收了境外势力的黑钱？）也不考虑了，虽然质疑的人绝大多数没有相关专业的学术地位，没有在相关专业的学术界搞出名堂，但是那些认同美国确实登月的人不管你是什么专家权威都必须正面解答我的问题。我个人觉得最最起码的你不要双标，质疑别人观点的时候就可以诉诸权威，等到别人反对自己的时候即使权威说了也不算数。<br><br>Ps:请对白不要转载到微博。<br><br> <br><br>----<br><br>拿權威來説事的，的確是愚蠢的平方：不但基本假設（權威=正確）是錯的，即便接受這個假設，他們本身不是權威卻也來評頭論足，其行爲也與自己的論述相矛盾。<br><br>狡辯術萬變不離其宗，除了直接或變相説謊（例如統計）之外，都是轉移話題；這些伎倆通常是人身攻擊（包括權威説事）或直接喊口號假充結論（例如”某某論斷太過了“，太過在哪裏？），但我的論証若真的不堪到這些人也能看出問題，那麽爲何不簡單指出漏洞？又何須訴諸資格、背景、意圖或主觀印象等等來轉移話題？所以只要看這些人沒有針對話題做出邏輯論證，就可以判斷其在狡辯。<br><br>狡辯的真正問題在於，其有效性的根基來自普世人性：沒有事實與邏輯基礎的話題，内涵爲零，而世界上話題有無限多，所以這種狡辯話題的所值（亦即聽衆值得花費的注意力）是零除以無限大=零的平方。然而雖然每個人的時間都是有限的，偏偏人性是面對別人提起任何話題，就（至少暫時）賦予100%的注意力。這個矛盾現象來自佔人類演化歷史絕大半時間的游獵社會，個體通常只能接觸到家庭成員，所以即便是瑣碎議題也有投注注意力的價值，但到了後來的都市文明中就成爲一大弱點，也是歷史上無數宦官奸臣能進讒言的心理基礎。作爲承受方，要能迅速判定謊言的要求太高，必須有全面認知架構，再加上對相關細節的掌控，一般只能退而求其次，根據Russell's teapot原則，要求對方提供足夠的事實證據和邏輯根基，否則就直接認定為渾話而忽略。<br><br>這段回復可以轉發。<br><div class="TIME">2024-10-18 12:16 回复</div>]]></description>
+    <description><![CDATA[我在网上冲浪的时候观察到一些有趣的事情。比如博主之前揭露潘建伟涉嫌虚构夸大不切实际的应用价值来挤占经费，并且在股市割韭菜，就有人拿博主学术地位不高；没有在学术界搞出名堂（诉诸权威）；如果有问题，政府怎么可能批准，政府已经批准了，那就没有问题（循环论證）来反驳。但是我现在观察有许多网民质疑美国登月造假，认同美国确实登月的人拿一些专家(比如欧阳自远院士，中国探月工程科学应用首席科学家严俊研究员, 中国科学院国家天文台研究员郑永春，国际宇航联空间运输委员会副主席杨宇光)（https://user.guancha.cn/main/content?id=1237298）（https://www.gov.cn/jrzg/2012-02/06/content_2059665.htm）（https://mp.weixin.qq.com/s/nnibijzQDD3EYIMB6yBAxw）的话作为證据，质疑美国登月造假的人就不干了，这时候什么头衔地位，有没有搞出名堂，权威怎么说的统统不作数了，至于为什么自己作为非专业人士都看得出来美国登月这么可疑而上述专业人士却连自己都不如（难道这些专业人士都收了境外势力的黑钱？）也不考虑了，虽然质疑的人绝大多数没有相关专业的学术地位，没有在相关专业的学术界搞出名堂，但是那些认同美国确实登月的人不管你是什么专家权威都必须正面解答我的问题。我个人觉得最最起码的你不要双标，质疑别人观点的时候就可以诉诸权威，等到别人反对自己的时候即使权威说了也不算数。<br><br>Ps:请对白不要转载到微博。<br><br> <br><br>----<br><br>拿權威來説事的，的確是愚蠢的平方：不但基本假設（權威=正確）是錯的，即便接受這個假設，他們本身不是權威卻也來評頭論足，其行爲也與自己的論述相矛盾。<br><br>狡辯術萬變不離其宗，除了直接或變相説謊（例如統計）之外，都是轉移話題；這些伎倆通常是人身攻擊（包括權威説事）或直接喊口號假充結論（例如”某某論斷太過了“，太過在哪裏？），但我的論証若真的不堪到這些人也能看出問題，那麽爲何不簡單指出漏洞？又何須訴諸資格、背景、意圖或主觀印象等等來轉移話題？所以只要看這些人沒有針對話題做出邏輯論證，就可以判斷其在狡辯。<br><br>狡辯的真正問題在於，其有效性的根基來自普世人性：沒有事實與邏輯基礎的話題，内涵爲零，而世界上話題有無限多，所以這種狡辯話題的所值（亦即聽衆值得花費的注意力）是零除以無限大=零的平方。然而雖然每個人的時間都是有限的，偏偏人性是面對別人提起任何話題，就（至少暫時）賦予100%的注意力。這個矛盾現象來自佔人類演化歷史絕大半時間的游獵社會，個體通常只能接觸到家庭成員，所以即便是瑣碎議題也有投注注意力的價值，但到了後來的都市文明中就成爲一大弱點，是垃圾信件（Spam）有利可圖的原因，也是歷史上無數宦官奸臣能進讒言的心理基礎。作爲承受方，要能迅速判定謊言的要求太高，必須有全面認知架構，再加上對相關細節的掌控，一般只能退而求其次，根據Russell's teapot原則，要求對方提供足夠的事實證據和邏輯根基，否則就直接認定為渾話而忽略。<br><br>這段回復可以轉發。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/124083467.html" style="text-decoration: none;color:black;">2024-10-18 22:49 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-29 20:18:00 +0800</pubDate>
     <guid isPermaLink="false">e071ebc7939410553b5c6670b219e67f</guid>
@@ -243,7 +253,7 @@
     
     
     <title><![CDATA[【工业】中共的下一个產业技术攻关：晶片  | zhaofei]]></title>
-    <description><![CDATA[迷信金融<br><br>中共在发展芯片产业的这十年里，没有能复制“以项目换技术”的成功经验，而是迷信市场万能，企图通过广撒网的金融投资在上市私企中培养行业巨头。补贴政策也是走了汽车工业的老路，交给地方政府执行。结果是各路骗子公司骗补横行，国家集成电路产业投资基金以大面积贪腐收场。真是令人唏嘘！<br><br> <br><br> <br><br>----<br><br>這是博客在討論科技管理的既有結論之一。<br><div class="TIME">2024-10-18 11:11 回复</div>]]></description>
+    <description><![CDATA[迷信金融<br><br>中共在发展芯片产业的这十年里，没有能复制“以项目换技术”的成功经验，而是迷信市场万能，企图通过广撒网的金融投资在上市私企中培养行业巨头。补贴政策也是走了汽车工业的老路，交给地方政府执行。结果是各路骗子公司骗补横行，国家集成电路产业投资基金以大面积贪腐收场。真是令人唏嘘！<br><br> <br><br> <br><br>----<br><br>這是博客近年討論科技管理的既有結論之一。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/108908651.html" style="text-decoration: none;color:black;">2024-10-19 00:57 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-27 23:51:00 +0800</pubDate>
     <guid isPermaLink="false">13125b4a37da63cb57e28d9bc3f31dcd</guid>
@@ -263,7 +273,7 @@
     
     
     <title><![CDATA[【工業】開發太陽系的經濟效益 | LoveClem]]></title>
-    <description><![CDATA[王博士，您在 文中提到 即使假設有了無限而廉價的能源，加減速的過程仍然極度花時間。再加上星系之間的零散粒子，在飛船接近光速的10%這個量級之後，會形成極强的放射性照射，很快就能拆解飛船的結構（更別提裏面的生物細胞了），所以在不考慮費用的前提下，星際飛船的極速仍然在光速的1%上下（亦即時速一千萬公里）。<br><br>请问这个飞船达到10%光速这个量级之后会产生严重到足以破坏飞船结构的辐射所以飞船极限速度只能达到1%光速这个量级是如何算出来的，为何我看到一些文章仍在讨论10%光速甚至更高速度飞船的实现方案，还说这些辐射和太空尘埃的碰撞是可以容忍的（需要在飞船前端加装大倾角的足够厚的金属护盾）。<br><br>还有请教一下光帆技术用于恒星际飞行的难点之所在（理论上只需要1.5*10^18J就能把1t的飞船加速到每秒上万公里，而且加速时间不算长----只要光帆的材料能达到要求（高反射率且高耐热性且足够的高温力学性能）激光得瞄准足够精确且发散角足够小或光帆的面积足够大），然后减速方面他们宣称可以通过磁场作用于星际介质之类的方式来解决。<br><br>这两个问题实在是想不明白----从我个人直觉的角度，我是相信王博士您在文中的观点----恒星际开发或殖民即使可预见未来是没可能的，但是计算结果（恒星际飞行的参数）好像也没那么离谱，实在很难调节这种困难，所以向您来请教了。<br><br> <br><br>----<br><br>核裂變反應爐的中子能量是2 MeV，核聚變的中子14 MeV，而10%光速的中子/質子/氫原子能量大約1 GeV，也就是1000 MeV，分別是前兩者的500和70倍。連建在地面、沒有重量限制的核聚變堆都找不到能抵抗中子的内壁材料，你說每一克質量都必須斤斤計較的飛船能抵抗70倍能量的粒子嗎？<br><br>光帆一走遠（還沒出太陽系）就收不到推力了，根本加速不了多少。至於減速，不管你幻想什麽機制，總是需要能源的，其效率不可能高於自帶光子引擎，但火箭自帶燃料先加速後減速所引發的浪費，遠遠超過光子引擎加無限大地面激光炮帶來的效率增益。這些論證從1940、50年代就被反復做爛了，要破局只能假設能源密度和材料强度都比理論極限還要高七八個數量級。<br><br>你的問題在於選讀的資訊來源水準太低，連正牌科幻都談不上，所以學習的第一步是少泡蠢人論壇，認真去找專業文獻；這可能需要英文能力。<br><div class="TIME">2024-10-18 09:13 回复</div>]]></description>
+    <description><![CDATA[王博士，您在 文中提到 即使假設有了無限而廉價的能源，加減速的過程仍然極度花時間。再加上星系之間的零散粒子，在飛船接近光速的10%這個量級之後，會形成極强的放射性照射，很快就能拆解飛船的結構（更別提裏面的生物細胞了），所以在不考慮費用的前提下，星際飛船的極速仍然在光速的1%上下（亦即時速一千萬公里）。<br><br>请问这个飞船达到10%光速这个量级之后会产生严重到足以破坏飞船结构的辐射所以飞船极限速度只能达到1%光速这个量级是如何算出来的，为何我看到一些文章仍在讨论10%光速甚至更高速度飞船的实现方案，还说这些辐射和太空尘埃的碰撞是可以容忍的（需要在飞船前端加装大倾角的足够厚的金属护盾）。<br><br>还有请教一下光帆技术用于恒星际飞行的难点之所在（理论上只需要1.5*10^18J就能把1t的飞船加速到每秒上万公里，而且加速时间不算长----只要光帆的材料能达到要求（高反射率且高耐热性且足够的高温力学性能）激光得瞄准足够精确且发散角足够小或光帆的面积足够大），然后减速方面他们宣称可以通过磁场作用于星际介质之类的方式来解决。<br><br>这两个问题实在是想不明白----从我个人直觉的角度，我是相信王博士您在文中的观点----恒星际开发或殖民即使可预见未来是没可能的，但是计算结果（恒星际飞行的参数）好像也没那么离谱，实在很难调节这种困难，所以向您来请教了。<br><br> <br><br>----<br><br>核裂變反應爐的中子能量是2 MeV，核聚變的中子14 MeV，而10%光速的中子/質子/氫原子能量大約1 GeV，也就是1000 MeV，分別是前兩者的500和70倍。連建在地面、沒有重量限制的核聚變堆都找不到能抵抗中子的内壁材料，你說每一克質量都必須斤斤計較的星際飛船能抵抗70倍能量的粒子嗎？<br><br>光帆一走遠（還沒出火星軌道）就基本收不到推力了（光學發散的基本定理瞭解一下），根本加速不了多少。至於減速，不管你幻想什麽機制，總是需要能源的，其效率不可能高於自帶光子引擎，但火箭自帶燃料先加速後減速所引發的浪費，遠遠超過光子引擎加無限大地面激光炮帶來的效率增益。這些論證從1940、50年代就被反復做爛了，要破局只能幻想能源密度和材料强度都比理論極限還要高七八個數量級。<br><br>你的問題在於選讀的資訊來源水準太低，連正牌科幻（亦即只做一個超越既有科學結論的前提假設，然後基於這個假設做嚴謹的推演；如果能合理討論社會結構受影響後的反饋因應，就是一流正牌科幻；如果能深刻描述個人在這個假設下的情感共鳴，就是二流正牌科幻；劉慈欣寫的是野鷄三流科幻）都談不上，所以學習的第一步是少泡蠢人論壇，認真去找專業和半專業文獻；這可能需要英文能力，畢竟中國崛起時間短、纍積不夠，學術和文化方面又未老先衰、特別腐朽，20世紀的歐美思潮還是有很多可參照之處。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/119107102.html" style="text-decoration: none;color:black;">2024-10-19 01:29 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-24 09:35:00 +0800</pubDate>
     <guid isPermaLink="false">5566132b98278afb6752fc246501e149</guid>
@@ -283,7 +293,7 @@
     
     
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | strawrange]]></title>
-    <description><![CDATA[回复84楼zhaofei:文章里提到的抵制资本、加强慢病预防和疫苗、社区医院和二级医院和三甲医院的医共体等内容，并不是三明医改的核心内容，这些实践在其他省市早有实践，上海目前老年人慢病管理由社区医院家庭医生负责，社区健康师专门长期健康管理，既保证公益性又有效提升健康水平。上海还有社区医院和三甲的医共体，疑难杂症可以直接从社区请高级别专家会诊，这些我都有实地调研过。目前上海医院医药也是尽量脱钩的，我近期多次就诊，要么医保廉价药，要么自费药拿处方自行购买，与医生收入无关。<br><br>相较于浙江与上海的实践，三明医改最大的不同是医生薪酬制度的改革。从原来的按科室与绩效分配，变成了跟职称挂钩的年薪制。对于普通医生，收入会大幅上升，对于所谓的名医，收入反而会被天花板限制住。虽然收入跟科室与绩效脱钩，能够避免过度医疗问题，但医生收入变得“大锅饭”（无论好坏收入都差不多，顶级医生也无法通过疑难杂症和高难度手术赚取更高收入）。我找三明本地朋友交流过，三明原来很多高水平医生流向了福州或者厦门，本地整体医疗水平反而倒退，看常见病没问题，但原来三明能做的手术，后来都要去福州或者厦门做。（因为医生有其他更加高薪的选择）同理，在三明医改推广中，同时开放外资医院，公立普通医生大幅提高收入，但顶级医生被“医改”限薪，完全可以直接投奔外资医院，这是我担心的核心点。我觉得三明本地的经验不足以支持五年内全面推广这么激进的动作，至少应该更加谨慎地推广。<br><br>我对三明医改中其他早已在其他省市实践已久的内容没有异议，唯独对医生从“绩效制”改“按职称定薪制”有担心。以上海为例，上海三甲医院为了留住顶级医生，在尝试公立私立结合，每周允许顶级医生有1天出私立门诊（严格限制，挂号费1000元，公立只要50元，私立部分完全不能用任何医保，手术费和医药都很贵，但保证医疗环境）。至少现在全国有疑难杂症的普通人，想要在上海见到顶级专家并不算昂贵与困难，专家医生的收入也有保障。这次医改一方面要上海也要照着三明改，一方面又要在上海引入外资医院，同时私营利益集团非常擅长在正确的政策方向里夹带私货，让人很难不多想。<br><br> <br><br>----<br><br>説來説去，還是那一套用迷信口號（“私營效率高”）來壓倒科學論證的狡辯術。事實上，市場化必然導致追求利潤，追求利潤導致資源向服務富人傾斜，但除非放任窮人死病不管，最終那些傾斜走的資源還是必須由政府補上，繞這麽一圈只會賠的更多，道理如此簡單易懂，他們卻故意反其道而行，還用心扯了“公益”的大旗，看來不是蠢而是壞。<br><div class="TIME">2024-10-18 08:42 回复</div>]]></description>
+    <description><![CDATA[回复84楼zhaofei:文章里提到的抵制资本、加强慢病预防和疫苗、社区医院和二级医院和三甲医院的医共体等内容，并不是三明医改的核心内容，这些实践在其他省市早有实践，上海目前老年人慢病管理由社区医院家庭医生负责，社区健康师专门长期健康管理，既保证公益性又有效提升健康水平。上海还有社区医院和三甲的医共体，疑难杂症可以直接从社区请高级别专家会诊，这些我都有实地调研过。目前上海医院医药也是尽量脱钩的，我近期多次就诊，要么医保廉价药，要么自费药拿处方自行购买，与医生收入无关。<br><br>相较于浙江与上海的实践，三明医改最大的不同是医生薪酬制度的改革。从原来的按科室与绩效分配，变成了跟职称挂钩的年薪制。对于普通医生，收入会大幅上升，对于所谓的名医，收入反而会被天花板限制住。虽然收入跟科室与绩效脱钩，能够避免过度医疗问题，但医生收入变得“大锅饭”（无论好坏收入都差不多，顶级医生也无法通过疑难杂症和高难度手术赚取更高收入）。我找三明本地朋友交流过，三明原来很多高水平医生流向了福州或者厦门，本地整体医疗水平反而倒退，看常见病没问题，但原来三明能做的手术，后来都要去福州或者厦门做。（因为医生有其他更加高薪的选择）同理，在三明医改推广中，同时开放外资医院，公立普通医生大幅提高收入，但顶级医生被“医改”限薪，完全可以直接投奔外资医院，这是我担心的核心点。我觉得三明本地的经验不足以支持五年内全面推广这么激进的动作，至少应该更加谨慎地推广。<br><br>我对三明医改中其他早已在其他省市实践已久的内容没有异议，唯独对医生从“绩效制”改“按职称定薪制”有担心。以上海为例，上海三甲医院为了留住顶级医生，在尝试公立私立结合，每周允许顶级医生有1天出私立门诊（严格限制，挂号费1000元，公立只要50元，私立部分完全不能用任何医保，手术费和医药都很贵，但保证医疗环境）。至少现在全国有疑难杂症的普通人，想要在上海见到顶级专家并不算昂贵与困难，专家医生的收入也有保障。这次医改一方面要上海也要照着三明改，一方面又要在上海引入外资医院，同时私营利益集团非常擅长在正确的政策方向里夹带私货，让人很难不多想。<br><br> <br><br>----<br><br>説來説去，還是那一套用迷信口號（“私營效率高”）來壓倒科學論證的狡辯術。事實上，市場化必然導致追求利潤，追求利潤必然導致資源向服務富人傾斜，但除非放任窮人死病不管（連美國都無法完全做到這麽絕），最終那些傾斜走的資源還是必須由政府補上，繞這麽一圈只會賠得更多。<br><br>道理如此簡單易懂，他們卻故意反其道而行，還用心扯了“公益”的大旗，看來不是蠢而是壞。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/175790558.html" style="text-decoration: none;color:black;">2024-10-19 01:00 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-22 18:36:00 +0800</pubDate>
     <guid isPermaLink="false">0d52952682ce23ec8d2da5c62dceded5</guid>
@@ -382,12 +392,12 @@
     <item>
     
     
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十六]]></title>
-    <description><![CDATA[後註十六 <br><br>----<br><br>有報導（參見<a href="https://oilprice.com/Metals/Commodities/Chinas-Carbon-Trading-Market-to-Encompass-Steel-and-Aluminum-Sectors.html"><span style="color:blue">《Chinas Carbon Trading Market to Encompass Steel and Aluminum Sectors》</span></a>）稱中國的冶金業被要求從今年年底開始加入碳排放交易。博客已經反復論證，碳交易純粹是圖利金融、獎勵作弊的倒行逆施；上述新聞所反映的，除了執政幕僚群的無知無能之外，還有官僚體系自我擴大職權的普世效應。</p>]]></description>
+    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 後註八]]></title>
+    <description><![CDATA[後註八 <br><br>----<br><br>前面【後註六】所討論的美國新建廠房狂潮，幾乎全部來自東亞和歐洲的產能轉移，其中最大宗是半導體，包括臺積電和三星的新厰Fab；而三星又比臺積電更激進，計劃直接在美國上馬最先進的2納米生產綫，總投資高達250億美元，是這一波美國產能回歸的最大、最尖端項目，沒有之一。然而根據《Business Korea》報導（參見<a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=225024#:~:text=Samsung%20Electronics%20has%20decided%20to%20withdraw%20personnel%20from,been%20pushed%20back%20from%20late%202024%20to%202026."><span style="color:blue">《Samsung Electronics Withdraws Personnel from Taylor Plant Amid 2nm Yield Issues》</span></a>），因某種未被解釋的原因，三星在美的新廠良率始終遠低於20%，遠遠落後韓國本土，經過多次試圖改正未果，已經不得不放棄治療、選擇止損，將部分相關技術人員撤回韓國，顯然這個生產綫只能等本土先搞定尖端技術再做轉移；這反映了現代美國社會環境和人力資源不足以支持高科技工業的窘境。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-13 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#61d9bbc1df2db965b1389451450afd1a</link>
+    <guid isPermaLink="false">d79f9fd087a835af7a9dffd07f9d299f</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#d79f9fd087a835af7a9dffd07f9d299f</link>
     </item>
     <item>
     
@@ -402,12 +412,12 @@
     <item>
     
     
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 後註八]]></title>
-    <description><![CDATA[後註八 <br><br>----<br><br>前面【後註六】所討論的美國新建廠房狂潮，幾乎全部來自東亞和歐洲的產能轉移，其中最大宗是半導體，包括臺積電和三星的新厰Fab；而三星又比臺積電更激進，計劃直接在美國上馬最先進的2納米生產綫，總投資高達250億美元，是這一波美國產能回歸的最大、最尖端項目，沒有之一。然而根據《Business Korea》報導（參見<a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=225024#:~:text=Samsung%20Electronics%20has%20decided%20to%20withdraw%20personnel%20from,been%20pushed%20back%20from%20late%202024%20to%202026."><span style="color:blue">《Samsung Electronics Withdraws Personnel from Taylor Plant Amid 2nm Yield Issues》</span></a>），因某種未被解釋的原因，三星在美的新廠良率始終遠低於20%，遠遠落後韓國本土，經過多次試圖改正未果，已經不得不放棄治療、選擇止損，將部分相關技術人員撤回韓國，顯然這個生產綫只能等本土先搞定尖端技術再做轉移；這反映了現代美國社會環境和人力資源不足以支持高科技工業的窘境。</p><br><br></span>]]></description>
+    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十六]]></title>
+    <description><![CDATA[後註十六 <br><br>----<br><br>有報導（參見<a href="https://oilprice.com/Metals/Commodities/Chinas-Carbon-Trading-Market-to-Encompass-Steel-and-Aluminum-Sectors.html"><span style="color:blue">《Chinas Carbon Trading Market to Encompass Steel and Aluminum Sectors》</span></a>）稱中國的冶金業被要求從今年年底開始加入碳排放交易。博客已經反復論證，碳交易純粹是圖利金融、獎勵作弊的倒行逆施；上述新聞所反映的，除了執政幕僚群的無知無能之外，還有官僚體系自我擴大職權的普世效應。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-13 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">d79f9fd087a835af7a9dffd07f9d299f</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#d79f9fd087a835af7a9dffd07f9d299f</link>
+    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#61d9bbc1df2db965b1389451450afd1a</link>
     </item>
     <item>
     
@@ -432,22 +442,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】再談美國的腐化 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>自2008年金融危機導致2010年訂立Dodd-Frank金融改革法案之後，美國政界一直有呼聲想要進一步提高銀行業的資金準備率（這個倡議有一個很好萊塢的名字：“Basel III Endgame”）。經過14年的折衝，昨天消息傳來，大銀行終於成功地將新法規閹割至徒有其表的程度，參見<a href="https://www.bloomberg.com/news/articles/2024-09-09/biggest-us-banks-capital-hike-chopped-in-half-in-latest-plan-by-regulators"><span style="color:blue">《Biggest US Banks’ Capital Hike Chopped in Half in Latest Plan by Regulators》</span></a>。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/120933727.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【醫療】當前世界的公共衛生危機 | 後註二]]></title>
     <description><![CDATA[後註二 <br><br>----<br><br>過去幾十年，全世界的女孩都在不斷提早進入青春期（Early Puberty），科學家懷疑這是一些常用化工原料干擾荷爾蒙（Endocrine-disrupting compounds）的結果。這一篇新論文（參見<a href="https://academic.oup.com/endo/article/165/10/bqae103/7749689"><span style="color:blue">《Identification of Environmental Compounds That May Trigger Early Female Puberty by Activating Human GnRHR and KISS1R》</span></a>），證實了這個懷疑，並將箭頭指向洗髮精香料Musk Ambrette和一類叫做cholinergic agonist的藥物等等。</p><br><br><br><br><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-11 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908771.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】再談美國的腐化 | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>自2008年金融危機導致2010年訂立Dodd-Frank金融改革法案之後，美國政界一直有呼聲想要進一步提高銀行業的資金準備率（這個倡議有一個很好萊塢的名字：“Basel III Endgame”）。經過14年的折衝，昨天消息傳來，大銀行終於成功地將新法規閹割至徒有其表的程度，參見<a href="https://www.bloomberg.com/news/articles/2024-09-09/biggest-us-banks-capital-hike-chopped-in-half-in-latest-plan-by-regulators"><span style="color:blue">《Biggest US Banks’ Capital Hike Chopped in Half in Latest Plan by Regulators》</span></a>。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-11 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/120933727.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -662,22 +672,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】美國式的恐龍法官（二） | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>最近美國最高法院又作出一個很重要、很基本的新判決（參見<a href="https://www.whitecase.com/insight-alert/us-supreme-court-strikes-down-chevron-doctrine-what-you-need-know"><span style="color:blue">《U.S. Supreme Court Strikes Down Chevron Doctrine—What You Need to Know》</span></a>），亦即推翻了1984年確立的“Chevron Doctrine”（又稱“Chevron Deference”），但大衆媒體沒有太多報導，值得博客在此提醒大家注意。</p><br><br><p>所謂的“Chevron Doctrine”，簡單來説，就是當法律條文模糊有疑義的時候，應該以監管單位的行政條令爲準；新判決則將一切改由訴訟解決。這顯然是進一步削減監管單位的職權，方便大企業花錢雇傭律師/檢察官/法官來壓死對手；讀者可以與博客對Biden政權下三個盡責中級閣員（分別主管SEC、FTC和CFPB）的討論做參照，並自行估算兩者之間的可能因果關聯。</p><br><br><br><br><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-08-31 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908755.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【歷史】冷戰、學運和五四運動 | 後註一]]></title>
     <description><![CDATA[後註一 <br><br>----<br><br>剛剛才注意到這件六月的新聞（參見<a href="https://www.bbc.com/news/articles/cg66xe59zyeo"><span style="color:blue">《Epoch Times CFO charged in $67m money-laundering plot》</span></a>），報導《大紀元》的CFO以洗錢罪被逮捕起訴。這裏的重點不止在於其廣汎為許多罪犯提供洗錢服務的規模和時長，真正驚人的在於這項業務由他領導《大紀元》的“Make Money Online”團隊成建制地執行多年。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-08-31 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
     <link>https://taizihuang.github.io/wmyblog/html/164999328.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】美國式的恐龍法官（二） | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>最近美國最高法院又作出一個很重要、很基本的新判決（參見<a href="https://www.whitecase.com/insight-alert/us-supreme-court-strikes-down-chevron-doctrine-what-you-need-know"><span style="color:blue">《U.S. Supreme Court Strikes Down Chevron Doctrine—What You Need to Know》</span></a>），亦即推翻了1984年確立的“Chevron Doctrine”（又稱“Chevron Deference”），但大衆媒體沒有太多報導，值得博客在此提醒大家注意。</p><br><br><p>所謂的“Chevron Doctrine”，簡單來説，就是當法律條文模糊有疑義的時候，應該以監管單位的行政條令爲準；新判決則將一切改由訴訟解決。這顯然是進一步削減監管單位的職權，方便大企業花錢雇傭律師/檢察官/法官來壓死對手；讀者可以與博客對Biden政權下三個盡責中級閣員（分別主管SEC、FTC和CFPB）的討論做參照，並自行估算兩者之間的可能因果關聯。</p><br><br><br><br><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-08-31 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908755.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     <item>
     
@@ -718,16 +728,6 @@
     <pubDate>2024-08-30 00:25:00 +0800</pubDate>
     <guid isPermaLink="false">7b093dc47e0d978c129ebba5e1dceee5</guid>
     <link>https://taizihuang.github.io/wmyblog/html/179876353.html#7b093dc47e0d978c129ebba5e1dceee5</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註六]]></title>
-    <description><![CDATA[後註六 <br><br>----<br><br>70年代歐美因應節節高升的慢性疾病問題，對社會飲食習慣做檢討的過程中，蔗糖產業游説力量動員得最迅速、最積極、最團結、最徹底，成功地把罪責全部推給高脂肪和高鹽分，使得過去50年全世界都因濫用果糖/蔗糖而導致多種慢性疾病疫情變本加厲，其實過量攝取蔗糖要比過量攝取鹽分容易、普遍得多了。剛剛又看到《Nature》的一篇新論文（參見<a href="https://www.nature.com/articles/s41590-024-01918-6"><span style="color:blue">《Sodium chloride in the tumor microenvironment enhances T cell metabolic fitness and cytotoxicity》</span></a>），討論氯化鈉的抗癌效應，不由得再次為這個事實與公共認知之間的强烈反差而搖頭。</p>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-08-30 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">874b3b0844ab93333f51a8f781e623ae</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#874b3b0844ab93333f51a8f781e623ae</link>
     </item>
     </channel></rss>
     
