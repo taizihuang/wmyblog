@@ -330,4 +330,13 @@
 			<description><![CDATA[西方社會的崩壞]]></description>
 			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=240920.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
+
+        <item>
+			<title>2024/10/18 美國大選的最後預測！及選後的世界！</title>
+			<pubDate>Fri, 18 October 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[241018]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/241018.html]]></link>
+			<description><![CDATA[美國大選的最後預測！及選後的世界！]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=241018.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
