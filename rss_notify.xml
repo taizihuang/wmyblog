@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>10-22 20:05 +0800</lastBuildDate>
+    <lastBuildDate>10-23 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | LoveClem]]></title>
+    <description><![CDATA[我觉得现在的AI除了王博士所说的问题外，还有一个最大的问题----运动控制和随机应变能力不足。（这也是AI的老大难问题了）<br><br>看了下近几年的RoboCup,感觉机器人这方面还是不行，离OpenAI吹嘘的AGI差得还很远。甚至可以说目前这条技术路径是不可能通向AGI的，AGI只要建立在对人脑的深刻理解的基础上。<br><br> <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-22 21:08:00 +0800</pubDate>
+    <guid isPermaLink="false">6fa83d1e2b6dd25d1d9425698b6d6064</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#6fa83d1e2b6dd25d1d9425698b6d6064</link>
+    </item>
     <item>
     
     
@@ -252,22 +262,22 @@
     <item>
     
     
-    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
-    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。&lt;/p&gt;<br><br>&lt;p&gt;引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見&lt;a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"&gt;&lt;span style="color:blue"&gt;《Boeing 737-8 Rudder System Anomaly》&lt;/span&gt;&lt;/a&gt;），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考&lt;a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"&gt;&lt;span style="color:blue"&gt;《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》&lt;/span&gt;&lt;/a&gt;，我在此只列舉與事故直接相關的幾件已知事實：&lt;/p&gt;<br><br>&lt;p&gt;1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。&lt;/p&gt;<br><br>&lt;p&gt;2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。&lt;/p&gt;<br><br>&lt;p&gt;3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。&lt;/p&gt;<br><br>&lt;p&gt;4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。&lt;/p&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十七]]></title>
     <description><![CDATA[後註十七 <br><br>----<br><br>美國法務部、SEC和CFTC於本周聯合執法，以詐騙罪逮捕起訴碳交易/碳市場/碳信用（Carbon trading/carbon market/carbon credit，分別對應著交易的概念、平臺和單位）的大咖CQC Impact Investors（參見&lt;a href="https://www.justice.gov/usao-sdny/pr/us-attorney-announces-criminal-charges-multi-year-fraud-scheme-market-carbon-credits"&gt;&lt;span style="color:blue"&gt;《U.S. Attorney Announces Criminal Charges In Multi-Year Fraud Scheme In The Market For Carbon Credits》&lt;/span&gt;&lt;/a&gt;）。明明整個行業就是純粹詐騙，卻因爲白左思潮和金融利益，即便是有心爲國的官員也無法禁止，只能揚湯止沸地法辦個別罪犯，不過至少勝過中國從上到下的一致被忽悠；考慮這些國際金融詐騙的收益大半會流入美元體系，中方跟風搞碳交易更加是愚不可及。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-10-06 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#ef8f0d7e5191519bd4b5909aeb125b97</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】【工業】波音衰敗之源 | 後註十六]]></title>
+    <description><![CDATA[後註十六 <br><br>----<br><br>我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。&lt;/p&gt;<br><br>&lt;p&gt;引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見&lt;a href="https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~"&gt;&lt;span style="color:blue"&gt;《Boeing 737-8 Rudder System Anomaly》&lt;/span&gt;&lt;/a&gt;），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考&lt;a href="https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/"&gt;&lt;span style="color:blue"&gt;《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》&lt;/span&gt;&lt;/a&gt;，我在此只列舉與事故直接相關的幾件已知事實：&lt;/p&gt;<br><br>&lt;p&gt;1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。&lt;/p&gt;<br><br>&lt;p&gt;2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。&lt;/p&gt;<br><br>&lt;p&gt;3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。&lt;/p&gt;<br><br>&lt;p&gt;4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-10-06 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131174635.html#61d9bbc1df2db965b1389451450afd1a</link>
     </item>
     <item>
     
@@ -512,22 +522,22 @@
     <item>
     
     
-    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註七]]></title>
-    <description><![CDATA[後註七 <br><br>----<br><br>博客雖然反復强調過果糖攝取過量是當前世界公共健康的嚴重問題，但我似乎一直忘了提起，飲料形式的果糖/蔗糖比糕餅甜點更糟糕得多，這是因爲人類胃/腦之間的飽腹感環路對液態卡路里完全無感（從生物學角度來看，並不奇怪，畢竟在絕大部分演化歷史中，人類不但沒有糖吃，能找到的飲料也只有零卡路里的白水，也就沒有必要演化出偵測果糖/蔗糖溶液的能力），以致越喝飲料反而額外吃得更多（可能是因爲部分原本固態的糖在嘴巴或胃裏溶入飲料中，於是從飽腹感偵測環路中隱形消失），所以營養學界的共識是加糖冷飲可以算是現代飲食中的頭號危害，參見&lt;a href="https://www.webmd.com/diet/news/20240605/why-sugary-drinks-may-be-the-unhealthiest-food-out-there"&gt;&lt;span style="color:blue"&gt;《Why Sugary Drinks May Be the Unhealthiest Food Out There》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-09-13 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">152b95fedfe986cade7abbcc7ca96ea3</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#152b95fedfe986cade7abbcc7ca96ea3</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十六]]></title>
     <description><![CDATA[後註十六 <br><br>----<br><br>有報導（參見&lt;a href="https://oilprice.com/Metals/Commodities/Chinas-Carbon-Trading-Market-to-Encompass-Steel-and-Aluminum-Sectors.html"&gt;&lt;span style="color:blue"&gt;《Chinas Carbon Trading Market to Encompass Steel and Aluminum Sectors》&lt;/span&gt;&lt;/a&gt;）稱中國的冶金業被要求從今年年底開始加入碳排放交易。博客已經反復論證，碳交易純粹是圖利金融、獎勵作弊的倒行逆施；上述新聞所反映的，除了執政幕僚群的無知無能之外，還有官僚體系自我擴大職權的普世效應。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-09-13 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#61d9bbc1df2db965b1389451450afd1a</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註七]]></title>
+    <description><![CDATA[後註七 <br><br>----<br><br>博客雖然反復强調過果糖攝取過量是當前世界公共健康的嚴重問題，但我似乎一直忘了提起，飲料形式的果糖/蔗糖比糕餅甜點更糟糕得多，這是因爲人類胃/腦之間的飽腹感環路對液態卡路里完全無感（從生物學角度來看，並不奇怪，畢竟在絕大部分演化歷史中，人類不但沒有糖吃，能找到的飲料也只有零卡路里的白水，也就沒有必要演化出偵測果糖/蔗糖溶液的能力），以致越喝飲料反而額外吃得更多（可能是因爲部分原本固態的糖在嘴巴或胃裏溶入飲料中，於是從飽腹感偵測環路中隱形消失），所以營養學界的共識是加糖冷飲可以算是現代飲食中的頭號危害，參見&lt;a href="https://www.webmd.com/diet/news/20240605/why-sugary-drinks-may-be-the-unhealthiest-food-out-there"&gt;&lt;span style="color:blue"&gt;《Why Sugary Drinks May Be the Unhealthiest Food Out There》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-09-13 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">152b95fedfe986cade7abbcc7ca96ea3</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#152b95fedfe986cade7abbcc7ca96ea3</link>
     </item>
     <item>
     
