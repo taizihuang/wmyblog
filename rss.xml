@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>12-03 20:04 +0800</lastBuildDate>
+    <lastBuildDate>12-04 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -172,22 +172,22 @@
     <item>
     
     
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十九]]></title>
-    <description><![CDATA[後註十九 <br><br>----<br><br>量子計算詐騙集團的謊言，除了把己方的技術難度大幅低估七八個數量級之外，所吹噓的可能用途（“量子優勢”）又分兩類：第一類是破密，其特徵是若能實現那七八個數量級的進步，則理論上的確可以快於古典電腦，但這個潛在用途已經被美國標準局簡單廉價地改用後量子密碼規避掉了。其他的所謂量子優勢則主要依靠刻意低估古典電腦的能力，尋找以往沒有研發投入的方向來作對比；這些假優勢只要傳統計算機科學的研究人員稍微用心，基本都可以找到新的高效算法，一次性提升古典電腦的計算效率達五六個、甚至八九個數量級，從而反超量子計算的理論極限。昨天就有一個新案例被報導出來，亦即模擬固態物理中極爲重要的Transverse Field Ising Model的古典算法得到大幅加强，這個任務已經不關量子計算什麽事了，詳情參見<a href="https://www.sciencenewslab.com/computers-find-impossible-solution-beating-quantum-tech-at-own-game/"><span style="color:blue">《Computers Find Impossible Solution, Beating Quantum Tech at Own Game》</span></a>。</p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#eb42a79a300ec03e39298ad0c152869c</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註四十七]]></title>
     <description><![CDATA[後註四十七 <br><br>----<br><br>俄烏戰事進行至今，早已大勢底定，只剩下最愚蠢、最虛僞的群體還在否認真相，而談到愚蠢和虛僞，那當然包括昂撒官員和主流媒體，參見《Politico》、《MSN》、《Newsweek》、《Moscow Times》（《莫斯科時報》，但和俄國沒有任何真正關係，是北約設在荷蘭的專職抹黑機構）等等的最新報導：<a href="https://www.politico.eu/article/october-deadliest-month-russian-troops-war-uk-official-says-tony-radakin/"><span style="color:blue">《October was worst month for Russia since start of Ukraine war, UK official says》</span></a>《英國官員：（剛過去的）十月是開戰以來俄軍最慘的一個月》。</p>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-11-11 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">d2ade5af6978f6c8dfa4b2f05763c927</guid>
     <link>https://taizihuang.github.io/wmyblog/html/177266891.html#d2ade5af6978f6c8dfa4b2f05763c927</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十九]]></title>
+    <description><![CDATA[後註十九 <br><br>----<br><br>量子計算詐騙集團的謊言，除了把己方的技術難度大幅低估七八個數量級之外，所吹噓的可能用途（“量子優勢”）又分兩類：第一類是破密，其特徵是若能實現那七八個數量級的進步，則理論上的確可以快於古典電腦，但這個潛在用途已經被美國標準局簡單廉價地改用後量子密碼規避掉了。其他的所謂量子優勢則主要依靠刻意低估古典電腦的能力，尋找以往沒有研發投入的方向來作對比；這些假優勢只要傳統計算機科學的研究人員稍微用心，基本都可以找到新的高效算法，一次性提升古典電腦的計算效率達五六個、甚至八九個數量級，從而反超量子計算的理論極限。昨天就有一個新案例被報導出來，亦即模擬固態物理中極爲重要的Transverse Field Ising Model的古典算法得到大幅加强，這個任務已經不關量子計算什麽事了，詳情參見<a href="https://www.sciencenewslab.com/computers-find-impossible-solution-beating-quantum-tech-at-own-game/"><span style="color:blue">《Computers Find Impossible Solution, Beating Quantum Tech at Own Game》</span></a>。</p><br><br></span>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#eb42a79a300ec03e39298ad0c152869c</link>
     </item>
     <item>
     
@@ -388,26 +388,6 @@
     <pubDate>2024-10-16 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
     <link>https://taizihuang.github.io/wmyblog/html/180084861.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【海軍】有關航母的一些新消息 | 後註五]]></title>
-    <description><![CDATA[後註五 <br><br>----<br><br>最近大陸軍迷論壇出現了一張09IIIB的側面照片，與去年哈爾濱工程大學校慶視頻（參見<a href="https://www.bilibili.com/video/BV1rp4y1E752/"><span style="color:blue">《哈尔滨工程大学建校70周年宣传片发布》</span></a>）中曝光的看板（截圖見下）基本一致，我認爲可以由此假設該圖片有若干準確性，其中有三點細節值得評論：1）其擁有VLS垂直發射系統，與美軍最先進的Virginia相當；2）其使用泵推Pump-jet技術，同樣與Virginia齊平；3）帆罩Sail外形大幅改動，向俄系的流綫造型靠攏。09III系列歷經原版、09IIIA到現在的09IIIB，經常每隔一兩艘就有可見的改進，最新版本已經用上了軍迷早年假想09V才會有的大半技術特徵，那麽09V可能必須在核動力系統上有重大改進突破才值得更改型號，我們拭目以待。</p><br><br><p><img src="https://wmyblog.site/html/img/f_28460922_1.jpg"/></p><br><br></span>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-15 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/130149479.html#ff0aadca7428f141533f285aeec65f40</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註四十四]]></title>
-    <description><![CDATA[後註四十四 <br><br>----<br><br>我在前兩個月的《龍行天下》節目中曾經論證，因爲其敘事不合理、無必要、缺根據，所以可以判斷所謂伊朗批量出售彈道導彈給俄軍的報導（一整個系列主要來自《Reuters》）是預先造謠，以便為開放烏克蘭使用美國導彈攻擊俄國本土做鋪墊，現在有實話者聯盟英文總舵的成員也做了詳盡的分析，有興趣的讀者請參考<a href="https://www.moonofalabama.org/2024/10/fake-reports-of-missile-transfers-to-russia-are-used-to-sanction-iran.html#more"><span style="color:blue">《Fake Reports Of Missile Transfers To Russia Are Used To Sanction Iran》</span></a>，他還指出這個謠言對以色列想拉伊朗下水的企圖也有幫助，但我認爲那是相對次要的考慮。</p>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-15 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">74966691834410dce66ba97b605e3853</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#74966691834410dce66ba97b605e3853</link>
     </item>
     </channel></rss>
     
