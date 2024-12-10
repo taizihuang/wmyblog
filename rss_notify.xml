@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>12-10 20:04 +0800</lastBuildDate>
+    <lastBuildDate>12-11 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -292,16 +292,6 @@
     <item>
     
     
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十九]]></title>
-    <description><![CDATA[後註十九 <br><br>----<br><br>量子計算詐騙集團的謊言，除了把己方的技術難度大幅低估七八個數量級之外，所吹噓的可能用途（“量子優勢”）又分兩類：第一類是破密，其特徵是若能實現那七八個數量級的進步，則理論上的確可以快於古典電腦，但這個潛在用途已經被美國標準局簡單廉價地改用後量子密碼規避掉了。其他的所謂量子優勢則主要依靠刻意低估古典電腦的能力，尋找以往沒有研發投入的方向來作對比；這些假優勢只要傳統計算機科學的研究人員稍微用心，基本都可以找到新的高效算法，一次性提升古典電腦的計算效率達五六個、甚至八九個數量級，從而反超量子計算的理論極限。昨天就有一個新案例被報導出來，亦即模擬固態物理中極爲重要的Transverse Field Ising Model的古典算法得到大幅加强，這個任務已經不關量子計算什麽事了，詳情參見&lt;a href="https://www.sciencenewslab.com/computers-find-impossible-solution-beating-quantum-tech-at-own-game/"&gt;&lt;span style="color:blue"&gt;《Computers Find Impossible Solution, Beating Quantum Tech at Own Game》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#eb42a79a300ec03e39298ad0c152869c</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註四十七]]></title>
     <description><![CDATA[後註四十七 <br><br>----<br><br>俄烏戰事進行至今，早已大勢底定，只剩下最愚蠢、最虛僞的群體還在否認真相，而談到愚蠢和虛僞，那當然包括昂撒官員和主流媒體，參見《Politico》、《MSN》、《Newsweek》、《Moscow Times》（《莫斯科時報》，但和俄國沒有任何真正關係，是北約設在荷蘭的專職抹黑機構）等等的最新報導：&lt;a href="https://www.politico.eu/article/october-deadliest-month-russian-troops-war-uk-official-says-tony-radakin/"&gt;&lt;span style="color:blue"&gt;《October was worst month for Russia since start of Ukraine war, UK official says》&lt;/span&gt;&lt;/a&gt;《英國官員：（剛過去的）十月是開戰以來俄軍最慘的一個月》。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
@@ -318,6 +308,16 @@
     <pubDate>2024-11-11 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">e86eab65bf308eaefaeb6d3f8a19aedd</guid>
     <link>https://taizihuang.github.io/wmyblog/html/162032391.html#e86eab65bf308eaefaeb6d3f8a19aedd</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十九]]></title>
+    <description><![CDATA[後註十九 <br><br>----<br><br>量子計算詐騙集團的謊言，除了把己方的技術難度大幅低估七八個數量級之外，所吹噓的可能用途（“量子優勢”）又分兩類：第一類是破密，其特徵是若能實現那七八個數量級的進步，則理論上的確可以快於古典電腦，但這個潛在用途已經被美國標準局簡單廉價地改用後量子密碼規避掉了。其他的所謂量子優勢則主要依靠刻意低估古典電腦的能力，尋找以往沒有研發投入的方向來作對比；這些假優勢只要傳統計算機科學的研究人員稍微用心，基本都可以找到新的高效算法，一次性提升古典電腦的計算效率達五六個、甚至八九個數量級，從而反超量子計算的理論極限。昨天就有一個新案例被報導出來，亦即模擬固態物理中極爲重要的Transverse Field Ising Model的古典算法得到大幅加强，這個任務已經不關量子計算什麽事了，詳情參見&lt;a href="https://www.sciencenewslab.com/computers-find-impossible-solution-beating-quantum-tech-at-own-game/"&gt;&lt;span style="color:blue"&gt;《Computers Find Impossible Solution, Beating Quantum Tech at Own Game》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;<br><br>&lt;/span&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#eb42a79a300ec03e39298ad0c152869c</link>
     </item>
     <item>
     
@@ -478,16 +478,6 @@
     <pubDate>2024-10-22 21:08:00 +0800</pubDate>
     <guid isPermaLink="false">6fa83d1e2b6dd25d1d9425698b6d6064</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171633910.html#6fa83d1e2b6dd25d1d9425698b6d6064</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 韭菜盒子]]></title>
-    <description><![CDATA[&lt;strike&gt;不能同意这一期对近一轮经济刺激的看法。<br><br>2021年，国有土地使用权出让金为8.5万亿元，2023年降至5.8万亿元。无论是物价、就业、增长，任何经济指标都表明中国经济受房地产拖累，已经陷入08年来最危险的时候，如果房价暴跌的趋势不得到遏制，中国经济就会被一场金融危机拖入万劫不复。唯一解决办法就是黄奇帆所说，政府抄底商品房改为保障房（http://www.china-cer.com.cn/zhonghong/2023110726485.html）。3000亿刺激不是太多，而是太少。不过令人疑惑的是，比起房地产，央行似乎更在意股市，各种原因值得深入探讨。总结来说，中国经济要想度过眼前的危机，唯一方法是通过政府出资建设保障房稳定地产业，3000亿远远不够。<br><br>&lt;/strike&gt; <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-21 23:08:00 +0800</pubDate>
-    <guid isPermaLink="false">e610cc746a8bc2016b7ecb87d4811a73</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/175790558.html#e610cc746a8bc2016b7ecb87d4811a73</link>
     </item>
     </channel></rss>
     
