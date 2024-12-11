@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>12-11 20:04 +0800</lastBuildDate>
+    <lastBuildDate>12-12 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -192,22 +192,22 @@
     <item>
     
     
-    <title><![CDATA[【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 後註三十四]]></title>
-    <description><![CDATA[後註三十四 <br><br>----<br><br>Trump當選之後，反建制派開始討論如何鉗制深層政府在主流網絡平臺施行的言論審查，其中一個主意正是利用此前建制派想要廢除的230條款（參見【後註三十三】），把言論審查過濾反過來定義為社論，從而剝奪免責保護。雖然這因涉及建制派核心利益而很難推動，成功希望實在不大，但反將一軍的腦洞算是頗有創意，值得在此一提。</p>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">e86eab65bf308eaefaeb6d3f8a19aedd</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/162032391.html#e86eab65bf308eaefaeb6d3f8a19aedd</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 後註十九]]></title>
     <description><![CDATA[後註十九 <br><br>----<br><br>量子計算詐騙集團的謊言，除了把己方的技術難度大幅低估七八個數量級之外，所吹噓的可能用途（“量子優勢”）又分兩類：第一類是破密，其特徵是若能實現那七八個數量級的進步，則理論上的確可以快於古典電腦，但這個潛在用途已經被美國標準局簡單廉價地改用後量子密碼規避掉了。其他的所謂量子優勢則主要依靠刻意低估古典電腦的能力，尋找以往沒有研發投入的方向來作對比；這些假優勢只要傳統計算機科學的研究人員稍微用心，基本都可以找到新的高效算法，一次性提升古典電腦的計算效率達五六個、甚至八九個數量級，從而反超量子計算的理論極限。昨天就有一個新案例被報導出來，亦即模擬固態物理中極爲重要的Transverse Field Ising Model的古典算法得到大幅加强，這個任務已經不關量子計算什麽事了，詳情參見<a href="https://www.sciencenewslab.com/computers-find-impossible-solution-beating-quantum-tech-at-own-game/"><span style="color:blue">《Computers Find Impossible Solution, Beating Quantum Tech at Own Game》</span></a>。</p><br><br></span>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2024-11-11 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
     <link>https://taizihuang.github.io/wmyblog/html/171633910.html#eb42a79a300ec03e39298ad0c152869c</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 後註三十四]]></title>
+    <description><![CDATA[後註三十四 <br><br>----<br><br>Trump當選之後，反建制派開始討論如何鉗制深層政府在主流網絡平臺施行的言論審查，其中一個主意正是利用此前建制派想要廢除的230條款（參見【後註三十三】），把言論審查過濾反過來定義為社論，從而剝奪免責保護。雖然這因涉及建制派核心利益而很難推動，成功希望實在不大，但反將一軍的腦洞算是頗有創意，值得在此一提。</p>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2024-11-11 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">e86eab65bf308eaefaeb6d3f8a19aedd</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/162032391.html#e86eab65bf308eaefaeb6d3f8a19aedd</link>
     </item>
     <item>
     
@@ -298,16 +298,6 @@
     <pubDate>2024-10-24 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">b0b2044de4efe8a027cb0be072a9f826</guid>
     <link>https://taizihuang.github.io/wmyblog/html/177266891.html#b0b2044de4efe8a027cb0be072a9f826</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | LoveClem]]></title>
-    <description><![CDATA[我觉得现在的AI除了王博士所说的问题外，还有一个最大的问题----运动控制和随机应变能力不足。（这也是AI的老大难问题了）<br><br>看了下近几年的RoboCup,感觉机器人这方面还是不行，离OpenAI吹嘘的AGI差得还很远。甚至可以说目前这条技术路径是不可能通向AGI的，AGI只要建立在对人脑的深刻理解的基础上。<br><br> <br><br>----<br><br>你所説的AI管控機器人的問題，運動控制欠缺大數據，隨機應變則需要高等邏輯，非統計機率所能及，所以究其本質，依然是博客這裏反復討論過的本世代AI那些基本缺陷的體現。<br><div class="TIME">2024-11-15 05:46 回复</div>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2024-10-22 21:08:00 +0800</pubDate>
-    <guid isPermaLink="false">6fa83d1e2b6dd25d1d9425698b6d6064</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/171633910.html#6fa83d1e2b6dd25d1d9425698b6d6064</link>
     </item>
     </channel></rss>
     
