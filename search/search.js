@@ -1,10 +1,22 @@
 var tag_list = [];
+var tag_dict = {};
+var last_tag_dict = {};
 
 function enter_search(e) {
     if (e.keyCode == 13) {
         search()
     }
 };
+
+function tag_count(el) {
+    if (el != '') {
+        if (el in tag_dict){
+            tag_dict[el] += 1;
+        } else {
+            tag_dict[el] = 1;
+        }
+    }
+}
 
 function tagList(id) {
     const index = tag_list.indexOf(id);
@@ -23,6 +35,8 @@ function search() {
     var $comment = $('.REPLY_LI')
     var $post_count = $('.post_count')
     var $comment_count = $('.comment_count')
+    last_tag_dict = {...tag_dict};
+    tag_dict = {};
 
     $.ajax({
         url: 'wmyblog.json',
@@ -77,9 +91,6 @@ function search() {
             var post_str = ''
             var reply_str = ''
             var keywords = $input.val().trim().toLowerCase().split(/[\s\-]+/);
-            var dict = { "and": 1, "or": -1, "not": 0 };
-            var keyword_list = [];
-            var logic_list = [];
             
             if (tag_list.length == 0){
             articleData.forEach(function(data) {
@@ -180,12 +191,29 @@ function search() {
                         reply_str += "<div class='SAY'>" + comment.replace('\n','<br><br>') + "</div>"
                         reply_str += "<div class='REPLY'>" + reply.replace('\n','<br><br>') + "</div>"
                         comment_count += 1
+                        tag.split('/').forEach(tag_count);
                     }
                 }
                 reply_str += "</div></div>";
             });
             $comment.html(reply_str);
             $comment_count.html("搜索到 " + comment_count + " 条问答");
+            for (var key in last_tag_dict) {
+                var value = tag_dict[key]
+                var tag_label = $('label#'+key+'-label');
+                if (tag_label.length > 0){
+                    tag_label.text(key);
+                }
+            }
+            for (var key in tag_dict) {
+                var value = tag_dict[key]
+                var tag_label = $('label#'+key+'-label');
+
+                if (tag_label.length > 0){
+                    tag_label.text(key+"["+String(value)+"]");
+                }
+            }
+
 
         }
     });
