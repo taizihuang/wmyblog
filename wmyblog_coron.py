@@ -110,7 +110,7 @@ async def fetch_async(url, func, args, proxy=''):
                 output = func(doc,*args)
             return output
 
-def extract(response):
+def extract(doc):
     string_left = 'DOCS_modelChunk = [{'
     string_right = '},{"'
     text = ''
