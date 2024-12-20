@@ -110,6 +110,27 @@ async def fetch_async(url, func, args, proxy=''):
                 output = func(doc,*args)
             return output
 
+def extract(response):
+    string_left = 'DOCS_modelChunk = [{'
+    string_right = '},{"'
+    text = ''
+    while string_left in doc:
+        loc1 = doc.index(string_left)
+        loc2 = doc[loc1:].index(string_right)
+        doc_dict = json.loads(doc[loc1+18:loc1+loc2] + '}]')
+        loc_idx = 0
+        if 's' not in doc_dict[0]:
+            loc3 = doc[loc1+loc2+2:].index(string_right)
+            doc_dict = json.loads(doc[loc1+18:loc1+loc2+2+loc3] + '}]')
+            loc_idx = 1
+            if 's' not in doc_dict[1]:
+                loc4 = doc[loc1+loc2+2+loc3+2:].index(string_right)
+                doc_dict = json.loads(doc[loc1+18:loc1+loc2+loc3+2+loc4+2] + '}]')
+                loc_idx = 2
+        text += doc_dict[loc_idx]['s']
+        doc = doc[loc1+loc2+2:]
+    return text
+
 async def saveScript(filename, id, proxy=''):
     print(filename, id)
     link = f'https://docs.google.com/document/d/{id}/edit'
@@ -117,16 +138,7 @@ async def saveScript(filename, id, proxy=''):
     async with aiohttp.ClientSession() as client:
         async with client.get(link, proxy=proxy) as resp:
             doc = await resp.text(encoding='utf8')
-
-    string_left = 'DOCS_modelChunk = [{'
-    string_right = '},{"'
-    text = ''
-    while string_left in doc:
-        loc1 = doc.index(string_left)
-        loc2 = doc[loc1:].index(string_right)
-        text += json.loads(doc[loc1+18:loc1+loc2] + '}]')[0]['s']
-        doc = doc[loc1+loc2+2:]
-
+    text = extract(doc)
     body = text.replace('\n','<br>')
     html = f"""
     <html><head><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
@@ -386,7 +398,6 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
             if i.find("div",{'role':"link"}):
                 i.find("div",{'role':"link"}).decompose()
             df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
-        # df = df.loc[(df.filename.str.contains('八方论坛')) | (df.filename.str.contains('龙行天下')) | (df.filename.str.contains('大学讲座'))]
         df = df.loc[df.filename.str.contains('龙行天下')]
         L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index[-2:]])
         print('transcript downloaded')
