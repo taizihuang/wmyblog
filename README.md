@@ -4,6 +4,8 @@
 
 直接访问：https://wmyblog.site
 
+《王孟源文集》和《王孟源访谈》：https://book.wmyblog.site
+
 模板来自：https://wmyblog.github.io
 
 
@@ -12,6 +14,12 @@
 请访问 https://wmyblog.site/search/
 
 ## 离线搜索
+
+**方法一：**
+
+安装 Python, 在当前目录下运行 `python3 -m http.server 8000`，然后浏览器访问 `localhost:8000/search/index.html`
+
+**方法二：**
 
 Chrome 用户：彻底关闭Chrome。单击 **search** 目录下 `open_in_Chrome_windows.bat` 批处理文件
 
@@ -43,14 +51,4 @@ blog.updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./
     ## articleFile: 文章dataframe数据地址
     ## commentFile: 评论dataframe数据地址
 
-```
-
-### Git 备忘
-
-```
-git add .
-git commit -m "1"
-git branch -M main
-git remote add origin git@github.com:taizihuang/wmyblog.git
-git push -u origin main
 ```
