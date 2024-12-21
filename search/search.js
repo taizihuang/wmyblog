@@ -152,7 +152,7 @@ function search() {
                 var reply = data.reply.trim().toLowerCase();
                 var comment_url = data.id;
                 var nickname = data.nickname;
-                var tag = data.tag; //.split('/').join('#');
+                var tag = data.tag.split('/').join('/');
                 var md5 = data.md5;
                 var title = data.title;
                 var date = data.date
