@@ -30,30 +30,6 @@ def getPageNo():
 #     nPage = math.ceil(nArticle / nPerPage)
     return 11 #nPage
 
-# def fetchTable(docid, tab, nrow):
-#     url = f'https://docs.qq.com/dop-api/opendoc?tab={tab}&id={docid}&normal=1&outformat=1&startrow=0&endrow={nrow-1}'
-#     headers = {
-#         'Referer': 'https://docs.qq.com/sheet/DR09JSkJqU3h0dGJn?tab=BB08J2',
-#         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
-#     }
-#     l = requests.get(url,headers=headers).content
-#     l = json.loads(l)
-#     data = l['clientVars']['collab_client_vars']['initialAttributedText']['text'][0][-1][0]['c'][1]
-#     col = int(len(data)/(nrow))
-#     data_list = []
-#     for i in range(nrow):
-#         row_list = []
-#         for j in range(col):
-#             cell_data = data[str(i*col+j)]
-#             if '2' in cell_data.keys():
-#                 row_list.append(cell_data['2'][1])
-#             else:
-#                 row_list.append('')
-                
-#         data_list.append(row_list)
-#     df = pd.DataFrame(data=data_list[1:],columns=data_list[0])
-#     return df.set_index(df.columns[0],drop=True)
-
 def updateTag(tagFile='./data/tag.pkl'):
 
     df_tag = pd.read_pickle(tagFile)
@@ -97,8 +73,22 @@ class Tasker():
 
 async def fetch_async(url, func, args, proxy=''):
     headers = {'User-Agent': 'Edg/113.0.1774.35'}
+    headers = {
+        'referer' : 'https://blog.udn.com/MengyuanWang',
+        'host' : 'blog.udn.com',
+        'Origin' : 'https://blog.udn.com',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-encoding': 'gzip, deflate, br, zstd',
+        'accept-language': 'en-US,en;q=0.9,zh-TW;q=0.8,zh-CN;q=0.7,zh;q=0.6',
+        'Dnt': '1',
+        'priority': 'u=0, i',
+        'sec-ch-ua': '"Microsoft Edge";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
+        'sec-ch-ua-mobile': '?0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0',
+        'Content-Type': 'application/html'
+    }
     async with aiohttp.ClientSession(headers=headers) as session:
-        async with session.get(url=url, proxy=proxy) as response:
+        async with session.get(url=url, proxy=proxy, headers=headers) as response:
             doc = await response.text()
             doc = BeautifulSoup(doc,features="lxml")
             if type(func) == list:
@@ -336,54 +326,34 @@ def mergeComment(df_comment_new,commentFile='./data/comment_full.pkl',tag=''):
 def comment2md(comment):
     return hashlib.md5((comment.replace('<strike>','').replace('</strike>','').replace("\r\n","").replace('\n','').replace('<br>','')).encode()).hexdigest()
 
-# def table2tag(df_comment, df_table, df_cell_table):
-#     df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
-#     df_tag = pd.DataFrame()
-#     df_cell = pd.DataFrame()
-
-#     for i in range(round(len(df_table.columns)/2)):
-#         df_tag = pd.concat([df_tag, df_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'tag'})],axis=0)
-#     df_tag = df_tag.loc[~df_tag.code.isna()].reset_index(drop=True)
-#     df_tag['md5'] = df_tag['code'].apply(lambda x: x[-32:])
-
-#     for i in range(round(len(df_cell_table.columns)/2)):
-#         df_cell = pd.concat([df_cell, df_cell_table[[f'code_{i}',f'tag_{i}']].rename(columns={f'code_{i}':'code',f'tag_{i}':'cell'})],axis=0)
-#     df_cell = df_cell.loc[~df_cell.code.isna()].reset_index(drop=True)
-#     df_cell['md5'] = df_cell['code'].apply(lambda x: x[-32:])
-
-#     df_comment_tag = pd.merge(df_comment, df_tag, on='md5',how='left')
-#     df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
-#     df_comment_tag_cell = pd.merge(df_comment_tag, df_cell, on='md5',how='left')
-#     df_comment_tag_cell.loc[df_comment_tag_cell.cell.isna(),'cell'] = 'A0'    
-#     return df_comment_tag_cell
-
 def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,commentFullUpdate=False):
 
     os.environ['http_proxy'] = proxy #代理的端口
     os.environ['https_proxy'] = proxy
     headers = {
+        'referer' : 'https://blog.udn.com/MengyuanWang',
+        'host' : 'blog.udn.com',
+        'Origin' : 'https://blog.udn.com',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-encoding': 'gzip, deflate, br, zstd',
+        'accept-language': 'en-US,en;q=0.9,zh-TW;q=0.8,zh-CN;q=0.7,zh;q=0.6',
+        'Dnt': '1',
         'priority': 'u=0, i',
         'sec-ch-ua': '"Microsoft Edge";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
         'sec-ch-ua-mobile': '?0',
-        'Origin': 'blog.udn.com',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0',
+        'Content-Type': 'application/html'
     }
 
     tasker = Tasker(nTask=nTask)
 
-    # artInfo_list = tasker.run([fetch_async(pageURL(pno), page2artinfo, (), proxy=proxy) for pno in range(getPageNo())])
-    # df_artinfo = pd.DataFrame(data=artInfo_list).set_index('art_id')
     domain = 'classic-blog.udn.com'
-    # doc = BeautifulSoup(requests.get(f'https://{domain}/MengyuanWang/article',headers=headers).content, features="lxml")
-    # id_list = [d['href'].split('/')[-1] for d in doc.findAll(class_='main-title')][:5]
     doc = BeautifulSoup(requests.get(f'https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
     id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')]
-    print(id_list)
-    # id_list += ['162032391','108908773','171633910','164999328','131394982','108908755','108908678','131174635','125380740','108908753','108908771','178109282']
     with open('id_list') as f:
-        id_list += (f.read()).split('\n')
+        id_list = (f.read()).split('\n')
     doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
-    id_list = id_list + [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
+    id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
     id_list = list(set(id_list))
 
@@ -409,7 +379,8 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         # comment_list = [page[1] for page in page_list]
 
         ## classic-blog.udn.com
-        article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
+        #article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
+        article_list = tasker.run([fetch_async(articleURL(art_id), page2article, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
         comment_list = tasker.run([fetch_async(commentURL_classic(art_id,0), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
 
         df_article = pd.concat(article_list,ignore_index=True)
@@ -807,8 +778,6 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
         today = pd.to_datetime(datetime.date.today())
         return today
 
-    # fetchTable('DR09JSkJqU3h0dGJn','BB08J2',401).to_excel(tableFile)
-    # print('table.xlsx fetched!')
     updateTag()
     
     df_article = pd.read_pickle(articleFile)
