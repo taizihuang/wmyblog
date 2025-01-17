@@ -357,4 +357,13 @@
 			<description><![CDATA[敘利亞悲歌的真相]]></description>
 			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=241220.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
+
+        <item>
+		<title>2025/01/17 預測中國半導體、AI及金融的未來</title>
+			<pubDate>Fri, 17 January 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250117]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250117.html]]></link>
+			<description><![CDATA[預測中國半導體、AI及金融的未來]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=250117.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
