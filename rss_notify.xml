@@ -7,8 +7,18 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>01-19 14:04 +0800</lastBuildDate>
+    <lastBuildDate>01-19 20:04 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
+    <description><![CDATA[我先谈一谈我知道的事. MoE最早在上一代AI(统计机器学习)中就已被提出. 上一代的机器学习最终的成果是集成学习Ensemble learning. 理论已证明, 若干弱分类器(只需准确率略大于50%)可以通过集成学习变成一个强分类器, MoE就是集成学习的一种. 上一代AI主要擅长处理Tabular Data.到了这一代AI(深度学习), 当时还在Google的ilya sutskever首次提出将MoE作为神经网络中一个组件并进行尝试, 不过并无下文. 这个ilya sutskever, 就是2013年和他导师Geoffrey Hinton还有另一个学生在多伦多大学一起最早实现GPU运行多层的卷积神经网络的人, 卷积神经网络则是Geoffrey Hinton之前的博后学生法国人yann lecun所提出的. 因此, 这一代的AI, 深度学习(deep learning)实际上就是从他们开始实现起飞的. 由于能处理图片数据且效果惊人, 各大公司都来聘请Geoffrey Hinton, 据说连百度当时都来出过价. ilya sutskever拦住要去应聘的Geoffrey Hinton, 提议成立一家公司DNNResearch, 把研究成果当知识产权放进去, 让各大公司来收购. 最后Google出价最高, 收购后变成Google Brain部门, ilya sutskever就成了谷歌的员工.2015年, ilya sutskever离开Google和Altman等人一起创立OpenAI. OpenAI刚开始并不知道搞什么好, 中间还经历过Musk争夺控制权的事. 到了2017年, Google提出了Transformer模型, 反响巨大, ilya sutskever他们看到论文, 最后就决定投钱投人做自然语言方向, 从GPT一代开始一直做到第三代ChatGPT, 一炮而红.ChatGPT的爆红反过来又启发了另一波Google的员工. 2023年初, 法国人Arthur Mensch和他的其它两位大学好友不满中美两国搞AI热火朝天, 欧洲却毫无作为, 辞去Google的工作返回法国, 创立公司Mistral AI. 这家公司被马克龙和其它不甘落后的欧洲精英大力支持, 融了不少资金. 他们就把目光放到了MoE上. 到了2023年底, Mistral AI就推出了他们的AI, 成功的运用了MoE, AI模型的效率大大提高, 欧洲终于追上了美国. MoE的成功也很快吸引诸多同行采用, OpenAI没有公开架构, 但外界普遍推测采用了MoE, 当然也包括DeepSeek V2.到了今年初, DeepSeek V3成功推出. 前几天读了DeepSeek V3的技术报告后, 我目瞪口呆, 彻底死心. 这篇报告有上百的作者, 一共五十多页, 大方向的架构的确是是MoE, 但是有多达十几处效率改进. 我到现在才弄清楚一半细节. 这每一个效率改进的设计都足够发一篇中上水平的论文. 也就是说, 虽然大思路不变, 但是DeepSeek几乎把文献上能找到的, 提出的, 在每一个环节上可能改进效率的地方都做了优化"小"创新. 十几处改进累积下来就能有百倍的效率. 这个工作量已经远超过任何一个大学科研团队的能力, 只能是上百人的顶级工程师来做, 团队工程能力毫无疑问媲美OpenAI. OpenAI可是集合了美国本土加上世界各地人才, 而DeepSeek几乎只是中国大陆本土的工程师, 就能打赢. 所以Altman读了这篇论文后, 就在X上酸溜溜的暗示中国人不用尝试探索新办法, 只要汇总所有试过可能有效的办法, 然后往下改进就行了. 我可以想像他的绝望和精神崩溃,这怎么竞争得过中国人.现在回答你的问题, 为什么美国不重视做MoE? 美国怎么会不重视, 当然重视了, 美国从全世界招人才, 收购外国公司, 大学花钱培育各种创新, MoE实际上也是美国最先试验的, 后来是法国人也不甘落后尝试.无奈中国人太卷了. 每当事情发展到一定程度的时候, 中国人就能以卷王的态势碾压过来肝爆. 这件事情, 我看性质和台积电差不多.<br><br> <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-19 17:19:00 +0800</pubDate>
+    <guid isPermaLink="false">594f1894e692dab1d0b9440e97abe4e3</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#594f1894e692dab1d0b9440e97abe4e3</link>
+    </item>
     <item>
     
     
