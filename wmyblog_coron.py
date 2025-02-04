@@ -47,7 +47,7 @@ def updateTag(tagFile='./data/tag.pkl'):
 
 class Tasker():
 
-    def __init__(self, nTask=5, tSleep=1):
+    def __init__(self, nTask=5, tSleep=10):
         self.nTask = nTask
         self.tSleep = tSleep
 
@@ -199,29 +199,34 @@ def page2article(doc, art_id):
     return [df_article]
 
 def page2article_classic(doc, art_id):
+    print(art_id)
+    print(doc)
 
     if doc.find(class_="REPLY_LI"):
         doc.find(class_="REPLY_LI").decompose()
 
     # title
-    title = doc.find(id='maintopic').text
+    title = doc.find(class_='article_topic').text
 
     # date
     if doc.find(class_="DATE"):
         art_date = doc.find(class_="DATE").text
         art_date = art_date.replace('发表日期 : ','').replace('-','/')
         doc.find(class_="DATE").decompose()
+    elif doc.find(class_="article_datetime"):
+        art_date = doc.find(class_="article_datatime").text
     else:
-        # art_date = doc.find(class_="article_datatime").text
         for t in doc.findAll(class_="main-text"):
             regex = r'(\d{4}/\d{2}/\d{2} \d{2}:\d{2})'
             if re.search(regex, t.text):
                 art_date = re.search(regex, t.text).groups()[0]
                 break
+    print(art_date)
     art_date = pd.to_datetime(art_date,format="%Y/%m/%d %H:%M")
 
     # post
-    post = doc.find(id="mainbody")
+    #post = doc.find(id="mainbody")
+    post = doc.find(id="article_show_content")
 
     # convert link
     for i in post.findAll('a',{'href': re.compile("MengyuanWang")}):
@@ -349,13 +354,14 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
 
     domain = 'classic-blog.udn.com'
     doc = BeautifulSoup(requests.get(f'https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
-    id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')]
-    with open('id_list') as f:
-        id_list = (f.read()).split('\n')
-    doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
-    id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
-    id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:20])
+    id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:10]
+    # with open('id_list') as f:
+    #     id_list = (f.read()).split('\n')
+    # doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
+    # id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
+    id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:10])
     id_list = list(set(id_list))
+    print(id_list)
 
     df_artinfo = pd.DataFrame(data=id_list,columns=['art_id']).set_index('art_id')
     print('article info fetched!')
@@ -379,7 +385,7 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         # comment_list = [page[1] for page in page_list]
 
         ## classic-blog.udn.com
-        #article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
+        # article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
         article_list = tasker.run([fetch_async(articleURL(art_id), page2article, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
         comment_list = tasker.run([fetch_async(commentURL_classic(art_id,0), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
 
@@ -809,5 +815,5 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=2, proxy='' ,gDriveUpdate=True)
+    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=False)
     updateBlogPage(days=50)
