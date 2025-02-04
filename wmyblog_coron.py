@@ -1,3 +1,4 @@
+from downloader import Downloader
 import asyncio,aiohttp,time,math,os,requests,re,datetime,json,hashlib,sys
 from mako.template import Template
 from bs4 import BeautifulSoup
@@ -45,61 +46,6 @@ def updateTag(tagFile='./data/tag.pkl'):
     print('tag table updated')
     return
 
-class Tasker():
-
-    def __init__(self, nTask=5, tSleep=10):
-        self.nTask = nTask
-        self.tSleep = tSleep
-
-    def run(self, task_pool):
-
-        async def main(tasks):
-            outputs = await asyncio.gather(*tasks)
-            return outputs
-
-        s = []
-        nTask = self.nTask
-        tSleep = self.tSleep
-
-        for i in range(int(np.ceil(len(task_pool)/nTask))):
-            tasks = task_pool[i*nTask:(i+1)*nTask]
-            outputs = asyncio.run(main(tasks))
-            for output in outputs:
-                if output != None:
-                    s = s + output
-            time.sleep(tSleep)
-
-        return s
-
-async def fetch_async(url, func, args, proxy=''):
-    headers = {'User-Agent': 'Edg/113.0.1774.35'}
-    headers = {
-        'referer' : 'https://blog.udn.com/MengyuanWang',
-        'host' : 'blog.udn.com',
-        'Origin' : 'https://blog.udn.com',
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-encoding': 'gzip, deflate, br, zstd',
-        'accept-language': 'en-US,en;q=0.9,zh-TW;q=0.8,zh-CN;q=0.7,zh;q=0.6',
-        'Dnt': '1',
-        'priority': 'u=0, i',
-        'sec-ch-ua': '"Microsoft Edge";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
-        'sec-ch-ua-mobile': '?0',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0',
-        'Content-Type': 'application/html'
-    }
-    async with aiohttp.ClientSession(headers=headers) as session:
-        async with session.get(url=url, proxy=proxy, headers=headers) as response:
-            doc = await response.text()
-            doc = BeautifulSoup(doc,features="lxml")
-            if type(func) == list:
-                output = []
-                for i in range(len(func)):
-                    output = output + func[i](doc,*args[i])
-                output = [tuple(output)]
-            else:
-                output = func(doc,*args)
-            return output
-
 def extract(doc):
     string_left = 'DOCS_modelChunk = [{'
     string_right = '},{"'
@@ -121,13 +67,11 @@ def extract(doc):
         doc = doc[loc1+loc2+2:]
     return text
 
-async def saveScript(filename, id, proxy=''):
+def saveScript(filename, id, proxy=''):
     print(filename, id)
     link = f'https://docs.google.com/document/d/{id}/edit'
+    doc = requests.get(link).content.decode("utf8")
 
-    async with aiohttp.ClientSession() as client:
-        async with client.get(link, proxy=proxy) as resp:
-            doc = await resp.text(encoding='utf8')
     text = extract(doc)
     body = text.replace('\n','<br>')
     html = f"""
@@ -350,15 +294,13 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
         'Content-Type': 'application/html'
     }
 
-    tasker = Tasker(nTask=nTask)
-
-    domain = 'classic-blog.udn.com'
+    # latest article ids
     doc = BeautifulSoup(requests.get(f'https://blog.udn.com/MengyuanWang/article',headers=headers).content, features="lxml")
     id_list = [d('a')[0]['href'].split('/')[-1] for d in doc.findAll(class_='article_topic')][:10]
-    # with open('id_list') as f:
-    #     id_list = (f.read()).split('\n')
-    # doc = BeautifulSoup(requests.get(f'https://{domain}/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
-    # id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
+
+    # latest comment ids
+    doc = BeautifulSoup(requests.get(f'https://classic-blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep',headers=headers).content, features="lxml")
+    id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
     id_list += list(pd.read_pickle('./data/comment_full.pkl').id.iloc[:10])
     id_list = list(set(id_list))
     print(id_list)
@@ -375,21 +317,25 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
                 i.find("div",{'role':"link"}).decompose()
             df = pd.concat([df, pd.DataFrame(data={'filename': i.text, 'id': i['data-id']}, index=[0])], ignore_index=True)
         df = df.loc[df.filename.str.contains('龙行天下')]
-        L = tasker.run([saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy) for idx in df.index[-2:]])
+        for idx in df.index[-2:]:
+            saveScript(df.loc[idx, 'filename'][:6], df.loc[idx, 'id'], proxy)
         print('transcript downloaded')
 
     if articleUpdate:
-        ## blog.udn.com
-        # page_list = tasker.run([fetch_async(articleURL(art_id), [page2article, page2comment], [(art_id,), (art_id,)], proxy=proxy) for art_id in df_artinfo.index])
-        # article_list = [page[0] for page in page_list]
-        # comment_list = [page[1] for page in page_list]
+        article_url = [articleURL(art_id) for art_id in id_list]
+        article_tmp = Downloader(url_list=article_url, headers=headers, outFilename="article_tmp.pkl").run(njob=1)
+        # article_tmp = pd.read_pickle("article_tmp.pkl")
+        article_list = []
+        comment_list = []
+        for idx in article_tmp.index:
+            url, response, status = article_tmp.loc[idx]
+            if status == 200:
+                doc = BeautifulSoup(response, features="lxml")
+                art_id  = url.split("/")[-1]
+                article_list += page2article(doc, art_id)
+                comment_list += page2comment(doc, art_id)
 
-        ## classic-blog.udn.com
-        # article_list = tasker.run([fetch_async(articleURL_classic(art_id), page2article_classic, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
-        article_list = tasker.run([fetch_async(articleURL(art_id), page2article, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
-        comment_list = tasker.run([fetch_async(commentURL_classic(art_id,0), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index])
-
-        df_article = pd.concat(article_list,ignore_index=True)
+        df_article = pd.concat(article_list, ignore_index=True)
         df_comment = pd.concat(comment_list,ignore_index=True)
         mergeArticle(df_article)
         mergeComment(df_comment)
@@ -397,13 +343,13 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
     else:
         pass
 
-    if commentFullUpdate:
-        comment_list = tasker.run([fetch_async(commentURL_classic(art_id,pno), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index for pno in range(df_artinfo.loc[art_id,'art_pno'])])
-        df_comment = pd.concat(comment_list,ignore_index=True)
-        mergeComment(df_comment)
-        print('all comments updated')
-    else:
-        pass
+    # if commentFullUpdate:
+    #     comment_list = tasker.run([fetch_async(commentURL_classic(art_id,pno), page2comment, (art_id,), proxy=proxy) for art_id in df_artinfo.index for pno in range(df_artinfo.loc[art_id,'art_pno'])])
+    #     df_comment = pd.concat(comment_list,ignore_index=True)
+    #     mergeComment(df_comment)
+    #     print('all comments updated')
+    # else:
+    #     pass
 
 def genAnno(df):
 
@@ -815,5 +761,6 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=False)
+    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=True)
     updateBlogPage(days=50)
+    os.remove("article_tmp.pkl")

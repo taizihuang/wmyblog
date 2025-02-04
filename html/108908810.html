@@ -34,7 +34,7 @@
 
 </div></div>
     <div class="REPLY_LI">
-    <h2>56 条留言</h2>
+    <h2>58 条留言</h2>
     <div class="LI">
     <div class="USER"><span class="NAME" id=3991d42112e626497994c7c5b938b5bd>KELLY</span>
     <div class="TIME">2017-04-30 00:00</div></div>
@@ -423,6 +423,18 @@
     <span class="tag"><input type="search" value=empty/ data-md5=9d3364375c929951f763b83963cb9ae3 onkeydown="enter(event,$(this))"></span>
     <div class="SAY">哦那就简单了, 即便刨除概率估算(我是乐观认为本代AI最多还能挖两个数量级), 还有额外两条保证结论的有效性 (1)大模型技术扩散速度远远快于研发, 你会的, 我很快也会, 没有秘密武器 (2)大模型技术难以形成先发垄断优势, 对, 没有killer App<br><br></div>
     <div class="REPLY">是的，博客不是技術刊物，探討AI固然照舊仔細搜集事實、以供嚴謹邏輯分析，論證的目標終究在於1）對人類社會的推進有多大；2）對中美博弈平衡有何影響。<br><div class="TIME">2025-01-21 12:56 回复</div></div>
+    </div>
+    <div class="LI">
+    <div class="USER"><span class="NAME" id=9bd0f29f2b7b5cb0c582ce5d1654e132>AbzX5</span>
+    <div class="TIME">2025-02-04 13:35</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=9bd0f29f2b7b5cb0c582ce5d1654e132 onkeydown="enter(event,$(this))"></span>
+    <div class="SAY">之前先生在留言中提到“...只要不是像在围棋规则明确的情况下自我无限对弈...”。实际上这刚好是个值得讨论的话题，不过当时DeepSeek R1模型尚未放出，讨论只限于这一代AI。现在R1已经放出来，想借机会补充下一代AI的可能方向以及对中美博弈的影响。<br><br>我的观点是，下一代AI极有可能是model-based reinforcement learning技术路线。假如该路线走通， 会对中美博弈有什么影响？首先，一旦成功，下一代真AI就会有类似下棋无限自我对弈的能力，对数据的需求下降，但国家整体算力就有很大影响，也会有真的killing app出现。其次，粗略估计发展需要十年时间。这是只是一个粗糙的数量级估计，简单基于过去每十年会有一代技术进步，以及新一代学者需要十年左右将技术做成熟（一个博士生大概五年毕业，评副教授大概六年等等）。也就是说，中方需要在未来十年内打赢芯片产业，为下一代AI提前做好算力准备，否则又要被卡脖子。<br><br>为什么是model-based reinforcement learning？强化学习探讨的是AI Agent和Environment之间的有策略的互动关系，以最大化回报，例如AlphaGo下围棋超越了人类。强化学习才是AI的正统后续，因为它的理论框架是更完善的。<br><br>DeepSeek R1论文中有意思的发现是模型DeepSeek Zero可以只通过强化学习涌现长链推理, 所以取名Zero，以类比AlphaGo Zero。但是两者实际是不一样的，前者还远达不到后者那样自己无限下棋的能力。因为本质上AlphaGo采用的强化学习是model-based的，而DeepSeek Zero强化学习GRPO仍旧还只是model-free的。Model-based指的是AI Agent内部有对外部世界建立模型，会模拟外部环境的运行，而model-free则相反。很显然，只有AI内部建立起对外部世界的模型，你才能说AI Agent真的“理解了世界，才能在基础上做可靠的推理。这样的AI需要的训练数据也少的多，它可以大部分时间用自己内部的模型推演（思考），不需要每次行动都要和外部世界互动，获取反馈。AlphaGo就是典型的基于模型的强化学习，只不过特殊之处在于棋盘模型相对简单，可以直接人工构建在Agent中（见附注）， 并不需要自己去学习。现实中通用的AI显然要自己去学习世界模型，我们一般人类意义上的学习理解，指的都是这种需要学习世界模型的Model-based强化学习， 当然也要难的多。具体的讨论可参见Yann LeCun的相关观点。所以学术界应当探索如何让AI学习外部世界，走model-based reinforcement learning的真AI路线。<br><br></div>
+    </div>
+    <div class="LI">
+    <div class="USER"><span class="NAME" id=52208e9c7b084f9ed9fe6adc7d00b445>AbzX5</span>
+    <div class="TIME">2025-02-04 13:40</div></div>
+    <span class="tag"><input type="search" value=empty/ data-md5=52208e9c7b084f9ed9fe6adc7d00b445 onkeydown="enter(event,$(this))"></span>
+    <div class="SAY">附注：请注意，尽管实际上很多时候下棋也是在同一台电脑上虚拟出来的，但是对于AI来说这种虚拟仍旧属于外部环境，而不是内部模型。凡是只能通过规定的行动来交互的就是外部环境，而能对信息全知全能的才是内部模型。简单想一下，真正在进行比赛的虚拟棋盘是不能悔棋的，但是棋手自己脑子里想象出来的棋盘，可以无限悔棋无限次尝试。棋盘模型简单明确，不需要Agent去分析学习，可以直接人工置入，是最简单的情况。<br><br></div>
     </div>
     </div>
     </div>

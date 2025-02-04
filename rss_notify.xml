@@ -7,13 +7,63 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>02-04 20:50 +0800</lastBuildDate>
+    <lastBuildDate>02-04 21:36 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
+    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
+    <description><![CDATA[附注：请注意，尽管实际上很多时候下棋也是在同一台电脑上虚拟出来的，但是对于AI来说这种虚拟仍旧属于外部环境，而不是内部模型。凡是只能通过规定的行动来交互的就是外部环境，而能对信息全知全能的才是内部模型。简单想一下，真正在进行比赛的虚拟棋盘是不能悔棋的，但是棋手自己脑子里想象出来的棋盘，可以无限悔棋无限次尝试。棋盘模型简单明确，不需要Agent去分析学习，可以直接人工置入，是最简单的情况。<br><br> <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-04 13:40:00 +0800</pubDate>
+    <guid isPermaLink="false">52208e9c7b084f9ed9fe6adc7d00b445</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#52208e9c7b084f9ed9fe6adc7d00b445</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
+    <description><![CDATA[之前先生在留言中提到“...只要不是像在围棋规则明确的情况下自我无限对弈...”。实际上这刚好是个值得讨论的话题，不过当时DeepSeek R1模型尚未放出，讨论只限于这一代AI。现在R1已经放出来，想借机会补充下一代AI的可能方向以及对中美博弈的影响。<br><br>我的观点是，下一代AI极有可能是model-based reinforcement learning技术路线。假如该路线走通， 会对中美博弈有什么影响？首先，一旦成功，下一代真AI就会有类似下棋无限自我对弈的能力，对数据的需求下降，但国家整体算力就有很大影响，也会有真的killing app出现。其次，粗略估计发展需要十年时间。这是只是一个粗糙的数量级估计，简单基于过去每十年会有一代技术进步，以及新一代学者需要十年左右将技术做成熟（一个博士生大概五年毕业，评副教授大概六年等等）。也就是说，中方需要在未来十年内打赢芯片产业，为下一代AI提前做好算力准备，否则又要被卡脖子。<br><br>为什么是model-based reinforcement learning？强化学习探讨的是AI Agent和Environment之间的有策略的互动关系，以最大化回报，例如AlphaGo下围棋超越了人类。强化学习才是AI的正统后续，因为它的理论框架是更完善的。<br><br>DeepSeek R1论文中有意思的发现是模型DeepSeek Zero可以只通过强化学习涌现长链推理, 所以取名Zero，以类比AlphaGo Zero。但是两者实际是不一样的，前者还远达不到后者那样自己无限下棋的能力。因为本质上AlphaGo采用的强化学习是model-based的，而DeepSeek Zero强化学习GRPO仍旧还只是model-free的。Model-based指的是AI Agent内部有对外部世界建立模型，会模拟外部环境的运行，而model-free则相反。很显然，只有AI内部建立起对外部世界的模型，你才能说AI Agent真的“理解了世界，才能在基础上做可靠的推理。这样的AI需要的训练数据也少的多，它可以大部分时间用自己内部的模型推演（思考），不需要每次行动都要和外部世界互动，获取反馈。AlphaGo就是典型的基于模型的强化学习，只不过特殊之处在于棋盘模型相对简单，可以直接人工构建在Agent中（见附注）， 并不需要自己去学习。现实中通用的AI显然要自己去学习世界模型，我们一般人类意义上的学习理解，指的都是这种需要学习世界模型的Model-based强化学习， 当然也要难的多。具体的讨论可参见Yann LeCun的相关观点。所以学术界应当探索如何让AI学习外部世界，走model-based reinforcement learning的真AI路线。<br><br> <br><br>----<br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-04 13:35:00 +0800</pubDate>
+    <guid isPermaLink="false">9bd0f29f2b7b5cb0c582ce5d1654e132</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#9bd0f29f2b7b5cb0c582ce5d1654e132</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 後註十九]]></title>
+    <description><![CDATA[後註十九 <br><br>----<br><br>五天前，一架美國陸軍負責運送首都VIP的黑鷹直升機與民航機發生數十年來最慘烈的空中對撞事故。由於NTSB已經發佈初步調查公告（參見&lt;a href="https://www.youtube.com/watch?v=Afxq_L5GKyE"&gt;&lt;span style="color:blue"&gt;《NTSB officials share the latest details in the DC plane crash investigation and recovery efforts》&lt;/span&gt;&lt;/a&gt;），我們可以確定立即責任（Immediate responsibilities，亦即不考慮深層的背景因素，例如管理不善、規劃失當等等）基本在於黑鷹飛行員的兩個嚴重失誤：1）目視辨認追蹤民航機時，選錯了目標；2）偏離法規限定的直升機通道（Helicopter Corridor，參見下圖中的藍色粗綫，肇事的黑鷹沿Route 1由北向南飛；這條直升機通道的高度上限是200英尺，而撞機事故發生在325英尺；姑且不論只預留100英尺的容錯空間是否明智，正因爲容錯空間這麽小，直升機飛行員更應該嚴格遵守規定；我自己就曾經多次駕駛小飛機飛過曼哈頓市區邊緣哈德遜河上方低空的通用航空通道，很難想象會有那麽愚蠢而頭鐵的飛行員在夜晚的機場跑道段一公里處也敢違規）。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28654588_1.jpg"/&gt;&lt;/p&gt;<br><br>&lt;p&gt;Trump在第一時間做出評論，認爲事故是近年來的白左DEI政策（Diversity、Equity、Inclusion，多元、平等、包容，也就是不顧能力和資格，而根據種族、性別、性取向等等政治正確標準來錄取和提拔員工）的惡果，於是立刻遭受主流媒體的嚴厲譴責批判（例如&lt;a href="https://thehill.com/homenews/race-politics/5117361-trump-criticized-by-congressional-black-caucus-for-blaming-dei/"&gt;&lt;span style="color:blue"&gt;《CBC blasts Trump’s DEI comments after Potomac plane crash》&lt;/span&gt;&lt;/a&gt;）。然而美國陸軍雖然很快公佈了黑鷹三名乘員之中兩名隨機士官的身份，卻扭扭捏捏一直不肯説明軍官正駕駛（Pilot Flying）是誰，當時就有一些擁Trump博主猜測會是女性、同性戀或變性人，引發了白左網紅的口水轟炸。拖了幾天，官方才終於承認是上尉Rebecca Lobach（拖延的藉口是“徵詢家人意見”，但美軍素來無此慣例）。這個消息立刻讓MAGA網民炸了鍋，因爲Lobach不但資歷甚淺，只有450飛行小時，卻被破格提拔、委以運載政治權貴的重任，而且的確正是Biden政府拿來表彰DEI政績的招牌人物之一，擁有官方頭銜“White House military social aide”，並屢次以“傑出女性”身份受邀參與白宮宴會。所以不論旁觀者的個人主觀政治偏向，都必須接受以下的明確客觀事實：本次事故的直接罪責在於黑鷹飛行員的不適任，而這名女飛行員恰恰是Biden的DEI政確明星。&lt;/p&gt;<br><br>&lt;p&gt;多年前我曾評論，Trump雖然是個習慣性撒謊者（Habitual Liar），但他隨口撒的那些小謊與建制派的大謊言相比，根本無足輕重；既然政客中只有他願意揭穿那些大謊言，即便堅持道德考慮的選民也有很好的理由支持MAGA。這次事件是個很好的例子：Trump反射式地批判DEI顯然不是深思熟慮、有根有據的論斷，但這樣不負責任、沒有絲毫科學嚴謹性的隨口胡説，卻能恰好揭開白左的國王新衣，反映的不是Trump自身的智慧和能力，而是美國病入膏肓、無處不糜爛的慘狀。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-04 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/177165976.html#eb42a79a300ec03e39298ad0c152869c</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註十一]]></title>
+    <description><![CDATA[後註十一 <br><br>----<br><br>雖然博客多年來反復討論蔗糖/果糖的健康危害在上世紀中期被蔗糖業收買學術娼妓甩鍋給脂肪的歷史，一直到有朋友私下詢問，我才想起並沒有明確列舉出處和細節，現在補上。最權威的復盤來自2016年《The Journal of the American Medical Association》《美國醫藥學會期刊》的這篇總結文章：&lt;a href="https://pubmed.ncbi.nlm.nih.gov/27617709/"&gt;&lt;span style="color:blue"&gt;《Sugar Industry and Coronary Heart Disease Research: A Historical Analysis of Internal Industry Documents》&lt;/span&gt;&lt;/a&gt;，只想看科普的讀者則可以參考&lt;a href="https://www.nytimes.com/2016/09/13/well/eat/how-the-sugar-industry-shifted-blame-to-fat.html"&gt;&lt;span style="color:blue"&gt;《How the Sugar Industry Shifted Blame to Fat》&lt;/span&gt;&lt;/a&gt;或者&lt;a href="https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat"&gt;&lt;span style="color:blue"&gt;《50 Years Ago, Sugar Industry Quietly Paid Scientists To Point Blame At Fat》&lt;/span&gt;&lt;/a&gt;。至於那些學術娼妓，包含基本所有名校，例如哈佛的Fredrick Stare和Mark Hegsted（參見&lt;a href="https://www.statnews.com/2016/09/12/sugar-industry-harvard-research/"&gt;&lt;span style="color:blue"&gt;《Sugar industry secretly paid for favorable Harvard research》&lt;/span&gt;&lt;/a&gt;），但影響最惡劣的，當屬Ancel Keys和他所主導的&lt;a href="https://en.wikipedia.org/wiki/Seven_Countries_Study"&gt;&lt;span style="color:blue"&gt;《Seven Countries Study》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-04 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">e24b7fca76292f40c85e0a8358c86223</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#e24b7fca76292f40c85e0a8358c86223</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 後註三十七]]></title>
+    <description><![CDATA[後註三十七 <br><br>----<br><br>博客在2014-2015年起始階段的核心宗旨，在於向華語世界介紹昂撒殖民體系的真相，重點放在美國霸權的三個支柱，亦即美元、美軍和美宣。十一年下來，這些真相早已被廣爲接受，並且有了無數的二次、三次、乃至N次創作，但是剛剛看了一篇電影介紹（參見&lt;a href="https://user.guancha.cn/main/content?id=1374248"&gt;&lt;span style="color:blue"&gt;《我怀疑&amp;lt;哪吒2&amp;gt;在讽刺美帝》&lt;/span&gt;&lt;/a&gt;），依舊頗感欣喜，因爲這不但是真正面對普羅大衆的娛樂性傳播管道，而且比去年的《黑神話：悟空》更進一步，不止宣揚自身文化，還敢於批判對手，到達了1980、90年代美國霸權優勢全盛時期，好萊塢内外宣輸出的同等高度。不過這裏也隱藏著危險：中方在建立民族自信的同時，必須避免當年美方自我捧殺的思維陷阱，尤其要分清DeepSeek/華爲等科研先鋒與中科大量子計算那些金融詐騙團隊的差別，及早彌補科研和金融管理上的短板，方能開創可持續的盛世，為全人類解脫資本殖民帝國桎梏做出長久的貢獻。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-03 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">04c92d9f94fae813137c998046a23ead</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/162032391.html#04c92d9f94fae813137c998046a23ead</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註五十二]]></title>
-    <description><![CDATA[後註五十二 <br><br>----<br><br>半年前我在回復&lt;a href="177165976.html"&gt;&lt;span style="color:blue"&gt;《海湖莊園抄家事件幕後的美國政治鬥爭》&lt;/span&gt;&lt;/a&gt;一文的留言欄第16樓讀者發問時，除預期Trump當選之外，也總結其掌權執政會對俄烏戰局帶來的影響，有三個重點，都已經兌現，復盤於下：1）戰爭不會馬上結束；2）Trump會很快停止援助，請參考1月21日的新聞&lt;a href="https://apnews.com/article/trump-foreign-aid-9f5336e84c45a6e782fa95f60a919f47"&gt;&lt;span style="color:blue"&gt;《Trump suspends US foreign assistance for 90 days pending reviews》&lt;/span&gt;&lt;/a&gt;；3）建制派官僚會繼續鉆漏洞提供軍援給烏克蘭，請與1月28日的這條消息&lt;a href="https://edition.cnn.com/2025/01/28/politics/patriot-missiles-ukraine-israel-us/index.html"&gt;&lt;span style="color:blue"&gt;《Patriot missiles from Israel sent to Ukraine through US, official says》&lt;/span&gt;&lt;/a&gt;相印證。&lt;/p&gt;<br><br>&lt;p&gt;美方停止對烏克蘭援助的第一個實際後果，則已經浮現在一個意料之外情理之中的方向，亦即傳媒界。原來過去三年，官方直轄傳聲筒之外的所謂烏克蘭“獨立媒體”“Independent Media”（約佔烏方新聞發稿的90%，參見&lt;a href="https://imi.org.ua/en/news/oksana-romaniuk-90-of-ukrainian-media-survived-thanks-to-grants-i66314"&gt;&lt;span style="color:blue"&gt;《Oksana Romaniuk: 90% of Ukrainian media survived thanks to grants》&lt;/span&gt;&lt;/a&gt;；其實昂撒話語術裏的“獨立”和“自由”，向來都是“不受公權力節制”的代名詞，所以自然方便成爲資本和殖民帝國的走狗），全部直接依靠歐美政府金援來運作，難怪他們衆口熏天、堅持仇俄。現在美國斷了狗糧，只剩來自歐盟的錢，這些傳媒公司的進賬減半，便都面臨倒閉的危險，被迫向歐美白左民衆募捐，參見&lt;a href="https://www.yahoo.com/news/trump-foreign-aid-freeze-stranded-215659086.html"&gt;&lt;span style="color:blue"&gt;《Trump’s foreign aid freeze stranded independent media in Ukraine. Heres how you can help》&lt;/span&gt;&lt;/a&gt;。此外，專職顛覆俄國的NGO（美其名曰“Civil Society”“公民社會”）也受到類似的打擊，參見&lt;a href="https://www.msn.com/en-us/news/world/trump-s-foreign-aid-freeze-throws-russian-civil-society-into-crisis/ar-AA1y7X7n"&gt;&lt;span style="color:blue"&gt;《Trump’s Foreign Aid Freeze Throws Russian Civil Society Into Crisis》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
+    <description><![CDATA[後註五十二 <br><br>----<br><br>半年前我在回復&lt;a href="177165976.html"&gt;&lt;span style="color:blue"&gt;《海湖莊園抄家事件幕後的美國政治鬥爭》&lt;/span&gt;&lt;/a&gt;一文的留言欄第16樓讀者發問時，除預期Trump當選之外，也總結其掌權執政會對俄烏戰局帶來的影響，有三個重點，都已經兌現，復盤於下：1）戰爭不會馬上結束；2）Trump會很快停止援助，請參考1月21日的新聞&lt;a href="https://apnews.com/article/trump-foreign-aid-9f5336e84c45a6e782fa95f60a919f47"&gt;&lt;span style="color:blue"&gt;《Trump suspends US foreign assistance for 90 days pending reviews》&lt;/span&gt;&lt;/a&gt;；3）建制派官僚會繼續鉆漏洞提供軍援給烏克蘭，請與1月28日的這條消息&lt;a href="https://edition.cnn.com/2025/01/28/politics/patriot-missiles-ukraine-israel-us/index.html"&gt;&lt;span style="color:blue"&gt;《Patriot missiles from Israel sent to Ukraine through US, official says》&lt;/span&gt;&lt;/a&gt;相印證。&lt;/p&gt;<br><br>&lt;p&gt;Trump停止對烏克蘭援助的第一個實際後果，則已經浮現在一個意料之外情理之中的方向，亦即傳媒界。原來過去三年，官方直轄傳聲筒之外的所謂烏克蘭“獨立媒體”“Independent Media”（約佔烏方新聞行業的90%，參見&lt;a href="https://imi.org.ua/en/news/oksana-romaniuk-90-of-ukrainian-media-survived-thanks-to-grants-i66314"&gt;&lt;span style="color:blue"&gt;《Oksana Romaniuk: 90% of Ukrainian media survived thanks to grants》&lt;/span&gt;&lt;/a&gt;；其實昂撒話語術裏的“獨立”和“自由”，向來都是“不受公權力節制”的代名詞，所以自然方便成爲資本和金融殖民帝國的走狗），全部直接依靠歐美政府金援來運作，難怪他們衆口熏天、堅持仇俄。現在美國斷了狗糧，只剩來自歐盟的錢，這些傳媒公司的進賬減半，便都面臨倒閉的壓力，被迫向歐美白左民衆募捐，參見&lt;a href="https://www.yahoo.com/news/trump-foreign-aid-freeze-stranded-215659086.html"&gt;&lt;span style="color:blue"&gt;《Trump’s foreign aid freeze stranded independent media in Ukraine. Heres how you can help》&lt;/span&gt;&lt;/a&gt;。此外，專職顛覆俄國的NGO（美其名曰“Civil Society”“公民社會”）也受到類似的打擊，參見&lt;a href="https://www.msn.com/en-us/news/world/trump-s-foreign-aid-freeze-throws-russian-civil-society-into-crisis/ar-AA1y7X7n"&gt;&lt;span style="color:blue"&gt;《Trump’s Foreign Aid Freeze Throws Russian Civil Society Into Crisis》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-02-01 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">49fa6ea33df2968408e3cdd7e2f5bdd6</guid>
@@ -23,7 +73,7 @@
     
     
     <title><![CDATA[【戰略】【臺海】台灣的國安和產業前景 | hillsmile]]></title>
-    <description><![CDATA[王兄新年好，我山居花蓮瑞穗虎頭山，2018年與你在留言及email有幾次互動，拜服你對政經及軍事理解的格局。自2002年山居後，我幾乎與千數計交往過的人不再音訊，只因知音難覓。剛從唐的節目中知你目前在台灣，純粹想交你這個朋友，如屬有緣歡迎來寒舍喝茶論劍。愚 張輝山 敬啟 0911216549<br><br> <br><br>----<br><br>]]></description>
+    <description><![CDATA[王兄新年好，我山居花蓮瑞穗虎頭山，2018年與你在留言及email有幾次互動，拜服你對政經及軍事理解的格局。自2002年山居後，我幾乎與千數計交往過的人不再音訊，只因知音難覓。剛從唐的節目中知你目前在台灣，純粹想交你這個朋友，如屬有緣歡迎來寒舍喝茶論劍。愚 張輝山 敬啟 0911216549<br><br> <br><br>----<br><br>我記得我們六年前的聯絡和互動。不過這次囘來臺灣，完全沒有北上的計劃，現在已經快要啓程返美了，博客也不是適合聊天的地方，還請直接用電郵聯係。<br>&lt;div class="TIME"&gt;2025-02-02 14:59 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-31 12:51:00 +0800</pubDate>
     <guid isPermaLink="false">184924dfb10b6b9858c32c68288758fb</guid>
@@ -103,7 +153,7 @@
     
     
     <title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | Submarine]]></title>
-    <description><![CDATA[王博士怎么看待最近的“小红书事件”？最近因TikTok的问题，有不少美国人“逃难”到小红书，且因为AI翻译的便捷，导致中美两国网民直接无障碍沟通。中国网民惊讶于美国中下阶层竟然陷入“赤贫”边缘，医疗费用、学贷、房产税、车房贷还有飞涨的物价等等新闻闻所未闻；而“卖血”、“午餐贷”、“一个人打三份工”、“496”（早4晚9一周工作6天）等等新闻更是跌破眼镜。<br><br>我个人因为离开美国好些年，也是刚刚发现美国中下阶层的生活水准相比18年大幅下降；而高于平均线的普通中产的现金流也越发紧张。考虑到美国社会福利极差，如果继续放任通胀下去，美国中下阶层集体破产不无可能。<br><br> <br><br> <br><br>----<br><br>這不是我講破嘴皮子的事嗎？小紅書只不過讓中國群衆除了像是博客這樣實話者的轉述總結（例如美國是世界第一大賣血國的事，博客去年才剛特別討論過），還能第一手接觸老新聞罷了。所以真正驚人的是，中國那些學術界和媒體界的成套謊言，居然至今才被徹底揭穿。<br><br>美國的下中產階級，也就是藍領和基層服務業，自1980年代後期（對應著產業外包和經濟金融化、虛擬化；我不是早説過，製造業不止是國力、經濟和研發的基石，更是防範貧富不均的最佳手段嗎？）開始，經通脹調整過的真實收入就一直是零或負成長了，早已成批跌出中產，所以社會和經濟才會兩極化，然後2016年才會有Trump這樣純民粹總統意外勝選。美國人民如果不是在水深火熱之中，會有能力自發看穿世界最先進的主流媒體宣傳洗腦、轉而投票給MAGA嗎？現在都2025年、霸權搖搖欲墜，財閥當然是越急著趕撈最後幾筆、竭澤而漁，剝削和詐騙也就益加嚴重、離譜。<br>&lt;div class="TIME"&gt;2025-01-22 11:32 回复&lt;/div&gt;]]></description>
+    <description><![CDATA[王博士怎么看待最近的“小红书事件”？最近因TikTok的问题，有不少美国人“逃难”到小红书，且因为AI翻译的便捷，导致中美两国网民直接无障碍沟通。中国网民惊讶于美国中下阶层竟然陷入“赤贫”边缘，医疗费用、学贷、房产税、车房贷还有飞涨的物价等等新闻闻所未闻；而“卖血”、“午餐贷”、“一个人打三份工”、“496”（早4晚9一周工作6天）等等新闻更是跌破眼镜。<br><br>我个人因为离开美国好些年，也是刚刚发现美国中下阶层的生活水准相比18年大幅下降；而高于平均线的普通中产的现金流也越发紧张。考虑到美国社会福利极差，如果继续放任通胀下去，美国中下阶层集体破产不无可能。<br><br>  <br><br>----<br><br>這不是我講破嘴皮子的事嗎？小紅書只不過讓中國群衆除了像是博客這樣實話者的轉述總結（例如美國是世界第一大賣血國的事，博客去年才剛特別討論過），還能第一手接觸老新聞罷了。所以真正驚人的是，中國那些學術界和媒體界的成套謊言，居然至今才被徹底揭穿。<br><br>美國的下中產階級，也就是藍領和基層服務業，自1980年代後期（對應著產業外包和經濟金融化、虛擬化；我不是早説過，製造業不止是國力、經濟和研發的基石，更是防範貧富不均的最佳手段嗎？）開始，經通脹調整過的真實收入就一直是零或負成長了，早已成批跌出中產，所以社會和經濟才會兩極化，然後2016年才會有Trump這樣純民粹總統意外勝選。美國人民如果不是在水深火熱之中，會有能力自發看穿世界最先進的主流媒體宣傳洗腦、轉而投票給MAGA嗎？現在都2025年、霸權搖搖欲墜，財閥當然是越急著趕撈最後幾筆、竭澤而漁，剝削和詐騙也就益加嚴重、離譜。<br>&lt;div class="TIME"&gt;2025-01-22 11:32 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-22 01:57:00 +0800</pubDate>
     <guid isPermaLink="false">a9a7fa27e032ceaee285794528c8e02b</guid>
@@ -122,22 +172,22 @@
     <item>
     
     
-    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
-    <description><![CDATA[哦那就简单了, 即便刨除概率估算(我是乐观认为本代AI最多还能挖两个数量级), 还有额外两条保证结论的有效性 (1)大模型技术扩散速度远远快于研发, 你会的, 我很快也会, 没有秘密武器 (2)大模型技术难以形成先发垄断优势, 对, 没有killer App<br><br> <br><br>----<br><br>是的，博客不是技術刊物，探討AI固然照舊仔細搜集事實、以供嚴謹邏輯分析，論證的目標終究在於1）對人類社會的推進有多大；2）對中美博弈平衡有何影響。<br>&lt;div class="TIME"&gt;2025-01-21 12:56 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-01-21 10:19:00 +0800</pubDate>
-    <guid isPermaLink="false">9d3364375c929951f763b83963cb9ae3</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#9d3364375c929951f763b83963cb9ae3</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【臺海】台灣的國安和產業前景 | 藍井觀天]]></title>
     <description><![CDATA[不好意思！我在大陸，昨天深夜知道台灣南部地震，藉此表達問候，希望您和家人在台南一切安好！<br><br> <br><br>----<br><br>謝謝問候。<br><br>震央很淺，距離我家又只有30公里左右，超6級的强度是我一輩子親身經歷遠遠最大的震幅，算是又一項特別的人生體驗；所幸家裏什麽事都沒有，連瓶瓶罐罐都絲毫無損，就是少了幾個小時的睡眠，剛好可以用來思考生命的脆弱和短暫。<br>&lt;div class="TIME"&gt;&lt;a href="https://github.com/taizihuang/wmyblog/commits/main/html/181687848.html" style="text-decoration: none;color:black;"&gt;2025-01-21 16:00 修改&lt;/a&gt;&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-21 10:19:00 +0800</pubDate>
     <guid isPermaLink="false">0b757a1863bd67fa90ff79e46fe24a1a</guid>
     <link>https://taizihuang.github.io/wmyblog/html/181687848.html#0b757a1863bd67fa90ff79e46fe24a1a</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
+    <description><![CDATA[哦那就简单了, 即便刨除概率估算(我是乐观认为本代AI最多还能挖两个数量级), 还有额外两条保证结论的有效性 (1)大模型技术扩散速度远远快于研发, 你会的, 我很快也会, 没有秘密武器 (2)大模型技术难以形成先发垄断优势, 对, 没有killer App<br><br> <br><br>----<br><br>是的，博客不是技術刊物，探討AI固然照舊仔細搜集事實、以供嚴謹邏輯分析，論證的目標終究在於1）對人類社會的推進有多大；2）對中美博弈平衡有何影響。<br>&lt;div class="TIME"&gt;2025-01-21 12:56 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-21 10:19:00 +0800</pubDate>
+    <guid isPermaLink="false">9d3364375c929951f763b83963cb9ae3</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#9d3364375c929951f763b83963cb9ae3</link>
     </item>
     <item>
     
@@ -322,22 +372,22 @@
     <item>
     
     
-    <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 後註五]]></title>
-    <description><![CDATA[後註五 <br><br>----<br><br>最近中國股市再度成爲新聞話題，我想提醒讀者拿下面幾張圖對照一下，應該可以簡單看清本世紀全球股市漲跌的主要規律，亦即2008年開始的QE量化寬鬆引發“Everything Bubble”“樣樣泡沫”，是美元霸權體系内所有股市全面上漲的基本動力，與經濟基本面毫無相關，以致連工業正在經歷歷史性倒退、整個國家處於慢動作崩塌進程中的德國，其DAX指數也不斷突破新高。被美方强行脫鈎的中國，因而成爲唯一沒有美元熱錢支撐的例外（歐盟至少在美聯儲降息階段可以撿一些剩飯），再加上前幾年易綱安排倒貼了幾萬億的實體經濟資金，然後恆大危機又引發進一步金融資本外逃，餘錢全都倒流給美元體系、股市自然漲不上去；那些拿“國家大事與我小民何干”當口頭禪的人，只是極端無知的傻蛋。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611655_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611656_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611657_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611658_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611659_1.JPG"/&gt;&lt;/p&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-01-07 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/180084896.html#ff0aadca7428f141533f285aeec65f40</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【工業】【能源】永遠的未來技術 | 後註一]]></title>
     <description><![CDATA[後註一 <br><br>----<br><br>幾天前，我在博文&lt;a href="108908628.html"&gt;&lt;span style="color:blue"&gt;《雷達與隱身技術之間的矛盾關係（下）》&lt;/span&gt;&lt;/a&gt;的留言欄提到，美國氫動力公司Hyzon在主管特地針對投資人搜刮最後一筆之後正式倒閉（參見&lt;a href="https://fuelcellsworks.com/2025/01/02/fuel-cells/hyzon-executives-sell-remaining-shares-as-dissolution-vote-looms"&gt;&lt;span style="color:blue"&gt;《Hyzon Executives Sell Remaining Shares as Dissolution Vote Looms》&lt;/span&gt;&lt;/a&gt;）。雖然在氫動力創業公司之中，Hyzon只能算是一隻小蝦米，然而從下圖（來自《Financial Times》的這篇&lt;a href="https://www.ft.com/content/4590e0b1-73f3-4f93-8c91-9c1a0cd13a97"&gt;&lt;span style="color:blue"&gt;《US and European hydrogen stock prices collapse as prospects deflate》&lt;/span&gt;&lt;/a&gt;，顯示了歐美最大的11家氫能公司股票價格在2024年的走勢；作爲對比，美國S&amp;amp;P 500指數在2024年整體上漲了25%），可以簡單看出氫動力資本騙局已經早於核聚變和量子計算，先行進入收官階段。有興趣的讀者還可以參考Sabine的最新節目&lt;a href="https://www.youtube.com/watch?v=awN2w3sGj1w"&gt;&lt;span style="color:blue"&gt;《Hydrogen Hype is Dying, And Thats a Good Thing》&lt;/span&gt;&lt;/a&gt;，印證十年前就已經可以閲讀本篇正文而輕鬆獲得的先見。我對揭穿核聚變和量子計算騙局仍然抱持審慎樂觀態度，正是源於Ponzi scheme（龐氏騙局、又稱老鼠會；例如至今所有量子計算公司的那一丁點營收，仍然100%來自對後續老鼠團隊的販售，完全沒有任何實際應用）不可能無限持續，而群衆面對最終事實獲取後見之明，遠比我努力傳播先見、試圖教育他們要容易得多。當然，若想進一步扭轉中國學術界的腐朽文化，比起揭穿個別騙局又要艱難好幾個數量級，但國家興亡原本就取決於好人與壞人之間不斷鬥爭的結果，後者勢大不是我們放棄的藉口，反而是更加奮起負重前行的理由，這正是“士不可不弘毅”的道理。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611523_1.JPG"/&gt;&lt;/p&gt;<br><br><br><br>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-07 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908708.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 後註五]]></title>
+    <description><![CDATA[後註五 <br><br>----<br><br>最近中國股市再度成爲新聞話題，我想提醒讀者拿下面幾張圖對照一下，應該可以簡單看清本世紀全球股市漲跌的主要規律，亦即2008年開始的QE量化寬鬆引發“Everything Bubble”“樣樣泡沫”，是美元霸權體系内所有股市全面上漲的基本動力，與經濟基本面毫無相關，以致連工業正在經歷歷史性倒退、整個國家處於慢動作崩塌進程中的德國，其DAX指數也不斷突破新高。被美方强行脫鈎的中國，因而成爲唯一沒有美元熱錢支撐的例外（歐盟至少在美聯儲降息階段可以撿一些剩飯），再加上前幾年易綱安排倒貼了幾萬億的實體經濟資金，然後恆大危機又引發進一步金融資本外逃，餘錢全都倒流給美元體系、股市自然漲不上去；那些拿“國家大事與我小民何干”當口頭禪的人，只是極端無知的傻蛋。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611655_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611656_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611657_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611658_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611659_1.JPG"/&gt;&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-07 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/180084896.html#ff0aadca7428f141533f285aeec65f40</link>
     </item>
     <item>
     
