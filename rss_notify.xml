@@ -7,13 +7,23 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>02-09 08:10 +0800</lastBuildDate>
+    <lastBuildDate>02-09 12:01 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
+    <title><![CDATA[【美國】【工業】737 Max必須重新認證（續） | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>剛剛看到一個《Youtube》航空視頻博主揭發又一項７３７Max的嚴重設計漏洞（參見&lt;a href="https://www.youtube.com/watch?v=swlVkYVSlIE"&gt;&lt;span style="color:blue"&gt;《REVEALED: This System KILLS in 39 Seconds and Nothing is Being DONE!》&lt;/span&gt;&lt;/a&gt;），覺得他並不是杞人憂天，所以在此為讀者總結一番。＜/p&amp;gt;<br><br>&lt;/p&gt;&lt;p&gt;他的擔憂來自２０２３年的兩起事故，都是７３７Max－８遭遇鳥擊（亦即類似濟州航空空難，但那架７３７是舊式的NG，現在出問題的是Max），然後機艙内很快烟霧彌漫，造成乘員中毒以及飛行員視界被徹底遮擋等問題。經過調查，很快將原因追溯到Max新采用的Leap－１B引擎（空客A３２０裝備Leap－１A，和商飛９１９所用的Leap－１C，也基本是同一個型號、使用同樣的核心設計）相比上世代的CFM-５６，加裝了Load　Reduction　Device（LRD；Leap並不是第一個采用LRD的商用引擎，我查到至少有普惠的PW４０００和GE的ＧＥｎｘ更早裝備，但LRD本身不是問題，毛病出在配套的引氣系統上，所以問題可能集中在Leap、或甚至只限７３７Max上；參閲下面的更多細節）。其設計思維類似汽車的Crumple　Zone潰縮區，是故意減弱若干部件的强度，以便在鳥擊之類的事故造成扇葉受損之後，犧牲自己，讓扇葉脫離轉子主軸，以避免整個引擎因失去軸對稱平衡而震動過大、自我拆解。這個思路本身並沒有什麽錯，問題在於（至少在Leap引擎的）實際設計中，LRD的自我犧牲會連帶導致整個潤滑油箱解體，１３公升的潤滑油一次性進入燃燒室，然後劇毒烟霧通過７３７Max的空調系統彌漫機艙，在３９秒内就足以在駕駛艙達到致命毒性濃度。所幸已知的兩起事故中，飛行員都很快帶上面罩；而烟霧濃度較高的那個案例中，事發飛機很幸運地剛好配備了選裝的擡頭顯示器，距離肉眼很近，所以機長雖然連儀表板都看不見，卻能勉强維持安全飛行姿態，等待引擎關閉、濃烟散去。&lt;/p&gt;<br><br>&lt;p&gt;這裏最主要的設計失誤責任，可能不在於Leap引擎的製造商CFM，而是波音居然沒有在LRD作用後、自動關閉空調引氣系統的考慮，也沒有在飛行員教程中，加入手動關閉空調引氣的訓練。偏偏NTSB的報告和建議還沒有出來，FAA也就習慣性地順勢不作爲，縱容波音拖延卸責。換句話説，這個潛在問題，很像２０１９年第一起MCAS墜機後幾個月、FAA和波音的推諉不作爲，隨時有可能導致又一起致命空難。希望草根輿論的反應，能夠及時喚醒監管單位，提早避免悲劇。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-10 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/129078184.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
-    <description><![CDATA[可能表达不太清晰? 澄清一下 (1) R1的进步是model-free的强化学习, 该技术路线虽然有进步, 但我并不乐观 (2) 我看好的是另一条强化学习的技术路线, 即model-based的强化学习路线, 尽管真正的突破尚未诞生, 但是我反而对此路线保持乐观. 无论如何, 这都给中国留了足够的准备时间, 所以现有结论还是不变<br><br> <br><br>----<br><br>]]></description>
+    <description><![CDATA[可能表达不太清晰? 澄清一下 (1) R1的进步是model-free的强化学习, 该技术路线虽然有进步, 但我并不乐观 (2) 我看好的是另一条强化学习的技术路线, 即model-based的强化学习路线, 尽管真正的突破尚未诞生, 但是我反而对此路线保持乐观. 无论如何, 这都给中国留了足够的准备时间, 所以现有结论还是不变<br><br> <br><br>----<br><br>但這就需要人爲參與來建模了，不是嗎？除了像下棋那樣規則簡單明確、棋藝知識纍積深厚的案例之外，人爲建模先天就極爲困難，應該只能針對特定項目和任務（例如專門解歐氏幾何問題）來優化吧？那麽或許５、１０年之後，這種小專業AI可能會有幾十、上百個版本，每一個都達到或接近人類專家的水準，但要獨立研究創新還是不夠的，只能在輔助過程中偶然撿到邏輯遺漏。<br>&lt;div class="TIME"&gt;2025-02-09 09:55 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-02-09 05:27:00 +0800</pubDate>
     <guid isPermaLink="false">28b1c20613104f819dbb087cf64b6eea</guid>
@@ -82,22 +92,22 @@
     <item>
     
     
-    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註十一]]></title>
-    <description><![CDATA[後註十一 <br><br>----<br><br>雖然博客多年來反復討論蔗糖/果糖的健康危害在上世紀中期被蔗糖業收買學術娼妓甩鍋給脂肪的歷史，一直到有朋友私下詢問，我才想起並沒有明確列舉出處和細節，現在補上。最權威的復盤來自2016年《The Journal of the American Medical Association》《美國醫藥學會期刊》的這篇總結文章：&lt;a href="https://pubmed.ncbi.nlm.nih.gov/27617709/"&gt;&lt;span style="color:blue"&gt;《Sugar Industry and Coronary Heart Disease Research: A Historical Analysis of Internal Industry Documents》&lt;/span&gt;&lt;/a&gt;，只想看科普的讀者則可以參考&lt;a href="https://www.nytimes.com/2016/09/13/well/eat/how-the-sugar-industry-shifted-blame-to-fat.html"&gt;&lt;span style="color:blue"&gt;《How the Sugar Industry Shifted Blame to Fat》&lt;/span&gt;&lt;/a&gt;或者&lt;a href="https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat"&gt;&lt;span style="color:blue"&gt;《50 Years Ago, Sugar Industry Quietly Paid Scientists To Point Blame At Fat》&lt;/span&gt;&lt;/a&gt;。至於那些學術娼妓，包含基本所有名校，例如哈佛的Fredrick Stare和Mark Hegsted（參見&lt;a href="https://www.statnews.com/2016/09/12/sugar-industry-harvard-research/"&gt;&lt;span style="color:blue"&gt;《Sugar industry secretly paid for favorable Harvard research》&lt;/span&gt;&lt;/a&gt;），但影響最惡劣的，當屬Ancel Keys和他所主導的&lt;a href="https://en.wikipedia.org/wiki/Seven_Countries_Study"&gt;&lt;span style="color:blue"&gt;《Seven Countries Study》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-02-04 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">e24b7fca76292f40c85e0a8358c86223</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#e24b7fca76292f40c85e0a8358c86223</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 後註十九]]></title>
     <description><![CDATA[後註十九 <br><br>----<br><br>五天前，一架美國陸軍負責運送首都VIP的黑鷹直升機與民航機發生數十年來最慘烈的空中對撞事故。由於NTSB已經發佈初步調查公告（參見&lt;a href="https://www.youtube.com/watch?v=Afxq_L5GKyE"&gt;&lt;span style="color:blue"&gt;《NTSB officials share the latest details in the DC plane crash investigation and recovery efforts》&lt;/span&gt;&lt;/a&gt;），我們可以確定立即責任（Immediate responsibilities，亦即不考慮深層的背景因素，例如管理不善、規劃失當等等）基本在於黑鷹飛行員的兩個嚴重失誤：1）目視辨認追蹤民航機時，選錯了目標；2）偏離法規限定的直升機通道（Helicopter Corridor，參見下圖中的藍色粗綫，肇事的黑鷹沿Route 1由北向南飛；這條直升機通道的高度上限是200英尺，而撞機事故發生在325英尺；姑且不論只預留100英尺的容錯空間是否明智，正因爲容錯空間這麽小，直升機飛行員更應該嚴格遵守規定；我自己就曾經多次駕駛小飛機飛過曼哈頓市區邊緣哈德遜河上方低空的通用航空通道，很難想象會有那麽愚蠢而頭鐵的飛行員在夜晚的機場跑道段一公里處也敢違規）。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28654588_1.jpg"/&gt;&lt;/p&gt;<br><br>&lt;p&gt;Trump在第一時間做出評論，認爲事故是近年來的白左DEI政策（Diversity、Equity、Inclusion，多元、平等、包容，也就是不顧能力和資格，而根據種族、性別、性取向等等政治正確標準來錄取和提拔員工）的惡果，於是立刻遭受主流媒體的嚴厲譴責批判（例如&lt;a href="https://thehill.com/homenews/race-politics/5117361-trump-criticized-by-congressional-black-caucus-for-blaming-dei/"&gt;&lt;span style="color:blue"&gt;《CBC blasts Trump’s DEI comments after Potomac plane crash》&lt;/span&gt;&lt;/a&gt;）。然而美國陸軍雖然很快公佈了黑鷹三名乘員之中兩名隨機士官的身份，卻扭扭捏捏一直不肯説明軍官正駕駛（Pilot Flying）是誰，當時就有一些擁Trump博主猜測會是女性、同性戀或變性人，引發了白左網紅的口水轟炸。拖了幾天，官方才終於承認是上尉Rebecca Lobach（拖延的藉口是“徵詢家人意見”，但美軍素來無此慣例）。這個消息立刻讓MAGA網民炸了鍋，因爲Lobach不但資歷甚淺，只有450飛行小時，卻被破格提拔、委以運載政治權貴的重任，而且的確正是Biden政府拿來表彰DEI政績的招牌人物之一，擁有官方頭銜“White House military social aide”，並屢次以“傑出女性”身份受邀參與白宮宴會。所以不論旁觀者的個人主觀政治偏向，都必須接受以下的明確客觀事實：本次事故的直接罪責在於黑鷹飛行員的不適任，而這名女飛行員恰恰是Biden的DEI政確明星。&lt;/p&gt;<br><br>&lt;p&gt;多年前我曾評論，Trump雖然是個習慣性撒謊者（Habitual Liar），但他隨口撒的那些小謊與建制派的大謊言相比，根本無足輕重；既然政客中只有他願意揭穿那些大謊言，即便堅持道德考慮的選民也有很好的理由支持MAGA。這次事件是個很好的例子：Trump反射式地批判DEI顯然不是深思熟慮、有根有據的論斷，但這樣不負責任、沒有絲毫科學嚴謹性的隨口胡説，卻能恰好揭開白左的國王新衣，反映的不是Trump自身的智慧和能力，而是美國病入膏肓、無處不糜爛的慘狀。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-02-04 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
     <link>https://taizihuang.github.io/wmyblog/html/177165976.html#eb42a79a300ec03e39298ad0c152869c</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註十一]]></title>
+    <description><![CDATA[後註十一 <br><br>----<br><br>雖然博客多年來反復討論蔗糖/果糖的健康危害在上世紀中期被蔗糖業收買學術娼妓甩鍋給脂肪的歷史，一直到有朋友私下詢問，我才想起並沒有明確列舉出處和細節，現在補上。最權威的復盤來自2016年《The Journal of the American Medical Association》《美國醫藥學會期刊》的這篇總結文章：&lt;a href="https://pubmed.ncbi.nlm.nih.gov/27617709/"&gt;&lt;span style="color:blue"&gt;《Sugar Industry and Coronary Heart Disease Research: A Historical Analysis of Internal Industry Documents》&lt;/span&gt;&lt;/a&gt;，只想看科普的讀者則可以參考&lt;a href="https://www.nytimes.com/2016/09/13/well/eat/how-the-sugar-industry-shifted-blame-to-fat.html"&gt;&lt;span style="color:blue"&gt;《How the Sugar Industry Shifted Blame to Fat》&lt;/span&gt;&lt;/a&gt;或者&lt;a href="https://www.npr.org/sections/thetwo-way/2016/09/13/493739074/50-years-ago-sugar-industry-quietly-paid-scientists-to-point-blame-at-fat"&gt;&lt;span style="color:blue"&gt;《50 Years Ago, Sugar Industry Quietly Paid Scientists To Point Blame At Fat》&lt;/span&gt;&lt;/a&gt;。至於那些學術娼妓，包含基本所有名校，例如哈佛的Fredrick Stare和Mark Hegsted（參見&lt;a href="https://www.statnews.com/2016/09/12/sugar-industry-harvard-research/"&gt;&lt;span style="color:blue"&gt;《Sugar industry secretly paid for favorable Harvard research》&lt;/span&gt;&lt;/a&gt;），但影響最惡劣的，當屬Ancel Keys和他所主導的&lt;a href="https://en.wikipedia.org/wiki/Seven_Countries_Study"&gt;&lt;span style="color:blue"&gt;《Seven Countries Study》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-02-04 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">e24b7fca76292f40c85e0a8358c86223</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131394982.html#e24b7fca76292f40c85e0a8358c86223</link>
     </item>
     <item>
     
@@ -382,22 +392,22 @@
     <item>
     
     
-    <title><![CDATA[【海軍】未來十年的中美武器對比（三） | 後註一]]></title>
-    <description><![CDATA[後註一 <br><br>----<br><br>美軍剛發佈2025年Arleigh Burke III造艦計劃和現況 （參見&lt;a href="https://www.twz.com/news-features/cost-of-navys-newest-flight-iii-arleigh-burke-destroyers-is-ballooning"&gt;&lt;span style="color:blue"&gt;《Cost Of Navy’s Newest Arleigh Burke Destroyers Is Ballooning》&lt;/span&gt;&lt;/a&gt;以及&lt;a href="https://www.cbo.gov/publication/61155"&gt;&lt;span style="color:blue"&gt;《An Analysis of the Navy’s 2025 Shipbuilding Plan》&lt;/span&gt;&lt;/a&gt;）。與十年前的正文相比，單艦造價25億美元倒是完全符合預估（雖然預期會持續上升，但對比美軍的其他采購計劃，這一丁點溢價實屬良心），真正出大問題的是建造速度：當年預計至今服役13艘，實際卻只有一艘，再次反映了美國去工業化、力不從心的窘態&lt;/p&gt;<br><br><br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-01-10 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908762.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註五十]]></title>
     <description><![CDATA[後註五十 <br><br>----<br><br>半年前，昂撒國際媒體輪番宣揚烏軍155旅在法國受訓的事跡，標榜其為即將代為北約消滅俄國匪幫的革命樣板部隊。然而該旅回國上戰場之後一觸即潰，被多名烏克蘭官員抱怨有多達半數官兵叛逃。現在法國記者采訪受訓基地周邊民衆證實，在英美媒體牛皮吹得震天響的同時，實際上法軍將該基地加裝帶刺鐵絲網環繞，並特派軍犬部隊和無人機晝夜巡邏，亦即比照戰俘營對待；即便如此，依然有至少50起以上的逃亡事件。此事未見諸《紐約時報》或《華盛頓郵報》，欲知詳情請參考《法新社》報導&lt;a href="https://www.france24.com/en/live-news/20250106-dozens-of-ukraine-soldiers-deserted-while-training-in-france"&gt;&lt;span style="color:blue"&gt;《Dozens of Ukraine soldiers deserted while training in France》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-10 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">b2dc1c48f3d42ce8f877ce7474260ea3</guid>
     <link>https://taizihuang.github.io/wmyblog/html/177266891.html#b2dc1c48f3d42ce8f877ce7474260ea3</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【海軍】未來十年的中美武器對比（三） | 後註一]]></title>
+    <description><![CDATA[後註一 <br><br>----<br><br>美軍剛發佈2025年Arleigh Burke III造艦計劃和現況 （參見&lt;a href="https://www.twz.com/news-features/cost-of-navys-newest-flight-iii-arleigh-burke-destroyers-is-ballooning"&gt;&lt;span style="color:blue"&gt;《Cost Of Navy’s Newest Arleigh Burke Destroyers Is Ballooning》&lt;/span&gt;&lt;/a&gt;以及&lt;a href="https://www.cbo.gov/publication/61155"&gt;&lt;span style="color:blue"&gt;《An Analysis of the Navy’s 2025 Shipbuilding Plan》&lt;/span&gt;&lt;/a&gt;）。與十年前的正文相比，單艦造價25億美元倒是完全符合預估（雖然預期會持續上升，但對比美軍的其他采購計劃，這一丁點溢價實屬良心），真正出大問題的是建造速度：當年預計至今服役13艘，實際卻只有一艘，再次反映了美國去工業化、力不從心的窘態&lt;/p&gt;<br><br><br><br>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-10 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908762.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
     </item>
     <item>
     
@@ -422,22 +432,22 @@
     <item>
     
     
-    <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 後註五]]></title>
-    <description><![CDATA[後註五 <br><br>----<br><br>最近中國股市再度成爲新聞話題，我想提醒讀者拿下面幾張圖對照一下，應該可以簡單看清本世紀全球股市漲跌的主要規律，亦即2008年開始的QE量化寬鬆引發“Everything Bubble”“樣樣泡沫”，是美元霸權體系内所有股市全面上漲的基本動力，與經濟基本面毫無相關，以致連工業正在經歷歷史性倒退、整個國家處於慢動作崩塌進程中的德國，其DAX指數也不斷突破新高。被美方强行脫鈎的中國，因而成爲唯一沒有美元熱錢支撐的例外（歐盟至少在美聯儲降息階段可以撿一些剩飯），再加上前幾年易綱安排倒貼了幾萬億的實體經濟資金，然後恆大危機又引發進一步金融資本外逃，餘錢全都倒流給美元體系、股市自然漲不上去；那些拿“國家大事與我小民何干”當口頭禪的人，只是極端無知的傻蛋。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611655_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611656_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611657_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611658_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611659_1.JPG"/&gt;&lt;/p&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-01-07 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/180084896.html#ff0aadca7428f141533f285aeec65f40</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【工業】【能源】永遠的未來技術 | 後註一]]></title>
     <description><![CDATA[後註一 <br><br>----<br><br>幾天前，我在博文&lt;a href="108908628.html"&gt;&lt;span style="color:blue"&gt;《雷達與隱身技術之間的矛盾關係（下）》&lt;/span&gt;&lt;/a&gt;的留言欄提到，美國氫動力公司Hyzon在主管特地針對投資人搜刮最後一筆之後正式倒閉（參見&lt;a href="https://fuelcellsworks.com/2025/01/02/fuel-cells/hyzon-executives-sell-remaining-shares-as-dissolution-vote-looms"&gt;&lt;span style="color:blue"&gt;《Hyzon Executives Sell Remaining Shares as Dissolution Vote Looms》&lt;/span&gt;&lt;/a&gt;）。雖然在氫動力創業公司之中，Hyzon只能算是一隻小蝦米，然而從下圖（來自《Financial Times》的這篇&lt;a href="https://www.ft.com/content/4590e0b1-73f3-4f93-8c91-9c1a0cd13a97"&gt;&lt;span style="color:blue"&gt;《US and European hydrogen stock prices collapse as prospects deflate》&lt;/span&gt;&lt;/a&gt;，顯示了歐美最大的11家氫能公司股票價格在2024年的走勢；作爲對比，美國S&amp;amp;P 500指數在2024年整體上漲了25%），可以簡單看出氫動力資本騙局已經早於核聚變和量子計算，先行進入收官階段。有興趣的讀者還可以參考Sabine的最新節目&lt;a href="https://www.youtube.com/watch?v=awN2w3sGj1w"&gt;&lt;span style="color:blue"&gt;《Hydrogen Hype is Dying, And Thats a Good Thing》&lt;/span&gt;&lt;/a&gt;，印證十年前就已經可以閲讀本篇正文而輕鬆獲得的先見。我對揭穿核聚變和量子計算騙局仍然抱持審慎樂觀態度，正是源於Ponzi scheme（龐氏騙局、又稱老鼠會；例如至今所有量子計算公司的那一丁點營收，仍然100%來自對後續老鼠團隊的販售，完全沒有任何實際應用）不可能無限持續，而群衆面對最終事實獲取後見之明，遠比我努力傳播先見、試圖教育他們要容易得多。當然，若想進一步扭轉中國學術界的腐朽文化，比起揭穿個別騙局又要艱難好幾個數量級，但國家興亡原本就取決於好人與壞人之間不斷鬥爭的結果，後者勢大不是我們放棄的藉口，反而是更加奮起負重前行的理由，這正是“士不可不弘毅”的道理。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611523_1.JPG"/&gt;&lt;/p&gt;<br><br><br><br>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-07 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908708.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 後註五]]></title>
+    <description><![CDATA[後註五 <br><br>----<br><br>最近中國股市再度成爲新聞話題，我想提醒讀者拿下面幾張圖對照一下，應該可以簡單看清本世紀全球股市漲跌的主要規律，亦即2008年開始的QE量化寬鬆引發“Everything Bubble”“樣樣泡沫”，是美元霸權體系内所有股市全面上漲的基本動力，與經濟基本面毫無相關，以致連工業正在經歷歷史性倒退、整個國家處於慢動作崩塌進程中的德國，其DAX指數也不斷突破新高。被美方强行脫鈎的中國，因而成爲唯一沒有美元熱錢支撐的例外（歐盟至少在美聯儲降息階段可以撿一些剩飯），再加上前幾年易綱安排倒貼了幾萬億的實體經濟資金，然後恆大危機又引發進一步金融資本外逃，餘錢全都倒流給美元體系、股市自然漲不上去；那些拿“國家大事與我小民何干”當口頭禪的人，只是極端無知的傻蛋。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611655_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611656_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611657_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611658_1.JPG"/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28611659_1.JPG"/&gt;&lt;/p&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-07 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">ff0aadca7428f141533f285aeec65f40</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/180084896.html#ff0aadca7428f141533f285aeec65f40</link>
     </item>
     <item>
     
