@@ -366,4 +366,13 @@
 			<description><![CDATA[預測中國半導體、AI及金融的未來]]></description>
 			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=250117.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
 		</item>
+
+        <item>
+		<title>2025/02/21 川普滿月，全球動盪！然後呢？</title>
+			<pubDate>Fri, 21 February 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250221]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250221.html]]></link>
+			<description><![CDATA[川普滿月，全球動盪！然後呢？]]></description>
+			<enclosure length="88161730" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=250221.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
+		</item>
         </channel></rss>
