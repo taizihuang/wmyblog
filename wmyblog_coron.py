@@ -83,7 +83,7 @@ def saveScript(filename, id, proxy=''):
         <div class="BODY"><div class="BACK"><a href="../index.html">返回索引页</a></div>
             <h1>{filename}</h1>
             <h4>编辑地址：<a href="{link}">{link}</a></h4>
-            <h4>音频下载地址：<a href="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename={filename}.mp3&folder=Podcasts/wmyblog&type=exact">链接</a></h4>
+            <h4>音频下载地址：<a href="https://drive.tedl.uk/s/kRTG">链接</a></h4><br><br>
             <div class="POST"><div id="article_show_content">{body}</div>
         </div>
     </body>

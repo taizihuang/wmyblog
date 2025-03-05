@@ -84,13 +84,16 @@ HTML = Template("""
 """)
 with open('podcast.json','r',encoding='utf8') as f:
     podcast_dict = json.loads(f.read())
+with open('url.json','r',encoding='utf8') as f:
+    url_dict = json.loads(f.read())
 
 lrc_list = []
 audio_list = []
 for date in podcast_dict.keys():
     name, lrc = podcast_dict[date]
+    url = url_dict[date]
     artist = f'20{date[:2]}/{date[2:4]}/{date[4:6]}'
-    audio_list.append({'name':name,'artist':artist,'url':f'https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename={date}.mp3&folder=Podcasts/wmyblog&type=exact','pic':'wmy-podcast.jpg'})
+    audio_list.append({'name':name,'artist':artist,'url':url,'pic':'wmy-podcast.jpg'})
     lrc_list.append(lrc)
 with open('index.html','w',encoding='utf8') as f:
     f.write(HTML.render(lrc_list=lrc_list,audio_list=audio_list))
