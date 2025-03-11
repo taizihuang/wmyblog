@@ -7,13 +7,13 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>03-12 02:04 +0800</lastBuildDate>
+    <lastBuildDate>03-12 06:01 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【戰略】【臺海】台灣的國安和產業前景 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>雖然正文裏的PPT並不詳細全面，但在實際給演講的過程中探討台灣經濟前景的時候，我特別强調了一個結論，後來在二月的《龍行天下》節目中也曾提及，亦即臺積電及其周邊產業固然是台灣過去兩年迅速喪失競爭力的例外，但也不可能長期維持優勢地位。這裏的邏輯論證可以簡單濃縮為：連ASML也將被取代，臺積電怎麽可能遺世獨立呢？&lt;/p&gt;<br><br>&lt;p&gt;談到取代ASML，就必須討論中方的EUV光刻機。2023年博客（參見&lt;a href="180084901.html"&gt;&lt;span style="color:blue"&gt;《金融史觀（三）政策建議》&lt;/span&gt;&lt;/a&gt;【後註三】）提到二代半導體大基金的貪腐被清理之後，華爲在深圳新成立了幾家子公司，開始為國家管理最尖端的製程研發。去年已經有足夠資訊，可以在留言討論中估計國產EUV光刻機商用交付約在2026年底/2027年初。本周又有消息更新（參見例如&lt;a href="https://www.techpowerup.com/333801/china-develops-domestic-euv-tool-asml-monopoly-in-trouble"&gt;&lt;span style="color:blue"&gt;《China Develops Domestic EUV Tool, ASML Monopoly in Trouble》&lt;/span&gt;&lt;/a&gt;），除了再一次印證進度預期（2025年第三季試產，2026年量產）之外，還提到華爲選擇了與ASML不同的技術路綫：後者用的是LPP（Laser Produced Plasma）光源，而前者則采用LDP（請注意，這一波新聞全都把LDP説成是Laser-induced Discharge Plasma的縮寫，這應該是原始信息來源所犯的筆誤，學術界所討論的LDP向來都是Laser-assisted Discharge Plasma，參考這個日本團隊的一系列論文&lt;a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13215/PC1321514/LDP-EUV-source-performance-and-cost-of-ownership-improvement/10.1117/12.3036726.short"&gt;&lt;span style="color:blue"&gt;《LDP EUV source performance and cost-of-ownership improvement》&lt;/span&gt;&lt;/a&gt;）。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28722081_1.JPG"/&gt;&lt;/p&gt;<br><br>&lt;p&gt;以上是LPP和LDP光源的示意圖。錫等離子體作爲EUV光刻機的光源，其技術難點有二：一是高功率輸出要求，二是如何匹配深紫外光反射鏡系統（包括等離子體擴散污染鏡面的問題）。LPP完全依賴激光來蒸發錫滴以產生等離子體，然而激光的產生和吸收過程，能量轉換效率先天就很低，於是不但電量需求高，而且必須消散大量熱能（參考博客多年來對激光核聚變NIF的討論），這是LPP最大的缺點。而LDP的激光只負責定時定位，絕大部分的離子化能量由電場提供，所以在能量轉換效率上有超過一個數量級的優勢。LDP的缺點則在於較難匹配光學系統，包括錫光源面積大，和初始聚焦鏡以及其防污染系統都較為複雜（參考上圖）等等。所以兩個技術路綫的整體優劣對比，要視華爲團隊的實用設計優化程度而定；我們翹首以待。&lt;/p&gt;]]></description>
+    <description><![CDATA[後註二 <br><br>----<br><br>雖然正文裏的PPT並不詳細全面，但在實際給演講的過程中探討台灣經濟前景的時候，我特別强調了一個結論，後來在二月的《龍行天下》節目中也曾提及，亦即臺積電及其周邊產業固然是台灣過去兩年迅速喪失競爭力的例外，但也不可能長期維持優勢地位。這裏的邏輯論證可以簡單濃縮為：連ASML也將被取代，臺積電怎麽可能遺世獨立呢？&lt;/p&gt;<br><br>&lt;p&gt;談到取代ASML，就必須討論中方的EUV光刻機。2023年博客（參見&lt;a href="180084901.html"&gt;&lt;span style="color:blue"&gt;《金融史觀（三）政策建議》&lt;/span&gt;&lt;/a&gt;【後註三】）提到二代半導體大基金的貪腐浪費被高層下令清理（參見&lt;a href="175790558.html"&gt;&lt;span style="color:blue"&gt;《社會主義國家應該如何管理資本》&lt;/span&gt;&lt;/a&gt;一文的揭露和建議）之後，華爲在深圳新成立了幾家子公司，開始代為國家管理最尖端的製程研發。去年已經有足夠資訊，可以在留言討論中估計國產EUV光刻機商用交付約在2026年底/2027年初。本周又有消息更新（參見例如&lt;a href="https://www.techpowerup.com/333801/china-develops-domestic-euv-tool-asml-monopoly-in-trouble"&gt;&lt;span style="color:blue"&gt;《China Develops Domestic EUV Tool, ASML Monopoly in Trouble》&lt;/span&gt;&lt;/a&gt;），除了再一次印證進度預期（2025年第三季試產，2026年量產）之外，還提到華爲選擇了與ASML不同的技術路綫：後者用的是LPP（Laser Produced Plasma）光源，而前者則采用LDP（請注意，這一波新聞全都把LDP説成是Laser-induced Discharge Plasma的縮寫，這應該是原始信息來源所犯的筆誤，學術界所討論的LDP向來都是Laser-assisted Discharge Plasma，參考例如這個日本團隊的一系列論文&lt;a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13215/PC1321514/LDP-EUV-source-performance-and-cost-of-ownership-improvement/10.1117/12.3036726.short"&gt;&lt;span style="color:blue"&gt;《LDP EUV source performance and cost-of-ownership improvement》&lt;/span&gt;&lt;/a&gt;）。&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="https://wmyblog.site/html/img/f_28722125_1.JPG"/&gt;&lt;/p&gt;<br><br>&lt;p&gt;以上是LPP和LDP光源的示意圖。錫等離子體作爲EUV光刻機的光源，其技術難點有二：一是高功率輸出要求，二是如何匹配深紫外光反射鏡系統（包括等離子體擴散污染鏡面的問題）。LPP完全依賴激光來蒸發錫滴以產生等離子體，然而激光的產生和吸收過程，能量轉換效率先天就很低，於是不但電量需求極高，而且必須消散大量熱能（參考博客多年來對激光核聚變NIF的討論），這是LPP最大的缺點（其次是錫滴Tin droplet的準備和發送相當複雜）。而LDP的激光只負責定時定位，絕大部分的離子化能量由電場提供，所以在能量轉換效率上有超過一個數量級的優勢（此外，錫的準備也很簡單，可以直接用轉輪傳送）。LDP的缺點則在於較難匹配光學系統，包括等離子體光源發光面積大（因而難以聚焦，不過這也代表等離子體密度較低，導致發光光譜更集中Spectrally narrow在13.5nm附近，在處理發散Dispersion現象上略有好處），和初始聚焦鏡模組頗為複雜（參考上圖；這裏的難點在於LDP的錫光源系統體積很大，原本應該配合透鏡，偏偏適用於13.5nm EUV的透鏡物理上並不存在，必須以反射鏡面來模擬其效果）等等。所以兩個技術路綫的整體優劣對比，要視華爲團隊的實用設計優化程度而定；我們翹首以待。&lt;/p&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-03-12 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
@@ -482,22 +482,22 @@
     <item>
     
     
-    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
-    <description><![CDATA[哦那就简单了, 即便刨除概率估算(我是乐观认为本代AI最多还能挖两个数量级), 还有额外两条保证结论的有效性 (1)大模型技术扩散速度远远快于研发, 你会的, 我很快也会, 没有秘密武器 (2)大模型技术难以形成先发垄断优势, 对, 没有killer App<br><br> <br><br>----<br><br>是的，博客不是技術刊物，探討AI固然照舊仔細搜集事實、以供嚴謹邏輯分析，論證的目標終究在於1）對人類社會的推進有多大；2）對中美博弈平衡有何影響。<br>&lt;div class="TIME"&gt;2025-01-21 12:56 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-01-21 10:19:00 +0800</pubDate>
-    <guid isPermaLink="false">9d3364375c929951f763b83963cb9ae3</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#9d3364375c929951f763b83963cb9ae3</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【戰略】【臺海】台灣的國安和產業前景 | 藍井觀天]]></title>
     <description><![CDATA[不好意思！我在大陸，昨天深夜知道台灣南部地震，藉此表達問候，希望您和家人在台南一切安好！<br><br> <br><br>----<br><br>謝謝問候。<br><br>震央很淺，距離我家又只有30公里左右，超6級的强度是我一輩子親身經歷遠遠最大的震幅，算是又一項特別的人生體驗；所幸家裏什麽事都沒有，連瓶瓶罐罐都絲毫無損，就是少了幾個小時的睡眠，剛好可以用來思考生命的脆弱和短暫。<br>&lt;div class="TIME"&gt;&lt;a href="https://github.com/taizihuang/wmyblog/commits/main/html/181687848.html" style="text-decoration: none;color:black;"&gt;2025-01-21 16:00 修改&lt;/a&gt;&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-01-21 10:19:00 +0800</pubDate>
     <guid isPermaLink="false">0b757a1863bd67fa90ff79e46fe24a1a</guid>
     <link>https://taizihuang.github.io/wmyblog/html/181687848.html#0b757a1863bd67fa90ff79e46fe24a1a</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【海军】共军的新航母 | AbzX5]]></title>
+    <description><![CDATA[哦那就简单了, 即便刨除概率估算(我是乐观认为本代AI最多还能挖两个数量级), 还有额外两条保证结论的有效性 (1)大模型技术扩散速度远远快于研发, 你会的, 我很快也会, 没有秘密武器 (2)大模型技术难以形成先发垄断优势, 对, 没有killer App<br><br> <br><br>----<br><br>是的，博客不是技術刊物，探討AI固然照舊仔細搜集事實、以供嚴謹邏輯分析，論證的目標終究在於1）對人類社會的推進有多大；2）對中美博弈平衡有何影響。<br>&lt;div class="TIME"&gt;2025-01-21 12:56 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-01-21 10:19:00 +0800</pubDate>
+    <guid isPermaLink="false">9d3364375c929951f763b83963cb9ae3</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908810.html#9d3364375c929951f763b83963cb9ae3</link>
     </item>
     </channel></rss>
     
