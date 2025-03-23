@@ -389,7 +389,9 @@ def genAnno(df):
                 elif reply[-2] == '體':
                     loc4 = strFind(reply,'<p>')
                     reply = reply[:loc4[-1]]              
-                df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,'comment_date':date,'id':id},index=[0])],ignore_index=True)
+                df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,'reply':reply,'nickname':comment,
+                                                                'comment_date':date, "first_reply_date": date,
+                                                                "latest_reply_date": date, 'id':id},index=[0])],ignore_index=True)
     df_anno = df_anno.sort_values(by='comment_date',ascending=False).reset_index(drop=True)
     return df_anno
 
@@ -750,17 +752,17 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     df_anno = genAnno(df_article)
     df_comment1 = pd.concat([df_comment,df_anno],ignore_index=True)
     df_comment_today = df_comment1.loc[df_comment1.comment_date > latest]
-    df_comment_today = df_comment_today.sort_values(by='comment_date',ascending=False)
+    df_comment_today = df_comment_today.sort_values(by='latest_reply_date',ascending=False)
     article_dict = {}
     for index in df_article.index:
         article_dict[df_article.id[index]] = df_article.title[index]
-    genLatestComment(df_comment_today,article_dict)
+    genLatestComment(df_comment_today, article_dict)
     print('latest page generated')
 
     exportJSON(df_article,df_comment_tag,jsonFile='./search/wmyblog.json')
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=True)
+    # updateBlogData(nTask=1, proxy='' ,gDriveUpdate=True)
     updateBlogPage(days=50)
     os.remove("article_tmp.pkl")
