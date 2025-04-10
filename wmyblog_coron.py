@@ -334,6 +334,8 @@ def updateBlogData(nTask=20, proxy='',articleUpdate=True,gDriveUpdate=True,comme
                 art_id  = url.split("/")[-1]
                 article_list += page2article(doc, art_id)
                 comment_list += page2comment(doc, art_id)
+            else:
+                print(f"[error] {status} {url}")
 
         df_article = pd.concat(article_list, ignore_index=True)
         df_comment = pd.concat(comment_list,ignore_index=True)
