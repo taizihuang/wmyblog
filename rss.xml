@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>04-30 20:04 +0800</lastBuildDate>
+    <lastBuildDate>05-01 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -518,16 +518,6 @@
     <pubDate>2025-03-14 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a67f89f4ec8e733224c8aed7f1e1b89c</guid>
     <link>https://taizihuang.github.io/wmyblog/html/131648606.html#a67f89f4ec8e733224c8aed7f1e1b89c</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【戰略】【臺海】台灣的國安和產業前景 | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>本文有一個重要結論，在二月的《龍行天下》節目中也曾提及，亦即臺積電及其周邊產業固然是台灣過去兩年迅速喪失競爭力的例外，但也不可能長期維持優勢地位。這裏的邏輯論證可以簡單濃縮為：連ASML也將被取代，臺積電怎麽可能遺世獨立呢？</p><br><br><p>談到取代ASML，就必須討論中方的EUV光刻機。2023年博客（參見<a href="180084901.html"><span style="color:blue">《金融史觀（三）政策建議》</span></a>【後註三】）提到二代半導體大基金的貪腐浪費被高層下令清理（參見2022年<a href="175790558.html"><span style="color:blue">《社會主義國家應該如何管理資本》</span></a>一文的揭露和建議）之後，華爲在深圳新成立了幾家子公司，開始代為國家管理最尖端的製程研發，其中負責統籌半導體製程工藝（包含光刻機）的公司叫做SiCarrier新凯来。去年已經有足夠資訊，可以在留言討論中估計國產EUV光刻機商用交付約在2026年底/2027年初。本周又有消息更新（參見例如<a href="https://www.techpowerup.com/333801/china-develops-domestic-euv-tool-asml-monopoly-in-trouble"><span style="color:blue">《China Develops Domestic EUV Tool, ASML Monopoly in Trouble》</span></a>），除了再一次印證進度預期（2025年第三季試產，2026年量產）之外，還提到華爲選擇了與ASML不同的技術路綫：後者用的是LPP（Laser Produced Plasma）光源，而前者則采用LDP（請注意，這一波新聞全都把LDP説成是Laser-induced Discharge Plasma的縮寫，這應該是原始信息來源所犯的筆誤，學術界所討論的LDP向來都是Laser-assisted Discharge Plasma，參考例如這個日本團隊的一系列論文<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13215/PC1321514/LDP-EUV-source-performance-and-cost-of-ownership-improvement/10.1117/12.3036726.short"><span style="color:blue">《LDP EUV source performance and cost-of-ownership improvement》</span></a>）。</p><br><br><p><img src="https://wmyblog.site/html/img/f_28722125_1.JPG"/></p><br><br><p>以上是LPP和LDP光源的示意圖。錫等離子體作爲EUV光刻機的光源，其技術難點有二：一是高功率輸出要求，二是如何匹配深紫外光反射鏡系統（包括等離子體擴散污染鏡面的問題）。LPP完全依賴激光來蒸發錫滴以產生等離子體，然而激光的產生和吸收過程，能量轉換效率先天就很低，於是不但電量需求極高，而且必須消散大量熱能（參考博客多年來對激光核聚變NIF的討論），這是LPP最大的缺點（其次是錫滴Tin droplet的準備和發送相當複雜）。而LDP的激光只負責定時定位，絕大部分的離子化能量由電場提供，所以在能量轉換效率上有超過一個數量級的優勢（此外，錫的準備也很簡單，可以直接用轉輪傳送）。LDP的缺點則在於較難匹配光學系統，包括等離子體光源發光面積大（因而難以聚焦，不過這也代表等離子體密度較低，導致發光光譜綫寬窄、更集中在13.5nm附近，在處理發散Dispersion現象上略有好處），和初始聚焦鏡模組頗為複雜（參考上圖；這裏的難點在於LDP的錫光源系統體積很大，原本應該配合透鏡，偏偏適用於13.5nm EUV的透鏡物理上並不存在，必須以反射鏡面來模擬其效果；這些光學反射鏡似乎由長春光電所負責研發）等等。當年ASML評比兩種技術路綫，以反射聚焦之後到達Photomask光掩膜的功率大小為衡量標準，而提供LDP方案的供應商落敗了；但20年後中國重新嘗試，實用設計的優化程度自然有所不同，因而路綫的選擇也不同。至於華爲方案最終與ASML的優劣對比，目前還難以斷定；我們翹首以待。</p><br><div class="TIME">2025-03-12 00:00 回复</div>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-03-12 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/181687848.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
     </item>
     </channel></rss>
     
