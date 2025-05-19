@@ -7,8 +7,28 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>05-19 20:05 +0800</lastBuildDate>
+    <lastBuildDate>05-20 02:04 +0800</lastBuildDate>
     <ttl>5</ttl>
+    <item>
+    
+    
+    <title><![CDATA[【美國】【工業】波音和載人登月（續） | LoveClem]]></title>
+    <description><![CDATA[  在激光推进（包括烧蚀和光帆)的应用中，相关人员总是假设有效孔径（在近未来）可以做到足够大，以此来缓解衍射的问题。而且在很多应用中，相关技术也并非用于恒星际推进，而更多的是内太阳系航行甚至近地轨道发射，希望以此来降低成本。就是不知道他们所说的有效孔径和较低的成本能否实现。<br><br>  如果激光推进不靠谱，那么最优解应该就是 核动力+离子推进。本来以为核聚变应该是这里的核动力的首选，但是看了博士的一系列文章之后，还是觉得聚变及其各种应用（在可见未来）纯属忽悠。所以应当是裂变，但是高功率裂变堆的辐射和散热问题不知道是否已经解决。<br><br> <br><br>----<br><br>同時提升激光的功率和孔徑到達能推動空間旅行的級別，難度遠比製造小型高效的核裂變發電機和離子引擎要高得多，只有印度程度的空想者才會做這樣離譜的白日夢。<br><br>純粹從科學和工程角度，核裂變+離子發動機的確是在太陽系内（假設選擇最容易的火星和小行星）有實用前景的交通工具，但若加上經濟性考慮，機會一下子又變成很小，更可能（至少在本世紀内；我不想對百年之後的科技和經濟做過多推斷）只有形象工程的意義。這裏的實用標準比照大航海時期的經驗，單程耗時在一兩年之内、成功機率在60%以上，若有足夠珍貴的貨品，就有經濟意義去嘗試。問題在於其價值必須超過成本*（失敗機率+20%）/（成功機率-失敗機率/（1+A）），這裏的20%是現代經濟對高風險、長周期投資的報酬率門檻，成本分爲開礦和運輸，A是後者對前者的比值（在真空中開礦，這個比值必然很低；此外成本是總成本、而不只是邊際成本，還必須包含人命價值）。例如成功機率=80%（考慮真空開礦和長途空間飛行的各種艱難危險，和資本盈利的管理習性，這已經是很寬鬆的估算了；更高的成功機率只有在反復嘗試學習改進之後才能以血的代價逐步實現），A假設為1/3，那麽單趟貨品價值必須是總成本的62%左右；假設成功機率為90%，這個門檻也只降到36%。然而受元素周期表的限制，這樣的高價值礦產基本不可能存在；尤其考慮元素若是昂貴，都是因爲稀缺，那麽批量開采必然會大幅壓低價格，等到技術成熟、成功機率上升，貨品價格早就崩盤了；換句話説，不能指望增量平攤。所以電影《Avatar》中自我調侃為“Unobtainium”“不可能得到的元素”是有道理的。<br><br>至於要離開太陽系，距離一下子提升5.3個數量級（地球距離火星0.000024光年，距離最近的Proxima Centauri則是4.24光年），光是旅途時長就不可能有任何經濟性，更別提去年我們討論的放射性損害（前面計算内太陽系采礦的經濟性時，放射性問題沒有被明確提起，但實際上會導致成本以數十的倍數增高，除非AI進步到可以完全取代人工）。<br>&lt;div class="TIME"&gt;2025-05-20 01:43 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-05-19 14:56:00 +0800</pubDate>
+    <guid isPermaLink="false">37c119997561c12c0b1b45633ceebe86</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/128392486.html#37c119997561c12c0b1b45633ceebe86</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【基礎科研】什麼是科學？ | 後註二]]></title>
+    <description><![CDATA[後註二 <br><br>----<br><br>我終於在本月的《龍行天下》節目（參見&lt;a href="https://www.youtube.com/watch?v=C8GXJMrk_-M"&gt;&lt;span style="color:blue"&gt;《從「印巴空戰」看世界真正危機！》&lt;/span&gt;&lt;/a&gt;）中找到機會討論科學方法論，不過因時長和格式所限，講得非常淺顯簡略，讀者還是必須回到博客來尋找完整而精確的論述，並且基本的邏輯學和統計學知識也是必要的。例如節目中提到，若是事前判斷開大的機率為90%，那麽預測者依然必須100%猜大，事後的成功率也只能達到90%。這裏我的用意在於强調最佳策略對博弈條件的非綫性反應；我看到有公衆評論，把這稱爲10%失誤的托詞，這顯然是對統計學完全無知的誤解：博客反復解釋過（參見《讀者須知》和其下的留言討論），我做預測的標準門檻是90%，事後的成功率也至少是90%，&lt;/p&gt;<br><br><br><br><br>&lt;div class="TIME"&gt;2025-05-20 00:00 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-05-20 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908650.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+    </item>
     <item>
     
     
@@ -62,6 +82,16 @@
     <item>
     
     
+    <title><![CDATA[【工業】【能源】再談氫經濟 | 後註二十八]]></title>
+    <description><![CDATA[後註二十八 <br><br>----<br><br>博客批判假未來科技，主要針對在中國最得勢的核聚變發電和量子通信/計算，其他如氫經濟和碳回收雖然在物理、化學和工程層面一樣甚至更離譜，但因中方投入相對不多，間接參考的意義較大。今天又有一條可供參考的新聞（參見&lt;a href="https://cleantechnica.com/2025/05/15/climeworks-dac-fiscal-collapse-the-brutal-reality-of-pulling-carbon-from-the-sky/"&gt;&lt;span style="color:blue"&gt;《Climeworks’ DAC &amp;amp; Fiscal Collapse &amp;amp; The Brutal Reality Of Pulling Carbon From The Sky》&lt;/span&gt;&lt;/a&gt;）：全球直接從大氣碳回收的領頭羊Climateworks，在燒光8億美元資金（還有至少另外12億美元不知是否到位，參見&lt;a href="https://carboncredits.com/us-to-invest-12-billion-direct-air-capture-projects-by-climeworks-and-oxy/"&gt;&lt;span style="color:blue"&gt;《US to Invest $1.2B in DAC Projects Led by Climeworks and Oxy》&lt;/span&gt;&lt;/a&gt;；這其中大部分實際上被轉移到私人銀行賬戶，參考許家印；畢竟假未來科技的本質，向來都是打著科研的招牌，行金融詐騙之實）之後，正式關廠（是的，就是幾年前在主流媒體被廣汎吹噓的那個冰島厰）倒閉，總共清除了105噸的二氧化碳，相當於少燒了29噸的煤，以國際煤價每噸$34計算，這等同花$970買下那些煤炭扔到垃圾場的效果。當然，這一切都可以基於熱力學第二定律簡單事先斷言；因爲永動機的定義正是無視熱力學第一或第二定律的假科技騙局，這些大氣碳回收是名副其實的永動機被貼上新標簽重新包裝罷了。&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-05-17 00:00 回复&lt;/div&gt;]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-05-17 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">9c5ae6da47d88d84bd61ce2c02dda2db</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/131731312.html#9c5ae6da47d88d84bd61ce2c02dda2db</link>
+    </item>
+    <item>
+    
+    
     <title><![CDATA[【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 後註四]]></title>
     <description><![CDATA[後註四 <br><br>----<br><br>三周前的4月28日，西班牙/葡萄牙所在的伊比利亞半島發生電網崩潰事件（參見&lt;a href="https://en.wikipedia.org/wiki/2025_Iberian_Peninsula_blackout"&gt;&lt;span style="color:blue"&gt;《2025 Iberian Peninsula blackout》&lt;/span&gt;&lt;/a&gt;以及&lt;a href="https://www.youtube.com/watch?v=ZiHum-VNHAM"&gt;&lt;span style="color:blue"&gt;《What caused the Spanish Power Outage and the simple solution》&lt;/span&gt;&lt;/a&gt;），總共30GW的電力供應中斷，事件延續16小時，對經濟民生影響重大；但更重要的是，事故原因正隱藏於當代新能源電力設施之中，值得各國主事者參考深思。&lt;/p&gt;<br><br>&lt;p&gt;傳統的大停電，都源自發電或傳輸設備出了問題，電力供應無法滿足負荷，但這次停電是新能源普及之後的第一次同類事故，並不來自供不應求，而是反過來在電網常有的不穩定震蕩下，出現短暫的供過於求現象，這導致AC交流電的頻率開始升高。傳統的發電機是渦輪，其轉速嚴格遵從電網AC頻率，後者升高要求前者也跟著提升，而因爲物理慣性這需要時間，從而賦予既有的控制電路足夠的反應餘裕來製造負反饋，壓低發電功率，維持供需平衡。然而新能源中的光伏和風電（風電雖然也是渦輪，但無法直接匹配電網頻率，所以一般先換成DC再變回適用於電網的AC）要配頻必須從DC轉換過來，這個轉換過程一般使用電子電路（叫做Inverter逆變器）自動跟蹤電網頻率，所以對頻率震蕩不但沒有負反饋，而且有相當的正反饋效應。西班牙因爲日照强烈和海風充裕，光伏和風電所占的發電量比率處於世界前列（2023/2024年是40.2%，作爲對比，中國是18.1%，數據分別來自&lt;a href="https://www.sistemaelectrico-ree.es/en/spanish-electricity-system/generation/total-electricity-generation"&gt;&lt;span style="color:blue"&gt;《Systema: Total electricity generation》&lt;/span&gt;&lt;/a&gt;和&lt;a href="https://lowcarbonpower.org/zht/region/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B"&gt;&lt;span style="color:blue"&gt;《中華人民共和國2024年電力數據》&lt;/span&gt;&lt;/a&gt;），這才導致其第一個吃螃蟹。要根治這個新能源普及的副作用，必須開發新的電網控制系統（含智能逆變器），中國在電網技術上已經領先全球，責無旁貸。&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-05-17 00:00 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
@@ -78,16 +108,6 @@
     <pubDate>2025-05-17 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">eb42a79a300ec03e39298ad0c152869c</guid>
     <link>https://taizihuang.github.io/wmyblog/html/175790558.html#eb42a79a300ec03e39298ad0c152869c</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【工業】【能源】再談氫經濟 | 後註二十八]]></title>
-    <description><![CDATA[後註二十八 <br><br>----<br><br>博客批判假未來科技，主要針對在中國最得勢的核聚變發電和量子通信/計算，其他如氫經濟和碳回收雖然在物理、化學和工程層面一樣甚至更離譜，但因中方投入相對不多，間接參考的意義較大。今天又有一條可供參考的新聞（參見&lt;a href="https://cleantechnica.com/2025/05/15/climeworks-dac-fiscal-collapse-the-brutal-reality-of-pulling-carbon-from-the-sky/"&gt;&lt;span style="color:blue"&gt;《Climeworks’ DAC &amp;amp; Fiscal Collapse &amp;amp; The Brutal Reality Of Pulling Carbon From The Sky》&lt;/span&gt;&lt;/a&gt;）：全球直接從大氣碳回收的領頭羊Climateworks，在燒光8億美元資金（還有至少另外12億美元不知是否到位，參見&lt;a href="https://carboncredits.com/us-to-invest-12-billion-direct-air-capture-projects-by-climeworks-and-oxy/"&gt;&lt;span style="color:blue"&gt;《US to Invest $1.2B in DAC Projects Led by Climeworks and Oxy》&lt;/span&gt;&lt;/a&gt;；這其中大部分實際上被轉移到私人銀行賬戶，參考許家印；畢竟假未來科技的本質，向來都是打著科研的招牌，行金融詐騙之實）之後，正式關廠（是的，就是幾年前在主流媒體被廣汎吹噓的那個冰島厰）倒閉，總共清除了105噸的二氧化碳，相當於少燒了29噸的煤，以國際煤價每噸$34計算，這等同花$970買下那些煤炭扔到垃圾場的效果。當然，這一切都可以基於熱力學第二定律簡單事先斷言；因爲永動機的定義正是無視熱力學第一或第二定律的假科技騙局，這些大氣碳回收是名副其實的永動機被貼上新標簽重新包裝罷了。&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-05-17 00:00 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-05-17 00:00:00 +0800</pubDate>
-    <guid isPermaLink="false">9c5ae6da47d88d84bd61ce2c02dda2db</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/131731312.html#9c5ae6da47d88d84bd61ce2c02dda2db</link>
     </item>
     <item>
     
@@ -303,7 +323,7 @@
     
     
     <title><![CDATA[【基礎科研】什麼是科學？ | 後註一]]></title>
-    <description><![CDATA[後註一 <br><br>----<br><br>有朋友私下來信，針對最新的《龍行天下》節目（參見&lt;a href="https://www.youtube.com/watch?v=3N-XEFrSFFg"&gt;&lt;span style="color:blue"&gt;《美國的關稅、中國的冷靜，哪一個讓世界更震驚？》&lt;/span&gt;&lt;/a&gt;）做出批評質疑，我覺得值得作爲這篇正文的參照，所以將問答轉列於下。&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;問&amp;gt;&lt;/strong&gt;說到想早上節目是因為怕說晚了就沒法展現先見之明時（知道您是戲言）覺得真挺失望的，尤其是之後又反复提及如何提前預判什麼什麼事，外人看到難免會想“這就是他的追求？格局也太小了吧？”&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;答&amp;gt;&lt;/strong&gt;我反復强調自己的預測正確，並不是出於傲慢或虛榮，其實是很早以前就在深思熟慮之後定下方針、有意地試圖扭轉文化。你所説的“格局”，本質是拿空洞的内涵來裝逼（亦即“大師風範”）；這的確是一門大本事，是在商場和學界勝出的關鍵，但問題在於治國不能這樣搞，否則普選制挑選出來的“人才”，例如Obama這種口若懸河的人，就會是最優的了。別忘了，博客討論的議題，一進一出動輒幾萬億美元，任何犧牲精確度和完整性的婉轉，都是我的良心不容許加諸於國家的潛在損失。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;博客的最核心論述，就是治國（亦即博文常説的“管理公共事務”）必須依憑科學理性。什麽是科學的好壞標準？不是看聽衆喜不喜歡，不是看大佬點不點頭，不是看裝逼高不高檔，不是看論文登上哪個期刊，而是要看預測是否兌現（博客不是常説，“事實”比“邏輯”還要優先？檢討預測是否兌現，就是“事實”和“邏輯”的碰撞過程），而且越是事先被主流排斥、事後卻被證實的，越是重要、正確和難得。這個標準對自然科學出身的人，都已成爲本能，但社會科學也絕對應該如此，偏偏當代的社科界完全沒有這個概念，這也正是世界上這麽多政壇的所謂精英卻在政策上極端幼稚的根本源頭。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;博客的大目標是爲國建言，主要手段則是通過優質的内容和態度來提升輿論水平，那麽以身作則、倒逼社科學界檢討自己的預測是否正確，不正是最關鍵的文化任務之一嗎？你看十幾年前的網紅學者，全都爲了裝逼、維持你所説的“格局”，從來沒有人會檢驗自己的預測，反正都是錯的；但是今年Trump當選後，就有不止一個知名大佬站出來說我們四年前就預言Trump會“捲土重來”。雖然他們是在狡辯作弊（因爲四年前他們預測的，不是Trump會在2024年當選，而是會試圖重新出來競選的廢話，也就是利用了中文裏“捲土重來”的語義含糊性），卻讓我很高興：中國社科界終於開始接受科學標準了，這是博客11年努力的又一成果。&lt;/span&gt;&lt;/p&gt;<br><br><br><br><br>&lt;div class="TIME"&gt;2025-04-20 00:00 回复&lt;/div&gt;]]></description>
+    <description><![CDATA[後註一 <br><br>----<br><br>有朋友私下來信，針對最新的《龍行天下》節目（參見&lt;a href="https://www.youtube.com/watch?v=3N-XEFrSFFg"&gt;&lt;span style="color:blue"&gt;《美國的關稅、中國的冷靜，哪一個讓世界更震驚？》&lt;/span&gt;&lt;/a&gt;）做出批評質疑，我覺得值得作爲這篇正文的參照，所以將問答轉列於下。&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;問&amp;gt;&lt;/strong&gt;說到想早上節目是因為怕說晚了就沒法展現先見之明時（知道您是戲言）覺得真挺失望的，尤其是之後又反复提及如何提前預判什麼什麼事，外人看到難免會想“這就是他的追求？格局也太小了吧？”&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;答&amp;gt;&lt;/strong&gt;我反復强調自己的預測正確，並不是出於傲慢或虛榮，其實是很早以前就在深思熟慮之後定下方針、有意地試圖扭轉文化。你所説的“格局”，本質是拿空洞的内涵來裝逼（亦即“大師風範”）；這的確是一門大本事，是在商場和學界勝出的關鍵，但問題在於治國不能這樣搞，否則普選制挑選出來的“人才”，例如Obama這種口若懸河的人，就會是最優的了。別忘了，博客討論的議題，一進一出動輒幾萬億美元，任何犧牲精確度和完整性的婉轉，都是我的良心不容許加諸於國家的潛在損失。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;博客的最核心論述，就是治國（亦即博文常説的“管理公共事務”）必須依憑科學理性。什麽是科學的好壞標準？不是看聽衆喜不喜歡，不是看大佬點不點頭，不是看裝逼高不高檔，不是看論文登上哪個期刊，而是要看預測是否兌現（博客不是常説，“事實”比“邏輯”還要優先？檢討預測是否兌現，就是“事實”和“邏輯”的碰撞過程），而且越是事先被主流排斥、事後卻被證實的，越是重要、正確和難得。這個標準對自然科學出身的人，都已成爲本能，但社會科學也絕對應該如此，偏偏當代的社科界完全沒有這個概念，這也正是世界上這麽多政壇的所謂精英卻在政策上極端幼稚的根本源頭。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;博客的大目標是爲國建言，主要手段則是通過優質的内容和態度來提升輿論水平，那麽以身作則、倒逼社科學界檢討自己的預測是否正確，不正是最關鍵的文化任務之一嗎？你看十幾年前的網紅學者，全都爲了裝逼、維持你所説的“格局”，從來沒有人會檢驗自己的預測，反正都是錯的；但是今年Trump當選後，就有不止一個知名大佬站出來說我們四年前就預言Trump會“捲土重來”。雖然他們是在狡辯作弊（因爲四年前他們預測的，不是Trump會在2024年當選，而是會試圖重新出來競選的廢話，也就是利用了中文裏“捲土重來”的語義含糊性），卻讓我很高興：中國社科界終於開始接受科學標準了，這是博客11年努力的又一成果。&lt;/span&gt;&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-04-20 00:00 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-04-20 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
@@ -358,16 +378,6 @@
     <pubDate>2025-04-12 21:50:00 +0800</pubDate>
     <guid isPermaLink="false">9cfcd8d052975972278d79c3f0a3abee</guid>
     <link>https://taizihuang.github.io/wmyblog/html/142302095.html#9cfcd8d052975972278d79c3f0a3abee</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | 百年未有之大變局]]></title>
-    <description><![CDATA[　<br><br>想問個問題如果考慮美國從新冠疫情倒最近幾年發行的國債再考慮國債的平均到期時間都偏短，需要進行借新還舊(借新債發舊債)再考慮預算赤字，那從2022年到現在的升息遲遲沒有降息，是否會碰到過去幾年這疫情發債的到期日，然後把國債的票面平均利率從舊債的平均2.5%拉升到目前殖利率的水平比如3.8%以上，然後短時間內例如2-3年內拉升美國利息支出佔聯邦支出的比例提高50%以上，例如從現在的17%提高到25%佔聯邦預算比例，剛好符合王博士提供的那個淺藍色虛線的預測，有沒有這種可能性? 那是不是代表美聯儲不趕快降息都不行了，因為借新還舊的過程必須再升息後的利率基礎之上的票面利率發新債還過去的舊短債，如果堅持不降息不QE那很快會導致新債的借債成本(利息支出)提高50%，也就是美聯儲的預期管理減緩降息可能是在演戲，為了壓低通膨演夠戲了才開始降息，這樣的推測不知道是不是正確?<br><br> <br><br>----<br><br>這的確是内行人關注的要點之一。自Greenspan任期開始，美聯儲注意到由於東亞出口國的外匯回饋，容許其進一步人爲壓低利率，就拼命地降息，從而有了【後注十】圖中2000年前後的利息支出大降。原本美國國債以30年期為主，但因爲短期利率比長期利率被壓低得更厲害，於是財政部逐步向短期轉移，以致現今連所謂的主力長期債券都已經縮短至7-10年期了。最近三年，利率曲綫基本水平，全都處在4+%區間，咋看之下似乎短期長期沒有差別，但實際上通脹壓力隱藏在下一場金融危機之後，也就是2028-2030年那個時段，所以5年以上的債券利率被明顯低估，對舉債方特別划算、對投資人特別危險；Trump政權甚至想要强迫所有外國中央銀行改買100年期的債券，就是基於這個考慮。<br><br>因爲當前還有上述的便宜可撿，美聯儲並沒有爲了聯邦利息支出而操弄利率的動力。這種低利舉債的便宜，只要美元還是國際儲備貨幣就必然存在，Powell因爲是半路出家，並沒有像Greenspan那樣的行業傲慢，所以不願意揠苗助長，只想專心管理通脹。當然從Trump的角度來看，通脹的危害是滾雪球式的，越到後來越嚴重，既然他的任期只剩三年多，Greenspan才是他心目中的理想主席。<br>&lt;div class="TIME"&gt;2025-04-18 07:13 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-03-30 18:13:00 +0800</pubDate>
-    <guid isPermaLink="false">f350a5bfdc8576f1199ef31f36ddef81</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#f350a5bfdc8576f1199ef31f36ddef81</link>
     </item>
     <item>
     
@@ -462,16 +472,6 @@
     <item>
     
     
-    <title><![CDATA[【金融】【戰略】國際金融未來趨勢 | tzdai]]></title>
-    <description><![CDATA[yield curve control<br><br>王老师好，如果出长期利率和财政赤字的恶性循环，美联储是否可以祭出 yield curve control 来轻易拖延？<br><br>  <br><br>----<br><br>Yield Curve Control（利率曲綫控制；對金融專業不熟的讀者可以把它視爲量化寬鬆的代名詞，因爲2008年之前美聯儲只控制短期利率，自QE起才直接操弄長期利率）本質上就是印錢買長期債券，既提高貨幣流通量、又壓低長期利率，兩者殊途同歸、都會引發通脹壓力，除非有冤大頭（歐洲和中國）願意無限接受美元換取貨品物資，否則必然發生滯脹；偏偏這些冤大頭似乎永遠不學乖。<br>&lt;div class="TIME"&gt;2025-04-15 00:23 回复&lt;/div&gt;]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-03-30 06:54:00 +0800</pubDate>
-    <guid isPermaLink="false">0c7dd82beea0e271f5af36d8db055c32</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/179876353.html#0c7dd82beea0e271f5af36d8db055c32</link>
-    </item>
-    <item>
-    
-    
     <title><![CDATA[【政治】社會主義國家應該如何管理資本 | 後註十八]]></title>
     <description><![CDATA[後註十八 <br><br>----<br><br>有讀者私下來信詢問金融管理的一些原則議題，值得讀者參考，轉述於下。&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;問&amp;gt;&lt;/strong&gt;社會主義國家該如何監管影子銀行？是否應該完全禁止？&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;答&amp;gt;&lt;/strong&gt;影子銀行原則上應全面禁止。既然要從事金融行業，就必然内含所有金融架構都先天具備的不穩定性和逐底競爭趨勢，因而當然也應該光明正大地接受監管；換句話說，必須登記為銀行。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;問&amp;gt;&lt;/strong&gt;全球金融穩定理事會（Financial Stability Board，2012）認為關鍵在於對回購等證券融資交易市場提出最低估價折扣的要求，在合約層級而非機構層級實施有效的資本監管。這項措施是否足夠？&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;答&amp;gt;&lt;/strong&gt;所謂“監管合約而不是機構”是典型的開後門藉口；金融合約的複雜性和隱藏風險連創造者都搞不明白，根本不是監管方所可能厘清的。歷史上每一個“金融創新”在初創時風險都被低估，從而反復導致金融危機；中國沒有美國的貨幣霸權和地緣安全性，承受不起後者周期性踩雷的金融管理模式。&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;問&amp;gt;&lt;/strong&gt;王博士在&lt;a href="180084896.html"&gt;&lt;span style="color:blue"&gt;《金融史觀（二）當前局勢》&lt;/span&gt;&lt;/a&gt;後註三中提及，直接面對大眾的Mutual Fund是值得發展的，請問貨幣市場共同基金屬於此列嗎，是否應當禁止或應如何監管？&lt;/span&gt;&lt;/p&gt;<br><br>&lt;p&gt;&lt;span style="font-family:標楷體"&gt;&lt;strong&gt;&amp;lt;答&amp;gt;&lt;/strong&gt;金融不等於資本！後者包括有利國家的產業資本和危害人類的金融資本；例如任正非是資本家，但他絕對不屬於金融。我曾看到有人將改開前三十年纍積資本的過程説成發展金融，這是標準的利用語義含糊來混淆視聽的狡辯術。Mutual Fund因爲服務中產，將他們儲蓄所得的金融游資集中轉化成產業資本，以較高的企業管理眼光選擇正確的投資對象，所以有其價值。注意這裏的前提是Mutual Fund必須對實體產業提供長期發展資金（Private Equity之危害，正在於他們反其道而行，買下企業後千方百計地榨取資金，直到只剩一具破產的乾尸）才有價值，貨幣投機當然不在其列。我再强調一次，金融的唯一正面價值在於服務實體產業，任何脫離這個任務去追求高報酬率的手段都有害無益。 &lt;/span&gt;&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-04-15 00:00 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
@@ -498,16 +498,6 @@
     <pubDate>2025-04-06 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
     <link>https://taizihuang.github.io/wmyblog/html/166266473.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
-    </item>
-    <item>
-    
-    
-    <title><![CDATA[【美國】【工業】波音和載人登月（續） | LoveClem]]></title>
-    <description><![CDATA[  在激光推进（包括烧蚀和光帆)的应用中，相关人员总是假设有效孔径（在近未来）可以做到足够大，以此来缓解衍射的问题。而且在很多应用中，相关技术也并非用于恒星际推进，而更多的是内太阳系航行甚至近地轨道发射，希望以此来降低成本。就是不知道他们所说的有效孔径和较低的成本能否实现。<br><br>  如果激光推进不靠谱，那么最优解应该就是 核动力+离子推进。本来以为核聚变应该是这里的核动力的首选，但是看了博士的一系列文章之后，还是觉得聚变及其各种应用（在可见未来）纯属忽悠。所以应当是裂变，但是高功率裂变堆的辐射和散热问题不知道是否已经解决。<br><br> <br><br>----<br><br>]]></description>
-    <author><![CDATA[王孟源部落格]]></author>
-    <pubDate>2025-05-19 14:56:00 +0800</pubDate>
-    <guid isPermaLink="false">37c119997561c12c0b1b45633ceebe86</guid>
-    <link>https://taizihuang.github.io/wmyblog/html/128392486.html#37c119997561c12c0b1b45633ceebe86</link>
     </item>
     <item>
     
