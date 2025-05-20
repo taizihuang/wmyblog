@@ -7,13 +7,13 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>05-20 02:04 +0800</lastBuildDate>
+    <lastBuildDate>05-20 08:11 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
     
     <title><![CDATA[【美國】【工業】波音和載人登月（續） | LoveClem]]></title>
-    <description><![CDATA[  在激光推进（包括烧蚀和光帆)的应用中，相关人员总是假设有效孔径（在近未来）可以做到足够大，以此来缓解衍射的问题。而且在很多应用中，相关技术也并非用于恒星际推进，而更多的是内太阳系航行甚至近地轨道发射，希望以此来降低成本。就是不知道他们所说的有效孔径和较低的成本能否实现。<br><br>  如果激光推进不靠谱，那么最优解应该就是 核动力+离子推进。本来以为核聚变应该是这里的核动力的首选，但是看了博士的一系列文章之后，还是觉得聚变及其各种应用（在可见未来）纯属忽悠。所以应当是裂变，但是高功率裂变堆的辐射和散热问题不知道是否已经解决。<br><br> <br><br>----<br><br>同時提升激光的功率和孔徑到達能推動空間旅行的級別，難度遠比製造小型高效的核裂變發電機和離子引擎要高得多，只有印度程度的空想者才會做這樣離譜的白日夢。<br><br>純粹從科學和工程角度，核裂變+離子發動機的確是在太陽系内（假設選擇最容易的火星和小行星）有實用前景的交通工具，但若加上經濟性考慮，機會一下子又變成很小，更可能（至少在本世紀内；我不想對百年之後的科技和經濟做過多推斷）只有形象工程的意義。這裏的實用標準比照大航海時期的經驗，單程耗時在一兩年之内、成功機率在60%以上，若有足夠珍貴的貨品，就有經濟意義去嘗試。問題在於其價值必須超過成本*（失敗機率+20%）/（成功機率-失敗機率/（1+A）），這裏的20%是現代經濟對高風險、長周期投資的報酬率門檻，成本分爲開礦和運輸，A是後者對前者的比值（在真空中開礦，這個比值必然很低；此外成本是總成本、而不只是邊際成本，還必須包含人命價值）。例如成功機率=80%（考慮真空開礦和長途空間飛行的各種艱難危險，和資本盈利的管理習性，這已經是很寬鬆的估算了；更高的成功機率只有在反復嘗試學習改進之後才能以血的代價逐步實現），A假設為1/3，那麽單趟貨品價值必須是總成本的62%左右；假設成功機率為90%，這個門檻也只降到36%。然而受元素周期表的限制，這樣的高價值礦產基本不可能存在；尤其考慮元素若是昂貴，都是因爲稀缺，那麽批量開采必然會大幅壓低價格，等到技術成熟、成功機率上升，貨品價格早就崩盤了；換句話説，不能指望增量平攤。所以電影《Avatar》中自我調侃為“Unobtainium”“不可能得到的元素”是有道理的。<br><br>至於要離開太陽系，距離一下子提升5.3個數量級（地球距離火星0.000024光年，距離最近的Proxima Centauri則是4.24光年），光是旅途時長就不可能有任何經濟性，更別提去年我們討論的放射性損害（前面計算内太陽系采礦的經濟性時，放射性問題沒有被明確提起，但實際上會導致成本以數十的倍數增高，除非AI進步到可以完全取代人工）。<br><div class="TIME">2025-05-20 01:43 回复</div>]]></description>
+    <description><![CDATA[  在激光推进（包括烧蚀和光帆)的应用中，相关人员总是假设有效孔径（在近未来）可以做到足够大，以此来缓解衍射的问题。而且在很多应用中，相关技术也并非用于恒星际推进，而更多的是内太阳系航行甚至近地轨道发射，希望以此来降低成本。就是不知道他们所说的有效孔径和较低的成本能否实现。<br><br>  如果激光推进不靠谱，那么最优解应该就是 核动力+离子推进。本来以为核聚变应该是这里的核动力的首选，但是看了博士的一系列文章之后，还是觉得聚变及其各种应用（在可见未来）纯属忽悠。所以应当是裂变，但是高功率裂变堆的辐射和散热问题不知道是否已经解决。<br><br> <br><br>----<br><br>同時提升激光的功率和孔徑到達能推動空間旅行的級別，難度遠比製造小型高效的核裂變發電機和離子引擎要高得多，只有印度程度的空想者才會做這樣離譜的白日夢。<br><br>純粹從科學和工程角度，核裂變+離子發動機的確是在太陽系内（假設選擇最容易的火星和小行星）有實用前景的交通工具，但若加上經濟性考慮，機會一下子又變成很小，更可能（至少在本世紀内；我不想對百年之後的科技和經濟做過多推斷）只有形象工程的意義。這裏的實用標準比照大航海時期的經驗，雙程來回耗時在三四年之内、成功機率在60%以上，若有足夠珍貴的貨品，或許有足夠利潤空間值得嘗試。問題在於其價值必須超過成本*（失敗機率+20%）/（成功機率-失敗機率/（1+A）），這裏的20%是現代經濟對高風險、長周期投資的報酬率門檻，成本分爲開礦和運輸，A是後者對前者的比值（在真空中開礦，這個比值必然很低，不像大航海時期，帶一點白銀就能輕鬆換回瓷器、絲織和香料；此外成本是總成本、而不只是邊際成本，還必須包含人命價值）。例如成功機率=80%（考慮真空開礦和長途空間飛行的各種艱難危險，和資本盈利的管理習性，這已經是很寬鬆的估算了；更高的成功機率只有在反復嘗試學習改進之後才能以血的代價逐步實現），A假設為1/3，那麽單趟貨品價值必須是總成本的62%左右；假設成功機率為90%，這個門檻也只降到36%。然而受元素周期表的限制，這樣的高價值礦產目前並沒有已知的存在；尤其考慮元素若是昂貴，都是因爲稀缺，那麽批量開采必然會大幅壓低價格，等到技術成熟、成功機率上升，貨品價格早就崩盤了；換句話説，不能指望增量平攤。所以電影《Avatar》中自我調侃為“Unobtainium”“不可能得到的元素”是有道理的。<br><br>至於要離開太陽系，距離一下子提升5.3個數量級（地球距離火星0.000024光年，距離最近的Proxima Centauri則是4.24光年），光是旅途時長就不可能有任何經濟性，更別提去年我們討論的放射性損害（前面計算内太陽系采礦的經濟性時，放射性問題沒有被明確提起，但實際上會導致成本以數十的倍數增高，除非AI進步到可以完全取代人工）。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/128392486.html" style="text-decoration: none;color:black;">2025-05-20 06:17 修改</a></div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-05-19 14:56:00 +0800</pubDate>
     <guid isPermaLink="false">37c119997561c12c0b1b45633ceebe86</guid>
@@ -23,11 +23,31 @@
     
     
     <title><![CDATA[【基礎科研】什麼是科學？ | 後註二]]></title>
-    <description><![CDATA[後註二 <br><br>----<br><br>我終於在本月的《龍行天下》節目（參見<a href="https://www.youtube.com/watch?v=C8GXJMrk_-M"><span style="color:blue">《從「印巴空戰」看世界真正危機！》</span></a>）中找到機會討論科學方法論，不過因時長和格式所限，講得非常淺顯簡略，讀者還是必須回到博客來尋找完整而精確的論述，並且基本的邏輯學和統計學知識也是必要的。例如節目中提到，若是事前判斷開大的機率為90%，那麽預測者依然必須100%猜大，事後的成功率也只能達到90%。這裏我的用意在於强調最佳策略對博弈條件的非綫性反應；我看到有公衆評論，把這稱爲10%失誤的托詞，這顯然是對統計學完全無知的誤解：博客反復解釋過（參見《讀者須知》和其下的留言討論），我做預測的標準門檻是90%，事後的成功率也至少是90%，</p><br><br><br><br><br><div class="TIME">2025-05-20 00:00 回复</div>]]></description>
+    <description><![CDATA[後註二 <br><br>----<br><br>我終於在本月的《龍行天下》節目（參見<a href="https://www.youtube.com/watch?v=C8GXJMrk_-M"><span style="color:blue">《從「印巴空戰」看世界真正危機！》</span></a>）中找到機會討論科學方法論，不過因時長和格式所限，講得非常淺顯簡略，讀者還是必須回到博客來尋找完整而精確的論述，並且基本的邏輯學和統計學知識也是必要的。例如節目中提到，若是事前判斷開大的機率為90%，那麽預測者依然必須100%猜大，事後的成功率也只能達到90%。這裏我的用意主要在於示範最佳策略對博弈條件的非綫性反應，稍稍觸及綫性思維的局限性；然而有公衆評論，把這稱爲10%失誤的托詞，這顯然是對統計學完全無知的誤解：博客反復解釋過（參見《讀者須知》和其下的留言討論），我做預測的標準門檻是90%，事後的成功率也至少是90%，然而統計學的基本常識之一是誤差以平方和叠加，所以事後的誤差是事前誤差與我判斷誤差的平方和再開平方根，既然事前、事後的誤差基本相等，就代表著博客分析失誤所引發的誤差可忽略，亦即至少低半個數量級；換句話說，分析錯誤的比率其實是在3%以下，以往只不過不想表彰自我、於是懶得花時間討論數學細節，畢竟10%的總誤差已經比他人強了兩個數量級，足以證明科學分析的優越性。但愚民反而做出與事實相反的結論，不但抹黑其為托詞，還有把科學預測的例常印證檢討硬説成自誇的，這其實正反映了當代公共論壇的墮落機制：習慣謊言和蠢話之後，連最基本的隨機中性反應（亦即正反機率相等、信息量爲零的亂猜，華爾街笑稱為“扔飛鏢的猴子”）都做不到，而是會對真相和誠實產生主觀反感，自動選擇虛僞愚昧，體現了“人性本蠢”並非虛言。</p><br><br><br><br><br><div class="TIME">2025-05-20 00:00 回复</div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-05-20 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
     <link>https://taizihuang.github.io/wmyblog/html/108908650.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註五十六]]></title>
+    <description><![CDATA[後註五十六 <br><br>----<br><br>兩個月前，我在【後註五十三】分析Starmer的仇俄姿態過於積極，應該是在為與歐盟重建經貿關係預做鋪墊；今天消息傳來（參見<a href="https://www.guancha.cn/internation/2025_05_20_776422.shtml"><span style="color:blue">《“分手”多年后，英国、欧盟签协议“重置关系”》</span></a>），證明果然如此，於是博客11年來針對當前世界局勢所建立的認知架構，又得到更進一步的印證加强。</p><br><div class="TIME">2025-05-20 00:00 回复</div>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-05-20 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">f7e4e7a4056fce69b4c8ea03172dee0b</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/177266891.html#f7e4e7a4056fce69b4c8ea03172dee0b</link>
+    </item>
+    <item>
+    
+    
+    <title><![CDATA[【美國】美國的開國神話 | 後註七]]></title>
+    <description><![CDATA[後註七 <br><br>----<br><br>我在本月的《龍行天下》節目（參見<a href="https://www.youtube.com/watch?v=C8GXJMrk_-M"><span style="color:blue">《從「印巴空戰」看世界真正危機！》</span></a>）中提到三個美國開國神話謊言之後，有讀者反饋，說我遺漏了獨立戰爭乃針對英國國會準備禁止蓄奴而發起。這個説法，我以前略有耳聞，但沒有找到可靠的學術論文，所以只能從其他旁證判斷“獨立戰爭是大地主爲了私利而挑起”。不過華盛頓和同夥的確是出了名的大蓄奴者，獨立戰爭發起前四年，亦即1772年的5月也確實有一個英國本土法庭的重要案例，判決美國黑奴但凡逃到英國就自動成爲自由人，這都暗示著那位讀者的説法有可能是正確的，甚至後來的“No taxation without representation”宣傳口號和波士頓茶黨事件都是後續因果效應，所以若有進一步證據的，請在留言欄分享。</p><br><br><br><br><br><div class="TIME">2025-05-20 00:00 回复</div>]]></description>
+    <author><![CDATA[王孟源部落格]]></author>
+    <pubDate>2025-05-20 00:00:00 +0800</pubDate>
+    <guid isPermaLink="false">152b95fedfe986cade7abbcc7ca96ea3</guid>
+    <link>https://taizihuang.github.io/wmyblog/html/108908793.html#152b95fedfe986cade7abbcc7ca96ea3</link>
     </item>
     <item>
     
@@ -83,7 +103,7 @@
     
     
     <title><![CDATA[【工業】【能源】再談氫經濟 | 後註二十八]]></title>
-    <description><![CDATA[後註二十八 <br><br>----<br><br>博客批判假未來科技，主要針對在中國最得勢的核聚變發電和量子通信/計算，其他如氫經濟和碳回收雖然在物理、化學和工程層面一樣甚至更離譜，但因中方投入相對不多，間接參考的意義較大。今天又有一條可供參考的新聞（參見<a href="https://cleantechnica.com/2025/05/15/climeworks-dac-fiscal-collapse-the-brutal-reality-of-pulling-carbon-from-the-sky/"><span style="color:blue">《Climeworks’ DAC &amp;amp; Fiscal Collapse &amp;amp; The Brutal Reality Of Pulling Carbon From The Sky》</span></a>）：全球直接從大氣碳回收的領頭羊Climateworks，在燒光8億美元資金（還有至少另外12億美元不知是否到位，參見<a href="https://carboncredits.com/us-to-invest-12-billion-direct-air-capture-projects-by-climeworks-and-oxy/"><span style="color:blue">《US to Invest $1.2B in DAC Projects Led by Climeworks and Oxy》</span></a>；這其中大部分實際上被轉移到私人銀行賬戶，參考許家印；畢竟假未來科技的本質，向來都是打著科研的招牌，行金融詐騙之實）之後，正式關廠（是的，就是幾年前在主流媒體被廣汎吹噓的那個冰島厰）倒閉，總共清除了105噸的二氧化碳，相當於少燒了29噸的煤，以國際煤價每噸$34計算，這等同花$970買下那些煤炭扔到垃圾場的效果。當然，這一切都可以基於熱力學第二定律簡單事先斷言；因爲永動機的定義正是無視熱力學第一或第二定律的假科技騙局，這些大氣碳回收是名副其實的永動機被貼上新標簽重新包裝罷了。</p><br><div class="TIME">2025-05-17 00:00 回复</div>]]></description>
+    <description><![CDATA[後註二十八 <br><br>----<br><br>博客批判假未來科技，主要針對在中國最得勢的核聚變發電和量子通信/計算，其他如氫經濟和碳回收雖然在物理、化學和工程層面一樣甚至更離譜，但因中方投入相對不多，間接參考的意義較大。今天又有一條可供參考的新聞（參見<a href="https://cleantechnica.com/2025/05/15/climeworks-dac-fiscal-collapse-the-brutal-reality-of-pulling-carbon-from-the-sky/"><span style="color:blue">《Climeworks’ DAC &amp;amp; Fiscal Collapse &amp;amp; The Brutal Reality Of Pulling Carbon From The Sky》</span></a>）：全球直接從大氣回收二氧化碳的領頭羊Climateworks，在燒光8億美元資金（還有至少另外12億美元不知是否到位，參見<a href="https://carboncredits.com/us-to-invest-12-billion-direct-air-capture-projects-by-climeworks-and-oxy/"><span style="color:blue">《US to Invest $1.2B in DAC Projects Led by Climeworks and Oxy》</span></a>；這其中大部分實際上被轉移到私人銀行賬戶，參考許家印；畢竟假未來科技的本質，向來都是打著科研的招牌，行金融詐騙之實）之後，正式關廠（是的，就是幾年前在主流媒體被廣汎吹噓的那個冰島厰）倒閉，總共清除了105噸的二氧化碳，相當於少燒了29噸的煤，以國際煤價每噸$34計算，這等同花$970買下那些煤炭扔到垃圾場的效果。當然，這一切都可以基於熱力學第二定律簡單事先斷言；因爲永動機的定義正是無視熱力學第一或第二定律的假科技騙局，這些大氣碳回收是名副其實的永動機被貼上新標簽重新包裝罷了。</p><br><div class="TIME">2025-05-17 00:00 回复</div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-05-17 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">9c5ae6da47d88d84bd61ce2c02dda2db</guid>
@@ -93,7 +113,7 @@
     
     
     <title><![CDATA[【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 後註四]]></title>
-    <description><![CDATA[後註四 <br><br>----<br><br>三周前的4月28日，西班牙/葡萄牙所在的伊比利亞半島發生電網崩潰事件（參見<a href="https://en.wikipedia.org/wiki/2025_Iberian_Peninsula_blackout"><span style="color:blue">《2025 Iberian Peninsula blackout》</span></a>以及<a href="https://www.youtube.com/watch?v=ZiHum-VNHAM"><span style="color:blue">《What caused the Spanish Power Outage and the simple solution》</span></a>），總共30GW的電力供應中斷，事件延續16小時，對經濟民生影響重大；但更重要的是，事故原因正隱藏於當代新能源電力設施之中，值得各國主事者參考深思。</p><br><br><p>傳統的大停電，都源自發電或傳輸設備出了問題，電力供應無法滿足負荷，但這次停電是新能源普及之後的第一次同類事故，並不來自供不應求，而是反過來在電網常有的不穩定震蕩下，出現短暫的供過於求現象，這導致AC交流電的頻率開始升高。傳統的發電機是渦輪，其轉速嚴格遵從電網AC頻率，後者升高要求前者也跟著提升，而因爲物理慣性這需要時間，從而賦予既有的控制電路足夠的反應餘裕來製造負反饋，壓低發電功率，維持供需平衡。然而新能源中的光伏和風電（風電雖然也是渦輪，但無法直接匹配電網頻率，所以一般先換成DC再變回適用於電網的AC）要配頻必須從DC轉換過來，這個轉換過程一般使用電子電路（叫做Inverter逆變器）自動跟蹤電網頻率，所以對頻率震蕩不但沒有負反饋，而且有相當的正反饋效應。西班牙因爲日照强烈和海風充裕，光伏和風電所占的發電量比率處於世界前列（2023/2024年是40.2%，作爲對比，中國是18.1%，數據分別來自<a href="https://www.sistemaelectrico-ree.es/en/spanish-electricity-system/generation/total-electricity-generation"><span style="color:blue">《Systema: Total electricity generation》</span></a>和<a href="https://lowcarbonpower.org/zht/region/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B"><span style="color:blue">《中華人民共和國2024年電力數據》</span></a>），這才導致其第一個吃螃蟹。要根治這個新能源普及的副作用，必須開發新的電網控制系統（含智能逆變器），中國在電網技術上已經領先全球，責無旁貸。</p><br><div class="TIME">2025-05-17 00:00 回复</div>]]></description>
+    <description><![CDATA[後註四 <br><br>----<br><br>三周前的4月28日，西班牙/葡萄牙所在的伊比利亞半島發生電網崩潰事件（參見<a href="https://en.wikipedia.org/wiki/2025_Iberian_Peninsula_blackout"><span style="color:blue">《2025 Iberian Peninsula blackout》</span></a>以及<a href="https://www.youtube.com/watch?v=ZiHum-VNHAM"><span style="color:blue">《What caused the Spanish Power Outage and the simple solution》</span></a>），總共30GW的電力供應中斷，事件延續16小時，對經濟民生影響巨大；但更重要的是，事故原因正隱藏於當代新能源電力設施之中，值得各國主事者參考深思。</p><br><br><p>傳統的大停電，都源自發電或傳輸設備出了問題，電力供應無法滿足負荷，但這次停電是新能源普及之後的第一次同類事故，並不來自供不應求，而是反過來在電網常有的不穩定震蕩下，出現短暫的供過於求現象，這導致AC交流電的頻率開始升高。傳統的發電機是渦輪，其轉速嚴格遵從電網AC頻率，後者升高要求前者也跟著提升，而因爲物理慣性這需要時間，從而賦予既有的控制電路足夠的反應餘裕來製造負反饋，壓低發電功率，維持供需平衡。然而新能源中的光伏和風電（風電雖然也是渦輪，但無法直接匹配電網頻率，所以一般先換成DC再變回適用於電網的AC）要配頻必須從DC轉換過來，這個轉換過程一般使用電子電路（叫做Inverter逆變器）自動跟蹤電網頻率，所以對頻率震蕩不但沒有負反饋，而且有相當的正反饋效應。西班牙因爲日照强烈和海風充裕，光伏和風電所占的發電量比率處於世界前列（2023/2024年是40.2%，作爲對比，中國是18.1%，數據分別來自<a href="https://www.sistemaelectrico-ree.es/en/spanish-electricity-system/generation/total-electricity-generation"><span style="color:blue">《Systema: Total electricity generation》</span></a>和<a href="https://lowcarbonpower.org/zht/region/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B"><span style="color:blue">《中華人民共和國2024年電力數據》</span></a>），這才導致其第一個吃螃蟹。要根治這個新能源普及的副作用，必須開發新的電網控制系統（含智能逆變器）；中國在電網技術上已經領先全球，因而責無旁貸。</p><br><div class="TIME">2025-05-17 00:00 回复</div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-05-17 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">31d5b7c7786c57c56ccad32022f3afd3</guid>
