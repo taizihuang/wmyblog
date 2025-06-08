@@ -765,6 +765,6 @@ def updateBlogPage(days=7,articleFile="./data/article_full.pkl",commentFile="./d
     print('search data generated')
 
 if __name__ == "__main__":
-    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=True)
+    updateBlogData(nTask=1, proxy='' ,gDriveUpdate=False)
     updateBlogPage(days=50)
     os.remove("article_tmp.pkl")
