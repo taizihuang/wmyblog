@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>06-20 08:11 +0800</lastBuildDate>
+    <lastBuildDate>06-20 14:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -63,7 +63,7 @@
     
     
     <title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註十七]]></title>
-    <description><![CDATA[後註十七 <br><br>----<br><br>正文裏引用了2008-2013年的中國糖尿病統計數據，【後註八】則討論2013-2018年的資料，並觀察前例、預期2018-2023年的統計會在2026年發表，不過本月有根據同一套官方資料的論文預先透露了結果（參見<a href="https://pubmed.ncbi.nlm.nih.gov/40457495/"><span style="color:blue">《The national and provincial prevalence and non-fatal burdens of diabetes in China from 2005 to 2023 with projections of prevalence to 2050》</span></a>），證實了多年前所預料的持續惡化。2023年全中國有2.33億糖尿病患（不含糖尿病前期），壽命曲綫標準化等效人口比率（Age Standardized Rate，ASR，一般用於與年齡强烈相關的疾病統計，亦即為排除人口高齡化程度的影響，先將人口壽命曲綫轉化為全球平均值所得的結果，在高齡化嚴重的中國，原始比率更高，為2.33/14=16.6%）為13.7%，並以每年400多萬人的速率加速增高中。</p><br><br><p>為了估算事態的嚴重性，我想把前述數據換算為Excess Mortality超額死亡率，所以又找到下面這篇以英國為對象的研究報告（參見<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8934837/"><span style="color:blue">《Mortality Rate Associated with Diabetes: Outcomes From a General Practice Level Analysis in England Using the Royal College of General Practitioners (RCGP) Database Indicate Stability Over a 15 Year Period》</span></a>）。英國的高齡化程度約與中國相當，但糖尿病ASR患病率只有6.4%，不及中方的一半，而這篇論文總結2019年因糖尿病而導致的超額死亡人數為4萬人，佔總人口6700萬的萬分之5.97。因而我估計中國在2023年因糖尿病而致使的超額死亡人數為1400000000*（5.97/10000）*（13.7%/6.4%）=180萬人，這個數字以年增率約2%遞增，而且增速本身也在隨時間而增快。</p><br><div class="TIME">2025-06-20 00:00 回复</div>]]></description>
+    <description><![CDATA[後註十七 <br><br>----<br><br>正文裏引用了2008-2013年的中國糖尿病統計數據，【後註八】則討論2013-2018年的資料，並觀察前例、預期2018-2023年的統計會在2026年發表，不過本月有根據同一套官方資料的論文預先透露了結果（參見<a href="https://pubmed.ncbi.nlm.nih.gov/40457495/"><span style="color:blue">《The national and provincial prevalence and non-fatal burdens of diabetes in China from 2005 to 2023 with projections of prevalence to 2050》</span></a>），證實了多年前所預料的持續惡化。2023年全中國有2.33億糖尿病患（不含糖尿病前期），壽命曲綫標準化等效人口比率（Age Standardized Rate，ASR，一般用於與年齡强烈相關的疾病統計，亦即為排除人口高齡化程度的影響，先將人口壽命曲綫轉化為全球平均值所得的結果，在高齡化嚴重的中國，原始比率更高，為2.33/14=16.6%）為13.7%，並以每年400多萬人的速率加速增高中。</p><br><br><p>為了估算事態的嚴重性，我想把前述數據換算為Excess Mortality超額死亡率，所以又找到下面這篇以英國為對象的研究報告（參見<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8934837/"><span style="color:blue">《Mortality Rate Associated with Diabetes: Outcomes From a General Practice Level Analysis in England Using the Royal College of General Practitioners (RCGP) Database Indicate Stability Over a 15 Year Period》</span></a>）。英國的高齡化程度約與中國相當，但糖尿病ASR患病率只有6.4%，不及中方的一半，而這篇論文總結2019年因糖尿病而導致的超額死亡人數為4萬人，佔總人口6700萬的萬分之5.97。因而我估計中國在2023年因糖尿病而致使的超額死亡人數為1400000000*（5.97/10000）*（13.7%/6.4%）=180萬人，這個數字以年增率約2%依指數率遞增。</p><br><div class="TIME">2025-06-20 00:00 回复</div>]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-06-20 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">ef8f0d7e5191519bd4b5909aeb125b97</guid>
