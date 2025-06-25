@@ -7,7 +7,7 @@
     <generator>Github</generator>
     <webMaster>Taizi Huang</webMaster>
     <language>zh-cn</language>
-    <lastBuildDate>06-25 08:11 +0800</lastBuildDate>
+    <lastBuildDate>06-25 14:04 +0800</lastBuildDate>
     <ttl>5</ttl>
     <item>
     
@@ -23,7 +23,7 @@
     
     
     <title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 後註六]]></title>
-    <description><![CDATA[後註六 <br><br>----<br><br>多年前我在【後註三】提到當前實用的氮化鎵GaN元件都是水平式Lateral，亦即在其它晶體底襯上長一層薄薄的GaN，以致晶格不完全匹配，影響其發揮高帶隙High band gap、高臨界擊穿場强High critical electric-field strength的優勢，所以值得研發垂直式Vertical的GaN半導體。然而最近幾年另一個替代性技術發展得很快，也就是氧化鎵Ga2O3，它不但有更高的帶隙和臨界擊穿場强，而且可以如同單晶矽/硅/Silicon那樣用Czochralski process拉出晶圓、並接受摻雜Doping。當然氧化鎵也不完美，例如它的電導和熱導都極爲糟糕，此外全新的材料性質需要大量時間和人力去探索，不過到了2030年代它的確有可能在電力和微波等領域逐步取代硅化碳SiC和氮化鎵GaN，有興趣的讀者可以進一步參考這一篇IEEE的科普：&lt;a href="https://spectrum.ieee.org/gallium-oxide-the-supercharged-semiconductor"&gt;&lt;span style="color:blue"&gt;《Gallium Oxide: The Supercharged Semiconductor》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-06-25 00:00 回复&lt;/div&gt;]]></description>
+    <description><![CDATA[後註六 <br><br>----<br><br>幾年前我在【後註三】提到當前實用的氮化鎵GaN元件都是水平式Lateral，亦即在其它晶體底襯上長一層薄薄的GaN，以致晶格不完全匹配，影響其發揮高帶隙High band gap、高臨界擊穿場强High critical electric-field strength的優勢，所以值得研發垂直式Vertical的GaN半導體。然而最近幾年另一個替代性技術發展得很快，也就是氧化鎵Ga2O3，它不但有更高的帶隙和臨界擊穿場强，而且可以如同單晶矽/硅/Silicon那樣用Czochralski process拉出晶圓、並接受摻雜Doping。當然氧化鎵也不完美，例如它的電導和熱導都極爲糟糕，此外全新的材料性質需要大量時間和人力去探索，不過到了2030年代它的確有可能在電力和微波等領域逐步取代硅化碳SiC和氮化鎵GaN，有興趣的讀者可以進一步參考這一篇IEEE的科普：&lt;a href="https://spectrum.ieee.org/gallium-oxide-the-supercharged-semiconductor"&gt;&lt;span style="color:blue"&gt;《Gallium Oxide: The Supercharged Semiconductor》&lt;/span&gt;&lt;/a&gt;。&lt;/p&gt;<br>&lt;div class="TIME"&gt;2025-06-25 00:00 回复&lt;/div&gt;]]></description>
     <author><![CDATA[王孟源部落格]]></author>
     <pubDate>2025-06-25 00:00:00 +0800</pubDate>
     <guid isPermaLink="false">874b3b0844ab93333f51a8f781e623ae</guid>
