@@ -1,0 +1,39 @@
+    <!DOCTYPE html><html><head>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    <link rel="stylesheet" href="./html/init.css">
+    <style>
+    .LI li{
+    list-style-type: disc;
+    }
+    .LI li{
+    margin-bottom:8px;
+    }
+    a {
+    text-decoration: none;
+    }
+    .LI .title{
+    color:#000;
+    }
+    .LI .title:hover{
+    color:#f40;
+    }
+    .LI .TIME{
+    font-size:12px;
+    color:#999;
+    float:right;
+    }
+    </style>
+    <title>王孟源的博客镜像</title>
+    </head>
+    <body><div class="BODY">
+    <h1><a href="https://blog.udn.com/MengyuanWang/article">王孟源的博客镜像</a></h1>
+    <br><br>
+    <ul class="LI">
+    <li><a class="title" href="./html/new_comment.html">最新回复</a></li>
+    <li><a class="title" href="./html/transcript.html">最新访谈</a></li>
+    <li><a class="title" href="./search/index.html">网页搜索</a></li>
+    %for url, name, time in art_li:
+    <li><a class="title" href="./html/${url}.html">${name}</a><div class="TIME">${time}</div></li>
+    %endfor
+    </ul>
+    </div></body></html>

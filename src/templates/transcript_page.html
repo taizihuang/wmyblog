@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta charset="UTF-8"><link rel="stylesheet" href="./init.css">
+    <title>${title}</title>
+    <link href="../podcast/APlayer.min.css" rel="stylesheet">
+    <script src="../podcast/APlayer.min.js"></script>
+    <!-- <script src="jquery-1.11.3.min.js"></script> -->
+    <style>
+        a {
+            text-decoration: none;
+            color:#000;
+            }
+        h1, #toc, .DATETIME {
+            text-align: center;
+            }
+        a:hover{
+            color:#f40;
+        }
+    </style>
+    <script>
+        function seek(seconds) {
+            ap.seek(seconds);
+        }
+        function scrollPage(id) {
+            console.log(id);
+            document.getElementById(id).scrollIntoView(true);
+        }
+    </script>
+</head>
+<body>
+    <div class="BODY"><div class="BACK"><a href="./transcript.html">返回索引页</a></div>
+        <h1><a href="${url}">${title}</a></h1>
+        <p class="DATETIME">${date}</p>
+        <div id="player"></div>
+        <br><br>
+        <div id="toc"></div>
+        <div class="POST"><div id="article_show_content"><br><br>${body}</div>
+    </div>
+</body>
+<script>
+    var ap = new APlayer
+        ({
+            element: document.getElementById('player'),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+                    title: "${title}",
+                    author: "${date}",
+                    url: "${audio_url}",
+                    pic: '../podcast/wmy-podcast-long.jpg'
+                    }
+        });
+    ap.init();
+</script>
+</html>

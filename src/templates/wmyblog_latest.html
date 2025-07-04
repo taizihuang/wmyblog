@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="./init.css">
+    <style>
+    .REPLY_LI{
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 0px;
+    }
+    .LI a{
+    text-decoration: none;
+    color:#000;
+    }
+    .LI a:hover{
+    color:#f40;
+    }
+    #LATEST {
+    font-family: Rajdhani,PingFang SC;
+    font-weight: 200;
+    font-size: 32px;
+    margin: 28px 0 20px;
+    }
+    #search_btn {
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFF;
+        background: #24a2e0b9;
+        padding: 1px 5px;
+        border: 1px solid #24a2e0b9;
+    }
+    #rss_btn {
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFF;
+        background: #f2853d;
+        padding: 1px 5px;
+        border: 1px solid #ed6b2a;
+    }
+    </style>
+    <title>${title}</title>
+    </head>
+    <body><div class="BODY">
+    <div class="BACK"><a href="../index.html">返回索引页</a></div>
+    <div id="LATEST">最新回复
+        <span><a href="../rss.xml" id="rss_btn">RSS</a></span>
+        <span><a href="../search/index.html" id="search_btn">搜索</a></span>
+    </div>
+    <p class="DATE">${date}</p>
+    <div class="REPLY_LI">
+    <!-- <h2>最新 ${len(reply_li)} 条后注和问答</h2> -->
+    %for source,id,uuid,say,reply,user,time,striked in reply_li:
+    <div class="LI">
+    <div class="USER"><span class="NAME">${source} | <a href="./${id}.html#${uuid}">${user}</a></span><div class="TIME">${time}</div></div>
+    %if striked:
+    <input type="checkbox" class="exp" id="${uuid}_1">
+    <div class="text1"><label class="btn" for="${uuid}_1"></label>
+    <div class="SAY">${say}</div>
+    </div>
+    %else:
+    <div class="SAY">${say}</div>
+    %endif
+    %if reply:
+    <div class="REPLY">${reply}</div>
+    %endif
+    </div>
+    %endfor
+    </div>
+    </div>
+    <div class="BACK"><a href="../index.html">返回索引页</a></div>
+    </body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="../html/init.css">
+    <style>
+    .LI li{
+    list-style-type: disc;
+    }
+    .LI li{
+    margin-bottom:8px;
+    }
+    .LI a{
+    text-decoration: none;
+    color:#000;
+    }
+    .LI .title{
+    color:#000;
+    }
+    .LI .title:hover{
+    color:#f40;
+    }
+    .LI .TIME{
+    font-size:12px;
+    color:#999;
+    float:right;
+    }
+    .toc {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    #rss_btn {
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 13px;
+        color: #FFF;
+        background: #f2853d;
+        padding: 1px 5px;
+        border: 1px solid #ed6b2a;
+    }
+    h1 {
+        margin-bottom: 0px;
+    }
+    span {
+        margin-bottom: 20px;
+    }
+    </style>
+    <title>王孟源访谈</title>
+</head>
+<body>
+    <div class="BODY">
+    <h1>王孟源访谈</h1>
+    <div style="margin-bottom: 40px"><a href="https://wmyblog.site/podcast/podcast.xml" id="rss_btn">subscribe</a></div>
+    <ul class="LI">
+    %for url, name, time, toc_list in art_li:
+    <li>
+        <a class="title" href="../html/${url}.html">${name}</a>
+        <div class="TIME">${time}</div>
+        %for toc in toc_list:
+        <div class="toc"><a href="../html/${url}.html#${toc}">${toc}</a></div>
+        %endfor
+    </li>
+    %endfor
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,198 +1,552 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:podcast="https://podcastindex.org/namespace/1.0"  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<channel>
-		<atom:link href="https://taizihuang.github.io/wmyblog/podcast.xml" rel="self" type="application/rss+xml"/>
-		<title>王孟源 x 八方论谈</title>
-		<pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://wmyblog.site/podcast/podcast.xml" rel="self" type="application/rss+xml"/>
+		<title>王孟源访谈</title>
+		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
+		<pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
-		<link>https://taizihuang.github.io/wmyblog</link>
+		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
 		<copyright><![CDATA[]]></copyright>
-		<docs>https://taizihuang.github.io/wmyblog</docs>
+		<docs>https://wmyblog.site</docs>
 		<managingEditor>htzllt@gmail.com (htzllt@gmail.com)</managingEditor>
 		<image>
-			<url>https://taizihuang.github.io/wmyblog/podcast/wmy-podcast.jpg</url>
-			<title>王孟源 x 八方论谈</title>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog/podcast]]></link>
+			<url>https://wmyblog.site/podcast/wmy-podcast.jpg</url>
+			<title>王孟源访谈</title>
+			<link><![CDATA[https://wmyblog.site/html/transcript.html]]></link>
 		</image>
-		<description><![CDATA[王孟源 x 八方论谈，持续更新中...]]></description>
+		<description><![CDATA[王孟源访谈合集，包含《八方论谈》，《龙行天下》和其他讲座。]]></description>
 
 		<podcast:locked owner="htzllt@gmail.com">no</podcast:locked>
 		<item>
-			<title>2022/06/21 逻辑辩证、昂撒理论基础、观察者网、俄乌战争、通胀</title>
-			<pubDate>Tue, 21 June 2022 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[220621]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[本期主题：逻辑辩证、昂撒理论基础、观察者网、俄乌战争、通胀</p>]]></description>
-			<enclosure length="90478414" type="audio/mpeg" url="https://drive.tedl.uk/f/Paehd/220621.mp3" />
+			<title>《当台湾被统一》</title>
+			<pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[170906[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/170906[八方论谈].html]]></link>
+			<description><![CDATA[《当台湾被统一》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nh3-4aGamhFCA0DTS84rV_XFKeHK.mp3" />
 		</item>	
 		<item>
-			<title>2022/05/30 逻辑推断、乌克兰、Neocon、内政治理</title>
-			<pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[220530]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[本期主题：逻辑推断、乌克兰、Neocon、内政治理</p>]]></description>
-			<enclosure length="82998725" type="audio/mpeg" url="https://drive.tedl.uk/f/aPYU8/220530.mp3" />
+			<title>《从人民币结算石油谈起》</title>
+			<pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[170927[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/170927[八方论谈].html]]></link>
+			<description><![CDATA[《从人民币结算石油谈起》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nv9780mMnCRARJkxayPdc5IH2JMR.mp3" />
 		</item>	
 		<item>
-			<title>2022/04/11 乌克兰、巴基斯坦、亚元</title>
-			<pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[220411]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[本期主题：乌克兰、巴基斯坦、亚元</p>]]></description>
-			<enclosure length="107314186" type="audio/mpeg" url="https://drive.tedl.uk/f/3Z6tx/220411.mp3" />
-		</item>		
+			<title>《从赌城枪击到比特币》</title>
+			<pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[171004[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/171004[八方论谈].html]]></link>
+			<description><![CDATA[《从赌城枪击到比特币》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nj6Te-Urvc6HxLkHJI2f2rXxhZwh.mp3" />
+		</item>	
 		<item>
-			<title>2022/03/22 俄乌战争</title>
-			<pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[220322]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[向MU5735航班遇难者哀悼<p>本期主题：俄乌战争</p>]]></description>
-			<enclosure length="84305497" type="audio/mpeg" url="https://drive.tedl.uk/f/23gsb/220322.mp3" />
-		</item>
+			<title>《量子通讯在中国》</title>
+			<pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[171115[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/171115[八方论谈].html]]></link>
+			<description><![CDATA[《量子通讯在中国》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nv6gIotkHoyUOM-VqgeiaLYGJl2w.mp3" />
+		</item>	
 		<item>
-			<title>2022/01/27 乌克兰、北约、美国</title>
-			<pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[220127]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：乌克兰 北约 美国</p>]]></description>
-			<enclosure length="95698889" type="audio/mpeg" url="https://drive.tedl.uk/f/ZN4c8/220127.mp3" />
-		</item>
+			<title>《中兴之挫》</title>
+			<pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[180420[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/180420[八方论谈].html]]></link>
+			<description><![CDATA[《中兴之挫》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nosEBMINy76vDZYFvkSqoXexrrJQ.mp3" />
+		</item>	
 		<item>
-			<title>2021/01/25 美国权力交接与后川普时代</title>
-			<pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[210125]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：美国权力交接与后川普时代</p>]]></description>
-			<enclosure length="149762864" type="audio/mpeg" url="https://drive.tedl.uk/f/g02Hk/210125.mp3" />
-		</item>
+			<title>《检视中美贸易的现况与前景》</title>
+			<pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[180809[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/180809[八方论谈].html]]></link>
+			<description><![CDATA[《检视中美贸易的现况与前景》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nppTQ9kg-zTlVaUkElO6k872IKWD.mp3" />
+		</item>	
 		<item>
-			<title>2020/11/12 孟源漫谈</title>
-			<pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[201112]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：孟源漫谈</p>]]></description>
-			<enclosure length="149508937" type="audio/mpeg" url="https://drive.tedl.uk/f/XnQfP/201112.mp3" />
-		</item>
+			<title>《从华为案来认识美国》</title>
+			<pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190129[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/190129[八方论谈].html]]></link>
+			<description><![CDATA[《从华为案来认识美国》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nho9eVTODOVLwmHvv9vd3pR9Bc1O.mp3" />
+		</item>	
 		<item>
-			<title>2020/10/22 美国大选</title>
-			<pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[201022]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：美国大选</p>]]></description>
-			<enclosure length="134967092" type="audio/mpeg" url="https://drive.tedl.uk/f/aYc8/201022.mp3" />
-		</item>
+			<title>《重新洗牌？论中美贸易谈判》</title>
+			<pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190512[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/190512[八方论谈].html]]></link>
+			<description><![CDATA[《重新洗牌？论中美贸易谈判》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nixZu0R_WGAJKR8IY5gHimnACIBG.mp3" />
+		</item>	
 		<item>
-			<title>2020/03/13 波音</title>
-			<pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[200313]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：波音</p>]]></description>
-			<enclosure length="110292868" type="audio/mpeg" url="https://drive.tedl.uk/f/QBXIG/200313.mp3" />
-		</item>
+			<title>《观察香港动乱的端倪》</title>
+			<pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[190812[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/190812[八方论谈].html]]></link>
+			<description><![CDATA[《观察香港动乱的端倪》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nifGZUgfMDkyXqKGvaC9MhxKzYQP.mp3" />
+		</item>	
 		<item>
-			<title>2020/02/24 新冠肺炎</title>
-			<pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[200224]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：新冠肺炎</p>]]></description>
-			<enclosure length="101775131" type="audio/mpeg" url="https://drive.tedl.uk/f/eVzCM/200224.mp3" />
-		</item>
+			<title>《一叶知秋看美国回购利率窜升的现象》</title>
+			<pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[191008[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/191008[八方论谈].html]]></link>
+			<description><![CDATA[《一叶知秋看美国回购利率窜升的现象》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nucpepNhr5VDP-8q1XUcpnxZgosK.mp3" />
+		</item>	
 		<item>
-			<title>2019/12/21 2019年的回顾与前瞻</title>
+			<title>《英国脱欧的来龙与去脉》</title>
+			<pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[191027[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/191027[八方论谈].html]]></link>
+			<description><![CDATA[《英国脱欧的来龙与去脉》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmZvFkxPLRgLCeF78tqn7ZE8umWs.mp3" />
+		</item>	
+		<item>
+			<title>《2019年的回顾与前瞻》</title>
 			<pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[191221]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：2019年的回顾与前瞻</p>]]></description>
-			<enclosure length="79920582" type="audio/mpeg" url="https://drive.tedl.uk/f/1EtP/191221.mp3" />
-		</item>
+			<guid isPermaLink="false"><![CDATA[191221[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/191221[八方论谈].html]]></link>
+			<description><![CDATA[《2019年的回顾与前瞻》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/npBZGIsFoEqBl9hmPKVhtfobQSZP.mp3" />
+		</item>	
 		<item>
-			<title>2019/10/27 英国脱欧</title>
-			<pubDate>Sat, 27 Oct 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[191027]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：英国脱欧</p>]]></description>
-			<enclosure length="50038148" type="audio/mpeg" url="https://drive.tedl.uk/f/vMmSg/191027.mp3" />
-		</item>
+			<title>《观察2020新冠肺炎》</title>
+			<pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[200224[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/200224[八方论谈].html]]></link>
+			<description><![CDATA[《观察2020新冠肺炎》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nk7ym1CCscMxp0jeouIpU58XG8zd.mp3" />
+		</item>	
 		<item>
-			<title>2019/10/08 Repo</title>
-			<pubDate>Sat, 08 Oct 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[191008]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：Repo</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/PeTd/191008.mp3" />
-		</item>
+			<title>《波音：一个皇朝的终结》</title>
+			<pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[200313[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/200313[八方论谈].html]]></link>
+			<description><![CDATA[《波音：一个皇朝的终结》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nldidm2U1dwJVHoiAAESzagcSUwg.mp3" />
+		</item>	
 		<item>
-			<title>2019/08/12 香港动乱</title>
-			<pubDate>Sat, 12 Aug 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[190812]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：香港动乱</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://service-f6aayhze-1318894526.gz.apigw.tencentcs.com/release/wmyblog_podcast?filename=190821.mp3&amp;folder=Podcasts/wmyblog&amp;type=exact" />
-		</item>
+			<title>《大选前谈大选》</title>
+			<pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[201022[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/201022[八方论谈].html]]></link>
+			<description><![CDATA[《大选前谈大选》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/ntg0hdRhGA_JovmdYd_bG8NI2I6r.mp3" />
+		</item>	
 		<item>
-			<title>2019/05/12 中美贸易战</title>
-			<pubDate>Sat, 12 May 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[190512]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：中美贸易战</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/O1hZ/190512.mp3" />
-		</item>
+			<title>《孟源漫谈》</title>
+			<pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[201112[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/201112[八方论谈].html]]></link>
+			<description><![CDATA[《孟源漫谈》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnPEhEU8fC69N-hteFMVV-0MNclY.mp3" />
+		</item>	
 		<item>
-			<title>2019/01/29 华为</title>
-			<pubDate>Sat, 29 Jan 2019 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[190129]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：华为</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/m4ir/190129.mp3" />
-		</item>
+			<title>《观后感 美国权力交接和后川普时代》</title>
+			<pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[210125[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/210125[八方论谈].html]]></link>
+			<description><![CDATA[《观后感 美国权力交接和后川普时代》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/ni1F0SSV2hFfVqPWf87iJJu5BW4q.mp3" />
+		</item>	
 		<item>
-			<title>2018/08/09 中美贸易</title>
-			<pubDate>Sat, 09 Aug 2018 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[180809]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：中美贸易</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/dYFo/180809.mp3" />
-		</item>
+			<title>《对谈王孟源》</title>
+			<pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220127[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220127[八方论谈].html]]></link>
+			<description><![CDATA[《对谈王孟源》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nkLz03Q6aIuSCAQipzl1_D6E77pE.mp3" />
+		</item>	
 		<item>
-			<title>2018/04/20 中兴</title>
-			<pubDate>Sat, 20 Apr 2018 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[180420]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：中兴</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/D6sL/180420.mp3" />
-		</item>
+			<title>《俄乌冲突》</title>
+			<pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220322[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220322[八方论谈].html]]></link>
+			<description><![CDATA[《俄乌冲突》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nr9WEf7cc2rRzhC39WYDpXtqAmKA.mp3" />
+		</item>	
 		<item>
-			<title>2017/11/15 量子通信</title>
-			<pubDate>Sat, 15 Nov 2017 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[171115]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：量子通信</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/QXHG/171115.mp3" />
-		</item>
+			<title>《对谈王孟源》</title>
+			<pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220411[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220411[八方论谈].html]]></link>
+			<description><![CDATA[《对谈王孟源》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmL07FG6ANcHlmp4uXP2NlfWpc2F.mp3" />
+		</item>	
 		<item>
-			<title>2017/10/04 赌城枪击、比特币</title>
-			<pubDate>Sat, 04 Oct 2017 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[171004]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：赌城枪击、比特币</p>(4:00) 美国发动对华战争的时机已经过去<br> (23:00) 中国不应该让股市大涨，应该稳定汇率波动<br> (30:30) 比特币不是货币，不符合货币的四个特点<br> (38:00) 区块链技术是比特币少有的正面贡献<br> (45:10) 比特币的内建价值为0，容易复制<br> (64:00) 金融监管与兴奋剂监管相似]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/ezuM/171004.mp3" />
-		</item>
+			<title>《中國能挑戰美國的金融霸權嗎？》</title>
+			<pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220415[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220415[龙行天下].html]]></link>
+			<description><![CDATA[《中國能挑戰美國的金融霸權嗎？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nrplDUyFEcv0dCxPncgVOYrwAedp.mp3" />
+		</item>	
 		<item>
-			<title>2017/09/27 石油人民币</title>
-			<pubDate>Sat, 27 Sep 2017 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[170927]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：石油人民币</p>(0:01) 期货(future)和远期(forward)<br> (10:30) 布雷顿森林会议，美元取代英镑<br> (16:00) 从美金转为石油美元<br> (34:40) 货币的功能：交换媒介、保值、时空流通、定价权<br> (41:00) 人民币取代美元的四个步骤：贸易用人民币、外汇储备用人民币、世界性银行用人民币、以人民币定价]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/vmIg/170927.mp3" />
-		</item>
+			<title>《中国能否渡过全球经济危机？》</title>
+			<pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220520[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220520[龙行天下].html]]></link>
+			<description><![CDATA[《中国能否渡过全球经济危机？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/noQR1tIEju5POnUkTslPezPzrh10.mp3" />
+		</item>	
 		<item>
-			<title>2017/09/06 台湾统一</title>
-			<pubDate>Sat, 06 Sep 2017 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false"><![CDATA[170906]]></guid>
-			<link><![CDATA[https://taizihuang.github.io/wmyblog]]></link>
-			<description><![CDATA[<p>本期主题：台湾统一</p>]]></description>
-			<enclosure length="44366115" type="audio/mpeg" url="https://drive.tedl.uk/f/XQCP/170906.mp3" />
-		</item>
-		</channel></rss>
+			<title>《对谈王孟源》</title>
+			<pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220530[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220530[八方论谈].html]]></link>
+			<description><![CDATA[《对谈王孟源》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nppH1h90fpqsWo-O3nGY9OcMY-69.mp3" />
+		</item>	
+		<item>
+			<title>《「德法义」若调停败，「五大城」将难逃战火！》</title>
+			<pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220617[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220617[龙行天下].html]]></link>
+			<description><![CDATA[《「德法义」若调停败，「五大城」将难逃战火！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nlr1d-JBEM1w4nXnxNA5vOBeXumb.mp3" />
+		</item>	
+		<item>
+			<title>《对谈王孟源》</title>
+			<pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220621[八方论谈]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220621[八方论谈].html]]></link>
+			<description><![CDATA[《对谈王孟源》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnA3I9QFq07iVFwKAbbNwtU5kLsP.mp3" />
+		</item>	
+		<item>
+			<title>《離美國遠一點！「超級泡泡」快要破了！》</title>
+			<pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220715[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220715[龙行天下].html]]></link>
+			<description><![CDATA[《離美國遠一點！「超級泡泡」快要破了！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnlDHLi3h_CIGvcp1N1pGO8JnNuh.mp3" />
+		</item>	
+		<item>
+			<title>《欧盟还有没有春天？》</title>
+			<pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220722[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220722[龙行天下].html]]></link>
+			<description><![CDATA[《欧盟还有没有春天？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/noa0kfTPU02H3yDiEkg9b16Dqkia.mp3" />
+		</item>	
+		<item>
+			<title>《「习拜会」后的大国政治！》</title>
+			<pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220729[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220729[龙行天下].html]]></link>
+			<description><![CDATA[《「习拜会」后的大国政治！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnYYewHdoJKywxnWnZQbTCLjcZzH.mp3" />
+		</item>	
+		<item>
+			<title>《全球能源战，中美一盘棋！》</title>
+			<pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220819[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220819[龙行天下].html]]></link>
+			<description><![CDATA[《全球能源战，中美一盘棋！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nh857a6otfovIGyMA3HNC3_4Bl3w.mp3" />
+		</item>	
+		<item>
+			<title>《俄乌战争反转了吗？》</title>
+			<pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[220916[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/220916[龙行天下].html]]></link>
+			<description><![CDATA[《俄乌战争反转了吗？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nvcu5M_Nne-6DWQbQKU8iymR6uVP.mp3" />
+		</item>	
+		<item>
+			<title>《英国即将崩溃！俄罗斯终将胜利！》</title>
+			<pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[221021[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/221021[龙行天下].html]]></link>
+			<description><![CDATA[《英国即将崩溃！俄罗斯终将胜利！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nvnycp2-R-XOHJajxddgJsdAmn3n.mp3" />
+		</item>	
+		<item>
+			<title>《在乌克兰战场，留給美國的時間不多了！》</title>
+			<pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[221125[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/221125[龙行天下].html]]></link>
+			<description><![CDATA[《在乌克兰战场，留給美國的時間不多了！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nhAIq-4YjNGZd6MDeJfN7JDef6IK.mp3" />
+		</item>	
+		<item>
+			<title>《大陆解封会如何影响全球经济？》</title>
+			<pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[221216[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/221216[龙行天下].html]]></link>
+			<description><![CDATA[《大陆解封会如何影响全球经济？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nufwwQ-W1FRjmrj2kIjGm1d5l2U3.mp3" />
+		</item>	
+		<item>
+			<title>《俄乌战争会扩大吗？》</title>
+			<pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230203[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230203[龙行天下].html]]></link>
+			<description><![CDATA[《俄乌战争会扩大吗？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/niSWUS6ulF0WUhlsLg2ut3UV74e7.mp3" />
+		</item>	
+		<item>
+			<title>《美国的货币危机与中国的三份文件》</title>
+			<pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230224[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230224[龙行天下].html]]></link>
+			<description><![CDATA[《美国的货币危机与中国的三份文件》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/noGEQSsLZtLguACvO9G1u0TxZxpw.mp3" />
+		</item>	
+		<item>
+			<title>《美國金融危機最後傷到誰？》</title>
+			<pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230317[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230317[龙行天下].html]]></link>
+			<description><![CDATA[《美國金融危機最後傷到誰？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmScOPe5ZwQa-WDu5wT5lhC6gQB9.mp3" />
+		</item>	
+		<item>
+			<title>《俄烏決戰倒數計時！》</title>
+			<pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230421[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230421[龙行天下].html]]></link>
+			<description><![CDATA[《俄烏決戰倒數計時！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nt3eAGyLUGGiUh_hUnVnLu5rMVCl.mp3" />
+		</item>	
+		<item>
+			<title>《俄烏大戰反轉？》</title>
+			<pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230519[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230519[龙行天下].html]]></link>
+			<description><![CDATA[《俄烏大戰反轉？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/npBfuneRoL367vpBiYRjiRSBeLfw.mp3" />
+		</item>	
+		<item>
+			<title>《烏克蘭大反攻是真的嗎？》</title>
+			<pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230616[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230616[龙行天下].html]]></link>
+			<description><![CDATA[《烏克蘭大反攻是真的嗎？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nkiUnyqsSFWi9ILS-3fJzYPwD95G.mp3" />
+		</item>	
+		<item>
+			<title>《美國經濟危機警報解除了？》</title>
+			<pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230721[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230721[龙行天下].html]]></link>
+			<description><![CDATA[《美國經濟危機警報解除了？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nkXv4LFXZRESxZdWrv69jR7RwYIZ.mp3" />
+		</item>	
+		<item>
+			<title>《俄烏戰爭接近尾聲 國際戰略新階段》</title>
+			<pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230818[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230818[龙行天下].html]]></link>
+			<description><![CDATA[《俄烏戰爭接近尾聲 國際戰略新階段》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmRjX8aSGK6oQu_veji_A_KkpVBT.mp3" />
+		</item>	
+		<item>
+			<title>《國際政治與個人事業規劃》</title>
+			<pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230914[大学讲座]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230914[大学讲座].html]]></link>
+			<description><![CDATA[《國際政治與個人事業規劃》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/npxPzIstP76jwIwerCuyXwixBanz.mp3" />
+		</item>	
+		<item>
+			<title>《国际金融未来趋势》</title>
+			<pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230915[大学讲座]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230915[大学讲座].html]]></link>
+			<description><![CDATA[《国际金融未来趋势》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nsQi3RGt79_FMjPPN9cpyL0m7fh6.mp3" />
+		</item>	
+		<item>
+			<title>《金磚峰會對全球金融的衝擊！》</title>
+			<pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[230915[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/230915[龙行天下].html]]></link>
+			<description><![CDATA[《金磚峰會對全球金融的衝擊！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/njijb0RE3FLD0l0_Vc4P7PgPifJB.mp3" />
+		</item>	
+		<item>
+			<title>《最新大陸調研報告》</title>
+			<pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[231027[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/231027[龙行天下].html]]></link>
+			<description><![CDATA[《最新大陸調研報告》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nsZEehbODkjjfgTnLI7PCrPOOUx6.mp3" />
+		</item>	
+		<item>
+			<title>《務必看懂國際政治三大趨勢》</title>
+			<pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[231208[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/231208[龙行天下].html]]></link>
+			<description><![CDATA[《務必看懂國際政治三大趨勢》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmMutTxj-1YNwyffyzCNVh5TdOyZ.mp3" />
+		</item>	
+		<item>
+			<title>《中國、美國與ECFA》</title>
+			<pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[231222[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/231222[龙行天下].html]]></link>
+			<description><![CDATA[《中國、美國與ECFA》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nosptRh8SgB0iciTttJrtTU1BGgv.mp3" />
+		</item>	
+		<item>
+			<title>《习近平的新金融政策》</title>
+			<pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240119[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240119[龙行天下].html]]></link>
+			<description><![CDATA[《习近平的新金融政策》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnKVsWk-IF6B1m-cfVK8FuMbdwFW.mp3" />
+		</item>	
+		<item>
+			<title>《全資開放美國投銀，中國歷史性錯誤！》</title>
+			<pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240216[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240216[龙行天下].html]]></link>
+			<description><![CDATA[《全資開放美國投銀，中國歷史性錯誤！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nk-8QYTuLhGvsnNs7ZFCYg1NU58D.mp3" />
+		</item>	
+		<item>
+			<title>《美國大選年：歐洲往哪裡去？》</title>
+			<pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240322[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240322[龙行天下].html]]></link>
+			<description><![CDATA[《美國大選年：歐洲往哪裡去？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nubE5IewRvuvMpdKgV22fnKu0jGQ.mp3" />
+		</item>	
+		<item>
+			<title>《欧洲在美国大选年的战略选择》</title>
+			<pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240323[其他讲座]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240323[其他讲座].html]]></link>
+			<description><![CDATA[《欧洲在美国大选年的战略选择》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nvdf8wPA-EP2-5GdjBVKtJE5K25d.mp3" />
+		</item>	
+		<item>
+			<title>《國際金融危機長期化》</title>
+			<pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240419[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240419[龙行天下].html]]></link>
+			<description><![CDATA[《國際金融危機長期化》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nhHJy74YE3qus6bI1n9Bl2PKKUTu.mp3" />
+		</item>	
+		<item>
+			<title>《美國「深層政府」如何重傷這個世界！》</title>
+			<pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240524[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240524[龙行天下].html]]></link>
+			<description><![CDATA[《美國「深層政府」如何重傷這個世界！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nvPIFs-OUHgLhzMcKy7cdYyp8vaB.mp3" />
+		</item>	
+		<item>
+			<title>《中國知識界的幾個嚴重問題！》</title>
+			<pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240628[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240628[龙行天下].html]]></link>
+			<description><![CDATA[《中國知識界的幾個嚴重問題！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmjTH_L2x1lYU_efSwJuXG6NzEYi.mp3" />
+		</item>	
+		<item>
+			<title>《從歐美選舉展望未來國際局勢》</title>
+			<pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240719[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240719[龙行天下].html]]></link>
+			<description><![CDATA[《從歐美選舉展望未來國際局勢》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nlZwLizc-n25zieHQxuxsRFfM9BU.mp3" />
+		</item>	
+		<item>
+			<title>《小澤快逃啊！那是普丁的陷阱！》 </title>
+			<pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240830[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240830[龙行天下].html]]></link>
+			<description><![CDATA[《小澤快逃啊！那是普丁的陷阱！》 ]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nu0Wp1Y4dgjZvbnvJUAis2Ch8iYo.mp3" />
+		</item>	
+		<item>
+			<title>《西方社會的崩壞》</title>
+			<pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[240920[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/240920[龙行天下].html]]></link>
+			<description><![CDATA[《西方社會的崩壞》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/npLieC4m0COZps872zjU_vAL1IEX.mp3" />
+		</item>	
+		<item>
+			<title>《美國大選的最後預測！及選後的世界！》</title>
+			<pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[241018[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/241018[龙行天下].html]]></link>
+			<description><![CDATA[《美國大選的最後預測！及選後的世界！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmeyDxuoU_fzPqRzD5NwiTda7xmP.mp3" />
+		</item>	
+		<item>
+			<title>《川普勝選，世界大變！》</title>
+			<pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[241115[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/241115[龙行天下].html]]></link>
+			<description><![CDATA[《川普勝選，世界大變！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/ni3vbINVY-DRrqeXMbfSIF11KUs9.mp3" />
+		</item>	
+		<item>
+			<title>《敘利亞悲歌的真相》</title>
+			<pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[241220[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/241220[龙行天下].html]]></link>
+			<description><![CDATA[《敘利亞悲歌的真相》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/njVO_2y8a1JOOmHSnFDkssYrqMPQ.mp3" />
+		</item>	
+		<item>
+			<title>《預測中國半導體、AI及金融的未來》</title>
+			<pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250117[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250117[龙行天下].html]]></link>
+			<description><![CDATA[《預測中國半導體、AI及金融的未來》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nlMr5El4DwRVnFwQI-5Zw3yeUF8M.mp3" />
+		</item>	
+		<item>
+			<title>《川普滿月，全球動盪！然後呢？》</title>
+			<pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250221[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250221[龙行天下].html]]></link>
+			<description><![CDATA[《川普滿月，全球動盪！然後呢？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/niJuRiaveMlll8PZdkKdzR1by3BU.mp3" />
+		</item>	
+		<item>
+			<title>《美俄各懷鬼胎！歐洲想當「魔丸」？》</title>
+			<pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250321[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250321[龙行天下].html]]></link>
+			<description><![CDATA[《美俄各懷鬼胎！歐洲想當「魔丸」？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/niVgCybqMtvqO-GMZJxe5lUDMyEk.mp3" />
+		</item>	
+		<item>
+			<title>《美國的關稅、中國的冷靜，哪一個讓世界更震驚？》</title>
+			<pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250418[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250418[龙行天下].html]]></link>
+			<description><![CDATA[《美國的關稅、中國的冷靜，哪一個讓世界更震驚？》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nrm8mQwNe6s9W3sgIo6PsWXxzPBm.mp3" />
+		</item>	
+		<item>
+			<title>《從「印巴空戰」看世界真正危機！》印巴空战、认知的四个层次、什么是科学</title>
+			<pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250516[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250516[龙行天下].html]]></link>
+			<description><![CDATA[《從「印巴空戰」看世界真正危機！》印巴空战、认知的四个层次、什么是科学]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nlOZfPlmsmcgGqeLDljyGjeOp-kG.mp3" />
+		</item>	
+		<item>
+			<title>《為了以色列！川普一定打伊朗？》政治哲学、糖尿病、伊以冲突、印度坠机</title>
+			<pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250620[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250620[龙行天下].html]]></link>
+			<description><![CDATA[《為了以色列！川普一定打伊朗？》政治哲学、糖尿病、伊以冲突、印度坠机]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nm79Hj_xfCSffb6yojD36n6Uei1Q.mp3" />
+		</item>	
+        </channel></rss>

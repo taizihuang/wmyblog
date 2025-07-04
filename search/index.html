@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="init.css">
     <script src='jquery.min.js'></script>
     <script src='search.js'></script>
-    <script  src="../html/blog.js"></script>
     <script src="../html/supabase.js"></script>
     <script  src="../html/tag.js"></script>
     <link rel="stylesheet" href="../html/fSelect.css">
@@ -116,15 +115,15 @@
 
             <div id="search-result">
                 <div class="post_count"></div>
+                <div class="transcript_count"></div>
                 <div class="comment_count"></div>
                 <br><br>
-                <div class="POST_LI">
+                <div class="POST_LI" id="post_li">
                     <p>使用须知：1. 可搜索文章标题、正文、评论、回复和网友昵称，可回车；</p>
                     <p>2. 离线搜索请参考<a target='_blank' href="https://github.com/taizihuang/wmyblog/blob/main/README.md#离线搜索">README</a></p>
                 </div>
-                <div class="REPLY_LI">
-
-                </div>
+                <div class="TRANSCRIPT_LI" id="transcript_li"></div>
+                <div class="REPLY_LI" id="reply_li"></div>
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@ jobs:
       - name: run script
         run: |
           git pull
-          python wmyblog_coron.py
+          python main.py
         
       - name: git push
         run: |

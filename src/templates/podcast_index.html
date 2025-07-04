@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:podcast="https://podcastindex.org/namespace/1.0"  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<channel>
+		<atom:link href="https://wmyblog.site/podcast/podcast.xml" rel="self" type="application/rss+xml"/>
+		<title>王孟源访谈</title>
+		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
+		<pubDate>${current_date} 00:00:00 +0000</pubDate>
+		<lastBuildDate>${current_date} 00:00:00 +0000</lastBuildDate>
+		<generator>Manual</generator>
+		<link>https://wmyblog.site</link>
+		<language>zh-cn</language>
+		<copyright><![CDATA[]]></copyright>
+		<docs>https://wmyblog.site</docs>
+		<managingEditor>htzllt@gmail.com (htzllt@gmail.com)</managingEditor>
+		<image>
+			<url>https://wmyblog.site/podcast/wmy-podcast.jpg</url>
+			<title>王孟源访谈</title>
+			<link><![CDATA[https://wmyblog.site/html/transcript.html]]></link>
+		</image>
+		<description><![CDATA[王孟源访谈合集，包含《八方论谈》，《龙行天下》和其他讲座。]]></description>
+
+		<podcast:locked owner="htzllt@gmail.com">no</podcast:locked>
+        %for title, pub_date, key, audio_url in item_li:
+		<item>
+			<title>${title}</title>
+			<pubDate>${pub_date} 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[${key}]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/${key}.html]]></link>
+			<description><![CDATA[${title}]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="${audio_url}" />
+		</item>	
+        %endfor
+        </channel></rss>

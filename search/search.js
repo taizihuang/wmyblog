@@ -32,14 +32,16 @@ function tagList(id) {
 function search() {
     var $input = $('#search-input')
     var $post = $('.POST_LI')
+    var $script = $('.TRANSCRIPT_LI')
     var $comment = $('.REPLY_LI')
     var $post_count = $('.post_count')
+    var $script_count = $('.transcript_count')
     var $comment_count = $('.comment_count')
     last_tag_dict = {...tag_dict};
     tag_dict = {};
 
     $.ajax({
-        url: 'wmyblog.json',
+        url: 'search.json',
         method: 'GET',
         dataType: 'json',
         headers: {
@@ -55,14 +57,22 @@ function search() {
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
             if (tag_list.length == 0) {
-            var articleData = jsonData.article.map(function(item) {
-                return {
-                    title: item.title,
-                    content: item.post,
-                    url: item.id,
-                    date: item.date
-                };
-            });};
+                var articleData = jsonData.article.map(function(item) {
+                    return {
+                        title: item.title,
+                        content: item.post,
+                        url: item.id,
+                        date: item.date
+                    };
+                });
+                var scriptData = jsonData.transcript.map(function(item) {
+                    return {
+                        key: item.key,
+                        title: item.title,
+                        content: item.content,
+                    }
+                })
+            };
             var commentData = jsonData.comment.map(function(item) {
                 var isMatch = true;
                 var index_tag = -1;
@@ -87,19 +97,71 @@ function search() {
                 return {}
             };}).filter(function(el){return Object.keys(el).length != 0});
             var post_count = 0
+            var script_count = 0
             var comment_count = 0
             var post_str = ''
+            var script_str = ''
             var reply_str = ''
             var keywords = $input.val().trim().toLowerCase().split(/[\s\-]+/);
             
             if (tag_list.length == 0){
-            articleData.forEach(function(data) {
-                var data_title = data.title.toLowerCase();
+                articleData.forEach(function(data) {
+                    var data_title = data.title.toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var isMatch = true;
+                    var first_occur = -1;
+                    keywords.forEach(function(keyword, i) {
+                        index_title = data_title.indexOf(keyword);
+                        index_content = data_content.indexOf(keyword);
+                        if (index_title < 0 && index_content < 0) {
+                            isMatch = false;
+                        } else {
+                            if (index_content < 0) {
+                                index_content = 0;
+                            }
+                            if (i == 0) {
+                                first_occur = index_content;
+                            }
+                        }
+                    })
+                    if (keywords[0]) {
+                        if (isMatch) {
+                            post_str += "<li class='article-result-item'><a href='../html/" + data_url + ".html' target='_blank' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                var start = first_occur - 100;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                var len = content.length - start;
+                                //if (start == 0) {
+                                //end = 100;
+                                //}
+                                if (len > 300) {
+                                    len = 300;
+                                }
+                                var match_content = content.substr(start, len);
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
+                                });
+                                post_str += "<p class=\"search-result\">" + match_content + "...</p>"
+                                post_count += 1;
+                            }
+                            post_str += "</li>";
+                        }
+                    }
+                });
+            scriptData.forEach(function(data) {
+                var data_title = data.title;
+                console.log(data.key);
                 var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                var data_url = data.url;
+                var data_url = "../html/"+ data.key + ".html";
                 var index_title = -1;
                 var isMatch = true;
-                var first_occur = -1;
+                var first_occurence = -1;
                 keywords.forEach(function(keyword, i) {
                     index_title = data_title.indexOf(keyword);
                     index_content = data_content.indexOf(keyword);
@@ -110,41 +172,40 @@ function search() {
                             index_content = 0;
                         }
                         if (i == 0) {
-                            first_occur = index_content;
+                            first_occurence = index_content;
                         }
                     }
                 })
                 if (keywords[0]) {
                     if (isMatch) {
-                        post_str += "<li class='article-result-item'><a href='../html/" + data_url + ".html' target='_blank' class='search-result-title'>" + data_title + "</a>";
+                        script_str += '<li class="article-result-item"><a href="' + data_url + '" target="_blank" class="search-result-title">' + data_title + "</a>";
                         var content = data.content.trim().replace(/<[^>]+>/g, "");
-                        if (first_occur >= 0) {
-                            var start = first_occur - 100;
+                        if (first_occurence >= 0) {
+                            var start = first_occurence - 100;
                             if (start < 0) {
                                 start = 0;
                             }
                             var len = content.length - start;
-                            //if (start == 0) {
-                            //end = 100;
-                            //}
                             if (len > 300) {
-                                len = 300;
+                                len = 300
                             }
                             var match_content = content.substr(start, len);
                             keywords.forEach(function(keyword) {
                                 var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">" + keyword + "</b>");
+                                match_content = match_content.replace(regS, '<b class="search-keyword">'+keyword+"</b>");
                             });
-                            post_str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            post_count += 1;
+                            script_str += '<p class="search-result">' + match_content + "...</p>";
+                            script_count += 1;
                         }
-                        post_str += "</li>";
+                        script_str += "</li>";
                     }
                 }
-
             });};
             $post.html(post_str);
-            $post_count.html("搜索到 " + post_count + " 篇文章");
+            $post_count.html('<a href="#post_li"> 搜索到 ' + post_count + " 篇文章</a>");
+            $script.html(script_str);
+            $script_count.html('<a href="#transcript_li">搜索到 ' + script_count + " 篇访谈</a>");
+
             commentData.forEach(function(data) {
                 // var comment = data.comment.trim().replace(/<[^>]+>/g, "").toLowerCase();
                 // var reply = data.reply.trim().replace(/<[^>]+>/g, "").toLowerCase();
@@ -197,7 +258,7 @@ function search() {
                 reply_str += "</div></div>";
             });
             $comment.html(reply_str);
-            $comment_count.html("搜索到 " + comment_count + " 条问答");
+            $comment_count.html('<a href="#reply_li">搜索到 ' + comment_count + " 条问答</a>");
             for (var key in last_tag_dict) {
                 var value = tag_dict[key]
                 var tag_label = $('label#'+key+'-label');
