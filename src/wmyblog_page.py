@@ -269,13 +269,15 @@ def gen_search_data(data_dir, out_dir):
                                 "title": title,
                                 "content": content})
     
-    wmy_dict = {
-        "article": article_list,
-        "comment": comment_list,
-        "transcript": transcript_list
-    }
-    with open(f"{out_dir}/search.json", "w") as f:
-        f.write(json.dumps(wmy_dict, indent=4, ensure_ascii=False))
+    article_dict = {"article": article_list}
+    comment_dict = {"comment": comment_list}
+    transcript_dict = {"transcript": transcript_list}
+    with open(f"{out_dir}/article.json", "w") as f:
+        f.write(json.dumps(article_dict, indent=4, ensure_ascii=False))
+    with open(f"{out_dir}/comment.json", "w") as f:
+        f.write(json.dumps(comment_dict, indent=4, ensure_ascii=False))
+    with open(f"{out_dir}/transcript.json", "w") as f:
+        f.write(json.dumps(transcript_dict, indent=4, ensure_ascii=False))
     print(f"{out_dir}/search.json saved!")
 
 if __name__ == "__main__":
