@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    <link href="APlayer.min.css" rel="stylesheet">
+    <script src="APlayer.min.js"></script>
+    <title>最新访谈</title>
+    <style>
+        .demo {
+            min-width: 360px;
+            max-width: 500px;
+            margin: 60px auto 10px auto;
+            font-size: 1rem;
+        }
+        
+        .demo p {
+            padding: 10px 0
+        }
+
+        iframe {
+            overflow: hidden;
+            width: 99%;
+            margin-left: 20 !important;
+        }
+        #rss_btn {
+            font-family: Arial;
+            text-decoration: none;
+            font-size: 13px;
+            color: #FFF;
+            background: #f2853d;
+            padding: 1px 5px;
+            border: 1px solid #ed6b2a;
+        }
+
+        #player {
+            margin: auto;
+        }
+
+        .hand {
+            cursor: pointer; 
+        }
+    </style>
+    <script>
+        var fileLocation = document.getElementsByClassName('aplayer-author')[0];
+        var text = fileLocation.textContent
+        
+        function resizeIframe(obj) {
+            obj.style.height = (window.innerHeight - 250) + 'px';
+        }
+
+        function changeSrc() {
+            var fileLocationNew = document.getElementsByClassName('aplayer-author')[0];
+            if (text != fileLocationNew.textContent) {
+                var file = fileLocationNew.textContent.substr(3, );
+                document.getElementsByClassName('iframe-full-height')[0].src = 'https://taizihuang.github.io/wmyblog/html/' + file.replaceAll('/', '').substring(2, ) + '.html ';
+                text = fileLocationNew.textContent;
+            };
+        }
+
+        function seek(seconds) {
+            ap.seek(seconds);
+        }
+    </script>
+</head>
+
+<body>
+<center><h2>最新访谈</h2>&nbsp;<span><a href="https://taizihuang.github.io/wmyblog/podcast/podcast.xml" id="rss_btn">八方论谈</a>&nbsp;</span><span><a href="https://taizihuang.github.io/wmyblog/podcast/podcast-long.xml" id="rss_btn">龙行天下</a></span></center>
+
+    <div class="demo">
+        <div id="player" onclick="changeSrc()"> </div>
+    </div>
+    <p><u class="hand" onclick="seek(1000)"><em>王孟源 02:06</em></u> <br>真的是史无前例的一次，有很多点，让我详细地来解释。首先 Trump 是美国第二个回锅总统，上一个也是在 19 世纪的，是克利夫兰。他这个回锅的过程，我们要再回顾一下。 2016 年他上台的时候是非常的出人意外的，他这是欧美他们的金融帝国主义走到头，他们国内的底层民众，尤其是蓝领阶级因为去工业化跟所谓的 Outsourcing，导致他们的生活水准大幅下降之后，欧美普遍大概在十年前开始了民粹的浪潮。那 Trump 的当选是第一波成功，也是最成功的案例。但是因为他那个时候没有自己的团队，所以我想我在过去这一年每次谈 Trump，我都说他 2016 年上台的时候，除了国防部长是他自己任命... 而且那个国防部部长他也不认识，只不过是一个出名的将军，他只是慕名雇来，其他都是建制派跟深层政府，也就是他最大的敌人安插在他身边的。所以那之后的四年是有不断的欺瞒、破坏以及各式各样的阻挠。这个破坏是到什么地步呢？就是甚至到了他在新冠疫情的时候所拿出来的那些医疗器材、道具，都是变成刻意很粗鄙的东西。他想要撤军，国防部长跟他打马虎眼，一直拖到他下台。所以像这阿富汗撤军其实是 Trump 在他的前一个任期就已经试图过了，但是一直拖到 2021 年。我们如果大家记得的话，是拜登在 2021 年年中才下令撤军，而那个撤军还是因为军工业同意了，是因为拜登的 Neocon 团队已经准备好了，要在乌克兰挑起一个新的冲突啊。所以这一次我是希望能够... 我个人也是希望 Trump 能够上台，能够给这些 Neocon 还有欧盟那些非常愚蠢邪恶的政客一个教训。
+</p>
+    <p><u class="hand" onclick="seek(1200)"><em>王孟源 02:06</em></u> <br>真的是史无前例的一次，有很多点，让我详细地来解释。首先 Trump 是美国第二个回锅总统，上一个也是在 19 世纪的，是克利夫兰。他这个回锅的过程，我们要再回顾一下。 2016 年他上台的时候是非常的出人意外的，他这是欧美他们的金融帝国主义走到头，他们国内的底层民众，尤其是蓝领阶级因为去工业化跟所谓的 Outsourcing，导致他们的生活水准大幅下降之后，欧美普遍大概在十年前开始了民粹的浪潮。那 Trump 的当选是第一波成功，也是最成功的案例。但是因为他那个时候没有自己的团队，所以我想我在过去这一年每次谈 Trump，我都说他 2016 年上台的时候，除了国防部长是他自己任命... 而且那个国防部部长他也不认识，只不过是一个出名的将军，他只是慕名雇来，其他都是建制派跟深层政府，也就是他最大的敌人安插在他身边的。所以那之后的四年是有不断的欺瞒、破坏以及各式各样的阻挠。这个破坏是到什么地步呢？就是甚至到了他在新冠疫情的时候所拿出来的那些医疗器材、道具，都是变成刻意很粗鄙的东西。他想要撤军，国防部长跟他打马虎眼，一直拖到他下台。所以像这阿富汗撤军其实是 Trump 在他的前一个任期就已经试图过了，但是一直拖到 2021 年。我们如果大家记得的话，是拜登在 2021 年年中才下令撤军，而那个撤军还是因为军工业同意了，是因为拜登的 Neocon 团队已经准备好了，要在乌克兰挑起一个新的冲突啊。所以这一次我是希望能够... 我个人也是希望 Trump 能够上台，能够给这些 Neocon 还有欧盟那些非常愚蠢邪恶的政客一个教训。
+</p>
+</body>
+
+    <script>
+        var ap = new APlayer({
+            element: document.getElementById('player'),
+            narrow: false,
+            autoplay: false,
+            audio: [{'name': '從「印巴空戰」看世界真正危機！', 'artist': '2025/05/16', 'url': 'https://drive.tedl.uk/f/wQ4F4/250516.mp3', 'pic': 'wmy-podcast.jpg'}]
+        });
+        ap.init();
+    </script>
