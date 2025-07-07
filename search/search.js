@@ -63,7 +63,7 @@ function searchArticle() {
             // "Access-Control-Allow-Origin": "*"
         },
         beforeSend: function() {
-            $post_count.html('<div id="load"> loading </div>');
+            $post_count.html('<div id="load"> 文章 loading... </div>');
         },
         complete: function() {
             $("#load").remove();
@@ -155,7 +155,7 @@ function searchTranscript() {
             // "Access-Control-Allow-Origin": "*"
         },
         beforeSend: function() {
-            // $post_count.html('<div id="load"> loading </div>');
+            $script_count.html('<div id="load"> 访谈 loading... </div>');
         },
         complete: function() {
             $("#load").remove();
@@ -247,7 +247,7 @@ function searchComment() {
             // "Access-Control-Allow-Origin": "*"
         },
         beforeSend: function() {
-            // $post_count.html('<div id="load"> loading </div>');
+            $comment_count.html('<div id="load"> 问答 loading...</div>');
         },
         complete: function() {
             $("#load").remove();
