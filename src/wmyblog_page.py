@@ -275,7 +275,7 @@ def gen_search_data(data_dir, out_dir):
     with open(f"{out_dir}/article.json", "w") as f:
         f.write(json.dumps(article_dict, indent=4, ensure_ascii=False))
     with open(f"{out_dir}/comment.json", "w") as f:
-        f.write(json.dumps(comment_dict, indent=4, ensure_ascii=False))
+        f.write(json.dumps(comment_dict, ensure_ascii=False))
     with open(f"{out_dir}/transcript.json", "w") as f:
         f.write(json.dumps(transcript_dict, indent=4, ensure_ascii=False))
     print(f"{out_dir}/search.json saved!")
