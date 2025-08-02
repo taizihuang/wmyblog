@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2025/08/02 20:04 +0800</lastBuildDate>
+<lastBuildDate>2025/08/03 02:03 +0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【空軍】【海軍】有關隱身飛機的一些新發展 | 後註二]]></title>
+<description><![CDATA[後註二 <br><br>----<br><br>我在上月的《龍行天下》節目（參見<a href="https://www.thedrive.com/the-war-zone/chinas-j-20-fighter-with-long-awaited-ws-15-engines-may-have-flown"><span style="color:blue">《China’s J-20 Fighter With Long-Awaited WS-15 Engines May Have Flown》</span></a>）中根據美國知名軍事網站《The War Zone》引用多方小道消息綜合報導（參見<a href="https://www.thedrive.com/the-war-zone/chinas-j-20-fighter-with-long-awaited-ws-15-engines-may-have-flown"><span style="color:blue">《China’s J-20 Fighter With Long-Awaited WS-15 Engines May Have Flown》</span></a>，内含下面這張爬墻黨提供的附圖，請注意橫幅上的“-15”；橫幅面對而不是背對圍墻，似乎成飛對這類“泄密”兼免費廣告並沒有特別反感），換裝WS-15的全狀態J-20在昨日開始試飛。去年三月也有類似傳聞，但當時是雙發中有一具WS-15，用來驗證引擎；現在全是新發，應該是驗證新飛機型號。</p><br><div class="TIME">2025-08-03 00:00 回复</div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2025-08-03 00:00:00 +0800</pubDate>
+<guid isPermaLink="false">a714e7ec2a99d500c6d82b37bb74aea4</guid>
+<link>https://wmyblog.site/html/121189698.html#a714e7ec2a99d500c6d82b37bb74aea4</link>
+</item>
 <item>
 
 
@@ -111,22 +121,22 @@
 <item>
 
 
-<title><![CDATA[【空軍】【海軍】根深蒂固的誤解（二） | 後註一]]></title>
-<description><![CDATA[後註一 <br><br>----<br><br>學了一輩子物理，我原本自以爲對任何物理現象有足夠的直覺，能簡單做出正確的定性判斷，但剛剛看到這篇20年前的老論文（參見<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.94.184505"><span style="color:blue">《Drop Splashing on a Dry Smooth Surface》</span></a>），差點驚掉自己的下巴；這裏相關的物理科目是流體動力學，所以放在這篇正文之下和大家分享。</p><br><br><p>上述論文研究的對象是，足夠高速下落的水滴撞擊固體表面會產生皇冠狀的飛濺；這個現象每個人在下雨天都觀察過無數次，我個人一直以爲是水滴内部的慣性和内聚力在衝擊波作用下的結果，沒想到這些作者用實驗明確證明，飛濺現象來自水滴周圍的空氣：只有空氣密度達到海平面大氣的30%（這個臨界值對應著10公里高空，略高於Mount Everest珠峰，所以不可能在露天的地球表面觀察到，只能用真空室來做實驗）以上，因爲水滴在撞擊後向橫截面的擴展速度超過空氣中的音速，才能產生夠强的超音速激波，反過來擊碎擴展中的水-氣界面，造成許多微小水滴破開飛濺。We are never too old to learn new concept.</p><br><div class="TIME">2025-07-19 00:00 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2025-07-19 00:00:00 +0800</pubDate>
-<guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
-<link>https://wmyblog.site/html/138538769.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
-</item>
-<item>
-
-
 <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 後註十]]></title>
 <description><![CDATA[後註十 <br><br>----<br><br>昨天上《龍行天下》節目（參見<a href="https://www.youtube.com/watch?v=aYvZnMYb4Lg"><span style="color:blue">《川普戰略轉向！台灣軍力迷航》</span></a>）提到我在搜尋因Trump政策錯誤而導致的經濟危機信號過程中，終於找到第一個疑似案例，是所謂NIIP，Net International Investment Position，亦即美國所持有的外國資產減掉外國持有的美國資產價值，原始資料在<a href="https://fred.stlouisfed.org/series/IIPUSNETIQ/"><span style="color:blue">《U.S. Net International Investment Position (IIPUSNETIQ)》</span></a>，因爲NIIP不屬熱門數據，美聯儲還附加了解説：<a href="https://www.stlouisfed.org/on-the-economy/2025/may/understanding-net-international-investment-position"><span style="color:blue">《Understanding the Net International Investment Position》</span></a>。</p><br><br><p>爲了讀者方便，我將原圖複製於下。這裏的觀察重點在於，過去20年NIIP基本成指數增長，其間只有三次明顯反轉，分別發生在2009年Q1、2022年Q1和2025年Q1。雖然NIIP受貿易逆差和利率變動影響（參見上個段落提到的美聯儲解説），在資料時限内這兩個因素並沒有劇烈到能製造上述反轉的程度，所以這三次反轉所反映的，純粹是金融資產對美國產生疑慮，因而大幅外移。Trump的當選，居然能產生與最近兩次重大經濟危機同級別的信號，非常值得玩味。這裏順便感謝某王姓年輕學人提供原始建議，讓我注意到NIIP。</p><br><br><p><img src="https://wmyblog.site/html/img/f_28945550_1.jpg"/></p><br><div class="TIME">2025-07-19 00:00 回复</div>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2025-07-19 00:00:00 +0800</pubDate>
 <guid isPermaLink="false">28eb852814b9370d0821ec20e330a6e7</guid>
 <link>https://wmyblog.site/html/180084896.html#28eb852814b9370d0821ec20e330a6e7</link>
+</item>
+<item>
+
+
+<title><![CDATA[【空軍】【海軍】根深蒂固的誤解（二） | 後註一]]></title>
+<description><![CDATA[後註一 <br><br>----<br><br>學了一輩子物理，我原本自以爲對任何物理現象有足夠的直覺，能簡單做出正確的定性判斷，但剛剛看到這篇20年前的老論文（參見<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.94.184505"><span style="color:blue">《Drop Splashing on a Dry Smooth Surface》</span></a>），差點驚掉自己的下巴；這裏相關的物理科目是流體動力學，所以放在這篇正文之下和大家分享。</p><br><br><p>上述論文研究的對象是，足夠高速下落的水滴撞擊固體表面會產生皇冠狀的飛濺；這個現象每個人在下雨天都觀察過無數次，我個人一直以爲是水滴内部的慣性和内聚力在衝擊波作用下的結果，沒想到這些作者用實驗明確證明，飛濺現象來自水滴周圍的空氣：只有空氣密度達到海平面大氣的30%（這個臨界值對應著10公里高空，略高於Mount Everest珠峰，所以不可能在露天的地球表面觀察到，只能用真空室來做實驗）以上，因爲水滴在撞擊後向橫截面的擴展速度超過空氣中的音速，才能產生夠强的超音速激波，反過來擊碎擴展中的水-氣界面，造成許多微小水滴破開飛濺。We are never too old to learn new concept.</p><br><div class="TIME">2025-07-19 00:00 回复</div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2025-07-19 00:00:00 +0800</pubDate>
+<guid isPermaLink="false">7ccc0c76d5e6737fb409fa5e1246f443</guid>
+<link>https://wmyblog.site/html/138538769.html#7ccc0c76d5e6737fb409fa5e1246f443</link>
 </item>
 <item>
 
@@ -587,16 +597,6 @@
 <pubDate>2025-05-19 14:56:00 +0800</pubDate>
 <guid isPermaLink="false">37c119997561c12c0b1b45633ceebe86</guid>
 <link>https://wmyblog.site/html/128392486.html#37c119997561c12c0b1b45633ceebe86</link>
-</item>
-<item>
-
-
-<title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 後註五十六]]></title>
-<description><![CDATA[後註五十六 <br><br>----<br><br>兩個月前，我在【後註五十三】分析Starmer的仇俄姿態過於積極，應該是在為與歐盟重建經貿關係預做鋪墊；今天消息傳來（參見<a href="https://www.guancha.cn/internation/2025_05_20_776422.shtml"><span style="color:blue">《“分手”多年后，英国、欧盟签协议“重置关系”》</span></a>），證明果然如此，於是博客11年來針對當前世界局勢所建立的認知架構，又得到更進一步的印證加强。</p><br><div class="TIME">2025-05-20 00:00 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2025-05-20 00:00:00 +0800</pubDate>
-<guid isPermaLink="false">f7e4e7a4056fce69b4c8ea03172dee0b</guid>
-<link>https://wmyblog.site/html/177266891.html#f7e4e7a4056fce69b4c8ea03172dee0b</link>
 </item>
 <item>
 
