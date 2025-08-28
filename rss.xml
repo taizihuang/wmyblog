@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2025/08/28 08:14 +0800</lastBuildDate>
+<lastBuildDate>2025/08/28 23:14 +0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | zaonhe]]></title>
+<description><![CDATA[楼下的文章最主要的问题显然是相关性研究，无法得出任何因果结论，更遑用来做出公共卫生方面的建议。<br><br>然而，就算是相关性研究，该文章由于样本来自于现成的数据集，也存在诸多关键缺陷。其中最重要的有以下三点。<br><br>其一，数据采集每5-9年一次，共两次后续采集。（原文：“recruiting 41,513 participants from Melbourne residents between 1990 and 1994 (baseline) ...The first follow-up survey (wave 1) was conducted between 1995 and 1998, and the second follow-up was between 2003 and 2007 (wave 2).")<br><br>那么，在一个周期前两年诊断出糖尿病的参与者因病情反而会少喝含糖饮料，多喝无糖饮料。<br><br>其二，第一次后续采样有超过10%的参与者死亡或联系不上，第二次则超过20%（见Figure 1），但文章没有做任何数据分析的校正。那么研究因其设计缺陷就完全考虑不到以下情况：长期喝含糖饮料后，罹患严重糖尿病且快速恶化到死亡或无力参与调查问卷。<br><br>最后，数据来自于参与者的自我报告。这里最重要的缺陷是：将近一半的早期糖尿病并未被诊断（https://www.sciencedirect.com/science/article/abs/pii/S0168822721004770）。因此，这种数据测量的是检测出的糖尿病，不是真实的患病。最后结果反应的可能是喝无糖饮料的人更经常做血糖检测。<br><br>同时，自我报告饮食数量本身也存在各种各样自他的偏差，不多赘述。<br><br> <br><br>----<br><br>説得很好。不過以我寫博客11年的慘痛經驗，除了生醫專業的讀者，其他人可能不懂你在説什麽。<br><br>此外，這樣明顯的胡扯論文，你還能仔細看完所有細節，比我有耐心多了。<br><div class="TIME">2025-08-28 22:32 回复</div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2025-08-28 08:53:00 +0800</pubDate>
+<guid isPermaLink="false">5dd3223ae653cab7cfe86cfc5d55e559</guid>
+<link>https://wmyblog.site/html/131394982.html#5dd3223ae653cab7cfe86cfc5d55e559</link>
+</item>
 <item>
 
 
@@ -597,15 +607,5 @@
 <pubDate>2025-06-11 03:46:00 +0800</pubDate>
 <guid isPermaLink="false">9eb41fefb021c378d3285553be830c63</guid>
 <link>https://wmyblog.site/html/180084901.html#9eb41fefb021c378d3285553be830c63</link>
-</item>
-<item>
-
-
-<title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 後註十六]]></title>
-<description><![CDATA[後註十六 <br><br>----<br><br>感覺上最近每一期的《自然》如果不刊登一篇討論果糖危害的新論文，就不完整了。最新的樣本是<a href="https://www.nature.com/articles/s41586-025-09098-5"><span style="color:blue">《Early life high fructose impairs microglial phagocytosis and neurodevelopment》</span></a>，詳細探究了孕婦攝取果糖導致胎兒腦免疫細胞（Microglia）失常，長大之後產生心理障礙病變的機制。</p><br><div class="TIME">2025-06-12 00:00 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2025-06-12 00:00:00 +0800</pubDate>
-<guid isPermaLink="false">61d9bbc1df2db965b1389451450afd1a</guid>
-<link>https://wmyblog.site/html/131394982.html#61d9bbc1df2db965b1389451450afd1a</link>
 </item>
 </channel></rss>

@@ -61,6 +61,8 @@ def save_script(name, url, audio_url, doc, template_dir, out_dir):
     toc_list = [f"""<div><a onclick="scrollPage('{h2}')">{h2}</a></div>""" for h2 in h2_list]
     docs.find(id="toc").string = "".join(toc_list)
     html_str = str(docs).replace("&lt;", "<").replace("&gt;", ">")
+    html_str = html_str.replace("<br/><br/>", "<br/>\n<br/>")
+    html_str = html_str.replace("</a><br/>", "</a>\n<br/>")
 
     filename = name[:12]
     out_file = f'{out_dir}/{filename}.html' 
