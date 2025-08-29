@@ -6,8 +6,28 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2025/08/28 23:14 +0800</lastBuildDate>
+<lastBuildDate>2025/08/29 12:54 +0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | Niets]]></title>
+<description><![CDATA[关于具身智能<br><br>要实现能洗衣烧饭的家用具身智能难度还是很大的（参见Moravec's paradox）。<br><br>自动驾驶（自驾）可以看作是家用具身智能的precursor：若L5自驾都不能规模化实现，家庭环境下的具身智能就更难了。原因有四：1）自驾的感知模态（视觉，可能还有听觉）容易获得。家用机器人还需要触觉甚至是嗅觉（做菜），这类感知数据相比视/听更难采集和模拟； 2）自驾的动作空间（action space）比人形机器人少了几十个自由度。最近机器人的自我平衡（self-balancing）能力通过强化学习（RL）已经有很大进步，但机器手的manipulation还是很难；3）现在具身智能依赖的vision-lauguage-action架构泛化能力还不够。拿Waymo来说，虽然已经在几个城市有收入了，但开辟新城市还是要重新收集数据训练模型，没法用已有的模型直接上路，而且时不时需要人工干预。且城市路况算是半结构化的（semi-structured），而每家每户的室内环境则各有不同，是更严重的肥尾（fat-tailed）问题；4）人与机器人的交互问题（human-robot interaction）还是挺复杂的。自驾还好，车内/外只需要很少的交互，但家用环境下几乎不可能做到idiot-proof。<br><br>撇开技术层面，真正实用化的机器人也未必比钟点工便宜，政策方面还有就业率的考量。反倒是封闭的园区和厂房里能提供相对结构化的环境和数字孪生。虽然现在用途有限（例如管线巡检），但也不失为一个起点。<br><br> <br><br>----<br><br>是的，家用其實是最難的，反而是工業和商業環境下，因爲維護能力强、監督成本低，會是普及的先鋒。至於最終能有多廣，人形機器人比AI還要不成熟，我們先看看本世代AI的極限何在，再做推論不遲。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/180084896.html">2025-08-29 01:44 修改</a></div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2025-07-29 17:36:00 +0800</pubDate>
+<guid isPermaLink="false">62bde93a2b79d8fc2d880970771cc900</guid>
+<link>https://wmyblog.site/html/180084896.html#62bde93a2b79d8fc2d880970771cc900</link>
+</item>
+<item>
+
+
+<title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 百年未有之大變局]]></title>
+<description><![CDATA[　<br><br>請問王博士怎麼看這樣的報導，我在台灣媒體上看到這報導標題是「比含糖飲料更毒！「1飲品」大增38%糖尿病風險」說什麼國外研究人工甜味劑比吃糖更危險更容易引起糖尿病，說最新發表於《Diabetes &amp; Metabolism》的研究顯示：<br><br>每天喝含糖飲料，糖尿病風險上升 23%<br><br>每天喝人工甜味劑飲料，風險更高，達上升 38%<br><br>這是一項分析超過 36,000名40至69歲成年人的長期世代研究（墨爾本協作隊列研究，MCCS），平均追蹤長達14年。更令人意外的是：即使去除肥胖因素的干擾，人工甜味劑與糖尿病風險的關聯仍然存在！<br><br>這代表，無糖飲料的傷害不是靠不變胖就能避免的。<br><br>那它們怎麼影響血糖與代謝呢？研究提出幾個可能機制：<br><br>1改變腸道菌群（Microbiome）結構與功能，影響葡萄糖代謝與胰島素敏感性<br><br>2干擾胰島素分泌反應，使身體對甜味產生錯誤反應<br><br>3混淆大腦對食物熱量的預期，導致飢餓感與過度攝食<br><br>4影響腸道甜味感受器，進一步破壞血糖平衡機制<br><br>剛好之前看過您的對人工甜味劑介紹(例如三氯蔗糖可以要來代替糖)我下意識反應可能這是台灣媒體不專業的惡習，會不會搞錯什麼？然後一路追查原始消息來源大概是這兩篇論文，想問這是真的假的會不會不專業的記者搞錯什麼了或是誤會，仔細看過之後發現他只發現相關性但卻不知道因果關係，有沒有可能是原本愛吃糖水SSB的就有可能常喝甜味劑飲料ASB，就像下雨天和帶傘有相關性，但是帶傘不一定是下雨天，下雨帶雨傘只是結果，不能從雨傘反推論一定下雨，但甜味劑和糖尿病和者高度相關會不會是類似的關係，可能是台灣不專業的記者誤會了論文？<br><br>來源1<br><br>https://www.sciencedirect.com/science/article/pii/S126236362500059X?via%3Dihub<br><br>來源2<br><br>https://www.nature.com/articles/s41591-024-03345-4<br><br>Highlights<br><br>•<br><br>Both sugar and artificially sweetened beverage intake has been linked with type 2 diabetes risk.<br><br>•<br><br>We found both sugar-sweetened and artificially sweetened beverage intakes are associated with increased risk of type 2 diabetes in an Australian population. Sensitivity analysis to rule out reverse causality also confirmed the findings.<br><br>•<br><br>The findings of this study highlight the need for a firm policy intended to curb the adverse health effects of sugar and artificially sweetened beverages in Australia.<br><br> <br><br>----<br><br>那些所謂的“科普作家”，水準太低，直接無視就行了。例如上個月《觀察者網》上就有一篇由自稱專業是“科普作家”所寫的文章，還登上了正式社論欄，居然針對“蔗糖和果糖哪個比較健康”這麽簡單明確的議題也洋洋灑灑地寫了一大篇摸棱兩可、自我矛盾的胡扯。從分子生物學觀點，蔗糖是一個果糖分子和一個葡萄糖分子的鏈接結果，遇到酸性環境（如胃酸或碳酸飲料）就分解開來，所以一個蔗糖分子的毒性恰恰與一個果糖分子完全相等。但從營養學的角度來看，還必須考慮劑量，而果糖在舌頭上的甜度比蔗糖高70%（還記得我在《猿類的起源》一文中討論過，猿類在一千多萬年前演化秋季吃水果增肥過冬的習慣嗎？所以大型靈長類，包括人屬、人種，味覺感受器演化所針對的是果糖而不是蔗糖，不是很合理嗎？），結果是除了碳酸飲料已經預先分解蔗糖之外，其他的甜品如糕點果汁甜茶等等，選擇蔗糖就必須比果糖多用70%才能達到同等甜度；換句話說，在實用上蔗糖的毒性比果糖高70%。我以往不想牽扯至此，是怕不用心的讀者得出“高果糖玉米糖漿比蔗糖好=》高果糖玉米糖漿是健康食品”這樣的腦殘邏輯鏈，畢竟蔗糖和純果糖都很毒，只不過前者稍稍更毒一些。<br><br>至於你所引用的兩篇學術論文，登在《Nature》的那一篇根本就沒有提人工甜味劑，從頭到尾討論的就是蔗糖的危害，我不知道你爲什麽把它列在這裏（或許是那個“科普作者”故意魚目混珠，把著名期刊的論文拿來當幌子，反正他的目標讀者也不會去深究），不過剛好可以和另一篇論文來做對照：還記得幾年前博客就强調過，可信的統計研究結果顯示，依照論文結果的可複製性（不可複製當然就不是正確的科學結論），學術期刊可分爲三級：《自然》和《科學》這兩個頂級期刊的可複製性大約2/3，其他正經期刊大約1/9，中國式的收費發表期刊則必然為0（參考我在《金融史觀（二）當前局勢》留言欄57樓的回復）；刊載這篇論文的《Diabetes &amp; Metabolism》，Impact Factor很低，勉强算是第二類期刊，而且可以一眼看出論文本身必然屬於錯誤的那8/9，原因是他們把所有的人工甜味劑混爲一談，然而人工甜味劑有很多種，分子類別五花八門，毒性即便有也必然天差地別，不一種一種地分開專門鑽研，本身就是非常不科學的態度。我在討論青蒿素的時候就已經解釋過，生醫實驗統計噪音特多，必須找出特定分子，並且搞清作用機制，才能下結論。這些作者反其道而行，顯然是有意要利用統計噪音來讓論文順利發表，這先天就不是專注於求真的心態，所以可以簡單推論屬於胡扯類的8/9。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/131394982.html">2025-08-29 00:28 修改</a></div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2025-08-05 17:45:00 +0800</pubDate>
+<guid isPermaLink="false">d3cd857d8d02fa3a5029f8b2c23aaef9</guid>
+<link>https://wmyblog.site/html/131394982.html#d3cd857d8d02fa3a5029f8b2c23aaef9</link>
+</item>
 <item>
 
 
@@ -27,16 +47,6 @@
 <pubDate>2025-07-27 07:16:00 +0800</pubDate>
 <guid isPermaLink="false">a12e57391b64519d49a0ba917407ad75</guid>
 <link>https://wmyblog.site/html/180084896.html#a12e57391b64519d49a0ba917407ad75</link>
-</item>
-<item>
-
-
-<title><![CDATA[【公共健康】【財政】一個嚴重的公共健康問題 | 百年未有之大變局]]></title>
-<description><![CDATA[　<br><br>請問王博士怎麼看這樣的報導，我在台灣媒體上看到這報導標題是「比含糖飲料更毒！「1飲品」大增38%糖尿病風險」說什麼國外研究人工甜味劑比吃糖更危險更容易引起糖尿病，說最新發表於《Diabetes &amp; Metabolism》的研究顯示：<br><br>每天喝含糖飲料，糖尿病風險上升 23%<br><br>每天喝人工甜味劑飲料，風險更高，達上升 38%<br><br>這是一項分析超過 36,000名40至69歲成年人的長期世代研究（墨爾本協作隊列研究，MCCS），平均追蹤長達14年。更令人意外的是：即使去除肥胖因素的干擾，人工甜味劑與糖尿病風險的關聯仍然存在！<br><br>這代表，無糖飲料的傷害不是靠不變胖就能避免的。<br><br>那它們怎麼影響血糖與代謝呢？研究提出幾個可能機制：<br><br>1改變腸道菌群（Microbiome）結構與功能，影響葡萄糖代謝與胰島素敏感性<br><br>2干擾胰島素分泌反應，使身體對甜味產生錯誤反應<br><br>3混淆大腦對食物熱量的預期，導致飢餓感與過度攝食<br><br>4影響腸道甜味感受器，進一步破壞血糖平衡機制<br><br>剛好之前看過您的對人工甜味劑介紹(例如三氯蔗糖可以要來代替糖)我下意識反應可能這是台灣媒體不專業的惡習，會不會搞錯什麼？然後一路追查原始消息來源大概是這兩篇論文，想問這是真的假的會不會不專業的記者搞錯什麼了或是誤會，仔細看過之後發現他只發現相關性但卻不知道因果關係，有沒有可能是原本愛吃糖水SSB的就有可能常喝甜味劑飲料ASB，就像下雨天和帶傘有相關性，但是帶傘不一定是下雨天，下雨帶雨傘只是結果，不能從雨傘反推論一定下雨，但甜味劑和糖尿病和者高度相關會不會是類似的關係，可能是台灣不專業的記者誤會了論文？<br><br>來源1<br><br>https://www.sciencedirect.com/science/article/pii/S126236362500059X?via%3Dihub<br><br>來源2<br><br>https://www.nature.com/articles/s41591-024-03345-4<br><br>Highlights<br><br>•<br><br>Both sugar and artificially sweetened beverage intake has been linked with type 2 diabetes risk.<br><br>•<br><br>We found both sugar-sweetened and artificially sweetened beverage intakes are associated with increased risk of type 2 diabetes in an Australian population. Sensitivity analysis to rule out reverse causality also confirmed the findings.<br><br>•<br><br>The findings of this study highlight the need for a firm policy intended to curb the adverse health effects of sugar and artificially sweetened beverages in Australia.<br><br> <br><br>----<br><br>那些所謂的“科普作家”，水準太低，直接無視就行了。例如上個月《觀察者網》上就有一篇由自稱專業是“科普作家”所寫的文章，還登上了正式社論欄，居然針對“蔗糖和果糖哪個比較健康”這麽簡單明確的議題也洋洋灑灑地寫了一大篇摸棱兩可、自我矛盾的胡扯。從分子生物學觀點，蔗糖是一個果糖分子和一個葡萄糖分子的鏈接結果，遇到酸性環境（如胃酸或碳酸飲料）就分解開來，所以一個蔗糖分子的毒性恰恰與一個果糖分子完全相等。但從營養學的角度來看，還必須考慮劑量，而果糖在舌頭上的甜度比蔗糖高70%（還記得我在《猿類的起源》一文中討論過，猿類在一千多萬年前演化秋季吃水果增肥過冬的習慣嗎？所以大型靈長類，包括人屬、人種，味覺感受器針對的是果糖而不是蔗糖，不是很合理嗎？），結果是除了碳酸飲料已經預先分解蔗糖之外，其他的甜品如糕點果汁甜茶等等，選擇蔗糖就必須比果糖多用70%才能達到同等甜度；換句話說，在實用上蔗糖的毒性比果糖高70%。我以往不想牽扯至此，是怕不用心的讀者得出“高果糖玉米糖漿比較健康=》高果糖玉米糖漿是健康食品”這樣的腦殘邏輯鏈，畢竟蔗糖和純果糖都很毒，只不過前者稍稍更毒一些。<br><br>至於你所引用的兩篇學術論文，登在《Nature》的那一篇根本就沒有提人工甜味劑，從頭到尾討論的就是蔗糖的危害，我不知道你爲什麽把它列在這裏（或許是那個“科普作者”故意魚目混珠，把著名期刊的論文拿來當幌子，反正他的目標讀者也不會去深究），不過剛好可以和另一篇論文來做對照：還記得幾年前博客就强調過，可信的統計研究結果顯示，依照論文結果的可複製性（不可複製當然就不是正確的科學結論），學術期刊可分爲三級：《自然》和《科學》這兩個頂級期刊的可複製性大約2/3，其他正經期刊大約1/9，中國式的收費發表期刊則必然為0（參考我在《金融史觀（二）當前局勢》留言欄57樓的回復）；刊載這篇論文的《Diabetes &amp; Metabolism》，Impact Factor很低，勉强算是第二類期刊，而且可以一眼看出論文本身必然屬於錯誤的那8/9，原因是他們把所有的人工甜味劑混爲一談，然而人工甜味劑有很多種，分子類別五花八門，毒性即便有也必然天差地別，不一種一種地分開類專門鑽研，本身就是非常不科學的態度。我在討論青蒿素的時候就已經解釋過，生醫實驗統計噪音特多，必須找出特定分子，並且搞清作用機制，才能下結論。這些作者反其道而行，顯然是有意要利用統計噪音來讓論文順利發表，這先天就不是專注於求真的心態，所以可以簡單推論屬於胡扯類的8/9。<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/131394982.html">2025-08-28 03:55 修改</a></div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2025-08-05 17:45:00 +0800</pubDate>
-<guid isPermaLink="false">d3cd857d8d02fa3a5029f8b2c23aaef9</guid>
-<link>https://wmyblog.site/html/131394982.html#d3cd857d8d02fa3a5029f8b2c23aaef9</link>
 </item>
 <item>
 
@@ -77,16 +87,6 @@
 <pubDate>2025-08-16 19:16:00 +0800</pubDate>
 <guid isPermaLink="false">f0512bddbe247391630112dfababa389</guid>
 <link>https://wmyblog.site/html/181687848.html#f0512bddbe247391630112dfababa389</link>
-</item>
-<item>
-
-
-<title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | Niets]]></title>
-<description><![CDATA[关于具身智能<br><br>要实现能洗衣烧饭的家用具身智能难度还是很大的（参见Moravec's paradox）。<br><br>自动驾驶（自驾）可以看作是家用具身智能的precursor：若L5自驾都不能规模化实现，家庭环境下的具身智能就更难了。原因有四：1）自驾的感知模态（视觉，可能还有听觉）容易获得。家用机器人还需要触觉甚至是嗅觉（做菜），这类感知数据相比视/听更难采集和模拟； 2）自驾的动作空间（action space）比人形机器人少了几十个自由度。最近机器人的自我平衡（self-balancing）能力通过强化学习（RL）已经有很大进步，但机器手的manipulation还是很难；3）现在具身智能依赖的vision-lauguage-action架构泛化能力还不够。拿Waymo来说，虽然已经在几个城市有收入了，但开辟新城市还是要重新收集数据训练模型，没法用已有的模型直接上路，而且时不时需要人工干预。且城市路况算是半结构化的（semi-structured），而每家每户的室内环境则各有不同，是更严重的肥尾（fat-tailed）问题；4）人与机器人的交互问题（human-robot interaction）还是挺复杂的。自驾还好，车内/外只需要很少的交互，但家用环境下几乎不可能做到idiot-proof。<br><br>撇开技术层面，真正实用化的机器人也未必比钟点工便宜，政策方面还有就业率的考量。反倒是封闭的园区和厂房里能提供相对结构化的环境和数字孪生。虽然现在用途有限（例如管线巡检），但也不失为一个起点。<br><br> <br><br>----<br><br>是的，家用其實是最難的，反而是工業和商業環境下，因爲維護能力强、監督成本低，會是普及的先鋒。至於最終能有多廣，機器人比AI還要不成熟，我們先看看本世代AI的極限何在，再做推論不遲。<br><div class="TIME">2025-08-27 23:25 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2025-07-29 17:36:00 +0800</pubDate>
-<guid isPermaLink="false">62bde93a2b79d8fc2d880970771cc900</guid>
-<link>https://wmyblog.site/html/180084896.html#62bde93a2b79d8fc2d880970771cc900</link>
 </item>
 <item>
 
