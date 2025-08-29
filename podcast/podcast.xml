@@ -5,8 +5,8 @@
 		<title>王孟源访谈</title>
 		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
 		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
-		<pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
-		<lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
+		<pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
 		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
@@ -203,7 +203,7 @@
 			<guid isPermaLink="false"><![CDATA[220530[八方论谈]]]></guid>
 			<link><![CDATA[https://wmyblog.site/html/220530[八方论谈].html]]></link>
 			<description><![CDATA[《对谈王孟源》]]></description>
-			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nppH1h90fpqsWo-O3nGY9OcMY-69.mp3" />
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nufFWygslYQGZTrH4mMX447X1CLk.mp3" />
 		</item>	
 		<item>
 			<title>《「德法义」若调停败，「五大城」将难逃战火！》</title>
@@ -556,5 +556,13 @@
 			<link><![CDATA[https://wmyblog.site/html/250718[龙行天下].html]]></link>
 			<description><![CDATA[《川普戰略轉向！台灣軍力迷航》]]></description>
 			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nmbuLFRxYgR34QOpN6CjMqsuEkti.mp3" />
+		</item>	
+		<item>
+			<title>《為中國科研抓蛀蟲》</title>
+			<pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[250829[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/250829[龙行天下].html]]></link>
+			<description><![CDATA[《為中國科研抓蛀蟲》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nkKYaVyZ2G-sdoaH-7e9CCgOVc-b.mp3" />
 		</item>	
         </channel></rss>
