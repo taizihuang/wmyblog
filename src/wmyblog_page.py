@@ -154,7 +154,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
     os.environ['TZ'] = "Asia/Shanghai"
     if sys.platform == 'linux':
         time.tzset()
-    refresh_date = datetime.datetime.now().strftime("%Y/%m/%d %H:%M")
+    refresh_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
     article_file = f"{data_dir}/article_full.pkl" 
     comment_file = f"{data_dir}/comment_full.pkl" 
@@ -165,6 +165,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
     df_latest = df_merge.sort_values(by="latest_reply_date", ascending=False).iloc[:60]
 
     reply_li = []
+    rss_reply_li = []
     for idx in df_latest.index:
         comment = df_latest.loc[idx, "comment"]
         if len(comment) == 0:
@@ -175,6 +176,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
             comment = comment.replace('<br><br><br>','<br>')
             nickname = df_latest.loc[idx, "nickname"].replace('\u3000',' ')
             comment_date = df_latest.loc[idx, "comment_date"]
+            rss_comment_date = comment_date.strftime("%Y-%m-%dT%H:%M:%S+0800")
             uuid = comment2md(comment)
             art_id = df_latest.loc[idx, "id"]
             source = df_article.loc[df_article["id"] == art_id, "title"].iloc[0] 
@@ -198,6 +200,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
                     else:
                         reply += f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html">{reply_date} 修改</a></div>'
             reply_li.append((source, art_id, uuid, comment, reply, nickname, comment_date, striked))
+            rss_reply_li.append((source, art_id, uuid, comment, reply, nickname, rss_comment_date, striked))
     latest_template_file = f"{template_dir}/wmyblog_latest.html" 
     LATEST = Template(filename=latest_template_file)
     html = LATEST.render(title="最新回复", date=refresh_date, reply_li=reply_li)
@@ -206,7 +209,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
     
     rss_template_file = f"{template_dir}/wmyblog_rss.html" 
     RSS = Template(filename=rss_template_file)
-    html = RSS.render(date=refresh_date, reply_li=reply_li)
+    html = RSS.render(date=refresh_date, reply_li=rss_reply_li)
     html = html.replace('&lt;br&gt;','<br>').replace('&lt;','<').replace('&gt;','>')
     with open(f"{out_dir}/../rss.xml", "w", encoding="utf8") as f:
         f.write(html)
