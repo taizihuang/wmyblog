@@ -2,12 +2,12 @@
 
 name: daily update
 
-#on:
-#  # Triggers the workflow on push or pull request events but only for the main branch
-#  push:
-#    branches: [ main ]
-#  schedule:
-#    - cron: '0 */6 * * *'
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *'
 
 jobs:
   build:
