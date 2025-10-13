@@ -9,7 +9,7 @@ data_dir = "./data"
 img_dir = "./html/img"
 template_dir = "./src/templates"
 
-updateTag(data_dir)
+#updateTag(data_dir)
 update_data(data_dir, img_dir)
 gen_index_page(data_dir, template_dir, out_dir=".")
 gen_all_page(data_dir, template_dir, out_dir="./html")
