@@ -5,8 +5,8 @@
 		<title>王孟源访谈</title>
 		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
 		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
-		<pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-		<lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+		<pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
 		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
@@ -572,5 +572,13 @@
 			<link><![CDATA[https://wmyblog.site/html/250919[龙行天下].html]]></link>
 			<description><![CDATA[《中國軍力暴風式成長的背後》]]></description>
 			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nl_MxUVvMAACgI5chPmbKfnDzAI5.mp3" />
+		</item>	
+		<item>
+			<title>《中美對抗失控：稀土、人民幣、穩定幣》</title>
+			<pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[251017[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/251017[龙行天下].html]]></link>
+			<description><![CDATA[《中美對抗失控：稀土、人民幣、穩定幣》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nkmtyXDGOt9bfd4Jl10_QhX97aJv.mp3" />
 		</item>	
         </channel></rss>
