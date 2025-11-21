@@ -5,21 +5,22 @@ from mako.template import Template
 from downloader import Downloader
 
 def extract_script(doc):
-    string_left = 'DOCS_modelChunk = [{'
-    string_right = '},{"'
+    string_left = '"chunk":[{'
+    string_right = '},{'
+    len_left = len(string_left)-2
     text = ''
     while string_left in doc:
         loc1 = doc.index(string_left)
         loc2 = doc[loc1:].index(string_right)
-        doc_dict = json.loads(doc[loc1+18:loc1+loc2] + '}]')
+        doc_dict = json.loads(doc[loc1+len_left:loc1+loc2] + '}]')
         loc_idx = 0
         if 's' not in doc_dict[0]:
             loc3 = doc[loc1+loc2+2:].index(string_right)
-            doc_dict = json.loads(doc[loc1+18:loc1+loc2+2+loc3] + '}]')
+            doc_dict = json.loads(doc[loc1+len_left:loc1+loc2+2+loc3] + '}]')
             loc_idx = 1
             if 's' not in doc_dict[1]:
                 loc4 = doc[loc1+loc2+2+loc3+2:].index(string_right)
-                doc_dict = json.loads(doc[loc1+18:loc1+loc2+loc3+2+loc4+2] + '}]')
+                doc_dict = json.loads(doc[loc1+len_left:loc1+loc2+loc3+2+loc4+2] + '}]')
                 loc_idx = 2
         text += doc_dict[loc_idx]['s']
         doc = doc[loc1+loc2+2:]
