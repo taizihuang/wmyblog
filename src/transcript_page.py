@@ -2,7 +2,6 @@ import json, re
 import pandas as pd
 from bs4 import BeautifulSoup
 from mako.template import Template
-from downloader import Downloader
 
 def extract_script(doc):
     string_left = '"chunk":[{'
