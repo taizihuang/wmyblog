@@ -23,5 +23,5 @@ def download_transcript(info_file, out_file, latest_num=5):
 if __name__ == "__main__":
     info_file = "../data/transcript_info.json"
     out_file = "../data/transcript_data.pkl"
-    latest_num = 7 
+    latest_num = -1 
     download_transcript(info_file, out_file, latest_num)
