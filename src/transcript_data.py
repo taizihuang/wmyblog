@@ -15,6 +15,7 @@ def download_transcript(info_file, out_file, latest_num=5):
         key_list = list(fileId_dict.keys())[-latest_num:] 
 
     url_list = []
+    key_list = ["230519[龙行天下]", "250919[龙行天下]"]
     for key in key_list:
         id = fileId_dict[key]["id"]
         url_list.append(f'https://docs.google.com/document/d/{id}/edit')
