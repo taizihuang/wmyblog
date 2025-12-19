@@ -21,7 +21,8 @@ def extract_script(doc):
                 loc4 = doc[loc1+loc2+2+loc3+2:].index(string_right)
                 doc_dict = json.loads(doc[loc1+len_left:loc1+loc2+loc3+2+loc4+2] + '}]')
                 loc_idx = 2
-        text += doc_dict[loc_idx]['s']
+        if 's' in doc_dict[loc_idx]:
+            text += doc_dict[loc_idx]['s']
         doc = doc[loc1+loc2+2:]
     return text
 

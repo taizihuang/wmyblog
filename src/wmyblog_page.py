@@ -268,9 +268,16 @@ def gen_search_data(data_dir, out_dir):
         doc = df_transcript.loc[df_transcript["url"] == url, "response"].iloc[0].decode("utf8")
         content = extract_script(doc)
         art_date = f"20{key[:2]}-{key[2:4]}-{key[4:6]}"
-        transcript_list.append({"key": key,
-                                "title": title,
-                                "content": content})
+        for chapter in content.split("<h2>"):
+            if "</h2>" in chapter:
+                title, content = chapter.split("</h2>")
+            else:
+                content = chapter
+            if title != "片花":
+                transcript_list.append({"key": key,
+                                    "title": title,
+                                    "date": art_date,
+                                    "content": content})
     
     article_dict = {"article": article_list}
     comment_dict = {"comment": comment_list}

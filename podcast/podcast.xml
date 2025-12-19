@@ -5,8 +5,8 @@
 		<title>王孟源访谈</title>
 		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
 		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
-		<pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
-		<lastBuildDate>Fri, 21 Nov 2025 00:00:00 +0000</lastBuildDate>
+		<pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
 		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
@@ -588,5 +588,13 @@
 			<link><![CDATA[https://wmyblog.site/html/251121[龙行天下].html]]></link>
 			<description><![CDATA[《烏克蘭的結局真慘！》]]></description>
 			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nnkqPndjPb33U5Ana--XIrKP0hr9.mp3" />
+		</item>	
+		<item>
+			<title>《國際經貿大鬥爭！中國贏得第一戰！》</title>
+			<pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[251219[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/251219[龙行天下].html]]></link>
+			<description><![CDATA[《國際經貿大鬥爭！中國贏得第一戰！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nggUhMp1WubJ7b4iTOlb3esJqpx8.mp3" />
 		</item>	
         </channel></rss>

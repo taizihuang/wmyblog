@@ -87,6 +87,7 @@ function searchArticle() {
                     var data_title = data.title.toLowerCase();
                     var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
                     var data_url = data.url;
+                    var data_date = data.date;
                     var isMatch = true;
                     var first_occur = -1;
                     keywords.forEach(function(keyword, i) {
@@ -109,6 +110,7 @@ function searchArticle() {
                         if (isMatch) {
                             post_str += "<li class='article-result-item'><a href='../html/" + data_url + ".html' target='_blank' class='search-result-title'>";
                             post_str += post_count + ". " + data_title + "</a>";
+                            post_str += "<div class='TIME'>" + data_date + "</div></div>";
                             var content = data.content.trim().replace(/<[^>]+>/g, "");
                             if (first_occur >= 0) {
                                 var start = first_occur - 100;
@@ -166,6 +168,7 @@ function searchTranscript() {
                     return {
                         key: item.key,
                         title: item.title,
+                        date: item.date,
                         content: item.content,
                     }
                 })
@@ -175,9 +178,9 @@ function searchTranscript() {
             
                 scriptData.forEach(function(data) {
                     var data_title = data.title;
-                    console.log(data.key);
                     var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                    var data_url = "../html/"+ data.key + ".html";
+                    var data_url = "../html/"+ data.key + ".html#" + data.title;
+                    var data_date = data.date;
                     var isMatch = true;
                     var first_occurence = -1;
                     keywords.forEach(function(keyword, i) {
@@ -200,6 +203,7 @@ function searchTranscript() {
                         if (isMatch) {
                             script_str += '<li class="article-result-item"><a href="' + data_url 
                             script_str += '" target="_blank" class="search-result-title">' + script_count + ". " + data_title + "</a>";
+                            script_str += "<div class='TIME'>" + data_date + "</div></div>";
                             var content = data.content.trim().replace(/<[^>]+>/g, "");
                             if (first_occurence >= 0) {
                                 var start = first_occurence - 100;
@@ -223,7 +227,7 @@ function searchTranscript() {
                     }
             });
         $script.html(script_str);
-        $script_count.html('<a href="#transcript_li">搜索到 ' + script_count + " 篇访谈</a>");
+        $script_count.html('<a href="#transcript_li">搜索到 ' + script_count + " 篇访谈章节</a>");
         } else {
             $script.html("");
             $script_count.html("");
