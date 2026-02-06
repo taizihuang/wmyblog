@@ -40,6 +40,8 @@ def gen_annotation(df):
                 elif reply[-2] == '體':
                     loc4 = strFind(reply,'<p>')
                     reply = reply[:loc4[-1]]              
+                reply = reply.replace("</div>\n</div>", "")
+                print(reply)
                 df_anno = pd.concat([df_anno,pd.DataFrame(data={'comment':comment,  
                                                                 'reply':reply,
                                                                 'nickname':comment,
