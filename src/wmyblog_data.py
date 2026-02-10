@@ -231,6 +231,8 @@ def update_data(data_dir, img_dir):
     id_list += list(df_comment["id"].iloc[:10])
     id_list = list(set(id_list))
 
+    id_list += ['156668277', '171633910']
+
     url_list = [articleURL(art_id) for art_id in id_list]
     article_tmp = Downloader(url_list=url_list, nCache=2, headers=headers, outFilename="article_tmp.pkl").run(njob=1)
 
