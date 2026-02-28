@@ -238,7 +238,12 @@ def gen_search_data(data_dir, out_dir):
         title = title_dict[id]
         nickname = df_comment_tag.loc[idx, "nickname"]
         comment = df_comment_tag.loc[idx, "comment"]
-        comment_date = df_comment_tag.loc[idx, "comment_date"].strftime("%Y-%m-%d %H:%M:%S")
+        #comment_date = df_comment_tag.loc[idx, "comment_date"].strftime("%Y-%m-%d %H:%M:%S")
+        comment_date = df_comment_tag.loc[idx, "comment_date"]
+        if comment_date is pd.NaT:
+            comment_date = "NaT"
+        else:
+            comment_date = comment_date.strftime("%Y-%m-%d %H:%M:%S")
         reply = df_comment_tag.loc[idx, "reply"]
         tag = df_comment_tag.loc[idx, "tag"].replace('。','/').replace('、','/')
         md5 = df_comment_tag.loc[idx, "md5"]
