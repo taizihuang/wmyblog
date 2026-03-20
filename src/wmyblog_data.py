@@ -228,7 +228,9 @@ def update_data(data_dir, img_dir):
     content = requests.get(url, headers=headers).content
     doc = BeautifulSoup(content, features="lxml")
     id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
-    id_list += list(df_comment["id"].iloc[:10])
+
+
+    id_list += list(df_comment.loc[(df_comment["reply"] == "") & (~df_comment["comment"].str.contains("<strike>")), "id"].iloc[:10])
     id_list = list(set(id_list))
 
     #id_list += ['156668277', '171633910']
