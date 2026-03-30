@@ -21,7 +21,7 @@ def gen_annotation(df):
         if loc1 != []:
             ss = s[loc1[0]:].split('<p>【')
             for i in ss:
-                loc2 = strFind(i[:7],'，')
+                loc2 = strFind(i[:7],'，')+strFind(i[:7], "；")
                 loc3 = strFind(i,'】')[0]
                 if loc2 == []:
                     comment = i[:loc3]
