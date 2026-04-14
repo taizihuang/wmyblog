@@ -1,5 +1,7 @@
-import json
+import json, os
 from downloader import Downloader
+
+proxy_url = os.environ["PROXY"]
 
 def download_transcript(info_file, out_file, latest_num=5):
     """
@@ -18,7 +20,7 @@ def download_transcript(info_file, out_file, latest_num=5):
     for key in key_list:
         id = fileId_dict[key]["id"]
         url_list.append(f'https://docs.google.com/document/d/{id}/edit')
-    Downloader(url_list, nCache=2, override=True, outFilename=out_file).run()
+    Downloader(url_list, nCache=2, override=True, proxy=proxy_url, outFilename=out_file).run()
 
 if __name__ == "__main__":
     info_file = "../data/transcript_info.json"

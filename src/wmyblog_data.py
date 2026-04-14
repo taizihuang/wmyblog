@@ -3,6 +3,12 @@ import pandas as pd
 from downloader import Downloader
 from bs4 import BeautifulSoup
 
+proxy_url = os.environ["PROXY"]
+proxies = {
+    "http": proxy_url,
+    "https": proxy_url
+}
+
 def pageURL(pno):
     return f"https://blog.udn.com/blog/article/article_list_head_ajax.jsp?uid=MengyuanWang&pno={pno}"
 
@@ -71,7 +77,7 @@ def page2article(doc, art_id, img_dir):
             img_file = f"{img_dir}/{imgID}"
             img_url = f"./img/{imgID}"
             if not os.path.exists(img_file):
-                img = requests.get(url).content
+                img = requests.get(url, proxies=proxies).content
                 with open(img_file, "wb") as f:
                     f.write(img)
             i.attrs['src'] = img_url 
@@ -127,7 +133,7 @@ def page2article_classic(doc, art_id, img_dir):
             img_url = f"./img/{imgID}"
             img_file = f"{img_dir}/{imgID}"
             if not os.path.exists(img_file):
-                img = requests.get(url).content
+                img = requests.get(url, proxies=proxies).content
                 with open(img_file, "wb") as f:
                     f.write(img)
             i.attrs['src'] = img_url 
@@ -195,6 +201,7 @@ def update_data(data_dir, img_dir):
     df_comment = pd.read_pickle(comment_file)
 
 
+
     headers = {
                "pragma": "no-cache",
                "cache-control": "no-cache",
@@ -218,14 +225,14 @@ def update_data(data_dir, img_dir):
 
     id_list = []
     url = "https://blog.udn.com/MengyuanWang/article"
-    content = requests.get(url, headers=headers).content
+    content = requests.get(url, headers=headers, proxies=proxies).content
     doc = BeautifulSoup(content, features="lxml")
     for d in doc.findAll(class_='article_topic'):
         id_list.append(d('a')[0]['href'].split('/')[-1])
     id_list = id_list[:10]
 
     url = f'https://classic-blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep'
-    content = requests.get(url, headers=headers).content
+    content = requests.get(url, headers=headers, proxies=proxies).content
     doc = BeautifulSoup(content, features="lxml")
     id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
 
@@ -236,7 +243,7 @@ def update_data(data_dir, img_dir):
     #id_list += ['156668277', '171633910']
 
     url_list = [articleURL(art_id) for art_id in id_list]
-    article_tmp = Downloader(url_list=url_list, nCache=2, headers=headers, outFilename="article_tmp.pkl").run(njob=1)
+    article_tmp = Downloader(url_list=url_list, nCache=2, headers=headers, proxy=proxy_url, outFilename="article_tmp.pkl").run(njob=1)
 
     article_list = []
     comment_list = []
