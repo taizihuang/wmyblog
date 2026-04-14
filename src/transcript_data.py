@@ -1,7 +1,7 @@
 import json, os
 from downloader import Downloader
 
-proxy_url = os.environ["PROXY"]
+proxy_url = os.environ["HOME_PROXY"]
 
 def download_transcript(info_file, out_file, latest_num=5):
     """
