@@ -3,7 +3,8 @@ import pandas as pd
 from downloader import Downloader
 from bs4 import BeautifulSoup
 
-proxy_url = os.environ["HOME_PROXY"]
+# proxy_url = os.environ["HOME_PROXY"]
+proxy_url = ""
 proxies = {
     "http": proxy_url,
     "https": proxy_url
