@@ -2,6 +2,7 @@ import re, datetime, hashlib, sys, os, time, json
 import pandas as pd
 from mako.template import Template
 from transcript_page import extract_script
+from article_merger import ArticleMerger
 
 def gen_annotation(df):
     def strFind(s,t):
@@ -69,17 +70,18 @@ def gen_index_page(data_dir, template_dir, out_dir):
         f.write(html)
     print(f"{out_dir}/index.html saved!")
 
-def gen_single_page(art_id, df_article, df_comment_tag, article_template_file, out_dir):
+def gen_single_page(art_id, df_article, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir):
     idx = df_article.loc[df_article["id"] == art_id].index[0]
     title = df_article.loc[idx, "title"]
     art_date = df_article.loc[idx, "art_date"]
-    post = df_article.loc[idx, "post"]
+
+    # post = df_article.loc[idx, "post"]
+    merger = ArticleMerger(data_dir, ct_dir)
+    post = merger.merge_article(art_id)
 
     reply_li = []
     df_comment_id = df_comment_tag.loc[df_comment_tag["id"] == art_id]
-    df_comment_id = df_comment_id.sort_values(by=["comment_date",
-                                                  "nickname",
-                                                  "comment"])
+    df_comment_id = df_comment_id.sort_values(by=["comment_date", "nickname", "comment"])
     df_comment_id = df_comment_id.drop_duplicates(subset=["comment"], keep="first")
     for idx in df_comment_id.index:
         comment = df_comment_id.loc[idx, "comment"]
@@ -145,11 +147,11 @@ def get_df(data_dir):
 
     return df_article, df_comment_tag
 
-def gen_all_page(data_dir, template_dir, out_dir):
+def gen_all_page(data_dir, ct_dir, template_dir, out_dir):
     article_template_file = f"{template_dir}/wmyblog_page.html"
     df_article, df_comment_tag = get_df(data_dir)
     for art_id in df_article["id"]:
-        gen_single_page(art_id, df_article, df_comment_tag, article_template_file, out_dir)
+        gen_single_page(art_id, df_article, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir)
 
 def gen_latest_page(data_dir, template_dir, out_dir):
     os.environ['TZ'] = "Asia/Shanghai"
@@ -216,7 +218,7 @@ def gen_latest_page(data_dir, template_dir, out_dir):
         f.write(html)
     print(f"{out_dir}/../rss.xml saved!")
 
-def gen_search_data(data_dir, out_dir):
+def gen_search_data(data_dir, ct_dir, out_dir):
     df_article, df_comment_tag = get_df(data_dir)
     article_list = []
     title_dict = {}
@@ -224,7 +226,9 @@ def gen_search_data(data_dir, out_dir):
         id = df_article.loc[idx, "id"]
         title = df_article.loc[idx, "title"]
         art_date = df_article.loc[idx, "art_date"].strftime("%Y-%m-%d %H:%M:%S")
-        post = df_article.loc[idx, "post"]
+        # post = df_article.loc[idx, "post"]
+        merger = ArticleMerger(data_dir, ct_dir)
+        post = merger.merge_article(id)
         article_list.append({"id": id,
                              "title": title,
                              "date": art_date,
@@ -298,9 +302,10 @@ def gen_search_data(data_dir, out_dir):
 
 if __name__ == "__main__":
     data_dir = "../data"
+    ct_dir = "../data/ct_article"
     template_dir = "./templates"
 
     gen_index_page(data_dir, template_dir, out_dir="..")
-    gen_all_page(data_dir, template_dir, out_dir="../html")
+    gen_all_page(data_dir, ct_dir, template_dir, out_dir="../html")
     gen_latest_page(data_dir, template_dir, out_dir = "../html")
-    gen_search_data(data_dir, out_dir="../search")
+    gen_search_data(data_dir, ct_dir, out_dir="../search")

@@ -88,7 +88,6 @@ def page2article(doc, art_id, img_dir):
                                     "art_date": art_date,
                                     "post": str(post)
                                     },index=[0])
-
     return [df_article]
 
 def page2article_classic(doc, art_id, img_dir):
@@ -201,8 +200,6 @@ def update_data(data_dir, img_dir):
     df_article = pd.read_pickle(article_file)
     df_comment = pd.read_pickle(comment_file)
 
-
-
     headers = {
                "pragma": "no-cache",
                "cache-control": "no-cache",
@@ -236,7 +233,6 @@ def update_data(data_dir, img_dir):
     content = requests.get(url, headers=headers, proxies=proxies).content
     doc = BeautifulSoup(content, features="lxml")
     id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
-
 
     id_list += list(df_comment.loc[(df_comment["reply"] == "") & (~df_comment["comment"].str.contains("<strike>")), "id"].iloc[:10])
     id_list = list(set(id_list))
