@@ -107,6 +107,12 @@
             "original": "href=\"http://www.nytimes.com/2015/01/18/business/media/cnn-anchor-jim-clancy -leaves-after-tweets.html\"",
             "correction": "href=\"http://www.nytimes.com/2015/01/18/business/media/cnn-anchor-jim-clancy-leaves-after-tweets.html?_r=0\""
         }
+    ],
+    "128676701": [
+        {
+            "original": "【原後註】正文發表之後",
+            "correction": "【後註一】正文發表之後"
+        }
     ]
 
 }
