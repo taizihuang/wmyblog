@@ -70,14 +70,26 @@ def gen_index_page(data_dir, template_dir, out_dir):
         f.write(html)
     print(f"{out_dir}/index.html saved!")
 
-def gen_single_page(art_id, df_article, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir):
+def gen_single_page(art_id, df_article, note_dict, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir):
     idx = df_article.loc[df_article["id"] == art_id].index[0]
     title = df_article.loc[idx, "title"]
     art_date = df_article.loc[idx, "art_date"]
 
     # post = df_article.loc[idx, "post"]
     merger = ArticleMerger(data_dir, ct_dir)
-    post = merger.merge_article(art_id)
+    post = merger.split_post(art_id)
+    note_list = merger.split_annotation(art_id)
+
+    note_li = []
+    idx = 1
+    for note in note_list:
+        uuid = f"{art_id}_note{idx}"
+        if uuid in note_dict.keys():
+            tags = note_dict[uuid]
+        else:
+            tags = "/empty"
+        note_li.append((uuid, tags, note))
+        idx += 1
 
     reply_li = []
     df_comment_id = df_comment_tag.loc[df_comment_tag["id"] == art_id]
@@ -121,6 +133,7 @@ def gen_single_page(art_id, df_article, df_comment_tag, article_template_file, d
                                                    date=art_date,
                                                    art_id=art_id,
                                                    post=post,
+                                                   note_li=note_li,
                                                    reply_li=reply_li)
     with open(f"{out_dir}/{art_id}.html", "w", encoding="utf8") as f:
         f.write(html)
@@ -137,6 +150,10 @@ def get_df(data_dir):
     df_comment = pd.read_pickle(comment_file)
     df_tag = pd.read_pickle(tag_file)
 
+    df_tag_note = df_tag.loc[df_tag["md5"].str.contains("_note")].copy()
+    df_tag_note = df_tag_note.drop_duplicates(subset="md5", keep="first")
+    note_dict = df_tag_note.set_index("md5").to_dict(orient="dict")["tag"]
+
     time_range = [datetime.datetime(2023,11,24,11,0,0),
                   datetime.datetime(2023,11,25,2,0,0)] 
     df_comment = df_comment.loc[~((df_comment['first_reply_date'] >= time_range[0])
@@ -145,13 +162,13 @@ def get_df(data_dir):
     df_comment_tag = pd.merge(df_comment, df_tag, on='md5', how='left')
     df_comment_tag.loc[df_comment_tag.tag.isna(),'tag'] = 'empty/'
 
-    return df_article, df_comment_tag
+    return df_article, note_dict, df_comment_tag
 
 def gen_all_page(data_dir, ct_dir, template_dir, out_dir):
     article_template_file = f"{template_dir}/wmyblog_page.html"
-    df_article, df_comment_tag = get_df(data_dir)
+    df_article, note_dict, df_comment_tag = get_df(data_dir)
     for art_id in df_article["id"]:
-        gen_single_page(art_id, df_article, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir)
+        gen_single_page(art_id, df_article, note_dict, df_comment_tag, article_template_file, data_dir, ct_dir, out_dir)
 
 def gen_latest_page(data_dir, template_dir, out_dir):
     os.environ['TZ'] = "Asia/Shanghai"
@@ -219,8 +236,9 @@ def gen_latest_page(data_dir, template_dir, out_dir):
     print(f"{out_dir}/../rss.xml saved!")
 
 def gen_search_data(data_dir, ct_dir, out_dir):
-    df_article, df_comment_tag = get_df(data_dir)
+    df_article, note_dict, df_comment_tag = get_df(data_dir)
     article_list = []
+    note_list = []
     title_dict = {}
     for idx in df_article.index:
         id = df_article.loc[idx, "id"]
@@ -228,12 +246,24 @@ def gen_search_data(data_dir, ct_dir, out_dir):
         art_date = df_article.loc[idx, "art_date"].strftime("%Y-%m-%d %H:%M:%S")
         # post = df_article.loc[idx, "post"]
         merger = ArticleMerger(data_dir, ct_dir)
-        post = merger.merge_article(id)
+
+        post = merger.split_post(id)
         article_list.append({"id": id,
                              "title": title,
                              "date": art_date,
                              "post":post})
         title_dict[id] = title
+
+        annotation_list = merger.split_annotation(id)
+        idx = 1
+        for note in annotation_list:
+            uuid = f"{id}_note{idx}"
+            if uuid in note_dict.keys():
+                tags = note_dict[uuid]
+            else:
+                tags = "/empty"
+            note_list.append({"id": id, "md5": uuid, "title": title, "tag": tags, "note": note})
+            idx += 1
     
     df_comment_tag = df_comment_tag.drop_duplicates(subset=['comment'], keep='first')
     comment_list = []
@@ -290,10 +320,13 @@ def gen_search_data(data_dir, ct_dir, out_dir):
                                     "content": content})
     
     article_dict = {"article": article_list}
+    annotation_dict = {"annotation": note_list}
     comment_dict = {"comment": comment_list}
     transcript_dict = {"transcript": transcript_list}
     with open(f"{out_dir}/article.json", "w") as f:
         f.write(json.dumps(article_dict, indent=4, ensure_ascii=False))
+    with open(f"{out_dir}/annotation.json", "w") as f:
+        f.write(json.dumps(annotation_dict, indent=4, ensure_ascii=False))
     with open(f"{out_dir}/comment.json", "w") as f:
         f.write(json.dumps(comment_dict, ensure_ascii=False))
     with open(f"{out_dir}/transcript.json", "w") as f:

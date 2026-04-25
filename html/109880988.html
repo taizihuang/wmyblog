@@ -14,6 +14,7 @@
     <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/109880988">https://blog.udn.com/MengyuanWang/109880988</a></h4>
     <br><br>
     <div class="POST">
+    
 <p class="MsoNormal">一方面我不是做Computer專業的，另一方面這種消費者類的話題與這個博客的主旨（亦即幫助臺灣的知識分子認清世界大局）無關，所以我一直都避免討論Computer的技術細節。其實我從高一開始就對Personal Computing很有興趣，自買了Apple II以後，每隔幾年都要換新機。大學的時候還當了清華PC社的社長，花了不少時間來寫6502和8088的Assembly。成年後才覺得寫程式是一種必須鑽牛角尖的技藝，和我追求的大局觀有抵觸，於是就放棄了這個嗜好，只有在有需要的時候才會去用。</p>
 <p class="MsoNormal">近日爆出來的CPU Bug，卻是歷史性地嚴重，值得我破例寫專文報導。這最早是The Register（這是一個著名的科技新聞網站，我還在金融界時，因爲必須管理IT人員，曾經有十幾年每日追讀）在2018年一月2日披露（參見<a href="https://www.theregister.co.uk/2018/01/02/intel_cpu_design_flaw/">https://www.theregister.co.uk/2018/01/02/intel_cpu_design_flaw/</a> ），原本該作者以爲只有Intel的CPU才有問題，後來（參見最新文章<a href="https://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/">https://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/</a> ）額外的細節逐漸浮現，目前已知Intel、AMD和ARM（ARM的CPU核被用在現今幾乎所有的手機上）的產品基本都不能幸免，但是還是以Intel CPU的問題最糟糕。這是因爲Bug的來源是Intel在1995年的Pentium Pro領先推出的一個加速方法，叫做Speculative Execution；它的功能包括讓CPU在執行下一個指令之前，就先把那個指令會需要的資料從記憶體提出來，放在近處（也就是CPU自己的短暫記憶體，叫做Cache）；如此一來，CPU的執行單元就不必停下來等資料。</p>
 <p class="MsoNormal">但是Intel的CPU自從80年代的80386之後，就有了另一個更遠為重要的功能，叫做Protected Mode。基本上它給予每個程序（Process，不是Program，程式；一個程式可以有好幾個程序）一個固定的記憶範圍，然後由CPU負責保證程序只能讀寫自己的資料。Protected Mode不但禁止一個程序侵犯其他程序，避免引起當機，而且是現代Computer Security的基石，否則在隨便一個網頁都可以啓動程式語言（最常見的是JavaScript）的背景下，它們就可以去搜索用戶在其他應用軟件打入的資料，包括密碼等等。</p>
@@ -22,9 +23,10 @@
 <p class="MsoNormal">Meltdown是最嚴重的，因爲作業系統的機密最多；但是解決起來卻容易些。這是因爲Intel的指令集對記憶體的定址是分頁（Page）的，如果作業系統把自己放在應用軟件看不到的頁上，就可以避免Meltdown（但是這會導致整個Computer變慢，所以以前沒有作業系統會故意這麽做）。Mac OS已經改了，Windows和Android應該在本月也會推出改版。</p>
 <p class="MsoNormal">Spectre就麻煩得多，因爲記憶體是有限的，而同時在運行的應用軟件卻成百上千，不可能完全分頁。更可怕的是像瀏覽器這樣的程式一次可以開很多網頁，只要有一個惡性網頁啓動JavaScript，其他網頁上的密碼一般都算是同一個程序的資料，不能用分頁法來保護。所以Spectre的細節一公開，我馬上啓動了Chrome（這是我常用的瀏覽器）的“Site Isolation”功能（參見<a href="https://support.google.com/chrome/answer/7623121?hl=en">https://support.google.com/chrome/answer/7623121?hl=en</a> ）。這個選項强迫Chrome把每一個網頁都當作獨立的程序來處理。如此一來，Chrome會占用更多的記憶體，並且可能會妨礙打印，但是至少會給惡意軟件製造一些困難。</p>
 <p class="MsoNormal">The Register其實應該等到作業系統的改版都出來才報導這個問題，但是話說回來，再怎麽等，Spectre也是沒有完全解的。就算Intel現在就把所有現有的產品都改好了，也不可能很快替換掉過去20多年賣出去的CPU。Intel的CEO，Brian Krzanich顯然也瞭解這一點；他在十一月急急忙忙地把手裏的50萬股Intel股票以低於市場價賣掉一半（Intel的契約規定CEO必須至少持有25萬股）。他說賣股票的決定和Meltdown/Spectre無關，讀者你們覺得呢？</p>
-</div>
-    <div class="REPLY_LI">
+
+    </div>
     <h2>4 条留言</h2>
+    <div class="REPLY_LI">
     <div class="LI">
     <div class="USER"><span class="NAME" id=75e60ee090552c3df9f299b14fd3c2fa>大陆读者</span>
     <div class="TIME">2018-01-05 01:32</div></div>

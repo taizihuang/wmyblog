@@ -164,7 +164,7 @@ class ArticleMerger:
 
         flag = 0
         for p in old_p:
-            if p.text[:3] in ["【後註", "==="]:
+            if p.text[:3] in ["【後註"]: #, "==="]:
                 annotation_list.append(str(p))
                 flag = 1
                 break
@@ -174,25 +174,29 @@ class ArticleMerger:
 
         while p.next_sibling is not None:
             p = p.next_sibling
-            if p.text[:3] in ["【後註", "==="]:
+            if p.text[:3] in ["【後註"]: #, "==="]:
                 annotation_list.append(str(p))
             else:
                 annotation_list[-1] += str(p)
         
         if len(new_p) > len(old_p):
             for p in new_p[len(old_p):]:
-                if p.text[:3] in ["【後註", "==="]:
+                if p.text[:3] in ["【後註"]: #, "==="]:
                     annotation_list.append(str(p))
                     break
         
             while p.next_sibling is not None:
                 p = p.next_sibling
-                if p.text[:3] in ["【後註", "==="]:
+                if p.text[:3] in ["【後註"]: #, "==="]:
                     annotation_list.append(str(p))
                 else:
                     annotation_list[-1] += str(p)
 
-        return annotation_list
+        note_list = []
+        for annotation in annotation_list:
+            note = re.sub(r"<span style=.*?>(.*?)<\/span>", r"\1", annotation)
+            note_list.append(note)
+        return note_list
     
     def udn_split_annotation(self, art_id):
         self.load_post(art_id)
@@ -204,7 +208,7 @@ class ArticleMerger:
 
         flag = 0
         for p in new_p:
-            if p.text[:3] in ["【後註", "==="]:
+            if p.text[:3] in ["【後註"]: #, "==="]:
                 annotation_list.append(str(p))
                 flag = 1
                 break
@@ -214,12 +218,16 @@ class ArticleMerger:
 
         while p.next_sibling is not None:
             p = p.next_sibling
-            if p.text[:3] in ["【後註", "==="]:
+            if p.text[:3] in ["【後註"]: #, "==="]:
                 annotation_list.append(str(p))
             else:
                 annotation_list[-1] += str(p)
 
-        return annotation_list
+        note_list = []
+        for annotation in annotation_list:
+            note = re.sub(r"<span style=.*?>(.*?)<\/span>", r"\1", annotation)
+            note_list.append(note)
+        return note_list
     
     def split_annotation(self, art_id):
         if art_id in self.ct_id_list:
@@ -259,7 +267,7 @@ class ArticleMerger:
             content += str(p)
             while p.nextSibling is not None:
                 p = p.nextSibling
-                if p.text[:3] not in ["【後註", "==="]:
+                if p.text[:3] not in ["【後註"]: #, "==="]:
                     content += str(p)
                 else:
                     break

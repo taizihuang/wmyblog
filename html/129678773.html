@@ -14,6 +14,7 @@
     <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/129678773">https://blog.udn.com/MengyuanWang/129678773</a></h4>
     <br><br>
     <div class="POST">
+    
 <p>前天有讀者在訪客簿（順便提一下，請大家盡可能在文章下的留言欄做討論，只有在《UDN》的系統出問題，無法正常留言的前提下，才選擇訪客簿）上提問，說Google剛宣稱的“量子霸權”（“Quantum Supremacy”）是怎麽一回事？當時我説：“要嘛是謠言，要嘛是一個毫無實際意義的程序，專爲創紀錄而創紀錄。”</p>
 <p>現在有了更清楚的消息（參見Scott Aaronson的博客<a href="https://www.scottaaronson.com/blog/?p=4317" style="font-family:simsun;font-size:12pt">https://www.scottaaronson.com/blog/?p=4317</a>；Aaronson是知名的量子計算專家，並且參與了Google的這個研究計劃），我可以給出更精確的答案，也就是上述兩個可能中的後者。這是一個毫無實際意義的結果，而且有相當嚴重的假大空成分。</p>
 <p>首先，我們先解釋一下什麽是“量子霸權”；它指的是量子計算機在某個程序上能比現有的古典電腦高效許多。請注意，這個定義並不要求那個程序有任何實際意義或價值，所以我一開始就疑心Google團隊鑽的是這個漏洞。</p>
@@ -25,14 +26,27 @@
 <p>所以Google團隊就先用古典電腦算出他們計劃中的量子糾纏應該會產生的相關性，接著反復地用量子計算機跑這個程序，一直到它產生同樣的相關性結果爲止。這時他們比較兩者跑單次程序所花的時間，然後宣稱量子計算機大獲全勝。</p>
 <p>至此，理工科的讀者應該理解到問題有多大。首先，相關性關係裏的自由度（Degrees of Freedom）遠低於原系統，所以只用相關性結果來驗證程序的正確性，完全可能是統計上的偶然。</p>
 <p>但是更基本的毛病，在於Google的量子計算機並無法自行保證結果是正確的，只有在古典電腦已經給出結果之後，才能做比較。一個有相當大而且不可預知的可能性會輸出噪音的計算機，不止是沒有實用價值，根本就沒有任何意義。這是標準的假大空，不是學術界可以容許的做法。Google是一個商業機構，做虛僞廣告是本行，但是量子計算界不應該受商業資金的收買，學術道德也不能待價而沽。</p>
-<p>【後註一】因爲Aaronson的博文對若干細節語焉不詳，我必須依照科學原理來做推測，現在有更新的文章，似乎是有一點差異，亦即Google的系統比我想象的還要簡單，連“複製”的那一步都做不到，而只是反復地隨機產生量子位元，然而塌縮。這對接下來的評論並沒有影響，Google仍然是先射箭、再畫靶，而且也沒有糾錯機制，如果沒有古典電腦的驗證，就不知道結果是否正確。</p>
-<p>【後註二】有讀者用私信問我有關最近《Nature》上面批評中國在西部乾旱地區植樹的一篇論文。我的想法和這裏的正文有點關係，所以也節錄於下。</p>
+
+    <div class="LI">
+    <div class="USER" id=129678773_note1>
+    <span class="tag"><input type="search" value=/empty data-md5=129678773_note1 onkeydown="enter(event,$(this))"></span>
+    <p>【後註一】因爲Aaronson的博文對若干細節語焉不詳，我必須依照科學原理來做推測，現在有更新的文章，似乎是有一點差異，亦即Google的系統比我想象的還要簡單，連“複製”的那一步都做不到，而只是反復地隨機產生量子位元，然而塌縮。這對接下來的評論並沒有影響，Google仍然是先射箭、再畫靶，而且也沒有糾錯機制，如果沒有古典電腦的驗證，就不知道結果是否正確。</p>
+
+    </div>
+    </div>
+    <div class="LI">
+    <div class="USER" id=129678773_note2>
+    <span class="tag"><input type="search" value=/empty data-md5=129678773_note2 onkeydown="enter(event,$(this))"></span>
+    <p>【後註二】有讀者用私信問我有關最近《Nature》上面批評中國在西部乾旱地區植樹的一篇論文。我的想法和這裏的正文有點關係，所以也節錄於下。</p>
 <p>我覺得一般的中國群衆，因爲受傳統文化和社會結構的影響，對學術界有非理性的崇拜。事實上，現代學術界雖然整體來説還是有不斷的重要貢獻，但是其中欺世盜名的假大空已經佔了大多數，所以固然不須要拿任何個別論文來當真，即使是中位平均（Median）也可以鄙視的。這是因爲不能被複製的科學論文，就是假的，而假科學不但沒有任何正面價值，反而對人類社會能有重大的負面影響。</p>
 <p>我以前已經提過，現代學術界正處在一個所謂的“可複製性危機”（Reproducibility Crisis），過去十年有很多研究，給出驚人的可複製比率（如11%，也就是大約1/9）。在2018年出版的一個新報告（參見<a href="https://www.sciencemag.org/news/2018/08/generous-approach-replication-confirms-many-high-profile-social-science-findings">https://www.sciencemag.org/news/2018/08/generous-approach-replication-confirms-many-high-profile-social-science-findings</a>）專注在最頂尖的兩個科學期刊（亦即《Nature》和《Science》，這篇論文本身發表在《Nature》）上，結果是只有62%可以複製，而且即使在這62%裏，信號强度也顯著低於原本號稱的程度。</p>
 <p>以上這些研究的對象，只限於實驗性的論文，所以至少還有幾分之幾的可複製性可談。如果我們考慮如高能物理理論這樣在過去40多年總進展為零的領域，就會明白他們在期間所發表的百多萬篇論文幾乎全都是假大空，那麽自然更加沒有什麽崇敬的必要。</p>
-</div>
-    <div class="REPLY_LI">
+
+    </div>
+    </div>
+    </div>
     <h2>7 条留言</h2>
+    <div class="REPLY_LI">
     <div class="LI">
     <div class="USER"><span class="NAME" id=480520dc00870e3870de853ed6831867>leo369258</span>
     <div class="TIME">2019-09-25 10:18</div></div>

@@ -13,9 +13,19 @@
     <p class="DATE">${date}</p>
     <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/${art_id}">https://blog.udn.com/MengyuanWang/${art_id}</a></h4>
     <br><br>
-    <div class="POST">${post}</div>
-    <div class="REPLY_LI">
+    <div class="POST">
+    ${post}
+    %for uuid, tags, note  in note_li:
+    <div class="LI">
+    <div class="USER" id=${uuid}>
+    <span class="tag"><input type="search" value=${tags} data-md5=${uuid} onkeydown="enter(event,$(this))"></span>
+    ${note}
+    </div>
+    </div>
+    %endfor
+    </div>
     <h2>${len(reply_li)} 条留言</h2>
+    <div class="REPLY_LI">
     %for uuid, say, reply, user, time, tag_list, striked in reply_li:
     <div class="LI">
     <div class="USER"><span class="NAME" id=${uuid}>${user}</span>

@@ -14,10 +14,11 @@
     <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/130416352">https://blog.udn.com/MengyuanWang/130416352</a></h4>
     <br><br>
     <div class="POST">
+    
 <p>上周應《觀察者網》的邀請，針對Google在十月23日正式發表的“量子霸權”論文寫了一篇評論。我基本上是基於上月寫的《Google的量子霸權是怎麽回事》一文，加入了新公開的技術細節，重新修飾整理，所以這篇新文章並不是後續或補充，而是早先文章的增訂版。</p>
 <p>《觀察者網》最近稿子多，所以一直到今天（十月28日）才刊出，參見<a href="http://www.guancha.cn/wangmengyuan/2019_10_29_523101.shtml">http://www.guancha.cn/wangmengyuan/2019_10_29_523101.shtml</a>。</p>
 <p>================================================================</p>
-<p>上個月，NASA大意提前泄露了Google的量子霸權論文，因爲違反了Google公關部門的計劃，所以很快就撤下。其後，Google遵循典型的商業炒作方案，始終三緘其口，一直到2019年十月23日，論文正式在《Nature》發表（參見<span style="font-size:12pt;line-height:115%;font-family:calibri ,"><a href="https://www.nature.com/articles/s41586-019-1666-5">https://www.nature.com/articles/s41586-019-1666-5</a></span>），伴隨著各式各樣的公關吹噓，鋪天蓋地而來。</p>
+<p>上個月，NASA大意提前泄露了Google的量子霸權論文，因爲違反了Google公關部門的計劃，所以很快就撤下。其後，Google遵循典型的商業炒作方案，始終三緘其口，一直到2019年十月23日，論文正式在《Nature》發表（參見<a href="https://www.nature.com/articles/s41586-019-1666-5">https://www.nature.com/articles/s41586-019-1666-5</a>），伴隨著各式各樣的公關吹噓，鋪天蓋地而來。</p>
 <p>有趣的是，與其同時，IBM在官方博客公然唱反調，發表了一篇自己的論文稿，宣稱已經證明Google並沒有達到量子霸權。那麽到底誰是誰非呢？</p>
 <p>首先，我們先回顧一下什麽是“量子霸權”；它指的是量子計算機在某個有實用價值的程序上能比現有的古典電腦高效許多。請注意，一般人往往忘記這個定義中要求有實用價值的那部分，所以我一開始就疑心Google團隊鑽的是這個漏洞，而且已經寫過一篇文章來推測其中的奧秘（參見前文《Google的量子霸權是怎麽回事？》）。現在因爲有了更詳細的消息，我可以更精確地解釋Google的這篇論文，希望讓理工科出身的讀者都能理解。</p>
 <p>下面是Google所用的Sycamore（梧桐；名字純屬巧合，不要亂做聯想）量子處理器的示意圖；其中灰色的叉叉是個別量子位元，藍色的長方塊是耦合器，共有88個，它們負責將兩個相鄰的位元轉化為糾纏態。原本應該有54個量子位元，但是其中一個失效無法修復（白色叉叉），所以整個實驗只能用上53個位元；有效的耦合器也因而減少了兩個，剩下86個。</p>
@@ -36,13 +37,32 @@
 <p>這裏最基本的毛病，在於Google的量子計算機並無法自行保證結果是正確的，事實上我們知道它不可能是絕對正確的，頂多只能是近似正確。相對的，古典電腦給出的結果卻是絕對精確可靠的。這時硬要比較兩者所費的時間，顯然不是公平的。</p>
 <p><img src="./img/f_25165529_1.jpg"/></p>
 <p>其實要有丁點實用價值的量子計算，至少也必須達到上圖（来自孙昌璞院士等作者的论文）的藍色區域。目前量子計算被吹捧並獲得各國政府極度重視的真正原因，是能夠破解通信上的公開碼，那麽就必須達到上圖中的紅色區域。Google的量子計算機雖然算是先進，但距離實用目標還有至少九個數量級之遙；現在就宣稱勝利，純屬忽悠大衆的商業宣傳。</p>
-<p>【後註一】Google量子計算機團隊負責硬件的主管John Martinis上周忽然宣佈離職，昨天（2020年四月30日）《Forbes》登出對他的采訪（參見<a href="https://www.forbes.com/sites/moorinsights/2020/04/30/googles-top-quantum-scientist-explains-in-detail-why-he-resigned/#6afdfb986983"><span style="color:blue">《Googles top quantum scientist explains in detail why he resigned》</span></a>），内容是標準的八股，不過有一個有趣的細節，可能解釋這位Martinis教授真正被排斥的原因：他説他堅決要求整個團隊投入量子霸權項目，受到多數研究人員的反對。嗯...Google量子計算機的團隊成員反對搞這個項目，我不知道是否與它是假大空有關...</p>
-<p>【後註二，2021/09/29】對量子計算行業内的專家來説，Google和中國研究團隊過去幾年的所謂“量子霸權”突破，都很明顯是忽悠大衆的胡扯，這是因爲這些公關稿完全忽略Error Correction（亦即正文裏所談的糾錯機制），所以先天就不可能實用化。行内人用來安撫自己良心的“真實進展”，其實來自2018年在《Nature》發表的一篇論文（參見<a href="https://www.nature.com/articles/nature26142"><span style="color:blue">《Quantized Majorana conductance》</span></a>；請注意名列前茅的中國籍作者，當年也曾經在中文媒體上大肆吹噓過，雖然當時我心中立刻嚴重存疑，但沒有實證，所以也就不予置評）。簡單來説，他們宣稱創造了虛擬的Majorana粒子，這些粒子可以抗拒外來的擾動，從而規避量子態容易塌縮的問題，從根本解決對糾錯機制的依賴。</p>
-<p>沒有多久，遠遠比我更熟悉這些技術細節的實驗物理學家就出面質疑這個結果，雙方爭論到今年三月，原作者團隊全軍覆沒，承認扭曲了統計分析，但仍堅持不是故意造假，而是“無意間”過濾掉部分不想要的數據，導致假陽性結果（“無意間的錯誤分析”，似乎是專門感染中國科學界的流行性疾病，我在此再一次强烈建議中國政府高層對病源做溯源研究）。不論如何，這篇論文已經撤稿；其折衝細節，《Quantum》剛剛發表了一篇檢討回顧（參見<a href="https://www.quantamagazine.org/major-quantum-computing-strategy-suffers-serious-setbacks-20210929"><span style="color:blue">《Major Quantum Computing Strategy Suffers Serious Setbacks》</span></a>），有興趣的讀者可以參考。當然，這代表著量子計算那整個行業又回歸100%忽悠的純量子態；拜中國的學術管理體制所賜，這個量子態倒是能夠抗拒塌縮、也無從糾錯的。</p>
-<p>【後註三，2022/08/02】2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見<a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all"><span style="color:blue">《Ordinary computers can beat Google’s quantum computer after all》</span></a>）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。</p>
-</div>
-    <div class="REPLY_LI">
+
+    <div class="LI">
+    <div class="USER" id=130416352_note1>
+    <span class="tag"><input type="search" value=/empty data-md5=130416352_note1 onkeydown="enter(event,$(this))"></span>
+    <p>【後註一】Google量子計算機團隊負責硬件的主管John Martinis上周忽然宣佈離職，昨天（2020年四月30日）《Forbes》登出對他的采訪（參見<a href="https://www.forbes.com/sites/moorinsights/2020/04/30/googles-top-quantum-scientist-explains-in-detail-why-he-resigned/#6afdfb986983">《Googles top quantum scientist explains in detail why he resigned》</a>），内容是標準的八股，不過有一個有趣的細節，可能解釋這位Martinis教授真正被排斥的原因：他説他堅決要求整個團隊投入量子霸權項目，受到多數研究人員的反對。嗯...Google量子計算機的團隊成員反對搞這個項目，我不知道是否與它是假大空有關...</p>
+
+    </div>
+    </div>
+    <div class="LI">
+    <div class="USER" id=130416352_note2>
+    <span class="tag"><input type="search" value=20210929 data-md5=130416352_note2 onkeydown="enter(event,$(this))"></span>
+    <p>【後註二，2021/09/29】對量子計算行業内的專家來説，Google和中國研究團隊過去幾年的所謂“量子霸權”突破，都很明顯是忽悠大衆的胡扯，這是因爲這些公關稿完全忽略Error Correction（亦即正文裏所談的糾錯機制），所以先天就不可能實用化。行内人用來安撫自己良心的“真實進展”，其實來自2018年在《Nature》發表的一篇論文（參見<a href="https://www.nature.com/articles/nature26142">《Quantized Majorana conductance》</a>；請注意名列前茅的中國籍作者，當年也曾經在中文媒體上大肆吹噓過，雖然當時我心中立刻嚴重存疑，但沒有實證，所以也就不予置評）。簡單來説，他們宣稱創造了虛擬的Majorana粒子，這些粒子可以抗拒外來的擾動，從而規避量子態容易塌縮的問題，從根本解決對糾錯機制的依賴。</p>
+<p>沒有多久，遠遠比我更熟悉這些技術細節的實驗物理學家就出面質疑這個結果，雙方爭論到今年三月，原作者團隊全軍覆沒，承認扭曲了統計分析，但仍堅持不是故意造假，而是“無意間”過濾掉部分不想要的數據，導致假陽性結果（“無意間的錯誤分析”，似乎是專門感染中國科學界的流行性疾病，我在此再一次强烈建議中國政府高層對病源做溯源研究）。不論如何，這篇論文已經撤稿；其折衝細節，《Quantum》剛剛發表了一篇檢討回顧（參見<a href="https://www.quantamagazine.org/major-quantum-computing-strategy-suffers-serious-setbacks-20210929">《Major Quantum Computing Strategy Suffers Serious Setbacks》</a>），有興趣的讀者可以參考。當然，這代表著量子計算那整個行業又回歸100%忽悠的純量子態；拜中國的學術管理體制所賜，這個量子態倒是能夠抗拒塌縮、也無從糾錯的。</p>
+
+    </div>
+    </div>
+    <div class="LI">
+    <div class="USER" id=130416352_note3>
+    <span class="tag"><input type="search" value=20220802 data-md5=130416352_note3 onkeydown="enter(event,$(this))"></span>
+    <p>【後註三，2022/08/02】2019年Google大肆吹噓量子霸權的時候，我立刻指出這是雙重謊言：一方面精選無實際意義、但特別適合自己機器自然運行的“題目”，另一方面特意大幅低估傳統電腦複製同一結果的效率；現在《Science》引用《Physics Review Letters》上的新論文（參見<a href="https://www.science.org/content/article/ordinary-computers-can-beat-google-s-quantum-computer-after-all">《Ordinary computers can beat Google’s quantum computer after all》</a>）證實我的推論。我想提醒大家，之所以要等三年，正是因爲那個程序毫無實用價值，所以以往全世界從來沒有任何專業人員關心過，直到Google利用這個漏洞來做虛假宣傳才有人開始研究與之對應的傳統電腦算法。</p>
+
+    </div>
+    </div>
+    </div>
     <h2>9 条留言</h2>
+    <div class="REPLY_LI">
     <div class="LI">
     <div class="USER"><span class="NAME" id=edba1bd1c9a634cbeb80536e7016693f>4a3c6572</span>
     <div class="TIME">2019-11-01 09:50</div></div>
