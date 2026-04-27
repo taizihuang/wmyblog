@@ -41,7 +41,7 @@ def add_timestamp(content):
         content = content.replace(timestamp, f'<a onclick="seek({ts})">{author} {t}</a>')
     return content
 
-def save_script(name, url, audio_url, doc, template_dir, out_dir):
+def save_script(name, url, script_dict, audio_url, doc, template_dir, out_dir):
     title = name[12:]
     art_date = f"20{name[:2]}-{name[2:4]}-{name[4:6]}" 
     text = extract_script(doc)
@@ -57,7 +57,19 @@ def save_script(name, url, audio_url, doc, template_dir, out_dir):
     h2_list = []
     for h2 in docs.findAll("h2"):
         h2_list.append(h2.text)
+        h2_uuid = f"{name[:12]}_{h2.text}".replace(" ", "")
+        if h2_uuid in script_dict.keys():
+            h2_tag = script_dict[h2_uuid]
+        else:
+            h2_tag = "empty/"
         h2.string = f"""<h2 id="{h2.text}" onclick="scrollPage('toc')">{h2.text}</h2>"""
+        tag_html = f"""
+        <div class="LI">
+        <div class="USER" id={h2_uuid}
+        <span class="tag"><input type="search" value={h2_tag} data-md5={h2_uuid} onkeydown="enter(event,$(this))"></span>
+        </div></div>
+        """
+        h2.insert_after(tag_html)
     
     toc_list = [f"""<div><a onclick="scrollPage('{h2}')">{h2}</a></div>""" for h2 in h2_list]
     docs.find(id="toc").string = "".join(toc_list)
@@ -67,18 +79,23 @@ def save_script(name, url, audio_url, doc, template_dir, out_dir):
 
     filename = name[:12]
     out_file = f'{out_dir}/{filename}.html' 
+
     with open(out_file,'w',encoding='utf8') as f:
         f.write(html_str)
     print(f'{out_file} saved!')
 
     return h2_list
 
-def gen_script_page(info_file, audio_file, transcript_file, template_dir, out_dir):
+def gen_script_page(info_file, tag_file, audio_file, transcript_file, template_dir, out_dir):
     with open(info_file, "r") as f:
         fileId_dict = json.loads(f.read())
     with open(audio_file, "r") as f:
         audio_dict = json.loads(f.read())
     df_transcript = pd.read_pickle(transcript_file)
+    df_tag = pd.read_pickle(tag_file)
+    df_tag_script = df_tag.loc[df_tag["md5"].str.contains(r"\[")].copy()
+    df_tag_script = df_tag_script.drop_duplicates(subset="md5", keep="first")
+    script_dict = df_tag_script.set_index("md5").to_dict(orient="dict")["tag"]
 
     art_li = []
     for key in fileId_dict.keys():
@@ -87,7 +104,8 @@ def gen_script_page(info_file, audio_file, transcript_file, template_dir, out_di
         url = f'https://docs.google.com/document/d/{id}/edit'
         audio_url = audio_dict[key]
         doc = df_transcript.loc[df_transcript["url"] == url, "response"].iloc[0].decode("utf8")
-        h2_list = save_script(name, url, audio_url, doc, template_dir, out_dir)
+        h2_list = save_script(name, url, script_dict, audio_url, doc, template_dir, out_dir)
+        
         art_date = f"20{key[:2]}-{key[2:4]}-{key[4:6]}" 
         art_li.append((key, name[6:], art_date, h2_list))
     
@@ -100,7 +118,8 @@ def gen_script_page(info_file, audio_file, transcript_file, template_dir, out_di
 if __name__ == "__main__":
     info_file = "../data/transcript_info.json"
     audio_file = "../data/podcast_url.json"
+    tag_file = "../data/tag.pkl"
     transcript_file = "../data/transcript_data.pkl"
     template_dir = "./templates"
     out_dir = "../html"
-    gen_script_page(info_file, audio_file, transcript_file, template_dir, out_dir)
+    gen_script_page(info_file, tag_file, audio_file, transcript_file, template_dir, out_dir)
