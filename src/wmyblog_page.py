@@ -265,6 +265,10 @@ def gen_search_data(data_dir, ct_dir, out_dir):
     note_list = []
     title_dict = {}
 
+    note_date_file = f"{data_dir}/annotation_date.json" 
+    with open(note_date_file, "r") as f:
+        note_date_dict = json.loads(f.read())
+
     for idx in df_article.index:
         id = df_article.loc[idx, "id"]
         title = df_article.loc[idx, "title"]
@@ -297,7 +301,16 @@ def gen_search_data(data_dir, ct_dir, out_dir):
                 tags = note_dict[uuid]
             else:
                 tags = "/empty"
-            note_list.append({"id": id, "md5": uuid, "title": title, "tag": tags, "note": note})
+            if uuid in note_date_dict.keys():
+                note_date = note_date_dict[uuid]
+            else:
+                note_date = "2000-01-01"
+            note_list.append({"id": id,
+                              "md5": uuid,
+                              "title": title,
+                              "date": note_date,
+                              "tag": tags,
+                              "note": note})
             idx += 1
     
     df_comment_tag = df_comment_tag.drop_duplicates(subset=['comment'], keep='first')

@@ -76,6 +76,35 @@ function formatLabel() {
     }
 }
 
+function formatInfo() {
+    var $post_count = $('.post_count');
+    var $note_count = $('.annotation_count');
+    var $script_count = $('.transcript_count');
+    var $comment_count = $('.comment_count');
+    var $post = $('.POST_LI')
+    var $note = $('.ANNOTATION_LI')
+    var $script = $('.TRANSCRIPT_LI')
+    var $comment = $('.COMMENT_LI')
+    $post_count.html("");
+    $note_count.html("");
+    $script_count.html("");
+    $comment_count.html("");
+    $post.html("");
+    $note.html("");
+    $script.html("");
+    $comment.html("");
+}
+
+function formatCount() {
+    for (var key in count_dict) {
+        var value = count_dict[key]
+        var tag_label = $('label#'+key+'-label');
+        if (value > 0){
+            tag_label.text(key+"["+String(value)+"]");
+        }
+    }
+}
+
 function switchCat(id) {
     cat_dict[id] = Math.abs(cat_dict[id]-1)
     formatLabel();
@@ -94,20 +123,23 @@ function enter_search(e) {
 
 function search() {
     count_dict = {};
+
+    formatInfo();
     formatLabel();
 
     if (cat_dict["正文"] > 0) {
         searchArticle();
     }
-    // if (cat_dict["后注"] > 0) {
-    //     searchAnnotation();
-    // }
-    // if (cat_dict["访谈"] > 0) {
-    //     searchTranscript();
-    // }
+    if (cat_dict["后注"] > 0) {
+        searchAnnotation();
+    }
+    if (cat_dict["访谈"] > 0) {
+        searchTranscript();
+    }
     if (cat_dict["问答"] > 0) {
         searchComment();
     }
+
 }
 
 function tagCount(el) {
@@ -131,295 +163,6 @@ function searchURL() {
         $('label#offline-label')[0].style.backgroundColor = color_off;
     }
 }
-
-// function searchArticle() {
-//     var $input = $('#search-input')
-//     var $post = $('.POST_LI')
-//     var $post_count = $('.post_count')
-
-//     $.ajax({
-//         url: search_dir + "/article.json",
-//         method: 'GET',
-//         dataType: 'json',
-//         headers: {
-//             "accept": "application/json",
-//             // "Access-Control-Allow-Origin": "*"
-//         },
-//         beforeSend: function() {
-//             $post_count.html('<div id="load"> 文章 loading... </div>');
-//         },
-//         complete: function() {
-//             $("#load").remove();
-//         },
-//         success: function(jsonResponse) {
-//             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-//             if (tag_list.length == 0) {
-//                 var articleData = jsonData.article.map(function(item) {
-//                     return {
-//                         title: item.title,
-//                         content: item.post,
-//                         url: item.id,
-//                         date: item.date
-//                     };
-//                 });
-//                 var post_count = 0;
-//                 var post_str = '';
-//                 var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            
-//                 articleData.forEach(function(data) {
-//                     var data_title = data.title.toLowerCase();
-//                     var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-//                     var data_url = data.url;
-//                     var data_date = data.date;
-//                     var isMatch = true;
-//                     var first_occur = -1;
-//                     keywords.forEach(function(keyword, i) {
-//                         match_title = data_title.match(keyword);
-//                         match_content = data_content.match(keyword);
-//                         if (match_title == null && match_content == null) {
-//                             isMatch = false;
-//                         } else {
-//                             if (match_content == null) {
-//                                 index_content = 0;
-//                             } else {
-//                                 index_content = match_content.index;
-//                             }
-//                             if (i == 0) {
-//                                 first_occur = index_content;
-//                             }
-//                         }
-//                     })
-//                     if (keywords[0]) {
-//                         if (isMatch) {
-//                             post_str += "<li class='article-result-item'><a href='../html/" + data_url + ".html' target='_blank' class='search-result-title'>";
-//                             post_str += post_count + ". " + data_title + "</a>";
-//                             post_str += "<div class='TIME'>" + data_date + "</div></div>";
-//                             var content = data.content.trim().replace(/<[^>]+>/g, "");
-//                             if (first_occur >= 0) {
-//                                 var start = first_occur - 100;
-//                                 if (start < 0) {
-//                                     start = 0;
-//                                 }
-//                                 var len = content.length - start;
-//                                 if (len > 300) {
-//                                     len = 300;
-//                                 }
-//                                 var match_content = content.substr(start, len);
-//                                 keywords.forEach(function(keyword) {
-//                                     var regS = new RegExp("("+keyword+")", "gi");
-//                                     match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
-//                                 });
-//                                 post_str += "<p class=\"search-result\">" + match_content + "...</p>"
-//                                 post_count += 1;
-//                             }
-//                             post_str += "</li>";
-//                         }
-//                     }
-//                 });
-//                 $post.html(post_str);
-//                 $post_count.html('<a href="#post_li"> 搜索到 ' + post_count + " 篇文章</a>");
-//             } else {
-//                 $post.html("");
-//                 $post_count.html("");
-//             }
-//         }
-//     });
-// }
-
-// function searchAnnotation() {
-//     var $input = $('#search-input')
-//     var $note = $('.ANNOTATION_LI')
-//     var $note_count = $('.annotation_count')
-//     last_tag_dict = {...tag_dict};
-//     tag_dict = {};
-//     $.ajax({
-//         url: search_dir + "/annotation.json",
-//         method: 'GET',
-//         dataType: 'json',
-//         headers: {
-//             "accept": "application/json",
-//             // "Access-Control-Allow-Origin": "*"
-//         },
-//         beforeSend: function() {
-//             $note_count.html('<div id="load"> 后注 loading... </div>');
-//         },
-//         complete: function() {
-//             $("#load").remove();
-//         },
-//         success: function(jsonResponse) {
-//             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-//             if (tag_list.length == 0) {
-//                 var noteData = jsonData.annotation.map(function(item) {
-//                     return {
-//                         id: item.id,
-//                         uuid: item.md5,
-//                         title: item.title,
-//                         tag: item.tag,
-//                         note: item.note,
-//                     }
-//                 })
-//                 var note_count = 0;
-//                 var note_str = '';
-//                 var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            
-//                 noteData.forEach(function(data) {
-//                     var data_title = data.title;
-//                     var data_content = data.note.trim().replace(/<[^>]+>/g, "").toLowerCase();
-//                     var data_url = "../html/"+ data.id + ".html#" + data.uuid;
-//                     var data_tag = data.tag.split("/").join("/");
-//                     var data_date = data.tag;
-//                     var isMatch = true;
-//                     var first_occurence = -1;
-//                     keywords.forEach(function(keyword, i) {
-//                         match_title = data_title.match(keyword);
-//                         match_content = data_content.match(keyword);
-//                         if (match_title == null && match_content == null) {
-//                             isMatch = false;
-//                         } else {
-//                             if (match_content == null) {
-//                                 index_content = 0;
-//                             } else {
-//                                 index_content = match_content.index;
-//                             }
-//                             if (i == 0) {
-//                                 first_occurence = index_content;
-//                             }
-//                         }
-//                     })
-//                     if (tag_list != [] || keywords[0]) {
-//                         if (isMatch) {
-//                             note_str += '<li class="article-result-item"><a href="' + data_url 
-//                             note_str += '" target="_blank" class="search-result-title">' + note_count + ". " + data_title + "</a>";
-//                             note_str += '<div class="LI"><div class="USER" id=' + data.uuid;
-//                             note_str += '><span class="tag"><input type="search" value=' + data_tag;
-//                             note_str += ' data-md5=' + data.uuid;
-//                             note_str += ' onkeydown="enter(event,$(this))"></span>'
-//                             // note_str += "<div class='TIME'>" + data_date + "</div>";
-//                             note_str += "</div></div>";
-//                             var content = data.note.trim().replace(/<[^>]+>/g, "");
-//                             if (first_occurence >= 0) {
-//                                 var start = first_occurence - 100;
-//                                 if (start < 0) {
-//                                     start = 0;
-//                                 }
-//                                 var len = content.length - start;
-//                                 if (len > 300) {
-//                                     len = 300
-//                                 }
-//                                 var match_content = content.substr(start, len);
-//                                 keywords.forEach(function(keyword) {
-//                                     var regS = new RegExp("("+keyword+")", "gi");
-//                                     match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
-//                                 });
-//                                 note_str += '<p class="search-result">' + match_content + "...</p>";
-//                                 note_count += 1;
-//                             }
-//                             note_str += "</li>";
-//                         }
-//                     }
-//             });
-//         $note.html(note_str);
-//         $note_count.html('<a href="#annotation_li">搜索到 ' + note_count + " 条后注</a>");
-//         } else {
-//             $note.html("");
-//             $note_count.html("");
-//         };
-//         }
-//     });
-// }
-
-// function searchTranscript() {
-//     var $input = $('#search-input')
-//     var $script = $('.TRANSCRIPT_LI')
-//     var $script_count = $('.transcript_count')
-//     $.ajax({
-//         url: search_dir + "/transcript.json",
-//         method: 'GET',
-//         dataType: 'json',
-//         headers: {
-//             "accept": "application/json",
-//             // "Access-Control-Allow-Origin": "*"
-//         },
-//         beforeSend: function() {
-//             $script_count.html('<div id="load"> 访谈 loading... </div>');
-//         },
-//         complete: function() {
-//             $("#load").remove();
-//         },
-//         success: function(jsonResponse) {
-//             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-//             if (tag_list.length == 0) {
-//                 var scriptData = jsonData.transcript.map(function(item) {
-//                     return {
-//                         key: item.key,
-//                         title: item.title,
-//                         date: item.date,
-//                         content: item.content,
-//                     }
-//                 })
-//                 var script_count = 0;
-//                 var script_str = '';
-//                 var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            
-//                 scriptData.forEach(function(data) {
-//                     var data_title = data.title;
-//                     var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-//                     var data_url = "../html/"+ data.key + ".html#" + data.title;
-//                     var data_date = data.date;
-//                     var isMatch = true;
-//                     var first_occurence = -1;
-//                     keywords.forEach(function(keyword, i) {
-//                         match_title = data_title.match(keyword);
-//                         match_content = data_content.match(keyword);
-//                         if (match_title == null && match_content == null) {
-//                             isMatch = false;
-//                         } else {
-//                             if (match_content == null) {
-//                                 index_content = 0;
-//                             } else {
-//                                 index_content = match_content.index;
-//                             }
-//                             if (i == 0) {
-//                                 first_occurence = index_content;
-//                             }
-//                         }
-//                     })
-//                     if (keywords[0]) {
-//                         if (isMatch) {
-//                             script_str += '<li class="article-result-item"><a href="' + data_url 
-//                             script_str += '" target="_blank" class="search-result-title">' + script_count + ". " + data_title + "</a>";
-//                             script_str += "<div class='TIME'>" + data_date + "</div></div>";
-//                             var content = data.content.trim().replace(/<[^>]+>/g, "");
-//                             if (first_occurence >= 0) {
-//                                 var start = first_occurence - 100;
-//                                 if (start < 0) {
-//                                     start = 0;
-//                                 }
-//                                 var len = content.length - start;
-//                                 if (len > 300) {
-//                                     len = 300
-//                                 }
-//                                 var match_content = content.substr(start, len);
-//                                 keywords.forEach(function(keyword) {
-//                                     var regS = new RegExp("("+keyword+")", "gi");
-//                                     match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
-//                                 });
-//                                 script_str += '<p class="search-result">' + match_content + "...</p>";
-//                                 script_count += 1;
-//                             }
-//                             script_str += "</li>";
-//                         }
-//                     }
-//             });
-//         $script.html(script_str);
-//         $script_count.html('<a href="#transcript_li">搜索到 ' + script_count + " 篇访谈章节</a>");
-//         } else {
-//             $script.html("");
-//             $script_count.html("");
-//         };
-//         }
-//     });
-// }
 
 function filterTag(item, tag_list) {
     var matched = true;
@@ -449,12 +192,45 @@ function filterKeywordArticle(item, keywords) {
     return matched
 }
 
+function filterKeywordAnnotation(item, keywords) {
+    var title = item.title.trim().toLowerCase();
+    var note = item.note.trim().replace(/<[^>]+>/g, "").toLowerCase();
+    var matched = true;
+
+    keywords.forEach(function(keyword, i) {
+        match_title = title.match(keyword);
+        match_note = note.match(keyword);
+        if (match_title == null 
+            && match_note == null) {
+            matched = false;
+        }
+    });
+    return matched
+}
+
+function filterKeywordTranscript(item, keywords) {
+    var title = item.title.trim().toLowerCase();
+    var script = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+    var matched = true;
+
+    keywords.forEach(function(keyword, i) {
+        match_title = title.match(keyword);
+        match_script = script.match(keyword);
+        if (match_title == null 
+            && match_script == null) {
+            matched = false;
+        }
+    });
+    return matched
+}
+
 function formatKeywordArticle(item, i, keywords) {
     var id = item.id;
     var title = item.title;
     var date = item.date;
     var tag = item.tag;
-    var post = item.post.trim().replace(/<[^>]+>/g, "");
+    var md5 = `${id}_article`;
+    var post = item.post.trim().replace(/<[^>]+>/g, "").toLowerCase();
 
     var post_str = "";
     var match_content = "";
@@ -487,13 +263,113 @@ function formatKeywordArticle(item, i, keywords) {
         });
     }
 
-    post_str += "<li class='article-result-item'>"
+    post_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
     post_str += `<a href='../html/${id}.html' target='_blank' class='search-result-title'>`
     post_str += `${i+1}. ${title}</a>`;
     post_str += `<div class='TIME'>${date}</div></div>`;
+    post_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
     post_str += `<p class="search-result">${match_content}...</p></li>`;
     tag.split('/').forEach(tagCount);
     return post_str
+}
+
+function formatKeywordAnnotation(item, i, keywords) {
+    var id = item.id;
+    var title = item.title;
+    var date = item.date;
+    var tag = item.tag;
+    var md5 = item.md5;
+    var note = item.note.trim().replace(/<[^>]+>/g, "").toLowerCase();
+
+    var note_str = "";
+    var match_content = "";
+
+    var first_occur = -1;
+    keywords.forEach(function(keyword, i) {
+        match_content = note.match(keyword);
+        if (match_content == null) {
+            index_content = 0;
+        } else {
+            index_content = match_content.index;
+        }
+        if (i == 0) {
+            first_occur = index_content;
+        }
+    })
+    if (first_occur >= 0) {
+        var start = first_occur - 100;
+        if (start < 0) {
+            start = 0;
+        }
+        var len = note.length - start;
+        if (len > 300) {
+            len = 300;
+        }
+        match_content = note.substr(start, len);
+        keywords.forEach(function(keyword) {
+            var regS = new RegExp("("+keyword+")", "gi");
+            match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
+        });
+    }
+
+    note_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
+    note_str += `<a href='../html/${id}.html#${md5}' target='_blank' class='search-result-title'>`
+    note_str += `${i+1}. ${title}</a>`;
+    note_str += `<div class='TIME'>${date}</div></div>`;
+    note_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
+    note_str += `<p class="search-result">${match_content}...</p></li>`;
+    tag.split('/').forEach(tagCount);
+    return note_str
+}
+
+function formatKeywordTranscript(item, i, keywords) {
+    var key = item.key;
+    var title = item.title;
+    var date = item.date;
+    var tag = item.tag;
+    var md5 = `${key}_${title}`;
+    md5 = md5.replace(" ", "");
+    var script = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+
+    var script_str = "";
+    var match_content = "";
+
+    var first_occur = -1;
+    keywords.forEach(function(keyword, i) {
+        match_content = script.match(keyword);
+        if (match_content == null) {
+            index_content = 0;
+        } else {
+            index_content = match_content.index;
+        }
+        if (i == 0) {
+            first_occur = index_content;
+        }
+    })
+    if (first_occur >= 0) {
+        var start = first_occur - 100;
+        if (start < 0) {
+            start = 0;
+        }
+        var len = script.length - start;
+        if (len > 300) {
+            len = 300;
+        }
+        match_content = script.substr(start, len);
+        keywords.forEach(function(keyword) {
+            var regS = new RegExp("("+keyword+")", "gi");
+            match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
+        });
+    }
+
+    script_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
+    script_str += `<a href='../html/${key}.html#${title}' target='_blank' class='search-result-title'>`
+    script_str += `${i+1}. ${title}</a>`;
+    script_str += `<div class='TIME'>${date}</div></div>`;
+    script_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
+    script_str += `<p class="search-result">${match_content}...</p></li>`;
+    tag.split('/').forEach(tagCount);
+    return script_str
 }
 
 function searchArticle() {
@@ -540,11 +416,110 @@ function searchArticle() {
             // post_str += "</div></div>";
             $post.html(post_str);
             $post_count.html(`<a href="#post_li">搜索到 ${post_count} 条文章</a>`);
+            formatCount();
         }
     });
 
 }
 
+function searchAnnotation() {
+    var $input = $('#search-input')
+    var $note = $('.ANNOTATION_LI')
+    var $note_count = $('.annotation_count')
+
+    var tag_list = [];
+
+    for (var key in tag_dict) {
+        if (tag_dict[key] == 1) {
+            tag_list.push(key);
+        }
+    }
+
+    $.ajax({
+        url: search_dir + "/annotation.json",
+        method: 'GET',
+        dataType: 'json',
+        headers: {
+            "accept": "application/json",
+            // "Access-Control-Allow-Origin": "*"
+        },
+        beforeSend: function() {
+            $note_count.html('<div id="load"> 后注 loading...</div>');
+        },
+        complete: function() {
+            $("#load").remove();
+        },
+        success: function(jsonResponse) {
+            var jsonData = JSON.parse(JSON.stringify(jsonResponse));
+            var noteData = jsonData.annotation.filter(item => filterTag(item, tag_list));
+            var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
+            noteData = noteData.filter(item => filterKeywordAnnotation(item, keywords));
+
+            var note_str_list = []; 
+
+            if (tag_list != [] || keywords[0]) {
+                note_str_list = noteData.map((item, idx) => formatKeywordAnnotation(item, idx, keywords));
+            }
+            var note_count = note_str_list.length; 
+
+            var note_str = note_str_list.join("");
+            // post_str += "</div></div>";
+            $note.html(note_str);
+            $note_count.html(`<a href="#annotation_li">搜索到 ${note_count} 条后注</a>`);
+            formatCount();
+        }
+    });
+}
+
+function searchTranscript() {
+    var $input = $('#search-input')
+    var $script = $('.TRANSCRIPT_LI')
+    var $script_count = $('.transcript_count')
+
+    var tag_list = [];
+
+    for (var key in tag_dict) {
+        if (tag_dict[key] == 1) {
+            tag_list.push(key);
+        }
+    }
+
+    $.ajax({
+        url: search_dir + "/transcript.json",
+        method: 'GET',
+        dataType: 'json',
+        headers: {
+            "accept": "application/json",
+            // "Access-Control-Allow-Origin": "*"
+        },
+        beforeSend: function() {
+            $script_count.html('<div id="load"> 后注 loading...</div>');
+        },
+        complete: function() {
+            $("#load").remove();
+        },
+        success: function(jsonResponse) {
+            var jsonData = JSON.parse(JSON.stringify(jsonResponse));
+            var scriptData = jsonData.transcript.filter(item => filterTag(item, tag_list));
+            var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
+            scriptData = scriptData.filter(item => filterKeywordTranscript(item, keywords));
+
+            var script_str_list = []; 
+
+            if (tag_list != [] || keywords[0]) {
+                script_str_list = scriptData.map((item, idx) => formatKeywordTranscript(item, idx, keywords));
+            }
+            var script_count = script_str_list.length; 
+
+            var script_str = script_str_list.join("");
+            // post_str += "</div></div>";
+            $script.html(script_str);
+            $script_count.html(`<a href="#transcript_li">搜索到 ${script_count} 条访谈章节</a>`);
+            formatCount();
+        }
+    });
+
+}
 
 function filterKeywordComment(item, keywords) {
     var comment = item.comment.trim().toLowerCase();
@@ -552,6 +527,10 @@ function filterKeywordComment(item, keywords) {
     var nickname= item.nickname.toLowerCase();
     var md5     = item.md5;
     var matched = true;
+
+    if (keywords[0] == "") {
+        matched = false;
+    }
 
     keywords.forEach(function(keyword, i) {
         match_comment = comment.match(keyword);
@@ -643,18 +622,10 @@ function searchComment() {
             reply_str += "</div></div>";
             $comment.html(reply_str);
             $comment_count.html(`<a href="#reply_li">搜索到 ${comment_count} 条问答</a>`);
-
-            for (var key in count_dict) {
-                var value = count_dict[key]
-                var tag_label = $('label#'+key+'-label');
-                if (value > 0){
-                    tag_label.text(key+"["+String(value)+"]");
-                }
-            }
+            formatCount();
         }
     });
 }
-
 
 window.onload = function() {
     formatLabel();
