@@ -15,3 +15,7 @@ input{
   padding-bottom: 10px !important;
   display: inline;
 }
+
+li {
+  list-style-type: none;
+}

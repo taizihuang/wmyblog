@@ -116,8 +116,11 @@
             <input type="checkbox" id="其他地区" onclick="switchTag(this.id)">
         </div>        
         <div clas="search" id="search">
-                <!-- <input type="date" id="startDate" onchange="updateMinDate()">
-                <input type="date" id="endDate"> -->
+            <span>起始日期：</span>
+                <input style="width:100px" type="date" id="startDate" value="2014-07-21" min="2014-07-21" onchange="updateDate();">
+                <br>
+            <span>结束日期：</span>
+                <input style="width:100px" type="date" id="endDate" value="2027-01-01" min="2014-07-21" onchange="updateDate();">
             <div class="input">
                 <input type="text" onkeydown="enter_search(event)" id="search-input">
                 <button type="button" onclick="search()">搜索</button>

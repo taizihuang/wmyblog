@@ -46,14 +46,20 @@ var tag_dict = {
     "其他地区": 0
 }
 var count_dict = {};
-var tag_list = [];
-// var tag_dict = {};
-// var last_tag_dict = {};
+// var tag_list = [];
 
+function updateDate() {
+    start_date = $("#startDate").val();
+    end_date = $("#endDate").val();
+}
+
+var start_date = $("#startDate").val();
+var end_date = $("#endDate").val();
 var is_online = true;
 var search_dir = "https://cdn.jsdmirror.com/gh/taizihuang/wmyblog/search";
 var color_off = 'rgb(169, 182, 231)';
 var color_on = 'rgb(61, 151, 186)';
+
 
 function formatLabel() {
     for (var key in cat_dict) {
@@ -84,7 +90,7 @@ function formatInfo() {
     var $post = $('.POST_LI')
     var $note = $('.ANNOTATION_LI')
     var $script = $('.TRANSCRIPT_LI')
-    var $comment = $('.COMMENT_LI')
+    var $comment = $('.REPLY_LI')
     $post_count.html("");
     $note_count.html("");
     $script_count.html("");
@@ -162,6 +168,19 @@ function searchURL() {
         search_dir = "https://cdn.jsdelivr.net/gh/taizihuang/wmyblog/search"
         $('label#offline-label')[0].style.backgroundColor = color_off;
     }
+}
+
+function filterDate(item, start_date, end_date) {
+    var matched = true;
+    var date = item.date;
+    date = date.substr(0, 10);
+    date = date.replace("/", "-");
+
+    if ((date < start_date) || (date > end_date)) {
+        matched = false
+    }
+    console.log(matched);
+    return matched
 }
 
 function filterTag(item, tag_list) {
@@ -265,7 +284,7 @@ function formatKeywordArticle(item, i, keywords) {
 
     post_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
     post_str += `<a href='../html/${id}.html' target='_blank' class='search-result-title'>`
-    post_str += `${i+1}. ${title}</a>`;
+    post_str += `正文 ${i+1}. ${title}</a>`;
     post_str += `<div class='TIME'>${date}</div></div>`;
     post_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
     post_str += `<p class="search-result">${match_content}...</p></li>`;
@@ -314,7 +333,7 @@ function formatKeywordAnnotation(item, i, keywords) {
 
     note_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
     note_str += `<a href='../html/${id}.html#${md5}' target='_blank' class='search-result-title'>`
-    note_str += `${i+1}. ${title}</a>`;
+    note_str += `后注 ${i+1}. ${title}</a>`;
     note_str += `<div class='TIME'>${date}</div></div>`;
     note_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
     note_str += `<p class="search-result">${match_content}...</p></li>`;
@@ -364,7 +383,7 @@ function formatKeywordTranscript(item, i, keywords) {
 
     script_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
     script_str += `<a href='../html/${key}.html#${title}' target='_blank' class='search-result-title'>`
-    script_str += `${i+1}. ${title}</a>`;
+    script_str += `访谈 ${i+1}. ${title}</a>`;
     script_str += `<div class='TIME'>${date}</div></div>`;
     script_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
     script_str += `<p class="search-result">${match_content}...</p></li>`;
@@ -401,19 +420,15 @@ function searchArticle() {
         },
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var articleData = jsonData.article.filter(item => filterTag(item, tag_list));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
+            var articleData = jsonData.article.filter(item => filterDate(item, start_date, end_date));
+            articleData = articleData.filter(item => filterTag(item, tag_list));
             articleData = articleData.filter(item => filterKeywordArticle(item, keywords));
 
-            var post_str_list = []; 
-
-            if (tag_list != [] || keywords[0]) {
-                post_str_list = articleData.map((item, idx) => formatKeywordArticle(item, idx, keywords));
-            }
+            var post_str_list = articleData.map((item, idx) => formatKeywordArticle(item, idx, keywords));
             var post_count = post_str_list.length; 
-
             var post_str = post_str_list.join("");
-            // post_str += "</div></div>";
+
             $post.html(post_str);
             $post_count.html(`<a href="#post_li">搜索到 ${post_count} 条文章</a>`);
             formatCount();
@@ -451,19 +466,15 @@ function searchAnnotation() {
         },
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var noteData = jsonData.annotation.filter(item => filterTag(item, tag_list));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
+            var noteData = jsonData.annotation.filter(item => filterDate(item, start_date, end_date));
+            noteData = noteData.filter(item => filterTag(item, tag_list));
             noteData = noteData.filter(item => filterKeywordAnnotation(item, keywords));
 
-            var note_str_list = []; 
-
-            if (tag_list != [] || keywords[0]) {
-                note_str_list = noteData.map((item, idx) => formatKeywordAnnotation(item, idx, keywords));
-            }
+            var note_str_list = noteData.map((item, idx) => formatKeywordAnnotation(item, idx, keywords));
             var note_count = note_str_list.length; 
-
             var note_str = note_str_list.join("");
-            // post_str += "</div></div>";
+
             $note.html(note_str);
             $note_count.html(`<a href="#annotation_li">搜索到 ${note_count} 条后注</a>`);
             formatCount();
@@ -500,19 +511,15 @@ function searchTranscript() {
         },
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var scriptData = jsonData.transcript.filter(item => filterTag(item, tag_list));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
+            var scriptData = jsonData.transcript.filter(item => filterDate(item, start_date, end_date));
+            scriptData = scriptData.filter(item => filterTag(item, tag_list));
             scriptData = scriptData.filter(item => filterKeywordTranscript(item, keywords));
 
-            var script_str_list = []; 
-
-            if (tag_list != [] || keywords[0]) {
-                script_str_list = scriptData.map((item, idx) => formatKeywordTranscript(item, idx, keywords));
-            }
+            var script_str_list = scriptData.map((item, idx) => formatKeywordTranscript(item, idx, keywords));
             var script_count = script_str_list.length; 
-
             var script_str = script_str_list.join("");
-            // post_str += "</div></div>";
+
             $script.html(script_str);
             $script_count.html(`<a href="#transcript_li">搜索到 ${script_count} 条访谈章节</a>`);
             formatCount();
@@ -521,14 +528,14 @@ function searchTranscript() {
 
 }
 
-function filterKeywordComment(item, keywords) {
+function filterKeywordComment(item, tag_list, keywords) {
     var comment = item.comment.trim().toLowerCase();
     var reply   = item.reply.trim().toLowerCase();
     var nickname= item.nickname.toLowerCase();
     var md5     = item.md5;
     var matched = true;
 
-    if (keywords[0] == "") {
+    if ((tag_list.length == 0) && (keywords[0] == "") && (end_date == "2027-01-01")) {
         matched = false;
     }
 
@@ -568,7 +575,7 @@ function formatKeywordComment(item, i, keywords) {
     comment = comment.replace('\n','<br><br>');
     reply = reply.replace("\n", '<br><br>');
     reply_str += "<div class='LI'><div class='USER'>";
-    reply_str += `<span class='NAME'>${i+1}. ${title} |`;
+    reply_str += `<span class='NAME'>问答 ${i+1}. ${title} | `;
     reply_str += `<a href='../html/${id}.html#${md5}' target='_blank'>${nickname}</a></span>`;
     reply_str += `<div class='TIME'>${date}</div></div>`;
     reply_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span>`;
@@ -607,19 +614,16 @@ function searchComment() {
         },
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var commentData = jsonData.comment.filter(item => filterTag(item, tag_list));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            commentData = commentData.filter(item => filterKeywordComment(item, keywords));
+            var commentData = jsonData.comment.filter(item => filterDate(item, start_date, end_date));
+            commentData = commentData.filter(item => filterTag(item, tag_list));
+            commentData = commentData.filter(item => filterKeywordComment(item, tag_list, keywords));
 
-            var reply_str_list = []; 
-
-            if (tag_list != [] || keywords[0]) {
-                reply_str_list = commentData.map((item, idx) => formatKeywordComment(item, idx, keywords));
-            }
+            var reply_str_list = commentData.map((item, idx) => formatKeywordComment(item, idx, keywords));
             var comment_count = reply_str_list.length; 
-
             var reply_str = reply_str_list.join("");
             reply_str += "</div></div>";
+
             $comment.html(reply_str);
             $comment_count.html(`<a href="#reply_li">搜索到 ${comment_count} 条问答</a>`);
             formatCount();
