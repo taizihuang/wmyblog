@@ -271,6 +271,7 @@ class ArticleMerger:
                     content += str(p)
                 else:
                     break
+        content = content.replace("戦", "戰")
         content = re.sub(r"<span style=.*?>(.*?)<\/span>", r"\1", content)
         return content
     

@@ -4,55 +4,19 @@ var cat_dict = {
     "访谈": 1,
     "问答": 1,
 };
-var tag_dict = {
-    "问答1000": 0,
-    "prognosis": 0,
-    "prescription": 0,
-    "empty": 0,
-    "基础科研": 0,
-    "应用技术": 0,
-    "学术管理": 0,
-    "工业": 0,
-    "医学": 0,
-    "其他理工": 0,
-    "政治": 0,
-    "外交": 0,
-    "历史": 0,
-    "经济": 0,
-    "宣传": 0,
-    "战略": 0,
-    "金融": 0,
-    "教育": 0,
-    "宗教": 0,
-    "其他社科": 0,
-    "艺术": 0,
-    "文化": 0,
-    "人生态度": 0,
-    "逻辑": 0,
-    "哲学": 0,
-    "军事装备": 0,
-    "军事战术": 0,
-    "其他军事": 0,
-    "中国": 0,
-    "中国香港": 0,
-    "中国台湾": 0,
-    "美国": 0,
-    "俄罗斯": 0,
-    "法国": 0,
-    "英国": 0,
-    "德国": 0,
-    "日本": 0,
-    "乌克兰": 0,
-    "其他地区": 0
+var tag_cat_dict = {
+    "special": ["问答1000", "prognosis", "prescription", "其他", "empty"],
+    "stem1": ["基础科研", "应用技术", "学术管理", "逻辑", "工业", "医学"],
+    "stem2": ["量子技术", "可控核聚变", "能源", "其他理工"],
+    "social1": ["金融", "经济", "战略", "政治", "外交", "宣传"],
+    "social2": ["历史", "教育", "宗教", "其他社科"],
+    "social3": ["哲学", "艺术", "文化", "人生态度"],
+    "military": ["军事战略", "军事装备", "军事战术", "其他军事"],
+    "region1": ["中国", "中国香港", "中国台湾", "美国", "俄罗斯", "欧洲"],
+    "region2": ["法国", "英国", "德国", "日本", "乌克兰", "其他地区"],
 }
+var tag_dict = {};
 var count_dict = {};
-// var tag_list = [];
-
-function updateDate() {
-    start_date = $("#startDate").val();
-    end_date = $("#endDate").val();
-}
-
 var start_date = $("#startDate").val();
 var end_date = $("#endDate").val();
 var is_online = true;
@@ -61,14 +25,38 @@ var color_off = 'rgb(169, 182, 231)';
 var color_on = 'rgb(61, 151, 186)';
 
 
+function updateDate() {
+    start_date = $("#startDate").val();
+    end_date = $("#endDate").val();
+}
+
+function buildTag() {
+    var cat_str = "";
+    for (var key in tag_cat_dict) {
+        cat_str += `<div class="${key}">`;
+        for (var idx in tag_cat_dict[key]) {
+            var tag = tag_cat_dict[key][idx];
+            cat_str += `<label for="${tag}" id="${tag}-label">${tag}</label>`;
+            cat_str += `<input type="checkbox" id="${tag}" onclick="switchTag(this.id)">`;
+            tag_dict[tag] = 0;
+        }
+        cat_str += "</div>";
+    }
+    $(".category").after(cat_str);
+    // $("<div>").appendTo($cat).addClass('tag_list').html(cat_str);
+    // $cat.after(cat_str);
+}
+
 function formatLabel() {
     for (var key in cat_dict) {
         var cat_label = $('label#'+key+'-label');
         cat_label.text(key);
         if (cat_dict[key] == 1) {
             cat_label[0].style.backgroundColor = color_on;
+            cat_label[0].style["margin-bottom"] = "20px";
         } else {
             cat_label[0].style.backgroundColor = color_off;
+            cat_label[0].style["margin-bottom"] = "20px";
         }
     }
     for (var key in tag_dict) {
@@ -76,29 +64,25 @@ function formatLabel() {
         tag_label.text(key);
         if (tag_dict[key] == 1) {
             tag_label[0].style.backgroundColor = color_on;
+            tag_label[0].style["margin-right"] = "10px";
         } else {
             tag_label[0].style.backgroundColor = color_off;
+            tag_label[0].style["margin-right"] = "10px";
         }
     }
 }
 
 function formatInfo() {
-    var $post_count = $('.post_count');
-    var $note_count = $('.annotation_count');
-    var $script_count = $('.transcript_count');
-    var $comment_count = $('.comment_count');
-    var $post = $('.POST_LI')
-    var $note = $('.ANNOTATION_LI')
-    var $script = $('.TRANSCRIPT_LI')
-    var $comment = $('.REPLY_LI')
-    $post_count.html("");
-    $note_count.html("");
-    $script_count.html("");
-    $comment_count.html("");
-    $post.html("");
-    $note.html("");
-    $script.html("");
-    $comment.html("");
+    var class_list = [".post_count",
+                    ".annotation_count",
+                    ".transcript_count",
+                    ".comment_count",
+                    ".POST_LI",
+                    ".ANNOTATION_LI",
+                    ".TRANSCRIPT_LI",
+                    ".REPLY_LI"
+                ]
+    class_list.forEach(function(item){$(item).html("")});
 }
 
 function formatCount() {
@@ -179,7 +163,6 @@ function filterDate(item, start_date, end_date) {
     if ((date < start_date) || (date > end_date)) {
         matched = false
     }
-    console.log(matched);
     return matched
 }
 
@@ -632,5 +615,6 @@ function searchComment() {
 }
 
 window.onload = function() {
+    buildTag();
     formatLabel();
 };
