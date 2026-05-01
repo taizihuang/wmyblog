@@ -5,15 +5,17 @@ var cat_dict = {
     "问答": 1,
 };
 var tag_cat_dict = {
-    "special": ["问答1000", "prognosis", "prescription", "其他", "empty"],
-    "stem1": ["基础科研", "应用技术", "学术管理", "能源", "工业", "生物", "医学"],
-    "stem2": ["量子技术", "核聚变", "高能物理", "其他理工"],
-    "social1": ["金融", "经济", "战略", "政治", "外交", "宣传"],
-    "social2": ["历史", "教育", "宗教", "其他社科"],
-    "social3": ["逻辑", "哲学", "艺术", "文化", "人生态度"],
-    "military": ["军事战略", "军事装备", "军事战术", "其他军事"],
     "region1": ["中国", "中国香港", "中国台湾", "美国", "俄罗斯", "欧洲"],
     "region2": ["法国", "英国", "德国", "日本", "乌克兰", "其他地区"],
+    "special1": ["问答1000", "prognosis", "prescription"],
+    "stem1": ["基础科研", "应用技术", "学术管理"],
+    "stem2": ["能源", "工业", "生物", "医学", "其他理工"],
+    "focus": ["量子技术", "核聚变", "高能物理"],
+    "social1": ["金融", "经济", "政治", "外交", "宣传"],
+    "social2": ["历史", "教育", "宗教", "其他社科"],
+    "social3": ["哲学", "艺术", "文化", "人生态度"],
+    "military": ["军事战略", "军事装备", "军事战术", "其他军事"],
+    "special2": ["战略", "管理", "逻辑", "其他", "empty"],
 }
 var tag_dict = {};
 var count_dict = {};
@@ -51,23 +53,23 @@ function formatLabel() {
     for (var key in cat_dict) {
         var cat_label = $('label#'+key+'-label');
         cat_label.text(key);
+        cat_label[0].style["margin-bottom"] = "20px";
+        cat_label[0].style["text-align"] = "center";
         if (cat_dict[key] == 1) {
             cat_label[0].style.backgroundColor = color_on;
-            cat_label[0].style["margin-bottom"] = "20px";
         } else {
             cat_label[0].style.backgroundColor = color_off;
-            cat_label[0].style["margin-bottom"] = "20px";
         }
     }
     for (var key in tag_dict) {
         var tag_label = $('label#'+key+'-label');
         tag_label.text(key);
+        tag_label[0].style["margin-right"] = "10px";
+        tag_label[0].style["text-align"] = "center";
         if (tag_dict[key] == 1) {
             tag_label[0].style.backgroundColor = color_on;
-            tag_label[0].style["margin-right"] = "10px";
         } else {
             tag_label[0].style.backgroundColor = color_off;
-            tag_label[0].style["margin-right"] = "10px";
         }
     }
 }
