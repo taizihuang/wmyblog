@@ -53,7 +53,7 @@ function formatLabel() {
     for (var key in cat_dict) {
         var cat_label = $('label#'+key+'-label');
         cat_label.text(key);
-        cat_label[0].style["margin-bottom"] = "20px";
+        cat_label[0].style["margin-bottom"] = "10px";
         cat_label[0].style["text-align"] = "center";
         if (cat_dict[key] == 1) {
             cat_label[0].style.backgroundColor = color_on;
@@ -64,6 +64,7 @@ function formatLabel() {
     for (var key in tag_dict) {
         var tag_label = $('label#'+key+'-label');
         tag_label.text(key);
+        tag_label[0].style["margin-top"] = "3px";
         tag_label[0].style["margin-right"] = "10px";
         tag_label[0].style["text-align"] = "center";
         if (tag_dict[key] == 1) {
