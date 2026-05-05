@@ -8,9 +8,9 @@ var tag_cat_dict = {
     "region1": ["中国", "中国香港", "中国台湾", "美国", "俄罗斯", "欧洲"],
     "region2": ["法国", "英国", "德国", "日本", "乌克兰", "其他地区"],
     "special1": ["问答1000", "prognosis", "prescription"],
-    "stem1": ["基础科研", "应用技术", "学术管理"],
-    "stem2": ["能源", "工业", "生物", "医学", "其他理工"],
-    "focus": ["量子技术", "核聚变", "高能物理"],
+    "stem1": ["基础科研", "应用技术", "工业"],
+    "stem2": ["能源", "气候", "生物", "医学", "其他理工"],
+    "focus": ["学术管理", "量子技术", "核聚变", "高能物理"],
     "social1": ["金融", "经济", "政治", "外交", "宣传"],
     "social2": ["历史", "教育", "宗教", "其他社科"],
     "social3": ["哲学", "艺术", "文化", "人生态度"],
@@ -268,12 +268,12 @@ function formatKeywordArticle(item, i, keywords) {
         });
     }
 
-    post_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
+    post_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
     post_str += `<a href='../html/${id}.html' target='_blank' class='search-result-title'>`
     post_str += `正文 ${i+1}. ${title}</a>`;
     post_str += `<div class='TIME'>${date}</div></div>`;
     post_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    post_str += `<p class="search-result">${match_content}...</p></li>`;
+    post_str += `<p class="search-result">${match_content}...</p></ul>`;
     tag.split('/').forEach(tagCount);
     return post_str
 }
@@ -317,12 +317,12 @@ function formatKeywordAnnotation(item, i, keywords) {
         });
     }
 
-    note_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
+    note_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
     note_str += `<a href='../html/${id}.html#${md5}' target='_blank' class='search-result-title'>`
     note_str += `后注 ${i+1}. ${title}</a>`;
     note_str += `<div class='TIME'>${date}</div></div>`;
     note_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    note_str += `<p class="search-result">${match_content}...</p></li>`;
+    note_str += `<p class="search-result">${match_content}...</p></ul>`;
     tag.split('/').forEach(tagCount);
     return note_str
 }
@@ -367,12 +367,12 @@ function formatKeywordTranscript(item, i, keywords) {
         });
     }
 
-    script_str += "<li class='article-result-item'><div class='LI'><div class='USER'>"
+    script_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
     script_str += `<a href='../html/${key}.html#${title}' target='_blank' class='search-result-title'>`
     script_str += `访谈 ${i+1}. ${title}</a>`;
     script_str += `<div class='TIME'>${date}</div></div>`;
     script_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    script_str += `<p class="search-result">${match_content}...</p></li>`;
+    script_str += `<p class="search-result">${match_content}...</p></ul>`;
     tag.split('/').forEach(tagCount);
     return script_str
 }
