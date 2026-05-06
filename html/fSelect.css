@@ -20,6 +20,7 @@ input{
   display: inline;
 }
 
-li {
+a {
   /* list-style-type: none; */
+  text-decoration: none;
 }
