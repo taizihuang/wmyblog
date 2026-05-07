@@ -1,13 +1,16 @@
+var t2s;
+var s2t;
+
 var cat_dict = {
     "正文": 1,
     "后注": 1,
     "访谈": 1,
     "问答": 1,
 };
+
 var tag_cat_dict = {
     "region1": ["中国", "中国香港", "中国台湾", "美国", "俄罗斯", "欧洲"],
     "region2": ["法国", "英国", "德国", "日本", "乌克兰", "其他地区"],
-    "special1": ["问答1000", "prognosis", "prescription"],
     "stem1": ["基础科研", "应用技术", "工业"],
     "stem2": ["能源", "气候", "生物", "医学", "其他理工"],
     "focus": ["学术管理", "量子技术", "核聚变", "高能物理"],
@@ -15,7 +18,8 @@ var tag_cat_dict = {
     "social2": ["历史", "教育", "宗教", "其他社科"],
     "social3": ["哲学", "艺术", "文化", "人生态度"],
     "military": ["军事战略", "军事装备", "军事战术", "其他军事"],
-    "special2": ["战略", "管理", "逻辑", "其他", "empty"],
+    "special1": ["战略", "管理", "逻辑", "其他", "empty"],
+    "special2": ["问答1000", "prognosis", "prescription"],
 }
 var tag_dict = {};
 var count_dict = {};
@@ -187,10 +191,15 @@ function filterKeywordArticle(item, keywords) {
     var matched = true;
 
     keywords.forEach(function(keyword, i) {
-        match_title = title.match(keyword);
-        match_post = post.match(keyword);
-        if (match_title == null 
-            && match_post == null) {
+        match_title_t = title.match(s2t(keyword));
+        match_title_s = title.match(t2s(keyword));
+        match_post_t = post.match(s2t(keyword));
+        match_post_s = post.match(t2s(keyword));
+        if (match_title_t == null 
+            && match_title_s == null
+            && match_post_t == null
+            && match_post_s == null
+        ) {
             matched = false;
         }
     });
@@ -203,10 +212,15 @@ function filterKeywordAnnotation(item, keywords) {
     var matched = true;
 
     keywords.forEach(function(keyword, i) {
-        match_title = title.match(keyword);
-        match_note = note.match(keyword);
-        if (match_title == null 
-            && match_note == null) {
+        match_title_t = title.match(s2t(keyword));
+        match_title_s = title.match(t2s(keyword));
+        match_note_t = note.match(s2t(keyword));
+        match_note_s = note.match(t2s(keyword));
+        if (match_title_t == null 
+            && match_title_s == null
+            && match_note_t == null
+            && match_note_s == null
+        ) {
             matched = false;
         }
     });
@@ -219,10 +233,15 @@ function filterKeywordTranscript(item, keywords) {
     var matched = true;
 
     keywords.forEach(function(keyword, i) {
-        match_title = title.match(keyword);
-        match_script = script.match(keyword);
-        if (match_title == null 
-            && match_script == null) {
+        match_title_t = title.match(s2t(keyword));
+        match_title_s = title.match(t2s(keyword));
+        match_script_t = script.match(s2t(keyword));
+        match_script_s = script.match(t2s(keyword));
+        if (match_title_t == null 
+            && match_title_s == null
+            && match_script_t == null
+            && match_script_s == null
+        ) {
             matched = false;
         }
     });
@@ -240,13 +259,24 @@ function formatKeywordArticle(item, i, keywords) {
     var post_str = "";
     var match_content = "";
 
+    var new_keywords = [];
+    for (var i = 0; i < keywords.length; i++) {
+        new_keywords.push(t2s(keywords[i]));
+        new_keywords.push(s2t(keywords[i]));
+    }
+
     var first_occur = -1;
     keywords.forEach(function(keyword, i) {
-        match_content = post.match(keyword);
-        if (match_content == null) {
-            index_content = 0;
+        match_content_s = post.match(t2s(keyword));
+        match_content_t = post.match(s2t(keyword));
+        if (match_content_s == null) {
+            if (match_content_t == null) {
+                index_content = 0;
+            } else {
+                index_content = match_content_t.index;
+            }
         } else {
-            index_content = match_content.index;
+            index_content = match_content_s.index;
         }
         if (i == 0) {
             first_occur = index_content;
@@ -262,7 +292,7 @@ function formatKeywordArticle(item, i, keywords) {
             len = 300;
         }
         match_content = post.substr(start, len);
-        keywords.forEach(function(keyword) {
+        new_keywords.forEach(function(keyword) {
             var regS = new RegExp("("+keyword+")", "gi");
             match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
         });
@@ -289,13 +319,24 @@ function formatKeywordAnnotation(item, i, keywords) {
     var note_str = "";
     var match_content = "";
 
+    var new_keywords = [];
+    for (var i = 0; i < keywords.length; i++) {
+        new_keywords.push(t2s(keywords[i]));
+        new_keywords.push(s2t(keywords[i]));
+    }
+
     var first_occur = -1;
     keywords.forEach(function(keyword, i) {
-        match_content = note.match(keyword);
-        if (match_content == null) {
-            index_content = 0;
+        match_content_s = note.match(t2s(keyword));
+        match_content_t = note.match(s2t(keyword));
+        if (match_content_s == null) {
+            if (match_content_t == null) {
+                index_content = 0;
+            } else {
+                index_content = match_content_t.index;
+            }
         } else {
-            index_content = match_content.index;
+            index_content = match_content_s.index;
         }
         if (i == 0) {
             first_occur = index_content;
@@ -311,7 +352,7 @@ function formatKeywordAnnotation(item, i, keywords) {
             len = 300;
         }
         match_content = note.substr(start, len);
-        keywords.forEach(function(keyword) {
+        new_keywords.forEach(function(keyword) {
             var regS = new RegExp("("+keyword+")", "gi");
             match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
         });
@@ -339,13 +380,24 @@ function formatKeywordTranscript(item, i, keywords) {
     var script_str = "";
     var match_content = "";
 
+    var new_keywords = [];
+    for (var i = 0; i < keywords.length; i++) {
+        new_keywords.push(t2s(keywords[i]));
+        new_keywords.push(s2t(keywords[i]));
+    }
+
     var first_occur = -1;
     keywords.forEach(function(keyword, i) {
-        match_content = script.match(keyword);
-        if (match_content == null) {
-            index_content = 0;
+        match_content_s = script.match(t2s(keyword));
+        match_content_t = script.match(s2t(keyword));
+        if (match_content_s == null) {
+            if (match_content_t == null) {
+                index_content = 0;
+            } else {
+                index_content = match_content_t.index;
+            }
         } else {
-            index_content = match_content.index;
+            index_content = match_content_s.index;
         }
         if (i == 0) {
             first_occur = index_content;
@@ -361,7 +413,7 @@ function formatKeywordTranscript(item, i, keywords) {
             len = 300;
         }
         match_content = script.substr(start, len);
-        keywords.forEach(function(keyword) {
+        new_keywords.forEach(function(keyword) {
             var regS = new RegExp("("+keyword+")", "gi");
             match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
         });
@@ -526,14 +578,22 @@ function filterKeywordComment(item, tag_list, keywords) {
     }
 
     keywords.forEach(function(keyword, i) {
-        match_comment = comment.match(keyword);
-        match_reply = reply.match(keyword);
-        match_nickname = nickname.match(keyword)
+        match_comment_s = comment.match(t2s(keyword));
+        match_reply_s = reply.match(t2s(keyword));
+        match_nickname_s = nickname.match(t2s(keyword))
+        match_comment_t = comment.match(s2t(keyword));
+        match_reply_t = reply.match(s2t(keyword));
+        match_nickname_t = nickname.match(s2t(keyword))
         match_md5 = md5.match(keyword)
-        if (match_comment == null 
-            && match_reply == null 
-            && match_nickname == null 
-            && match_md5 == null) {
+        if (
+            match_comment_t == null 
+            && match_reply_t == null 
+            && match_nickname_t == null 
+            && match_comment_s == null 
+            && match_reply_s == null 
+            && match_nickname_s == null 
+            && match_md5 == null
+        ) {
             matched = false;
         }
     });
@@ -551,7 +611,13 @@ function formatKeywordComment(item, i, keywords) {
     var tag = item.tag;
     var reply_str = "";
 
-    keywords.forEach(function(keyword) {
+    var new_keywords = [];
+    for (var i = 0; i < keywords.length; i++) {
+        new_keywords.push(t2s(keywords[i]));
+        new_keywords.push(s2t(keywords[i]));
+    }
+
+    new_keywords.forEach(function(keyword) {
         if (keyword != ""){
             var regS = new RegExp("("+keyword+")", "gi");
             comment = comment.replace(regS, "<b class=\"search-keyword\">$1</b>");
@@ -620,4 +686,6 @@ function searchComment() {
 window.onload = function() {
     buildTag();
     formatLabel();
+    s2t = OpenCC.Converter({from: 'cn', to: 'tw'});
+    t2s = OpenCC.Converter({from: 'tw', to: 'cn'});
 };
