@@ -260,9 +260,11 @@ function formatKeywordArticle(item, i, keywords) {
     var match_content = "";
 
     var new_keywords = [];
-    for (var i = 0; i < keywords.length; i++) {
-        new_keywords.push(t2s(keywords[i]));
-        new_keywords.push(s2t(keywords[i]));
+    for (var j = 0; j < keywords.length; j++) {
+        if (keywords[j] != '') {
+            new_keywords.push(t2s(keywords[j]));
+            new_keywords.push(s2t(keywords[j]));
+        }
     }
 
     var first_occur = -1;
@@ -320,9 +322,11 @@ function formatKeywordAnnotation(item, i, keywords) {
     var match_content = "";
 
     var new_keywords = [];
-    for (var i = 0; i < keywords.length; i++) {
-        new_keywords.push(t2s(keywords[i]));
-        new_keywords.push(s2t(keywords[i]));
+    for (var j = 0; j < keywords.length; j++) {
+        if (keywords[j] != '') {
+            new_keywords.push(t2s(keywords[j]));
+            new_keywords.push(s2t(keywords[j]));
+        }
     }
 
     var first_occur = -1;
@@ -381,9 +385,11 @@ function formatKeywordTranscript(item, i, keywords) {
     var match_content = "";
 
     var new_keywords = [];
-    for (var i = 0; i < keywords.length; i++) {
-        new_keywords.push(t2s(keywords[i]));
-        new_keywords.push(s2t(keywords[i]));
+    for (var j = 0; j < keywords.length; j++) {
+        if (keywords[j] != '') {
+            new_keywords.push(t2s(keywords[j]));
+            new_keywords.push(s2t(keywords[j]));
+        }
     }
 
     var first_occur = -1;
@@ -612,9 +618,11 @@ function formatKeywordComment(item, i, keywords) {
     var reply_str = "";
 
     var new_keywords = [];
-    for (var i = 0; i < keywords.length; i++) {
-        new_keywords.push(t2s(keywords[i]));
-        new_keywords.push(s2t(keywords[i]));
+    for (var j = 0; j < keywords.length; j++) {
+        if (keywords[j] != '') {
+            new_keywords.push(t2s(keywords[j]));
+            new_keywords.push(s2t(keywords[j]));
+        }
     }
 
     new_keywords.forEach(function(keyword) {
