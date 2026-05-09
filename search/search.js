@@ -6,6 +6,7 @@ var cat_dict = {
     "后注": 1,
     "访谈": 1,
     "问答": 1,
+    "仅回复": 0,
 };
 
 var tag_cat_dict = {
@@ -133,7 +134,7 @@ function search() {
     if (cat_dict["访谈"] > 0) {
         searchTranscript();
     }
-    if (cat_dict["问答"] > 0) {
+    if (cat_dict["问答"] > 0 | cat_dict["仅回复"] > 0) {
         searchComment();
     }
 
@@ -591,16 +592,25 @@ function filterKeywordComment(item, tag_list, keywords) {
         match_reply_t = reply.match(s2t(keyword));
         match_nickname_t = nickname.match(s2t(keyword))
         match_md5 = md5.match(keyword)
-        if (
-            match_comment_t == null 
-            && match_reply_t == null 
-            && match_nickname_t == null 
-            && match_comment_s == null 
-            && match_reply_s == null 
-            && match_nickname_s == null 
-            && match_md5 == null
-        ) {
-            matched = false;
+        if (cat_dict["仅回复"] == 0) {
+            if (
+                match_comment_t == null 
+                && match_reply_t == null 
+                && match_nickname_t == null 
+                && match_comment_s == null 
+                && match_reply_s == null 
+                && match_nickname_s == null 
+                && match_md5 == null
+            ) {
+                matched = false;
+            }
+        } else {
+            if (
+                match_reply_t == null 
+                && match_reply_s == null 
+            ) {
+                matched = false;
+            }
         }
     });
     return matched
