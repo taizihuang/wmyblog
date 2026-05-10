@@ -1,4 +1,4 @@
-import requests, logging, os, re, hashlib, json
+import requests, logging, os, re, hashlib, json, datetime
 import pandas as pd
 from bs4 import BeautifulSoup
 from mako.template import Template
@@ -67,6 +67,8 @@ def page2article(doc, art_id):
 
 def comment2md(comment):
     return hashlib.md5((comment.replace("\r\n","").replace('\n','').replace('<br>','')).encode()).hexdigest()
+# def comment2md(comment):
+#     return hashlib.md5((comment.replace('<strike>','').replace('</strike>','').replace("\r\n","").replace('\n','').replace('<br>','')).encode()).hexdigest()
 
 def rep2dict(rep, art_id):
 
@@ -125,19 +127,20 @@ def extract_date(note):
     matches1 = re.search(r"(\d{4}/\d{1,2}/\d{1,2})", note[idx:idx+20]) #.group(0)
     matches2 = re.search(r"(\d{8})", note[idx:idx+20]) #.group(0)
     if matches1:
-        return pd.to_datetime(matches1[0], format="%Y/%m/%d").strftime("%Y%m%d")
+        return pd.to_datetime(matches1[0], format="%Y/%m/%d").strftime("%Y-%m-%d")
     elif matches2:
-        return matches2[0]
+        return pd.to_datetime(matches2[0], format="%Y%m%d").strftime("%Y-%m-%d")
     else:
-        return "20000101"
+        return "2000-01-01"
 
 class Wmyblog:
 
-    def __init__(self, data_dir, html_dir, template_dir):
+    def __init__(self, data_dir, html_dir, template_dir, search_dir):
         self.data_dir = data_dir
-        self.ct_dir = f"{data_dir}/ct_html"
+        self.ct_dir = f"{data_dir}/ct_article"
         self.html_dir = html_dir
         self.template_dir = template_dir
+        self.search_dir = search_dir
 
         # 全部按照正序排列
         self.article_file = f"{data_dir}/article.pkl"
@@ -154,6 +157,11 @@ class Wmyblog:
         with open(self.note_date_file, "r") as f:
             self.note_date_dict = json.loads(f.read())
         
+        # 原版标题
+        title_file = f"{data_dir}/title_dict.json"
+        with open(title_file, "r") as f:
+            self.title_dict = json.loads(f.read())
+        
         # 数据格式化
         self.post_list = []
         self.note_list = []
@@ -161,6 +169,7 @@ class Wmyblog:
 
         # merger
         self.merger = ArticleMerger(self.data_dir, self.ct_dir)
+        self.merge_comment_tag()
 
         # logging
         formatter = logging.Formatter(
@@ -173,6 +182,19 @@ class Wmyblog:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
         self.logger.addHandler(file_handle)
+    
+    def merge_comment_tag(self):
+        df_comment = self.df_comment
+        df_tag = self.df_tag.copy()
+        df_tag = df_tag.drop_duplicates("md5", keep="first")
+        time_range = [datetime.datetime(2023,11,24,11,0,0),
+                    datetime.datetime(2023,11,25,2,0,0)] 
+        df_comment = df_comment.loc[~((df_comment['first_reply_date'] >= time_range[0])
+                                    & (df_comment['first_reply_date'] <= time_range[1]))]
+        df_comment['md5'] = df_comment['comment'].apply(lambda x: comment2md(x))
+        df_comment_tag = pd.merge(df_comment, df_tag, on='md5', how='left')
+        self.df_comment_tag =df_comment_tag.sort_values(by=["comment_date", "nickname", "comment"]).reset_index(drop=True)
+        self.df_comment_tag.loc[self.df_comment_tag["tag"].isna(),'tag'] = 'empty/'
     
     def get_id_list(self):
 
@@ -314,8 +336,12 @@ class Wmyblog:
     
     def format_post_note(self, art_id):
         post_data_list = []
-        post_title = self.df_article.loc[self.df_article["id"] == art_id, "title"].iloc[0]
+        if art_id in self.title_dict.keys():
+            post_title = self.title_dict[art_id]
+        else:
+            post_title = self.df_article.loc[self.df_article["id"] == art_id, "title"].iloc[0]
         post_date = self.df_article.loc[self.df_article["id"] == art_id, "art_date"].iloc[0]
+        post_date = post_date.strftime("%Y-%m-%d %H:%M:%S")
         post_content = self.merger.split_post(art_id)
         post_md5 = f"{art_id}_article"
         df_post_tag = self.df_tag.loc[self.df_tag["md5"] == post_md5, "tag"]
@@ -329,7 +355,7 @@ class Wmyblog:
         note_list = self.merger.split_annotation(art_id)
         idx = 1
         for note_content in note_list:
-            note_title = f"后注{idx}"
+            note_title = f"{post_title} | 后注{idx}"
             note_md5 = f"{art_id}_note{idx}"
             if note_md5 in self.note_date_dict.keys():
                 note_date = self.note_date_dict[note_md5]
@@ -337,52 +363,59 @@ class Wmyblog:
                 note_date = extract_date(note_content)
             df_note_tag = self.df_tag.loc[self.df_tag["md5"] == note_md5, "tag"]
             if df_note_tag.empty:
-                note_tag = "empty/"
+                note_tag = "/empty"
             else:
                 note_tag = df_note_tag.iloc[0]
             note_data_list.append((art_id, note_title, note_content, note_date, note_md5, note_tag))
             idx += 1
         return (post_data_list, note_data_list)
     
-    def format_comment(self, art_id):
+    def format_comment(self, df_comment_id):
         comment_data_list = []
-        df_comment_id = self.df_comment.loc[self.df_comment["id"] == art_id]
-        for idx in self.df_comment_id.index:
+        for idx in df_comment_id.index:
+            art_id = df_comment_id.loc[idx, "id"]
+            if art_id in self.title_dict.keys():
+                post_title = self.title_dict[art_id]
+            else:
+                post_title = self.df_article.loc[self.df_article["id"] == art_id, "title"].iloc[0]
             comment = df_comment_id.loc[idx, "comment"]
             deleted = df_comment_id.loc[idx, "deleted"]
             if comment == "":
                 continue
             if deleted:
                 comment = f"<strike>{comment}</strike>"
-            comment = comment.replace("\n", "<br><br>")
-            comment = re.sub(r"[<br>]{2,}", "<br>", comment)
+            comment = comment.replace('\n','<br><br>')
+            comment = comment.replace('<br><br><br>','<br>')
+            comment = comment.replace('<br><br><br>','<br>')
             nickname = df_comment_id.loc[idx, "nickname"]
             nickname = nickname.replace('\u3000',' ')
+            nickname = f"{post_title} | {nickname}"
             comment_date = df_comment_id.loc[idx, "comment_date"].strftime("%Y-%m-%d %H:%M")
             md5 = df_comment_id.loc[idx, "md5"]
             comment_tag = df_comment_id.loc[idx, "tag"].replace('。','/').replace('、','/')
             reply = df_comment_id.loc[idx, "reply"]
-            if reply == "":
-                continue
-            reply = reply.replace('\n', '<br>') 
-            reply = re.sub('^<br>', '', reply)
-            reply = re.sub('<br>$', '', reply)
-            reply = re.sub(r"[<br>]{2,}", "<br>", reply)
-            first_reply_date = df_comment_id.loc[idx, "first_reply_date"]
-            latest_reply_date = df_comment_id.loc[idx, "latest_reply_date"]
-            if str(first_reply_date) != "NaT":
-                reply_date = latest_reply_date.strftime("%Y-%m-%d %H:%M")
-                if first_reply_date == latest_reply_date:
-                    reply += f'<br><div class="TIME">{reply_date} 回复</div>'
-                else:
-                    reply += f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html" sytle="color:blue;">{reply_date} 修改</a></div>'
-            comment_data_list.append((art_id, comment, reply, nickname, comment_date, md5, comment_tag))
+            if reply != "":
+                reply = reply.replace('\n', '<br>') 
+                reply = re.sub('^<br>', '', reply)
+                reply = re.sub('<br>$', '', reply)
+                reply = reply.replace('<br>', '<br><br>')
+                reply = reply.replace('<br><br><br>','<br>')
+                first_reply_date = df_comment_id.loc[idx, "first_reply_date"]
+                latest_reply_date = df_comment_id.loc[idx, "latest_reply_date"]
+                if str(first_reply_date) != "NaT":
+                    reply_date = latest_reply_date.strftime("%Y-%m-%d %H:%M")
+                    if first_reply_date == latest_reply_date:
+                        reply += f'<br><div class="TIME">{reply_date} 回复</div>'
+                    else:
+                        reply += f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html" sytle="color:black;">{reply_date} 修改</a></div>'
+            comment_data_list.append((art_id, comment, reply, nickname, comment_date, md5, comment_tag, deleted))
         return comment_data_list
     
     def gen_index_page(self):
         df_article = self.df_article 
+        df_article["title"] = df_article["id"].map(self.title_dict)
         art_li = []
-        for idx in df_article.index:
+        for idx in df_article.index[::-1]:
             art_id = df_article.loc[idx, "id"]
             title = df_article.loc[idx, "title"]
             art_date = str(df_article.loc[idx, "art_date"]).split(" ")[0]
@@ -391,40 +424,87 @@ class Wmyblog:
         index_template_file = f"{self.template_dir}/wmyblog_index.html"
         INDEX = Template(filename=index_template_file)
         html = INDEX.render(art_li=art_li)
-        with open(f"{self.html_dir}/index.html", "w") as f:
+        with open(f"{self.html_dir}/../index.html", "w") as f:
             f.write(html)
         self.logger.info(f"{self.html_dir}/index.html saved!")
     
     def gen_article_page(self, art_id):
         post_data, note_data = self.format_post_note(art_id)
-        comment_data = self.format_comment(art_id)
+        df_comment_id = self.df_comment_tag.loc[self.df_comment_tag["id"] == art_id]
+        comment_data = self.format_comment(df_comment_id)
         self.post_list += post_data
         self.note_list += note_data
         self.comment_list += comment_data
 
         article_template_file = f"{self.template_dir}/wmyblog_page.html"
-        # html = Template(filename=article_template_file).render(post_data=post_data,
-        #                                                        note_data=note_data,
-        #                                                        comment_data=comment_data)
-        # with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8") as f:
-        #     f.write(html)
+        html = Template(filename=article_template_file).render(post_data=post_data,
+                                                               note_data=note_data,
+                                                               comment_data=comment_data)
+        with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8") as f:
+            f.write(html)
     
-    def gen_article_page(self):
+    def gen_article_pages(self):
+        self.post_list = []
+        self.note_list = []
+        self.comment_list = []
+        self.merge_comment_tag()
         for art_id in self.df_article.id:
             self.gen_article_page(art_id)
         
         post_columns = ["id", "title", "content", "date", "md5", "tag"]
-        df_post = pd.DataFrame(data=self.post_data, columns=post_columns)
+        df_post = pd.DataFrame(data=self.post_list, columns=post_columns)
         df_post = df_post.sort_values("date").reset_index(drop=True)
 
         note_columns = post_columns
-        df_note = pd.DataFrame(data=self.note_data, columns=note_columns)
+        df_note = pd.DataFrame(data=self.note_list, columns=note_columns)
         df_note = df_note.sort_values("date").reset_index(drop=True)
 
-        comment_columns = ["id", "comment", "reply", "nickname", "comment_date", "md5", "tag"]
-        df_comment = pd.DataFrame(data=self.comment_data, columns=comment_columns)
+        comment_columns = ["id", "comment", "reply", "nickname", "date", "md5", "tag", "deleted"]
+        df_comment = pd.DataFrame(data=self.comment_list, columns=comment_columns)
         df_comment = df_comment.sort_values("date").reset_index(drop=True)
-    
+
+        article_dict = {"article": df_post.to_dict("records")}
+        annotation_dict = {"annotation": df_note.to_dict("records")}
+        comment_dict = {"comment": df_comment.to_dict("records")}
+
+        with open(f"{self.search_dir}/article.json", "w") as f:
+            f.write(json.dumps(article_dict, indent=4, ensure_ascii=False))
+        with open(f"{self.search_dir}/annotation.json", "w") as f:
+            f.write(json.dumps(annotation_dict, indent=4, ensure_ascii=False))
+        with open(f"{self.search_dir}/comment.json", "w") as f:
+            f.write(json.dumps(comment_dict, ensure_ascii=False))
+        
+        df_note1 = df_note.iloc[-30:].copy()
+        df_note1 = df_note1.rename(columns={"content": "reply"})
+        df_note1["nickname"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
+        df_note1["comment"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
+        df_note1["date"] = pd.to_datetime(df_note1["date"], format="%Y-%m-%d")
+        df_note1["deleted"] = False
+        df_comment_note = df_comment.loc[df_comment["reply"] != ""].iloc[-60:].copy()
+        df_comment_note["date"] = pd.to_datetime(df_comment_note["date"], format="%Y-%m-%d %H:%M")
+        df_comment_note["nickname"] = df_comment_note["nickname"].map(lambda x: x.split("| ")[-1])
+        df_comment_note = pd.concat([df_comment_note, df_note1], ignore_index=True)
+        df_comment_note["first_reply_date"] = "NaT"
+        df_comment_note["latest_reply_date"] = "NaT"
+        df_comment_note = df_comment_note.sort_values("date", ascending=False).reset_index(drop=True)
+        df_comment_note = df_comment_note.rename(columns={"date": "comment_date"})
+
+        comment_data = self.format_comment(df_comment_note)
+        comment_data = comment_data[:60]
+        refresh_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        latest_template_file = f"{self.template_dir}/wmyblog_latest.html" 
+        LATEST = Template(filename=latest_template_file)
+        html = LATEST.render(date=refresh_date, comment_data=comment_data)
+        with open(f"{self.html_dir}/new_comment.html", "w", encoding="utf8") as f:
+            f.write(html)
+
+        rss_template_file = f"{self.template_dir}/wmyblog_rss.html" 
+        RSS = Template(filename=rss_template_file)
+        html = RSS.render(date=refresh_date, comment_data=comment_data)
+        html = html.replace('&lt;br&gt;','<br>').replace('&lt;','<').replace('&gt;','>')
+        with open(f"{self.html_dir}/../rss.xml", "w", encoding="utf8") as f:
+            f.write(html)
+
     def update_data(self):
         id_list = self.get_id_list()
         self.download_tag()
@@ -436,3 +516,4 @@ if __name__ == "__main__":
     template_dir = "./templates"
     wmyblog = Wmyblog(data_dir, html_dir, template_dir) 
     wmyblog.update_data()
+    wmyblog.gen_index_page()

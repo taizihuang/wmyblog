@@ -8,7 +8,7 @@ class ArticleMerger:
         self.ct_dir = ct_dir
         with open(f"{data_dir}/id_dict.json", "r") as f:
             self.id_dict =  json.loads(f.read())
-        self.df_article = pd.read_pickle(f"{data_dir}/article_full.pkl")
+        self.df_article = pd.read_pickle(f"{data_dir}/article.pkl")
         self.ct_id_list = list(self.id_dict)
         self.udn_id_list = [id for id in self.df_article["id"] if id not in self.ct_id_list] 
         self.id_list = self.ct_id_list + self.udn_id_list

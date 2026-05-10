@@ -186,20 +186,20 @@ function filterTag(item, tag_list) {
     return matched
 }
 
-function filterKeywordArticle(item, keywords) {
+function filterKeyword(item, keywords) {
     var title = item.title.trim().toLowerCase();
-    var post = item.post.trim().replace(/<[^>]+>/g, "").toLowerCase();
+    var content = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
     var matched = true;
 
     keywords.forEach(function(keyword, i) {
         match_title_t = title.match(s2t(keyword));
         match_title_s = title.match(t2s(keyword));
-        match_post_t = post.match(s2t(keyword));
-        match_post_s = post.match(t2s(keyword));
+        match_content_t = content.match(s2t(keyword));
+        match_content_s = content.match(t2s(keyword));
         if (match_title_t == null 
             && match_title_s == null
-            && match_post_t == null
-            && match_post_s == null
+            && match_content_t == null
+            && match_content_s == null
         ) {
             matched = false;
         }
@@ -207,119 +207,15 @@ function filterKeywordArticle(item, keywords) {
     return matched
 }
 
-function filterKeywordAnnotation(item, keywords) {
-    var title = item.title.trim().toLowerCase();
-    var note = item.note.trim().replace(/<[^>]+>/g, "").toLowerCase();
-    var matched = true;
-
-    keywords.forEach(function(keyword, i) {
-        match_title_t = title.match(s2t(keyword));
-        match_title_s = title.match(t2s(keyword));
-        match_note_t = note.match(s2t(keyword));
-        match_note_s = note.match(t2s(keyword));
-        if (match_title_t == null 
-            && match_title_s == null
-            && match_note_t == null
-            && match_note_s == null
-        ) {
-            matched = false;
-        }
-    });
-    return matched
-}
-
-function filterKeywordTranscript(item, keywords) {
-    var title = item.title.trim().toLowerCase();
-    var script = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-    var matched = true;
-
-    keywords.forEach(function(keyword, i) {
-        match_title_t = title.match(s2t(keyword));
-        match_title_s = title.match(t2s(keyword));
-        match_script_t = script.match(s2t(keyword));
-        match_script_s = script.match(t2s(keyword));
-        if (match_title_t == null 
-            && match_title_s == null
-            && match_script_t == null
-            && match_script_s == null
-        ) {
-            matched = false;
-        }
-    });
-    return matched
-}
-
-function formatKeywordArticle(item, i, keywords) {
-    var id = item.id;
-    var title = item.title;
-    var date = item.date;
-    var tag = item.tag;
-    var md5 = `${id}_article`;
-    var post = item.post.trim().replace(/<[^>]+>/g, "").toLowerCase();
-
-    var post_str = "";
-    var match_content = "";
-
-    var new_keywords = [];
-    for (var j = 0; j < keywords.length; j++) {
-        if (keywords[j] != '') {
-            new_keywords.push(t2s(keywords[j]));
-            new_keywords.push(s2t(keywords[j]));
-        }
-    }
-
-    var first_occur = -1;
-    keywords.forEach(function(keyword, i) {
-        match_content_s = post.match(t2s(keyword));
-        match_content_t = post.match(s2t(keyword));
-        if (match_content_s == null) {
-            if (match_content_t == null) {
-                index_content = 0;
-            } else {
-                index_content = match_content_t.index;
-            }
-        } else {
-            index_content = match_content_s.index;
-        }
-        if (i == 0) {
-            first_occur = index_content;
-        }
-    })
-    if (first_occur >= 0) {
-        var start = first_occur - 100;
-        if (start < 0) {
-            start = 0;
-        }
-        var len = post.length - start;
-        if (len > 300) {
-            len = 300;
-        }
-        match_content = post.substr(start, len);
-        new_keywords.forEach(function(keyword) {
-            var regS = new RegExp("("+keyword+")", "gi");
-            match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
-        });
-    }
-
-    post_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
-    post_str += `<a href='../html/${id}.html' target='_blank' class='search-result-title'>`
-    post_str += `正文 ${i+1}. ${title}</a>`;
-    post_str += `<div class='TIME'>${date}</div></div>`;
-    post_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    post_str += `<p class="search-result">${match_content}...</p></ul>`;
-    tag.split('/').forEach(tagCount);
-    return post_str
-}
-
-function formatKeywordAnnotation(item, i, keywords) {
+function formatKeyword(item, i, keywords, type) {
     var id = item.id;
     var title = item.title;
     var date = item.date;
     var tag = item.tag;
     var md5 = item.md5;
-    var note = item.note.trim().replace(/<[^>]+>/g, "").toLowerCase();
+    var content = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
 
-    var note_str = "";
+    var content_str = "";
     var match_content = "";
 
     var new_keywords = [];
@@ -332,8 +228,8 @@ function formatKeywordAnnotation(item, i, keywords) {
 
     var first_occur = -1;
     keywords.forEach(function(keyword, i) {
-        match_content_s = note.match(t2s(keyword));
-        match_content_t = note.match(s2t(keyword));
+        match_content_s = content.match(t2s(keyword));
+        match_content_t = content.match(s2t(keyword));
         if (match_content_s == null) {
             if (match_content_t == null) {
                 index_content = 0;
@@ -352,94 +248,31 @@ function formatKeywordAnnotation(item, i, keywords) {
         if (start < 0) {
             start = 0;
         }
-        var len = note.length - start;
+        var len = content.length - start;
         if (len > 300) {
             len = 300;
         }
-        match_content = note.substr(start, len);
+        match_content = content.substr(start, len);
         new_keywords.forEach(function(keyword) {
             var regS = new RegExp("("+keyword+")", "gi");
             match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
         });
     }
 
-    note_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
-    note_str += `<a href='../html/${id}.html#${md5}' target='_blank' class='search-result-title'>`
-    note_str += `后注 ${i+1}. ${title}</a>`;
-    note_str += `<div class='TIME'>${date}</div></div>`;
-    note_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    note_str += `<p class="search-result">${match_content}...</p></ul>`;
+    content_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
+    content_str += `<a href='../html/${id}.html#${md5}' target='_blank' class='search-result-title'>`
+    content_str += `${type} ${i+1}. ${title}</a>`;
+    content_str += `<div class='TIME'>${date}</div></div>`;
+    content_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
+    content_str += `<p class="search-result">${match_content}...</p></ul>`;
     tag.split('/').forEach(tagCount);
-    return note_str
+    return content_str
 }
 
-function formatKeywordTranscript(item, i, keywords) {
-    var key = item.key;
-    var title = item.title;
-    var date = item.date;
-    var tag = item.tag;
-    var md5 = `${key}_${title}`;
-    md5 = md5.replace(" ", "");
-    var script = item.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-
-    var script_str = "";
-    var match_content = "";
-
-    var new_keywords = [];
-    for (var j = 0; j < keywords.length; j++) {
-        if (keywords[j] != '') {
-            new_keywords.push(t2s(keywords[j]));
-            new_keywords.push(s2t(keywords[j]));
-        }
-    }
-
-    var first_occur = -1;
-    keywords.forEach(function(keyword, i) {
-        match_content_s = script.match(t2s(keyword));
-        match_content_t = script.match(s2t(keyword));
-        if (match_content_s == null) {
-            if (match_content_t == null) {
-                index_content = 0;
-            } else {
-                index_content = match_content_t.index;
-            }
-        } else {
-            index_content = match_content_s.index;
-        }
-        if (i == 0) {
-            first_occur = index_content;
-        }
-    })
-    if (first_occur >= 0) {
-        var start = first_occur - 100;
-        if (start < 0) {
-            start = 0;
-        }
-        var len = script.length - start;
-        if (len > 300) {
-            len = 300;
-        }
-        match_content = script.substr(start, len);
-        new_keywords.forEach(function(keyword) {
-            var regS = new RegExp("("+keyword+")", "gi");
-            match_content = match_content.replace(regS, '<b class="search-keyword">$1</b>');
-        });
-    }
-
-    script_str += "<ul class='article-result-item'><div class='LI'><div class='USER'>"
-    script_str += `<a href='../html/${key}.html#${title}' target='_blank' class='search-result-title'>`
-    script_str += `访谈 ${i+1}. ${title}</a>`;
-    script_str += `<div class='TIME'>${date}</div></div>`;
-    script_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span></div>`;
-    script_str += `<p class="search-result">${match_content}...</p></ul>`;
-    tag.split('/').forEach(tagCount);
-    return script_str
-}
-
-function searchArticle() {
+function searchContent(type_dict) {
     var $input = $('#search-input')
-    var $post = $('.POST_LI')
-    var $post_count = $('.post_count')
+    var $content_li = $(type_dict["li"])
+    var $content_count = $(type_dict["count"])
 
     var tag_list = [];
 
@@ -450,7 +283,7 @@ function searchArticle() {
     }
 
     $.ajax({
-        url: search_dir + "/article.json",
+        url: search_dir + `/${type_dict["type"]}.json`,
         method: 'GET',
         dataType: 'json',
         headers: {
@@ -458,7 +291,7 @@ function searchArticle() {
             // "Access-Control-Allow-Origin": "*"
         },
         beforeSend: function() {
-            $post_count.html('<div id="load"> 文章 loading...</div>');
+            $content_count.html(`<div id="load"> ${type_dict["type_str"]} loading...</div>`);
         },
         complete: function() {
             $("#load").remove();
@@ -466,118 +299,59 @@ function searchArticle() {
         success: function(jsonResponse) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            var articleData = jsonData.article.filter(item => filterDate(item, start_date, end_date));
-            articleData = articleData.filter(item => filterTag(item, tag_list));
-            articleData = articleData.filter(item => filterKeywordArticle(item, keywords));
+            var data = jsonData[type_dict["type"]].filter(item => filterDate(item, start_date, end_date));
+            data = data.filter(item => filterTag(item, tag_list));
+            data = data.filter(item => filterKeyword(item, keywords));
 
-            var post_str_list = articleData.map((item, idx) => formatKeywordArticle(item, idx, keywords));
-            var post_count = post_str_list.length; 
-            var post_str = post_str_list.join("");
+            var str_list = data.map((item, idx) => formatKeyword(item, idx, keywords, type_dict["type_str"]));
+            var content_count = str_list.length; 
+            var content_str = str_list.join("");
 
-            $post.html(post_str);
-            $post_count.html(`<a href="#post_li">搜索到 ${post_count} 条文章</a>`);
+            $content_li.html(content_str);
+            var anchor = type_dict["li"].replace(".", "").toLowerCase();
+            $content_count.html(`<a href="#${anchor}">搜索到 ${content_count} 条${type_dict["type_str"]}</a>`);
             formatCount();
         }
     });
+}
 
+
+function searchArticle() {
+    var type_dict = {
+        "li": ".POST_LI",
+        "count": ".post_count",
+        "type": "article",
+        "type_str": "正文"
+    };
+    searchContent(type_dict);
 }
 
 function searchAnnotation() {
-    var $input = $('#search-input')
-    var $note = $('.ANNOTATION_LI')
-    var $note_count = $('.annotation_count')
-
-    var tag_list = [];
-
-    for (var key in tag_dict) {
-        if (tag_dict[key] == 1) {
-            tag_list.push(key);
-        }
-    }
-
-    $.ajax({
-        url: search_dir + "/annotation.json",
-        method: 'GET',
-        dataType: 'json',
-        headers: {
-            "accept": "application/json",
-            // "Access-Control-Allow-Origin": "*"
-        },
-        beforeSend: function() {
-            $note_count.html('<div id="load"> 后注 loading...</div>');
-        },
-        complete: function() {
-            $("#load").remove();
-        },
-        success: function(jsonResponse) {
-            var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            var noteData = jsonData.annotation.filter(item => filterDate(item, start_date, end_date));
-            noteData = noteData.filter(item => filterTag(item, tag_list));
-            noteData = noteData.filter(item => filterKeywordAnnotation(item, keywords));
-
-            var note_str_list = noteData.map((item, idx) => formatKeywordAnnotation(item, idx, keywords));
-            var note_count = note_str_list.length; 
-            var note_str = note_str_list.join("");
-
-            $note.html(note_str);
-            $note_count.html(`<a href="#annotation_li">搜索到 ${note_count} 条后注</a>`);
-            formatCount();
-        }
-    });
+    var type_dict = {
+        "li": ".ANNOTATION_LI",
+        "count": ".annotation_count",
+        "type": "annotation",
+        "type_str": "后注"
+    };
+    searchContent(type_dict);
 }
 
 function searchTranscript() {
-    var $input = $('#search-input')
-    var $script = $('.TRANSCRIPT_LI')
-    var $script_count = $('.transcript_count')
-
-    var tag_list = [];
-
-    for (var key in tag_dict) {
-        if (tag_dict[key] == 1) {
-            tag_list.push(key);
-        }
-    }
-
-    $.ajax({
-        url: search_dir + "/transcript.json",
-        method: 'GET',
-        dataType: 'json',
-        headers: {
-            "accept": "application/json",
-            // "Access-Control-Allow-Origin": "*"
-        },
-        beforeSend: function() {
-            $script_count.html('<div id="load"> 后注 loading...</div>');
-        },
-        complete: function() {
-            $("#load").remove();
-        },
-        success: function(jsonResponse) {
-            var jsonData = JSON.parse(JSON.stringify(jsonResponse));
-            var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
-            var scriptData = jsonData.transcript.filter(item => filterDate(item, start_date, end_date));
-            scriptData = scriptData.filter(item => filterTag(item, tag_list));
-            scriptData = scriptData.filter(item => filterKeywordTranscript(item, keywords));
-
-            var script_str_list = scriptData.map((item, idx) => formatKeywordTranscript(item, idx, keywords));
-            var script_count = script_str_list.length; 
-            var script_str = script_str_list.join("");
-
-            $script.html(script_str);
-            $script_count.html(`<a href="#transcript_li">搜索到 ${script_count} 条访谈章节</a>`);
-            formatCount();
-        }
-    });
-
+    var type_dict = {
+        "li": ".TRANSCRIPT_LI",
+        "count": ".transcript_count",
+        "type": "transcript",
+        "type_str": "访谈章节"
+    };
+    searchContent(type_dict);
 }
 
 function filterKeywordComment(item, tag_list, keywords) {
     var comment = item.comment.trim().toLowerCase();
-    var reply   = item.reply.trim().toLowerCase();
+    var reply   = item.reply.replace(/<[^>]+>/g, "").trim().toLowerCase();
     var nickname= item.nickname.toLowerCase();
     var md5     = item.md5;
+    var deleted = item.deleted;
     var matched = true;
 
     if ((tag_list.length == 0) && (keywords[0] == "") && (end_date == "2027-01-01")) {
@@ -613,12 +387,15 @@ function filterKeywordComment(item, tag_list, keywords) {
             }
         }
     });
+
+    if (reply.length == 0) {
+        matched = false;
+    }
     return matched
 }
 
 function formatKeywordComment(item, i, keywords) {
     var id = item.id;
-    var title = item.title;
     var md5 = item.md5;
     var nickname = item.nickname;
     var comment = item.comment;
@@ -645,7 +422,7 @@ function formatKeywordComment(item, i, keywords) {
     comment = comment.replace('\n','<br><br>');
     reply = reply.replace("\n", '<br><br>');
     reply_str += "<div class='LI'><div class='USER'>";
-    reply_str += `<span class='NAME'>问答 ${i+1}. ${title} | `;
+    reply_str += `<span class='NAME'>问答 ${i+1}. `;
     reply_str += `<a href='../html/${id}.html#${md5}' target='_blank'>${nickname}</a></span>`;
     reply_str += `<div class='TIME'>${date}</div></div>`;
     reply_str += `<span class='tag'><input type='search' value=${tag} data-md5=${md5} onkeydown='enter(event,$(this))'></span>`;

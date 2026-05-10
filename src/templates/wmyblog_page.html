@@ -5,43 +5,45 @@
     <script src="supabase.js"></script>
     <script src="tag.js"></script>
     <link rel="stylesheet" href="./init.css">
-    <title>${title}</title>
+    %for art_id, post_title, post_content, post_date, post_md5, post_tag in post_data:
+    <title>${post_title}</title>
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
-    <h1>${title}</h1>
-    <p class="DATE">${date}</p>
+    <h1>${post_title}</h1>
+    <p class="DATE">${post_date}</p>
     <div class="LI">
-    <div class="USER"><span class="NAME" id=${art_id}_article></span>
-    <span class="tag"><input type="search" value=${post_tag} data-md5=${art_id}_article onkeydown="enter(event,$(this))"></span>
+    <div class="USER"><span class="NAME" id=${post_md5}></span>
+    <span class="tag"><input type="search" value=${post_tag} data-md5=${post_md5} onkeydown="enter(event,$(this))"></span>
     <div></div>
     <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/${art_id}">https://blog.udn.com/MengyuanWang/${art_id}</a></h4>
     <br><br>
     <div class="POST">
-    ${post}
-    %for uuid, tags, note  in note_li:
+    ${post_content}
+    %endfor
+    %for art_id, note_title, note_content, note_date, note_md5, note_tag in note_data:
     <div class="LI">
-    <div class="USER" id=${uuid}>
-    <span class="tag"><input type="search" value=${tags} data-md5=${uuid} onkeydown="enter(event,$(this))"></span>
-    ${note}
+    <div class="USER" id=${note_md5}>
+    <span class="tag"><input type="search" value=${note_tag} data-md5=${note_md5} onkeydown="enter(event,$(this))"></span>
+    ${note_content}
     </div>
     </div>
     %endfor
     </div>
-    <h2>${len(reply_li)} 条留言</h2>
+    <h2>${len(comment_data)} 条留言</h2>
     <div class="REPLY_LI">
-    %for uuid, say, reply, user, time, tag_list, striked in reply_li:
+    %for art_id, comment, reply, nickname, comment_date, comment_md5, comment_tag, deleted in comment_data:
     <div class="LI">
-    <div class="USER"><span class="NAME" id=${uuid}>${user}</span>
-    <div class="TIME">${time}</div></div>
-    <span class="tag"><input type="search" value=${tag_list} data-md5=${uuid} onkeydown="enter(event,$(this))"></span>
-    %if striked:
-    <input type="checkbox" class="exp" id="${uuid}_1">
-    <div class="text1"><label class="btn" for="${uuid}_1"></label>
-    <div class="SAY">${say}</div>
+    <div class="USER"><span class="NAME" id=${comment_md5}>${nickname.split("| ")[-1]}</span>
+    <div class="TIME">${comment_date}</div></div>
+    <span class="tag"><input type="search" value=${comment_tag} data-md5=${comment_md5} onkeydown="enter(event,$(this))"></span>
+    %if deleted:
+    <input type="checkbox" class="exp" id="${comment_md5}_1">
+    <div class="text1"><label class="btn" for="${comment_md5}_1"></label>
+    <div class="SAY">${comment}</div>
     </div>
     %else:
-    <div class="SAY">${say}</div>
+    <div class="SAY">${comment}</div>
     %endif
     %if reply:
     <div class="REPLY">${reply}</div>

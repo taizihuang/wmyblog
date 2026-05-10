@@ -40,7 +40,7 @@
         border: 1px solid #ed6b2a;
     }
     </style>
-    <title>${title}</title>
+    <title>最新回复</title>
     </head>
     <body><div class="BODY">
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
@@ -50,18 +50,12 @@
     </div>
     <p class="DATE">${date}</p>
     <div class="REPLY_LI">
-    <!-- <h2>最新 ${len(reply_li)} 条后注和问答</h2> -->
-    %for source,id,uuid,say,reply,user,time,striked in reply_li:
+    <div class="REPLY_LI">
+    %for art_id, comment, reply, nickname, comment_date, comment_md5, comment_tag, deleted in comment_data:
     <div class="LI">
-    <div class="USER"><span class="NAME">${source} | <a href="./${id}.html#${uuid}">${user}</a></span><div class="TIME">${time}</div></div>
-    %if striked:
-    <input type="checkbox" class="exp" id="${uuid}_1">
-    <div class="text1"><label class="btn" for="${uuid}_1"></label>
-    <div class="SAY">${say}</div>
-    </div>
-    %else:
-    <div class="SAY">${say}</div>
-    %endif
+    <div class="USER"><span class="NAME" id=${comment_md5}><a href="./${art_id}.html#${comment_md5}">${nickname}</a></span>
+    <div class="TIME">${comment_date}</div></div>
+    <div class="SAY">${comment}</div>
     %if reply:
     <div class="REPLY">${reply}</div>
     %endif

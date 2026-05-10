@@ -115,6 +115,48 @@ def gen_script_page(info_file, tag_file, audio_file, transcript_file, template_d
     with open(f"{out_dir}/transcript.html", "w") as f:
         f.write(INDEX.render(art_li=art_li))
 
+def gen_script_json(info_file, transcript_file, search_dir):
+    with open(info_file, "r") as f:
+        info_dict = json.loads(f.read())
+    df_transcript = pd.read_pickle(transcript_file)
+    df_tag = pd.read_pickle(tag_file)
+    df_tag_script = df_tag.loc[df_tag["md5"].str.contains(r"\[")].copy()
+    df_tag_script = df_tag_script.drop_duplicates(subset="md5", keep="first")
+    script_dict = df_tag_script.set_index("md5").to_dict(orient="dict")["tag"]
+    transcript_list = []
+    for key in info_dict.keys():
+        id = info_dict[key]["id"]
+        title = info_dict[key]["name"]
+        url = f"https://docs.google.com/document/d/{id}/edit"
+        doc = df_transcript.loc[df_transcript["url"] == url, "response"].iloc[0].decode("utf8")
+        content = extract_script(doc)
+        art_date = f"20{key[:2]}-{key[2:4]}-{key[4:6]}"
+        for chapter in content.split("<h2>"):
+            if "</h2>" in chapter:
+                title, content = chapter.split("</h2>")
+            else:
+                content = chapter
+            script_uuid = f"{key}_{title}".replace(" ", "")
+            if script_uuid in script_dict.keys():
+                script_tag = script_dict[script_uuid]
+            else:
+                script_tag = "empty/"
+            if title != "片花":
+                transcript_list.append({
+                                    "key": id,
+                                    "id": key,
+                                    "title": title,
+                                    "date": art_date,
+                                    "content": content,
+                                    "md5": script_uuid,
+                                    "tag": script_tag
+                                    })
+    
+    transcript_dict = {"transcript": transcript_list}
+    with open(f"{search_dir}/transcript.json", "w") as f:
+        f.write(json.dumps(transcript_dict, indent=4, ensure_ascii=False))
+    print(f"{search_dir}/transcript.json saved!")
+
 if __name__ == "__main__":
     info_file = "../data/transcript_info.json"
     audio_file = "../data/podcast_url.json"
@@ -122,4 +164,6 @@ if __name__ == "__main__":
     transcript_file = "../data/transcript_data.pkl"
     template_dir = "./templates"
     out_dir = "../html"
+    search_dir = "../search"
     gen_script_page(info_file, tag_file, audio_file, transcript_file, template_dir, out_dir)
+    gen_script_json(info_file, transcript_file, search_dir)
