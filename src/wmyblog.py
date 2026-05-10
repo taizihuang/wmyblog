@@ -1,4 +1,4 @@
-import requests, logging, os, re, hashlib, json, datetime
+import requests, logging, os, re, hashlib, json, datetime, time
 import pandas as pd
 from bs4 import BeautifulSoup
 from mako.template import Template
@@ -211,6 +211,7 @@ class Wmyblog:
             id_list = id_list[:10]
         else:
             self.logger.error(f"status {status_code} from {url}")
+        time.sleep(1)
 
         # 最近有新评论的五篇文章
         url = f'https://classic-blog.udn.com/blog/inc_2011/psn_article_ajax.jsp?uid=MengyuanWang&f_FUN_CODE=new_rep'
@@ -221,6 +222,7 @@ class Wmyblog:
             id_list += [d('a')[0]['href'].split('/')[-1] for d in doc.findAll('dt')]
         else:
             self.logger.error(f"status {status_code} from {url}")
+        time.sleep(1)
 
         # 评论时间更老但未回复的文章 
         df_comment_noreply = self.df_comment.loc[self.df_comment["reply"].empty
@@ -235,6 +237,7 @@ class Wmyblog:
     def fetch_page(self, art_id):
 
         url = f"https://blog.udn.com/MengyuanWang/{art_id}"
+        self.logger.info(f"fetching {url}")
         response = requests.get(url, headers=headers, proxies=proxies)
         status_code = response.status_code
 
@@ -271,6 +274,7 @@ class Wmyblog:
             article, comment = self.fetch_page(art_id)
             article_list += article
             comment_list += comment
+            time.sleep(1)
         
         # 更新文章
         df_article = pd.concat(article_list, ignore_index=True)
@@ -305,7 +309,7 @@ class Wmyblog:
                                                                                   "first_reply_date": "min",
                                                                                   "latest_reply_date": "max", 
                                                                                   "deleted": "first"}).reset_index()
-        df_comment = df_comment.sort_values("comment_date").reset_index(drop=True)
+        df_comment = df_comment.sort_values(by=["comment_date", "nickname", "comment"]).reset_index(drop=True)
 
         self.df_article = df_article
         self.df_comment = df_comment
@@ -479,6 +483,7 @@ class Wmyblog:
         df_note1["nickname"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
         df_note1["comment"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
         df_note1["date"] = pd.to_datetime(df_note1["date"], format="%Y-%m-%d")
+        df_note1["date"] = df_note1["date"].map(lambda x: x + datetime.timedelta(days=1))
         df_note1["deleted"] = False
         df_comment_note = df_comment.loc[df_comment["reply"] != ""].iloc[-60:].copy()
         df_comment_note["date"] = pd.to_datetime(df_comment_note["date"], format="%Y-%m-%d %H:%M")
