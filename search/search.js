@@ -20,7 +20,7 @@ var tag_cat_dict = {
     "social3": ["哲学", "艺术", "文化", "人生态度"],
     "military": ["军事战略", "军事装备", "军事战术", "其他军事"],
     "special1": ["战略", "管理", "逻辑", "其他", "empty"],
-    "special2": ["问答1000", "prognosis", "prescription"],
+    "special2": ["问答1000", "分析方法", "prognosis", "prescription"],
 }
 var tag_dict = {};
 var count_dict = {};
@@ -50,8 +50,6 @@ function buildTag() {
         cat_str += "</div>";
     }
     $(".category").after(cat_str);
-    // $("<div>").appendTo($cat).addClass('tag_list').html(cat_str);
-    // $cat.after(cat_str);
 }
 
 function formatLabel() {
@@ -354,10 +352,6 @@ function filterKeywordComment(item, tag_list, keywords) {
     var deleted = item.deleted;
     var matched = true;
 
-    if ((tag_list.length == 0) && (keywords[0] == "") && (end_date == "2027-01-01")) {
-        matched = false;
-    }
-
     keywords.forEach(function(keyword, i) {
         match_comment_s = comment.match(t2s(keyword));
         match_reply_s = reply.match(t2s(keyword));
@@ -391,6 +385,10 @@ function filterKeywordComment(item, tag_list, keywords) {
     if (reply.length == 0) {
         matched = false;
     }
+    if ((tag_list.length == 0) && (keywords[0] == "") && (end_date == "2027-01-01")) {
+        matched = false;
+    }
+
     return matched
 }
 
@@ -479,6 +477,7 @@ function searchComment() {
 }
 
 window.onload = function() {
+    updateDate();
     buildTag();
     formatLabel();
     s2t = OpenCC.Converter({from: 'cn', to: 'tw'});
