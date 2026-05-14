@@ -21,14 +21,28 @@ class ArticleMerger:
         if art_id in self.id_dict.keys():
             old_id = self.id_dict[art_id]
             with open(f"{self.ct_dir}/{old_id}.html") as f:
-                self.old_post = BeautifulSoup(f.read(), features="lxml")
+                old_post = BeautifulSoup(f.read(), features="lxml")
         else:
-            self.old_post = BeautifulSoup("")
+            old_post = BeautifulSoup("")
         new_post = self.df_article.loc[self.df_article["id"] == art_id, "post"].iloc[0]
         if art_id in self.correction_dict.keys():
             for cor in self.correction_dict[art_id]:
                 new_post = new_post.replace(cor["original"], cor["correction"])
-        self.new_post = BeautifulSoup(new_post, features="lxml")
+        new_post = BeautifulSoup(new_post, features="lxml")
+
+        for img in old_post.find_all("img"):
+            if img.has_attr("src"):
+                src = img.attrs['src'].replace('\r','').replace('\n','')
+                imgID = src.split('/')[-1]
+                img.attrs['src'] = f"./img/{imgID}"
+        for img in new_post.find_all("img"):
+            if img.has_attr("src"):
+                src = img.attrs['src'].replace('\r','').replace('\n','')
+                imgID = src.split('/')[-1]
+                img.attrs['src'] = f"./img/{imgID}"
+
+        self.old_post = old_post
+        self.new_post = new_post
     
     def ct_element_check(self):
         # 检查非<p><img>内容

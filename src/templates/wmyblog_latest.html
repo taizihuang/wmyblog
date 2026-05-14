@@ -51,7 +51,7 @@
     <p class="DATE">${date}</p>
     <div class="REPLY_LI">
     <div class="REPLY_LI">
-    %for art_id, comment, reply, nickname, comment_date, comment_md5, comment_tag, deleted in comment_data:
+    %for art_id, comment, reply, nickname, comment_date, reply_date, comment_md5, comment_tag, deleted in comment_data:
     <div class="LI">
     <div class="USER"><span class="NAME" id=${comment_md5}><a href="./${art_id}.html#${comment_md5}">${nickname}</a></span>
     <div class="TIME">${comment_date}</div></div>

@@ -8,7 +8,7 @@
 <language>zh-cn</language>
 <lastBuildDate>${date}+0800</lastBuildDate>
 <ttl>5</ttl>
-%for art_id, comment, reply, nickname, comment_date, comment_md5, comment_tag, deleted in comment_data:
+%for art_id, comment, reply, nickname, comment_date, reply_date, comment_md5, comment_tag, deleted in comment_data:
 <item>
 <% comment = comment.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>
 <% reply = reply.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') %>

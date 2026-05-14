@@ -29,7 +29,8 @@ var end_date = $("#endDate").val();
 var is_online = true;
 var search_dir = "https://cdn.jsdmirror.com/gh/taizihuang/wmyblog/search";
 var color_off = 'rgb(169, 182, 231)';
-var color_on = 'rgb(61, 151, 186)';
+var color_in = 'rgb(61, 151, 186)';
+var color_out = 'rgb(61,0,0)';
 
 
 function updateDate() {
@@ -58,10 +59,13 @@ function formatLabel() {
         cat_label.text(key);
         cat_label[0].style["margin-bottom"] = "10px";
         cat_label[0].style["text-align"] = "center";
-        if (cat_dict[key] == 1) {
-            cat_label[0].style.backgroundColor = color_on;
-        } else {
-            cat_label[0].style.backgroundColor = color_off;
+        switch (cat_dict[key]) {
+            case 0:
+                cat_label[0].style.backgroundColor = color_off;
+                break;
+            case 1:
+                cat_label[0].style.backgroundColor = color_in;
+                break;
         }
     }
     for (var key in tag_dict) {
@@ -70,10 +74,16 @@ function formatLabel() {
         tag_label[0].style["margin-top"] = "3px";
         tag_label[0].style["margin-right"] = "10px";
         tag_label[0].style["text-align"] = "center";
-        if (tag_dict[key] == 1) {
-            tag_label[0].style.backgroundColor = color_on;
-        } else {
-            tag_label[0].style.backgroundColor = color_off;
+        switch (tag_dict[key]) {
+            case -1:
+                tag_label[0].style.backgroundColor = color_out;
+                break;
+            case 0:
+                tag_label[0].style.backgroundColor = color_off;
+                break;
+            case 1:
+                tag_label[0].style.backgroundColor = color_in;
+                break;
         }
     }
 }
@@ -107,7 +117,18 @@ function switchCat(id) {
 }
 
 function switchTag(id) {
-    tag_dict[id] = Math.abs(tag_dict[id]-1)
+    switch (tag_dict[id]) {
+        case -1:
+            tag_dict[id] = 0;
+            break;
+        case 0:
+            tag_dict[id] = 1;
+            break;
+        case 1:
+            tag_dict[id] = -1;
+            break;
+    }
+    // tag_dict[id] = Math.abs(tag_dict[id]-1)
     formatLabel();
 }
 
@@ -152,7 +173,7 @@ function searchURL() {
     if (is_online) {
         is_online = false;
         search_dir = ".";
-        $('label#offline-label')[0].style.backgroundColor = color_on; 
+        $('label#offline-label')[0].style.backgroundColor = color_in; 
     } else {
         is_online = true;
         search_dir = "https://cdn.jsdelivr.net/gh/taizihuang/wmyblog/search"
@@ -172,12 +193,18 @@ function filterDate(item, start_date, end_date) {
     return matched
 }
 
-function filterTag(item, tag_list) {
+function filterTag(item, tag_in_list, tag_out_list) {
     var matched = true;
     var index_tag = -1;
-    tag_list.forEach(function(t,i){
+    tag_in_list.forEach(function(t,i){
         index_tag = item.tag.split('/').indexOf(t);
         if (index_tag < 0) {
+            matched = false;
+        }
+    });
+    tag_out_list.forEach(function(t,i){
+        index_tag = item.tag.split('/').indexOf(t);
+        if (index_tag >= 0) {
             matched = false;
         }
     });
@@ -272,11 +299,16 @@ function searchContent(type_dict) {
     var $content_li = $(type_dict["li"])
     var $content_count = $(type_dict["count"])
 
-    var tag_list = [];
+    var tag_in_list = [];
+    var tag_out_list = [];
 
     for (var key in tag_dict) {
-        if (tag_dict[key] == 1) {
-            tag_list.push(key);
+        switch (tag_dict[key]) {
+            case -1:
+                tag_out_list.push(key);
+                break;
+            case 1:
+                tag_in_list.push(key);
         }
     }
 
@@ -298,7 +330,7 @@ function searchContent(type_dict) {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
             var data = jsonData[type_dict["type"]].filter(item => filterDate(item, start_date, end_date));
-            data = data.filter(item => filterTag(item, tag_list));
+            data = data.filter(item => filterTag(item, tag_in_list, tag_out_list));
             data = data.filter(item => filterKeyword(item, keywords));
 
             var str_list = data.map((item, idx) => formatKeyword(item, idx, keywords, type_dict["type_str"]));
@@ -435,11 +467,16 @@ function searchComment() {
     var $comment = $('.REPLY_LI')
     var $comment_count = $('.comment_count')
 
-    var tag_list = [];
+    var tag_in_list = [];
+    var tag_out_list = [];
 
     for (var key in tag_dict) {
-        if (tag_dict[key] == 1) {
-            tag_list.push(key);
+        switch (tag_dict[key]) {
+            case -1:
+                tag_out_list.push(key);
+                break;
+            case 1:
+                tag_in_list.push(key);
         }
     }
 
@@ -461,8 +498,8 @@ function searchComment() {
             var jsonData = JSON.parse(JSON.stringify(jsonResponse));
             var keywords = $input.val().trim().toLowerCase().split(/[\s]+/);
             var commentData = jsonData.comment.filter(item => filterDate(item, start_date, end_date));
-            commentData = commentData.filter(item => filterTag(item, tag_list));
-            commentData = commentData.filter(item => filterKeywordComment(item, tag_list, keywords));
+            commentData = commentData.filter(item => filterTag(item, tag_in_list, tag_out_list));
+            commentData = commentData.filter(item => filterKeywordComment(item, tag_in_list, keywords));
 
             var reply_str_list = commentData.map((item, idx) => formatKeywordComment(item, idx, keywords));
             var comment_count = reply_str_list.length; 

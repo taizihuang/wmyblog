@@ -259,10 +259,10 @@ class Wmyblog:
                     img_file = f"{self.html_dir}/img/{imgID}"
                     img_src = f"./img/{imgID}"
                     if not os.path.exists(img_file):
-                        img_content = requests.get(url, proxies=proxies).content
+                        img_content = requests.get(src, proxies=proxies).content
                         with open(img_file, "wb") as f:
                             f.write(img_content)
-                        img.attrs['src'] = img_src 
+                    img.attrs['src'] = img_src 
         
         return (article, comment) 
     
@@ -398,6 +398,7 @@ class Wmyblog:
             md5 = df_comment_id.loc[idx, "md5"]
             comment_tag = df_comment_id.loc[idx, "tag"].replace('。','/').replace('、','/')
             reply = df_comment_id.loc[idx, "reply"]
+            reply_date = "NaT"
             if reply != "":
                 reply = reply.replace('\n', '<br>') 
                 reply = re.sub('^<br>', '', reply)
@@ -406,13 +407,17 @@ class Wmyblog:
                 reply = reply.replace('<br><br><br>','<br>')
                 first_reply_date = df_comment_id.loc[idx, "first_reply_date"]
                 latest_reply_date = df_comment_id.loc[idx, "latest_reply_date"]
-                if str(first_reply_date) != "NaT":
+                if str(latest_reply_date) != "NaT":
                     reply_date = latest_reply_date.strftime("%Y-%m-%d %H:%M")
                     if first_reply_date == latest_reply_date:
                         reply += f'<br><div class="TIME">{reply_date} 回复</div>'
                     else:
                         reply += f'<br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/{art_id}.html" sytle="color:black;">{reply_date} 修改</a></div>'
-            comment_data_list.append((art_id, comment, reply, nickname, comment_date, md5, comment_tag, deleted))
+                else:
+                    pass 
+            else:
+                pass
+            comment_data_list.append((art_id, comment, reply, nickname, comment_date, reply_date, md5, comment_tag, deleted))
         return comment_data_list
     
     def gen_index_page(self):
@@ -463,7 +468,7 @@ class Wmyblog:
         df_note = pd.DataFrame(data=self.note_list, columns=note_columns)
         df_note = df_note.sort_values("date").reset_index(drop=True)
 
-        comment_columns = ["id", "comment", "reply", "nickname", "date", "md5", "tag", "deleted"]
+        comment_columns = ["id", "comment", "reply", "nickname", "date", "reply_date", "md5", "tag", "deleted"]
         df_comment = pd.DataFrame(data=self.comment_list, columns=comment_columns)
         df_comment = df_comment.sort_values("date").reset_index(drop=True)
 
@@ -482,17 +487,19 @@ class Wmyblog:
         df_note1 = df_note1.rename(columns={"content": "reply"})
         df_note1["nickname"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
         df_note1["comment"] = df_note1["title"].map(lambda x: x.split("| ")[-1])
-        df_note1["date"] = pd.to_datetime(df_note1["date"], format="%Y-%m-%d")
-        df_note1["date"] = df_note1["date"].map(lambda x: x + datetime.timedelta(days=1))
+        df_note1["comment_date"] = pd.to_datetime(df_note1["date"], format="%Y-%m-%d")
+        df_note1["comment_date"] = df_note1["comment_date"].map(lambda x: x + datetime.timedelta(days=1))
+        df_note1["reply_date"] = df_note1["comment_date"]
         df_note1["deleted"] = False
+
         df_comment_note = df_comment.loc[df_comment["reply"] != ""].iloc[-60:].copy()
-        df_comment_note["date"] = pd.to_datetime(df_comment_note["date"], format="%Y-%m-%d %H:%M")
+        df_comment_note["comment_date"] = pd.to_datetime(df_comment_note["date"], format="%Y-%m-%d %H:%M")
+        df_comment_note["reply_date"] = pd.to_datetime(df_comment_note["reply_date"], format="%Y-%m-%d %H:%M")
         df_comment_note["nickname"] = df_comment_note["nickname"].map(lambda x: x.split("| ")[-1])
         df_comment_note = pd.concat([df_comment_note, df_note1], ignore_index=True)
+        df_comment_note = df_comment_note.sort_values("reply_date", ascending=False).reset_index(drop=True)
         df_comment_note["first_reply_date"] = "NaT"
         df_comment_note["latest_reply_date"] = "NaT"
-        df_comment_note = df_comment_note.sort_values("date", ascending=False).reset_index(drop=True)
-        df_comment_note = df_comment_note.rename(columns={"date": "comment_date"})
 
         comment_data = self.format_comment(df_comment_note)
         comment_data = comment_data[:60]

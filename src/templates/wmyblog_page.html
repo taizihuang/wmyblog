@@ -32,7 +32,7 @@
     </div>
     <h2>${len(comment_data)} 条留言</h2>
     <div class="REPLY_LI">
-    %for art_id, comment, reply, nickname, comment_date, comment_md5, comment_tag, deleted in comment_data:
+    %for art_id, comment, reply, nickname, comment_date, reply_date, comment_md5, comment_tag, deleted in comment_data:
     <div class="LI">
     <div class="USER"><span class="NAME" id=${comment_md5}>${nickname.split("| ")[-1]}</span>
     <div class="TIME">${comment_date}</div></div>
