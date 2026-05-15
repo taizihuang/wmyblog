@@ -5,8 +5,8 @@
 		<title>王孟源访谈</title>
 		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
 		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
-		<pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-		<lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+		<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
 		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
@@ -628,5 +628,13 @@
 			<link><![CDATA[https://wmyblog.site/html/260417[龙行天下].html]]></link>
 			<description><![CDATA[《總結美國三件大事》]]></description>
 			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nlVwsdaAFTkegxKGZaz_WgP-68Ca.mp3" />
+		</item>	
+		<item>
+			<title>《「習川會」：美國對中國謀殺未遂！》</title>
+			<pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[260515[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/260515[龙行天下].html]]></link>
+			<description><![CDATA[《「習川會」：美國對中國謀殺未遂！》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/nrWo3q40WzqQAXl3CRcDUsEb0ITb.mp3" />
 		</item>	
         </channel></rss>
