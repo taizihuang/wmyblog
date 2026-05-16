@@ -27,7 +27,7 @@ var count_dict = {};
 var start_date = $("#startDate").val();
 var end_date = $("#endDate").val();
 var is_online = true;
-var search_dir = "https://cdn.jsdmirror.com/gh/taizihuang/wmyblog/search";
+var search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog@main/search"
 var color_off = 'rgb(169, 182, 231)';
 var color_in = 'rgb(61, 151, 186)';
 var color_out = 'rgb(61,0,0)';
@@ -176,7 +176,7 @@ function searchURL() {
         $('label#offline-label')[0].style.backgroundColor = color_in; 
     } else {
         is_online = true;
-        search_dir = "https://cdn.jsdelivr.net/gh/taizihuang/wmyblog/search"
+        search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog@main/search"
         $('label#offline-label')[0].style.backgroundColor = color_off;
     }
 }
