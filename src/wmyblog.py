@@ -313,6 +313,7 @@ class Wmyblog:
 
         self.df_article = df_article
         self.df_comment = df_comment
+        self.merger.df_article = df_article 
         df_article.to_pickle(self.article_file)
         df_comment.to_pickle(self.comment_file)
         self.logger.info('comment updated')
@@ -518,8 +519,8 @@ class Wmyblog:
             f.write(html)
 
     def update_data(self):
-        id_list = self.get_id_list()
         self.download_tag()
+        id_list = self.get_id_list()
         self.download_page(id_list)
 
 if __name__ == "__main__":
