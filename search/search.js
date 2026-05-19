@@ -27,7 +27,7 @@ var count_dict = {};
 var start_date = $("#startDate").val();
 var end_date = $("#endDate").val();
 var is_online = true;
-var search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog@main/search"
+var search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog/search"
 var color_off = 'rgb(169, 182, 231)';
 var color_in = 'rgb(61, 151, 186)';
 var color_out = 'rgb(61,0,0)';
@@ -44,13 +44,14 @@ function buildTag() {
         cat_str += `<div class="${key}">`;
         for (var idx in tag_cat_dict[key]) {
             var tag = tag_cat_dict[key][idx];
-            cat_str += `<label for="${tag}" id="${tag}-label">${tag}</label>`;
+            cat_str += `<label for="${tag}" id="${tag}-label" style="">${tag}</label>`;
             cat_str += `<input type="checkbox" id="${tag}" onclick="switchTag(this.id)">`;
             tag_dict[tag] = 0;
         }
         cat_str += "</div>";
     }
     $(".category").after(cat_str);
+    formatLabel();
 }
 
 function formatLabel() {
@@ -142,7 +143,6 @@ function search() {
     count_dict = {};
 
     formatInfo();
-    formatLabel();
 
     if (cat_dict["正文"] > 0) {
         searchArticle();
@@ -157,6 +157,8 @@ function search() {
         searchComment();
     }
 
+    buildURL();
+    formatLabel();
 }
 
 function tagCount(el) {
@@ -176,9 +178,46 @@ function searchURL() {
         $('label#offline-label')[0].style.backgroundColor = color_in; 
     } else {
         is_online = true;
-        search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog@main/search"
+        search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog/search"
         $('label#offline-label')[0].style.backgroundColor = color_off;
     }
+}
+
+function buildURL() {
+    const urlParams = new URL(window.location.href);
+    var input_str = $('#search-input').val().replace(" ", " ");
+    urlParams.searchParams.set("q", input_str);
+
+    var tag_in_list = [];
+    var tag_out_list = [];
+    for (var key in tag_dict) {
+        switch (tag_dict[key]) {
+            case -1:
+                tag_out_list.push(key);
+                break;
+            case 1:
+                tag_in_list.push(key);
+        }
+    }
+    var include_str = tag_in_list.join(";");
+    var exclude_str = tag_out_list.join(";");
+    urlParams.searchParams.set("include", include_str)
+    urlParams.searchParams.set("exclude", exclude_str)
+
+    urlParams.searchParams.set("start_date", start_date)
+    urlParams.searchParams.set("end_date", end_date)
+    if (is_online) {
+        urlParams.searchParams.set("online", "1");
+    } else {
+        urlParams.searchParams.set("online", "0");
+    }
+
+    var new_url = "?" + urlParams.searchParams.toString();
+    new_url = new_url.replace("&include=&", "&");
+    new_url = new_url.replace("&exclude=&", "&");
+    new_url = new_url.replace("&start_date=2014-07-21", "");
+    new_url = new_url.replace("&end_date=2027-01-01", "");
+    history.pushState("", "", new_url);
 }
 
 function filterDate(item, start_date, end_date) {
@@ -514,9 +553,53 @@ function searchComment() {
 }
 
 window.onload = function() {
-    updateDate();
     buildTag();
-    formatLabel();
+
+    var has_param = false;
+
+    const urlParams = new URL(window.location.href);
+    if (urlParams.searchParams.has("q")) {
+        var query = urlParams.searchParams.get("q");
+        query = query.replace(";", " ");
+        $('#search-input').val(query);
+        has_param = true
+    }
+    if (urlParams.searchParams.has("include")) {
+        var tagOn = urlParams.searchParams.get("include");
+        tagOn.split(";").forEach(keyword => tag_dict[keyword] = 1);
+        has_param = true
+    }
+    if (urlParams.searchParams.has("exclude")) {
+        var tagOff = urlParams.searchParams.get("exclude");
+        tagOff.split(";").forEach(keyword => tag_dict[keyword] = -1);
+        has_param = true
+    }
+    if (urlParams.searchParams.has("start_date")) {
+        var start_date = urlParams.searchParams.get("start_date");
+        $("#startDate").val(start_date);
+        has_param = true
+    }
+    if (urlParams.searchParams.has("end_date")) {
+        var end_date = urlParams.searchParams.get("end_date");
+        $("#endDate").val(end_date);
+        has_param = true
+    }
+    if (urlParams.searchParams.has("online")) {
+        var online = urlParams.searchParams.get("online");
+        if (online == 0) {
+            is_online = false
+            search_dir = ".";
+            $('label#offline-label')[0].style.backgroundColor = color_in; 
+        }
+    }
+
+    updateDate();
     s2t = OpenCC.Converter({from: 'cn', to: 'tw'});
     t2s = OpenCC.Converter({from: 'tw', to: 'cn'});
+
+    if (has_param) {
+        search();
+    } else {
+        formatLabel();
+    }
 };
