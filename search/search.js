@@ -217,6 +217,7 @@ function buildURL() {
     new_url = new_url.replace("&exclude=&", "&");
     new_url = new_url.replace("&start_date=2014-07-21", "");
     new_url = new_url.replace("&end_date=2027-01-01", "");
+    new_url = new_url.replace("&online=1", "");
     history.pushState("", "", new_url);
 }
 
