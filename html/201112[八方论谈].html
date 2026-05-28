@@ -1,25 +1,38 @@
 <html>
 <head>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
-<meta charset="utf-8"/><link href="./init.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<link href="./init.css" rel="stylesheet"/>
 <title>《孟源漫谈》</title>
 <link href="../podcast/APlayer.min.css" rel="stylesheet"/>
 <script src="../podcast/APlayer.min.js"></script>
 <script src="jquery-1.11.3.min.js"></script>
 <script src="supabase.js"></script>
 <script src="tag.js"></script>
-<!-- <script src="jquery-1.11.3.min.js"></script> -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1F5ZFPC2V2');
+    </script>
 <style>
         a {
             text-decoration: none;
-            color:#000;
-            }
-        h1, #toc, .DATETIME {
-            text-align: center;
-            }
-        a:hover{
-            color:#f40;
+            color: #000;
         }
+
+        h1,
+        #toc,
+        .DATETIME {
+            text-align: center;
+        }
+
+        a:hover {
+            color: #f40;
+        }
+
         #player {
             position: fixed;
             max-width: 650px;
@@ -38,14 +51,16 @@
     </script>
 </head>
 <body>
-<div class="BODY"><div class="BACK"><a href="./transcript.html">返回索引页</a></div>
+<div class="BODY">
+<div class="BACK"><a href="./transcript.html">返回索引页</a></div>
 <h1><a href="https://docs.google.com/document/d/1eR6tf5TZMpMQVhrdfhTk2ifmsNOYqJVqSLVgqQs2td0/edit">《孟源漫谈》</a></h1>
 <p class="DATETIME">2020-11-12</p>
 <div id="player"></div>
 <br/>
 <br/>
 <div id="toc"><div><a onclick="scrollPage('开头')">开头</a></div><div><a onclick="scrollPage('科研和艺术的腐化')">科研和艺术的腐化</a></div><div><a onclick="scrollPage('中国的理性文化建设')">中国的理性文化建设</a></div><div><a onclick="scrollPage('高等教育和阶级')">高等教育和阶级</a></div><div><a onclick="scrollPage('当代文科的问题')">当代文科的问题</a></div><div><a onclick="scrollPage('片花')">片花</a></div><div><a onclick="scrollPage('英国脱欧')">英国脱欧</a></div><div><a onclick="scrollPage('美国大选回顾')">美国大选回顾</a></div></div>
-<div class="POST"><div id="article_show_content"><br/>
+<div class="POST">
+<div id="article_show_content"><br/>
 <br/><h2><h2 id="开头" onclick="scrollPage('toc')">开头</h2></h2>
         <div class="LI">
         <div class="USER" id=201112[八方论谈]_开头
@@ -227,11 +242,11 @@
             autoplay: false,
             showlrc: false,
             music: {
-                    title: "《孟源漫谈》",
-                    author: "2020-11-12",
-                    url: "https://media.xyzcdn.net/nnPEhEU8fC69N-hteFMVV-0MNclY.mp3",
-                    pic: '../podcast/wmy-podcast-long.jpg'
-                    }
+                title: "《孟源漫谈》",
+                author: "2020-11-12",
+                url: "https://media.xyzcdn.net/nnPEhEU8fC69N-hteFMVV-0MNclY.mp3",
+                pic: '../podcast/wmy-podcast-long.jpg'
+            }
         });
     ap.init();
 </script>

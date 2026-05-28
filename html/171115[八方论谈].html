@@ -1,25 +1,38 @@
 <html>
 <head>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
-<meta charset="utf-8"/><link href="./init.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<link href="./init.css" rel="stylesheet"/>
 <title>《量子通讯在中国》</title>
 <link href="../podcast/APlayer.min.css" rel="stylesheet"/>
 <script src="../podcast/APlayer.min.js"></script>
 <script src="jquery-1.11.3.min.js"></script>
 <script src="supabase.js"></script>
 <script src="tag.js"></script>
-<!-- <script src="jquery-1.11.3.min.js"></script> -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1F5ZFPC2V2');
+    </script>
 <style>
         a {
             text-decoration: none;
-            color:#000;
-            }
-        h1, #toc, .DATETIME {
-            text-align: center;
-            }
-        a:hover{
-            color:#f40;
+            color: #000;
         }
+
+        h1,
+        #toc,
+        .DATETIME {
+            text-align: center;
+        }
+
+        a:hover {
+            color: #f40;
+        }
+
         #player {
             position: fixed;
             max-width: 650px;
@@ -38,14 +51,16 @@
     </script>
 </head>
 <body>
-<div class="BODY"><div class="BACK"><a href="./transcript.html">返回索引页</a></div>
+<div class="BODY">
+<div class="BACK"><a href="./transcript.html">返回索引页</a></div>
 <h1><a href="https://docs.google.com/document/d/1380MnCAmHp656Q2vEUd_tEpuPniLrdru1V1BVLShmNA/edit">《量子通讯在中国》</a></h1>
 <p class="DATETIME">2017-11-15</p>
 <div id="player"></div>
 <br/>
 <br/>
 <div id="toc"><div><a onclick="scrollPage('哥本哈根诠释不符合逻辑')">哥本哈根诠释不符合逻辑</a></div><div><a onclick="scrollPage('量子相干性')">量子相干性</a></div><div><a onclick="scrollPage('物理尺度')">物理尺度</a></div><div><a onclick="scrollPage('量子的含义')">量子的含义</a></div><div><a onclick="scrollPage('非定域性和贝尔实验')">非定域性和贝尔实验</a></div><div><a onclick="scrollPage('密码学和量子通讯')">密码学和量子通讯</a></div><div><a onclick="scrollPage('知识分子的品格')">知识分子的品格</a></div></div>
-<div class="POST"><div id="article_show_content"><br/>
+<div class="POST">
+<div id="article_show_content"><br/>
 <br/>Credit: 云知困、arbitrage<br/>
 <br/><h2><h2 id="哥本哈根诠释不符合逻辑" onclick="scrollPage('toc')">哥本哈根诠释不符合逻辑</h2></h2>
         <div class="LI">
@@ -279,11 +294,11 @@
             autoplay: false,
             showlrc: false,
             music: {
-                    title: "《量子通讯在中国》",
-                    author: "2017-11-15",
-                    url: "https://media.xyzcdn.net/nv6gIotkHoyUOM-VqgeiaLYGJl2w.mp3",
-                    pic: '../podcast/wmy-podcast-long.jpg'
-                    }
+                title: "《量子通讯在中国》",
+                author: "2017-11-15",
+                url: "https://media.xyzcdn.net/nv6gIotkHoyUOM-VqgeiaLYGJl2w.mp3",
+                pic: '../podcast/wmy-podcast-long.jpg'
+            }
         });
     ap.init();
 </script>
