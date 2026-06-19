@@ -225,12 +225,15 @@ class Wmyblog:
         time.sleep(1)
 
         # 评论时间更老但未回复的文章 
-        df_comment_noreply = self.df_comment.loc[self.df_comment["reply"].empty
-                                                 & (self.df_comment["deleted"] == False)]
-        id_list += list(df_comment_noreply["id"].iloc[-10:])
+        #df_comment_noreply = self.df_comment.loc[self.df_comment["reply"].empty
+                                                 #& (self.df_comment["deleted"] == False)]
+        df_comment_noreply = self.df_comment.loc[self.df_comment['reply']=='']
+        id_list += list(df_comment_noreply["id"].iloc[-20:])
 
         # 去重 
         id_list = list(set(id_list))
+
+        print(id_list)
 
         return id_list
 
