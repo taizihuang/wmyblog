@@ -286,9 +286,10 @@ class Wmyblog:
 
         # 更新评论
         df_comment_new = pd.concat(comment_list, ignore_index=True)
+        df_comment_new = df_comment_new.loc[df_comment_new["comment_date"] > "20180101"]
         for art_id in id_list:
             d1 = df_comment_new.loc[df_comment_new["id"] == art_id]
-            d2 = self.df_comment.loc[self.df_comment["id"] == art_id]
+            d2 = self.df_comment.loc[(self.df_comment["id"] == art_id) & (self.df_comment["comment_date"] > "20180101")]
             if d1.empty:
                 if not d2.empty:
                     self.df_comment.loc[self.df_comment["id"] == art_id, "deleted"] = True

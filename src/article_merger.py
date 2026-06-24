@@ -191,7 +191,10 @@ class ArticleMerger:
             if p.text[:3] in ["【後註"]: #, "==="]:
                 annotation_list.append(str(p))
             else:
-                annotation_list[-1] += str(p)
+                if (len(annotation_list) == 0) and (str(p) == "\n"):
+                    pass
+                else:
+                    annotation_list[-1] += str(p)
         
         if len(new_p) > len(old_p):
             for p in new_p[len(old_p):]:
