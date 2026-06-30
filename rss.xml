@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-06-30T12:00:52+0800</lastBuildDate>
+<lastBuildDate>2026-07-01T00:01:16+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注23]]></title>
+<description><![CDATA[后注23 <br><br>----<br><br><p>【後註二十三，2026/06/30】從來沒有像我這樣直接斷言量子通信/計算是純粹商業騙局的Sabine Hossenfelder今天回顧了最近幾個月量子計算公司的公關稿（參見<a href="https://www.youtube.com/watch?v=spRN7DfzhrU">《Strange Things Are Happening in Quantum Computing》</a>），發現無一例外都在篡改一年前的進度承諾，而一年前則是在篡改更前一年的承諾，以此類推。博客已經反復指出，這裏最奇怪的，在於這些已經多次、而且每次都失信的詐騙團隊，其新版公關依舊能得到袁嵐峰這類被豢養的所謂“科普作家”的吹捧以及無腦群衆的支持，然而這些新公關所否定的舊公關，卻在騙徒和蠢蛋交織出的虛幻世界中被徹底遺忘。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-01T00:00:00+0800</pubDate>
+<guid isPermaLink="false">171633910_note23</guid>
+<link>https://wmyblog.site/html/171633910.html#171633910_note23</link>
+</item>
 <item>
 
 
@@ -597,15 +607,5 @@
 <pubDate>2026-05-11T17:13:00+0800</pubDate>
 <guid isPermaLink="false">c2ff9d1162f8588a8605bcd8e1f31f42</guid>
 <link>https://wmyblog.site/html/180084901.html#c2ff9d1162f8588a8605bcd8e1f31f42</link>
-</item>
-<item>
-
-
-<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | rongbing mu]]></title>
-<description><![CDATA[（1/4）王先生您好，我是某家 Frontier Lab 的 AI 研究员，一直关注您对 AI 泡沫及当前大模型缺乏底层逻辑的见解。我想就“本世代 AI 是否需要底层理论突破才能实现 AGI”这一观点与您探讨，并分享一些目前头部实验室的工程方法论。<br><br>当前 AI 模型的纯智力上限与参数量、预训练计算量、数据量及采样数这四个维度呈Log-Linear关系。其核心规律在于：凡是能被程序化验证（Procedural Verification）的问题（如下棋、编程、中低端数学几何证明），模型最终都能解决；而无法进行程序化验证的开放性问题，进展依然缓慢。<br><br> <br><br>----<br><br>並不是log linear就可以一概而論，綫性斜率的大小至關重要，就像經濟學裏的需求/價格斜綫，斜率不同，市場的特徵就不一樣。所以AI的log linear即使暫時忽略其能持續多久的不確定性，其斜率很小（在0.05這個數量級）本身就是問題。<br><br><div class="TIME">2026-05-15 02:26 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-05-11T17:10:00+0800</pubDate>
-<guid isPermaLink="false">80201c47b27db0643dbd0a6b8d751c9f</guid>
-<link>https://wmyblog.site/html/180084901.html#80201c47b27db0643dbd0a6b8d751c9f</link>
 </item>
 </channel></rss>
