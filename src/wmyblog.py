@@ -73,7 +73,7 @@ def comment2md(comment):
 def rep2dict(rep, art_id):
 
     comment = rep(class_='rp5')[0].text.replace('\xa0','')
-    nickname = rep(class_='rp2')[0].text.split('\n')[1]
+    nickname = rep(class_='rp2')[0].text#.split('\n')[1]
     comment_date = rep(class_='rp4')[0].text
 
     reply = ''
@@ -96,6 +96,33 @@ def rep2dict(rep, art_id):
             "md5": comment2md(comment),
             "deleted": False
             }
+
+def guestbook2comment(doc):
+
+    if doc.find("dt"):
+        reply_list = []
+        for rep in doc.find_all("dt"):
+            reply_list.append(rep2dict(rep, "guestbook"))
+        df_comment = pd.DataFrame(data=reply_list)
+    else:
+        data_dict = {"comment": "",
+                    "reply": "",
+                    "nickname": "",
+                    "comment_date": "",
+                    "first_reply_date": "",
+                    "latest_reply_date": "",
+                    "id": "guestbook",
+                    "md5": "",
+                    "deleted": False
+        }
+        df_comment = pd.DataFrame(data=data_dict, index=[0])
+
+    l = ['comment_date', 'first_reply_date', 'latest_reply_date']
+    df_comment["comment_date"] = df_comment["comment_date"].apply(pd.to_datetime, format="%Y/%m/%d %H:%M")
+    df_comment["first_reply_date"] = df_comment["first_reply_date"].apply(pd.to_datetime, format="%Y/%m/%d %H:%M ")
+    df_comment["latest_reply_date"] = df_comment["first_reply_date"]
+    
+    return [df_comment]
 
 def page2comment(doc, art_id):
 
@@ -151,6 +178,8 @@ class Wmyblog:
         self.df_transcript = pd.read_pickle(self.transcript_file)
         self.tag_file = f"{data_dir}/tag.pkl"
         self.df_tag = pd.read_pickle(self.tag_file)
+        self.guest_file = f"{data_dir}/guest.pkl"
+        self.df_guest = pd.read_pickle(self.guest_file)
 
         # 后注日期
         self.note_date_file = f"{data_dir}/annotation_date.json"
@@ -456,6 +485,14 @@ class Wmyblog:
                                                                comment_data=comment_data)
         with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8") as f:
             f.write(html)
+    
+    def gen_guest_page(self):
+        comment_data = self.format_comment(self.df_guest)
+        guest_template_file = f"{self.template_dir}/guestbook_page.html"
+        html = Template(filename=guest_template_file).render(comment_data=comment_data)
+        with open(f"{self.html_dir}/guestbook.html", "w", encoding="utf8") as f:
+            f.write(html)
+
     
     def gen_article_pages(self):
         self.post_list = []

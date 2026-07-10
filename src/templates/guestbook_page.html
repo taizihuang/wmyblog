@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head>    
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><meta charset=utf-8>
+    <script src="jquery-1.11.3.min.js"></script>
+    <link href="fSelect.css" rel="stylesheet" type="text/css">
+    <script src="supabase.js"></script>
+    <script src="tag.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F5ZFPC2V2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1F5ZFPC2V2');
+    </script>
+    <link rel="stylesheet" href="./init.css">
+    <title>訪客簿</title>
+    </head>
+    <body><div class="BODY">
+    <div class="BACK"><a href="../index.html">返回索引页</a></div>
+    <h1>訪客簿</h1>
+    <div class="LI">
+    <h4>原文网址：<a href="https://blog.udn.com/MengyuanWang/guestbook">https://blog.udn.com/MengyuanWang/guestbook</a></h4>
+    <br><br>
+    <div class="POST">
+    <p>我試用《UDN》的舊版之後，發現大部分的Bug都消失了，那麽讀者要在文章下留言，也應該沒有困難。自今日起，《訪客簿》僅限Bug Report；一切實質討論，必須在留言欄進行。</p> 
+    <h2>${len(comment_data)} 条留言</h2>
+    <div class="REPLY_LI">
+    %for art_id, comment, reply, nickname, comment_date, reply_date, comment_md5, comment_tag, deleted in comment_data:
+    <div class="LI">
+    <div class="USER"><span class="NAME" id=${comment_md5}>${nickname.split("| ")[-1]}</span>
+    <div class="TIME">${comment_date}</div></div>
+    %if deleted:
+    <input type="checkbox" class="exp" id="${comment_md5}_1">
+    <div class="text1"><label class="btn" for="${comment_md5}_1"></label>
+    <div class="SAY">${comment}</div>
+    </div>
+    %else:
+    <div class="SAY">${comment}</div>
+    %endif
+    %if reply:
+    <div class="REPLY">${reply}</div>
+    %endif
+    </div>
+    %endfor
+    </div>
+    </div>
+    <div class="BACK"><a href="../index.html">返回索引页</a></div>
+    </body></html>
