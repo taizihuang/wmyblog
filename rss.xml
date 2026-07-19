@@ -6,8 +6,19 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-07-19T00:01:04+0800</lastBuildDate>
+<lastBuildDate>2026-07-19T12:00:59+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 137樓.
+dummy_account]]></title>
+<description><![CDATA[關於PE跟私募，大陸語境確實不是一個概念。因爲國內所有的VC、PE，都屬於“私募基金”，“私募”的核心在於募資只針對合格投資者(對個人要求爲50萬年收入或300萬金融資產，對公司爲1000萬金融資產），主要跟針對個人可以隨便投資的“公募”進行區分，而不是就其投資範圍進行定義。<br><br>這個是所有的基金從業人員都要考的，也形成習慣了。因此，提到“私募”，大概率都不是指歐美語境的PE。<br><br> <br><br>----<br><br>Okay，美國人把面向公衆的投資基金專門叫做“Mutual Funds”，中文似乎翻成“共同基金”。面向少數富豪的，並沒有類別名稱，因爲絕大多數的基金Funds都屬於這一類，彼此之間又天差地別，很少籠統提起，也就不需要特別形容詞；例外是Mutual Fund，才有自己的名字。如果遇到非要精確討論不可的極端場合，會用“Private Funds”或“Private Investment Funds”來作爲Mutual Funds的反義詞，乍看之下，翻成“私募基金”沒有錯。<br><br>問題出在Private Equity的確也翻成“私募基金”，而不是“私股基金”（至少日常討論中是如此）。結果“私募基金”同時也可以用來汎指除Mutual Funds之外的所有投資基金（Investment Funds，包括Hedge Fund對衝基金、PE、Private Credit、REIT、VC、FoF、SPV等等；這裏除了VC之外，對實業的貢獻都小於等於零，PE更是趨近於負無限大），顯然是一詞多義，而且與英文不匹配，等同把US和UN都翻成“聯合國”，特別方便混淆概念（考慮一下“US #1”翻成“聯合國最棒”，或者把“We don't follow orders from the US”翻成“我們不理會聯合國決議”）；這在無條件接受美國“先進經驗”的金融界，若是無意間的錯誤，那也難免太巧了些。<br><br><div class="TIME">2026-07-19 04:53 回复</div>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-18T20:51:00+0800</pubDate>
+<guid isPermaLink="false">25fda40b9ef6329e5c7286c97762c940</guid>
+<link>https://wmyblog.site/html/180084901.html#25fda40b9ef6329e5c7286c97762c940</link>
+</item>
 <item>
 
 
@@ -526,16 +537,6 @@ zhaofei]]></title>
 <pubDate>2026-06-19T04:23:00+0800</pubDate>
 <guid isPermaLink="false">5d4907924f1382b208db680c6c17713f</guid>
 <link>https://wmyblog.site/html/128020354.html#5d4907924f1382b208db680c6c17713f</link>
-</item>
-<item>
-
-
-<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | rongbing mu]]></title>
-<description><![CDATA[今天OpenAI宣布解决了一个Erdos Conjecture，我没有足够的专业能力来verify这一突破来自于预训练中的海量搜索联想能力还是长序列逻辑推理能力，请教王先生研究一下。<br><br>我们之前的主要分歧在于当前Frontier Model的底座能力中的逻辑能力是否充足，我的观点是AI的逻辑潜能已经达到人类专家，但是没有足够的feedback loop把它们从后训练中挖出来。不知道这一成果是否改变您对AI逻辑能力不足的看法？<br><br>https://openai.com/index/model-disproves-discrete-geometry-conjecture/<br><br> <br><br>----<br><br>首先，Erdos很喜歡做猜想，全部加起來即使沒有上千、也有至少幾百個"Erdos Conjectures"，參見https://www.erdosproblems.com/lists；請注意，這裏面涵蓋147篇Erdos的論文，每篇最多有99個猜想。這次被AI破解的這個，微不足道。<br><br>其次，我沒有找到足夠細節來100%確定，不過這個AI解似乎是屬於“來自其他領域的解法”那個類別。<br><br>這個AI解答Erdos Conjecture的案例，最近公佈了細節，是找到反例從而將該Conjecture證僞；換句話説，是深刻理解了原文字敘事，然後在窮舉過程中剛好碰上相關反例，强點在於語文理解和窮舉速度，本質屬於本世代AI早已展露的技能，而不是真正的高層次邏輯推理達成正面證明；不過從實際應用角度來看，完全具備深入輔助數學研究的能力。<br><br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/180084901.html" sytle="color:black;">2026-06-19 01:32 修改</a></div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-05-21T19:38:00+0800</pubDate>
-<guid isPermaLink="false">2a63a77c2ce6d03979ae967ed1788f19</guid>
-<link>https://wmyblog.site/html/180084901.html#2a63a77c2ce6d03979ae967ed1788f19</link>
 </item>
 <item>
 
