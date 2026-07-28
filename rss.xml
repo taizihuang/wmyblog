@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-07-28T00:01:03+0800</lastBuildDate>
+<lastBuildDate>2026-07-28T12:00:58+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注12]]></title>
+<description><![CDATA[后注12 <br><br>----<br><br><p>【後註十二，2026/07/27】最近中國AI產業有兩個熱門談點：月之暗面的Kimi和針對Claude（當前世界最强寫程序AI；博客已經多次評估，認爲寫程序是本世代AI的最大商業效益所在）的“蒸餾”（亦即AI界的逆向測繪）。這高度涉及計算機科學的特定應用細節，遠超外行人的理解，但我今天看到一個科普視頻（參見<a href="https://www.youtube.com/watch?v=28Fbc9TQUDw">《Claude是如何被破解和蒸馏的？-卢菁博士(北大)》</a>），覺得解釋得很通俗易懂，值得有興趣的讀者參考。這裏最重要的論點在於Kimi既不是中方寫程序AI、也不是蒸餾技術的領頭羊，但爲了股價，完成測繪後搶先發表新版本，並只針對評測、而不是實際效能做了優化，導致其占據新聞頭條卻沒有實用優勢；例如爲了讓Kimi在評測裏勝出，處處選擇以大幅提高能耗的低效率路綫來換取一丁點的分數提升（雖然盧博士沒有明説，但這倒是能解釋爲什麽Kimi推出第二天就因算力不足，而暫停接受新用戶）。如果這個敘事屬實，那麽月之暗面不但不應該與Deepseek相提並論，事實上是美式金融污染實業的負面教材。不過這只是一家之言，盧菁博士的視頻屬於科普性質，並沒有提供詳細嚴謹的事實和邏輯等論證根據，所以我這個外行人難以進一步確認；我們可以等幾年，讓時間沉澱出真相。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-28T00:00:00+0800</pubDate>
+<guid isPermaLink="false">180084901_note12</guid>
+<link>https://wmyblog.site/html/180084901.html#180084901_note12</link>
+</item>
 <item>
 
 
@@ -615,15 +625,5 @@ zhaofei]]></title>
 <pubDate>2026-06-19T22:15:00+0800</pubDate>
 <guid isPermaLink="false">036bd54beb2dba309c905d7e27fb9360</guid>
 <link>https://wmyblog.site/html/177266891.html#036bd54beb2dba309c905d7e27fb9360</link>
-</item>
-<item>
-
-
-<title><![CDATA[【海軍】有關航母的一些新消息 | 乌鹊南飞]]></title>
-<description><![CDATA[最新从港口附近侧拍的图片显示那个所谓“无围壳”潜艇其实是有围壳的，只不过比较小。此外，根据原始卫星图中潜艇附近J15模型的比对，该潜艇露在水面上的部分就有11米以上（卫星图中J15翼展26像素，潜艇水线宽20像素，J15翼展14.7米，可知潜艇水线宽11.3m）它的实际直径应该是12米以上，和数月前出现的短粗095是差不多的。 sutton说它宽度只有10-11米，有点奇怪。考虑到短粗095也有垂发，那么这艘加长095的角色很可能类似于奥斯卡级和俄亥俄级改装型这样的常规导弹核潜艇，战术运用也应该是类似于奥斯卡级，携带大量反舰导弹，和进行ASuW攻击的大型隐身轰炸机是一个战术作用？我有点奇怪短粗型如果是偏重反潜，为什么也要带垂发？利用垂发的高火力密度发射反潜导弹来压倒对手吗？<br><br> <br><br>----<br><br>沒辦法呀，要評論軍事這類保密題目卻沒有内綫消息，注定只能管中窺豹。像是潛艇直徑，當前的“最佳公開資訊”就是Sutton的估算；我既然沒有更接近第一手的事實資料，也沒有邏輯論述可以否決，那麽即便有懷疑，也必須接受，因爲這就是科學原則。但如果事後證明估算錯誤，責任完全在Sutton身上，我已經盡了一個科學人的全部義務，這也是科學原則。<br><br>我已經説過，反潛/反艦分工是胡扯：核潛艇根本不必上浮，先天與世半隔絕，自然成爲機會主義者，哪能事先排除一半機運？<br><br><div class="TIME">2026-06-19 23:11 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-06-19T22:47:00+0800</pubDate>
-<guid isPermaLink="false">291369eb2266e8e26dfe2ee43cc8de9c</guid>
-<link>https://wmyblog.site/html/130149479.html#291369eb2266e8e26dfe2ee43cc8de9c</link>
 </item>
 </channel></rss>
