@@ -63,7 +63,7 @@ function formatLabel() {
         cat_label[0].style["text-align"] = "center";
         switch (cat_dict[key]) {
             case 0:
-                cat_label[0].style.backgroundColor = color_in;
+                cat_label[0].style.backgroundColor = color_off;
                 break;
             case 1:
                 cat_label[0].style.backgroundColor = color_in;
