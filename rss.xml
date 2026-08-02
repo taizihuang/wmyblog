@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-08-02T00:01:06+0800</lastBuildDate>
+<lastBuildDate>2026-08-02T12:00:59+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注24]]></title>
+<description><![CDATA[后注24 <br><br>----<br><br><p>【後註二十四，2026/08/01】上個月的《龍行天下》節目討論了詐騙和謊言在當代中國社會中的普及化和正常化之後，有兩個大陸朋友寫信分別指出德雲社的相聲<a href="https://www.youtube.com/watch?v=P22uMb6plt0">《于謙：我凴本事騙來的錢！》</a>（“我凴本事騙錢，你憑什麽駡我”剛巧正是華裔電詐犯、王貽芳、丘成桐和袁嵐峰的共同心態）以及有兩千年歷史的官僚體系當然會鼓勵官場話。剛好本周我在觀看一個從第三方視角（亦即排除主觀宣傳或抹黑，純以客觀態度談史）介紹1950-1970年代解放軍歷史的頻道（參見<a href="https://www.youtube.com/watch?v=IehbmWuZGZg">《How the PLA Started Lying to Itself in Vietnam》</a>），其中總結1979年對越戰爭的失敗原因，除了後勤、組織和訓練的不足導致頭三天的困難之外，從第四天開始，指管通情的水平更加急轉直下，軍、師級的命令完全脫離現實，許多部隊因而白白送死；究其原因，是軍官在有意無意通報錯誤軍情（例如“我已完成占領某橋的任務”；參見<a href="https://www.youtube.com/watch?v=SlkfGqNQ-fQ">《Sino-Vietnamese War:血戰四號橋》</a>），而且事後普遍文過飾非、絕不更正報告，所以上級指揮中心自然就Garbage in，garbage out。更糟糕的是，戰後的檢討居然又是一場謊言的狂歡，少數誠實的軍官反而承擔了所有的責任，其他的人一律官升一級。這立刻讓我想起漢芯事件，前前後後的官場處理如出一轍，難怪半導體產業又浪費了近20年和萬億資金，到華爲進場才步入正軌。我必須再次强調，誠實在國家治理上，並不是可有可無的奢侈品，它是效率和改進的絕對必要前提；回顧美國80年代開始的金融化和虛擬化並不是其衰退的最早起因，資本要腐化國家是以1960年代的謊言（例如Milton Friedman）為前導的。既然中國的官場環境鼓勵謊話，那麽國家興亡自然只能靠官場外的輿論來堅持真相；所以當前小粉紅不分真假黑白地搞雙標，是極度危險而且可惡的行爲。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-02T00:00:00+0800</pubDate>
+<guid isPermaLink="false">171633910_note24</guid>
+<link>https://wmyblog.site/html/171633910.html#171633910_note24</link>
+</item>
 <item>
 
 
@@ -55,22 +65,22 @@ LoveClem]]></title>
 <item>
 
 
-<title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注10]]></title>
-<description><![CDATA[后注10 <br><br>----<br><br><p>【後註十，2026/07/30】多年前博客在【後註三】和【後註六】兩次舉Vertical GaN垂直式氮化鎵爲例，强調中方將科研資源集中浪費在核聚變發電和量子通信/計算等詐騙項目的後果，就是會在真正有用的新技術競爭上投入不足。現在復盤，發現光在美國就有至少兩家在2025年已經量產，亦即onsemi（提供700V和1200V電壓極限，參見<a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-unveils-vertical-gan-semiconductors-breakthrough-ai-and">《onsemi Unveils Vertical GaN Semiconductors》</a>；傳統水平式氮化鎵，雖然有高效率/高頻率的優勢，但電壓上限在650V上下，超過此限就只能用SiC碳化硅，例如目前市面的800V、900V和1000V電動車電路，用的都是碳化硅芯片）和Power Integrations（提供1250V和1700V兩種規格；參見<a href="https://www.yolegroup.com/strategy-insights/the-power-gan-race-market-growth-consolidation-and-new-entrants/">《The power GaN race: market growth, consolidation, and new entrants》</a>），而中方我只找到華爲的學術論文（參見<a href="https://ieeexplore.ieee.org/document/11072711">《1200 V Fully-Vertical GaN-on-Si Power MOSFETs》</a>），似乎還未量產，電壓上限也只到1200V；即便有我所不知的其他產能，也不像是領先美國。垂直式氮化鎵原本是全新的賽道，不依賴如EUV光刻機那些被卡脖子的生產工具，而且最大應用正是中國如今已主宰的電動車行業，如果過去十幾年中國科研管理機構能把浪擲在詐騙項目（量子通信騙局有近15年的歷史！）的幾千、幾萬億元轉投在這些真未來科技項目，在稱職肯幹的機構如華爲的主導下，以中國產業研發效率之高，對比美國工業能力的空心化，有充分理由相信會早已遙遙領先、甚至獨占市場。騙子、學閥和庸官誤國誤民，讓有識者無比痛心！</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-07-31T00:00:00+0800</pubDate>
-<guid isPermaLink="false">167471825_note10</guid>
-<link>https://wmyblog.site/html/167471825.html#167471825_note10</link>
-</item>
-<item>
-
-
 <title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注13]]></title>
 <description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/07/30】有朋友反饋，上面【後註十二】所引用的視頻，其論點和證據基本來自一篇網文（參見<a href="https://forum.xiaoyinsi.com/t/topic/228">《国内大模型蒸馏风波的来龙去脉》</a>），而這篇網文已經遭遇到一些質疑。如果有行内人熟悉這個議題（基本是Kimi的内核運作細節，所以或許很不容易），請在留言欄評論。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-07-31T00:00:00+0800</pubDate>
 <guid isPermaLink="false">180084901_note13</guid>
 <link>https://wmyblog.site/html/180084901.html#180084901_note13</link>
+</item>
+<item>
+
+
+<title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注10]]></title>
+<description><![CDATA[后注10 <br><br>----<br><br><p>【後註十，2026/07/30】多年前博客在【後註三】和【後註六】兩次舉Vertical GaN垂直式氮化鎵爲例，强調中方將科研資源集中浪費在核聚變發電和量子通信/計算等詐騙項目的後果，就是會在真正有用的新技術競爭上投入不足。現在復盤，發現光在美國就有至少兩家在2025年已經量產，亦即onsemi（提供700V和1200V電壓極限，參見<a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-unveils-vertical-gan-semiconductors-breakthrough-ai-and">《onsemi Unveils Vertical GaN Semiconductors》</a>；傳統水平式氮化鎵，雖然有高效率/高頻率的優勢，但電壓上限在650V上下，超過此限就只能用SiC碳化硅，例如目前市面的800V、900V和1000V電動車電路，用的都是碳化硅芯片）和Power Integrations（提供1250V和1700V兩種規格；參見<a href="https://www.yolegroup.com/strategy-insights/the-power-gan-race-market-growth-consolidation-and-new-entrants/">《The power GaN race: market growth, consolidation, and new entrants》</a>），而中方我只找到華爲的學術論文（參見<a href="https://ieeexplore.ieee.org/document/11072711">《1200 V Fully-Vertical GaN-on-Si Power MOSFETs》</a>），似乎還未量產，電壓上限也只到1200V；即便有我所不知的其他產能，也不像是領先美國。垂直式氮化鎵原本是全新的賽道，不依賴如EUV光刻機那些被卡脖子的生產工具，而且最大應用正是中國如今已主宰的電動車行業，如果過去十幾年中國科研管理機構能把浪擲在詐騙項目（量子通信騙局有近15年的歷史！）的幾千、幾萬億元轉投在這些真未來科技項目，在稱職肯幹的機構如華爲的主導下，以中國產業研發效率之高，對比美國工業能力的空心化，有充分理由相信會早已遙遙領先、甚至獨占市場。騙子、學閥和庸官誤國誤民，讓有識者無比痛心！</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-31T00:00:00+0800</pubDate>
+<guid isPermaLink="false">167471825_note10</guid>
+<link>https://wmyblog.site/html/167471825.html#167471825_note10</link>
 </item>
 <item>
 
@@ -626,15 +636,5 @@ zhaofei]]></title>
 <pubDate>2026-06-22T00:44:00+0800</pubDate>
 <guid isPermaLink="false">1089b31df5b9696245049ccc80c40e31</guid>
 <link>https://wmyblog.site/html/180084901.html#1089b31df5b9696245049ccc80c40e31</link>
-</item>
-<item>
-
-
-<title><![CDATA[【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | LoveClem]]></title>
-<description><![CDATA[按照工业革命之后的能耗增长速度，未来百年内的能耗有可能增长一个数量级，达到10^14W量级，12小时内总储能至少4*10^18J甚至更多，以钒基液流电池大约10^5J/KG的储能密度，液流电池总重至少几百亿吨，然而全球目前探明钒资源总量仅为数千万吨（更别提年开采量仅为数十万吨量级，当然开采量随着电池需求暴增还是可以有数量级上提升的），所以长期来看，即使锂矿短缺，电网储能也更有可能以钠离子电池或者其它的液流电池来代替。<br><br> <br><br>----<br><br>首先，你的全釩液流電池能量密度估算比實際低了1個數量級不止，這是因爲你用的是很舊的資料，而且重量算整個電解液的，裏面包含90%的水。<br><br>其次，當前釩的用途真不多，主要是冶金時作爲“調味料”，真要去找礦，應該能以數量級來增加。<br><br>然後，單位人口的能量使用前景，很可能不會維持20世紀的上升步調，因爲後者是由美國式的浪費和新興國家的工業化所撐起的，這兩個現象都在減緩，唯一的例外是AI，但大家都知道AI是一個超級泡沫，怎麽能夠用泡沫暴漲階段的速度來外推整個世紀呢？<br><br>此外，真正解決電能供需錯峰問題的最佳方法，是擴大電網規模、減低傳輸損耗，增加互通有無的參與範圍，自然抵消地域性供需波動。儲能先天是有浪費、耗資源的。<br><br>就光看儲能，也應該多管齊進。液流電池的長處在於循環無限，所以特別適合高頻調峰，尤其是晝夜周期；這是所有液流電池都適用的，包括鐵基液流電池。我以前講全釩，只不過當時它是技術最成熟的一類，適合拿來討論進度。<br><br><div class="TIME">2026-06-23 00:40 回复</div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-06-22T08:59:00+0800</pubDate>
-<guid isPermaLink="false">b5cfa515c3b75ae0855066cf47bb671a</guid>
-<link>https://wmyblog.site/html/178109282.html#b5cfa515c3b75ae0855066cf47bb671a</link>
 </item>
 </channel></rss>
