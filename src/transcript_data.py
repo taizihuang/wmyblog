@@ -15,7 +15,7 @@ def download_transcript(info_file, out_file, latest_num=5):
     if latest_num <= 0:
         key_list = list(fileId_dict.keys()) 
     else:
-        key_list = list(fileId_dict.keys())[-latest_num:] 
+        key_list = list(fileId_dict.keys())[-50:-30] 
         #key_list = list(fileId_dict.keys())[:latest_num] 
 
     url_list = []
