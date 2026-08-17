@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-08-16T18:35:35+0800</lastBuildDate>
+<lastBuildDate>2026-08-17T12:00:55+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注14]]></title>
+<description><![CDATA[后注14 <br><br>----<br><br><p>【後註十四，2026/08/16】最近幾周當代數學大師陶哲軒多次公開演講，評論AI對數學界的衝擊（參見七月的<a href="https://teorth.github.io/tao-web/ai-views.html">《Terence Tao on AI in mathematics (and beyond)》</a>和八月的<a href="https://www.youtube.com/watch?v=M0--ZH1lOzg"><span style="color:blue">《<br><br>ICM 2026 Public Lectures》</span></a>），其觀點基本符合博客對本世代AI特性的評估，並針對數學界的特定任務和既有結構做了深入的解析和建言，我鼓勵對AI或純數學有興趣的讀者去學習參考。這裏我只給出一個顯然太過精簡的心得總結：AI的長處在於閲讀過所有相關文獻，人類曾經想出來過的解題技巧它全部掌握，憑藉這個優勢可以相對輕鬆地找到新證明；然而本世代AI的本質是機率計算，並沒有真正的嚴謹邏輯思維，所以這些“證明”往往錯誤百出（除非是找到反例的證僞，因而找反例是AI當前在純數上最强的貢獻）。問題在於，現代數學發展到當前的程度，驗證證明嚴謹性的工作量並不遜於想出證明，偏偏數學界的獎勵機制是根據人腦特性而定制的，證明的發明者獲得所有的榮耀，事後驗證證明的人卻連一篇論文也不一定能發的出來（這是因爲發明者一般也已經用心做過多次驗證，AI卻做不到這一點）。在新的AI輔助時代，發明和驗證的重要性將會顛倒過來，那麽獎勵機制自然也應該有對應的調整，不過這種沿襲幾百年的行業規範，變革極爲困難，必須在全行業普及共識，同心協力，才能成功。</p><br><br><p>看到陶哲軒站出來護持行業長期正當發展的前瞻性無私奉獻，我不禁要唏噓一番。上世紀80和90年代，高能物理界同樣面臨存亡危機（冷戰先收縮然後結束，導致美國政府投資大幅縮減），超弦妖風趁機席捲整個行業，引領風潮的也是一個公認的“當代大師”Edward Witten；但他明明知道超弦在物理上連邏輯自洽（物理理論的“邏輯自洽”包含了Bayesian機率上的統計意義提升）都做不到，只因爲他能藉此左右逢源，對數學界講物理、對物理界講數學，從而得獎不計其數，同時他的徒子徒孫得以順勢霸占所有的職位和論文審批，就一再遮掩扭曲超弦理論的邏輯缺陷，欺矇行業内外數十年，直到Peter Woit寫下《Not Even Wrong》揭穿國王新衣的真相，這時Witten的態度居然是“我做我的研究，其他人要跟風是他們的選擇”，翻譯過來就是“魚兒自己要咬餌，有錯也是他們的責任”，與“我憑本事騙錢，你憑什麽駡我”有異曲同工之妙。高能物理因此而爛透，但純數學有陶哲軒這樣的人來守護，即便偶爾出個丘成桐，應該還能有光明的未來。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-17T00:00:00+0800</pubDate>
+<guid isPermaLink="false">180084901_note14</guid>
+<link>https://wmyblog.site/html/180084901.html#180084901_note14</link>
+</item>
 <item>
 
 
@@ -100,21 +110,11 @@ MAXWELL]]></title>
 
 
 <title><![CDATA[【美國】【工業】幾則新聞 | 后注2]]></title>
-<description><![CDATA[后注2 <br><br>----<br><br><p>【後註二，2026/08/15】新興國家發展產業，必須循序漸進、從低端做起，擁有規模之後，業内人才才有獨立研發的環境條件，可以繼續向高精尖技術突破。上個月《自然》的一篇論文（參見<a href="https://www.nature.com/articles/s44160-026-01113-5">《Multi-walled carbon nanotube network-toughened diamond composite via atomic interface continuity》</a>）就是典型的案例：中國在搶占了世界人造鑽石產業的46%份額之後，自然而然地更進一步，成功將Carbon Nanotube碳納米管鑲嵌進鑽石晶體内部作爲支撐骨架，從而在將Toughness韌性提升5倍（31.9 MPa*m^(1/2)，高於頂級WC碳化鎢合金的20 MPa*m^(1/2)；至於鑽石的韌性常用數據是2.0 MPa*m^(1/2)，但這篇論文暗指6.0 MPa*m^(1/2)，這可能是因爲作者考慮的是單晶鑽而不是一般鑽石，有懂行的讀者歡迎賜教）的同時，維持其硬度在91.6 GPa（對比一般鑽石的70-110 GPa），創下了世界新記錄。</p>]]></description>
+<description><![CDATA[后注2 <br><br>----<br><br><p>【後註二，2026/08/15】新興國家發展產業，必須循序漸進、從低端做起，擁有規模之後，相關人才才有自主研發的環境條件，可以繼續向高精尖技術突破。上個月《自然》的一篇論文（參見<a href="https://www.nature.com/articles/s44160-026-01113-5">《Multi-walled carbon nanotube network-toughened diamond composite via atomic interface continuity》</a>）就是典型的案例：中國在搶占了世界人造鑽石產業的46%份額之後，自然而然地更進一步，成功將Carbon Nanotube碳納米管鑲嵌進鑽石晶體内部作爲支撐骨架，從而在將Toughness韌性提升5倍（31.9 MPa*m^(1/2)，高於頂級WC碳化鎢合金的20 MPa*m^(1/2)；至於鑽石的韌性常用數據是2.0 MPa*m^(1/2)，但這篇論文暗指6.0 MPa*m^(1/2)，這可能是因爲作者考慮的是單晶鑽而不是一般鑽石，有懂行的讀者歡迎賜教）的同時，維持其硬度在91.6 GPa（對比一般鑽石的70-110 GPa），創下了世界新記錄。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-08-16T00:00:00+0800</pubDate>
 <guid isPermaLink="false">131486362_note2</guid>
 <link>https://wmyblog.site/html/131486362.html#131486362_note2</link>
-</item>
-<item>
-
-
-<title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 后注13]]></title>
-<description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/08/12】2026年1月的《龍行天下》節目（參見<a href="https://wmyblog.site/html/260116%5B%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5D.html">《給這個亂世的備忘錄》</a>）中，我特別强調：當時基本所有的新聞名嘴都說Trump綁架Maduro是爲了石油，是不精確的；事實上美國石油公司對委内瑞拉毫無興趣，Trump的動機純粹在於贏學，石油只不過是委内瑞拉唯一可以在經濟方面拿來做贏學敘事的話題。本周《WSJ》發表研究文章（參見<a href="https://www.wsj.com/opinion/trumps-venezuelan-oil-boom-sputters-3ac6444f">《Trump’s Venezuelan Oil Boom Sputters》</a>），指出委内瑞拉的工作油井數量因美國制裁，從30年前的119座一路降至2025年的2座，另有14套庫存現成設備，可以簡單重啓，然而自2026年初美國掌控委内瑞拉政權、接著Hormuz海峽被封至今半年，工作油井總數仍然是2；換句話説，即便有突發戰爭導致原油供給出現短缺，很容易的增產8倍在Chevron和Exxonmobil眼中依舊毫無價值，那麽Trump搶到的那一點原油自然更加沒有實質經濟意義。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-08-13T00:00:00+0800</pubDate>
-<guid isPermaLink="false">180084896_note13</guid>
-<link>https://wmyblog.site/html/180084896.html#180084896_note13</link>
 </item>
 <item>
 
@@ -129,12 +129,32 @@ MAXWELL]]></title>
 <item>
 
 
-<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注14]]></title>
-<description><![CDATA[后注14 <br><br>----<br><br><p>【後註十四，2026/08/11】周末有在紐約教金融的朋友來訪，席間談到博客對高等金融的批評，她要求確認其對公益有利/有害的邊界，於是我給出總結：高等金融在工具上主要是衍生品，在組織上則以影子銀行為最甚；前者除交易所的標準基本類型（如Futures）之外，後者除Mutual Fund和Venture Capital之外，再加上所有容許高杠桿的機制，都應全面禁絕。她是博客的忠實老讀者，專業又對行，仍然有疑問代表著既有的博文（例如<a href="180084896.html">《金融史觀（二）當前局勢》</a>【後註三】）大概並未給出足夠明確的論斷，所以在此公開復述，供所有讀者參考。</p>]]></description>
+<title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 后注14]]></title>
+<description><![CDATA[后注14 <br><br>----<br><br><p>【後註十四，2026/08/12】2026年1月的《龍行天下》節目（參見<a href="https://wmyblog.site/html/260116%5B%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5D.html">《給這個亂世的備忘錄》</a>）中，我特別强調：當時基本所有的新聞名嘴都說Trump綁架Maduro是爲了石油，是不精確的；事實上美國石油公司對委内瑞拉毫無興趣，Trump的動機純粹在於贏學，石油只不過是委内瑞拉唯一可以在經濟方面拿來做贏學敘事的話題。本周《WSJ》發表研究文章（參見<a href="https://www.wsj.com/opinion/trumps-venezuelan-oil-boom-sputters-3ac6444f">《Trump’s Venezuelan Oil Boom Sputters》</a>），指出委内瑞拉的工作油井數量因美國制裁，從30年前的119座一路降至2025年的2座，另有14套庫存現成設備，可以簡單重啓，然而自2026年初美國掌控委内瑞拉政權、接著Hormuz海峽被封至今半年，工作油井總數仍然是2；換句話説，即便有突發戰爭導致原油供給出現短缺，很容易的增產8倍在Chevron和Exxonmobil眼中依舊毫無價值，那麽Trump搶到的那一點原油自然更加沒有實質經濟意義。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-13T00:00:00+0800</pubDate>
+<guid isPermaLink="false">180084896_note14</guid>
+<link>https://wmyblog.site/html/180084896.html#180084896_note14</link>
+</item>
+<item>
+
+
+<title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 后注13]]></title>
+<description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/08/11】周末有在紐約教金融的朋友來訪，席間談到博客對高等金融的批評，她要求確認其對公益有利/有害的邊界，於是我給出總結：高等金融在工具上主要是衍生品，在組織上則以影子銀行為最甚；前者除交易所的標準基本類型（如Futures）之外，後者除Mutual Fund和Venture Capital之外，再加上所有容許高杠桿的機制，都應全面禁絕。她是博客的忠實老讀者，專業又對行，仍然有疑問代表著既有的博文（例如上面的【後註三】）大概並未給出足夠明確的論斷，所以在此公開復述，供所有讀者參考。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-08-12T00:00:00+0800</pubDate>
-<guid isPermaLink="false">180084901_note14</guid>
-<link>https://wmyblog.site/html/180084901.html#180084901_note14</link>
+<guid isPermaLink="false">180084896_note13</guid>
+<link>https://wmyblog.site/html/180084896.html#180084896_note13</link>
+</item>
+<item>
+
+
+<title><![CDATA[【美國】【工業】波音和載人登月（續） | 后注4]]></title>
+<description><![CDATA[后注4 <br><br>----<br><br><p>【後註四，2026/08/11】2026年8月10日，長征七號甲型火箭在文昌發射軍用的中星4B衛星失敗爆炸（參見<a href="https://www.xinhuanet.com/20260810/22eaeb23bd104e9ebd5c290afe95f835/c.html">《中星4B卫星发射失利》</a>），目前已知爆炸為火箭到達Max Q（最大氣動阻力）點附近時、三級與二級的連接段坍塌（參見<a href="https://www.youtube.com/watch?v=j6SnUlfjQ3k">《Chinas Rocket Literally Bent Under Pressure!》</a>）所致；是否有更深一層的故障原因，則有待進一步調查。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-12T00:00:00+0800</pubDate>
+<guid isPermaLink="false">128392486_note4</guid>
+<link>https://wmyblog.site/html/128392486.html#128392486_note4</link>
 </item>
 <item>
 
@@ -150,7 +170,7 @@ MAXWELL]]></title>
 
 
 <title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 后注58]]></title>
-<description><![CDATA[后注58 <br><br>----<br><br><p>【後註五十八，2026/08/11】烏克蘭爲了扭轉Trump拒絕援助的態度，必須製造“勝利”的假象，然而即使在俄軍有意配合、減緩攻勢（例如去年快速進攻的矛頭114旅，已經改行文工隊在後方“休整”半年，不斷有軍民同樂的活動報導；這裏的戰略背景是博客反復解釋過的：Putin根本不在乎當前一城一地的得失，爭奪地盤只不過是消耗北約的手段，而只有不慍不火地慢慢消耗，才能避免戰略升級，從而確保最終勝利，即便這個最終勝利包括烏東8州）的前提下，戰綫敗退依然無可避免；剛好來自歐盟的長程無人機零件供應有所提升，於是在最近幾個月深入俄國本土境内、對民用目標（例如貨物倉庫和煉油設施）發動大規模打擊；結果自然是俄方得以解除過去4年多的自我設限、做出對等反擊。在這個過程中，歐美主流媒體的雙標再次展現無遺：俄國的損失一方面“極爲慘重”、另一方面卻也是“正義的勝利”，而烏方挨揍則是“Putin絕望下的反人類暴行”。博客讀者對上述的虛假雙標，應該耳熟能詳，我在此只補充一些細節：烏軍發射的導彈/無人機，絕大數屬於小型，兩個主要型號的彈頭裝藥分別為50和105公斤，破壞力有限（這是爲什麽脆弱的煉油設施是首選目標的原因之一），而且俄軍防空彈藥充足，攔截率80-90%以上（Crimea和烏東四州最低，80+%，俄國本土其它地區90%左右，莫斯科都會區高達99+%），例如烏方所用的最大導彈火烈鳥，在最近的11次發射，被攔截10枚，攔截率91%（由相對中立可靠的AMK Mapping所統計）。相對的，俄方使用的彈頭普遍在半噸級別（小摩托無人機反而是少數例外），個別型號裝藥超過一噸TNT當量，而且數量極高，例如光是FAB滑翔炸彈，7月的使用量高達8300枚（參見<a href="https://united24media.com/war-in-ukraine/russia-drops-record-8300-guided-glide-bombs-on-ukraine-in-july-213534">《Russia Drops Record 8,300 Guided Glide Bombs On Ukraine in July》</a>）。此外歐美陣營的防空導彈荒也早已是公衆常識；烏克蘭做爲美國戰略棄子，更加連一枚愛國者導彈的補給都拿不到，以致整體攔截率早已下降到不足10%（主要來自F16和武裝直升機對慢速無人機的空射；對導彈的攔截率基本爲零）。這種情況下，即便以烏克蘭政府張嘴就是撒謊的尿性，都覺得編不下去了，只好停止公佈攔截率的統計數據（參見<a href="https://www.bloomberg.com/news/articles/2026-08-11/ukraine-stops-reporting-russia-missile-data-as-defenses-struggle">《Ukraine Stops Reporting Russia Missile Data as Defenses Struggle》</a>）。另一個罕見的烏克蘭實話，則是前總司令Zaluzhnyi承認“所有西方送來的超級武器都被俄軍無效化了”（參見<a href="https://uawire.org/zaluzhnyi-warns-nato-is-falling-behind-as-russia-counters-western-weapons-in-ukraine">《Zaluzhnyi warns NATO is falling behind as Russia counters Western weapons in Ukraine》</a>）。有趣的是，台灣的“三民自”媒體，依然在散播“烏克蘭勝利論”，由此可見其在無良無恥上比烏克蘭官方更勝一籌，有世界第一之姿。</p>]]></description>
+<description><![CDATA[后注58 <br><br>----<br><br><p>【後註五十八，2026/08/11】烏克蘭爲了扭轉Trump拒絕援助的態度，必須製造“勝利”的假象，然而即使在俄軍有意配合、減緩攻勢（例如去年快速進攻的矛頭114旅，已經改行文工隊在後方“休整”半年，不斷有軍民同樂的活動報導；這裏的戰略背景是博客反復解釋過的：Putin根本不在乎當前一城一地的得失，爭奪地盤只不過是消耗北約的手段，而只有不慍不火地慢慢消耗，才能避免戰略升級，從而確保最終勝利，即便這個最終勝利包括烏東8州）的前提下，戰綫敗退依然無可避免；剛好來自歐盟的長程無人機零件供應有所提升，於是在最近幾個月深入俄國本土境内、對民用目標（例如貨物倉庫和煉油設施）發動大規模打擊；結果自然是俄方得以解除過去4年多的自我設限、做出對等反擊。在這個過程中，歐美主流媒體的雙標再次展現無遺：俄國的損失一方面“極爲慘重”、另一方面卻也是“正義的勝利”，而烏方挨揍則是“Putin絕望下的反人類暴行”。博客讀者對上述的虛假雙標，應該耳熟能詳，我在此只補充一些細節：烏軍發射的導彈/無人機，絕大數屬於小型，兩個主要型號的彈頭裝藥分別為50和105公斤，破壞力有限（這是爲什麽脆弱的煉油設施是首選目標的原因之一），而且俄軍防空彈藥充足，攔截率80-90%以上（Crimea和烏東四州最低，80+%，俄國本土其它地區90%左右，莫斯科市中心高達99%），例如烏方所用的最大導彈火烈鳥，在最近的11次發射，被攔截10枚，攔截率91%（由相對中立可靠的AMK Mapping所統計）。相對的，俄方使用的彈頭普遍在半噸級別（小摩托無人機反而是少數例外），個別型號裝藥超過一噸TNT當量，而且數量極高，例如光是FAB滑翔炸彈，7月的使用量高達8300枚（參見<a href="https://united24media.com/war-in-ukraine/russia-drops-record-8300-guided-glide-bombs-on-ukraine-in-july-213534">《Russia Drops Record 8,300 Guided Glide Bombs On Ukraine in July》</a>）。此外歐美陣營的防空導彈荒也早已是公衆常識；烏克蘭做爲美國戰略棄子，更加連一枚愛國者導彈的補給都拿不到，以致整體攔截率早已下降到不足10%（主要來自F16和武裝直升機對慢速無人機的空射；對導彈的攔截率基本爲零）。這種情況下，即便以烏克蘭政府張嘴就是撒謊的尿性，都覺得編不下去了，只好停止公佈攔截率的統計數據（參見<a href="https://www.bloomberg.com/news/articles/2026-08-11/ukraine-stops-reporting-russia-missile-data-as-defenses-struggle">《Ukraine Stops Reporting Russia Missile Data as Defenses Struggle》</a>；Bloomberg的報導應該真實無誤，但烏克蘭當然隨時可以反悔）。另一個罕見的烏克蘭實話，則是前總司令Zaluzhnyi承認“所有西方送來的超級武器都被俄軍無效化了”（參見<a href="https://uawire.org/zaluzhnyi-warns-nato-is-falling-behind-as-russia-counters-western-weapons-in-ukraine">《Zaluzhnyi warns NATO is falling behind as Russia counters Western weapons in Ukraine》</a>）。有趣的是，台灣的“三民自”媒體，依然在散播“烏克蘭勝利論”，由此可見其在無良無恥上比烏克蘭官方更勝一籌，有世界第一之姿。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-08-12T00:00:00+0800</pubDate>
 <guid isPermaLink="false">177266891_note58</guid>
@@ -165,16 +185,6 @@ MAXWELL]]></title>
 <pubDate>2026-08-12T00:00:00+0800</pubDate>
 <guid isPermaLink="false">171980706_note48</guid>
 <link>https://wmyblog.site/html/171980706.html#171980706_note48</link>
-</item>
-<item>
-
-
-<title><![CDATA[【美國】【工業】波音和載人登月（續） | 后注4]]></title>
-<description><![CDATA[后注4 <br><br>----<br><br><p>【後註四，2026/08/11】2026年8月10日，長征七號甲型火箭在文昌發射軍用的中星4B衛星失敗爆炸（參見<a href="https://www.xinhuanet.com/20260810/22eaeb23bd104e9ebd5c290afe95f835/c.html">《中星4B卫星发射失利》</a>），目前已知爆炸為火箭到達Max Q（最大氣動阻力）點附近時、三級與二級的連接段坍塌（參見<a href="https://www.youtube.com/watch?v=j6SnUlfjQ3k">《Chinas Rocket Literally Bent Under Pressure!》</a>）所致；是否有更深一層的故障原因，則有待進一步調查。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-08-12T00:00:00+0800</pubDate>
-<guid isPermaLink="false">128392486_note4</guid>
-<link>https://wmyblog.site/html/128392486.html#128392486_note4</link>
 </item>
 <item>
 
@@ -233,22 +243,22 @@ LoveClem]]></title>
 <item>
 
 
-<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注13]]></title>
-<description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/07/30】有朋友反饋，上面【後註十二】所引用的視頻，其論點和證據基本來自一篇網文（參見<a href="https://forum.xiaoyinsi.com/t/topic/228">《国内大模型蒸馏风波的来龙去脉》</a>），而這篇網文已經遭遇到一些質疑。如果有行内人熟悉這個議題（基本是Kimi的内核運作細節，所以或許很不容易），請在留言欄評論。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-07-31T00:00:00+0800</pubDate>
-<guid isPermaLink="false">180084901_note13</guid>
-<link>https://wmyblog.site/html/180084901.html#180084901_note13</link>
-</item>
-<item>
-
-
 <title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注10]]></title>
 <description><![CDATA[后注10 <br><br>----<br><br><p>【後註十，2026/07/30】多年前博客在【後註三】和【後註六】兩次舉Vertical GaN垂直式氮化鎵爲例，强調中方將科研資源集中浪費在核聚變發電和量子通信/計算等詐騙項目的後果，就是會在真正有用的新技術競爭上投入不足。現在復盤，發現光在美國就有至少兩家在2025年已經量產，亦即onsemi（提供700V和1200V電壓極限，參見<a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-unveils-vertical-gan-semiconductors-breakthrough-ai-and">《onsemi Unveils Vertical GaN Semiconductors》</a>；傳統水平式氮化鎵，雖然有高效率/高頻率的優勢，但電壓上限在650V上下，超過此限就只能用SiC碳化硅，例如目前市面的800V、900V和1000V電動車電路，用的都是碳化硅芯片）和Power Integrations（提供1250V和1700V兩種規格；參見<a href="https://www.yolegroup.com/strategy-insights/the-power-gan-race-market-growth-consolidation-and-new-entrants/">《The power GaN race: market growth, consolidation, and new entrants》</a>），而中方我只找到華爲的學術論文（參見<a href="https://ieeexplore.ieee.org/document/11072711">《1200 V Fully-Vertical GaN-on-Si Power MOSFETs》</a>），似乎還未量產，電壓上限也只到1200V；即便有我所不知的其他產能，也不像是領先美國。垂直式氮化鎵原本是全新的賽道，不依賴如EUV光刻機那些被卡脖子的生產工具，而且最大應用正是中國如今已主宰的電動車行業，如果過去十幾年中國科研管理機構能把浪擲在詐騙項目（量子通信騙局有近15年的歷史！）的幾千、幾萬億元轉投在這些真未來科技項目，在稱職肯幹的機構如華爲的主導下，以中國產業研發效率之高，對比美國工業能力的空心化，有充分理由相信會早已遙遙領先、甚至獨占市場。騙子、學閥和庸官誤國誤民，讓有識者無比痛心！</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-07-31T00:00:00+0800</pubDate>
 <guid isPermaLink="false">167471825_note10</guid>
 <link>https://wmyblog.site/html/167471825.html#167471825_note10</link>
+</item>
+<item>
+
+
+<title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注13]]></title>
+<description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/07/30】有朋友反饋，上面【後註十二】所引用的視頻，其論點和證據基本來自一篇網文（參見<a href="https://forum.xiaoyinsi.com/t/topic/228">《国内大模型蒸馏风波的来龙去脉》</a>），而這篇網文已經遭遇到一些質疑。如果有行内人熟悉這個議題（基本是Kimi的内核運作細節，所以或許很不容易），請在留言欄評論。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-31T00:00:00+0800</pubDate>
+<guid isPermaLink="false">180084901_note13</guid>
+<link>https://wmyblog.site/html/180084901.html#180084901_note13</link>
 </item>
 <item>
 
@@ -634,15 +644,5 @@ zhaofei]]></title>
 <pubDate>2026-07-05T00:55:00+0800</pubDate>
 <guid isPermaLink="false">daf348faddad4ce36934a956c8bced5a</guid>
 <link>https://wmyblog.site/html/108908805.html#daf348faddad4ce36934a956c8bced5a</link>
-</item>
-<item>
-
-
-<title><![CDATA[【學術管理】從假大空談新時代的學術管理 | 后注23]]></title>
-<description><![CDATA[后注23 <br><br>----<br><br><p>【後註二十三，2026/07/05】與前面【後註二十二】所述的英美加核聚變公司全面潰敗剛好相反，中國的核聚變詐騙集團還處在牛皮越吹越大的階段，居然宣稱要在2030年開始發電（參見<a href="https://www.guancha.cn/industry-science/2026_07_05_822711.shtml?s=zwyzxw">《中国“人造太阳”有重大进展：第一度电瞄准2030年》</a>）。這當然不代表等離子所忽然獲取打破這個宇宙物理定律的能力，而是他們的騙術在大量資源投入之後，必須做出的升級。四年後只有兩個可能：1）承諾跳票，無腦群衆在新謊言之下徹底遺忘舊謊言，這是量子通信/計算屢試不爽的路子；2）消耗1億度電來“發第一度電”，然後把消耗用各種藉口排除出計算，這是NIF激光聚變站所立的前例。因爲這是公款投資項目，我認爲第二個結果的可能性更大些；當然也可以兩者都用上，反正能把劉慈欣這種虛幻小説作者當成“未來科技專家”的社會，對科技騙術的過濾能力明顯小於等於零。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-07-06T00:00:00+0800</pubDate>
-<guid isPermaLink="false">155306037_note23</guid>
-<link>https://wmyblog.site/html/155306037.html#155306037_note23</link>
 </item>
 </channel></rss>
