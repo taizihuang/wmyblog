@@ -542,7 +542,7 @@ class Wmyblog:
         df_comment_note = df_comment_note.sort_values("reply_date", ascending=False).reset_index(drop=True)
         df_comment_note["first_reply_date"] = "NaT"
         df_comment_note["latest_reply_date"] = "NaT"
-        df_comment_note["reply"] = df_comment_note["reply"].map(lambda x: x.replace('\r', ''))
+        df_comment_note["reply"] = df_comment_note["reply"].map(lambda x: x.replace('\r\n', ''))
 
         comment_data = self.format_comment(df_comment_note)
         comment_data = comment_data[:60]
