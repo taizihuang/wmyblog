@@ -6,8 +6,18 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-08-19T00:01:28+0800</lastBuildDate>
+<lastBuildDate>2026-08-19T19:33:47+0800</lastBuildDate>
 <ttl>5</ttl>
+<item>
+
+
+<title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注11]]></title>
+<description><![CDATA[后注11 <br><br>----<br><br><p>【後註十一，2026/08/18】被中科大詐騙集團豢養袁嵐峰做爲牧羊犬驅趕在前的傻羊小粉紅們，基本全部都對【後註十】裏所討論、科研管理失誤所帶來的科技競爭失利毫無所知，但這些因被量子通信和量子計算搶占資源而落後美國的關鍵產業新技術其實俯拾皆是、不可勝數。上周末nVIDIA公佈最新的CPO芯片（Co-packaged Optics片上互連硅光，參見<a href="https://www.nvidia.com/en-us/networking/products/silicon-photonics/">《Revolutionizing Networking for the Era of Agentic AI》</a>）又是一例；這同樣用不上被嚴格制裁的EUV光刻機，同樣對提升關鍵前沿產業（前次是所有電力系統，這裏是AI計算集群）的效率和競爭力至關重要。當前AI總算力的瓶頸有三：NPU芯片算力、HBM記憶芯片頻寬和機與機之間的通信頻寬，CPO就是針對最後一項的新世代技術，將原本獨立在伺服器尾端的激光收發單元（LPO，Linear Pluggable Optics；有關技術迭代的討論參見<a href="https://zhuanlan.zhihu.com/p/720743387">《CPO/硅光/LPO/OIO多种技术线路解析,行业有望迎来渗透率拐点》</a>）集成到主機板上NPU旁邊，可以減低通信能耗0.5-1個數量級，因而對正面臨電力供應和散熱效率瓶頸的AI計算中心是絕對必需品。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-19T00:00:00+0800</pubDate>
+<guid isPermaLink="false">167471825_note11</guid>
+<link>https://wmyblog.site/html/167471825.html#167471825_note11</link>
+</item>
 <item>
 
 
@@ -130,7 +140,7 @@ MAXWELL]]></title>
 
 
 <title><![CDATA[【金融】【戰略】金融史觀（二）當前局勢 | 后注14]]></title>
-<description><![CDATA[后注14 <br><br>----<br><br><p>【後註十四，2026/08/12】2026年1月的《龍行天下》節目（參見<a href="https://wmyblog.site/html/260116%5B%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5D.html">《給這個亂世的備忘錄》</a>）中，我特別强調：當時基本所有的新聞名嘴都說Trump綁架Maduro是爲了石油，是不精確的；事實上美國石油公司對委内瑞拉毫無興趣，Trump的動機純粹在於贏學，石油只不過是委内瑞拉唯一可以在經濟方面拿來做贏學敘事的話題。本周《WSJ》發表研究文章（參見<a href="https://www.wsj.com/opinion/trumps-venezuelan-oil-boom-sputters-3ac6444f">《Trump’s Venezuelan Oil Boom Sputters》</a>），指出委内瑞拉的工作油井數量因美國制裁，從30年前的119座一路降至2025年的2座，另有14套庫存現成設備，可以簡單重啓，然而自2026年初美國掌控委内瑞拉政權、接著Hormuz海峽被封至今半年，工作油井總數仍然是2；換句話説，即便有突發戰爭導致原油供給出現短缺，很容易的增產8倍在Chevron和Exxonmobil眼中依舊毫無價值，那麽Trump搶到的那一點原油自然更加沒有實質經濟意義。</p>]]></description>
+<description><![CDATA[后注14 <br><br>----<br><br><p>【後註十四，2026/08/12】2026年1月的《龍行天下》節目（參見<a href="https://wmyblog.site/html/260116%5B%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5D.html">《給這個亂世的備忘錄》</a>）中，我特別强調：當時基本所有的新聞名嘴都說Trump綁架Maduro是爲了石油，是不精確的；事實上美國石油公司對委内瑞拉毫無興趣，Trump的動機純粹在於贏學，石油只不過是委内瑞拉唯一可以在經濟方面拿來做贏學敘事、忽悠MAGA選民的話題。本周《WSJ》發表研究文章（參見<a href="https://www.wsj.com/opinion/trumps-venezuelan-oil-boom-sputters-3ac6444f">《Trump’s Venezuelan Oil Boom Sputters》</a>），指出委内瑞拉的工作油井數量因美國制裁，從30年前的119座一路降至2025年的2座，另有14套庫存現成設備，可以簡單重啓，然而自2026年初美國掌控委内瑞拉政權、接著Hormuz海峽被封至今半年，工作油井總數仍然是2；換句話説，即便有突發戰爭導致原油供給出現短缺，很容易的增產8倍在Chevron和Exxonmobil眼中依舊毫無價值，那麽Trump搶到的那一點原油自然更加沒有實質經濟意義。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-08-13T00:00:00+0800</pubDate>
 <guid isPermaLink="false">180084896_note14</guid>
@@ -145,6 +155,26 @@ MAXWELL]]></title>
 <pubDate>2026-08-12T00:00:00+0800</pubDate>
 <guid isPermaLink="false">180084896_note13</guid>
 <link>https://wmyblog.site/html/180084896.html#180084896_note13</link>
+</item>
+<item>
+
+
+<title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 后注58]]></title>
+<description><![CDATA[后注58 <br><br>----<br><br><p>【後註五十八，2026/08/11】烏克蘭爲了扭轉Trump拒絕援助的態度，必須製造“勝利”的假象，然而即使在俄軍有意配合、減緩攻勢（例如去年快速進攻的矛頭114旅，已經改行文工隊在後方“休整”半年，不斷有軍民同樂的活動報導；這裏的戰略背景是博客反復解釋過的：Putin根本不在乎當前一城一地的得失，爭奪地盤只不過是消耗北約的手段，而只有不慍不火地慢慢消耗，才能避免戰略升級，從而確保最終勝利，即便這個最終勝利包括烏東8州）的前提下，戰綫敗退依然無可避免；剛好來自歐盟的長程無人機零件供應有所提升（有傳言稱，在五月底發動攻勢之前，纍積了14000架庫存），於是在最近幾個月深入俄國本土境内、對民用目標（例如貨物倉庫和煉油設施）發動大規模打擊；結果自然是俄方得以解除過去4年多的自我設限、做出對等反擊。在這個過程中，歐美主流媒體的雙標再次展現無遺：俄國的損失一方面“極爲慘重”、另一方面卻也是“正義的勝利”，而烏方挨揍則是“Putin絕望下的反人類暴行”。博客讀者對上述的虛假雙標，應該耳熟能詳，我在此只補充一些細節：烏軍發射的導彈/無人機，絕大數屬於小型，兩個主要型號的彈頭裝藥分別為50和105公斤，破壞力有限（這是爲什麽脆弱的煉油設施是首選目標的原因之一），而且俄軍防空彈藥充足，攔截率80-90%以上（Crimea和烏東四州最低，80+%，俄國本土其它地區90%左右，莫斯科市中心高達99%），例如烏方所用的最大導彈火烈鳥，在最近的11次發射，被攔截10枚，攔截率91%（由相對中立可靠的AMK Mapping所統計）。相對的，俄方使用的彈頭普遍在半噸級別（小摩托無人機反而是少數例外），個別型號裝藥超過一噸TNT當量，而且數量極高，例如光是FAB滑翔炸彈，7月的使用量高達8300枚（參見<a href="https://united24media.com/war-in-ukraine/russia-drops-record-8300-guided-glide-bombs-on-ukraine-in-july-213534">《Russia Drops Record 8,300 Guided Glide Bombs On Ukraine in July》</a>）。此外歐美陣營的防空導彈荒也早已是公衆常識；烏克蘭做爲美國戰略棄子，更加連一枚愛國者導彈的補給都拿不到，以致整體攔截率早已下降到不足10%（主要來自F16和武裝直升機對慢速無人機的空射；對導彈的攔截率基本爲零）。這種情況下，即便以烏克蘭政府張嘴就是撒謊的尿性，都覺得編不下去了，只好停止公佈攔截率的統計數據（參見<a href="https://www.bloomberg.com/news/articles/2026-08-11/ukraine-stops-reporting-russia-missile-data-as-defenses-struggle">《Ukraine Stops Reporting Russia Missile Data as Defenses Struggle》</a>；Bloomberg的報導應該真實無誤，但烏方當然隨時可以反悔）。另一個罕見的烏克蘭實話，則是前總司令Zaluzhnyi承認“所有西方送來的超級武器都被俄軍無效化了”（參見<a href="https://uawire.org/zaluzhnyi-warns-nato-is-falling-behind-as-russia-counters-western-weapons-in-ukraine">《Zaluzhnyi warns NATO is falling behind as Russia counters Western weapons in Ukraine》</a>）。有趣的是，台灣的“三民自”媒體，依然在散播“烏克蘭勝利論”，由此可見其在無良無恥上比烏克蘭官方更勝一籌，有世界第一之姿。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-12T00:00:00+0800</pubDate>
+<guid isPermaLink="false">177266891_note58</guid>
+<link>https://wmyblog.site/html/177266891.html#177266891_note58</link>
+</item>
+<item>
+
+
+<title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 后注48]]></title>
+<description><![CDATA[后注48 <br><br>----<br><br><p>【後註四十八，2026/08/11】去年初【後註四十四】所做的預測，又有一項兌現成真：敘利亞當局宣佈與俄方達成協議，將俄軍在敘利亞境内海空基地的民用部分收回，軍用部分則改爲雙方“共用”（參見<a href="https://www.cnn.com/2026/08/09/middleeast/syria-deal-russia-mediterranean-bases-intl">《Syria agrees deal with Russia over future use of two key Mediterranean bases》</a>）。</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-08-12T00:00:00+0800</pubDate>
+<guid isPermaLink="false">171980706_note48</guid>
+<link>https://wmyblog.site/html/171980706.html#171980706_note48</link>
 </item>
 <item>
 
@@ -165,26 +195,6 @@ MAXWELL]]></title>
 <pubDate>2026-08-12T00:00:00+0800</pubDate>
 <guid isPermaLink="false">131486362_note1</guid>
 <link>https://wmyblog.site/html/131486362.html#131486362_note1</link>
-</item>
-<item>
-
-
-<title><![CDATA[【戰略】【國際】對俄烏戰爭的新觀察 | 后注58]]></title>
-<description><![CDATA[后注58 <br><br>----<br><br><p>【後註五十八，2026/08/11】烏克蘭爲了扭轉Trump拒絕援助的態度，必須製造“勝利”的假象，然而即使在俄軍有意配合、減緩攻勢（例如去年快速進攻的矛頭114旅，已經改行文工隊在後方“休整”半年，不斷有軍民同樂的活動報導；這裏的戰略背景是博客反復解釋過的：Putin根本不在乎當前一城一地的得失，爭奪地盤只不過是消耗北約的手段，而只有不慍不火地慢慢消耗，才能避免戰略升級，從而確保最終勝利，即便這個最終勝利包括烏東8州）的前提下，戰綫敗退依然無可避免；剛好來自歐盟的長程無人機零件供應有所提升，於是在最近幾個月深入俄國本土境内、對民用目標（例如貨物倉庫和煉油設施）發動大規模打擊；結果自然是俄方得以解除過去4年多的自我設限、做出對等反擊。在這個過程中，歐美主流媒體的雙標再次展現無遺：俄國的損失一方面“極爲慘重”、另一方面卻也是“正義的勝利”，而烏方挨揍則是“Putin絕望下的反人類暴行”。博客讀者對上述的虛假雙標，應該耳熟能詳，我在此只補充一些細節：烏軍發射的導彈/無人機，絕大數屬於小型，兩個主要型號的彈頭裝藥分別為50和105公斤，破壞力有限（這是爲什麽脆弱的煉油設施是首選目標的原因之一），而且俄軍防空彈藥充足，攔截率80-90%以上（Crimea和烏東四州最低，80+%，俄國本土其它地區90%左右，莫斯科市中心高達99%），例如烏方所用的最大導彈火烈鳥，在最近的11次發射，被攔截10枚，攔截率91%（由相對中立可靠的AMK Mapping所統計）。相對的，俄方使用的彈頭普遍在半噸級別（小摩托無人機反而是少數例外），個別型號裝藥超過一噸TNT當量，而且數量極高，例如光是FAB滑翔炸彈，7月的使用量高達8300枚（參見<a href="https://united24media.com/war-in-ukraine/russia-drops-record-8300-guided-glide-bombs-on-ukraine-in-july-213534">《Russia Drops Record 8,300 Guided Glide Bombs On Ukraine in July》</a>）。此外歐美陣營的防空導彈荒也早已是公衆常識；烏克蘭做爲美國戰略棄子，更加連一枚愛國者導彈的補給都拿不到，以致整體攔截率早已下降到不足10%（主要來自F16和武裝直升機對慢速無人機的空射；對導彈的攔截率基本爲零）。這種情況下，即便以烏克蘭政府張嘴就是撒謊的尿性，都覺得編不下去了，只好停止公佈攔截率的統計數據（參見<a href="https://www.bloomberg.com/news/articles/2026-08-11/ukraine-stops-reporting-russia-missile-data-as-defenses-struggle">《Ukraine Stops Reporting Russia Missile Data as Defenses Struggle》</a>；Bloomberg的報導應該真實無誤，但烏克蘭當然隨時可以反悔）。另一個罕見的烏克蘭實話，則是前總司令Zaluzhnyi承認“所有西方送來的超級武器都被俄軍無效化了”（參見<a href="https://uawire.org/zaluzhnyi-warns-nato-is-falling-behind-as-russia-counters-western-weapons-in-ukraine">《Zaluzhnyi warns NATO is falling behind as Russia counters Western weapons in Ukraine》</a>）。有趣的是，台灣的“三民自”媒體，依然在散播“烏克蘭勝利論”，由此可見其在無良無恥上比烏克蘭官方更勝一籌，有世界第一之姿。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-08-12T00:00:00+0800</pubDate>
-<guid isPermaLink="false">177266891_note58</guid>
-<link>https://wmyblog.site/html/177266891.html#177266891_note58</link>
-</item>
-<item>
-
-
-<title><![CDATA[【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 后注48]]></title>
-<description><![CDATA[后注48 <br><br>----<br><br><p>【後註四十八，2026/08/11】去年初【後註四十四】所做的預測，又有一項兌現成真：敘利亞當局宣佈與俄方達成協議，將俄軍在敘利亞境内海空基地的民用部分收回，軍用部分則改爲雙方“共用”（參見<a href="https://www.cnn.com/2026/08/09/middleeast/syria-deal-russia-mediterranean-bases-intl">《Syria agrees deal with Russia over future use of two key Mediterranean bases》</a>）。</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-08-12T00:00:00+0800</pubDate>
-<guid isPermaLink="false">171980706_note48</guid>
-<link>https://wmyblog.site/html/171980706.html#171980706_note48</link>
 </item>
 <item>
 
@@ -243,22 +253,22 @@ LoveClem]]></title>
 <item>
 
 
-<title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注10]]></title>
-<description><![CDATA[后注10 <br><br>----<br><br><p>【後註十，2026/07/30】多年前博客在【後註三】和【後註六】兩次舉Vertical GaN垂直式氮化鎵爲例，强調中方將科研資源集中浪費在核聚變發電和量子通信/計算等詐騙項目的後果，就是會在真正有用的新技術競爭上投入不足。現在復盤，發現光在美國就有至少兩家在2025年已經量產，亦即onsemi（提供700V和1200V電壓極限，參見<a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-unveils-vertical-gan-semiconductors-breakthrough-ai-and">《onsemi Unveils Vertical GaN Semiconductors》</a>；傳統水平式氮化鎵，雖然有高效率/高頻率的優勢，但電壓上限在650V上下，超過此限就只能用SiC碳化硅，例如目前市面的800V、900V和1000V電動車電路，用的都是碳化硅芯片）和Power Integrations（提供1250V和1700V兩種規格；參見<a href="https://www.yolegroup.com/strategy-insights/the-power-gan-race-market-growth-consolidation-and-new-entrants/">《The power GaN race: market growth, consolidation, and new entrants》</a>），而中方我只找到華爲的學術論文（參見<a href="https://ieeexplore.ieee.org/document/11072711">《1200 V Fully-Vertical GaN-on-Si Power MOSFETs》</a>），似乎還未量產，電壓上限也只到1200V；即便有我所不知的其他產能，也不像是領先美國。垂直式氮化鎵原本是全新的賽道，不依賴如EUV光刻機那些被卡脖子的生產工具，而且最大應用正是中國如今已主宰的電動車行業，如果過去十幾年中國科研管理機構能把浪擲在詐騙項目（量子通信騙局有近15年的歷史！）的幾千、幾萬億元轉投在這些真未來科技項目，在稱職肯幹的機構如華爲的主導下，以中國產業研發效率之高，對比美國工業能力的空心化，有充分理由相信會早已遙遙領先、甚至獨占市場。騙子、學閥和庸官誤國誤民，讓有識者無比痛心！</p>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-07-31T00:00:00+0800</pubDate>
-<guid isPermaLink="false">167471825_note10</guid>
-<link>https://wmyblog.site/html/167471825.html#167471825_note10</link>
-</item>
-<item>
-
-
 <title><![CDATA[【經濟】【學術管理】金融史觀（三）政策建議 | 后注13]]></title>
 <description><![CDATA[后注13 <br><br>----<br><br><p>【後註十三，2026/07/30】有朋友反饋，上面【後註十二】所引用的視頻，其論點和證據基本來自一篇網文（參見<a href="https://forum.xiaoyinsi.com/t/topic/228">《国内大模型蒸馏风波的来龙去脉》</a>），而這篇網文已經遭遇到一些質疑。如果有行内人熟悉這個議題（基本是Kimi的内核運作細節，所以或許很不容易），請在留言欄評論。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-07-31T00:00:00+0800</pubDate>
 <guid isPermaLink="false">180084901_note13</guid>
 <link>https://wmyblog.site/html/180084901.html#180084901_note13</link>
+</item>
+<item>
+
+
+<title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注10]]></title>
+<description><![CDATA[后注10 <br><br>----<br><br><p>【後註十，2026/07/30】多年前博客在【後註三】和【後註六】兩次舉Vertical GaN垂直式氮化鎵爲例，强調中方將科研資源集中浪費在核聚變發電和量子通信/計算等詐騙項目的後果，就是會在真正有用的新技術競爭上投入不足。現在復盤，發現光在美國就有至少兩家在2025年已經量產，亦即onsemi（提供700V和1200V電壓極限，參見<a href="https://investor.onsemi.com/news-releases/news-release-details/onsemi-unveils-vertical-gan-semiconductors-breakthrough-ai-and">《onsemi Unveils Vertical GaN Semiconductors》</a>；傳統水平式氮化鎵，雖然有高效率/高頻率的優勢，但電壓上限在650V上下，超過此限就只能用SiC碳化硅，例如目前市面的800V、900V和1000V電動車電路，用的都是碳化硅芯片）和Power Integrations（提供1250V和1700V兩種規格；參見<a href="https://www.yolegroup.com/strategy-insights/the-power-gan-race-market-growth-consolidation-and-new-entrants/">《The power GaN race: market growth, consolidation, and new entrants》</a>），而中方我只找到華爲的學術論文（參見<a href="https://ieeexplore.ieee.org/document/11072711">《1200 V Fully-Vertical GaN-on-Si Power MOSFETs》</a>），似乎還未量產，電壓上限也只到1200V；即便有我所不知的其他產能，也不像是領先美國。垂直式氮化鎵原本是全新的賽道，不依賴如EUV光刻機那些被卡脖子的生產工具，而且最大應用正是中國如今已主宰的電動車行業，如果過去十幾年中國科研管理機構能把浪擲在詐騙項目（量子通信騙局有近15年的歷史！）的幾千、幾萬億元轉投在這些真未來科技項目，在稱職肯幹的機構如華爲的主導下，以中國產業研發效率之高，對比美國工業能力的空心化，有充分理由相信會早已遙遙領先、甚至獨占市場。騙子、學閥和庸官誤國誤民，讓有識者無比痛心！</p>]]></description>
+<author><![CDATA[王孟源部落格]]></author>
+<pubDate>2026-07-31T00:00:00+0800</pubDate>
+<guid isPermaLink="false">167471825_note10</guid>
+<link>https://wmyblog.site/html/167471825.html#167471825_note10</link>
 </item>
 <item>
 
@@ -634,15 +644,5 @@ zhaofei]]></title>
 <pubDate>2026-07-05T17:56:00+0800</pubDate>
 <guid isPermaLink="false">b23b2e8402659a736229d052aecdfcc9</guid>
 <link>https://wmyblog.site/html/119107102.html#b23b2e8402659a736229d052aecdfcc9</link>
-</item>
-<item>
-
-
-<title><![CDATA[【基礎科研】回答丘成桐教授 | 百年未有之大變局]]></title>
-<description><![CDATA[　<br><br>聽王博士的說法，歷史真相居然有這麼戲劇性的180度轉折。看了樓下回覆，原來明武宗的歷史有被歪曲過。之前看過一些資料，說什麼明武宗建立豹房，每天沉迷女色、荒淫無度、任情恣性，為人嬉樂胡鬧，行為怪異，又荒淫無度，寵信宦官，引起安化王、寧王之亂，建立豹房，強徵處女入宮。他施政荒誕不經，朝廷亂象四起，即使連四周屬國都給予其惡劣評價。<br><br>這些傳言看樓下回覆說，是因為明武宗其實是改革者，因此遭文官集團抹黑。聽王博士的說法，歷史真相居然有這麼戲劇性的180度轉折，但是這個真相似乎已經被掩蓋了500多年，居然沒人翻案。21世紀的人跟明朝皇帝也沒仇，為什麼還繼續說謊（是愚蠢造成的傳播效應嗎？）甚至很多歷史學家口中都以為明代史料記載，豹房有大量樂工、舞女、宮女，甚至有地方官進獻美女、江彬等人替皇帝物色女子的記錄。<br><br>但考慮到《明史》是清代官修的史書，下一個朝代的確有可能詆毀上一個朝代皇帝，但是目的是什麼？是為了拉攏當時的明朝文官集團進入清朝的文官體系嗎？是否是因為清朝剛入關，沒有統治根基，需要明朝文官集團的輔助，才能統治中國的原因而做出的妥協？這和李自成不殺四品以下明朝官員，繼續留任，道理好像相同。但考慮到明朝中後期爛到骨子裡的文官體系，比如大量豪紳的隱田、大量稅收被貪污、軍餉都發不齊，以致於戰爭失利，明朝張居正一條鞭法怎麼改革都沒用，最後崇禎上吊自殺，還是鬥不過文官集團.....<br><br>考慮到現代也有這種類似的事情發生，比如俄烏戰爭，明明烏克蘭一堆納粹搞過屠殺，但卻被西方的宣傳戰給洗白，甚至戰爭初期還有不少自由民主神教的人士願意犧牲自己的生命和捐錢去戰場幫打仗，只是後來真到了戰場，才知道西方和烏克蘭的宣傳和實際情況不是一回事，這也是個180度事實和大眾認知不一樣的例子......<br><br>甚至還有王博士之前提的美國開國神化，到底還有多少被高度扭曲的歷史是我們不知道的，一切都值得懷疑。<br><br> <br><br>----<br><br>寫那段評論心中有些激動，沒有平常的冷靜，結果上面的11樓有質疑的聲音，剛好給我詳細解釋的機會，請參考。<br><br>總結來説，“改革者必然會招來污衊”，信心=100%；“有很多人已經在污衊習近平，將來還會有更多人前仆後繼”，信心也達到100%；“美國開國神話是編造的”，因爲只在250年前（重點是活字印刷早已普及，有多重可靠記錄可用以交叉驗證），再加上許多人的努力挖掘真相，信心也是100%。至於朱元璋的鞋拔子臉畫像，和朱厚照的《游龍戲鳳》也是後人的污衊，因爲年代久遠，難以絕對確定，我估計信心在90%那個量級。<br><br>所謂“盡信書不如無書”，歷史先天就是很不可靠的；例如即便司馬遷已經非常用心求真，《史記》裏被後世出土文物證僞的細節仍然數以百計，基本都是因爲當時已經欠缺可靠根據，所以他只能道聽途説，所幸瑕不掩瑜。《史記》裏還有很多類似的、不像能有明確根據的細節，因爲考古還沒有找到反面證據，那麽我們基於對司馬遷品行和能力的估算，姑且接受其為存疑的暫時正解。但上面我們討論的，卻是有强大造假動機的議題，那麽就連不絕對的可信性都不應該賦予這些一面之詞。當然西方僞史論者只凴造假動機（本身就很弱，畢竟西方文明内部也是高度敵對的，莫名其妙地團結起來搞超大規模、超長時間跨度的造假，原本就難以自圓其説），就無視或硬要撒謊否認正方數以百萬計的考古實證，那就是另一個更不可取的極端了。<br><br><div class="TIME"><a href="https://github.com/taizihuang/wmyblog/commits/main/html/108908805.html" sytle="color:black;">2026-07-06 00:31 修改</a></div>]]></description>
-<author><![CDATA[王孟源部落格]]></author>
-<pubDate>2026-07-05T00:55:00+0800</pubDate>
-<guid isPermaLink="false">daf348faddad4ce36934a956c8bced5a</guid>
-<link>https://wmyblog.site/html/108908805.html#daf348faddad4ce36934a956c8bced5a</link>
 </item>
 </channel></rss>
