@@ -6,13 +6,13 @@
 <generator>Github</generator>
 <webMaster>Taizi Huang</webMaster>
 <language>zh-cn</language>
-<lastBuildDate>2026-08-20T12:01:03+0800</lastBuildDate>
+<lastBuildDate>2026-08-21T00:01:33+0800</lastBuildDate>
 <ttl>5</ttl>
 <item>
 
 
 <title><![CDATA[【學術管理】中國的學術管理問題來自基本的邏輯謬誤 | 后注11]]></title>
-<description><![CDATA[后注11 <br><br>----<br><br><p>【後註十一，2026/08/18】被中科大詐騙集團豢養袁嵐峰做爲牧羊犬驅趕在前的傻羊小粉紅們，基本全部都對【後註十】裏所討論、科研管理失誤所帶來的科技競爭失利毫無所知，但這些因被量子通信和量子計算搶占資源而落後美國的關鍵產業新技術其實俯拾皆是、不可勝數。上周末nVIDIA公佈最新的CPO芯片（Co-packaged Optics片上互連硅光，參見<a href="https://www.nvidia.com/en-us/networking/products/silicon-photonics/">《Revolutionizing Networking for the Era of Agentic AI》</a>）又是一例；這同樣用不上被嚴格制裁的EUV光刻機，同樣對提升關鍵前沿產業（前次是電力系統，這裏是AI計算集群）的效率和競爭力至關重要。當前AI總算力的瓶頸有三：NPU芯片算力、HBM記憶芯片頻寬和機與機之間的通信頻寬，CPO就是針對最後一項的新世代技術，將原本獨立在伺服器尾端的激光收發單元（LPO，Linear Pluggable Optics；有關技術迭代的討論參見<a href="https://zhuanlan.zhihu.com/p/720743387">《CPO/硅光/LPO/OIO多种技术线路解析,行业有望迎来渗透率拐点》</a>）集成到主機板上NPU旁邊，可以減低通信能耗0.5-1個數量級，因而對正面臨電力供應和散熱效率瓶頸的AI計算中心是絕對必需品。科研管理的核心任務，是爲國家挑選出未來5-10年的關鍵技術瓶頸、提前佈局投資、搶占競爭先手；科技部卻反自身本分而行，只看學閥的政治能量和分贓多少、不管實際研發回報，犧牲公益而圖利私人，實爲金融管理單位之外的另一大國賊窩點。</p>]]></description>
+<description><![CDATA[后注11 <br><br>----<br><br><p>【後註十一，2026/08/18】被中科大詐騙集團豢養袁嵐峰做爲牧羊犬驅趕在前的傻羊小粉紅們，基本全部都對【後註十】裏所討論、科研管理失誤所帶來的科技競爭失利毫無所知，但這些因被量子通信和量子計算搶占資源而落後美國的關鍵產業新技術其實俯拾皆是、不可勝數。上周末nVIDIA公佈最新的CPO芯片（Co-packaged Optics片上互連硅光，參見<a href="https://www.nvidia.com/en-us/networking/products/silicon-photonics/">《Revolutionizing Networking for the Era of Agentic AI》</a>）又是一例；這同樣用不上被嚴格制裁的EUV光刻機，同樣對提升關鍵前沿產業（前次是電力系統，這裏是AI計算集群）的效率和競爭力至關重要。當前AI總算力的瓶頸有三：GPU/TPU芯片算力、HBM記憶芯片頻寬和機與機之間的通信頻寬，CPO就是針對最後一項的新世代技術，將原本獨立在伺服器尾端的激光收發單元（LPO，Linear Pluggable Optics；有關技術迭代的討論參見<a href="https://zhuanlan.zhihu.com/p/720743387">《CPO/硅光/LPO/OIO多种技术线路解析,行业有望迎来渗透率拐点》</a>）集成到主機板上NPU旁邊，可以減低通信能耗0.5-1個數量級，因而對正面臨電力供應和散熱效率瓶頸的AI計算中心是絕對必需品。科研管理的核心任務，是爲國家挑選出未來5-10年的關鍵技術瓶頸、提前佈局投資、搶占競爭先手；科技部卻無視自身的本分工作，只看學閥的政治能量和分贓多少、不管實際研發回報，犧牲公益而圖利私人（類比監管高考卻主動安排為權貴作弊，教育主管單位顯然還不敢做到這個程度），實爲金融管理單位之外的另一大國賊窩點。</p>]]></description>
 <author><![CDATA[王孟源部落格]]></author>
 <pubDate>2026-08-19T00:00:00+0800</pubDate>
 <guid isPermaLink="false">167471825_note11</guid>
