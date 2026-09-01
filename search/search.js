@@ -27,7 +27,8 @@ var count_dict = {};
 var start_date = $("#startDate").val();
 var end_date = $("#endDate").val();
 var is_online = true;
-var search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog/search"
+var cdn_url = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog@main/search"; 
+var search_dir = cdn_url; 
 var color_off = 'rgb(169, 182, 231)';
 var color_in = 'rgb(61, 151, 186)';
 var color_out = 'rgb(61,0,0)';
@@ -176,10 +177,12 @@ function searchURL() {
         is_online = false;
         search_dir = ".";
         $('label#offline-label')[0].style.backgroundColor = color_in; 
+        $('label#offline-label').text("Github源"); 
     } else {
         is_online = true;
-        search_dir = "https://cdn.jsdmirror.cn/gh/taizihuang/wmyblog/search"
-        $('label#offline-label')[0].style.backgroundColor = color_off;
+        search_dir = cdn_url; 
+        $('label#offline-label')[0].style.backgroundColor = color_in;
+        $('label#offline-label').text("国内源"); 
     }
 }
 
@@ -588,9 +591,15 @@ window.onload = function() {
     if (urlParams.searchParams.has("online")) {
         var online = urlParams.searchParams.get("online");
         if (online == 0) {
+            is_online = true;
+            search_dir = cdn_url; 
+            $('label#offline-label')[0].style.backgroundColor = color_in;
+            $('label#offline-label').text("国内源"); 
+        } else {
             is_online = false
             search_dir = ".";
             $('label#offline-label')[0].style.backgroundColor = color_in; 
+            $('label#offline-label').text("Github源"); 
         }
     }
 
