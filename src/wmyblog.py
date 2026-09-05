@@ -124,6 +124,64 @@ def guestbook2comment(doc):
     
     return [df_comment]
 
+def format_guancha_date(date_str):
+    if "小时" in date_str:
+        hour_digit = int(date_str.split("小时")[0])
+        true_date = datetime.datetime.now() + datetime.timedelta(hours=-hour_digit)
+        true_date = true_date.strftime("%Y-%m-%d %H:%M")
+    elif "昨天" in date_str:
+        true_date = datetime.date.today() + datetime.timedelta(days=-1)
+        true_date = true_date.strftime("%Y-%m-%d")
+        true_date = date_str.replace("昨天", true_date)
+    elif len(date_str) == 11:
+        true_date = "2026-" + date_str
+    else:
+        true_date = date_str
+    return true_date
+
+
+def guancha2comment(comment_dict):
+    comments = comment_dict["data"]["comments"]
+    reply_list = []
+    for comment in comments:
+        reply_str = comment["content"]
+        first_reply_date = format_guancha_date(comment["created_at"])
+        art_id = "guancha"
+        art_url = comment["post_url"] 
+        if comment["title"] == "":
+            title = "此文章已被删除"
+        else:
+            title = f"<a href={art_url}>{comment["title"]}</a>"
+        md5 = first_reply_date.replace(" ", "")
+        if "parent_comment" in comment.keys():
+            parent_comment = comment["parent_comment"]
+            comment_str = parent_comment["content"]
+            nickname = title + " | " + parent_comment["user_nick"]
+            comment_date = format_guancha_date(parent_comment["created_at"])
+        else:
+            comment_str = "留言"
+            nickname = title + " | " + "留言"
+            comment_date = first_reply_date
+        data_dict = {"comment": comment_str,
+            "reply": reply_str,
+            "nickname": nickname,
+            "comment_date": comment_date,
+            "first_reply_date": first_reply_date,
+            "latest_reply_date": first_reply_date,
+            "id": art_id,
+            "url": art_url,
+            "md5": md5,
+            "deleted": False
+            }
+        reply_list.append(data_dict)
+
+    df_comment = pd.DataFrame(data=reply_list)
+    df_comment["comment_date"] = pd.to_datetime(df_comment["comment_date"]) #.apply(pd.to_datetime, format="%Y-%m-%d %H:%M")
+    df_comment["first_reply_date"] = pd.to_datetime(df_comment["first_reply_date"]) #.apply(pd.to_datetime, format="%Y-%m-%d %H:%M ")
+    df_comment["latest_reply_date"] = df_comment["first_reply_date"]
+    
+    return [df_comment]
+
 def page2comment(doc, art_id):
 
     if doc.find(id="response_head"):
@@ -180,6 +238,8 @@ class Wmyblog:
         self.df_tag = pd.read_pickle(self.tag_file)
         self.guest_file = f"{data_dir}/guest.pkl"
         self.df_guest = pd.read_pickle(self.guest_file)
+        self.guancha_file = f"{data_dir}/guan.pkl"
+        self.df_guancha = pd.read_pickle(self.guancha_file)
 
         # 后注日期
         self.note_date_file = f"{data_dir}/annotation_date.json"
@@ -491,6 +551,13 @@ class Wmyblog:
         guest_template_file = f"{self.template_dir}/guestbook_page.html"
         html = Template(filename=guest_template_file).render(comment_data=comment_data)
         with open(f"{self.html_dir}/guestbook.html", "w", encoding="utf8") as f:
+            f.write(html)
+
+    def gen_guancha_page(self):
+        comment_data = self.format_comment(self.df_guancha)
+        guancha_template_file = f"{self.template_dir}/guancha_page.html"
+        html = Template(filename=guancha_template_file).render(comment_data=comment_data)
+        with open(f"{self.html_dir}/guancha.html", "w", encoding="utf8") as f:
             f.write(html)
 
     

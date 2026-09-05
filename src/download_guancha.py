@@ -1,4 +1,5 @@
 from downloader import Downloader
+import datetime
 
 headers = {
             "pragma": "no-cache",
@@ -20,6 +21,7 @@ headers = {
             "priority": "u=0, i"
 }
 
-url_list = [f"https://user.guancha.cn/user/get-user-comments-v3?page_no={idx}&uid=220525&isSelf=0" for idx in range(0, 13)]
+today = datetime.date.today().strftime("%Y%m%d")
+url_list = [f"https://user.guancha.cn/user/get-user-comments-v3?page_no={idx}&uid=220525&isSelf=0" for idx in range(1, 5)]
 
-Downloader(url_list, headers=headers, tSleep=1, nCache=5, outFilename="../data/guestbook.pkl").run(njob=1)
+Downloader(url_list, headers=headers, tSleep=1, nCache=5, outFilename="../data/guancha.pkl").run(njob=1)
