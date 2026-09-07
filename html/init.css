@@ -201,3 +201,10 @@ h2 {
    font-weight: bold; 
    text-align: center;
 }
+
+#toc {
+    text-align: center !important;
+    line-height: 2;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+}
