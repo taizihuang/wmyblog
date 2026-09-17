@@ -482,6 +482,7 @@ class Wmyblog:
                 continue
             if deleted:
                 comment = f"<strike>{comment}</strike>"
+            comment = comment.replace('\r\n','<br><br>')
             comment = comment.replace('\n','<br><br>')
             comment = comment.replace('<br><br><br>','<br>')
             comment = comment.replace('<br><br><br>','<br>')
