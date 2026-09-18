@@ -621,7 +621,7 @@ class Wmyblog:
         latest_template_file = f"{self.template_dir}/wmyblog_latest.html" 
         LATEST = Template(filename=latest_template_file)
         html = LATEST.render(date=refresh_date, comment_data=comment_data)
-        with open(f"{self.html_dir}/new_comment.html", "w", encoding="utf8") as f:
+        with open(f"{self.html_dir}/new_comment.html", "w", encoding="utf8", newline="\n") as f:
             f.write(html)
 
         rss_template_file = f"{self.template_dir}/wmyblog_rss.html" 
