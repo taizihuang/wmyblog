@@ -2,6 +2,7 @@ import requests, logging, os, re, hashlib, json, datetime, time
 import pandas as pd
 from bs4 import BeautifulSoup
 from mako.template import Template
+from zoneinfo import ZoneInfo
 from downloader import Downloader
 from article_merger import ArticleMerger
 
@@ -617,7 +618,7 @@ class Wmyblog:
 
         comment_data = self.format_comment(df_comment_note)
         comment_data = comment_data[:60]
-        refresh_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        refresh_date = datetime.datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%dT%H:%M:%S")
         latest_template_file = f"{self.template_dir}/wmyblog_latest.html" 
         LATEST = Template(filename=latest_template_file)
         html = LATEST.render(date=refresh_date, comment_data=comment_data)
