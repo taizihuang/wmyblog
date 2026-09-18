@@ -545,7 +545,9 @@ class Wmyblog:
         html = Template(filename=article_template_file).render(post_data=post_data,
                                                                note_data=note_data,
                                                                comment_data=comment_data)
-        with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8") as f:
+        html = html.replace("\r\n", "\n")
+        html = html.replace("\r", "")
+        with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8", newline="\n") as f:
             f.write(html)
     
     def gen_guest_page(self):
