@@ -483,6 +483,7 @@ class Wmyblog:
             if deleted:
                 comment = f"<strike>{comment}</strike>"
             comment = comment.replace('\r\n','<br><br>')
+            comment = comment.replace('\r','')
             comment = comment.replace('\n','<br><br>')
             comment = comment.replace('<br><br><br>','<br>')
             comment = comment.replace('<br><br><br>','<br>')
@@ -544,6 +545,8 @@ class Wmyblog:
         html = Template(filename=article_template_file).render(post_data=post_data,
                                                                note_data=note_data,
                                                                comment_data=comment_data)
+        html = html.replace("\r\n", "")
+        html = html.replace("\r", "")
         with open(f"{self.html_dir}/{art_id}.html", "w", encoding="utf8") as f:
             f.write(html)
     
