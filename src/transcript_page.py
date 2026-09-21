@@ -142,6 +142,7 @@ def gen_script_json(info_file, transcript_file, search_dir):
             else:
                 script_tag = "empty/"
             if title != "片花":
+                key = key.replace("[", "%5b").replace("]", "%5d")
                 transcript_list.append({
                                     "key": id,
                                     "id": key,
