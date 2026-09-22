@@ -298,7 +298,7 @@ class Wmyblog:
             doc = BeautifulSoup(response.content, features="lxml")
             for d in doc.findAll(class_='article_topic'):
                 id_list.append(d('a')[0]['href'].split('/')[-1])
-            id_list = id_list[:10]
+            id_list = id_list[:15]
         else:
             self.logger.error(f"status {status_code} from {url}")
         time.sleep(1)
