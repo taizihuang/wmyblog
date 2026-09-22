@@ -8,6 +8,7 @@ html_dir = "./html"
 template_dir = "./src/templates"
 search_dir = "./search"
 wmyblog = Wmyblog(data_dir, html_dir, template_dir, search_dir) 
-wmyblog.update_data()
-wmyblog.gen_article_pages()
-wmyblog.gen_index_page()
+# wmyblog.update_data()
+# wmyblog.gen_article_pages()
+# wmyblog.gen_index_page()
+wmyblog.gen_guancha_page()
