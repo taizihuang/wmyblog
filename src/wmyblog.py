@@ -315,7 +315,9 @@ class Wmyblog:
         time.sleep(1)
 
         # 评论时间更老但未回复的文章 
-        df_comment_noreply = self.df_comment.loc[(self.df_comment["reply"] == "") & (self.df_comment["deleted"] == False)]
+        df_comment_noreply = self.df_comment.loc[(self.df_comment["reply"] == "")
+                                                & (self.df_comment["deleted"] == False)
+                                                & (self.df_comment["comment_date"] > "20260601")]
         # df_comment_noreply = self.df_comment.loc[self.df_comment['reply']=='']
         id_list += list(df_comment_noreply["id"].iloc[-5:])
 
