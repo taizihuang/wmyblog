@@ -5,8 +5,8 @@
 		<title>王孟源访谈</title>
 		<!-- <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
 		<lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate> -->
-		<pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-		<lastBuildDate>Fri, 18 Sep 2026 00:00:00 +0000</lastBuildDate>
+		<pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+		<lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
 		<generator>Manual</generator>
 		<link>https://wmyblog.site</link>
 		<language>zh-cn</language>
@@ -668,5 +668,13 @@
 			<link><![CDATA[https://wmyblog.site/html/260918[龙行天下].html]]></link>
 			<description><![CDATA[《任正非全家潤？如何過濾網路謠言！》]]></description>
 			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/lurKWQYaVtZDVBs3cUvS6JFaNUYB.mp3" />
+		</item>	
+		<item>
+			<title>《從華為尊界V800談起》</title>
+			<pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false"><![CDATA[261016[龙行天下]]]></guid>
+			<link><![CDATA[https://wmyblog.site/html/261016[龙行天下].html]]></link>
+			<description><![CDATA[《從華為尊界V800談起》]]></description>
+			<enclosure length="80000000" type="audio/mpeg" url="https://media.xyzcdn.net/llZ3UD9IgpJgZAn9UwESIP-VJS_5.mp3" />
 		</item>	
         </channel></rss>
