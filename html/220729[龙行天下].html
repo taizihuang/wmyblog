@@ -5,6 +5,7 @@
 <title>《「习拜会」后的大国政治！》</title>
 <link href="../podcast/APlayer.min.css" rel="stylesheet"/>
 <script src="../podcast/APlayer.min.js"></script>
+<script src="../podcast/player.js"></script>
 <script src="jquery-1.11.3.min.js"></script>
 <script src="supabase.js"></script>
 <script src="tag.js"></script>
@@ -33,6 +34,9 @@
             max-width: 650px;
             width: 80%;
             bottom: 10;
+        }
+        .aplayer-volume-wrap {
+            display: none !important;
         }
     </style>
 <script>
@@ -209,6 +213,8 @@
                     pic: '../podcast/wmy-podcast-long.jpg'
                     }
         });
-    ap.init();
+    // ap.init();
+    addButton(ap);
+    keyevent(ap, document);
 </script>
 </html>
