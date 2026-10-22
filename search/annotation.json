@@ -4793,14 +4793,6 @@
             "tag": "中国/金融/管理"
         },
         {
-            "id": "180084896",
-            "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注3",
-            "content": "<p>【後註三，2024/02/18】雖然從三年前的博文<a href=\"166266473.html\">《我對引入美國投行的一些看法》</a>至今，博客針對開放金融的討論用詞一如既往地追求精確，但我素來不喜歡囉嗦，説的很簡略；現在有越來越多的非專業讀者關注這個議題，不一定具有原先我假設為理所當然的背景知識，所以特地在此澄清一個關鍵論點以避免誤解，也就是我論證出不能開放的並不是所有金融業，而只限於“High Finance”“高等金融”，包括投資銀行、Private Equity、對衝基金、以及定制衍生品（亦即除了最簡單基本、在證券交易所公開常態交易的Futures期貨和Options期權之外的所有金融衍生品）等等超巨額錢上滾錢的機構和花招。事實上不只是不能對外開放，除了最基本的上市股票和發行債券等等直接為企業融資的業務之外，本土的金融機構也不應容許其涉及。至於提供存款服務的Retail Banking零售銀行業（又稱Consumer Banking）、疏通貿易的Commercial Banking商務銀行業、以及同樣直接面對大衆的保險業和Mutual Fund，反倒符合博客所説的“簡單”、“透明”、“從屬於實體經濟”等原則，是值得引進並發展的方向；但也正因它們不涉及搜刮和暴利，美方才意興闌珊，一些舊有的名額都沒有用完，甚至有好幾個進來又退出的案例，例如花旗銀行，參見<a href=\"https://www.wsj.com/articles/citigroup-to-pull-out-of-consumer-banking-in-china-11671104584\">《Citigroup to Pull Out of Consumer Banking in China》</a>。</p>\n",
-            "date": "2024-02-18",
-            "md5": "180084896_note3",
-            "tag": "中国/金融/管理"
-        },
-        {
             "id": "180084861",
             "title": "【金融】【歷史】金融史觀（一）歷史由來 | 后注1",
             "content": "<p>【後註一，2024/02/18】今天看到這篇2019年的論文（參見<a href=\"https://pages.stern.nyu.edu/~tphilipp/papers/CGP_NBER_WP.pdf\">《From Good to Bad Concentration? U.S. Industries over the past 30 years》</a>），雖然其明面上的道理很淺顯，討論的是近年來美國國内行業的普遍寡頭化，但與正文對照之後，卻可以看出額外的脈絡，值得在此一提。先看下圖中的各國CR8指數（行業中最大8強的總市場份額，用來測量寡頭化程度），可以簡單看出，只有美國（“NA”“北美”）在2000年後一騎絕塵。</p>\n<p><img src=\"./img/f_27941058_1.JPG\"/></p>\n<p>下圖中的綠綫是銷售總額除以貨品進價的比值，用來測量外包給中國製造之後，成本被壓低的效應。很顯然全世界的商家都獲益於成本減低，但代表毛利率的紅綫，卻只有在美國才一路上升；這只能是寡頭化的結果。</p>\n<p><img src=\"./img/f_27941059_1.JPG\"/></p>\n<p>請注意，2000年前後是關鍵轉折點，雖然這篇論文的作者無法解釋其來源，但讀通正文的讀者應該知道，該時間點恰恰契合亞洲新興出口國在1997年金融危機後恢復過來，開始纍積十萬億美元外匯的起點。這些新美元外匯儲備必須回流美國，以尋求美元定價的金融資產，於是人爲地大幅壓低了當地資金的價格，也就是舉債的難易和利率，間接地促成Private Equity私人股權投資的快速興起和擴張，參見下圖。他們拿了輕鬆借來的大筆美元資金，購並各式各樣的企業，尤其注重製造寡頭、削弱競爭，以求迅速提高資本報酬率。最近我對High Finance的嚴厲批評，反復提到其對實體經濟和全民福祉必然造成巨大傷害，這裏是許多機制中的一個。中國與華爾街合作互通，不但是喂養邪惡核心，也在污染自己的經濟和社會，大幅消耗隱性公益，長期後果極爲嚴重。</p>\n<p><img src=\"./img/f_27941078_1.png\"/></p>\n",
@@ -4815,6 +4807,14 @@
             "date": "2024-02-18",
             "md5": "131731312_note24",
             "tag": "工业/能源"
+        },
+        {
+            "id": "180084896",
+            "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注3",
+            "content": "<p>【後註三，2024/02/18】雖然從三年前的博文<a href=\"166266473.html\">《我對引入美國投行的一些看法》</a>至今，博客針對開放金融的討論用詞一如既往地追求精確，但我素來不喜歡囉嗦，説的很簡略；現在有越來越多的非專業讀者關注這個議題，不一定具有原先我假設為理所當然的背景知識，所以特地在此澄清一個關鍵論點以避免誤解，也就是我論證出不能開放的並不是所有金融業，而只限於“High Finance”“高等金融”，包括投資銀行、Private Equity、對衝基金、以及定制衍生品（亦即除了最簡單基本、在證券交易所公開常態交易的Futures期貨和Options期權之外的所有金融衍生品）等等超巨額錢上滾錢的機構和花招。事實上不只是不能對外開放，除了最基本的上市股票和發行債券等等直接為企業融資的業務之外，本土的金融機構也不應容許其涉及。至於提供存款服務的Retail Banking零售銀行業（又稱Consumer Banking）、疏通貿易的Commercial Banking商務銀行業、以及同樣直接面對大衆的保險業和Mutual Fund，反倒符合博客所説的“簡單”、“透明”、“從屬於實體經濟”等原則，是值得引進並發展的方向；但也正因它們不涉及搜刮和暴利，美方才意興闌珊，一些舊有的名額都沒有用完，甚至有好幾個進來又退出的案例，例如花旗銀行，參見<a href=\"https://www.wsj.com/articles/citigroup-to-pull-out-of-consumer-banking-in-china-11671104584\">《Citigroup to Pull Out of Consumer Banking in China》</a>。</p>\n",
+            "date": "2024-02-18",
+            "md5": "180084896_note3",
+            "tag": "中国/金融/管理"
         },
         {
             "id": "108908793",
@@ -4929,20 +4929,20 @@
             "tag": "德国/美国/文化/基础科研/高能物理/学术管理"
         },
         {
-            "id": "171633910",
-            "title": "【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注15",
-            "content": "<p>【後註十五，2024/04/09】前面提到當代物理界騙徒充斥，剛好《Nature》（參見<a href=\"https://www.nature.com/articles/d41586-024-00716-2\">《Superconductivity scandal: the inside story of deception in a rising star’s physics lab》</a>）也復盤了一個“科技突破”，亦即2020年在大衆媒體大肆炒作過的的“常溫高壓超導”。這裏的重點觀察有二：首先，未來科技騙局先天就極受現代社會所歡迎，不費力氣就可以傳遍全球大衆媒體，事後被道破糾正，卻只有專業期刊會登，外行群衆自然會被誤導，以爲每次媒體炒作的“科技突破”都貨真價實；其實剛好相反，絕大部分非專業媒介都只報導假大空，而且炒作越兇問題越大。其次，那篇論文不但很快就被撤稿，三年下來歐美學術界還排除了中國教育部和兩院非常喜歡用的“誤植”等等藉口，確定其爲故意造假。光從處理造假案的態度差異就可以簡單看出，中國科研界的腐朽程度遠超美方。</p>\n",
-            "date": "2024-04-09",
-            "md5": "171633910_note15",
-            "tag": "基础科研/学术管理"
-        },
-        {
             "id": "180084896",
             "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注4",
             "content": "<p>【後註四，2024/04/09】正文論證了美國通脹壓力將會長期存在，這一點雖然被美國學術界的“經濟學者”和金融界的“股市專家”矢口否認，普遍强烈要求降息以重啓泡沫，但實權在握的大佬卻有不爲五斗米折腰撒謊的餘裕，偶爾會透露實話，昨天摩根大通CEO Jamie Dimon就是一例（參見<a href=\"https://reports.jpmorganchase.com/investor-relations/2023/ar-ceo-letters.htm\">《Jamie Dimons Letter to J.P.Morgan Shareholders》</a>）。Powell和Yellen當然也心知肚明；然而正如博客反復提過，美國本身的政治和經濟現實不容許他們對遏制通脹做出實質努力，真正的護欄始終在於歐盟和中國的自願犧牲奉獻。Yellen之所以在2023年以來頻繁來訪，很明顯是爲了確認中方新内閣中的經濟和尤其金融管理階層，能夠繼承前任的意識形態和政策取向，以便維持忠犬祠的持續擴張。</p>\n",
             "date": "2024-04-09",
             "md5": "180084896_note4",
             "tag": "美国/经济"
+        },
+        {
+            "id": "171633910",
+            "title": "【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注15",
+            "content": "<p>【後註十五，2024/04/09】前面提到當代物理界騙徒充斥，剛好《Nature》（參見<a href=\"https://www.nature.com/articles/d41586-024-00716-2\">《Superconductivity scandal: the inside story of deception in a rising star’s physics lab》</a>）也復盤了一個“科技突破”，亦即2020年在大衆媒體大肆炒作過的的“常溫高壓超導”。這裏的重點觀察有二：首先，未來科技騙局先天就極受現代社會所歡迎，不費力氣就可以傳遍全球大衆媒體，事後被道破糾正，卻只有專業期刊會登，外行群衆自然會被誤導，以爲每次媒體炒作的“科技突破”都貨真價實；其實剛好相反，絕大部分非專業媒介都只報導假大空，而且炒作越兇問題越大。其次，那篇論文不但很快就被撤稿，三年下來歐美學術界還排除了中國教育部和兩院非常喜歡用的“誤植”等等藉口，確定其爲故意造假。光從處理造假案的態度差異就可以簡單看出，中國科研界的腐朽程度遠超美方。</p>\n",
+            "date": "2024-04-09",
+            "md5": "171633910_note15",
+            "tag": "基础科研/学术管理"
         },
         {
             "id": "150052301",
@@ -5073,20 +5073,20 @@
             "tag": "中国/其他地区/意大利/外交"
         },
         {
-            "id": "130149479",
-            "title": "【海軍】有關航母的一些新消息 | 后注4",
-            "content": "<p>【後註四，2024/08/01】博客早年曾經爲了揭露臺海兩岸硬實力的真實對比而日常討論新銳兵器等小道消息，後來主旨的真相廣爲人知，就不再有必要繼續沉迷技術細節。不過剛剛看到出現在武漢的新型潛艇（參見<a href=\"https://www.twz.com/sea/chinas-latest-submarine-features-x-shaped-stern\">《China’s Latest Submarine Features X-Shaped Stern》</a>；原始發現來自軍事博主Tom Shugart根據衛星照片的分析），這是自上世紀90年代039出世之後，中方常規潛艇在水動力外型的最重大升級換代（不但長度尺寸創新記錄，而且也是中國潛艇第一次采用X-型尾舵），達到世界領先地位，具有若干戰略影響和價值，值得讀者注意。</p>\n<p><img src=\"./img/f_28318838_1.JPG\"/></p>\n",
-            "date": "2024-08-01",
-            "md5": "130149479_note4",
-            "tag": "中国/军事装备"
-        },
-        {
             "id": "131174635",
             "title": "【美國】【工業】波音衰敗之源 | 后注14",
             "content": "<p>【後註十四，2024/08/01】波音剛剛宣佈新CEO人選（參見<a href=\"https://www.cnn.com/2024/07/31/investing/boeings-losses-new-ceo/\">《Boeing names new CEO after losses more than triple》</a>），代表著悔改並逆轉當年拆分Spirits AeroSystems的決定（參見【後註九】和【後註十】）之後，要進一步清洗公司高層，回歸工程師治理的正途，甚至有傳言新CEO已在考慮將總部遷回西雅圖。然而我們只要和Intel做比較，就可以簡單預測，這一切已經是Too little，too late：畢竟波音的文化腐朽始自1996年Philip Condit積極引進GE Jack Welch的財務至上哲學，至今已有28年，1997年并購麥道更是一次性將管理層全面換血，而Intel是2005年才落到Paul Otellin手中，開始推進MBA治理模式，到2021年就知道反悔，換囘工程主管Patrick Gelsinger當CEO，被毒害過程只有16年。然而三年過去，Intel依舊積重難返，不但在性價比上競爭不過友商AMD，連基本的生產品質都無法保證，以致發生了13代/14代CPU因“製程缺陷”而集體故障報銷事件（參見<a href=\"https://www.theverge.com/2024/7/26/24206529/intel-13th-14th-gen-crashing-instability-cpu-voltage-q-a\">《There is no fix for Intel’s crashing 13th and 14th Gen CPUs — any damage is permanent》</a>；這條分析<a href=\"https://www.youtube.com/watch?v=b6vQlvefGxk\">《Scumbag Intel: Shady Practices, Terrible Responses, &amp; Failure to Act》</a>則總結了Intel在過去兩年推諉卸責的過程，與波音在737Max事件的表現如出一轍，差別只在於其產品出問題並不直接要人命；有匿名的Intel工程師指控，這些新問題的根源，在於中層管理人員集體抵制破壞Gelsinger的改革意圖），波音的腐化遠遠更爲徹底，救贖自然也更加困難。</p>\n",
             "date": "2024-08-01",
             "md5": "131174635_note14",
             "tag": "美国/工业/管理/金融"
+        },
+        {
+            "id": "130149479",
+            "title": "【海軍】有關航母的一些新消息 | 后注4",
+            "content": "<p>【後註四，2024/08/01】博客早年曾經爲了揭露臺海兩岸硬實力的真實對比而日常討論新銳兵器等小道消息，後來主旨的真相廣爲人知，就不再有必要繼續沉迷技術細節。不過剛剛看到出現在武漢的新型潛艇（參見<a href=\"https://www.twz.com/sea/chinas-latest-submarine-features-x-shaped-stern\">《China’s Latest Submarine Features X-Shaped Stern》</a>；原始發現來自軍事博主Tom Shugart根據衛星照片的分析），這是自上世紀90年代039出世之後，中方常規潛艇在水動力外型的最重大升級換代（不但長度尺寸創新記錄，而且也是中國潛艇第一次采用X-型尾舵），達到世界領先地位，具有若干戰略影響和價值，值得讀者注意。</p>\n<p><img src=\"./img/f_28318838_1.JPG\"/></p>\n",
+            "date": "2024-08-01",
+            "md5": "130149479_note4",
+            "tag": "中国/军事装备"
         },
         {
             "id": "162032391",
@@ -5129,22 +5129,6 @@
             "tag": "美国/宣传"
         },
         {
-            "id": "162032391",
-            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注28",
-            "content": "<p>【後註二十八，2024/08/30】法國法庭公佈了Durov的詳細罪名，其中第二條是“Refus de communiquer, sur demandes des autorités habilitées, les informations ou documents nécessaires pour la réalisation et l’exploitation des interceptions autorisées par la loi”“拒絕應授權當局的要求提供執行和利用法律授權的攔截所需的資訊或文件”，換句話説，拒絕幫助“當局”（應該是三個英文字母縮寫的機構，大家自行腦補）監聽用戶。所以法國人在次要細節上還是說了一些實話，只在首要指控上撒了謊</p>\n",
-            "date": "2024-08-30",
-            "md5": "162032391_note28",
-            "tag": "法国/宣传/政治"
-        },
-        {
-            "id": "171633910",
-            "title": "【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注16",
-            "content": "<p>【後註十六，2024/08/30】本月13日，美國國家標準技術研究所NIST正式采納三種新的後量子密碼作爲國家標準（參見<a href=\"https://csrc.nist.gov/projects/post-quantum-cryptography\">《Post-Quantum Cryptography》</a>），非常廉價而簡單地一次性解除了量子計算的解破碼威脅以及量子通信硬件加密的必要性。博客早已解釋過，原本山東大學數學系在後量子密碼標準的研究和制定上領先美國1-2年，但因爲科技部決定為中科大和潘建偉在股市割韭菜護航，而被擱置至今。</p>\n",
-            "date": "2024-08-30",
-            "md5": "171633910_note16",
-            "tag": "基础科研/量子技术/"
-        },
-        {
             "id": "108908755",
             "title": "【美國】美國式的恐龍法官（二） | 后注2",
             "content": "<p>【後註二，2024/08/30】最近美國最高法院又作出一個很重要、很基本的新判決（參見<a href=\"https://www.whitecase.com/insight-alert/us-supreme-court-strikes-down-chevron-doctrine-what-you-need-know\">《U.S. Supreme Court Strikes Down Chevron Doctrine—What You Need to Know》</a>），亦即推翻了1984年確立的“Chevron Doctrine”（又稱“Chevron Deference”），但大衆媒體沒有太多報導，值得博客在此提醒大家注意。</p>\n<p>所謂的“Chevron Doctrine”，簡單來説，就是當法律條文模糊有疑義的時候，應該以監管單位的行政條令爲準；新判決則將一切改由訴訟解決。這顯然是進一步削減監管單位的職權，方便大企業花錢雇傭律師/檢察官/法官來壓死對手；讀者可以與博客對Biden政權下三個盡責中級閣員（分別主管SEC、FTC和CFPB）的討論做參照，並自行估算兩者之間的可能因果關聯。</p>\n",
@@ -5159,6 +5143,22 @@
             "date": "2024-08-30",
             "md5": "108908678_note2",
             "tag": "美国/政治/宣传"
+        },
+        {
+            "id": "171633910",
+            "title": "【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注16",
+            "content": "<p>【後註十六，2024/08/30】本月13日，美國國家標準技術研究所NIST正式采納三種新的後量子密碼作爲國家標準（參見<a href=\"https://csrc.nist.gov/projects/post-quantum-cryptography\">《Post-Quantum Cryptography》</a>），非常廉價而簡單地一次性解除了量子計算的解破碼威脅以及量子通信硬件加密的必要性。博客早已解釋過，原本山東大學數學系在後量子密碼標準的研究和制定上領先美國1-2年，但因爲科技部決定為中科大和潘建偉在股市割韭菜護航，而被擱置至今。</p>\n",
+            "date": "2024-08-30",
+            "md5": "171633910_note16",
+            "tag": "基础科研/量子技术/"
+        },
+        {
+            "id": "162032391",
+            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注28",
+            "content": "<p>【後註二十八，2024/08/30】法國法庭公佈了Durov的詳細罪名，其中第二條是“Refus de communiquer, sur demandes des autorités habilitées, les informations ou documents nécessaires pour la réalisation et l’exploitation des interceptions autorisées par la loi”“拒絕應授權當局的要求提供執行和利用法律授權的攔截所需的資訊或文件”，換句話説，拒絕幫助“當局”（應該是三個英文字母縮寫的機構，大家自行腦補）監聽用戶。所以法國人在次要細節上還是說了一些實話，只在首要指控上撒了謊</p>\n",
+            "date": "2024-08-30",
+            "md5": "162032391_note28",
+            "tag": "法国/宣传/政治"
         },
         {
             "id": "131174635",
@@ -5177,12 +5177,12 @@
             "tag": "基础科研/高能物理/学术管理"
         },
         {
-            "id": "162032391",
-            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注29",
-            "content": "<p>【後註二十九，2024/09/06】美國司法部於昨日正式起訴俄裔美籍公民Dimitri Simes和Anastasia Simes夫婦，罪行是為俄國電視臺Channel 1 News主持新聞節目，而俄國國有媒體都在美方制裁之列（參見<a href=\"https://www.reuters.com/legal/us-charges-russian-tv-contributor-dimitri-simes-with-sanctions-violations-2024-09-05/\">《US charges Russian TV contributor Dimitri Simes with sanctions violations》</a>）。這不但再一次揭示了昂撒“新聞自由”的真相，也又一次證實了美方單邊宣佈制裁外國公司之後就可以任意逮捕所有員工，參考《美國陷阱》和孟晚舟的經驗。</p>\n",
+            "id": "108908771",
+            "title": "【醫療】當前世界的公共衛生危機 | 后注1",
+            "content": "<p>【後註一，2024/09/06】剛剛看到《Science》上發表的一篇新論文（參見<a href=\"https://www.science.org/doi/10.1126/science.adg0344\">《The economic impacts of ecosystem disruptions: Costs from substituting biological pest control》</a>），明示了美國將農業工業化的附帶惡果，在大陸和台灣很可能有類似的危險，值得公衆警惕。</p>\n<p>這個研究利用了一個天然實驗，也就是最近十幾年汎濫於北美洲的蝙蝠白鼻症（White-Nose Syndrome，WNS），導致許多蝙蝠族群大幅死亡減員。因爲各個郡的災情程度不同，蝙蝠對生態系的作用可以通過對時空坐標的回歸分析（Regression Analysis，尤其是近年非常流行的Panel Data Analysis；去年返臺期間，我曾與生化學者討論統計方法，當時還特別提醒他盡可能使用Panel Data的標準工具和語言，可以幫助論文通過英文期刊的評審）明確顯示出來。這篇論文的主要結論有二：1）蝙蝠基本消失的地區，農田殺蟲劑使用量增加了31%；2）這些地區的嬰兒死亡率上升了8%。至於額外死亡的嬰兒，是完全受殺蟲劑毒性所害，或者有若干蚊蟲傳染病的影響，還有待進一步研究。</p>\n",
             "date": "2024-09-06",
-            "md5": "162032391_note29",
-            "tag": "美国/宣传/政治"
+            "md5": "108908771_note1",
+            "tag": "工业/生物/医学"
         },
         {
             "id": "108908753",
@@ -5193,20 +5193,12 @@
             "tag": "基础科研/生物"
         },
         {
-            "id": "108908771",
-            "title": "【醫療】當前世界的公共衛生危機 | 后注1",
-            "content": "<p>【後註一，2024/09/06】剛剛看到《Science》上發表的一篇新論文（參見<a href=\"https://www.science.org/doi/10.1126/science.adg0344\">《The economic impacts of ecosystem disruptions: Costs from substituting biological pest control》</a>），明示了美國將農業工業化的附帶惡果，在大陸和台灣很可能有類似的危險，值得公衆警惕。</p>\n<p>這個研究利用了一個天然實驗，也就是最近十幾年汎濫於北美洲的蝙蝠白鼻症（White-Nose Syndrome，WNS），導致許多蝙蝠族群大幅死亡減員。因爲各個郡的災情程度不同，蝙蝠對生態系的作用可以通過對時空坐標的回歸分析（Regression Analysis，尤其是近年非常流行的Panel Data Analysis；去年返臺期間，我曾與生化學者討論統計方法，當時還特別提醒他盡可能使用Panel Data的標準工具和語言，可以幫助論文通過英文期刊的評審）明確顯示出來。這篇論文的主要結論有二：1）蝙蝠基本消失的地區，農田殺蟲劑使用量增加了31%；2）這些地區的嬰兒死亡率上升了8%。至於額外死亡的嬰兒，是完全受殺蟲劑毒性所害，或者有若干蚊蟲傳染病的影響，還有待進一步研究。</p>\n",
-            "date": "2024-09-06",
-            "md5": "108908771_note1",
-            "tag": "工业/生物/医学"
-        },
-        {
             "id": "162032391",
-            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注30",
-            "content": "<p>【後註三十，2024/09/07】美國司法部起訴Dimitri Simes，至少還用了長臂管轄這個遮羞布，但另外一宗案件針對加拿大自媒體公司Tenet Media與其主持人Lauren Chen，罪名直接是傳播來自俄國的謠言（參見<a href=\"https://nationalpost.com/news/canadian-influencers-accused-of-russian-propaganda\">《What we know about the two Canadian influencers accused of Russian propaganda》</a>；實際上，Lauren Chen根本就不是國際政治評論員，她主要談電影和文化，這次犯忌諱的是幾次支持Trump的發言；DOJ當年搞的Russiagate已經被國會聽證證明是無中生有的栽贓，卻還用同一個藉口繼續騷擾支持政敵的小老百姓，真是打破所有下限的無恥之尤），這就只剩赤裸裸的文字獄了；依這個標準，大陸有無數的媒體人和學術人都應該進牢房。</p>\n",
-            "date": "2024-09-07",
-            "md5": "162032391_note30",
-            "tag": "其他地区/加拿大/宣传/政治"
+            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注29",
+            "content": "<p>【後註二十九，2024/09/06】美國司法部於昨日正式起訴俄裔美籍公民Dimitri Simes和Anastasia Simes夫婦，罪行是為俄國電視臺Channel 1 News主持新聞節目，而俄國國有媒體都在美方制裁之列（參見<a href=\"https://www.reuters.com/legal/us-charges-russian-tv-contributor-dimitri-simes-with-sanctions-violations-2024-09-05/\">《US charges Russian TV contributor Dimitri Simes with sanctions violations》</a>）。這不但再一次揭示了昂撒“新聞自由”的真相，也又一次證實了美方單邊宣佈制裁外國公司之後就可以任意逮捕所有員工，參考《美國陷阱》和孟晚舟的經驗。</p>\n",
+            "date": "2024-09-06",
+            "md5": "162032391_note29",
+            "tag": "美国/宣传/政治"
         },
         {
             "id": "178109282",
@@ -5215,6 +5207,14 @@
             "date": "2024-09-07",
             "md5": "178109282_note2",
             "tag": "工业/能源/经济/管理"
+        },
+        {
+            "id": "162032391",
+            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注30",
+            "content": "<p>【後註三十，2024/09/07】美國司法部起訴Dimitri Simes，至少還用了長臂管轄這個遮羞布，但另外一宗案件針對加拿大自媒體公司Tenet Media與其主持人Lauren Chen，罪名直接是傳播來自俄國的謠言（參見<a href=\"https://nationalpost.com/news/canadian-influencers-accused-of-russian-propaganda\">《What we know about the two Canadian influencers accused of Russian propaganda》</a>；實際上，Lauren Chen根本就不是國際政治評論員，她主要談電影和文化，這次犯忌諱的是幾次支持Trump的發言；DOJ當年搞的Russiagate已經被國會聽證證明是無中生有的栽贓，卻還用同一個藉口繼續騷擾支持政敵的小老百姓，真是打破所有下限的無恥之尤），這就只剩赤裸裸的文字獄了；依這個標準，大陸有無數的媒體人和學術人都應該進牢房。</p>\n",
+            "date": "2024-09-07",
+            "md5": "162032391_note30",
+            "tag": "其他地区/加拿大/宣传/政治"
         },
         {
             "id": "109623460",
@@ -5233,20 +5233,20 @@
             "tag": "学术管理/"
         },
         {
-            "id": "128340103",
-            "title": "【美國】【工業】波音和載人登月 | 后注1",
-            "content": "<p>【後註一，2024/09/10】五年多前這篇正文預言波音必然會不斷拖累NASA的新載人登月計劃，最近Starliner故障頻發，導致兩名宇航員不得不留滯空間站，已經家喻戶曉。三天前，Starliner空機返航“成功”，NASA大肆慶祝，但其中有一個細節被有意低調處理，亦即返航過程中的確有一個轉向火箭失靈，只不過沒有嚴重到墜機罷了，詳情參見<a href=\"https://futurism.com/the-byte/starliner-new-problems-return-earthA\">《Starliner Suffers New Problems While Coming Back to Earth》</a>。</p>\n",
-            "date": "2024-09-10",
-            "md5": "128340103_note1",
-            "tag": "美国/工业/管理"
-        },
-        {
             "id": "108908771",
             "title": "【醫療】當前世界的公共衛生危機 | 后注2",
             "content": "<p>【後註二，2024/09/10】過去幾十年，全世界的女孩都在不斷提早進入青春期（Early Puberty），科學家懷疑這是一些常用化工原料干擾荷爾蒙（Endocrine-disrupting compounds）的結果。這一篇新論文（參見<a href=\"https://academic.oup.com/endo/article/165/10/bqae103/7749689\">《Identification of Environmental Compounds That May Trigger Early Female Puberty by Activating Human GnRHR and KISS1R》</a>），證實了這個懷疑，並將箭頭指向洗髮精香料Musk Ambrette和一類叫做cholinergic agonist的藥物等等。</p>\n",
             "date": "2024-09-10",
             "md5": "108908771_note2",
             "tag": "工业/生物/医学"
+        },
+        {
+            "id": "128340103",
+            "title": "【美國】【工業】波音和載人登月 | 后注1",
+            "content": "<p>【後註一，2024/09/10】五年多前這篇正文預言波音必然會不斷拖累NASA的新載人登月計劃，最近Starliner故障頻發，導致兩名宇航員不得不留滯空間站，已經家喻戶曉。三天前，Starliner空機返航“成功”，NASA大肆慶祝，但其中有一個細節被有意低調處理，亦即返航過程中的確有一個轉向火箭失靈，只不過沒有嚴重到墜機罷了，詳情參見<a href=\"https://futurism.com/the-byte/starliner-new-problems-return-earthA\">《Starliner Suffers New Problems While Coming Back to Earth》</a>。</p>\n",
+            "date": "2024-09-10",
+            "md5": "128340103_note1",
+            "tag": "美国/工业/管理"
         },
         {
             "id": "120933727",
@@ -5265,20 +5265,20 @@
             "tag": "美国/工业/经济"
         },
         {
-            "id": "175790558",
-            "title": "【政治】社會主義國家應該如何管理資本 | 后注17",
-            "content": "<p>【後註十六，2024/09/12】有報導（參見<a href=\"https://oilprice.com/Metals/Commodities/Chinas-Carbon-Trading-Market-to-Encompass-Steel-and-Aluminum-Sectors.html\">《Chinas Carbon Trading Market to Encompass Steel and Aluminum Sectors》</a>）稱中國的冶金業被要求從今年年底開始加入碳排放交易。博客已經反復論證，碳交易純粹是圖利金融、獎勵作弊的倒行逆施；上述新聞所反映的，除了執政幕僚群的無知無能之外，還有官僚體系自我擴大職權的普世效應。</p>\n",
-            "date": "2024-09-12",
-            "md5": "175790558_note17",
-            "tag": "中国/工业/金融/管理"
-        },
-        {
             "id": "131394982",
             "title": "【公共健康】【財政】一個嚴重的公共健康問題 | 后注7",
             "content": "<p>【後註七，2024/09/12】博客雖然反復强調過果糖攝取過量是當前世界公共健康的嚴重問題，但我似乎一直忘了提起，飲料形式的果糖/蔗糖比糕餅甜點更糟糕得多，這是因爲人類胃/腦之間的飽腹感環路對液態卡路里完全無感（從生物學角度來看，並不奇怪，畢竟在絕大部分演化歷史中，人類不但沒有糖吃，能找到的飲料也只有零卡路里的白水，也就沒有必要演化出偵測果糖/蔗糖溶液的能力），以致越喝飲料反而額外吃得更多（可能是因爲部分原本固態的糖在嘴巴或胃裏溶入飲料中，於是從飽腹感偵測環路中隱形消失），所以營養學界的共識是加糖冷飲可以算是現代飲食中的頭號危害，參見<a href=\"https://www.webmd.com/diet/news/20240605/why-sugary-drinks-may-be-the-unhealthiest-food-out-there\">《Why Sugary Drinks May Be the Unhealthiest Food Out There》</a>。</p>\n",
             "date": "2024-09-12",
             "md5": "131394982_note7",
             "tag": "基础科研/医学"
+        },
+        {
+            "id": "175790558",
+            "title": "【政治】社會主義國家應該如何管理資本 | 后注17",
+            "content": "<p>【後註十六，2024/09/12】有報導（參見<a href=\"https://oilprice.com/Metals/Commodities/Chinas-Carbon-Trading-Market-to-Encompass-Steel-and-Aluminum-Sectors.html\">《Chinas Carbon Trading Market to Encompass Steel and Aluminum Sectors》</a>）稱中國的冶金業被要求從今年年底開始加入碳排放交易。博客已經反復論證，碳交易純粹是圖利金融、獎勵作弊的倒行逆施；上述新聞所反映的，除了執政幕僚群的無知無能之外，還有官僚體系自我擴大職權的普世效應。</p>\n",
+            "date": "2024-09-12",
+            "md5": "175790558_note17",
+            "tag": "中国/工业/金融/管理"
         },
         {
             "id": "131394982",
@@ -5313,20 +5313,20 @@
             "tag": "英国/美国/澳大利亚/军事战略"
         },
         {
-            "id": "131174635",
-            "title": "【美國】【工業】波音衰敗之源 | 后注16",
-            "content": "<p>【後註十六，2024/10/05】我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p>\n<p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href=\"https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~\">《Boeing 737-8 Rudder System Anomaly》</a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href=\"https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/\">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</a>，我在此只列舉與事故直接相關的幾件已知事實：</p>\n<p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p>\n<p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p>\n<p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p>\n<p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p>\n",
-            "date": "2024-10-05",
-            "md5": "131174635_note16",
-            "tag": "美国/工业/管理/"
-        },
-        {
             "id": "175790558",
             "title": "【政治】社會主義國家應該如何管理資本 | 后注18",
             "content": "<p>【後註十七，2024/10/05】美國法務部、SEC和CFTC於本周聯合執法，以詐騙罪逮捕起訴碳交易/碳市場/碳信用（Carbon trading/carbon market/carbon credit，分別對應著交易的概念、平臺和單位）的大咖CQC Impact Investors（參見<a href=\"https://www.justice.gov/usao-sdny/pr/us-attorney-announces-criminal-charges-multi-year-fraud-scheme-market-carbon-credits\">《U.S. Attorney Announces Criminal Charges In Multi-Year Fraud Scheme In The Market For Carbon Credits》</a>）。明明整個行業就是純粹詐騙，卻因爲白左思潮和金融利益，即便是有心爲國的官員也無法禁止，只能揚湯止沸地法辦個別罪犯，不過至少勝過中國從上到下的一致被忽悠；考慮這些國際金融詐騙的收益大半會流入美元體系，中方跟風搞碳交易更加是愚不可及。</p>\n",
             "date": "2024-10-05",
             "md5": "175790558_note18",
             "tag": "美国/工业/金融/管理"
+        },
+        {
+            "id": "131174635",
+            "title": "【美國】【工業】波音衰敗之源 | 后注16",
+            "content": "<p>【後註十六，2024/10/05】我五年前解釋波音的徹底腐朽時，頗駭人聽聞，其後各種問題層出不窮，至今新醜聞太多、太頻繁，早已不值得條條討論。然而最近又出現了一個相當嚴重的品管疏失，卻有著介紹給讀者的價值。</p>\n<p>引發注意的事故發生在今年二月6日，一架隸屬聯合航空的波音737 Max在紐約周邊的Newark機場著陸過程中，控制左右方向的踏板鎖死，以致偏離中綫、即將衝出跑道，所幸機長及時動用原本是停機坪專用的低速轉向鈕，保全了飛機的安全和乘客的生命。事後NTSB（國家運輸安全委員會，專職調查運輸安全事故）很快查明真相，並發表初步報告（參見<a href=\"https://www.ntsb.gov/investigations/Pages/DCA24LA094.aspx#:~\">《Boeing 737-8 Rudder System Anomaly》</a>），但不出意料地，FAA和波音都無動於衷、多方推諉、無限扯皮，導致NTSB不得不在本周公開高調地指責這兩者草菅人命、危害公共安全；他們如何扯皮的詳情請讀者自行參考<a href=\"https://www.seattletimes.com/business/boeing-aerospace/ntsb-sharply-rebukes-faa-boeing-over-737-rudder-fault/\">《NTSB slams FAA, Boeing on possible rudder failure. Here’s how the faulty parts ended up on planes》</a>，我在此只列舉與事故直接相關的幾件已知事實：</p>\n<p>1）出問題的是一件垂直尾舵伺服器（rudder SVO-730 rollout guidance servo），受高空低溫影響而凍結失效。</p>\n<p>2）SVO-730是一個備選的額外部件，聯合航空並沒有選購，公司的所有飛行員也對其毫無所知，之所以被安裝在交給聯合的737 Max之上，是因爲前幾年737 Max停飛，原買主退出契約，波音就將其原樣轉發給聯合航空，只修改軟件遮掩其存在，並未提供專門的文件和培訓。</p>\n<p>3）NTSB認爲SVO-730的品質問題不在於設計，而來自早在2017年的生產製程錯誤，其後共有353個缺失部件交付客戶。Max的尾舵完全沿用上一代737NG的版本，這些問題伺服器也就同時出現在NG和Max上，大部分被賣到海外，然而FAA拒絕發佈停飛檢查令，所以目前未知是哪些航空公司受害。</p>\n<p>4）SVO-730的供應商是Collins Aerospace，而波音的新任CEO Kelly Ortberg恰好在2013-2021年間擔任Collins的CEO。</p>\n",
+            "date": "2024-10-05",
+            "md5": "131174635_note16",
+            "tag": "美国/工业/管理/"
         },
         {
             "id": "162032391",
@@ -5337,20 +5337,20 @@
             "tag": "美国/政治/宣传"
         },
         {
-            "id": "177266891",
-            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注42",
-            "content": "<p>【後註四十二，2024/10/07】我反復强調過歐美援烏的所謂先進武器，其實都不足以與俄軍拉出代差，剛上場時出其不意或許還能有短暫的功效，幾個月下來必然會被反制，其所謂“神奇”基本全靠吹。這其中被吹捧得最高的，莫過於HIMARS，現在美方自己承認（原文在付費墻後面<a href=\"https://www.theatlantic.com/ideas/archive/2024/09/ukraine-losing-war/680078/\">《The Abandonment of Ukraine》</a>，所以在此節錄相關段落）“A year ago, HIMARS was the most in-demand system on the battlefield. Now it has a success rate of less than 10 percent because of Russian innovation in electronic warfare.”也就是HIMARS的命中率已經低於10%，考慮到中方的電子戰能力更遠在俄軍之上，這個數據特別值得還在幻想以武拒統的綠營參考。</p>\n",
-            "date": "2024-10-07",
-            "md5": "177266891_note42",
-            "tag": "俄罗斯/乌克兰/军事装备"
-        },
-        {
             "id": "171980706",
             "title": "【戰略】【國際】從SWIFT制裁俄國，看中國的對應之道 | 后注42",
             "content": "<p>【後註四十二，2024/10/07】德國剛剛公佈了八月的工業產值數據，環比在慘淡的七月（負3.2%）之後居然又掉了5.8%，遠超市場預期的2%（參見<a href=\"https://www.reuters.com/markets/europe/german-industrial-orders-slump-more-than-expected-august-2024-10-07/\">《German industrial orders slump more than expected in August》</a>）。過去三年來我不斷針對歐盟和尤其德國的貨幣、金融、政略和工業政策做出極爲嚴厲的批評，稱之爲新任歐洲作死冠軍，曾有人質疑布衣也敢藐視國家級和洲級領導；現在看來還算太客氣了，應該叫做本世紀的全球冠軍才對。</p>\n",
             "date": "2024-10-07",
             "md5": "171980706_note42",
             "tag": "德国/经济"
+        },
+        {
+            "id": "177266891",
+            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注42",
+            "content": "<p>【後註四十二，2024/10/07】我反復强調過歐美援烏的所謂先進武器，其實都不足以與俄軍拉出代差，剛上場時出其不意或許還能有短暫的功效，幾個月下來必然會被反制，其所謂“神奇”基本全靠吹。這其中被吹捧得最高的，莫過於HIMARS，現在美方自己承認（原文在付費墻後面<a href=\"https://www.theatlantic.com/ideas/archive/2024/09/ukraine-losing-war/680078/\">《The Abandonment of Ukraine》</a>，所以在此節錄相關段落）“A year ago, HIMARS was the most in-demand system on the battlefield. Now it has a success rate of less than 10 percent because of Russian innovation in electronic warfare.”也就是HIMARS的命中率已經低於10%，考慮到中方的電子戰能力更遠在俄軍之上，這個數據特別值得還在幻想以武拒統的綠營參考。</p>\n",
+            "date": "2024-10-07",
+            "md5": "177266891_note42",
+            "tag": "俄罗斯/乌克兰/军事装备"
         },
         {
             "id": "177266891",
@@ -5377,20 +5377,20 @@
             "tag": "美国/工业/管理/"
         },
         {
-            "id": "177266891",
-            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注44",
-            "content": "<p>【後註四十四，2024/10/14】我在前兩個月的《龍行天下》節目中曾經論證，因爲其敘事不合理、無必要、缺根據，所以可以判斷所謂伊朗批量出售彈道導彈給俄軍的報導（一整個系列主要來自《Reuters》）是預先造謠，以便為開放烏克蘭使用美國導彈攻擊俄國本土做鋪墊，現在有實話者聯盟英文總舵的成員也做了詳盡的分析，有興趣的讀者請參考<a href=\"https://www.moonofalabama.org/2024/10/fake-reports-of-missile-transfers-to-russia-are-used-to-sanction-iran.html#more\">《Fake Reports Of Missile Transfers To Russia Are Used To Sanction Iran》</a>，他還指出這個謠言對以色列想拉伊朗下水的企圖也有幫助，但我認爲那是相對次要的考慮。</p>\n",
-            "date": "2024-10-14",
-            "md5": "177266891_note44",
-            "tag": "俄罗斯/乌克兰/其他军事"
-        },
-        {
             "id": "130149479",
             "title": "【海軍】有關航母的一些新消息 | 后注5",
             "content": "<p>【後註五，2024/10/14】最近大陸軍迷論壇出現了一張09IIIB的側面照片，與去年哈爾濱工程大學校慶視頻（參見<a href=\"https://www.bilibili.com/video/BV1rp4y1E752/\">《哈尔滨工程大学建校70周年宣传片发布》</a>）中曝光的看板（截圖見下）基本一致，我認爲可以由此假設該圖片有若干準確性，其中有三點細節值得評論：1）其擁有VLS垂直發射系統，與美軍最先進的Virginia相當；2）其使用泵推Pump-jet技術，同樣與Virginia齊平；3）帆罩Sail外形大幅改動，向俄系的流綫造型靠攏。09III系列歷經原版、09IIIA到現在的09IIIB，經常每隔一兩艘就有可見的改進，最新版本已經用上了軍迷早年假想09V才會有的大半技術特徵，那麽09V可能必須在核動力系統上有重大改進突破才值得更改型號，我們拭目以待。</p>\n<p><img src=\"./img/f_28460922_1.jpg\"/></p>\n",
             "date": "2024-10-14",
             "md5": "130149479_note5",
             "tag": "中国/军事装备"
+        },
+        {
+            "id": "177266891",
+            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注44",
+            "content": "<p>【後註四十四，2024/10/14】我在前兩個月的《龍行天下》節目中曾經論證，因爲其敘事不合理、無必要、缺根據，所以可以判斷所謂伊朗批量出售彈道導彈給俄軍的報導（一整個系列主要來自《Reuters》）是預先造謠，以便為開放烏克蘭使用美國導彈攻擊俄國本土做鋪墊，現在有實話者聯盟英文總舵的成員也做了詳盡的分析，有興趣的讀者請參考<a href=\"https://www.moonofalabama.org/2024/10/fake-reports-of-missile-transfers-to-russia-are-used-to-sanction-iran.html#more\">《Fake Reports Of Missile Transfers To Russia Are Used To Sanction Iran》</a>，他還指出這個謠言對以色列想拉伊朗下水的企圖也有幫助，但我認爲那是相對次要的考慮。</p>\n",
+            "date": "2024-10-14",
+            "md5": "177266891_note44",
+            "tag": "俄罗斯/乌克兰/其他军事"
         },
         {
             "id": "180084861",
@@ -5457,20 +5457,20 @@
             "tag": "基础科研/生物"
         },
         {
-            "id": "131394982",
-            "title": "【公共健康】【財政】一個嚴重的公共健康問題 | 后注9",
-            "content": "<p>【後註九，2024/11/01】英國在二戰中資源短缺，被迫將許多食材列入配給管制，其中也包括蔗糖。戰後的經濟復蘇緩慢，蔗糖來源的印度又鬧獨立，結果配給制一直到1953年才解除，剛好提供了一個完美的天然實驗，可以用來分析出果糖/蔗糖對幼兒健康的危害（否則科學倫理不可能容許以兒童作爲實驗對象）。昨天《自然》報告了這個分析的結論（參見<a href=\"https://www.nature.com/articles/d41586-024-03535-7\">《Diabetes risk soars for adults who had a sweet tooth as kids》</a>），發現幼兒對果糖毒性的抵抗力特別弱，尤其注意光是胎兒是否承受在吃糖孕婦體内幾個月毒害這一個變數，就影響成年後得糖尿病的機率比為3：2，高血壓則為5：4。</p>\n<p>博客討論過戒糖的優先順序最高是冷飲，其次是糕餅甜點，但這並沒有涉及不同群體之間的差別。前述論文再一次驗證了果糖的毒性基本等同酒精的事實；考慮前者的攝取量遠勝後者，我們立刻得到一個重要的衍生結論，亦即社會有必要以輿論壓力强制孕婦戒糖，就如同戒酒一樣。</p>\n",
-            "date": "2024-11-01",
-            "md5": "131394982_note9",
-            "tag": "基础科研/医学"
-        },
-        {
             "id": "171633910",
             "title": "【科技】量子通信和計算是中國學術管理的頭號誤區 | 后注18",
             "content": "<p>【後註十八，2024/11/01】今天美國的金融科普頻道《Wall Street Millennial》《華爾街千禧人》頭條報導是<a href=\"https://www.youtube.com/watch?v=xcbZJDJlptk\">《Quantum Computing: Techs Longest-Running Hoax》</a>《量子計算：科技行業的最悠久騙局》。我個人並不完全同意這個標題，因爲量子計算只是近年最惡劣的科技騙局，要說歷史悠久，其實拼不過起源自上世紀50、60年代的核聚變發電，不過在千禧人世代眼中，大概一切早於iPhone的事情都算是史前時代了。不論如何，美國公共論壇上還能看到這樣的實話，對比中科大對中國大衆媒體的全面封鎖，博客所做的“中國學術界和媒體界比美國還要腐敗得多”論述，又獲得新一次的驗證。</p>\n",
             "date": "2024-11-01",
             "md5": "171633910_note18",
             "tag": "基础科研/量子技术/宣传"
+        },
+        {
+            "id": "131394982",
+            "title": "【公共健康】【財政】一個嚴重的公共健康問題 | 后注9",
+            "content": "<p>【後註九，2024/11/01】英國在二戰中資源短缺，被迫將許多食材列入配給管制，其中也包括蔗糖。戰後的經濟復蘇緩慢，蔗糖來源的印度又鬧獨立，結果配給制一直到1953年才解除，剛好提供了一個完美的天然實驗，可以用來分析出果糖/蔗糖對幼兒健康的危害（否則科學倫理不可能容許以兒童作爲實驗對象）。昨天《自然》報告了這個分析的結論（參見<a href=\"https://www.nature.com/articles/d41586-024-03535-7\">《Diabetes risk soars for adults who had a sweet tooth as kids》</a>），發現幼兒對果糖毒性的抵抗力特別弱，尤其注意光是胎兒是否承受在吃糖孕婦體内幾個月毒害這一個變數，就影響成年後得糖尿病的機率比為3：2，高血壓則為5：4。</p>\n<p>博客討論過戒糖的優先順序最高是冷飲，其次是糕餅甜點，但這並沒有涉及不同群體之間的差別。前述論文再一次驗證了果糖的毒性基本等同酒精的事實；考慮前者的攝取量遠勝後者，我們立刻得到一個重要的衍生結論，亦即社會有必要以輿論壓力强制孕婦戒糖，就如同戒酒一樣。</p>\n",
+            "date": "2024-11-01",
+            "md5": "131394982_note9",
+            "tag": "基础科研/医学"
         },
         {
             "id": "171633910",
@@ -5481,20 +5481,20 @@
             "tag": "基础科研/量子技术/"
         },
         {
-            "id": "162032391",
-            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注34",
-            "content": "<p>【後註三十四，2024/11/10】Trump當選之後，反建制派開始討論如何鉗制深層政府在主流網絡平臺施行的言論審查，其中一個主意正是利用此前建制派想要廢除的230條款（參見【後註三十三】），把言論審查過濾反過來定義為社論，從而剝奪免責保護。雖然這因涉及建制派核心利益而很難推動，成功希望實在不大，但反將一軍的腦洞算是頗有創意，值得在此一提。</p>\n",
-            "date": "2024-11-10",
-            "md5": "162032391_note34",
-            "tag": "美国/政治/宣传"
-        },
-        {
             "id": "177266891",
             "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注47",
             "content": "<p>【後註四十七，2024/11/10】俄烏戰事進行至今，早已大勢底定，只剩下最愚蠢、最虛僞的群體還在否認真相，而談到愚蠢和虛僞，那當然包括昂撒官員和主流媒體，參見《Politico》、《MSN》、《Newsweek》、《Moscow Times》（《莫斯科時報》，但和俄國沒有任何真正關係，是北約設在荷蘭的專職抹黑機構）等等的最新報導：<a href=\"https://www.politico.eu/article/october-deadliest-month-russian-troops-war-uk-official-says-tony-radakin/\">《October was worst month for Russia since start of Ukraine war, UK official says》</a>《英國官員：（剛過去的）十月是開戰以來俄軍最慘的一個月》。</p>\n",
             "date": "2024-11-10",
             "md5": "177266891_note47",
             "tag": "俄罗斯/乌克兰/其他军事/宣传"
+        },
+        {
+            "id": "162032391",
+            "title": "【國際】【宣傳】如何破解當前歐美的宣傳攻勢 | 后注34",
+            "content": "<p>【後註三十四，2024/11/10】Trump當選之後，反建制派開始討論如何鉗制深層政府在主流網絡平臺施行的言論審查，其中一個主意正是利用此前建制派想要廢除的230條款（參見【後註三十三】），把言論審查過濾反過來定義為社論，從而剝奪免責保護。雖然這因涉及建制派核心利益而很難推動，成功希望實在不大，但反將一軍的腦洞算是頗有創意，值得在此一提。</p>\n",
+            "date": "2024-11-10",
+            "md5": "162032391_note34",
+            "tag": "美国/政治/宣传"
         },
         {
             "id": "177266891",
@@ -5513,20 +5513,20 @@
             "tag": "美国/政治"
         },
         {
-            "id": "177165976",
-            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注17",
-            "content": "<p>【後註十七，2024/11/13】Kamala Harris大選落敗的連鎖效應之一，是她的競選基金負債纍纍，無望清償。在準備破產的過程中，開始有開支細節泄露出來，例如昨天有媒體揭露，這個競選基金在今年9月和10月分兩次反向“捐贈”共50萬美元給《MSNBC》的政論節目主持人Al Sharpton，然後才有後者在10月24日所做的“Softball”“喂球式”訪談，詳情參見<a href=\"https://nypost.com/2024/11/12/us-news/kamala-harris-campaign-gave-500k-to-al-sharptons-civil-rights-group-before-sit-down/\">《Harris campaign donated $500K to Al Sharpton’s nonprofit before softball MSNBC interview》</a>。美國黨派山頭（Sharpton是所謂的黑人民權領袖，算是民主黨外圍勢力，還沒有資格作爲深層政府成員）之間親兄弟明算賬的作風，還真不愧資本主義大本營的名頭。</p>\n",
-            "date": "2024-11-13",
-            "md5": "177165976_note17",
-            "tag": "美国/政治/宣传"
-        },
-        {
             "id": "150052301",
             "title": "【歷史】歐系文明的起源 | 后注11",
             "content": "<p>【後註十一，2024/11/13】正文中提到，鼠疫可能對Yamnaya征服歐洲做出了類似天花在16世紀幫助西班牙人清掃美洲原住民的輔助作用；然而因爲證據不足，這還只是一個猜想，沒有到主流學術共識的程度。有興趣的讀者可以參考這本書：<a href=\"https://www.amazon.com/Who-We-Are-and-How-We-Got-Here-audiobook/dp/B07DNDVMM9\">《Who We Are and How We Got Here》</a>。此外這裏還有一篇新論文（參見<a href=\"https://www.nature.com/articles/s41586-024-07651-2\">《Repeated plague infections across six generations of Neolithic Farmers》</a>），發掘瑞典Falbygden附近的新石器時代墓葬，分析遺體的DNA，發現在該文明消失前的最後三代都飽受鼠疫之苦，尤其最後一代所含的鼠疫病菌致死力特別強，似乎橫掃整個社區；這與上述的假説相符合，算是一個微弱的間接佐證。</p>\n",
             "date": "2024-11-13",
             "md5": "150052301_note11",
             "tag": "基础科研/生物"
+        },
+        {
+            "id": "177165976",
+            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注17",
+            "content": "<p>【後註十七，2024/11/13】Kamala Harris大選落敗的連鎖效應之一，是她的競選基金負債纍纍，無望清償。在準備破產的過程中，開始有開支細節泄露出來，例如昨天有媒體揭露，這個競選基金在今年9月和10月分兩次反向“捐贈”共50萬美元給《MSNBC》的政論節目主持人Al Sharpton，然後才有後者在10月24日所做的“Softball”“喂球式”訪談，詳情參見<a href=\"https://nypost.com/2024/11/12/us-news/kamala-harris-campaign-gave-500k-to-al-sharptons-civil-rights-group-before-sit-down/\">《Harris campaign donated $500K to Al Sharpton’s nonprofit before softball MSNBC interview》</a>。美國黨派山頭（Sharpton是所謂的黑人民權領袖，算是民主黨外圍勢力，還沒有資格作爲深層政府成員）之間親兄弟明算賬的作風，還真不愧資本主義大本營的名頭。</p>\n",
+            "date": "2024-11-13",
+            "md5": "177165976_note17",
+            "tag": "美国/政治/宣传"
         },
         {
             "id": "162032391",
@@ -5609,20 +5609,20 @@
             "tag": "工业/能源/金融/学术管理"
         },
         {
-            "id": "177266891",
-            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注50",
-            "content": "<p>【後註五十，2025/01/09】半年前，昂撒國際媒體輪番宣揚烏軍155旅在法國受訓的事跡，標榜其為即將代為北約消滅俄國匪幫的革命樣板部隊。然而該旅回國上戰場之後一觸即潰，被多名烏克蘭官員抱怨有多達半數官兵叛逃。現在法國記者采訪受訓基地周邊民衆證實，在英美媒體牛皮吹得震天響的同時，實際上法軍將該基地加裝帶刺鐵絲網環繞，並特派軍犬部隊和無人機晝夜巡邏，亦即比照戰俘營對待；即便如此，依然有至少50起以上的逃亡事件。此事未見諸《紐約時報》或《華盛頓郵報》，欲知詳情請參考《法新社》報導<a href=\"https://www.france24.com/en/live-news/20250106-dozens-of-ukraine-soldiers-deserted-while-training-in-france\">《Dozens of Ukraine soldiers deserted while training in France》</a>。</p>\n",
-            "date": "2025-01-09",
-            "md5": "177266891_note50",
-            "tag": "俄罗斯/乌克兰/其他军事/法国"
-        },
-        {
             "id": "108908762",
             "title": "【海軍】未來十年的中美武器對比（三） | 后注1",
             "content": "<p>【後註一，2025/01/09】美軍剛發佈2025年Arleigh Burke III造艦計劃和現況 （參見<a href=\"https://www.twz.com/news-features/cost-of-navys-newest-flight-iii-arleigh-burke-destroyers-is-ballooning\">《Cost Of Navy’s Newest Arleigh Burke Destroyers Is Ballooning》</a>以及<a href=\"https://www.cbo.gov/publication/61155\">《An Analysis of the Navy’s 2025 Shipbuilding Plan》</a>）。與十年前的正文相比，單艦造價25億美元倒是完全符合預估（雖然預期會持續上升，但對比美軍的其他采購計劃，這一丁點溢價實屬良心），真正出大問題的是建造速度：當年預計至今服役13艘，實際卻只有一艘，再次反映了美國去工業化、力不從心的窘態</p>\n",
             "date": "2025-01-09",
             "md5": "108908762_note1",
             "tag": "美国/军事装备"
+        },
+        {
+            "id": "177266891",
+            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注50",
+            "content": "<p>【後註五十，2025/01/09】半年前，昂撒國際媒體輪番宣揚烏軍155旅在法國受訓的事跡，標榜其為即將代為北約消滅俄國匪幫的革命樣板部隊。然而該旅回國上戰場之後一觸即潰，被多名烏克蘭官員抱怨有多達半數官兵叛逃。現在法國記者采訪受訓基地周邊民衆證實，在英美媒體牛皮吹得震天響的同時，實際上法軍將該基地加裝帶刺鐵絲網環繞，並特派軍犬部隊和無人機晝夜巡邏，亦即比照戰俘營對待；即便如此，依然有至少50起以上的逃亡事件。此事未見諸《紐約時報》或《華盛頓郵報》，欲知詳情請參考《法新社》報導<a href=\"https://www.france24.com/en/live-news/20250106-dozens-of-ukraine-soldiers-deserted-while-training-in-france\">《Dozens of Ukraine soldiers deserted while training in France》</a>。</p>\n",
+            "date": "2025-01-09",
+            "md5": "177266891_note50",
+            "tag": "俄罗斯/乌克兰/其他军事/法国"
         },
         {
             "id": "180084861",
@@ -5785,20 +5785,20 @@
             "tag": "基础科研/量子技术/宣传"
         },
         {
-            "id": "177165976",
-            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注20",
-            "content": "<p>【後註二十，2025/03/21】今年2月11日，一架航班標號Delta Connection Flight 4819的Bombardier CRJ900支綫客機在加拿大多倫多機場降落時失事，飛機向右偏離跑道並滾轉180°，所幸被草坪上的雪堆阻滯，折斷的機翼釋放燃油起火也因積雪而自行熄滅，最終飛機上下顛倒、停在滑行道上，乘員全部自行撤離、無人死亡（參見下圖）。</p>\n<p><img src=\"./img/f_28740078_1.JPG\"/></p>\n<p>昨天監管單位公佈了初步調查報告，其中包括根據黑盒子資料推定的事故經過細節，顯示肇事責任在於當時負責飛行“Pilot Flying”的副機師First Officer，著陸前幾秒因不穩定的陣風Wind Gusts而手足無措、引擎推力設定過低、然後甚至忘了拉起機頭進入Landing Flare著陸前拉平，導致飛機以過高的垂直速度砸在跑道上，右起落架當即崩潰，引發滾轉（參見<a href=\"https://www.youtube.com/watch?v=EcuIo3y4Fb0\">《Black Boxes DECODED - What the pilots REALLY did》</a>）。</p>\n<p>原本航空業難免有人爲失誤，但這次事故有一個驚人的細節，亦即那個副機師是個只有1000飛行小時出頭的女性。美國因爲通用航空發達，飛行員俯拾皆是，因此法規對載客航班機組的要求特高，達到全球僅見的1500小時；雖然有特殊條款容許將門檻降至1000小時，但機師職位粥少僧多、航空公司手上2、3000飛行小時經驗的求職信堆得山高，根本不須要紆尊降貴、額外花錢請律師走那個後門，硬去雇用經驗特低、能力可疑的新進員工。所以這些特許機師絕無僅有、極爲罕見，也就難怪任何對美國航空行業稍有瞭解的人，都要立刻懷疑這名副機師是Delta爲了滿足DEI quota政確指標而强行引入的不稱職員工，甚至她可能整個飛行生涯都是因性別而被一路破格開綠燈。與【後註十九】所討論的黑鷹女機師綜合研判，半個月内連續發生兩起高度疑似DEI所導致的重大事故，顯然值得深究，但美國社會腐敗如斯，即便新換了反DEI的Trump政府，也依然不可能深究。</p>\n<p>男女平等的真諦在於保障弱勢群體的公平就業機會（更別提人身安全，包括職場不受性騷擾和逛街不受搶劫性侵的權利），而不是揠苗助長、做出反向性別歧視，否則除了犧牲公平原則之外，社會運行效率也會大打折扣，連無辜群衆的生命都可能被連帶犧牲，這場事故只不過又一個小小的案例。然而社會文化一旦偏離了選賢與能Meritocracy的正道就極難改正，美國是前車之鑒；中方雖尚未面臨被DEI荼毒的嚴重危險，在學術管理上卻任由學閥發揮政治動能扭曲評選、獨占資源，同樣是打壓賢能，應儘早改正、並深以爲戒。</p>\n",
-            "date": "2025-03-21",
-            "md5": "177165976_note20",
-            "tag": "美国/政治/工业/管理"
-        },
-        {
             "id": "181687848",
             "title": "【戰略】【臺海】台灣的國安和產業前景 | 后注3",
             "content": "<p>【後註三，2025/03/21】有讀者私下來問，正文討論台灣除半導體的所有出口型工業都在過去兩年迅速喪失競爭力，爲什麽沒有提工具機呢？畢竟那是早年博客也曾拿來和半導體相提並論的高精尖產業呀。原因很簡單，工具機產業的衰退，在2015年博客預言之後就立刻兌現了，十年中產值喪失六成（參見<a href=\"https://tw.news.yahoo.com/%E5%B7%A5%E5%85%B7%E6%A9%9F%E7%94%A2%E5%80%BC10%E5%B9%B4%E6%8E%896%E6%88%90-%E5%A4%A7%E8%80%81%E5%90%91%E6%94%BF%E5%BA%9C%E5%96%8A%E8%A9%B1-%E5%8F%B0%E7%81%A3%E4%B8%8D%E6%98%AF%E5%8F%AA%E6%9C%89%E5%8D%8A%E5%B0%8E%E9%AB%94-070745135.html\">《工具機產值10年掉6成》</a>），並非最近兩年的事，而其早衰的原因則是台灣遠遠不是國際工具機行業的領頭羊，中方主要與日本、歐洲等國競爭，沒有理由留手（成就參見<a href=\"https://mp.weixin.qq.com/s/31w_wxXhWITLcQippT2sDw\">《国产五轴机床六大\"弑神\"时刻！》</a>，不足參見<a href=\"https://mp.weixin.qq.com/s/OTbWcPuQUSLNG2-Jp_4uPg\">《国产五轴机床的\"隐形绞索\"》</a>）。化工業也是完全一樣的邏輯和結果，只不過衰敗稍晚幾年（臺塑的營業額在2018年達到峰值之後，便一路直綫下降），時段接近正文中的其他產業案例，所以一並提起。</p>\n",
             "date": "2025-03-21",
             "md5": "181687848_note3",
             "tag": "中国/中国台湾/工业"
+        },
+        {
+            "id": "177165976",
+            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注20",
+            "content": "<p>【後註二十，2025/03/21】今年2月11日，一架航班標號Delta Connection Flight 4819的Bombardier CRJ900支綫客機在加拿大多倫多機場降落時失事，飛機向右偏離跑道並滾轉180°，所幸被草坪上的雪堆阻滯，折斷的機翼釋放燃油起火也因積雪而自行熄滅，最終飛機上下顛倒、停在滑行道上，乘員全部自行撤離、無人死亡（參見下圖）。</p>\n<p><img src=\"./img/f_28740078_1.JPG\"/></p>\n<p>昨天監管單位公佈了初步調查報告，其中包括根據黑盒子資料推定的事故經過細節，顯示肇事責任在於當時負責飛行“Pilot Flying”的副機師First Officer，著陸前幾秒因不穩定的陣風Wind Gusts而手足無措、引擎推力設定過低、然後甚至忘了拉起機頭進入Landing Flare著陸前拉平，導致飛機以過高的垂直速度砸在跑道上，右起落架當即崩潰，引發滾轉（參見<a href=\"https://www.youtube.com/watch?v=EcuIo3y4Fb0\">《Black Boxes DECODED - What the pilots REALLY did》</a>）。</p>\n<p>原本航空業難免有人爲失誤，但這次事故有一個驚人的細節，亦即那個副機師是個只有1000飛行小時出頭的女性。美國因爲通用航空發達，飛行員俯拾皆是，因此法規對載客航班機組的要求特高，達到全球僅見的1500小時；雖然有特殊條款容許將門檻降至1000小時，但機師職位粥少僧多、航空公司手上2、3000飛行小時經驗的求職信堆得山高，根本不須要紆尊降貴、額外花錢請律師走那個後門，硬去雇用經驗特低、能力可疑的新進員工。所以這些特許機師絕無僅有、極爲罕見，也就難怪任何對美國航空行業稍有瞭解的人，都要立刻懷疑這名副機師是Delta爲了滿足DEI quota政確指標而强行引入的不稱職員工，甚至她可能整個飛行生涯都是因性別而被一路破格開綠燈。與【後註十九】所討論的黑鷹女機師綜合研判，半個月内連續發生兩起高度疑似DEI所導致的重大事故，顯然值得深究，但美國社會腐敗如斯，即便新換了反DEI的Trump政府，也依然不可能深究。</p>\n<p>男女平等的真諦在於保障弱勢群體的公平就業機會（更別提人身安全，包括職場不受性騷擾和逛街不受搶劫性侵的權利），而不是揠苗助長、做出反向性別歧視，否則除了犧牲公平原則之外，社會運行效率也會大打折扣，連無辜群衆的生命都可能被連帶犧牲，這場事故只不過又一個小小的案例。然而社會文化一旦偏離了選賢與能Meritocracy的正道就極難改正，美國是前車之鑒；中方雖尚未面臨被DEI荼毒的嚴重危險，在學術管理上卻任由學閥發揮政治動能扭曲評選、獨占資源，同樣是打壓賢能，應儘早改正、並深以爲戒。</p>\n",
+            "date": "2025-03-21",
+            "md5": "177165976_note20",
+            "tag": "美国/政治/工业/管理"
         },
         {
             "id": "131394982",
@@ -5985,20 +5985,20 @@
             "tag": "工业/能源/金融"
         },
         {
-            "id": "178109282",
-            "title": "【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 后注4",
-            "content": "<p>【後註四，2025/05/16】三周前的4月28日，西班牙/葡萄牙所在的伊比利亞半島發生電網崩潰事件（參見<a href=\"https://en.wikipedia.org/wiki/2025_Iberian_Peninsula_blackout\">《2025 Iberian Peninsula blackout》</a>以及<a href=\"https://www.youtube.com/watch?v=ZiHum-VNHAM\">《What caused the Spanish Power Outage and the simple solution》</a>），總共30GW的電力供應中斷，事件延續16小時，對經濟民生影響巨大；但更重要的是，事故原因正隱藏於當代新能源電力設施之中，值得各國主事者參考深思。</p>\n<p>傳統的大停電，都源自發電或傳輸設備出了問題，電力供應無法滿足負荷，但這次停電是新能源普及之後的第一次同類事故，並不來自供不應求，而是反過來在電網常有的不穩定震蕩下，出現短暫的供過於求現象，這導致AC交流電的頻率開始升高。傳統的發電機是渦輪，其轉速嚴格遵從電網AC頻率，後者升高要求前者也跟著提升，而因爲物理慣性這需要時間，從而賦予既有的控制電路足夠的反應餘裕來製造負反饋，壓低發電功率，維持供需平衡。然而新能源中的光伏和風電（風電雖然也是渦輪，但無法直接匹配電網頻率，所以一般先換成DC再變回適用於電網的AC）要配頻必須從DC轉換過來，這個轉換過程一般使用電子電路（叫做Inverter逆變器）自動跟蹤電網頻率，所以對頻率震蕩不但沒有負反饋，而且有相當的正反饋效應。西班牙因爲日照强烈和海風充裕，光伏和風電所占的發電量比率處於世界前列（2023/2024年是40.2%，作爲對比，中國是18.1%，數據分別來自<a href=\"https://www.sistemaelectrico-ree.es/en/spanish-electricity-system/generation/total-electricity-generation\">《Systema: Total electricity generation》</a>和<a href=\"https://lowcarbonpower.org/zht/region/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B\">《中華人民共和國2024年電力數據》</a>），這才導致其第一個吃螃蟹。要根治這個新能源普及的副作用，必須開發新的電網控制系統（含智能逆變器）；中國在電網技術上已經領先全球，因而責無旁貸。</p>\n",
-            "date": "2025-05-16",
-            "md5": "178109282_note4",
-            "tag": "欧洲/其他地区/西班牙/工业/能源/管理"
-        },
-        {
             "id": "175790558",
             "title": "【政治】社會主義國家應該如何管理資本 | 后注20",
             "content": "<p>【後註十九，2025/05/16】昨天消息傳來（參見<a href=\"https://news.qq.com/rain/a/20250515A024AB00\">《涉案超14亿元！58岁紫光集团原董事长赵伟国被判死缓，一生历程曝光》</a>），曾經的半導體大基金大佬、原紫光集團董事長趙偉國被判死緩，讀者應該與正文中的“在半導體產業上，卻很奇怪地選擇放任地方政府以招商形式來建廠，補貼直接付給廠商；這是早年消費性低檔工業的速成辦法，對技術性高、追趕期長的產業完全不適用，結果自然是引來騙補的短綫操作，甚至有同一個騙徒在不同省份獲利兩次的現象，必須儘快改正”來做對照，特別注意新聞中所提的趙偉國被逮捕（實際上是大基金高層開始被全面清查）發生在2022年7月，而這篇正文雖然也是7月才發表於博客，其實是提早一個月由友人指定題目邀請所寫，隨即供其在内部傳閲參考使用。</p>\n",
             "date": "2025-05-16",
             "md5": "175790558_note20",
             "tag": "中国/工业/管理"
+        },
+        {
+            "id": "178109282",
+            "title": "【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 后注4",
+            "content": "<p>【後註四，2025/05/16】三周前的4月28日，西班牙/葡萄牙所在的伊比利亞半島發生電網崩潰事件（參見<a href=\"https://en.wikipedia.org/wiki/2025_Iberian_Peninsula_blackout\">《2025 Iberian Peninsula blackout》</a>以及<a href=\"https://www.youtube.com/watch?v=ZiHum-VNHAM\">《What caused the Spanish Power Outage and the simple solution》</a>），總共30GW的電力供應中斷，事件延續16小時，對經濟民生影響巨大；但更重要的是，事故原因正隱藏於當代新能源電力設施之中，值得各國主事者參考深思。</p>\n<p>傳統的大停電，都源自發電或傳輸設備出了問題，電力供應無法滿足負荷，但這次停電是新能源普及之後的第一次同類事故，並不來自供不應求，而是反過來在電網常有的不穩定震蕩下，出現短暫的供過於求現象，這導致AC交流電的頻率開始升高。傳統的發電機是渦輪，其轉速嚴格遵從電網AC頻率，後者升高要求前者也跟著提升，而因爲物理慣性這需要時間，從而賦予既有的控制電路足夠的反應餘裕來製造負反饋，壓低發電功率，維持供需平衡。然而新能源中的光伏和風電（風電雖然也是渦輪，但無法直接匹配電網頻率，所以一般先換成DC再變回適用於電網的AC）要配頻必須從DC轉換過來，這個轉換過程一般使用電子電路（叫做Inverter逆變器）自動跟蹤電網頻率，所以對頻率震蕩不但沒有負反饋，而且有相當的正反饋效應。西班牙因爲日照强烈和海風充裕，光伏和風電所占的發電量比率處於世界前列（2023/2024年是40.2%，作爲對比，中國是18.1%，數據分別來自<a href=\"https://www.sistemaelectrico-ree.es/en/spanish-electricity-system/generation/total-electricity-generation\">《Systema: Total electricity generation》</a>和<a href=\"https://lowcarbonpower.org/zht/region/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B\">《中華人民共和國2024年電力數據》</a>），這才導致其第一個吃螃蟹。要根治這個新能源普及的副作用，必須開發新的電網控制系統（含智能逆變器）；中國在電網技術上已經領先全球，因而責無旁貸。</p>\n",
+            "date": "2025-05-16",
+            "md5": "178109282_note4",
+            "tag": "欧洲/其他地区/西班牙/工业/能源/管理"
         },
         {
             "id": "177266891",
@@ -6009,20 +6009,12 @@
             "tag": "俄罗斯/乌克兰/军事战略"
         },
         {
-            "id": "108908650",
-            "title": "【基礎科研】什麼是科學？ | 后注2",
-            "content": "<p>【後註二，2025/05/19】我終於在本月的《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=C8GXJMrk_-M\">《從「印巴空戰」看世界真正危機！》</a>）中找到機會討論科學方法論，不過因時長和格式所限，講得非常淺顯簡略，讀者還是必須回到博客來尋找完整而精確的論述，並且基本的邏輯學和統計學知識也是必要的。例如節目中提到，若是事前判斷開大的機率為90%，那麽預測者依然必須100%猜大，事後的成功率也只能達到90%。這裏我的用意主要在於示範最佳策略對博弈條件的非綫性反應，稍稍觸及綫性思維的局限性；然而有公衆評論，把這稱爲10%失誤的托詞，這顯然是對統計學完全無知的誤解：博客反復解釋過（參見《讀者須知》和其下的留言討論），我做預測的標準門檻是90%，事後的成功率也至少是90%，然而統計學的基本常識之一是誤差以平方和叠加，所以事後的誤差是事前誤差與我判斷誤差的平方和再開平方根，既然事前、事後的誤差基本相等，就代表著博客分析失誤所引發的誤差可忽略，亦即至少低半個數量級；換句話說，分析錯誤的比率其實是在3%以下，以往只不過不想表彰自我、於是懶得花時間討論數學細節，畢竟10%的總誤差已經比他人強了兩個數量級，足以證明科學分析的優越性。但愚民反而做出與事實相反的結論，不但抹黑其為托詞，還有把科學預測的例常印證檢討硬説成自誇的，這其實正反映了當代公共論壇的墮落機制：習慣謊言和蠢話之後，連最基本的隨機中性反應（亦即正反機率相等、信息量爲零的亂猜，華爾街笑稱為“扔飛鏢的猴子”）都做不到，而是會對真相和誠實產生主觀反感，自動選擇虛僞愚昧，體現了“人性本蠢”並非虛言。</p>\n",
+            "id": "177266891",
+            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注56",
+            "content": "<p>【後註五十六，2025/05/19】兩個月前，我在【後註五十三】分析Starmer的仇俄姿態過於積極，應該是在為與歐盟重建經貿關係預做鋪墊；今天消息傳來（參見<a href=\"https://www.guancha.cn/internation/2025_05_20_776422.shtml\">《“分手”多年后，英国、欧盟签协议“重置关系”》</a>），證明果然如此，於是博客11年來針對當前世界局勢所建立的認知架構，又得到更進一步的印證加强。</p>\n",
             "date": "2025-05-19",
-            "md5": "108908650_note2",
-            "tag": "分析方法/"
-        },
-        {
-            "id": "108908793",
-            "title": "【美國】美國的開國神話 | 后注7",
-            "content": "<p>【後註七，2025/05/19】我在本月的《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=C8GXJMrk_-M\">《從「印巴空戰」看世界真正危機！》</a>）中提到三個美國開國神話謊言之後，有讀者反饋，說我遺漏了獨立戰爭乃針對英國國會準備禁止蓄奴而發起。這個説法，我以前略有耳聞，但沒有找到可靠的學術論文，所以只能從其他旁證判斷“獨立戰爭是大地主爲了私利而挑起”。不過華盛頓和同夥的確是出了名的大蓄奴者，獨立戰爭發起前四年，亦即1772年的5月也確實有一個英國本土法庭的重要案例，判決美國黑奴但凡逃到英國就自動成爲自由人，這都暗示著那位讀者的説法有可能是正確的，甚至後來的“No taxation without representation”宣傳口號和波士頓茶黨事件都是後續因果效應，所以若有進一步證據的，請在留言欄分享。</p>\n",
-            "date": "2025-05-19",
-            "md5": "108908793_note7",
-            "tag": "美国/历史"
+            "md5": "177266891_note56",
+            "tag": "欧洲/英国/外交/"
         },
         {
             "id": "108908760",
@@ -6033,12 +6025,20 @@
             "tag": "宣传/逻辑/军事装备"
         },
         {
-            "id": "177266891",
-            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注56",
-            "content": "<p>【後註五十六，2025/05/19】兩個月前，我在【後註五十三】分析Starmer的仇俄姿態過於積極，應該是在為與歐盟重建經貿關係預做鋪墊；今天消息傳來（參見<a href=\"https://www.guancha.cn/internation/2025_05_20_776422.shtml\">《“分手”多年后，英国、欧盟签协议“重置关系”》</a>），證明果然如此，於是博客11年來針對當前世界局勢所建立的認知架構，又得到更進一步的印證加强。</p>\n",
+            "id": "108908793",
+            "title": "【美國】美國的開國神話 | 后注7",
+            "content": "<p>【後註七，2025/05/19】我在本月的《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=C8GXJMrk_-M\">《從「印巴空戰」看世界真正危機！》</a>）中提到三個美國開國神話謊言之後，有讀者反饋，說我遺漏了獨立戰爭乃針對英國國會準備禁止蓄奴而發起。這個説法，我以前略有耳聞，但沒有找到可靠的學術論文，所以只能從其他旁證判斷“獨立戰爭是大地主爲了私利而挑起”。不過華盛頓和同夥的確是出了名的大蓄奴者，獨立戰爭發起前四年，亦即1772年的5月也確實有一個英國本土法庭的重要案例，判決美國黑奴但凡逃到英國就自動成爲自由人，這都暗示著那位讀者的説法有可能是正確的，甚至後來的“No taxation without representation”宣傳口號和波士頓茶黨事件都是後續因果效應，所以若有進一步證據的，請在留言欄分享。</p>\n",
             "date": "2025-05-19",
-            "md5": "177266891_note56",
-            "tag": "欧洲/英国/外交/"
+            "md5": "108908793_note7",
+            "tag": "美国/历史"
+        },
+        {
+            "id": "108908650",
+            "title": "【基礎科研】什麼是科學？ | 后注2",
+            "content": "<p>【後註二，2025/05/19】我終於在本月的《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=C8GXJMrk_-M\">《從「印巴空戰」看世界真正危機！》</a>）中找到機會討論科學方法論，不過因時長和格式所限，講得非常淺顯簡略，讀者還是必須回到博客來尋找完整而精確的論述，並且基本的邏輯學和統計學知識也是必要的。例如節目中提到，若是事前判斷開大的機率為90%，那麽預測者依然必須100%猜大，事後的成功率也只能達到90%。這裏我的用意主要在於示範最佳策略對博弈條件的非綫性反應，稍稍觸及綫性思維的局限性；然而有公衆評論，把這稱爲10%失誤的托詞，這顯然是對統計學完全無知的誤解：博客反復解釋過（參見《讀者須知》和其下的留言討論），我做預測的標準門檻是90%，事後的成功率也至少是90%，然而統計學的基本常識之一是誤差以平方和叠加，所以事後的誤差是事前誤差與我判斷誤差的平方和再開平方根，既然事前、事後的誤差基本相等，就代表著博客分析失誤所引發的誤差可忽略，亦即至少低半個數量級；換句話說，分析錯誤的比率其實是在3%以下，以往只不過不想表彰自我、於是懶得花時間討論數學細節，畢竟10%的總誤差已經比他人強了兩個數量級，足以證明科學分析的優越性。但愚民反而做出與事實相反的結論，不但抹黑其為托詞，還有把科學預測的例常印證檢討硬説成自誇的，這其實正反映了當代公共論壇的墮落機制：習慣謊言和蠢話之後，連最基本的隨機中性反應（亦即正反機率相等、信息量爲零的亂猜，華爾街笑稱為“扔飛鏢的猴子”）都做不到，而是會對真相和誠實產生主觀反感，自動選擇虛僞愚昧，體現了“人性本蠢”並非虛言。</p>\n",
+            "date": "2025-05-19",
+            "md5": "108908650_note2",
+            "tag": "分析方法/"
         },
         {
             "id": "171980706",
@@ -6049,20 +6049,20 @@
             "tag": "其他地区/叙利亚/土耳其/美国/外交"
         },
         {
-            "id": "131394982",
-            "title": "【公共健康】【財政】一個嚴重的公共健康問題 | 后注14",
-            "content": "<p>【後註十四，2025/05/25】這裏是又一篇刊在《自然》的新論文（參見<a href=\"https://www.nature.com/articles/s41586-024-08258-3\">《Dietary fructose enhances tumour growth indirectly via interorgan lipid transfer》</a>），發現果糖除了通過肥胖症和糖尿病間接加劇癌症（參見<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7083712/\">《The dark face of fructose as a tumor promoter》</a>）之外，其代謝產物（亦即論文標題中所提到的“Lipid”，例如lysophosphatidylcholines）也會從肝臟轉移到癌細胞，從而大幅刺激其成長；換句話説，果糖是至少平方級別的Tumor promoter腫瘤促進劑。</p>\n",
-            "date": "2025-05-25",
-            "md5": "131394982_note14",
-            "tag": "基础科研/医学"
-        },
-        {
             "id": "129978332",
             "title": "【藝術】【基礎科研】藝術與科學的衰敗 | 后注3",
             "content": "<p>【後註三，2025/05/25】正在與Trump鬥智鬥勇的哈佛大學董事會，在百忙中抽空表決通過開除一名商學院終身教授（Tenured Professor，參見<a href=\"https://www.wgbh.org/news/education-news/2025-05-25/in-extremely-rare-move-harvard-revokes-tenure-and-cuts-ties-with-star-business-professor\">《In extremely rare move, Harvard revokes tenure and cuts ties with star business professor》</a>）Francesca Gino的決定，原因是她的論文數據造假。本來近年美國學術界的誠信標準也在不斷下滑，學術造假不再必然導致被開除，尤其商學院的終身教授中女性很少，因而更加享有DEI的庇護，然而這位Gino教授的專長利基卻恰恰是“誠信與倫理”“Honesty and ethical behavior”，她也造假的反諷意味太强，迫使學校管理層不得不棄車保帥。其實當代美式資本主義下無奸不商，在商學院大談誠信與倫理，事先就可以斷言是在騙人，差別只在於怎麽按摩數據和是否被抓包罷了。</p>\n",
             "date": "2025-05-25",
             "md5": "129978332_note3",
             "tag": "美国/学术管理"
+        },
+        {
+            "id": "131394982",
+            "title": "【公共健康】【財政】一個嚴重的公共健康問題 | 后注14",
+            "content": "<p>【後註十四，2025/05/25】這裏是又一篇刊在《自然》的新論文（參見<a href=\"https://www.nature.com/articles/s41586-024-08258-3\">《Dietary fructose enhances tumour growth indirectly via interorgan lipid transfer》</a>），發現果糖除了通過肥胖症和糖尿病間接加劇癌症（參見<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7083712/\">《The dark face of fructose as a tumor promoter》</a>）之外，其代謝產物（亦即論文標題中所提到的“Lipid”，例如lysophosphatidylcholines）也會從肝臟轉移到癌細胞，從而大幅刺激其成長；換句話説，果糖是至少平方級別的Tumor promoter腫瘤促進劑。</p>\n",
+            "date": "2025-05-25",
+            "md5": "131394982_note14",
+            "tag": "基础科研/医学"
         },
         {
             "id": "180084896",
@@ -6169,20 +6169,20 @@
             "tag": "其他地区/以色列/土耳其/外交/"
         },
         {
-            "id": "180084896",
-            "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注10",
-            "content": "<p>【後註十，2025/07/18】昨天上《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=aYvZnMYb4Lg\">《川普戰略轉向！台灣軍力迷航》</a>）提到我在搜尋因Trump政策錯誤而導致的經濟危機信號過程中，終於找到第一個疑似案例，是所謂NIIP，Net International Investment Position，亦即美國所持有的外國資產減掉外國持有的美國資產價值，原始資料在<a href=\"https://fred.stlouisfed.org/series/IIPUSNETIQ/\">《U.S. Net International Investment Position (IIPUSNETIQ)》</a>，因爲NIIP不屬熱門數據，美聯儲還附加了解説：<a href=\"https://www.stlouisfed.org/on-the-economy/2025/may/understanding-net-international-investment-position\">《Understanding the Net International Investment Position》</a>。</p>\n<p>爲了讀者方便，我將原圖複製於下。這裏的觀察重點在於，過去20年NIIP基本成指數增長，其間只有三次明顯反轉，分別發生在2009年Q1、2022年Q1和2025年Q1。雖然NIIP受貿易逆差和利率變動影響（參見上個段落提到的美聯儲解説），在資料時限内這兩個因素並沒有劇烈到能製造上述反轉的程度，所以這三次反轉所反映的，純粹是金融資產對美國產生疑慮，因而大幅外移。Trump的當選，居然能產生與最近兩次重大經濟危機同級別的信號，非常值得玩味。這裏順便感謝某王姓年輕學人提供原始建議，讓我注意到NIIP。</p>\n<p><img src=\"./img/f_28945550_1.jpg\"/></p>\n",
-            "date": "2025-07-18",
-            "md5": "180084896_note10",
-            "tag": "美国/经济/金融"
-        },
-        {
             "id": "138538769",
             "title": "【空軍】【海軍】根深蒂固的誤解（二） | 后注1",
             "content": "<p>【後註一，2025/07/18】學了一輩子物理，我原本自以爲對任何物理現象有足夠的直覺，能簡單做出正確的定性判斷，但剛剛看到這篇20年前的老論文（參見<a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.94.184505\">《Drop Splashing on a Dry Smooth Surface》</a>），差點驚掉自己的下巴；這裏相關的物理科目是流體動力學，所以放在這篇正文之下和大家分享。</p>\n<p>上述論文研究的對象是，足夠高速下落的水滴撞擊固體表面會產生皇冠狀的飛濺；這個現象每個人在下雨天都觀察過無數次，我個人一直以爲是水滴内部的慣性和内聚力在衝擊波作用下的結果，沒想到這些作者用實驗明確證明，飛濺現象來自水滴周圍的空氣：只有空氣密度達到海平面大氣的30%（這個臨界值對應著10公里高空，略高於Mount Everest珠峰，所以不可能在露天的地球表面觀察到，只能用真空室來做實驗）以上，因爲水滴在撞擊後向橫截面的擴展速度超過空氣中的音速，才能產生夠强的超音速激波，反過來擊碎擴展中的水-氣界面，造成許多微小水滴破開飛濺。We are never too old to learn new concept.</p>\n",
             "date": "2025-07-18",
             "md5": "138538769_note1",
             "tag": "基础科研/其他理工"
+        },
+        {
+            "id": "180084896",
+            "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注10",
+            "content": "<p>【後註十，2025/07/18】昨天上《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=aYvZnMYb4Lg\">《川普戰略轉向！台灣軍力迷航》</a>）提到我在搜尋因Trump政策錯誤而導致的經濟危機信號過程中，終於找到第一個疑似案例，是所謂NIIP，Net International Investment Position，亦即美國所持有的外國資產減掉外國持有的美國資產價值，原始資料在<a href=\"https://fred.stlouisfed.org/series/IIPUSNETIQ/\">《U.S. Net International Investment Position (IIPUSNETIQ)》</a>，因爲NIIP不屬熱門數據，美聯儲還附加了解説：<a href=\"https://www.stlouisfed.org/on-the-economy/2025/may/understanding-net-international-investment-position\">《Understanding the Net International Investment Position》</a>。</p>\n<p>爲了讀者方便，我將原圖複製於下。這裏的觀察重點在於，過去20年NIIP基本成指數增長，其間只有三次明顯反轉，分別發生在2009年Q1、2022年Q1和2025年Q1。雖然NIIP受貿易逆差和利率變動影響（參見上個段落提到的美聯儲解説），在資料時限内這兩個因素並沒有劇烈到能製造上述反轉的程度，所以這三次反轉所反映的，純粹是金融資產對美國產生疑慮，因而大幅外移。Trump的當選，居然能產生與最近兩次重大經濟危機同級別的信號，非常值得玩味。這裏順便感謝某王姓年輕學人提供原始建議，讓我注意到NIIP。</p>\n<p><img src=\"./img/f_28945550_1.jpg\"/></p>\n",
+            "date": "2025-07-18",
+            "md5": "180084896_note10",
+            "tag": "美国/经济/金融"
         },
         {
             "id": "122891927",
@@ -6329,20 +6329,20 @@
             "tag": "中国/金融/政治"
         },
         {
-            "id": "130149479",
-            "title": "【海軍】有關航母的一些新消息 | 后注6",
-            "content": "<p>【後註六，2025/12/06】去年12月22日，美國海軍Truman號航母戰鬥群在紅海與Houthi對峙過程中，艦隊防空指揮艦-Ticonderoga級巡洋艦Gettysburg號-對兩架返航的F18發射標準2型導彈，成功擊落其中一架，成爲Truman號此輪任務中一連損失三架戰機的開張之作，此外任務期間該航母還偷空與某貨輪發生强烈肢體摩擦，損傷至今仍未修復。兩天前美海軍公佈了全部四起事故的調查報告（參見科普文<a href=\"https://taskandpurpose.com/news/navy-truman-planes-lost/\">《Navy cruiser mistook fighter jets for incoming missiles during chaotic night》</a>中所提供的鏈接），我想針對F18誤擊事件做個簡介。</p>\n<p>其實原因很簡單，就是Gettysburg號的防空指揮中心（CIC，Combat Information Center）將那兩架F18誤判為Houthi所發射的反艦導彈，但若再進一步追溯其緣由，就開始有點搞笑的味道了：當天Truman的戰機任務表有沒有按照規定發給Gettysburg？沒有。空中負責預警的E-2在幹什麽？雷達故障。Link16戰術網絡？失靈。敵我識別器（IFF，The Identification Friend Or Foe system）呢？宕機。結果Gettysburg眼中唯一的信息來源就只剩自身的神盾雷達系統，而剛好艦載直升機返航，神盾被放入短暫休眠狀態然後重啓，忽然就有兩個不明目標亮點，現場指揮官在時間壓力下，跳過備用的人工敵我識別手段，直接發射導彈。</p>\n<p>這個事故中所展露的裝備老舊、故障頻仍、壓榨基層、疲於奔命，其實是當前美軍内部的普遍現象，是實業流失、國力衰頹的結果，不是更換艦長（Gettysburg和Truman的艦長被先後解職）所能解決的。認知仍停留在30年前的附庸國政客和民衆，如果僅憑過時的印象，指望美軍繼續充當他們對外躁動霸凌的屏障倚靠，必將為自己的戰略無知和誤判付出慘重的代價。</p>\n",
-            "date": "2025-12-06",
-            "md5": "130149479_note6",
-            "tag": "美国/其他军事/管理"
-        },
-        {
             "id": "180084896",
             "title": "【金融】【戰略】金融史觀（二）當前局勢 | 后注11",
             "content": "<p>【後註十一，2025/12/06】我在9月的《龍行天下》節目（參見<a href=\"https://www.youtube.com/watch?v=EP6LkIVTxwU\">《中國軍力暴風式成長的背後！》</a>）以及本文留言欄第61樓，根據美國防部改名戰爭部和對委内瑞拉的極度壓迫，觀察並總結Trump已將美國的地緣政略指導原則正式轉向門羅主義，是國力衰退之後必要的戰略收縮，只不過尚未公開明説罷了。現在白宮終於發表了新版的國安戰略文案（參見<a href=\"https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf\">《2025-National Security Strategy》</a>），其中的地緣篇（參見第15頁《The Regions》）開宗明義、白紙黑字寫的正是“The Trump Corollary to the Monroe Doctrine”“門羅主義的川普系理”。博客的讀者再次比全世界提前數月理解到歷史潮流的脈絡真相。</p>\n",
             "date": "2025-12-06",
             "md5": "180084896_note11",
             "tag": "美国/外交/战略"
+        },
+        {
+            "id": "130149479",
+            "title": "【海軍】有關航母的一些新消息 | 后注6",
+            "content": "<p>【後註六，2025/12/06】去年12月22日，美國海軍Truman號航母戰鬥群在紅海與Houthi對峙過程中，艦隊防空指揮艦-Ticonderoga級巡洋艦Gettysburg號-對兩架返航的F18發射標準2型導彈，成功擊落其中一架，成爲Truman號此輪任務中一連損失三架戰機的開張之作，此外任務期間該航母還偷空與某貨輪發生强烈肢體摩擦，損傷至今仍未修復。兩天前美海軍公佈了全部四起事故的調查報告（參見科普文<a href=\"https://taskandpurpose.com/news/navy-truman-planes-lost/\">《Navy cruiser mistook fighter jets for incoming missiles during chaotic night》</a>中所提供的鏈接），我想針對F18誤擊事件做個簡介。</p>\n<p>其實原因很簡單，就是Gettysburg號的防空指揮中心（CIC，Combat Information Center）將那兩架F18誤判為Houthi所發射的反艦導彈，但若再進一步追溯其緣由，就開始有點搞笑的味道了：當天Truman的戰機任務表有沒有按照規定發給Gettysburg？沒有。空中負責預警的E-2在幹什麽？雷達故障。Link16戰術網絡？失靈。敵我識別器（IFF，The Identification Friend Or Foe system）呢？宕機。結果Gettysburg眼中唯一的信息來源就只剩自身的神盾雷達系統，而剛好艦載直升機返航，神盾被放入短暫休眠狀態然後重啓，忽然就有兩個不明目標亮點，現場指揮官在時間壓力下，跳過備用的人工敵我識別手段，直接發射導彈。</p>\n<p>這個事故中所展露的裝備老舊、故障頻仍、壓榨基層、疲於奔命，其實是當前美軍内部的普遍現象，是實業流失、國力衰頹的結果，不是更換艦長（Gettysburg和Truman的艦長被先後解職）所能解決的。認知仍停留在30年前的附庸國政客和民衆，如果僅憑過時的印象，指望美軍繼續充當他們對外躁動霸凌的屏障倚靠，必將為自己的戰略無知和誤判付出慘重的代價。</p>\n",
+            "date": "2025-12-06",
+            "md5": "130149479_note6",
+            "tag": "美国/其他军事/管理"
         },
         {
             "id": "108908793",
@@ -6425,20 +6425,20 @@
             "tag": "英国/政治/宣传"
         },
         {
-            "id": "177165976",
-            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注26",
-            "content": "<p>【後註二十六，2026/05/08】過去四年，我在博客留言欄和《龍行天下》節目中，反復抨擊中國民航局爲了保護東航高管的政治生涯而置國民飛安和自身職責于不顧，强行執法犯法，將5735號空難調查結果嚴密封鎖。今天消息傳來，在2016-2023年間任東航集團董事長的劉紹勇被正式起訴（參見<a href=\"https://www.guancha.cn/politics/2026_05_08_816225.shtml\">《东航原董事长刘绍勇，被提起公诉》</a>）；可惜罪名依舊是貪腐，即便劉在去年6月就被捕，民航局的絕對瀆職仍然沒有任何處理。</p>\n",
-            "date": "2026-05-08",
-            "md5": "177165976_note26",
-            "tag": "中国/政治"
-        },
-        {
             "id": "178109282",
             "title": "【能源】如何走出獨立自主、安全可控、創新合作的能源轉型道路 | 后注7",
             "content": "<p>【後註五，2026/05/08】液流電池雖然有著許多物理和工程上的優點，奈何鋰/鈉電池在商業上擁有壓倒性的先發優勢和網絡效應，以致競爭環境艱難與投資意願低迷兩者交互作用，前景並不光明。然而當前的全球AI泡沫導致一切電力技術都獲得資源溢出，於是連歐洲也參與了液流電池的開發：這裏（參見<a href=\"https://www.msn.com/en-us/news/other/switzerland-builds-record-redox-flow-battery-to-power-210000-homes/gm-GM07AAAFCB\">《Switzerland builds record redox flow battery to power 210,000 homes》</a>）討論了FlexBase公司在瑞士建造的1.2GW/2.1GWh計劃，至少在紙面上將顯著超越【後註四】所介紹的新疆蓄能電池組。這個項目其實去年就開工，今年只不過是追加了投入，確定將產能擴張到原計劃的上限。不過以歐洲基建之低效，這麽一個中型項目居然要四年、到2029年才完工，即便不超支、不延期，届時AI泡沫早已爆破，中方如果願意，更是可以推進二至三代，所以我對其能否順利完成並長期運作持懷疑態度。</p>\n",
             "date": "2026-05-08",
             "md5": "178109282_note7",
             "tag": "中国/能源/工业/"
+        },
+        {
+            "id": "177165976",
+            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注26",
+            "content": "<p>【後註二十六，2026/05/08】過去四年，我在博客留言欄和《龍行天下》節目中，反復抨擊中國民航局爲了保護東航高管的政治生涯而置國民飛安和自身職責于不顧，强行執法犯法，將5735號空難調查結果嚴密封鎖。今天消息傳來，在2016-2023年間任東航集團董事長的劉紹勇被正式起訴（參見<a href=\"https://www.guancha.cn/politics/2026_05_08_816225.shtml\">《东航原董事长刘绍勇，被提起公诉》</a>）；可惜罪名依舊是貪腐，即便劉在去年6月就被捕，民航局的絕對瀆職仍然沒有任何處理。</p>\n",
+            "date": "2026-05-08",
+            "md5": "177165976_note26",
+            "tag": "中国/政治"
         },
         {
             "id": "167471825",
@@ -6673,20 +6673,20 @@
             "tag": "其他"
         },
         {
-            "id": "181687848",
-            "title": "【戰略】【臺海】台灣的國安和產業前景 | 后注5",
-            "content": "<p>【後註五，2026/08/21】漢光42號演習剛剛結束，引來衆多群嘲，但其實日本部隊的戰鬥力很可能比草莓兵更弱，大約是在“楊梅兵”的程度，參見加拿大軍事博主的評論：<a href=\"https://www.youtube.com/shorts/5n05B7klb0Q\">《Japan Army Not Ready For War》</a>。</p>\n",
-            "date": "2026-08-21",
-            "md5": "181687848_note5",
-            "tag": "日本/其他军事"
-        },
-        {
             "id": "129978332",
             "title": "【藝術】【基礎科研】藝術與科學的衰敗 | 后注6",
             "content": "<p>【後註六，2026/08/21】在昨天的《龍行天下》節目提到《牛來》這部電影，其實因爲時間壓力和精神狀況，並沒有很好闡述心裏的感觸：這是一部以絕對真誠態度來呈現親子摯愛的佳作，與好萊塢的精包裝、無營養快餐剛好相反，片尾曲更是全方位的優秀、碾壓所有40年前的台灣校園民歌。剛剛看到一個很深刻的影評，與大家分享，參見<a href=\"https://www.youtube.com/watch?v=LDWty1NTuPg\">《绝世烂片《牛来》，为什么突然感动全中国？中国网友为什么从玩梗，到泪目？我又为什么被牛来感动落泪？》</a>。</p>\n",
             "date": "2026-08-21",
             "md5": "129978332_note6",
             "tag": "中国/艺术"
+        },
+        {
+            "id": "181687848",
+            "title": "【戰略】【臺海】台灣的國安和產業前景 | 后注5",
+            "content": "<p>【後註五，2026/08/21】漢光42號演習剛剛結束，引來衆多群嘲，但其實日本部隊的戰鬥力很可能比草莓兵更弱，大約是在“楊梅兵”的程度，參見加拿大軍事博主的評論：<a href=\"https://www.youtube.com/shorts/5n05B7klb0Q\">《Japan Army Not Ready For War》</a>。</p>\n",
+            "date": "2026-08-21",
+            "md5": "181687848_note5",
+            "tag": "日本/其他军事"
         },
         {
             "id": "191959809",
@@ -6745,20 +6745,20 @@
             "tag": "宣传/逻辑"
         },
         {
-            "id": "181687848",
-            "title": "【戰略】【臺海】台灣的國安和產業前景 | 后注6",
-            "content": "<p>【後註六，2026/08/31】我在【後註三】討論了台灣工具機廠商早已被大陸本地產能所取代淘汰，但那代表的是中階產品，高階市場仍然在與歐日競爭之中，直到最近網絡上有人炒作日本產經省再度升級對“非夥伴國家”出口銷售和售後服務的限制，例如這個視頻評論（參見<a href=\"https://www.youtube.com/watch?v=MHvZGfSk8KM\">《Japan’s Machine Tool Ban Backfires Hard: China Cancels Orders &amp; Surges Past 60% Localization.》</a>；可靠性很有爭議，參見下一個段落以及留言欄28、29樓的討論），其論點在於工具機作爲流水綫的重要環節，采購的最優先考慮是可靠性，或者更精確地說，是對可靠性的印象；換句話説，日本廠商多年來維持市場份額，主要依賴歷史遺留的習慣和信任。現在買家被迫嘗試本土廠家的替代產品，不但幫助後者建立信任，而且由此劇增的使用數據正是進一步改進性能和可靠性的關鍵資源。如果上述敘事屬實，那麽日本的新政策是以產業自殺來完成對中方的重大利好，在國際上算是極度罕見的為戰略對手犧牲自我，上次發生還在5年前易綱的貨幣政策。</p>\n<p>然而產經省在今年6月發佈、8月生效的最新正式公文<a href=\"https://www.meti.go.jp/policy/anpo/law_document/kokuji/20260616_kokuji_2.pdf\">《输出贸易管理令-改订版》</a>並不含“工具機”一詞，而只是新增了8項其他產業進入限制名單，這是前述網絡傳言在細節舉證上的一個明顯錯誤。不過話説回來，最早的2022年版《输出贸易管理令》名單中的19項就包含工具機；2025年10月9日增補條例（參見<a href=\"https://timewell.jp/en/columns/japan-deemed-export-machine-tools\">《Deemed Export Controls Clarified and Machine-Tool Export Compliance: Five Points Japanese Companies Often Miss》</a>）也的確要求事先逐項審批，照理説光是時間延遲和不確定性就足以勸退大多數買家，偏偏日本工具機廠商的股價並未受打擊（前述網絡傳言的又一錯誤），他們所佔的中國國内市場份額也沒有在那時發生斷崖式下降。總結來看，目前最可能的脚本，是日本產經省的確在石破茂任期内出臺了限制政策，但因經濟現實而沒有認真執行；高市早苗治下民粹至上，即便法規條文更新過程中沒有明確的相關改變，理論上執行力度有一點可能隨之收緊，不過並沒有任何客觀跡象證實此事，目前只能推斷中方廠商希望如此，並且疑似搶先一步散佈傳言以炒高股價。換句話説，不確定性固然還在，我們應該靜待時間對真相的過濾沉澱，但在那之前，並無已知事實支持中方網絡上有關機床禁運的傳言，那麽根據Russells Teapot原則，應視為謠言而忽略。</p>\n",
-            "date": "2026-08-31",
-            "md5": "181687848_note6",
-            "tag": "中国/日本/工业/战略"
-        },
-        {
             "id": "175790558",
             "title": "【政治】社會主義國家應該如何管理資本 | 后注21",
             "content": "<p>【後註二十，2026/08/31】三個月前，國務院宣佈廢除城鄉戶口壁壘，讓我頗感欣慰，畢竟多年前博客就批判過戶口限制是劫貧濟富、拉大城鄉差距的惡政，而中國的資本纍積早在十幾年前就已經發展到無需犧牲鄉下人來維持工業化脚步的程度。官僚體系的後知後覺固然可嘆，但如同取消一胎化的前例，這裏也是遲來的改革勝過不做。今天消息傳來（參見<a href=\"https://www.guancha.cn/GongSi/2026_08_31_829368.shtml\">《房地产预售制时代终结，如何影响房价？》</a>），房地產預售制度被大幅削弱至近乎取消的地步，又是一件雖遲但到、值得慶幸的正面進展。回憶博客幾年前的分析，預售制本質上是在賦予房地產商影子銀行的地位、可以獨自發行隱性的Forward衍生品，同時不受任何金融監管；這是保證會引發危機的極度愚蠢政策，如今終於叫停，所以這個決定表面上是經濟政策的修正，實際上是限制高等金融的一小步改革。希望官方能展現一點腦力和遠見，理解到恆大的教訓不只限於房地產業，而是反映了高等金融必然帶來的災難，從而根除隱患，不要繼續栽在金融資本所編造的謊言體系之中。</p>\n",
             "date": "2026-08-31",
             "md5": "175790558_note21",
             "tag": "中国/政治/金融/管理"
+        },
+        {
+            "id": "181687848",
+            "title": "【戰略】【臺海】台灣的國安和產業前景 | 后注6",
+            "content": "<p>【後註六，2026/08/31】我在【後註三】討論了台灣工具機廠商早已被大陸本地產能所取代淘汰，但那代表的是中階產品，高階市場仍然在與歐日競爭之中，直到最近網絡上有人炒作日本產經省再度升級對“非夥伴國家”出口銷售和售後服務的限制，例如這個視頻評論（參見<a href=\"https://www.youtube.com/watch?v=MHvZGfSk8KM\">《Japan’s Machine Tool Ban Backfires Hard: China Cancels Orders &amp; Surges Past 60% Localization.》</a>；可靠性很有爭議，參見下一個段落以及留言欄28、29樓的討論），其論點在於工具機作爲流水綫的重要環節，采購的最優先考慮是可靠性，或者更精確地說，是對可靠性的印象；換句話説，日本廠商多年來維持市場份額，主要依賴歷史遺留的習慣和信任。現在買家被迫嘗試本土廠家的替代產品，不但幫助後者建立信任，而且由此劇增的使用數據正是進一步改進性能和可靠性的關鍵資源。如果上述敘事屬實，那麽日本的新政策是以產業自殺來完成對中方的重大利好，在國際上算是極度罕見的為戰略對手犧牲自我，上次發生還在5年前易綱的貨幣政策。</p>\n<p>然而產經省在今年6月發佈、8月生效的最新正式公文<a href=\"https://www.meti.go.jp/policy/anpo/law_document/kokuji/20260616_kokuji_2.pdf\">《输出贸易管理令-改订版》</a>並不含“工具機”一詞，而只是新增了8項其他產業進入限制名單，這是前述網絡傳言在細節舉證上的一個明顯錯誤。不過話説回來，最早的2022年版《输出贸易管理令》名單中的19項就包含工具機；2025年10月9日增補條例（參見<a href=\"https://timewell.jp/en/columns/japan-deemed-export-machine-tools\">《Deemed Export Controls Clarified and Machine-Tool Export Compliance: Five Points Japanese Companies Often Miss》</a>）也的確要求事先逐項審批，照理説光是時間延遲和不確定性就足以勸退大多數買家，偏偏日本工具機廠商的股價並未受打擊（前述網絡傳言的又一錯誤），他們所佔的中國國内市場份額也沒有在那時發生斷崖式下降。總結來看，目前最可能的脚本，是日本產經省的確在石破茂任期内出臺了限制政策，但因經濟現實而沒有認真執行；高市早苗治下民粹至上，即便法規條文更新過程中沒有明確的相關改變，理論上執行力度有一點可能隨之收緊，不過並沒有任何客觀跡象證實此事，目前只能推斷中方廠商希望如此，並且疑似搶先一步散佈傳言以炒高股價。換句話説，不確定性固然還在，我們應該靜待時間對真相的過濾沉澱，但在那之前，並無已知事實支持中方網絡上有關機床禁運的傳言，那麽根據Russells Teapot原則，應視為謠言而忽略。</p>\n",
+            "date": "2026-08-31",
+            "md5": "181687848_note6",
+            "tag": "中国/日本/工业/战略"
         },
         {
             "id": "177266891",
@@ -6777,20 +6777,20 @@
             "tag": "乌克兰/俄罗斯/其他军事"
         },
         {
-            "id": "131371444",
-            "title": "【外交】【傳媒】現代英美的假新聞體系 | 后注2",
-            "content": "<p>【後註二，2026/09/05】美國知名財經主播兼Trump迷妹Maria Bartiromo剛剛被《Fox News》解雇（參見<a href=\"https://www.cnn.com/2026/09/03/media/maria-bartiromo-and-fox-part-ways\">《Fox News abruptly ousts Maria Bartiromo, a longtime Trump ally》</a>，原因是她做了一個新專輯來闡述Trump在2020年敗選後說中國收買自媒體“干涉選舉”的指控，而《Fox News》曾因爲報導Trump對民主黨“選舉作弊”的指控而在2023年被判賠款7.8億美元，其後内部嚴禁任何有關2020年大選所謂弊案的敘述；原本這個封口令似乎有違憲法第一修正案，還有打官司的餘地，但Bartiromo很不智地聯係白宮對《Fox》施壓，於是後者轉以“泄密”爲由直接開除。總結來説，是美國媒體界的MAGA信徒想要支持Trump對中國的抹黑，但她的雇主因爲上次抹黑民主黨被後者用法律系統打服了，所以直接解雇解決。中國的鍋因美國黨爭而起，也因黨爭而終，這個故事真正揭露的是美國政壇和媒體的真面目。</p>\n",
-            "date": "2026-09-05",
-            "md5": "131371444_note2",
-            "tag": "美国/政治/宣传"
-        },
-        {
             "id": "177266891",
             "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注62",
             "content": "<p>【後註六十二，2026/09/05】本周的基輔實在太熱閙了。今天衆所周知由美國國務院和CIA聯合直轄的烏克蘭反腐調查局NABU/反腐檢察處SAPO宣佈啓動最新調查（參見<a href=\"https://www.yahoo.com/news/world/articles/ukraines-anti-corruption-agency-uncovers-113256003.html\">《NABU searches Prosecutor General Kravchenko’s office in probe into criminal group protecting scam call centers》</a>），指控總檢察長辦公室包庇若干電詐中心，並以暗殺/逮捕等手段打擊競爭對手（參見<a href=\"https://youtu.be/_751lowYhyE?t=3261\">《龍行天下-2026/07》</a>；据估算，烏克蘭共有約2000家電詐中心，每月總利潤約爲十億美元，參見<a href=\"https://www.intellinews.com/ukraine-s-scam-call-centres-earn-1bn-a-month-study-finds-457415/\">《Ukraines scam call centres earn $1bn a month, study finds》</a>）。烏克蘭總檢察長Ruslan Kravchenko公認是Zelensky貪腐集團的一員，而Trump每次要和Putin議和，就必然指令NABU調查Zelensky派系官員來對他施壓（參見<a href=\"https://youtu.be/EzKXw0H-HNs?t=4722\">《龍行天下-2025/11》</a>），剛好今天正是由CIA總管John Ratcliffe在一周前打前鋒（參見<a href=\"https://www.nytimes.com/2026/08/25/us/politics/cia-director-russia.html\">《C.I.A. Director Makes Secret Visit to Moscow》</a>）安排好的新一輪穿梭外交的第一天（參見<a href=\"https://www.nytimes.com/2026/09/05/world/europe/russia-ukraine-witkoff-kushner-moscow.html\">《Putin Meets Witkoff and Kushner in Moscow to Discuss Ukraine War》</a>），所以一切合情合理、脈絡清晰。不過【後註六十一】所討論的劇烈槍戰至今只有三天，而SBU屬於Zelensky/Kravchenko系統，GUR卻是總統辦公室主任Kyrylo Budanov（CIA嫡系，繼任總統的熱門人選之一）的親兵，所以難免有傳言說那場火拼其實是同一場政治鬥爭的前奏；不過暫時沒有明確證據，有待繼續觀察。</p>\n",
             "date": "2026-09-05",
             "md5": "177266891_note62",
             "tag": "美国/乌克兰/外交/政治"
+        },
+        {
+            "id": "131371444",
+            "title": "【外交】【傳媒】現代英美的假新聞體系 | 后注2",
+            "content": "<p>【後註二，2026/09/05】美國知名財經主播兼Trump迷妹Maria Bartiromo剛剛被《Fox News》解雇（參見<a href=\"https://www.cnn.com/2026/09/03/media/maria-bartiromo-and-fox-part-ways\">《Fox News abruptly ousts Maria Bartiromo, a longtime Trump ally》</a>，原因是她做了一個新專輯來闡述Trump在2020年敗選後說中國收買自媒體“干涉選舉”的指控，而《Fox News》曾因爲報導Trump對民主黨“選舉作弊”的指控而在2023年被判賠款7.8億美元，其後内部嚴禁任何有關2020年大選所謂弊案的敘述；原本這個封口令似乎有違憲法第一修正案，還有打官司的餘地，但Bartiromo很不智地聯係白宮對《Fox》施壓，於是後者轉以“泄密”爲由直接開除。總結來説，是美國媒體界的MAGA信徒想要支持Trump對中國的抹黑，但她的雇主因爲上次抹黑民主黨被後者用法律系統打服了，所以直接解雇解決。中國的鍋因美國黨爭而起，也因黨爭而終，這個故事真正揭露的是美國政壇和媒體的真面目。</p>\n",
+            "date": "2026-09-05",
+            "md5": "131371444_note2",
+            "tag": "美国/政治/宣传"
         },
         {
             "id": "108908753",
@@ -6825,12 +6825,12 @@
             "tag": "中国/军事装备"
         },
         {
-            "id": "180084901",
-            "title": "【經濟】【學術管理】金融史觀（三）政策建議 | 后注15",
-            "content": "<p>【後註十五，2026/09/18】今天上《龍行天下》談油價，提到曾因爲此前的原油市場對和平解決太過樂觀而建議小孩買美國能源股的ETF，出了一個錯誤，我以爲是在7月節目中討論的，其實是在更前一次討論美伊戰事的3月節目（參見<a href=\"https://wmyblog.site/html/260320%5b%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5d.html#%E6%B2%B9%E4%BB%B7%E5%A4%A7%E6%B6%A8%E5%AF%B9%E5%85%A8%E7%90%83%E9%87%91%E8%9E%8D%E7%BB%8F%E6%B5%8E%E7%9A%84%E4%B8%89%E5%B1%82%E5%BD%B1%E5%93%8D%EF%BC%8C%E6%97%A5%E6%9C%AC%E6%9C%80%E5%8F%97%E4%BC%A4%E5%AE%B3\">《油价大涨对全球金融经济的三层影响，日本最受伤害》</a>以及節目尾端的觀衆問答；《UDN》不允許鏈接有特殊字母，以致有些鏈接不能直達終點，請見諒）裏簡單提及。年紀大了，記性不好（尤其幾個月前草稿裏的論點，到了節目中有時間壓力，往往不能説全，卻一樣留存腦中，特別容易引起記憶混淆），特此致歉。恰好3至7月間那隻ETF基本持平，6個月和最近2個月的回報率同樣是25%。</p>\n",
+            "id": "177165976",
+            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注27",
+            "content": "<p>【後註二十七，2026/09/18】今天的《龍行天下》節目中，我提到這次美國期中選舉的大金主一面倒地支持Trump，出處是<a href=\"https://www.ft.com/content/2285c111-b103-4b04-96c7-fe26a3c04c3e\">《US billionaires line up to bankroll Republicans election push》</a>，供大家參考。</p>\n",
             "date": "2026-09-18",
-            "md5": "180084901_note15",
-            "tag": "美国/其他地区/伊朗/经济"
+            "md5": "177165976_note27",
+            "tag": "美国/政治"
         },
         {
             "id": "177266891",
@@ -6841,12 +6841,12 @@
             "tag": "美国/乌克兰/俄罗斯/外交/经济"
         },
         {
-            "id": "177165976",
-            "title": "【美國】海湖莊園抄家事件幕後的美國政治鬥爭 | 后注27",
-            "content": "<p>【後註二十七，2026/09/18】今天的《龍行天下》節目中，我提到這次美國期中選舉的大金主一面倒地支持Trump，出處是<a href=\"https://www.ft.com/content/2285c111-b103-4b04-96c7-fe26a3c04c3e\">《US billionaires line up to bankroll Republicans election push》</a>，供大家參考。</p>\n",
+            "id": "180084901",
+            "title": "【經濟】【學術管理】金融史觀（三）政策建議 | 后注15",
+            "content": "<p>【後註十五，2026/09/18】今天上《龍行天下》談油價，提到曾因爲此前的原油市場對和平解決太過樂觀而建議小孩買美國能源股的ETF，出了一個錯誤，我以爲是在7月節目中討論的，其實是在更前一次討論美伊戰事的3月節目（參見<a href=\"https://wmyblog.site/html/260320%5b%E9%BE%99%E8%A1%8C%E5%A4%A9%E4%B8%8B%5d.html#%E6%B2%B9%E4%BB%B7%E5%A4%A7%E6%B6%A8%E5%AF%B9%E5%85%A8%E7%90%83%E9%87%91%E8%9E%8D%E7%BB%8F%E6%B5%8E%E7%9A%84%E4%B8%89%E5%B1%82%E5%BD%B1%E5%93%8D%EF%BC%8C%E6%97%A5%E6%9C%AC%E6%9C%80%E5%8F%97%E4%BC%A4%E5%AE%B3\">《油价大涨对全球金融经济的三层影响，日本最受伤害》</a>以及節目尾端的觀衆問答；《UDN》不允許鏈接有特殊字母，以致有些鏈接不能直達終點，請見諒）裏簡單提及。年紀大了，記性不好（尤其幾個月前草稿裏的論點，到了節目中有時間壓力，往往不能説全，卻一樣留存腦中，特別容易引起記憶混淆），特此致歉。恰好3至7月間那隻ETF基本持平，6個月和最近2個月的回報率同樣是25%。</p>\n",
             "date": "2026-09-18",
-            "md5": "177165976_note27",
-            "tag": "美国/政治"
+            "md5": "180084901_note15",
+            "tag": "美国/其他地区/伊朗/经济"
         },
         {
             "id": "108908787",
@@ -6887,6 +6887,14 @@
             "date": "2026-10-10",
             "md5": "177266891_note66",
             "tag": "美国/乌克兰/俄罗斯/外交/经济/分析方法"
+        },
+        {
+            "id": "177266891",
+            "title": "【戰略】【國際】對俄烏戰爭的新觀察 | 后注67",
+            "content": "<p>【後註六十七，2026/10/21】承接上面【後註六十六】的討論，Zelensky拒絕配合Trump在柴油問題上忽悠美國選民，導致雙方爆發口水戰。然而Trump指揮不動烏克蘭背後的歐美軍工集團和CIA，只有SpaceX短暫將Starlink速限降級，這顯然不夠Trump出氣，於是很自然地再次由NABU/SAPO出手，調查Zelensky集團的腐敗案。這次輪到烏克蘭中央銀行行長倒霉，詳情參見<a href=\"https://www.reuters.com/world/ukraines-anti-corruption-police-search-national-bank-premises-2026-10-21/\">《Ukrainess anti-corruption police search national bank》</a>。</p>\n",
+            "date": "2026-10-21",
+            "md5": "177266891_note67",
+            "tag": "/empty"
         }
     ]
 }
