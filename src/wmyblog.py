@@ -634,9 +634,9 @@ class Wmyblog:
             f.write(html)
 
     def update_data(self):
-        self.download_tag()
+        #self.download_tag()
         id_list = self.get_id_list()
-        #self.download_page(id_list)
+        self.download_page(id_list)
 
 if __name__ == "__main__":
     data_dir = "../data"
