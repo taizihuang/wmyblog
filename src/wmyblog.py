@@ -57,6 +57,9 @@ def page2article(doc, art_id):
     for i in post.findAll('a',{'href': re.compile("MengyuanWang")}):
         t = i.attrs['href'].split('/')
         i.attrs['href'] = t[-1]+'.html'
+    for i in post.findAll('a',{'href': re.compile("wmyblog")}):
+        t = i.attrs['href'].split('/')
+        i.attrs['href'] = t[-1]
 
     df_article = pd.DataFrame(data={'id': art_id, 
                                     'title': title,
@@ -634,7 +637,7 @@ class Wmyblog:
             f.write(html)
 
     def update_data(self):
-        #self.download_tag()
+        self.download_tag()
         id_list = self.get_id_list()
         self.download_page(id_list)
 
