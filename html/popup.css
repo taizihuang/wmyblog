@@ -30,5 +30,5 @@ display: none;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #333 transparent transparent transparent;
+    /*border-color: #333 transparent transparent transparent;*/
 }

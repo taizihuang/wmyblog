@@ -47,6 +47,8 @@ function handleSelection() {
         // 如果文字太靠近顶部，导致弹窗超出屏幕上方，则改到选区下方显示
         if (rect.top - popupHeight - 10 < 0) {
             top = rect.bottom + scrollTop + 10;
+        } else {
+            top = rect.bottom + scrollTop + 10;
         }
 
         popup.style.left = `${left}px`;
