@@ -13,6 +13,7 @@
         gtag('config', 'G-1F5ZFPC2V2');
     </script>
     <link rel="stylesheet" href="./init.css">
+    <link href="popup.css" rel="stylesheet" type="text/css">
     %for art_id, post_title, post_content, post_date, post_md5, post_tag in post_data:
     <title>${post_title}</title>
     </head>
@@ -20,6 +21,7 @@
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
     <h1>${post_title}</h1>
     <p class="DATE">${post_date}</p>
+    <div id="selection-popup">搜索博客</div>
     <div class="LI">
     <div class="USER"><span class="NAME" id=${post_md5}></span>
     <span class="tag"><input type="search" value=${post_tag} data-md5=${post_md5} onkeydown="enter(event,$(this))"></span>
@@ -61,4 +63,5 @@
     </div>
     </div>
     <div class="BACK"><a href="../index.html">返回索引页</a></div>
+    <script src="popup.js"></script>
     </body></html>
