@@ -29,6 +29,6 @@ display: none;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
-    border-style: solid;
+    /*border-style: solid;*/
     /*border-color: #333 transparent transparent transparent;*/
 }
