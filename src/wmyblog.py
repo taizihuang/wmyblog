@@ -137,6 +137,10 @@ def format_guancha_date(date_str):
         true_date = datetime.date.today() + datetime.timedelta(days=-1)
         true_date = true_date.strftime("%Y-%m-%d")
         true_date = date_str.replace("昨天", true_date)
+    elif "分钟" in date_str:
+        minute_digit = int(date_str.split("分钟")[0])
+        true_date = datetime.datetime.now() + datetime.timedelta(minutes=-minute_digit)
+        true_date = true_date.strftime("%Y-%m-%d %H:%M")
     elif len(date_str) == 11:
         true_date = "2026-" + date_str
     else:
