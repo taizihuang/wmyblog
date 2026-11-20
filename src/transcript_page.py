@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from mako.template import Template
 
 def extract_script(doc):
-    string_left = '"chunk":[{'
+    string_left = '"commands":[{'
     string_right = '},{'
     len_left = len(string_left)-2
     text = ''
